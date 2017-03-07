@@ -1,6 +1,6 @@
-=====================
-This Is A New Project
-=====================
+=============================================
+Interactive eBooks on Runestone Interactive
+=================================================
 
 .. Here is were you specify the content and order of your new book.
 
@@ -16,22 +16,52 @@ This Is A New Project
 SECTION 1: Introduction
 :::::::::::::::::::::::
 
-Congratulations!   If you can see this file you have probably successfully run the ``runestone init`` command.  If you are looking at this as a source file you should now run ``runestone build``  to generate html files.   Once you have run the build command you can run ``runestone serve`` and then view this in your browser at ``http://localhost:8000``
+The Runestone platform allows you to create, modify, use, and serve interactive ebooks.
 
-This is just a sample of what you can do.  The index.rst file is the table of contents for your entire project.  You can put all of your writing in the index, or  you can include additional rst files.  Those files may even be in subdirectories that you can reference using a relative path.
+You can:
 
+* Use any of the existing ebooks that are listed at the following link `here <http://runestoneinteractive.org/library.html>`_.
+* Create a private custom course for your students as shown in the following link `custom-course <http://runestoneinteractive.org/customcourse.html>`_.  Your custom course will have to have a unique name and your students can register for the course using the unique name.
 
-::
+SECTION 2: Interactive Features
+:::::::::::::::::::::::::::::::::
 
+The ebooks allow learners to run and edit code using ActiveCode, visualize code execution, answer multiple-choice questions, answer fill in the blank questions, solve mixed up code problems, solve clickable code problems, match definitions to concepts, listen to audio tours of code, and more.
 
-   .. toctree::
+.. toctree::
       :maxdepth: 2
 
-      some/path/myfile.rst
+      Directives/activecodePython.rst
+      Directives/activecodeOther.rst
+      Directives/clickable.rst
+      Directives/codelensPython.rst
+      Directives/fillBlank.rst
+      Directives/matching.rst
+      Directives/mixedUp.rst
+      Directives/multipleChoice.rst
+      Directives/poll.rst
+      Directives/shortAnswer.rst
+      Directives/timedExam.rst
 
+SECTION 3: Other Features
+:::::::::::::::::::::::::::::::::::::::
 
-Section 2: Links
-::::::::::::::::
+.. toctree::
+      :maxdepth: 2
+
+      Directives/disqus.rst
+      Directives/tabbedPanel.rst
+      Directives/reveal.rst
+      Directives/video.rst
+
+SECTION 4: Creating a Custom Course
+:::::::::::::::::::::::::::::::::::::::
+
+SECTION 5: Using the Instructor Dashboard
+::::::::::::::::::::::::::::::::::::::::::::
+      
+Section 6: Additional Useful Links
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 Runestone uses the ``restructuredText`` (rst) markup language.  We chose this over markdown largely because rst is extensible.  Nearly all of the basic markup tasks are already handled by restructuredText.  You should check out the docs for the basics of restructuredText (link below). Our extensions are all for the interactive elements.  One key hint about restructuredText:  Its like **Python** -- *indentation matters!*
 
@@ -40,43 +70,4 @@ Runestone uses the ``restructuredText`` (rst) markup language.  We chose this ov
 * Join the discussion on our `Google Group <https://groups.google.com/forum/#!forum/runestone_instructors>`_
 * Tell us about problems on `Github <https://github.com/RunestoneInteractive/RunestoneComponents>`_
 
-
-
-SECTION 3: Sample Directives
-::::::::::::::::::::::::::::
-
-ActiveCode
-----------
-
-.. activecode:: codeexample1
-   :coach:
-   :caption: This is a caption
-
-   print("My first program adds a list of numbers")
-   myList = [2, 4, 6, 8, 10]
-   total = 0
-   for num in myList:
-       total = total + num
-   print(total)
-
-Multiple Choice
----------------
-
-.. mchoice:: question1_2
-    :multiple_answers:
-    :correct: a,b,d
-    :answer_a: red
-    :answer_b: yellow
-    :answer_c: black
-    :answer_d: green
-    :feedback_a: Red is a definitely on of the colors.
-    :feedback_b: Yes, yellow is correct.
-    :feedback_c: Remember the acronym...ROY G BIV.  B stands for blue.
-    :feedback_d: Yes, green is one of the colors.
-
-    Which colors might be found in a rainbow? (choose all that are correct)
-
-These are just two of the many interactive components for writing online course materials.  You can see examples of all of them `On our Example Page <http://interactivepython.org/runestone/static/overview/overview.html>`_
-
-Now feel free to modify this file to start creating your own interactive page.
 
