@@ -103,7 +103,7 @@ html_theme = 'sphinx_bootstrap'
 #html_theme_options = {'nosidebar': 'true'}
 html_theme_options = {
     # Navigation bar title. (Default: ``project`` value)
-    'navbar_title': "Using and Customizing Open-Source Runestone",
+    'navbar_title': "Runestone Ebooks",
 
     # Tab name for entire site. (Default: "Site")
     'navbar_site_name': "Chapters",
