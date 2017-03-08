@@ -14,6 +14,74 @@ The Structure of a Runestone eBook
         section2.rst
         section3.rst
 
+The index file will contain regular restructuredText (rst) markup plus a table of contents.  Using rst you can get most of the normal things you want when writing.  Sections, subsections, and subsubsections are indicated by "underlining" titles with different characters.  In the example below you see SECTION 1: Introduction is underlined with :::.   To make a subsection of section 1 you could underline the next heading with ==== .   You can make **bold text** by surrounding text with two asterisks like this:  ``**bold text**`` *Italicised text* uses a single asterisk:  ``*Italicised text`` and ``code or verbatim`` text can be displayed inline using double backticks ````code````.
+
+Bulleted lists are created using asterisks or dashes:
+
+* bullet 1
+* bullet 2
+* bullet 3
+
+  * sub-bullets must be indented and aligned with their parent
+  
+
+::
+  
+    * bullet 1
+    * bullet 2
+    * bullet 3
+
+      * sub-bullets must be indented and aligned with their parent
+
+Numbered lists work the same but use a number followed by a period.
+
+1. number 1
+1. number 2
+1. number 3
+
+   1. an indented number
+
+::
+
+    1. number 1
+    1. number 2
+    1. number 3
+
+       1. an indented number
+
+You can include images using an image Directive
+
+::
+
+    .. image:: /path/to/file.jpg
+
+And you can statically format large blocks of code with the ``.. code-block:: language`` directive.
+
+::
+
+    .. code-block:: python
+
+        for i in range(5):
+            print("hello world")
+
+directives create block level html and all of them have the same template:
+
+::
+
+    .. directive_name:: requiredArg1 requiredArg2 ...
+        :optional arg1:
+        :optional arg2:
+        ....
+
+        body of the directive
+
+.. attention:: 
+    
+    Just like Python, indentation is important for directives!
+
+
+In the next section we will look specifically at a few of the directives you may want to use in an assignment.
+
 Here is the index.rst file for this book:
 
 .. code-block:: rst
