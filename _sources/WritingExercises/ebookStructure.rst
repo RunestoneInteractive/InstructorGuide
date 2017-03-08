@@ -36,8 +36,10 @@ Bulleted lists are created using asterisks or dashes:
 Numbered lists work the same but use a number followed by a period.
 
 1. number 1
-1. number 2
-1. number 3
+
+2. number 2
+
+3. number 3
 
    1. an indented number
 
@@ -129,3 +131,6 @@ Here is the index.rst file for this book:
           Directives/tabbedPanel.rst
           Directives/reveal.rst
           Directives/video.rst
+
+The instructor interface gives you the ability to edit the index.rst file for your course.  This is handy when you want to move some chapters around or even eliminate a single section.  You can also add your own syllabus or schedule information to the title page of the book to make it easy for your students to find it.
+
