@@ -68,6 +68,8 @@ SECTION 6: Customizing the Table of Contents
     :maxdepth: 2
 
     WritingExercises/ebookStructure.rst
+    WritingExercises/editingTheTOC.rst
+    WritingExercises/theExerciseBank.rst
 
 SECTION 7: Writing your own Exercises
 :::::::::::::::::::::::::::::::::::::

@@ -1,0 +1,116 @@
+Adding an Exercise to the Exercise Bank
+=======================================
+
+Although all of the Runestone books have a pretty good selection of exercises, you can never have too many exercises.  We hope to crowd source an enormous collection of questions and problems in our Exercise database.   You can help by adding the custom exercises for your own course to the database!  Once your exercise is in the database it is available for others to find using the search feature you learned about earlier.
+
+Since the most common exercises are programming exercises let's look at the activecode directive in detail.   Here is the full directive with every possible option.   this is what you would see if you add an activecode exercise from the web interface.   Lets not get bogged down in the details here, lets look at a much simpler example.
+
+.. code-block:: rst
+
+    .. activecode:: uniqueid   'nocanvas': directives.flag,
+        :nopre: do not create an output component
+        :above: put the canvas above the code
+        :autorun: run this activecode as soon as the page is loaded
+        :caption: caption under the active code
+        :include: invisibly include code from another activecode
+        :hidecode: Don:t show the editor initially
+        :language: python, html, javascript, java, python2, python3
+        :tour_1: audio tour track
+        :tour_2: audio tour track
+        :tour_3: audio tour track
+        :tour_4: audio tour track
+        :tour_5: audio tour track
+        :nocodelens: Do not show the codelens button
+        :coach: Show the codecoach button
+        :timelimit: set the time limit for this program
+        :stdin: : A file to simulate stdin (java, python2, python3)
+        :datafile: : A datafile for the program to read (java, python2, python3)
+        :sourcefile: : source files (java, python2, python3)    
+        :available_files: : other additional files (java, python2, python3)
+
+        If this is a homework problem instead of an example in the text
+        then the assignment text should go here.  The assignment text ends with
+        the line containing four tilde ~
+        ~~~~
+        print("hello world")
+        ====
+        print("Hidden code, such as unit tests come after the four = signs")   
+
+Lets make an exercise to have the student compute the sum of the first N numbers.
+
+.. activecode:: sigcse_ex1
+    :language: python
+
+    Write a Python function to sum the first N numbers starting with 0.  So if N is 4 then your function should add 0 + 1 + 2 + 3
+    ~~~~
+    def sum_first_n(N):
+        # your code here
+
+The source code for the above looks like this:
+
+.. code-block:: rst
+
+    .. activecode:: sigcse_ex1
+        :language: python
+
+        Write a Python function to sum the first N numbers starting with 0.  So if N is 4 then your function should add 0 + 1 + 2 + 3
+        ~~~~
+        def sum_first_n(N):
+            # your code here
+
+Its worth repeating at this point that indendation and whitespace is important.  In the previous example you will see that the optional directive ``:language:`` is indented by four spaces.  from the previous line.   It must be indented at least three spaces to line up with the "a" in activecode, but using 4 keeps it consistent with my own personal python indentation style.   Everything else in the body of the directive must also be indented to match the indentation of the optional parameters.
+
+The instructions for your student comprise the first part of the directive body.  You can use any valid restructured text in this part of the directive including embedded images.  You separate the instructions from any code you want to give the student with ``~~~~`` thats four tildes.  The next part of the body is any code you want to provide.  Just put in your Python or other language as you would normally write it.
+
+To keep an exercise page looking a bit neater you can substitute the ``.. actex::`` directive for the ``.. activecode::`` directive.  Making that substitution gives us the following:
+
+.. actex:: sigcse_ex2
+    :language: python
+
+    Write a Python function to sum the first N numbers starting with 0.  So if N is 4 then your function should add 0 + 1 + 2 + 3
+    ~~~~
+    def sum_first_n(N):
+        # your code here
+
+
+
+Unit Testing exercises
+----------------------
+
+Of course, as you have learned in the previous section the real killer feature of these exercises is to be able to create your own unit tests, and have the grader autograde the assignment.
+
+Let's expand our example to include some simple unittests.  We can do this by adding a hidden block of code to our previous example that uses the standard Python unittest framework.
+
+.. code-block:: python
+
+    from unittest.gui import TestCaseGui
+
+    class myTests(TestCaseGui):
+
+        def testOne(self):
+            self.assertEqual(add(2,2),4,"A feedback string when the test fails")
+            self.assertAlmostEqual(add(2.0,3.0), 5.0, 1, "Try adding your parmeters")
+
+    myTests().main()
+
+If you are not familiar with Python unittests they are pretty easy to write.  You create your own class that is a subclass of TestCase, or in our work TestCaseGui so we get some graphical output. Your tests are all methods of the class and must start with the word "test".  There are a host of assertXXXX functions that you can use.  Check out the `unittest documentation here <http://docs.python.org/unittest>`_
+
+
+.. activecode:: sigcse_ex3
+    :language: python
+
+    Write a Python function to sum the first N numbers starting with 0.  So if N is 4 then your function should add 0 + 1 + 2 + 3
+    ~~~~
+    def sum_first_n(N):
+        # your code here
+    ====
+    from unittest.gui import TestCaseGui
+
+    class myTests(TestCaseGui):
+
+        def testOne(self):
+            self.assertEqual(sum_first_n(4),6,feedback="A feedback string when the test fails")
+            self.assertAlmostEqual(sum_first_n(4.0), 5.0, feedback="Try adding your parmeters")
+
+    myTests().main()
+
