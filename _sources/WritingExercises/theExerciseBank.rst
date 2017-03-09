@@ -138,16 +138,24 @@ Let's try to add another test to the example above.  This time we'll show the un
     myTests().main()
 
 
-Advanced activecode
--------------------
+Advanced activecode Options
+---------------------------
 
-* :include:
+* :include:  -- This option lets you include other activecodes in the current
 
-* :language:
+* :timelimit: seconds -- What to do when students create an infinite loop and lock up their browser?  Just wait a bit, every run of Python has a built in time limit of 30 seconds.  Some things might take longer than this, so if you know an example or assignment is going to take longer, then you can set a higher time limit with this option.
 
-* :timelimit:
+* :nocodelens: -- codelens is an awesome addition, but it does not work with very many libraries.  This is part of the sandboxed security of the codelens server.   The most common one to be aware of is the turtle module.  If you are doing a turtle example or assigning a turtle problem then youshould set this flag so the "Show Codelens" button is hidden.
 
-* :nocodelens:
+For languages outside the browser
+---------------------------------
 
-* :datafile:
+* :language: -- As you saw earlier, Runestone supports Java, python2, and python3 in a sandboxed server environment environment.
 
+If you choose any of the above, the code from the window is packaged up and set to a separate server for compilation and execution.  There are a few options to activecode that only apply to these languages.
+
+* :datafile:  You can provide an id to a datafile that will be sent along with your Java code 
+
+* :sourcefile: You can provide additional source files that should be compiled along with the java file you upload.
+
+* :available_files: You can provide additional binary files to link into the final executable.
