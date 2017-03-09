@@ -93,7 +93,7 @@ Let's expand our example to include some simple unittests.  We can do this by ad
 
     myTests().main()
 
-If you are not familiar with Python unittests they are pretty easy to write.  You create your own class that is a subclass of TestCase, or in our work TestCaseGui so we get some graphical output. Your tests are all methods of the class and must start with the word "test".  There are a host of assertXXXX functions that you can use.  Check out the `unittest documentation here <http://docs.python.org/unittest>`_
+If you are not familiar with Python unittests they are pretty easy to write.  You create your own class that is a subclass of TestCase, or in our work TestCaseGui so we get some graphical output. Your tests are all methods of the class and must start with the word "test".  There are a host of assertXXXX functions that you can use.  Check out the `unittest documentation here <https://docs.python.org/2/library/unittest.html#assert-methods>`_
 
 
 .. activecode:: sigcse_ex3
@@ -109,8 +109,53 @@ If you are not familiar with Python unittests they are pretty easy to write.  Yo
     class myTests(TestCaseGui):
 
         def testOne(self):
-            self.assertEqual(sum_first_n(4),6,feedback="A feedback string when the test fails")
-            self.assertAlmostEqual(sum_first_n(4.0), 5.0, feedback="Try adding your parmeters")
+            self.assertEqual(sum_first_n(4),6,feedback="0 + 1 + 2 + 3 == 6")
+            self.assertEqual(sum_first_n(0),0,feedback="summing 0 numbers should be 0")      
 
     myTests().main()
 
+Let's try to add another test to the example above.  This time we'll show the unittests in the active code window to make it easy for us to test.  I strongly recommend you do this in a scratch activecode window when you are writing a question.  It will save lots of frustrating wait time as you work out the details of your testing.
+
+
+Let's try to add another test to the example above.  This time we'll show the unittests in the active code window to make it easy for us to test.  I strongly recommend you do this in a scratch activecode window when you are writing a question.  It will save lots of frustrating wait time as you work out the details of your testing.
+
+.. activecode:: sigcse_ex4
+    :language: python
+
+    Write a Python function to sum the first N numbers starting with 0.  So if N is 4 then your function should add 0 + 1 + 2 + 3
+    ~~~~
+    def sum_first_n(N):
+        # your code here
+
+    from unittest.gui import TestCaseGui
+
+    class myTests(TestCaseGui):
+
+        def testOne(self):
+            self.assertEqual(sum_first_n(4),6,feedback="0 + 1 + 2 + 3 == 6")
+            self.assertEqual(sum_first_n(0),0,feedback="summing 0 numbers should be 0")      
+
+    myTests().main()
+
+
+Advanced activecode Options
+---------------------------
+
+* :include:  -- This option lets you include other activecodes in the current
+
+* :timelimit: seconds -- What to do when students create an infinite loop and lock up their browser?  Just wait a bit, every run of Python has a built in time limit of 30 seconds.  Some things might take longer than this, so if you know an example or assignment is going to take longer, then you can set a higher time limit with this option.
+
+* :nocodelens: -- codelens is an awesome addition, but it does not work with very many libraries.  This is part of the sandboxed security of the codelens server.   The most common one to be aware of is the turtle module.  If you are doing a turtle example or assigning a turtle problem then youshould set this flag so the "Show Codelens" button is hidden.
+
+For languages outside the browser
+---------------------------------
+
+* :language: -- As you saw earlier, Runestone supports Java, python2, and python3 in a sandboxed server environment environment.
+
+If you choose any of the above, the code from the window is packaged up and set to a separate server for compilation and execution.  There are a few options to activecode that only apply to these languages.
+
+* :datafile:  You can provide an id to a datafile that will be sent along with your Java code 
+
+* :sourcefile: You can provide additional source files that should be compiled along with the java file you upload.
+
+* :available_files: You can provide additional binary files to link into the final executable.

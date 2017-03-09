@@ -91,7 +91,10 @@ SECTION 6: Customizing the Table of Contents
     WritingExercises/ebookStructure.rst
     WritingExercises/editingTheTOC.rst
     WritingExercises/theExerciseBank.rst
+    WritingExercises/multipleChoice.rst
+    WritingExercises/advancedRunestone.rst
 
+    
 SECTION 7: Writing your own Exercises
 :::::::::::::::::::::::::::::::::::::
 
