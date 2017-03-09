@@ -6,11 +6,28 @@ import os, sys
 from runestone.server import get_dburl
 from sphinxcontrib import paverutils
 import pkg_resources
+from socket import gethostname
 
 sys.path.append(os.getcwd())
 
 home_dir = os.getcwd()
-master_url = 'http://127.0.0.1:8000'
+project_name = "sigcse2017"
+
+master_url = None
+doctrees = None
+
+if master_url is None:
+    if gethostname() in ['web407.webfaction.com', 'rsbuilder']:
+        master_url = 'http://interactivepython.org'
+        if os.path.exists('../../custom_courses/{}'.format(project_name)):
+            doctrees = '../../custom_courses/{}/doctrees'.format(project_name)
+        else:
+            doctrees = './build/{}/doctrees'.format(project_name)
+    else:
+        master_url = 'http://127.0.0.1:8000'
+        doctrees = './build/{}/doctrees'.format(project_name)
+
+
 master_app = 'runestone'
 serving_dir = "./build/sigcse2017"
 dest = "../../static"
@@ -23,7 +40,7 @@ options(
         sourcedir="_sources",
         outdir="./build/sigcse2017",
         confdir=".",
-        project_name = "sigcse2017",
+        project_name=project_name,
         template_args={'course_id': 'sigcse2017',
                        'login_required':'false',
                        'appname':master_app,

@@ -136,3 +136,18 @@ Let's try to add another test to the example above.  This time we'll show the un
             self.assertEqual(sum_first_n(0),0,feedback="summing 0 numbers should be 0")      
 
     myTests().main()
+
+
+Advanced activecode
+-------------------
+
+* :include:
+
+* :language:
+
+* :timelimit:
+
+* :nocodelens:
+
+* :datafile:
+
