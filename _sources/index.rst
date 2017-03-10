@@ -29,6 +29,12 @@ You can:
 * Use any of the existing ebooks that are listed at the following link `here <http://runestoneinteractive.org/library.html>`_.
 * Create a private custom course for your students as shown in the following link `custom-course <http://runestoneinteractive.org/customcourse.html>`_.  Your custom course will have to have a unique name and your students can register for the course using the unique name.
 
+.. toctree::
+      :maxdepth: 2
+
+      Registration/registerYourself.rst
+
+
 SECTION 2: Interactive Features
 :::::::::::::::::::::::::::::::
 
@@ -68,6 +74,7 @@ SECTION 4: Creating a Custom Course
 
       CustomCourses/intro.rst
       CustomCourses/createCourse.rst
+      Registration/inviteStudents.rst
 
 
 SECTION 5: Using the Instructor Dashboard

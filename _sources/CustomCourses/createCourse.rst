@@ -17,7 +17,7 @@ Creating the Course
 
 .. image:: Figures/dashboardCreateCourse.JPG
 
-5. Fill out the form and click submit.
+5. Fill out the form and click submit. Remember the Project name that you use; you will need to give that text string to your students.
 
 .. image:: Figures/customCourseForm.JPG
 
