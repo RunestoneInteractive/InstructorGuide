@@ -1,5 +1,5 @@
 ===========================================
-Interactive eBooks on Runestone Interactive
+Ebooks on Runestone Interactive
 ===========================================
 
 .. Here is were you specify the content and order of your new book.

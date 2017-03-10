@@ -18,7 +18,7 @@ The following example calculates the body mass index (BMI) in Python for a perso
 
 This example is from the *Student Computer Science Principles* ebook.  You can find it by clicking on the following `bmi <http://interactivepython.org/runestone/static/StudentCSP/CSPrinTeasers/computeNumbers.html>`_.
 
-.. activecode:: BMI
+.. activecode:: BMI2
     :nocodelens:
     
     height = 60    # in inches (60 inches is 5 feet)
@@ -55,21 +55,24 @@ This example is from the *Student Computer Science Principles* ebook. You can fi
     :nocodelens:
 
     from image import *
-    
+
     # CREATE AN IMAGE FROM A FILE
     img = Image("arch.jpg")
+    win = ImageWin(img.getWidth(),img.getHeight())
+
+    img.draw(win)
+    img.setDelay(1,15)
 
     # LOOP THROUGH ALL THE PIXELS
     pixels = img.getPixels()
     for p in pixels:
-    
+
         # CLEAR THE RED
         p.setRed(0)
         img.updatePixel(p)
-           
-    # SHOW THE CHANGED IMAGE 
-    win = ImageWin(img.getWidth(),img.getHeight())
-    img.draw(win)
+
+    # SHOW THE CHANGED IMAGE
+    img.draw(win)    
     
 Editing Python
 ---------------
@@ -78,7 +81,7 @@ Students can edit the code and run it again.  Try modifying the code below to ca
 
 This example is from the *Student Computer Science Principles* ebook.  You can find it by clicking on the following `bmi-edit <http://interactivepython.org/runestone/static/StudentCSP/CSPrinTeasers/computeNumbers.html>`_.
 
-.. activecode:: BMI-Edit
+.. activecode:: BMI-Edit2
     :nocodelens:
     
     height = 60    # in inches (60 inches is 5 feet)
