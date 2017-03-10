@@ -41,7 +41,7 @@ Creating the Course
 
     Figure 4: How to go to the Create your own Course page
 
-5. Fill out the form and click submit.
+5. Fill out the form and click submit. Remember the Project name that you use; you will need to give that text string to your students.
 
 .. figure:: Figures/customCourseForm.JPG
     :width: 800px
