@@ -1,9 +1,9 @@
 Create a Custom Course
 ======================
 
-As a teacher, you can make a custom course on the Runestone server out of an existing Runestone book. Your students will log in to your course, and then their activities will be tracked. You will then be able to:
+As a teacher, you can make a custom course with a unique name on the Runestone server from an existing Runestone book. Your students will register for your custom course using the unique name, and then their activities will be tracked. You will then be able to:
 
-* View summaries of student activity with particular questions or pages
+* View summaries of student activity for particular questions or pages
 * Assemble custom assignments and lab sessions from..
 
   * existing activities that are built into the book

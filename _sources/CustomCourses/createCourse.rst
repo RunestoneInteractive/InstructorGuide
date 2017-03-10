@@ -1,7 +1,7 @@
-Creating the Course
--------------------
+How to Create a Custom Course
+-------------------------------------
 
-1. Log in to the `runestone server <http://interactivepython.org>`_ using the account that you already created as a student for an existing course.
+1. Log in to the `runestone server <http://interactivepython.org>`_ if your already have an account with Runestone Interactive.  If you don't have an account then you can create one by clicking on the following `Reg Link <http://interactivepython.org/runestone/default/user/register>`_.
 
 .. figure:: Figures/login.JPG
     :width: 600px
@@ -41,9 +41,9 @@ Creating the Course
 
     Figure 4: How to go to the Create your own Course page
 
-5. Fill out the form and click submit. Remember the Project name that you use; you will need to give that text string to your students.
+5. Fill out the form and click submit. Create a unique Project name and record it. It is the name of your custom course and the course name that your students will need to register for your custom course.
 
-.. figure:: Figures/customCourseForm.JPG
+.. figure:: Figures/customCourseForm.png
     :width: 800px
     :align: center
     :alt: A filled out create a course form
@@ -60,4 +60,6 @@ Creating the Course
     :figclass: align-center
 
     Figure 6: The page that is shown while the custom course is building
+    
+7.  Your students can register for your custom course by using the unique name that you used when you created your custom course at the following link `Registration <http://interactivepython.org/runestone/default/user/register>`_..  If they already have a login on Runestone Interactive they can simply add another course.
 
