@@ -64,9 +64,12 @@ The following example is from the *How to Think Like a Computer Scientist* ebook
 
         .. tab:: Question
 
-           Write a function to count how many odd numbers are in a list.
 
            .. actex:: count_odd
+
+              Write a function to count how many odd numbers are in a list.
+
+              ~~~~
 
               def countOdd(lst):
                   # your code here
