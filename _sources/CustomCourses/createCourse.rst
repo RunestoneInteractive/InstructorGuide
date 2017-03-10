@@ -3,25 +3,61 @@ Creating the Course
 
 1. Log in to the `runestone server <http://interactivepython.org>`_ using the account that you already created as a student for an existing course.
 
-.. image:: Figures/login.JPG
+.. figure:: Figures/login.JPG
+    :width: 600px
+    :align: center
+    :alt: shows the login screen
+    :figclass: align-center
+
+    Figure 1: The login screen for Runestone Interactive
 
 2. Select an existing course that you are already a student in, such as thinkcspy.
 
-.. image:: Figures/chooseCourse.JPG
+.. figure:: Figures/chooseCourse.png
+    :width: 800px
+    :align: center
+    :alt: shows the login screen
+    :figclass: align-center
+
+    Figure 2: The choose course screen for Runestone Interactive
 
 3. Click on the person icon on the upper right and select "Instructor's Page"
 
-.. image:: Figures/GoToInstructorsPage.JPG
+.. figure:: Figures/GoToInstructor.png
+    :width: 800px
+    :align: center
+    :alt: Clicking on the instructor's page
+    :figclass: align-center
+
+    Figure 3: How to go to the instructor's page
 
 4. On the next page, click on the Create your own Course link
 
-.. image:: Figures/dashboardCreateCourse.JPG
+.. figure:: Figures/dashboardCreateCourse.png
+    :width: 800px
+    :align: center
+    :alt: Going to the Create your own Course page
+    :figclass: align-center
+
+    Figure 4: How to go to the Create your own Course page
 
 5. Fill out the form and click submit.
 
-.. image:: Figures/customCourseForm.JPG
+.. figure:: Figures/customCourseForm.JPG
+    :width: 800px
+    :align: center
+    :alt: A filled out create a course form
+    :figclass: align-center
+
+    Figure 5: A filled out create a course form
 
 6. At this point, you have to wait a while until it completes. For the SIGCSE 2017 workshop, to avoid delayes, we have pre-created a bunch of custom courses for each of the books, from a bunch of fake accounts. You can take over one of those accounts so you don't have to wait for a course to build.
 
-.. image:: Figures/waitForBuild.JPG
+.. figure:: Figures/waitForBuild.JPG
+    :width: 800px
+    :align: center
+    :alt: The screen that shows that the custom course is building
+    :figclass: align-center
+
+    Figure 6: The page that is shown while the custom course is building
 
