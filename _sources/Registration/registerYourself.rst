@@ -8,11 +8,11 @@ Some Runestone books are open to the public. To save your work, however, you wil
 First-time Registration
 -----------------------
 
-1. Open the following url in another tab: http://interactivepython.org/runestone/default/user/register.  The form is pretty self-explanatory, except for the Course Name field. There is information about that on the right side. You have to specify one of the strings that identify one of the public courses that the server knows about: thinkcspy, pythonds, pip2, or JavaReview. Alternatively, you can enter the string for a custom course that an instructor has given you. The name for this course is *sigcse2017*.
+1. Open the following url in another tab: http://interactivepython.org/runestone/default/user/register.  The form is pretty self-explanatory, except for the *Course Name* field. There is information about that on the right side. You have to specify one of the strings that identify one of the public courses that the server knows about: thinkcspy, pythonds, pip2, or JavaReview. Alternatively, you can enter the string for a custom course that an instructor has given you. Please enter *sigcse2017* in the *Course Name* field.  This is the course name for this ebook.
 
 2. Click *Register*
 
-3. If your students are on the login page instead at http://interactivepython.org/runestone/default/user/login then can click the *Register* button which is near the bottom of the page to get to the registration page.
+3. If you are on the login page instead at http://interactivepython.org/runestone/default/user/login then click the *Register* button which is near the bottom of the page to get to the registration page.
 
 Add an Additional Course
 ------------------------

@@ -61,5 +61,5 @@ How to Create a Custom Course
 
     Figure 6: The page that is shown while the custom course is building
     
-7.  Your students can register for your custom course by using the unique name that you used when you created your custom course by clicking on the following link `Registration <http://interactivepython.org/runestone/default/user/register>`_..  If they already have a login on Runestone Interactive they can add another course.
+7.  Your students can register for your custom course by using the unique name that you used when you created your custom course at the following link `Registration <http://interactivepython.org/runestone/default/user/register>`_..  If they already have a login on Runestone Interactive they can simply add another course.
 
