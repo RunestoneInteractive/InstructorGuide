@@ -43,7 +43,7 @@ Running HTML with JavaScript
 
 You can show a generated HTML document that includes JavaScript.  The following example is from the *Fundamentals of Web Programming* ebook at `HTML+JavaScript <http://interactivepython.org/runestone/static/webfundamentals/Javascript/intro.html>`_.
 
-.. activecode:: jstest1
+.. activecode:: jstest2
    :language: htmlmixed
    :nocodelens:
 
