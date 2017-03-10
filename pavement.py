@@ -46,7 +46,7 @@ options(
                        'appname':master_app,
                        'loglevel': 10,
                        'course_url':master_url,
-                       'use_services': 'false',
+                       'use_services': 'true',
                        'python3': 'true',
                        'dburl': '',
                        'basecourse': 'sigcse2017'
