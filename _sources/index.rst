@@ -108,6 +108,7 @@ SECTION 7: Writing your own Exercises
     WritingExercises/theExerciseBank.rst
     WritingExercises/multipleChoice.rst
     WritingExercises/advancedRunestone.rst
+    WritingExercises/ExerciseAddAProblem.rst
 
 What's Next?
 ::::::::::::
