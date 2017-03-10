@@ -102,6 +102,21 @@ SECTION 7: Writing your own Exercises
     WritingExercises/multipleChoice.rst
     WritingExercises/advancedRunestone.rst
 
+What's Next?
+::::::::::::
+
+No matter what your use case for Runestone textbooks, we encourage you to become a part of our community.  There are many ways you can get involved.
+
+* Join the Runestone Instructors mailing list.
+* Add some exercises to the Exercise Bank!
+* Report any bugs you find on github.
+* If you have an idea for a lab, lesson, chapter, or book you would like to make available for others write it up and send it to us.
+* If you are a Javascript coder, we have lots of feature ideas and bugs to squash in the existing system.
+* If you are a backend programmer, help us squash bugs there too.
+* If you are a designer, and would like to improve the look and feel of the books, we would welcome suggestions and CSS!
+* If you have a week this summer, we would welcome you to join us at the second Runestone hack week in beautiful Ann Arbor.
+
+
 Section 8: Additional Useful Links
 ::::::::::::::::::::::::::::::::::
 
