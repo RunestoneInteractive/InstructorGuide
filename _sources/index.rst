@@ -13,6 +13,12 @@ Interactive eBooks on Runestone Interactive
 .. Sources can also be included from subfolders of this directory.
    (e.g. "DataStructures/queues.rst").
 
+.. raw:: html
+
+    <ul>
+    <li><a href = "assignments.html">Assignments</a></li>
+    </ul>
+
 SECTION 1: Introduction
 :::::::::::::::::::::::
 
@@ -57,9 +63,24 @@ SECTION 3: Other Features
 SECTION 4: Creating a Custom Course
 :::::::::::::::::::::::::::::::::::
 
+.. toctree::
+      :maxdepth: 2
+
+      CustomCourses/intro.rst
+      CustomCourses/createCourse.rst
+
+
 SECTION 5: Using the Instructor Dashboard
 :::::::::::::::::::::::::::::::::::::::::
 
+.. toctree::
+      :maxdepth: 2
+
+      CustomCourses/betaInstructorInterface.rst
+      CustomCourses/viewStudentActivity.rst
+      CustomCourses/instructorAssignments.rst
+      CustomCourses/assembleAssignment.rst
+      CustomCourses/gradeAssignment.rst
 
 SECTION 6: Customizing the Table of Contents
 ::::::::::::::::::::::::::::::::::::::::::::
