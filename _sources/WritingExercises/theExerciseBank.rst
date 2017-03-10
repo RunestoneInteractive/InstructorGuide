@@ -11,6 +11,7 @@ Since the most common exercises are programming exercises let's look at the acti
         :nopre: do not create an output component
         :above: put the canvas above the code
         :autorun: run this activecode as soon as the page is loaded
+        :autograde:  typically unittest
         :caption: caption under the active code
         :include: invisibly include code from another activecode
         :hidecode: Don:t show the editor initially
@@ -95,9 +96,12 @@ Let's expand our example to include some simple unittests.  We can do this by ad
 
 If you are not familiar with Python unittests they are pretty easy to write.  You create your own class that is a subclass of TestCase, or in our work TestCaseGui so we get some graphical output. Your tests are all methods of the class and must start with the word "test".  There are a host of assertXXXX functions that you can use.  Check out the `unittest documentation here <https://docs.python.org/2/library/unittest.html#assert-methods>`_
 
+The second important addition in this example is the :autograde: option.  This will allow the grade to make use of your unittests and assign a grade automatically for this particular problem.
+
 
 .. activecode:: sigcse_ex3
     :language: python
+    :autograde: unittest
 
     Write a Python function to sum the first N numbers starting with 0.  So if N is 4 then your function should add 0 + 1 + 2 + 3
     ~~~~
