@@ -146,6 +146,8 @@ Or the tests can be invisible to the user as shown below.
 
 This example is from the *How to Think Like a Computer Scientist* ebook.  See exercise 8 at the following link `Ex-8 <http://interactivepython.org/runestone/static/thinkcspy/Selection/Exercises.html>`_.  Complete the code so that all the tests pass.
 
+Write the function ``is_odd(n)`` that returns ``True`` when ``n`` is odd and ``False`` otherwise.
+
 .. activecode:: odd
    :nocodelens:
 
