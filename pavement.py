@@ -49,7 +49,11 @@ options(
                        'use_services': 'true',
                        'python3': 'true',
                        'dburl': '',
-                       'basecourse': 'sigcse2019'
+                       'basecourse': 'sigcse2019',
+                       'downloads_enabled': 'false',
+                       'default_ac_lang': 'python',
+                       'enable_chatcodes': 'false',
+                       'allow_pairs': 'false'
                         }
     )
 )
