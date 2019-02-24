@@ -33,27 +33,8 @@ You can:
       :maxdepth: 2
 
       Registration/registerYourself.rst
+      Directives/toctree.rst
 
-
-SECTION 2: Interactive Features
-:::::::::::::::::::::::::::::::
-
-The ebooks allow learners to run and edit code using ActiveCode, visualize code execution, answer multiple-choice questions, answer fill in the blank questions, solve mixed up code problems, solve clickable code problems, match definitions to concepts, listen to audio tours of code, and more.
-
-.. toctree::
-      :maxdepth: 2
-
-      Directives/activecodePython.rst
-      Directives/activecodeOther.rst
-      Directives/clickable.rst
-      Directives/codelensPython.rst
-      Directives/fillBlank.rst
-      Directives/matching.rst
-      Directives/mixedUp.rst
-      Directives/multipleChoice.rst
-      Directives/poll.rst
-      Directives/shortAnswer.rst
-      Directives/timedExam.rst
 
 SECTION 3: Other Features
 :::::::::::::::::::::::::
