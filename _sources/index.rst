@@ -11,13 +11,15 @@ Ebooks on Runestone Interactive
    :maxdepth: line.
 
 .. Sources can also be included from subfolders of this directory.
-   (e.g. "DataStructures/queues.rst").
+
 
 .. raw:: html
 
-    <ul>
-    <li><a href = "assignments.html">Assignments</a></li>
-    </ul>
+   <ul>
+   <li><a href="../../assignments/chooseAssignment.html">Assignments</a></li>
+   </ul>
+   (e.g. "DataStructures/queues.rst").
+
 
 SECTION 1: Introduction
 :::::::::::::::::::::::
@@ -30,66 +32,16 @@ You can:
 * Create a private custom course for your students as shown in the following link `custom-course <http://runestoneinteractive.org/customcourse.html>`_.  Your custom course will have to have a unique name and your students can register for the course using the unique name.
 
 .. toctree::
+      :numbered:
       :maxdepth: 2
 
       Registration/registerYourself.rst
       Directives/toctree.rst
-
-
-SECTION 3: Other Features
-:::::::::::::::::::::::::
-
-.. toctree::
-      :maxdepth: 2
-
-      Directives/disqus.rst
-      Directives/tabbedPanel.rst
-      Directives/reveal.rst
-      Directives/video.rst
-
-SECTION 4: Creating a Custom Course
-:::::::::::::::::::::::::::::::::::
-
-.. toctree::
-      :maxdepth: 2
-
-      CustomCourses/intro.rst
-      CustomCourses/createCourse.rst
+      CustomCourses/toctree.rst
       Registration/inviteStudents.rst
+      InstructorInterface/toctree.rst
+      WritingExercises/toctree.rst
 
-
-SECTION 5: Using the Instructor Dashboard
-:::::::::::::::::::::::::::::::::::::::::
-
-.. toctree::
-      :maxdepth: 2
-
-      CustomCourses/betaInstructorInterface.rst
-      CustomCourses/viewStudentActivity.rst
-      CustomCourses/instructorAssignments.rst
-      CustomCourses/assembleAssignment.rst
-      CustomCourses/gradeAssignment.rst
-
-SECTION 6: Customizing the Table of Contents
-::::::::::::::::::::::::::::::::::::::::::::
-
-.. toctree::
-    :maxdepth: 2
-
-    WritingExercises/ebookStructure.rst
-    WritingExercises/editingTheTOC.rst
-
-    
-SECTION 7: Writing your own Exercises
-:::::::::::::::::::::::::::::::::::::
-
-.. toctree::
-    :maxdepth: 2
-    
-    WritingExercises/theExerciseBank.rst
-    WritingExercises/multipleChoice.rst
-    WritingExercises/advancedRunestone.rst
-    WritingExercises/ExerciseAddAProblem.rst
 
 What's Next?
 ::::::::::::
@@ -106,8 +58,8 @@ No matter what your use case for Runestone textbooks, we encourage you to become
 * If you have a week this summer, we would welcome you to join us at the second Runestone hack week in beautiful Ann Arbor.
 
 
-Section 8: Additional Useful Links
-::::::::::::::::::::::::::::::::::
+Additional Useful Links
+:::::::::::::::::::::::
 
 Runestone uses the ``restructuredText`` (rst) markup language.  We chose this over markdown largely because rst is extensible.  Nearly all of the basic markup tasks are already handled by restructuredText.  You should check out the docs for the basics of restructuredText (link below). Our extensions are all for the interactive elements.  One key hint about restructuredText:  Its like **Python** -- *indentation matters!*
 

@@ -1,5 +1,5 @@
-SECTION 2: Interactive Features
-:::::::::::::::::::::::::::::::
+Interactive Features
+::::::::::::::::::::
 
 The ebooks allow learners to run and edit code using ActiveCode, visualize code execution, answer multiple-choice questions, answer fill in the blank questions, solve mixed up code problems, solve clickable code problems, match definitions to concepts, listen to audio tours of code, and more.
 
@@ -17,3 +17,14 @@ The ebooks allow learners to run and edit code using ActiveCode, visualize code 
       poll.rst
       shortAnswer.rst
       timedExam.rst
+
+Section 3: Other Features
+:::::::::::::::::::::::::
+
+.. toctree::
+      :maxdepth: 2
+
+      disqus.rst
+      tabbedPanel.rst
+      reveal.rst
+      video.rst
