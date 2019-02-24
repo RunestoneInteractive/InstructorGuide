@@ -18,11 +18,10 @@ Ebooks on Runestone Interactive
    <ul>
    <li><a href="../../assignments/chooseAssignment.html">Assignments</a></li>
    </ul>
-   (e.g. "DataStructures/queues.rst").
 
 
-SECTION 1: Introduction
-:::::::::::::::::::::::
+Introduction
+::::::::::::
 
 The Runestone platform allows you to create, modify, use, and serve interactive ebooks.
 

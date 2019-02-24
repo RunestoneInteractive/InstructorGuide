@@ -18,8 +18,8 @@ The ebooks allow learners to run and edit code using ActiveCode, visualize code 
       shortAnswer.rst
       timedExam.rst
 
-Section 3: Other Features
-:::::::::::::::::::::::::
+Other Features
+::::::::::::::
 
 .. toctree::
       :maxdepth: 2
