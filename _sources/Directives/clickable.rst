@@ -10,7 +10,7 @@ Clickable Code
 	
 The clickable code feature allows the student to click on particular lines of code and check if they have clicked on the correct lines.  It can be useful for helping students identify particular parts of code. It works with any text. 
 
-The following example is from the *Java Review* ebook.  You can see it by clicking on the following link `Click-Variable <http://interactivepython.org/runestone/static/JavaReview/VariableBasics/declareVars.html>`_.
+The following example is from the *Java Review* ebook.  You can see it by clicking on the following link `Click-Variable <https://runestone.academy/runestone/static/JavaReview/VariableBasics/declareVars.html>`_.
 
 .. clickablearea:: var_declare
     :question: Click on all of the variable declarations in the following code.
@@ -35,7 +35,7 @@ The following example is from the *Java Review* ebook.  You can see it by clicki
     
 You can also use clickable code to identify particular indices in an array.
 
-The following example is from the *Java Review* ebook.  You can see it by clicking on the following link `Click-Array <http://interactivepython.org/runestone/static/JavaReview/ArrayBasics/abasics.html>`_.
+The following example is from the *Java Review* ebook.  You can see it by clicking on the following link `Click-Array <https://runestone.academy/runestone/static/JavaReview/ArrayBasics/abasics.html>`_.
 
 .. clickablearea:: arrayClick2
         :question: Click on the values at index 0 and 2 in the following array.

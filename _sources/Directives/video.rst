@@ -10,7 +10,7 @@ Video
 	
 You can embed videos directly in an ebook.  
 
-The following example is from the *Java Review* ebook.  See it at the following link `Embedded-Video <http://interactivepython.org/runestone/static/JavaReview/ArrayBasics/abasics.html>`_.
+The following example is from the *Java Review* ebook.  See it at the following link `Embedded-Video <https://runestone.academy/runestone/static/JavaReview/ArrayBasics/abasics.html>`_.
 
 .. video:: v_array
    :controls:
@@ -24,7 +24,7 @@ Video - YouTube
 
 You can also embed video that is on YouTube.  
 
-The following example is from the *Java Review* ebook. See it at the following link `YouTube <http://interactivepython.org/runestone/static/JavaReview/SearchSort/selSort.html>`_.
+The following example is from the *Java Review* ebook. See it at the following link `YouTube <https://runestone.academy/runestone/static/JavaReview/SearchSort/selSort.html>`_.
 
 .. youtube:: Ns4TPTC8whw
     :align: center

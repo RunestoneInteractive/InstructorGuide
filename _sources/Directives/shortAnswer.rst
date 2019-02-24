@@ -10,7 +10,7 @@ Short Answer
 	
 A short answer question allows the user to enter free form text. 
 
-The following example is from the *Java Review* ebook. You can see this at the following link `Short-Answer <http://interactivepython.org/runestone/static/JavaReview/ArrayBasics/abasics.html>`_.
+The following example is from the *Java Review* ebook. You can see this at the following link `Short-Answer <https://runestone.academy/runestone/static/JavaReview/ArrayBasics/abasics.html>`_.
 
 .. shortanswer:: arrayAnalogy
 

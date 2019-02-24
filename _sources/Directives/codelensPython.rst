@@ -10,7 +10,7 @@ Codelens in Python
 	
 The codelens feature allows the learner to step through Python code using the Python Visualizer from Philip Guo and see the values of the variables change as the code executes.  
 
-The following example in Python is from the *Student Computer Science Principles*.  You can see the following example by click on the following link `Codelens-Python <http://interactivepython.org/runestone/static/StudentCSP/CSPNameNumbers/driving.html>`_.
+The following example in Python is from the *Student Computer Science Principles*.  You can see the following example by click on the following link `Codelens-Python <https://runestone.academy/runestone/static/StudentCSP/CSPNameNumbers/driving.html>`_.
 
 .. codelens:: Chicago_2_Dallas_Cost
 

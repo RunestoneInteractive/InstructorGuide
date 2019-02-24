@@ -13,7 +13,7 @@ The ActiveCode Feature also allows you to execute JavaScript, or HTML directly o
 Running JavaScript 
 --------------------
 
-You can run JavaScript code.  The following example is from the *Fundamentals of Web Programming* ebook at `JavaScript1 <http://interactivepython.org/runestone/static/webfundamentals/Javascript/iteration.html>`_.
+You can run JavaScript code.  The following example is from the *Fundamentals of Web Programming* ebook at `JavaScript1 <https://runestone.academy/runestone/static/webfundamentals/Javascript/iteration.html>`_.
 
 .. activecode:: jstest1
    :language: javascript
@@ -26,7 +26,7 @@ You can run JavaScript code.  The following example is from the *Fundamentals of
 Running HTML
 -----------------
 
-You can show a generated HTML document.  The following example is from the *Fundamentals of Web Programming* ebook at `HTML1 <http://interactivepython.org/runestone/static/webfundamentals/HTML/advanced.html#unordered-lists>`_.
+You can show a generated HTML document.  The following example is from the *Fundamentals of Web Programming* ebook at `HTML1 <https://runestone.academy/runestone/static/webfundamentals/HTML/advanced.html#unordered-lists>`_.
 
 .. activecode:: htmltest1
    :language: htmlmixed
@@ -41,7 +41,7 @@ You can show a generated HTML document.  The following example is from the *Fund
 Running HTML with JavaScript
 --------------------------------
 
-You can show a generated HTML document that includes JavaScript.  The following example is from the *Fundamentals of Web Programming* ebook at `HTML+JavaScript <http://interactivepython.org/runestone/static/webfundamentals/Javascript/intro.html>`_.
+You can show a generated HTML document that includes JavaScript.  The following example is from the *Fundamentals of Web Programming* ebook at `HTML+JavaScript <https://runestone.academy/runestone/static/webfundamentals/Javascript/intro.html>`_.
 
 .. activecode:: jstest2
    :language: htmlmixed
@@ -65,7 +65,7 @@ Running Java
 
 You can run Java code as well.  It will be sent to a backend server (Jobe) and executed and then the results will be displayed in the browser window.
 
-The following example is from the *Java Review* ebook.  You can see it by clicking the following `Java-Vars <http://interactivepython.org/runestone/static/JavaReview/VariableBasics/changeVars.html>`_.  
+The following example is from the *Java Review* ebook.  You can see it by clicking the following `Java-Vars <https://runestone.academy/runestone/static/JavaReview/VariableBasics/changeVars.html>`_.  
 
 .. activecode:: java1
    :language: java
@@ -86,7 +86,7 @@ Editing Java
 
 Students can edit Java code and run it again.  Run the following code.  Next, change the code below to print a countdown from 10 to 1 and run it again. 
 
-The example below is from the *Java Review* ebook.  You can see it by clicking on the following link `Countdown <http://interactivepython.org/runestone/static/JavaReview/LoopBasics/LoopPractice.html>`_.
+The example below is from the *Java Review* ebook.  You can see it by clicking on the following link `Countdown <https://runestone.academy/runestone/static/JavaReview/LoopBasics/LoopPractice.html>`_.
 
 .. activecode:: while_loop_ex1
    :language: java
@@ -114,7 +114,7 @@ We hope to embed the Java Visualizer in the ebook in the future in the same way 
 Audio Tours of Code
 ---------------------
 
-You can have audio tours of any language.  See the following link for an example in the Java Review ebook at `Java-Audio-Tour <http://interactivepython.org/runestone/static/JavaReview/JavaBasics/firstClass.html>`_.   Click on the *Audio Tour* button.
+You can have audio tours of any language.  See the following link for an example in the Java Review ebook at `Java-Audio-Tour <https://runestone.academy/runestone/static/JavaReview/JavaBasics/firstClass.html>`_.   Click on the *Audio Tour* button.
 
 
  

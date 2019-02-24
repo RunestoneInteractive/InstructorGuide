@@ -12,7 +12,7 @@ A timed exam can have a time limit or can just show how much time the learner ha
 
 You can include several different types of questions in a timed exam, but it is best to separate questions that should be centered like writing code questions from the left-justified questions like multiple-choice questions.  
 	
-The following example keeps track of the time used, but does not have a time limit.  It is from the *Student CSP* ebook.  It can be seen by clicking on the following link `Timed-Exam-Unlimited <http://interactivepython.org/runestone/static/StudentCSP/CSPrinTeasers/pretest.html>`_.
+The following example keeps track of the time used, but does not have a time limit.  It is from the *Student CSP* ebook.  It can be seen by clicking on the following link `Timed-Exam-Unlimited <https://runestone.academy/runestone/static/StudentCSP/CSPrinTeasers/pretest.html>`_.
 
 .. timed:: noTimeLimit1
     
@@ -113,7 +113,7 @@ The following example keeps track of the time used, but does not have a time lim
               else:   
                   print ("Prehypertension")
                   
-The following is an example where there is a time limit.  It comes from the *Java Review* ebook. See the original by clicking on the following `Timed-Exam <http://interactivepython.org/runestone/static/JavaReview/Tests/test1.html>`_.
+The following is an example where there is a time limit.  It comes from the *Java Review* ebook. See the original by clicking on the following `Timed-Exam <https://runestone.academy/runestone/static/JavaReview/Tests/test1.html>`_.
 
 .. timed:: timeLimit1
    :timelimit: 10

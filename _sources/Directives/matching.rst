@@ -8,7 +8,7 @@ Matching
 ..	index::
 	single: matching
 	
-The matching feature allows the student to drag the definition to the concept. The following example is from the *Java Review* ebook.  You can see it at the following link `Matching <http://interactivepython.org/runestone/static/JavaReview/VariableBasics/VariableSummary.html>`_.
+The matching feature allows the student to drag the definition to the concept. The following example is from the *Java Review* ebook.  You can see it at the following link `Matching <https://runestone.academy/runestone/static/JavaReview/VariableBasics/VariableSummary.html>`_.
 
 .. dragndrop:: var-matching
     :feedback: Look up the concepts to see what they mean in Java

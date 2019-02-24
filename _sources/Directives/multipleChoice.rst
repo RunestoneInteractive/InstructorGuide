@@ -10,7 +10,7 @@ Multiple-Choice
 	
 The multiple-choice feature allows the student to answer a multiple-choice question and get immediate feedback.  The questions can have one correct answer or multiple correct answers.
 
-The following Python example from the *Student Computer Science Principles* ebook has only one correct answer.  You can see it when you click the following link `Multiple-Choice-One-Answer <http://interactivepython.org/runestone/static/StudentCSP/CSPWhileAndForLoops/whileCount.html>`_.
+The following Python example from the *Student Computer Science Principles* ebook has only one correct answer.  You can see it when you click the following link `Multiple-Choice-One-Answer <https://runestone.academy/runestone/static/StudentCSP/CSPWhileAndForLoops/whileCount.html>`_.
 
 .. mchoice:: NegativeCounter-Python
    :answer_a: 5 4 3 2 1
@@ -32,7 +32,7 @@ The following Python example from the *Student Computer Science Principles* eboo
           output = output + str(x) + " "
       print(output)
       
-The following Java example from the *Java Review* ebook has only one correct answer.  You can see it when you click on the following link `Java-Ex-One-Answer <http://interactivepython.org/runestone/static/JavaReview/VariableBasics/vEasyMC.html>`_.
+The following Java example from the *Java Review* ebook has only one correct answer.  You can see it when you click on the following link `Java-Ex-One-Answer <https://runestone.academy/runestone/static/JavaReview/VariableBasics/vEasyMC.html>`_.
 
 .. mchoice:: JavaMC-easy1
    :answer_a: 2
@@ -51,7 +51,7 @@ The following Java example from the *Java Review* ebook has only one correct ans
 
      System.out.println(2 % 3);
 
-The following Python example from the *How to Think Like a Computer Scientist* ebook requires more than one answer to be correct.  You can see it at the bottom of the page when you click the following link `Multiple-Choice-Multiple-Answer <http://interactivepython.org/runestone/static/thinkcspy/Selection/BooleanValuesandBooleanExpressions.html>`_.
+The following Python example from the *How to Think Like a Computer Scientist* ebook requires more than one answer to be correct.  You can see it at the bottom of the page when you click the following link `Multiple-Choice-Multiple-Answer <https://runestone.academy/runestone/static/thinkcspy/Selection/BooleanValuesandBooleanExpressions.html>`_.
 
 .. mchoice:: Boolean1
    :multiple_answers:

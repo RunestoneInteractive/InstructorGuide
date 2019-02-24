@@ -11,7 +11,7 @@ Disqus - Threaded Discussion
 	
 Disqus is a tool for threaded discussions. You can embed disqus into an ebook.   
 	
-You can see it on the Discussion tab at the following link `Disqus <http://interactivepython.org/runestone/static/thinkcspy/Strings/Exercises.html>`_.
+You can see it on the Discussion tab at the following link `Disqus <https://runestone.academy/runestone/static/thinkcspy/Strings/Exercises.html>`_.
 	
 
 

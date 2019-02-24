@@ -16,7 +16,7 @@ Running Python
 
 The following example calculates the body mass index (BMI) in Python for a person who is 5 feet tall and weighs 110 pounds.  Click on the *Run* button to run this code.
 
-This example is from the *Student Computer Science Principles* ebook.  You can find it by clicking on the following `bmi <http://interactivepython.org/runestone/static/StudentCSP/CSPrinTeasers/computeNumbers.html>`_.
+This example is from the *Student Computer Science Principles* ebook.  You can find it by clicking on the following `bmi <https://runestone.academy/runestone/static/StudentCSP/CSPrinTeasers/computeNumbers.html>`_.
 
 .. activecode:: BMI2
     :nocodelens:
@@ -31,7 +31,7 @@ This example is from the *Student Computer Science Principles* ebook.  You can f
     
 In Python you can also run programs that use Turtles which are similar turtles in Seymour Papert's LOGO programing language.  
 
-This example in the *Student Computer Science Principles* ebook. You can find it by clicking on the following `turtle1 <http://interactivepython.org/runestone/static/StudentCSP/CSPrinTeasers/computeTurtles.html>`_.
+This example in the *Student Computer Science Principles* ebook. You can find it by clicking on the following `turtle1 <https://runestone.academy/runestone/static/StudentCSP/CSPrinTeasers/computeTurtles.html>`_.
 
 .. activecode:: Turtle_1
     :nocodelens:
@@ -45,7 +45,7 @@ This example in the *Student Computer Science Principles* ebook. You can find it
     
 You can even manipulate the pixels in a picture. The code below removes all the red from the picture below. 
 
-This example is from the *Student Computer Science Principles* ebook. You can find it by clicking on the following `image1 <http://interactivepython.org/runestone/static/StudentCSP/CSPrinTeasers/computeImages.html>`_.
+This example is from the *Student Computer Science Principles* ebook. You can find it by clicking on the following `image1 <https://runestone.academy/runestone/static/StudentCSP/CSPrinTeasers/computeImages.html>`_.
 
 .. raw:: html
 
@@ -79,7 +79,7 @@ Editing Python
 
 Students can edit the code and run it again.  Try modifying the code below to calculate the BMI for a person who is 5 feet 7 inches tall and weighs 140 pounds and then run the code again.  Notice that the answer changes. 
 
-This example is from the *Student Computer Science Principles* ebook.  You can find it by clicking on the following `bmi-edit <http://interactivepython.org/runestone/static/StudentCSP/CSPrinTeasers/computeNumbers.html>`_.
+This example is from the *Student Computer Science Principles* ebook.  You can find it by clicking on the following `bmi-edit <https://runestone.academy/runestone/static/StudentCSP/CSPrinTeasers/computeNumbers.html>`_.
 
 .. activecode:: BMI-Edit2
     :nocodelens:
@@ -97,7 +97,7 @@ Stepping through Python Code using the CodeLens (Python Visualizer)
 
 You can also visualize the execution of the code in an active code step by step using Phillip Guo's Python Visualizer.  Click on the *Show Codelens* button in the example below.  Then click on the *Forward* button to execute the next line.
 
-You can see this example in the *Student Computer Science Principles*  ebook by clicking on the following `mirror <http://interactivepython.org/runestone/static/StudentCSP/CSPRepeatStrings/mirror.html>`_.
+You can see this example in the *Student Computer Science Principles*  ebook by clicking on the following `mirror <https://runestone.academy/runestone/static/StudentCSP/CSPRepeatStrings/mirror.html>`_.
 
 .. activecode:: Copy_Mirror
 	
@@ -117,7 +117,7 @@ Audio Tours of Code
 
 Audio tours use audio to describe the code.  When you start an audio tour it will highlight one or more lines of code as it explains the code.  It uses standard audio buttons to go forward, back, to the first, or to the last.  Click the *Audio Tour* button for an example, then click on *Lines of Code* to play that tour. You can create line by line tours or structural tours.  A structural tour would highlight all the lines that declare variables for example.  
   
-You can try an example in the student CSP ebook by clicking on the following `mirror-audio <http://interactivepython.org/runestone/static/StudentCSP/CSPRepeatStrings/mirror.html>`_.
+You can try an example in the student CSP ebook by clicking on the following `mirror-audio <https://runestone.academy/runestone/static/StudentCSP/CSPRepeatStrings/mirror.html>`_.
 
 Unit Tests of Code
 ----------------------
@@ -144,7 +144,7 @@ In the example below fix the code so that it passes both tests.
    
 Or the tests can be invisible to the user as shown below.
 
-This example is from the *How to Think Like a Computer Scientist* ebook.  See exercise 8 at the following link `Ex-8 <http://interactivepython.org/runestone/static/thinkcspy/Selection/Exercises.html>`_.  Complete the code so that all the tests pass.
+This example is from the *How to Think Like a Computer Scientist* ebook.  See exercise 8 at the following link `Ex-8 <https://runestone.academy/runestone/static/thinkcspy/Selection/Exercises.html>`_.  Complete the code so that all the tests pass.
 
 Write the function ``is_odd(n)`` that returns ``True`` when ``n`` is odd and ``False`` otherwise.
 

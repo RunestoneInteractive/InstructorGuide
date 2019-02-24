@@ -10,7 +10,7 @@ Reveal: Hide or Show Content
 	
 You can hide or show content using a reveal.  
 
-You can see an example of this from the *Student CSP* ebook by clicking on the following `Reveal <http://interactivepython.org/runestone/static/StudentCSP/CSPWebData/pollData.html>`_. 
+You can see an example of this from the *Student CSP* ebook by clicking on the following `Reveal <https://runestone.academy/runestone/static/StudentCSP/CSPWebData/pollData.html>`_. 
 
 .. reveal:: pol_Data1
     :showtitle: Show

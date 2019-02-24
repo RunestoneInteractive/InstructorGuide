@@ -10,7 +10,7 @@ Tabbed Panel
 	
 A tabbed panel can have several tabs.  It is often used to show a problem and an answer.  
                 
-The following is from the *Java Review* ebook.  See it at the following link `JavaTimed <http://interactivepython.org/runestone/static/JavaReview/VariableBasics/VariablePractice.html>`_.
+The following is from the *Java Review* ebook.  See it at the following link `JavaTimed <https://runestone.academy/runestone/static/JavaReview/VariableBasics/VariablePractice.html>`_.
 
 .. tabbed:: Java1
 
@@ -56,7 +56,7 @@ The following is from the *Java Review* ebook.  See it at the following link `Ja
                   }
               }
               
-The following example is from the *How to Think Like a Computer Scientist* ebook.  See the following link `Tabbed <http://interactivepython.org/runestone/static/thinkcspy/Lists/Exercises.html>`_.
+The following example is from the *How to Think Like a Computer Scientist* ebook.  See the following link `Tabbed <https://runestone.academy/runestone/static/thinkcspy/Lists/Exercises.html>`_.
 
 .. question:: tabex
 

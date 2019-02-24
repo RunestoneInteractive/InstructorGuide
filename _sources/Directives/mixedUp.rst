@@ -17,7 +17,7 @@ Order Correct Lines
 
 You can actually have the learner order any type of text including Python and Java code.
 
-The following Python example is from the student CSP ebook at `poem <http://interactivepython.org/runestone/static/StudentCSP/CSPNameStrings/madlib.html>`_.
+The following Python example is from the student CSP ebook at `poem <https://runestone.academy/runestone/static/StudentCSP/CSPNameStrings/madlib.html>`_.
 
 .. parsonsprob:: 4_4_4_Poem
 
@@ -31,7 +31,7 @@ The following Python example is from the student CSP ebook at `poem <http://inte
    =====
    print("And so is Sue.")
    
-The following Java example is from the Java Review ebook at `Mixed-up-Java <http://interactivepython.org/runestone/static/JavaReview/VariableBasics/VariablePracticeParsons.html>`_.
+The following Java example is from the Java Review ebook at `Mixed-up-Java <https://runestone.academy/runestone/static/JavaReview/VariableBasics/VariablePracticeParsons.html>`_.
 
 .. parsonsprob:: ch3ex1muc
    :noindent:
@@ -51,7 +51,7 @@ Distractors
 
 The mixed-up code problems can have one or more distractor blocks that are not needed in a correct solution.  
 
-The following example is from the Java Review ebook at the following link `distractor <http://interactivepython.org/runestone/static/JavaReview/VariableBasics/changeVars.html>`_.
+The following example is from the Java Review ebook at the following link `distractor <https://runestone.academy/runestone/static/JavaReview/VariableBasics/changeVars.html>`_.
 
 **Mixed up programs**
 
@@ -78,7 +78,7 @@ Paired Distractors
 
 Distractors can either be shown like all other lines as we saw in the example above, or can be shown paired with the correct code so that the leaner can more easily pick between the two. 
 
-This example is from the Java Review ebook.  You can see it by clicking on the following `Paired-Distractor <http://interactivepython.org/runestone/static/JavaReview/VariableBasics/declareVars.html>`_.
+This example is from the Java Review ebook.  You can see it by clicking on the following `Paired-Distractor <https://runestone.academy/runestone/static/JavaReview/VariableBasics/declareVars.html>`_.
 
 .. parsonsprob:: declareVars
    :noindent:
@@ -102,7 +102,7 @@ Indenting the Blocks
 
 In Python indentation is used to show which lines of code are part of the same block.  
 
-The following example is from the student CSP ebook.  You can see it by clicking on the following `Indent <http://interactivepython.org/runestone/static/StudentCSP/CSPRepeatStrings/mirror.html>`_.
+The following example is from the student CSP ebook.  You can see it by clicking on the following `Indent <https://runestone.academy/runestone/static/StudentCSP/CSPRepeatStrings/mirror.html>`_.
 
 .. parsonsprob:: 9_3_3_Palindrome
 
