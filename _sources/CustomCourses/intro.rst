@@ -1,5 +1,9 @@
+.. qnum::
+   :prefix: 3-1-
+   :start: 1
+
 Create a Custom Course
-======================
+===========================
 
 As a teacher, you can make a custom course with a unique name on the Runestone server from an existing Runestone book. Your students will register for your custom course using the unique name, and then their activities will be tracked. You will then be able to:
 

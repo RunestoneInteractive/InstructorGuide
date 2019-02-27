@@ -8,9 +8,9 @@ Mixed-Up Lines - Parsons Problems
 
 
 ..	index::
-	single: mixed-up lines
-	
-The mixed-up lines feature allows you to break lines into blocks and have the learner assemble the blocks in the correct order. These types of problems are also called Parsons problems.  They can help students learn to identify syntax errors, learn particular algorithms, and uncover student misconceptions   
+	  single: mixed-up lines
+
+The mixed-up lines feature allows you to break lines into blocks and have the learner assemble the blocks in the correct order. These types of problems are also called Parsons problems.  They can help students learn to identify syntax errors, learn particular algorithms, and uncover student misconceptions
 
 Order Correct Lines
 ----------------------
@@ -21,16 +21,16 @@ The following Python example is from the student CSP ebook at `poem <https://run
 
 .. parsonsprob:: 4_4_4_Poem
 
-   Put the blocks below into the correct order to print a twist on a famous poem.   
+   Put the blocks below into the correct order to print a twist on a famous poem.
    -----
-   print("Roses are red.")  	
-   ===== 
+   print("Roses are red.")
+   =====
    print("Violets are blue.)
-   =====                
+   =====
    print("Sugar is sweet.")
    =====
    print("And so is Sue.")
-   
+
 The following Java example is from the Java Review ebook at `Mixed-up-Java <https://runestone.academy/runestone/static/JavaReview/VariableBasics/VariablePracticeParsons.html>`_.
 
 .. parsonsprob:: ch3ex1muc
@@ -49,7 +49,7 @@ The following Java example is from the Java Review ebook at `Mixed-up-Java <http
 Distractors
 ------------
 
-The mixed-up code problems can have one or more distractor blocks that are not needed in a correct solution.  
+The mixed-up code problems can have one or more distractor blocks that are not needed in a correct solution.
 
 The following example is from the Java Review ebook at the following link `distractor <https://runestone.academy/runestone/static/JavaReview/VariableBasics/changeVars.html>`_.
 
@@ -71,12 +71,12 @@ The following example is from the Java Review ebook at the following link `distr
    y = temp;
    =====
    y = x; #distractor
-   
+
 
 Paired Distractors
 ---------------------
 
-Distractors can either be shown like all other lines as we saw in the example above, or can be shown paired with the correct code so that the leaner can more easily pick between the two. 
+Distractors can either be mixed in randomly with the correct code blocks as seen in the example above, or can be shown paired with the correct code so that the learner can more easily pick between the two.
 
 This example is from the Java Review ebook.  You can see it by clicking on the following `Paired-Distractor <https://runestone.academy/runestone/static/JavaReview/VariableBasics/declareVars.html>`_.
 
@@ -95,12 +95,12 @@ This example is from the Java Review ebook.  You can see it by clicking on the f
    =====
    boolean hasInsurance = false;
    =====
-   Boolean hasInsurance = false; #paired 
-  
-Indenting the Blocks
---------------------- 
+   Boolean hasInsurance = false; #paired
 
-In Python indentation is used to show which lines of code are part of the same block.  
+Indenting the Blocks
+---------------------
+
+In Python indentation is used to show which lines of code are part of the same block.
 
 The following example is from the student CSP ebook.  You can see it by clicking on the following `Indent <https://runestone.academy/runestone/static/StudentCSP/CSPRepeatStrings/mirror.html>`_.
 
@@ -118,4 +118,69 @@ The following example is from the student CSP ebook.  You can see it by clicking
    print(newStr)
 
 
-   
+Adding a Help Button
+---------------------
+
+If you add the option :adaptive: to a mixed up code problem, it will add a help button.  If the learner has attempted at least 3 solutions and sill hasn't solved the problem then an alert will show saying that help is available.  If the learner clicks on the help button it will make the problem easier by removing a distractor, providing indentation, and/or combining blocks.  The result from one mixed up code problem can also change the difficulty of the next adaptive mixed up code problem.  If the learner struggled to solve the last problem, the next will be made easier by paring distractors or getting rid of distractors.  If the learner solved the last problem in just one attempt, the next problem will be made harder by adding distractors or mixing distractors in randomly with the correct code blocks.
+
+The following example is from the student CSP ebook. You can see it by clicking on the following `Help <https://runestone.academy/runestone/static/StudentCSP/CSPRepeatTurtles/turtleGeom.html>`_.
+
+.. parsonsprob:: 10_2_2_Triangle
+   :adaptive:
+
+   The following program uses a turtle to draw a triangle as shown to the left, <img src="../_static/TurtleTriangle.png" width="150" align="left" hspace="10" vspace="5"/> but the lines are mixed up.  The program should do all necessary set-up and create the turtle.  After that, iterate (loop) 3 times, and each time through the loop the turtle should go forward 100 pixels, and then turn left 120 degrees.<br /><br /><p>Drag the needed blocks of statements from the left column to the right column and put them in the right order with the correct indention.  There may be additional blocks that are not needed in a correct solution.  Click on <i>Check Me</i> to see if you are right. You will be told if any of the lines are in the wrong order or are the wrong blocks.</p>
+   -----
+   from turtle import *
+   =====
+   space = Screen()
+   =====
+   space = screen() #paired
+   =====
+   marie = Turtle()
+   =====
+   # repeat 3 times
+   for i in range(3):
+   =====
+   # repeat 3 times
+   for i in range(3) #paired
+   =====
+       marie.forward(100)
+   =====
+       marie.forward(100 #paired
+   =====
+       marie.left(120)
+   =====
+       marie.turn(120) #paired
+
+Adding Labels For Group Work
+-----------------------------
+
+If you add the option :numbered: left the mixed up code problems will have numbered labels on the left side of the code blocks.  You can also put the labels on the right side.
+
+.. parsonsprob:: 10_2_2_labels
+   :adaptive:
+   :numbered: left
+
+   The following program uses a turtle to draw a triangle as shown to the left, <img src="../_static/TurtleTriangle.png" width="150" align="left" hspace="10" vspace="5"/> but the lines are mixed up.  The program should do all necessary set-up and create the turtle.  After that, iterate (loop) 3 times, and each time through the loop the turtle should go forward 100 pixels, and then turn left 120 degrees.<br /><br /><p>Drag the needed blocks of statements from the left column to the right column and put them in the right order with the correct indention.  There may be additional blocks that are not needed in a correct solution.  Click on <i>Check Me</i> to see if you are right. You will be told if any of the lines are in the wrong order or are the wrong blocks.</p>
+   -----
+   from turtle import *
+   =====
+   space = Screen()
+   =====
+   space = screen() #paired
+   =====
+   marie = Turtle()
+   =====
+   # repeat 3 times
+   for i in range(3):
+   =====
+   # repeat 3 times
+   for i in range(3) #paired
+   =====
+       marie.forward(100)
+   =====
+       marie.forward(100 #paired
+   =====
+       marie.left(120)
+   =====
+       marie.turn(120) #paired

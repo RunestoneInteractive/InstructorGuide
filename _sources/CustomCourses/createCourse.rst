@@ -1,13 +1,12 @@
 How to Create a Custom Course
 -------------------------------------
 
-1. Log in to the `runestone server <https://runestone.academy>`_ if your already have an account with Runestone Interactive.  If you don't have an account then you can create one by clicking on the following `Reg Link <https://runestone.academy/runestone/default/user/register>`_.
+1. Log in to the `runestone server <https://runestone.academy>`_. if you already have an account with Runestone Interactive.  If you don't have an account then you can create one by clicking on the following `Reg Link <https://runestone.academy/runestone/default/user/register>`_.
 
-.. figure:: Figures/login.JPG
+.. figure:: Figures/reg.png
     :width: 600px
     :align: center
     :alt: shows the login screen
-    :figclass: align-center
 
     Figure 1: The login screen for Runestone Interactive
 
@@ -17,7 +16,6 @@ How to Create a Custom Course
     :width: 800px
     :align: center
     :alt: shows the login screen
-    :figclass: align-center
 
     Figure 2: The choose course screen for Runestone Interactive
 
@@ -27,7 +25,6 @@ How to Create a Custom Course
     :width: 800px
     :align: center
     :alt: Clicking on the instructor's page
-    :figclass: align-center
 
     Figure 3: How to go to the instructor's page
 
@@ -37,7 +34,6 @@ How to Create a Custom Course
     :width: 800px
     :align: center
     :alt: Going to the Create your own Course page
-    :figclass: align-center
 
     Figure 4: How to go to the Create your own Course page
 
@@ -47,7 +43,6 @@ How to Create a Custom Course
     :width: 800px
     :align: center
     :alt: A filled out create a course form
-    :figclass: align-center
 
     Figure 5: A filled out create a course form
 
@@ -57,9 +52,7 @@ How to Create a Custom Course
     :width: 800px
     :align: center
     :alt: The screen that shows that the custom course is building
-    :figclass: align-center
 
     Figure 6: The page that is shown while the custom course is building
-    
-7.  Your students can register for your custom course by using the unique name that you used when you created your custom course at the following link `Registration <https://runestone.academy/runestone/default/user/register>`_..  If they already have a login on Runestone Interactive they can simply add another course.
 
+7.  Your students can register for your custom course by using the unique name that you used when you created your custom course at the following link `Registration <https://runestone.academy/runestone/default/user/register>`_..  If they already have a login on Runestone Interactive they can simply add another course.

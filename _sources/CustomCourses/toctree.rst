@@ -5,4 +5,4 @@ Creating a Custom Course
       :maxdepth: 2
 
       intro.rst
-      createCourse.rst
+      createCourse.rst 

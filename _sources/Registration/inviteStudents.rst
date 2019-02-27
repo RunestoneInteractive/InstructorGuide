@@ -1,3 +1,5 @@
+.. _student_reg_chap:
+
 Invite Students to Register
 ===========================
 
