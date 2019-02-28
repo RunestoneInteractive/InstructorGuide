@@ -2,7 +2,7 @@
    :prefix: 2-7-
    :start: 1
 
-Mixed-Up Lines - Parsons Problems
+Mixed-Up Code - Parsons Problems
 =====================================
 
 
@@ -10,10 +10,10 @@ Mixed-Up Lines - Parsons Problems
 ..	index::
 	  single: mixed-up lines
 
-The mixed-up lines feature allows you to break lines into blocks and have the learner assemble the blocks in the correct order. These types of problems are also called Parsons problems.  They can help students learn to identify syntax errors, learn particular algorithms, and uncover student misconceptions
+The mixed-up code feature allows you to break code lines into blocks and have the learner assemble the blocks in the correct order. These types of problems are also called Parsons problems.  They can help students learn to identify syntax errors, learn particular algorithms, and uncover student misconceptions
 
-Order Correct Lines
-----------------------
+Put the Blocks in Order
+--------------------------------
 
 You can actually have the learner order any type of text including Python and Java code.
 
@@ -53,7 +53,7 @@ The mixed-up code problems can have one or more distractor blocks that are not n
 
 The following example is from the Java Review ebook at the following link `distractor <https://runestone.academy/runestone/static/JavaReview/VariableBasics/changeVars.html>`_.
 
-**Mixed up programs**
+**Mixed-up Code**
 
 .. parsonsprob:: 2_swap
    :noindent:
@@ -100,13 +100,13 @@ This example is from the Java Review ebook.  You can see it by clicking on the f
 Indenting the Blocks
 ---------------------
 
-In Python indentation is used to show which lines of code are part of the same block.
+In Python indentation is used to show which lines of code are part of the same block.  Parsons problems can require indentation or not.  The problem below requires indentation.  Notice that there is a line in the solution area on the right that indicates that blocks can be indented.
 
 The following example is from the student CSP ebook.  You can see it by clicking on the following `Indent <https://runestone.academy/runestone/static/StudentCSP/CSPRepeatStrings/mirror.html>`_.
 
 .. parsonsprob:: 9_3_3_Palindrome
 
-   <p>The phrase <code>"A but tuba"</code> is a <b>palindrome</b>.  The letters are the same forward and backward.  The below program generates the output: <code>"abut tub a<=>a but tuba"</code>  Put the lines in the right order with the right indentation.</p>
+   <p>The phrase "A but tuba" is a <b>palindrome</b>.  The letters are the same forward and backward.  The below program generates the output: "abut tub a<=>a but tuba".  Put the lines in the right order with the right indentation.</p>
    -----
    newStr = "<=>"
    phrase = "a but tuba"
@@ -121,7 +121,7 @@ The following example is from the student CSP ebook.  You can see it by clicking
 Adding a Help Button
 ---------------------
 
-If you add the option :adaptive: to a mixed up code problem, it will add a help button.  If the learner has attempted at least 3 solutions and sill hasn't solved the problem then an alert will show saying that help is available.  If the learner clicks on the help button it will make the problem easier by removing a distractor, providing indentation, and/or combining blocks.  The result from one mixed up code problem can also change the difficulty of the next adaptive mixed up code problem.  If the learner struggled to solve the last problem, the next will be made easier by paring distractors or getting rid of distractors.  If the learner solved the last problem in just one attempt, the next problem will be made harder by adding distractors or mixing distractors in randomly with the correct code blocks.
+If you add the option :adaptive: to a mixed-up code problem, it will add a help button.  If the learner has attempted at least 3 solutions and sill hasn't solved the problem then an alert will show saying that help is available.  If the learner clicks on the help button it will make the problem easier by removing a distractor, providing indentation, and/or combining blocks.  The result from one mixed-up code problem can also change the difficulty of the next adaptive mixed-up code problem.  If the learner struggled to solve the last problem, the next will be made easier by paring distractors or getting rid of distractors.  If the learner solved the last problem in just one attempt, the next problem will be made harder by adding distractors or mixing distractors in randomly with the correct code blocks.
 
 The following example is from the student CSP ebook. You can see it by clicking on the following `Help <https://runestone.academy/runestone/static/StudentCSP/CSPRepeatTurtles/turtleGeom.html>`_.
 
@@ -155,7 +155,7 @@ The following example is from the student CSP ebook. You can see it by clicking 
 Adding Labels For Group Work
 -----------------------------
 
-If you add the option :numbered: left the mixed up code problems will have numbered labels on the left side of the code blocks.  You can also put the labels on the right side.
+If you add the option :numbered: left the mixed-up code problems will have numbered labels on the left side of the code blocks.  You can also put the labels on the right side using :numbered: right.  These labels make it easier for groups of learners to work together to solve mixed-up code problems.  They also make is easy to use mixed-up code problems on paper exams.  The students can write the labels in the correct order, which speeds grading.  If you use labels, encourage students to write enough of the code after the label so that they don't have to try to remember what the labels mean.
 
 .. parsonsprob:: 10_2_2_labels
    :adaptive:

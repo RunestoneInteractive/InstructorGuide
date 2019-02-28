@@ -46,7 +46,7 @@ How to Create a Custom Course
 
     Figure 5: A filled out create a course form
 
-6. At this point, you have to wait a while until it completes. For the SIGCSE 2017 workshop, to avoid delayes, we have pre-created a bunch of custom courses for each of the books, from a bunch of fake accounts. You can take over one of those accounts so you don't have to wait for a course to build.
+6. At this point, you have to wait a while until it completes. For the SIGCSE 2019 workshop, to avoid delays, we have pre-created a bunch of custom courses for each of the ebooks, from a bunch of fake accounts. You can take over one of those accounts, so that you don't have to wait for a course to build.
 
 .. figure:: Figures/waitForBuild.JPG
     :width: 800px
@@ -55,4 +55,4 @@ How to Create a Custom Course
 
     Figure 6: The page that is shown while the custom course is building
 
-7.  Your students can register for your custom course by using the unique name that you used when you created your custom course at the following link `Registration <https://runestone.academy/runestone/default/user/register>`_..  If they already have a login on Runestone Interactive they can simply add another course.
+7.  Your students can register for your custom course by using the unique name that you used when you created your custom course at the following link `Registration <https://runestone.academy/runestone/default/user/register>`_..  If they already have a login on Runestone Interactive, they can simply add another course.
