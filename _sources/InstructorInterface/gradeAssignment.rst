@@ -33,7 +33,7 @@ Calculate Totals
 
 Once you have graded all the questions on an assignment, click the Caclulate Totals button to compute the total scores for the whole assignment, or to recalculate them after updating a grade. Again, an alert box will pop up to provide diagnostics about the min and max scores that were calculated.
 
-.. image:: Figures/calculateTotals.JPG
+.. image:: Figures/calculate_totals.png
 
 Release Grades
 --------------
