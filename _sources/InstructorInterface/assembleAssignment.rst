@@ -3,57 +3,60 @@ Create an Assignment
 
 1. To create an assignment, whether graded or ungraded, start by going to the Assignments tab on the instructor interface. Click on the + button to start creating a new assignment.
 
-.. image:: Figures/assignmentsTab.JPG
+.. figure:: Figures/clickPlus.png
+    :width: 800px
+    :align: center
+    :alt: Click on the plus to create a new assignment
+    :figclass: align-center
 
+    Figure 1: Click on the plus to create a new assignment
 
-2. Fill out the form.
+2. Provide a name for the assignment.
 
-.. image:: Figures/createAssignmentForm.JPG
+.. figure:: Figures/nameAssign.png
+    :width: 800px
+    :align: center
+    :alt: Enter a unique name for the assignment
+    :figclass: align-center
 
-3. Select an Assignment and click on Show Assignment. You should see something like this.
+    Figure 2: Enter a unique name for the assignment
 
-.. image:: Figures/bareAssignment.JPG
+3. Add a description and check the other options.
 
-At this point, you can start adding activities/questions to the assignment. There are three tabs at the bottom:
+.. figure:: Figures/week3.png
+    :width: 800px
+    :align: center
+    :alt: Add a description and check the other options
+    :figclass: align-center
 
-* *Summative* questions are meant to assess student learning; students earn points for correct solutions. Typical examples are programming problems, multiple choice questions, or parsons problems (mixed-up code).
+    Figure 3: Add a description and check the other options
 
-* *Formative* questions or activities are meant to give students an opportunity to learn; students earn points for doing the activities, regardless of whether they get them right or not.
+4.  Click on "Save" to save the assignment.  It will show an alert as shown below.  Click on "Ok".
 
-* *External* activities are things that students do outside of the Runestone website, such as reading an article on an external site; this activity is not tracked and students can not earn points from them.
+.. figure:: Figures/savedAlert.png
+    :width: 800px
+    :align: center
+    :alt: The save alert box
+    :figclass: align-center
 
-Later in this workshop, you will learn how to author your own activities. At this point, we will only assemble activities that are already in the Question Bank. Each textbook comes with its own built-in Question Bank.
+    Figure 4: The save alert box.
 
-Let's add a few questions to our assignment.
+5.  Add readings to the assignment by clicking on the "Readings" and checking a chapter or subchapters.  You can change the number of activities the students must complete, the points, and the way the items are graded.
 
-1. Click on Summative
+.. figure:: Figures/addRead.png
+    :width: 800px
+    :align: center
+    :alt: Adding chapters or subchapters to read.
+    :figclass: align-center
 
-2. Click on the + sign. The right side will populate with a form for setting search criteria. The term field lets you perform text search. The Chapter dropdown lets you select exercises from within a particular chapter. Click the search button to find all the activities that meet the criteria you've specified. In this example, we've searched for questions from the Functions chapter that include the term "iteration"; four were found.
+    Figure 5: Adding chapters or subchapters to read.
 
-.. image:: Figures/questionSearch.JPG
+6.  You can add problems to an assignment too by clicking on "Problems" and checking problems to add in the chapters or subchapters. You can change how each problem is graded and which answer to grade.  Click on "Save" when you are done.  Be sure to make the assignment visible to students when it is complete. It will appear on the assignment page which is the first link in the table of contents.
 
-3. If you select a question and scroll down, you will see the markup for the question. Eventually, the "Preview" button will show you what the activity will look like for a student, but it has not been implemented yet. Set how many points you want to give the assignment and click on the Add to Assignment button.
+.. figure:: Figures/addProb.png
+    :width: 800px
+    :align: center
+    :alt: Adding problems to solve.
+    :figclass: align-center
 
-.. image:: Figures/questionAssign.JPG
-
-4. You can repeat this process for additional questions, and add Formative questions as well.
-
-.. image:: Figures/formativePopulated.JPG
-.. image:: Figures/summativePopulated.JPG
-
-5. When you are satisfied with the set of activities, click on the writeAssignment button. You won't get any feedback (sorry about that) but a file will be written on the server so that the next time you "rebuild" the course, the new assignment will be visible.
-
-6. Click back to the Admin tab on the instructor interface. Then click Rebuild.
-
-.. image:: Figures/rebuild.JPG
-
-7. Finally, scroll down and, on the right hand side, click "Rebuild Now". Then wait (scroll down to see a progress indicator
-
-.. image:: Figures/rebuildNow.JPG
-
-8. When the rebuild is finished, you will be redirected the table of contents for your course. Click on the link the assignments page, and you will see a link to the assignment you just created.
-
-.. image:: Figures/assignmentsPage.JPG
-
-.. image:: Figures/assignment1.JPG
-
+    Figure 6: Adding problems to solve.
