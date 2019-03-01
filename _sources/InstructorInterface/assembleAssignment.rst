@@ -73,11 +73,5 @@ Problems have a different set of configurations
 * Auto-grade -- options here are % correct, All or nothing, Interaction, or manual.
 
 * which to grade -- Best Answer, first answer or last answer
-.. figure:: Figures/week3.png
-    :width: 800px
-    :align: center
-    :alt: Add a description and check the other options
-    :figclass: align-center
 
-    Figure 3: Add a description and check the other options
 
