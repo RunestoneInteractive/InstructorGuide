@@ -38,7 +38,7 @@ Once you have graded all the questions on an assignment, click the Caclulate Tot
 Release Grades
 --------------
 
-When you are satisfied that the grade totals have been calculated correctly, click on the Release Grades button at the bottom left. This makes them visible to students. If you make any subsequent changes to grades, you will need to click Calulate Totals again, but you will not need to click on Release Grades again: once released, they stay released.
+When you are satisfied that the grade totals have been calculated correctly, click on the Release Grades button at the bottom left. This makes them visible to students. If you make any subsequent changes to grades, you will need to click Calculate Totals again, but you will not need to click on Release Grades again: once released, they stay released.
 
 How a Student Sees Grades and Comments
 --------------------------------------
@@ -46,3 +46,7 @@ How a Student Sees Grades and Comments
 When viewing an assignment, a student can click on the "Show Feedback" button to see a score and any instructor comments.
 
 .. image:: Figures/studentFeedback.JPG
+
+In addition the user menu allows the student to see a summary of their progress.
+
+.. image:: Figure/student_progress.png
