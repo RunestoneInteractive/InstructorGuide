@@ -1,7 +1,7 @@
 .. _student_reg_chap:
 
-Invite Students to Register
-===========================
+Invite Students to Register for a Custom Course
+=================================================
 
 Sometimes teachers ask how they can register their students for the custom courses they are running. We do not have a procedure for teachers to register students. Instead, students register themselves.
 

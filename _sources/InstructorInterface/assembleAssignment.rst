@@ -3,16 +3,36 @@ Create an Assignment
 
 1. To create an assignment, whether graded or ungraded, start by going to the Assignments tab on the instructor interface. Click on the + button to start creating a new assignment.
 
-.. image:: Figures/assignmentsTab.JPG
+.. figure:: Figures/clickPlus.png
+    :width: 800px
+    :align: center
+    :alt: Click on the plus to create a new assignment
+    :figclass: align-center
+
+    Figure 1: Click on the plus to create a new assignment
+
+2. Provide a name for the assignment.
+
+.. figure:: Figures/nameAssign.png
+    :width: 800px
+    :align: center
+    :alt: Enter a unique name for the assignment
+    :figclass: align-center
+
+    Figure 2: Enter a unique name for the assignment
+
+3. Add a description and check the other options.
 
 
-2. Fill out the form.
+4.  Click on "Save" to save the assignment.  It will show an alert as shown below.  Click on "Ok".
 
-.. image:: Figures/createAssignmentForm.JPG
+.. figure:: Figures/savedAlert.png
+    :width: 800px
+    :align: center
+    :alt: The save alert box
+    :figclass: align-center
 
-3. Select an Assignment and click on Show Assignment. You should see something like this.
-
-.. image:: Figures/bareAssignment.JPG
+    Figure 4: The save alert box.
 
 There are two primary kinds of assignments.  **Reading Assignments** and **Problems.**   Reading assignments allow you to select whole chapters or parts of chapters for your students to read.  You can assign points to the reading assignment by tracking the number of activities they attempt in each subchapter.    Problem assignments are mainly for you to select short programming problems for the students to solve, but could also include short answer, multiple choice, etc.  Or even problems that you write yourself.  More on that later.
 
@@ -53,4 +73,11 @@ Problems have a different set of configurations
 * Auto-grade -- options here are % correct, All or nothing, Interaction, or manual.
 
 * which to grade -- Best Answer, first answer or last answer
+.. figure:: Figures/week3.png
+    :width: 800px
+    :align: center
+    :alt: Add a description and check the other options
+    :figclass: align-center
+
+    Figure 3: Add a description and check the other options
 
