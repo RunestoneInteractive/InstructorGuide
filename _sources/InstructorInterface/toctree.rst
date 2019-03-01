@@ -9,3 +9,4 @@ Using the Instructor Dashboard
       instructorAssignments.rst
       assembleAssignment.rst
       gradeAssignment.rst
+      practice.rst

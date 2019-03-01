@@ -1,6 +1,4 @@
 __pycache__
 build/*
 *.pyc
-_sources/WritingExercises/.DS_Store
-_sources/.DS_Store
-_sources/.DS_Store
+.DS_Store

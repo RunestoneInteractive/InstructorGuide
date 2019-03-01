@@ -14,46 +14,43 @@ Create an Assignment
 
 .. image:: Figures/bareAssignment.JPG
 
-At this point, you can start adding activities/questions to the assignment. There are three tabs at the bottom:
+There are two primary kinds of assignments.  **Reading Assignments** and **Problems.**   Reading assignments allow you to select whole chapters or parts of chapters for your students to read.  You can assign points to the reading assignment by tracking the number of activities they attempt in each subchapter.    Problem assignments are mainly for you to select short programming problems for the students to solve, but could also include short answer, multiple choice, etc.  Or even problems that you write yourself.  More on that later.
 
-* *Summative* questions are meant to assess student learning; students earn points for correct solutions. Typical examples are programming problems, multiple choice questions, or parsons problems (mixed-up code).
 
-* *Formative* questions or activities are meant to give students an opportunity to learn; students earn points for doing the activities, regardless of whether they get them right or not.
+In either case the primary way you will add questions is through the tree picker interface
 
-* *External* activities are things that students do outside of the Runestone website, such as reading an article on an external site; this activity is not tracked and students can not earn points from them.
+.. image:: Figures/tree_picker.png
 
-Later in this workshop, you will learn how to author your own activities. At this point, we will only assemble activities that are already in the Question Bank. Each textbook comes with its own built-in Question Bank.
+Creating a Reading Assignment
+-----------------------------
 
-Let's add a few questions to our assignment.
+Let's create a reading assignment and add a few sections for our students to read.  As you add sections you will see that are shown in a table under the Readings tab.
 
-1. Click on Summative
+.. image:: Figures/reading_assignment.png
 
-2. Click on the + sign. The right side will populate with a form for setting search criteria. The term field lets you perform text search. The Chapter dropdown lets you select exercises from within a particular chapter. Click the search button to find all the activities that meet the criteria you've specified. In this example, we've searched for questions from the Functions chapter that include the term "iteration"; four were found.
+There are four things you can change for each section:
 
-.. image:: Figures/questionSearch.JPG
+* # required - How many of the components on the page do you students need to do in order to get the points for this section.
 
-3. If you select a question and scroll down, you will see the markup for the question. Eventually, the "Preview" button will show you what the activity will look like for a student, but it has not been implemented yet. Set how many points you want to give the assignment and click on the Add to Assignment button.
+* How many points for completing this section?
 
-.. image:: Figures/questionAssign.JPG
+* Auto-grade - interaction means that the students have done something
 
-4. You can repeat this process for additional questions, and add Formative questions as well.
+* which to grade - first answer, best answer, or last answer
 
-.. image:: Figures/formativePopulated.JPG
-.. image:: Figures/summativePopulated.JPG
 
-5. When you are satisfied with the set of activities, click on the writeAssignment button. You won't get any feedback (sorry about that) but a file will be written on the server so that the next time you "rebuild" the course, the new assignment will be visible.
+Creating a Problem Assignment
+-----------------------------
 
-6. Click back to the Admin tab on the instructor interface. Then click Rebuild.
+Creating a problem assignment is similar.  You will most often use the tree picker, but you can also search for problems or write your own.   When selecting a problem if you click on the name of the problem the interface will display the problem on the page remind you what it is about.
 
-.. image:: Figures/rebuild.JPG
+.. image:: Figures/problem_selection.png
 
-7. Finally, scroll down and, on the right hand side, click "Rebuild Now". Then wait (scroll down to see a progress indicator
+Problems have a different set of configurations
 
-.. image:: Figures/rebuildNow.JPG
+* Points - how many points for this question
 
-8. When the rebuild is finished, you will be redirected the table of contents for your course. Click on the link the assignments page, and you will see a link to the assignment you just created.
+* Auto-grade -- options here are % correct, All or nothing, Interaction, or manual.
 
-.. image:: Figures/assignmentsPage.JPG
-
-.. image:: Figures/assignment1.JPG
+* which to grade -- Best Answer, first answer or last answer
 
