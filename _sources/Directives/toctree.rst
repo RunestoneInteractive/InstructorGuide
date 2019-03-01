@@ -8,8 +8,9 @@ The ebooks allow learners to run and edit code using ActiveCode, visualize code 
 
       activecodePython.rst
       activecodeOther.rst
-      clickable.rst
       codelensPython.rst
+      showeval.rst
+      clickable.rst
       fillBlank.rst
       matching.rst
       mixedUp.rst
