@@ -49,4 +49,4 @@ When viewing an assignment, a student can click on the "Show Feedback" button to
 
 In addition the user menu allows the student to see a summary of their progress.
 
-.. image:: Figure/student_progress.png
+.. image:: Figures/student_progress.png

@@ -26,7 +26,7 @@ Since the most common exercises are programming exercises let's look at the acti
         :timelimit: set the time limit for this program
         :stdin: : A file to simulate stdin (java, python2, python3)
         :datafile: : A datafile for the program to read (java, python2, python3)
-        :sourcefile: : source files (java, python2, python3)    
+        :sourcefile: : source files (java, python2, python3)
         :available_files: : other additional files (java, python2, python3)
 
         If this is a homework problem instead of an example in the text
@@ -35,7 +35,7 @@ Since the most common exercises are programming exercises let's look at the acti
         ~~~~
         print("hello world")
         ====
-        print("Hidden code, such as unit tests come after the four = signs")   
+        print("Hidden code, such as unit tests come after the four = signs")
 
 Lets make an exercise to have the student compute the sum of the first N numbers.
 
@@ -59,7 +59,16 @@ The source code for the above looks like this:
         def sum_first_n(N):
             # your code here
 
-Its worth repeating at this point that indendation and whitespace is important.  In the previous example you will see that the optional directive ``:language:`` is indented by four spaces.  from the previous line.   It must be indented at least three spaces to line up with the "a" in activecode, but using 4 keeps it consistent with my own personal python indentation style.   Everything else in the body of the directive must also be indented to match the indentation of the optional parameters.
+Its worth repeating at this point that indentation and whitespace is important.  In the previous example you will see that the optional directive ``:language:`` is indented by four spaces.  from the previous line.   It must be indented at least three spaces to line up with the "a" in activecode, but using 4 keeps it consistent with my own personal python indentation style.   Everything else in the body of the directive must also be indented to match the indentation of the optional parameters.
+
+You can enter this into a textbox by clicking on the "Write" button under the Problems area.
+
+.. image:: Figures/enter_rst.png
+
+
+After you enter the text you need to compile and render the text.  You can get a preview of your question on the right of the page.
+
+.. image:  Figures/preview_rst.png
 
 The instructions for your student comprise the first part of the directive body.  You can use any valid restructured text in this part of the directive including embedded images.  You separate the instructions from any code you want to give the student with ``~~~~`` thats four tildes.  The next part of the body is any code you want to provide.  Just put in your Python or other language as you would normally write it.
 
@@ -114,7 +123,7 @@ The second important addition in this example is the :autograde: option.  This w
 
         def testOne(self):
             self.assertEqual(sum_first_n(4),6,feedback="0 + 1 + 2 + 3 == 6")
-            self.assertEqual(sum_first_n(0),0,feedback="summing 0 numbers should be 0")      
+            self.assertEqual(sum_first_n(0),0,feedback="summing 0 numbers should be 0")
 
     myTests().main()
 
@@ -137,7 +146,7 @@ Let's try to add another test to the example above.  This time we'll show the un
 
         def testOne(self):
             self.assertEqual(sum_first_n(4),6,feedback="0 + 1 + 2 + 3 == 6")
-            self.assertEqual(sum_first_n(0),0,feedback="summing 0 numbers should be 0")      
+            self.assertEqual(sum_first_n(0),0,feedback="summing 0 numbers should be 0")
 
     myTests().main()
 
@@ -158,7 +167,7 @@ For languages outside the browser
 
 If you choose any of the above, the code from the window is packaged up and set to a separate server for compilation and execution.  There are a few options to activecode that only apply to these languages.
 
-* :datafile:  You can provide an id to a datafile that will be sent along with your Java code 
+* :datafile:  You can provide an id to a datafile that will be sent along with your Java code
 
 * :sourcefile: You can provide additional source files that should be compiled along with the java file you upload.
 
