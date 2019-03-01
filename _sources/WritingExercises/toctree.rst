@@ -8,3 +8,4 @@ Writing your own Exercises
     multipleChoice.rst
     advancedRunestone.rst
     ExerciseAddAProblem.rst
+    Exercises.rst

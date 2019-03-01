@@ -10,3 +10,4 @@ Using the Instructor Dashboard
       assembleAssignment.rst
       gradeAssignment.rst
       practice.rst
+      Exercises.rst

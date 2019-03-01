@@ -17,6 +17,7 @@ The ebooks allow learners to run and edit code using ActiveCode, visualize code 
       poll.rst
       shortAnswer.rst
       timedExam.rst
+      Exercises.rst
 
 Other Features
 ::::::::::::::
