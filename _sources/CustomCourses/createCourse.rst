@@ -19,7 +19,7 @@ How to Create a Custom Course
 
     Figure 2: The Build a Custom Course Page
 
-3. At this point, you have to wait a while until it completes. For the SIGCSE 2019 workshop, to avoid delays, we have pre-created a bunch of custom courses for each of the ebooks, from a bunch of fake accounts. You can take over one of those accounts, so that you don't have to wait for a course to build.
+3. At this point, you have to wait a while until it completes. 
 
 .. figure:: Figures/buildCourse.png
     :width: 800px

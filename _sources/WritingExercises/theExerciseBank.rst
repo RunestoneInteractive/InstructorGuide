@@ -1,9 +1,9 @@
 Adding an Exercise to the Exercise Bank
 =======================================
 
-Although all of the Runestone books have a pretty good selection of exercises, you can never have too many exercises.  We hope to crowd source an enormous collection of questions and problems in our Exercise database.   You can help by adding the custom exercises for your own course to the database!  Once your exercise is in the database it is available for others to find using the search feature you learned about earlier.
+Although all of the Runestone books have a pretty good selection of exercises, you can never have too many exercises.  We hope to crowd source an enormous collection of questions and problems in our Exercise database.   You can help by adding custom exercises for your own course to the database!  Once your exercise is in the database it is available for others to find using the search feature on the create assignment page.
 
-Since the most common exercises are programming exercises let's look at the activecode directive in detail.   Here is the full directive with every possible option.   this is what you would see if you add an activecode exercise from the web interface.   Lets not get bogged down in the details here, lets look at a much simpler example.
+Since the most common exercises are programming exercises let's look at the activecode directive in detail.   Here is the full directive with every possible option.  This is what you would see if you add an activecode exercise from the web interface.   Let's not get bogged down in the details here, let's look at a much simpler example.
 
 .. code-block:: rst
 
@@ -37,7 +37,7 @@ Since the most common exercises are programming exercises let's look at the acti
         ====
         print("Hidden code, such as unit tests come after the four = signs")
 
-Lets make an exercise to have the student compute the sum of the first N numbers.
+Let's make an exercise to have the student compute the sum of the first N numbers.
 
 .. activecode:: sigcse_ex1
     :language: python
@@ -59,7 +59,7 @@ The source code for the above looks like this:
         def sum_first_n(N):
             # your code here
 
-Its worth repeating at this point that indentation and whitespace is important.  In the previous example you will see that the optional directive ``:language:`` is indented by four spaces.  from the previous line.   It must be indented at least three spaces to line up with the "a" in activecode, but using 4 keeps it consistent with my own personal python indentation style.   Everything else in the body of the directive must also be indented to match the indentation of the optional parameters.
+Indentation and whitespace is important.  In the previous example, you will see that the optional directive ``:language:`` is indented by four spaces.  from the previous line.   It must be indented at least three spaces to line up with the "a" in activecode, but using 4 keeps it consistent with my own personal python indentation style.   Everything else in the body of the directive must also be indented to match the indentation of the optional parameters.
 
 You can enter this into a textbox by clicking on the "Write" button under the Problems area.
 
@@ -70,7 +70,7 @@ After you enter the text you need to compile and render the text.  You can get a
 
 .. image:  Figures/preview_rst.png
 
-The instructions for your student comprise the first part of the directive body.  You can use any valid restructured text in this part of the directive including embedded images.  You separate the instructions from any code you want to give the student with ``~~~~`` thats four tildes.  The next part of the body is any code you want to provide.  Just put in your Python or other language as you would normally write it.
+The first part of the directive body are the instructions for the student.  You can use any valid restructured text (rst) in this part of the directive including embedded images.  You separate the instructions from any code you want to give the student with ``~~~~`` thats four tildes.  The next part of the body is any code you want to provide.  Just put in your Python or other language as you would normally write it.
 
 To keep an exercise page looking a bit neater you can substitute the ``.. actex::`` directive for the ``.. activecode::`` directive.  Making that substitution gives us the following:
 
@@ -87,7 +87,7 @@ To keep an exercise page looking a bit neater you can substitute the ``.. actex:
 Unit Testing exercises
 ----------------------
 
-Of course, as you have learned in the previous section the real killer feature of these exercises is to be able to create your own unit tests, and have the grader autograde the assignment.
+Of course, as you have learned in the previous section, the real killer feature of these exercises is to be able to create your own unit tests, and have the grader autograde the assignment.
 
 Let's expand our example to include some simple unittests.  We can do this by adding a hidden block of code to our previous example that uses the standard Python unittest framework.
 
@@ -158,7 +158,7 @@ Advanced activecode Options
 
 * :timelimit: seconds -- What to do when students create an infinite loop and lock up their browser?  Just wait a bit, every run of Python has a built in time limit of 30 seconds.  Some things might take longer than this, so if you know an example or assignment is going to take longer, then you can set a higher time limit with this option.
 
-* :nocodelens: -- codelens is an awesome addition, but it does not work with very many libraries.  This is part of the sandboxed security of the codelens server.   The most common one to be aware of is the turtle module.  If you are doing a turtle example or assigning a turtle problem then youshould set this flag so the "Show Codelens" button is hidden.
+* :nocodelens: -- codelens is an awesome addition, but it does not work with very many libraries.  This is part of the sandboxed security of the codelens server.   The most common one to be aware of is the turtle module.  If you are doing a turtle example or assigning a turtle problem then you should set this flag so the "Show Codelens" button is hidden.
 
 For languages outside the browser
 ---------------------------------

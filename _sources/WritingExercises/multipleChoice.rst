@@ -11,7 +11,7 @@ Another common question type is the multiple choice question.
         :answer_a: possible answer  -- what follows _ is label
         :answer_b: possible answer
         :answer_c: possible answer
-        :answer_d: possible answer        
+        :answer_d: possible answer
         :answer_e: possible answer
         :correct: letter of correct answer or list of correct answer letters (in case of multiple answe
         rs)
@@ -24,7 +24,7 @@ Another common question type is the multiple choice question.
         Question text   ...
 
 
-Here is an example from Data Structures class:
+Here is an example from a Data Structures class:
 
 .. mchoice:: stack_2
    :answer_a: 'x'
@@ -74,4 +74,4 @@ The source code is here:
             m.push('z')
             while not m.isEmpty():
                 m.pop()
-                m.pop()                
+                m.pop()
