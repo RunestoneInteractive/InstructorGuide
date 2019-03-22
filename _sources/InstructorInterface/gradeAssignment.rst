@@ -1,6 +1,11 @@
 Grading
 =======
 
+.. youtube:: Sfxbrgr9-ug
+    :height: 315
+    :width: 560
+    :align: left
+
 To grade student performance, go back to the instructor's interface and click on the grading tab. You'll see something like this.
 
 .. image:: Figures/gradingTab.JPG

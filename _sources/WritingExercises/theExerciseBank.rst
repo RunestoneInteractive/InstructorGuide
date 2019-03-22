@@ -1,6 +1,11 @@
 Adding an Exercise to the Exercise Bank
 =======================================
 
+.. youtube:: l84cb4wtM8g
+    :height: 315
+    :width: 560
+    :align: left
+
 Although all of the Runestone books have a pretty good selection of exercises, you can never have too many exercises.  We hope to crowd source an enormous collection of questions and problems in our Exercise database.   You can help by adding the custom exercises for your own course to the database!  Once your exercise is in the database it is available for others to find using the search feature you learned about earlier.
 
 Since the most common exercises are programming exercises let's look at the activecode directive in detail.   Here is the full directive with every possible option.   this is what you would see if you add an activecode exercise from the web interface.   Lets not get bogged down in the details here, lets look at a much simpler example.

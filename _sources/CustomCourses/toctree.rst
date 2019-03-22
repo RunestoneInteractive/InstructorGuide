@@ -1,5 +1,5 @@
-Creating a Custom Course
-::::::::::::::::::::::::
+Creating a Course
+:::::::::::::::::
 
 .. toctree::
       :maxdepth: 2

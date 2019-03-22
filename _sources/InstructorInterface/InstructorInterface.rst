@@ -1,6 +1,13 @@
 The Instructor Interface
 ========================
 
+.. youtube:: oeGwKLNLI-Y
+    :divid: interfaceintro
+    :height: 315
+    :width: 560
+    :align: left
+
+
 Once you are listed as the instructor for a custom course, you can access a variety of instructor features.
 
 1. Make sure you are logged in to a course for which you are an instructor. If necessary, click on the person icon at top right and select *Change Course* to get to a course that you are instructor for, or logout and login with a different account.

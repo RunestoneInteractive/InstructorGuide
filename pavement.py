@@ -11,7 +11,7 @@ from socket import gethostname
 sys.path.append(os.getcwd())
 
 home_dir = os.getcwd()
-project_name = "sigcse2019"
+project_name = "instructorguide"
 
 master_url = 'https://runestone.academy'
 doctrees = None
@@ -29,19 +29,19 @@ if master_url is None:
 
 
 master_app = 'runestone'
-serving_dir = "./build/sigcse2019"
+serving_dir = "./build/instructorguide"
 dest = "../../static"
 
 options(
     sphinx = Bunch(docroot=".",),
 
     build = Bunch(
-        builddir="./build/sigcse2019",
+        builddir="./build/instructorguide",
         sourcedir="_sources",
-        outdir="./build/sigcse2019",
+        outdir="./build/instructorguide",
         confdir=".",
         project_name=project_name,
-        template_args={'course_id': 'sigcse2019',
+        template_args={'course_id': 'instructorguide',
                        'login_required':'false',
                        'appname':master_app,
                        'loglevel': 10,
@@ -49,7 +49,7 @@ options(
                        'use_services': 'true',
                        'python3': 'true',
                        'dburl': '',
-                       'basecourse': 'sigcse2019',
+                       'basecourse': 'instructorguide',
                        'downloads_enabled': 'false',
                        'default_ac_lang': 'python',
                        'enable_chatcodes': 'false',

@@ -1,6 +1,11 @@
 Create an Assignment
 ====================
 
+.. youtube:: wJnpanrFpYI
+    :height: 315
+    :width: 560
+    :align: left
+
 1. To create an assignment, whether graded or ungraded, start by going to the Assignments tab on the instructor interface. Click on the + button to start creating a new assignment.
 
 .. figure:: Figures/clickPlus.png

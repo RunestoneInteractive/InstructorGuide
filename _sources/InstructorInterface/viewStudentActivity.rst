@@ -1,6 +1,11 @@
 View Student Activity
 =====================
 
+.. youtube:: nqcv3U6uFQg
+    :height: 315
+    :width: 560
+    :align: left
+
 Many actions that students take are logged. These include:
 
 * Loading a book page
