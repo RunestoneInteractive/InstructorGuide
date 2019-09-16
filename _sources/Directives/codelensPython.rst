@@ -23,7 +23,7 @@ The following example in Python is from the *Student Computer Science Principles
 Codelens with Questions
 ========================
 
-You can embed questions in a Python codelens so that the leaner is asked a question before a particular line executes.  
+You can embed questions in a Python codelens so that the learner is asked a question before a particular line executes.  
 
 .. codelens:: codelens_question_line
     :question: After the line with the red arrow is executed, which will be next?
