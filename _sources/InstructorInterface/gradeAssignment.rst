@@ -1,24 +1,31 @@
 Grading
 =======
 
-.. youtube:: Sfxbrgr9-ug
+.. youtube:: ArghLTeeSvc
     :height: 315
     :width: 560
     :align: left
 
 To grade student performance, go back to the instructor's interface and click on the grading tab. You'll see something like this.
 
-.. image:: Figures/gradingTab.JPG
+.. image:: Figures/grading_tab.png
 
-Typically, you will select an assignment from the first dropdown, then a question from the second, and a student from the third, though there are some other options for the order in which to specify which work to grade.
+Typically, you will select an assignment from the first dropdown.  This will show you summary of the elements that are automatically graded.  The other option is Chapter and you can use this to drill in on a chapter and look at a students work on any problem in the textbook regardless of whether it was part of an assignment.
 
-.. image:: Figures/questionToGrade.JPG
+.. image:: Figures/assignment_selected.png
+
+From here you can also select a question or questions as well as a student or students to manually grade a problem.  You can also use this to view a students answer to an automatically graded problem if they have a question about their score.
+
+.. image:: Figures/manual_grading.png
 
 You will see the last version of code that the student ran prior to the assignment deadline. Click run to execute it. Drag the little scrubber across the timeline next to the Run button to see other versions of the code that the student ran.
 
-You can assign a number grade (number of points) and, optionally, leave a comment.
+You can assign a number grade (number of points) and, optionally, leave a comment.  As you tab out of the grade box you will see it turn green to indicate that the grade has been updated in the database. Similarly if you leave a comment it will automatically update the database with the comment for the student.
 
-Click Save and Next to automatically move on the next item to grade. If you have students in the rightmost column, that would be the next student's work for the same problem. If you have questions in the righmost column, it would move to the next question for the current student.
+
+If you prefer to work on one question at a time there is a save and next button that will automatically move on the next item to grade. 
+
+
 
 Autograde
 ---------

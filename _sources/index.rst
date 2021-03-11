@@ -35,7 +35,7 @@ Table of Contents
       Registration/registerYourself.rst
       Directives/toctree.rst
       CustomCourses/toctree.rst
-      Registration/inviteStudents.rst
+      Registration/toctree.rst
       InstructorInterface/toctree.rst
       WritingExercises/toctree.rst
 

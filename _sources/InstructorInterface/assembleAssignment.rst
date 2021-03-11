@@ -1,20 +1,20 @@
 Create an Assignment
 ====================
 
-.. youtube:: wJnpanrFpYI
+.. youtube:: h45c7_wIgGA
     :height: 315
     :width: 560
     :align: left
 
-1. To create an assignment, whether graded or ungraded, start by going to the Assignments tab on the instructor interface. Click on the + button to start creating a new assignment.
+1. To create an assignment, whether graded or ungraded, start by going to the Assignments tab on the instructor interface. Click on the Add button to start creating a new assignment.
 
-.. figure:: Figures/clickPlus.png
+.. figure:: Figures/assignmentMain.png
     :width: 800px
     :align: center
     :alt: Click on the plus to create a new assignment
     :figclass: align-center
 
-    Figure 1: Click on the plus to create a new assignment
+    Figure 1: Click on the Add button to create a new assignment
 
 2. Provide a name for the assignment.
 
@@ -69,6 +69,7 @@ Creating a Problem Assignment
 
 Creating a problem assignment is similar.  You will most often use the tree picker, but you can also search for problems or write your own.   When selecting a problem if you click on the name of the problem the interface will display the problem on the page remind you what it is about.
 
+
 .. image:: Figures/problem_selection.png
 
 Problems have a different set of configurations
@@ -78,5 +79,7 @@ Problems have a different set of configurations
 * Auto-grade -- options here are % correct, All or nothing, Interaction, or manual.
 
 * which to grade -- Best Answer, first answer or last answer
+
+Problems with the book icon next to them are written by the author.  Problems with the schoolhouse are contributed by the community.  If a problem has a checkmark next to it then you know it can be automatically graded.
 
 
