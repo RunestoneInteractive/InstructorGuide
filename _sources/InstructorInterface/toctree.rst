@@ -8,6 +8,7 @@ Using the Instructor Dashboard
       viewStudentActivity.rst
       instructorAssignments.rst
       assembleAssignment.rst
+      examsAndQuizzes.rst
       gradeAssignment.rst
       practice.rst
       Exercises.rst

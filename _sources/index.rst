@@ -11,7 +11,7 @@ With Runestone you can:
 * Create a private course for your students as shown in the following Video and Chapter 4 of this guide.  Your course will have to have a unique name and your students can register for the course using the unique name.
 
 Quick Start
------------
+===========
 
 .. youtube:: IGg_SUWEnGU
     :divid: gettingstarted
@@ -19,25 +19,25 @@ Quick Start
     :width: 560
     :align: left
 
+
 Table of Contents
------------------
-
-.. raw:: html
-
-   <ul>
-   <li><a href="../../assignments/chooseAssignment.html">Assignments</a></li>
-   </ul>
+=================
 
 .. toctree::
-      :numbered:
-      :maxdepth: 2
+   :numbered:
+   :maxdepth: 2
 
-      Registration/registerYourself.rst
-      Directives/toctree.rst
-      CustomCourses/toctree.rst
-      Registration/toctree.rst
-      InstructorInterface/toctree.rst
-      WritingExercises/toctree.rst
+   Registration/registerYourself.rst
+   CustomCourses/toctree.rst
+   Registration/toctree.rst
+   InstructorInterface/toctree.rst
+   WritingExercises/toctree.rst   
+   ActiveCode/toctree.rst
+   Assessments/toctree.rst
+   Visualizers/toctree.rst
+   Containers/toctree.rst
+   Video/toctree.rst
+   Misc/toctree.rst
 
 
 What's Next?

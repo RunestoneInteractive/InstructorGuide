@@ -82,4 +82,3 @@ Problems have a different set of configurations
 
 Problems with the book icon next to them are written by the author.  Problems with the schoolhouse are contributed by the community.  If a problem has a checkmark next to it then you know it can be automatically graded.
 
-

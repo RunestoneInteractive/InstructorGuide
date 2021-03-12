@@ -1,5 +1,5 @@
-Creating and Managing a Course
-::::::::::::::::::::::::::::::
+Creating a Course
+:::::::::::::::::
 
 .. toctree::
       :maxdepth: 2
