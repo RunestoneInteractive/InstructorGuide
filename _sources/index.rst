@@ -32,8 +32,8 @@ Table of Contents
    Registration/toctree.rst
    InstructorInterface/toctree.rst
    WritingExercises/toctree.rst   
-   ActiveCode/toctree.rst
-   Assessments/toctree.rst
+   overview/ActiveCode/toctree.rst
+   overview/Assessments/toctree.rst
    Visualizers/toctree.rst
    Containers/toctree.rst
    Video/toctree.rst
