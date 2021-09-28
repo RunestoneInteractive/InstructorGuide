@@ -7,7 +7,7 @@ The Runestone platform allows you to create, modify, use, and serve interactive 
 
 With Runestone you can:
 
-* Use any of the existing ebooks that are listed at the following link `here <http://runestoneinteractive.org/library.html>`_.
+* Use any of the existing ebooks that are listed at the following link `here <https://runestone.academy/runestone/books/index>`_.
 * Create a private course for your students as shown in the following Video and Chapter 4 of this guide.  Your course will have to have a unique name and your students can register for the course using the unique name.
 
 Quick Start
