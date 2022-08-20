@@ -4,11 +4,11 @@
   <p>This is definitey an <term>advanced topic</term>  If you are not comfortable with the command line you can definitely skip this section.  But if you are at least somewhat comfortable with the command line and an editor then this can save you a bunch of time!  The workflow is simple, edit your questions locally, then paste them into the interface once you have them working and debugged.</p>
   <p>Here is a short video that demonstrates how to install the runestone command in under two minutes.</p>
   <blockquote>
-    <video xml:id="QWX1eIpDBe0" youtube="QWX1eIpDBe0" width="500"/>
+    <video xml:id="QWX1eIpDBe0" youtube="QWX1eIpDBe0" width="100%"/>
   </blockquote>
   <p>Here are the steps I go through in the video.  This assumes you already have python installed on your system.</p>
   <p>
-    <ol label="1">
+    <ol marker="1">
       <li>
         <p><c>virtualenv runestone</c>  - Creates a python virtual environment so you don't need administrator privileges to install the rest of what you need.  If virtualenv is not installed you should do <c>pip install virtualenv</c> (Python 2.7.x) or <c>python -m venv runestone</c> (Python &gt; 3.5).  If the pip command is not found then you should upgrade your version of Python to something newer.  All modern version of Python come with pip pre-installed.</p>
       </li>

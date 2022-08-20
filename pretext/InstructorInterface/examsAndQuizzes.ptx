@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
 <section xml:id="instructor-interface_exams-and-quizzes-in-runestone">
   <title>Exams and Quizzes in Runestone</title>
-  <figure align="center" xml:id="id1">
+  <figure align="center" xml:id="create_exam_fig">
     <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Figure 1: Creating an exam from an assignment</caption>
-    <image source="InstructorInterface/Figures/assignmentMain.png" width="800px%" alt="Check the timed exam checkbox"/>
+    <image source="Figures/assignmentMain.png" width="800px%" alt="Check the timed exam checkbox"/>
   </figure>
   <p>If you look at Figure 1 on this page again, you will see there is a checkbox labelled <q>Show as Timed Assessment</q>  This turns a problem assignment into an exam.  There are severall things to note about this.  First is the appearance to the students, when the students first see a timed exam it looks like this:</p>
   <figure align="center">
-    <image source="InstructorInterface/Figures/timedExamStart.png" width="800px%" alt="Check the timed exam checkbox"/>
+    <image source="Figures/timedExamStart.png" width="800px%" alt="Check the timed exam checkbox"/>
   </figure>
   <p>They cannot see any of the questions until they click the start button.  When the start button is clicked the timer (if selected) is also started.</p>
   <p>During an exam the students see just one question at a time. They can navigate the questions by number or they can use the prev/next buttons to go from question to question.</p>
@@ -16,13 +16,13 @@
   <p>It is important to remind students that if they close the tab or their browser or navigate away from the page or even try to refresh the page, the exam is over and they will not be able to answer any more questions.  Once they click the finish exam button they are done.  As an instructor you can reset a students exam from the instructors page, but they will be forced to start over.</p>
   <p>When a student submits their exam with the finish exam button or when the exam is automatically submitted due to time expiring, the autograder is run on the server and a score is recorded.  If all your questions are autogradable you're done!  If not you can use the grading interface to manually grade any questions.</p>
   <figure align="center">
-    <image source="InstructorInterface/Figures/timedExamUI.png" width="800px%" alt="Check the timed exam checkbox"/>
+    <image source="Figures/timedExamUI.png" width="800px%" alt="Check the timed exam checkbox"/>
   </figure>
   <subsection xml:id="instructor-interface_resetting-an-exam">
     <title>Resetting an Exam</title>
     <p>The instructor interface allows you to reset an exam for any student.</p>
     <figure align="center">
-      <image source="InstructorInterface/Figures/timedExamReset.png" width="800px%" alt="resetting an exam"/>
+      <image source="Figures/timedExamReset.png" width="800px%" alt="resetting an exam"/>
     </figure>
     <p>You just select the student and the assignment name and then press the red button.</p>
   </subsection>

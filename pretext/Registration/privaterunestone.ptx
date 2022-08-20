@@ -5,7 +5,7 @@
   <p>Runestone collects a lot of data.  I think it is all justified, and if you are an instructor you can gain some real insight into how your students are doing based on the data we collect and the reports we create for you. None of that requires any PII about your students.  Yet we do collect some&#x2026; what do we collect? and why?</p>
   <p>Here is what we we ask for when a student registers:</p>
   <p>
-    <ol label="1">
+    <ol marker="1">
       <li>
         <p>username - this can be anything and it is easy for this to NOT contain PII</p>
       </li>
@@ -41,7 +41,7 @@ hogwarts-3,dumbledore+hogwarts1@gmail.com,F2,L2,owls4all,potions_fall19</pre>
     </note>
     <p>From the Manage Students tab on the Instructor's Page, you can now upload this CSV file using the interface.</p>
     <figure align="">
-      <image source="Registration/Figures/student_management.png" width="600%"/>
+      <image source="Figures/student_management.png" width="100%"/>
     </figure>
     <p>Once you have uploaded the CSV, you can add some columns to the spreadsheet that contain the real student information to help you remember.  You will probably learn quickly who your made up names correspond to, and can probably think of something anonymous that will help you remember who F1 L1 really is.  On the first day of class you may want to hand out paper for the students with their username, and walk them through changing the password, or maybe you want to assign each student a unique password when you are making up the spreadsheet.  I just would not recommend a scenario where all the students have the same password.</p>
     <p>Of course all of this is optional.  You can also create a csv file with usernames of your choice and include the real email addresses and real first / last names of your students, or you can have them register themselves as students have been doing on Runestone since 2012.</p>
@@ -57,7 +57,7 @@ hogwarts-3,dumbledore+hogwarts1@gmail.com,F2,L2,owls4all,potions_fall19</pre>
     <title>What other Data Does Runestone Collect</title>
     <p>Here is  a graph of all of the events that runestone has collected in the last 4 weeks.</p>
     <figure align="">
-      <image source="Registration/Figures/rsevents.png" width="600%"/>
+      <image source="Figures/rsevents.png" width="100%"/>
     </figure>
     <p>As you can see that is a lot of activecode and a lot of pages loaded.  Also over 1 million multiple choice questions answered! I would love to see more clickable area questions and more fill in the blanks.  Some of our preliminary research shows that those kinds of questions are much more effective at getting students to review the content in order to get a correct answer, rather than simply clicking on different answers until they guess correctly for multiple choice. All of these events are captured and tied to a username.  So the more anonymous your username the better as far as I'm concerned.</p>
     <p>What I'm really interested in is figuring out how to apply machine learning algorithms to help identify students that may struggle, to help weed out bad questions, to help us write better questions, to help us order the textbook in different ways, to adapt to each student to help them achieve their maximum potential.</p>

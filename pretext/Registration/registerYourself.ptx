@@ -5,7 +5,7 @@
   <subsection xml:id="registration_first-time-registration">
     <title>First-time Registration</title>
     <p>
-      <ol label="1">
+      <ol marker="1">
         <li>
           <p>Open the following url in another tab: <url href="https://runestone.academy/runestone/default/user/register" visual="https://runestone.academy/runestone/default/user/register">https://runestone.academy/runestone/default/user/register</url>.  The form is pretty self-explanatory, except for the <em>Course Name</em> field. There is information about that on the right side. You can specify one of the strings that identify one of the public courses that the server knows about: thinkcspy, pythonds, etc.  Or you can enter the string for a custom course.</p>
         </li>

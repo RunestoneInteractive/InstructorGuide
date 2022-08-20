@@ -1,15 +1,15 @@
 <?xml version="1.0"?>
 <section xml:id="registration_adding-students-to-your-course">
   <title>Adding Students to your Course</title>
-  <video xml:id="register_vid" youtube="RJ-bYYjKbTU" width="500"/>
+  <video xml:id="register_vid" youtube="RJ-bYYjKbTU" width="100%"/>
   <p>When you created the custom course, you chose a project name. Give that text string to students. They will register on the site and enter that string as their course name. If you've forgotten what the string is, you can see it displayed on the Course selection page <url href="https://runestone.academy/runestone/default/courses" visual="https://runestone.academy/runestone/default/courses">https://runestone.academy/runestone/default/courses</url>.  You can access that page by clicking on the person icon at the top right of the window and then selecting <em>Change Course</em>.</p>
   <note>
-    <p>Students will register for a custom course following the same procedures that were described <xref ref="registration_register-yourself"/>. You just need to provide them with the text string for the course name.</p>
+    <p>Students will register for a custom course following the same procedures that were described <xref ref="registration_register-for-this-course"/>. You just need to provide them with the text string for the course name.</p>
   </note>
   <p>You can also pre-register your students by creating a CSV file and uploading that file through the instructor interface.  Pull down the &#x1F464; menu and Choose Instructor Page then click on the button for Manage Students.  You will see a page like this:</p>
-  <figure align="center" xml:id="id1">
+  <figure align="center" xml:id="reg_your_students_fig">
     <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Register your Students</caption>
-    <image source="Registration/Figures/manage_students.png" width="600px%" alt="Support Runestone"/>
+    <image source="Figures/manage_students.png" width="600px%" alt="Support Runestone"/>
   </figure>
   <p>You can create a csv file in your favorite spreadsheet program and exporting or you can simply edit a textfile, whatever works for you.  The format of the file MUST be as shown in the figure.</p>
   <pre>username,email,first_name,last_name,password,course

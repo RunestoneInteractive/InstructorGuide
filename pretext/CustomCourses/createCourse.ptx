@@ -1,36 +1,36 @@
 <?xml version="1.0"?>
 <section xml:id="custom-courses_how-to-create-a-custom-course">
   <title>How to Create a Custom Course</title>
-  <video xml:id="create_course_vid" youtube="t78ktTWrGkc" width="500"/>
+  <video xml:id="create_course_vid" youtube="t78ktTWrGkc" width="100%"/>
   <p>
-    <ol label="1">
+    <ol marker="1">
       <li>
         <p>Log in to the runestone server at <url href="https://runestone.academy" visual="https://runestone.academy">https://runestone.academy</url> if you already have an account with Runestone Interactive.  If you don't have an account then you can create one at <url href="https://runestone.academy/runestone/default/user/register" visual="https://runestone.academy/runestone/default/user/register">https://runestone.academy/runestone/default/user/register</url>. When you register, it will ask to enter the name of an ebook.  You can enter the name for any of the existing ebooks.</p>
       </li>
     </ol>
   </p>
-  <figure align="center" xml:id="id2">
+  <figure align="center" xml:id="login_screen_fig">
     <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Figure 1: The login screen for Runestone Academy</caption>
-    <image source="CustomCourses/Figures/login.png" width="600px%" alt="shows the login screen"/>
+    <image source="Figures/login.png" width="600px%" alt="shows the login screen"/>
   </figure>
   <p>
-    <ol label="1">
+    <ol marker="1">
       <li>
         <p>Go to the Build a Custom Course Page at <url href="https://runestone.academy/runestone/designer/index" visual="https://runestone.academy/runestone/designer/index">https://runestone.academy/runestone/designer/index</url>.  Fill in a unique name for your course.  You may want to include a semester and year as part of the unique name.  Enter a description and the name of your institution. Scroll down and check the other options and then click <q>Submit</q>.</p>
       </li>
     </ol>
   </p>
-  <figure align="center" xml:id="id3">
+  <figure align="center" xml:id="custom_course_fig">
     <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Figure 2: The Build a Custom Course Page</caption>
-    <image source="CustomCourses/Figures/customCourse.png" width="600px%" alt="Page to create a custom course"/>
+    <image source="Figures/customCourse.png" width="600px%" alt="Page to create a custom course"/>
   </figure>
   <p>Of special note is the checkbox just above the submit button.  This says that you would like to support Runestone at the rate of $10 / student from your department or school.  This is totally VOLUNTARY!  If you check the box you will get an invoice from us about a week after the starting date you entered for your course.  If you can't pay or do not wish to pay simply do not check the box.  It is fine either way, but we would love your support if you are able.</p>
-  <figure align="center" xml:id="id4">
+  <figure align="center" xml:id="support_runestone_fig">
     <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Support Runestone</caption>
-    <image source="CustomCourses/Figures/support_runestone.png" width="600px%" alt="Support Runestone"/>
+    <image source="Figures/support_runestone.png" width="600px%" alt="Support Runestone"/>
   </figure>
   <p>
-    <ol label="1">
+    <ol marker="1">
       <li>
         <p>Success!</p>
       </li>
@@ -38,11 +38,11 @@
   </p>
   <figure align="center" xml:id="id5">
     <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Build Successful</caption>
-    <image source="CustomCourses/Figures/build_done.png" width="600px%" alt="Support Runestone"/>
+    <image source="Figures/build_done.png" width="600px%" alt="Support Runestone"/>
   </figure>
   <p>The successful build page reminds you of some resources that you can use to get help.  Please do not use email.  Please check for and file problems on Github.  Many problems are duplicates and have already have workarounds or explanations.</p>
   <p>
-    <ol label="1">
+    <ol marker="1">
       <li>
         <p>Your students can register for your custom course by using the unique name that you used when you created your custom course when they register at <url href="https://runestone.academy/runestone/default/user/register" visual="https://runestone.academy/runestone/default/user/register">https://runestone.academy/runestone/default/user/register</url>..  If they already have a login on Runestone Academy, they can simply add another course using the new course name by going to <url href="https://runestone.academy/runestone/default/user/register" visual="https://runestone.academy/runestone/default/user/register">https://runestone.academy/runestone/default/courses</url>. and then clicking on <q>Add Another Course</q>.</p>
       </li>
@@ -50,7 +50,7 @@
   </p>
   <figure align="center" xml:id="id6">
     <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Figure 4: The page that allows the user to add another course or switch courses</caption>
-    <image source="CustomCourses/Figures/courseSel.png" width="800px%" alt="The screen that allows a user to add another course or switch courses"/>
+    <image source="Figures/courseSel.png" width="800px%" alt="The screen that allows a user to add another course or switch courses"/>
   </figure>
   <p>We will also cover how you can pre-register your students with a CSV file in another section.</p>
 </section>
