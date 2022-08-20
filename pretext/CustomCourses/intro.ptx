@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<section xml:id="custom-courses_what-is-a-custom-course">
+  <title>What is a Custom Course?</title>
+  <p>As an instructor, you can make a custom course with a unique name on the Runestone server from an existing Runestone book. Your students will register for your course using the unique name, and then their activities will be tracked. You will then be able to:</p>
+  <p>
+    <ul>
+      <li>
+        <p>View summaries of student activity for particular questions or pages</p>
+      </li>
+      <li>
+        <p>Assemble custom assignments and lab sessions from:</p>
+        <p>
+          <ul>
+            <li>
+              <p>existing activities that are built into the book</p>
+            </li>
+            <li>
+              <p>new activities that you author yourself using a markup language (rst)</p>
+            </li>
+          </ul>
+        </p>
+      </li>
+    </ul>
+  </p>
+</section>

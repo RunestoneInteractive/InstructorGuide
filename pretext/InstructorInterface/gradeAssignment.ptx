@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<section xml:id="instructor-interface_grading">
+  <title>Grading</title>
+  <video xml:id="ArghLTeeSvc" youtube="ArghLTeeSvc" width="auto"/>
+  <p>To grade student performance, go back to the instructor's interface and click on the grading tab. You'll see something like this.</p>
+  <image source="InstructorInterface/Figures/grading_tab.png" width="50%"/>
+  <p>Typically, you will select an assignment from the first dropdown.  This will show you summary of the elements that are automatically graded.  The other option is Chapter and you can use this to drill in on a chapter and look at a students work on any problem in the textbook regardless of whether it was part of an assignment.</p>
+  <image source="InstructorInterface/Figures/assignment_selected.png" width="50%"/>
+  <p>From here you can also select a question or questions as well as a student or students to manually grade a problem.  You can also use this to view a students answer to an automatically graded problem if they have a question about their score.</p>
+  <image source="InstructorInterface/Figures/manual_grading.png" width="50%"/>
+  <p>You will see the last version of code that the student ran prior to the assignment deadline. Click run to execute it. Drag the little scrubber across the timeline next to the Run button to see other versions of the code that the student ran.</p>
+  <p>You can assign a number grade (number of points) and, optionally, leave a comment.  As you tab out of the grade box you will see it turn green to indicate that the grade has been updated in the database. Similarly if you leave a comment it will automatically update the database with the comment for the student.</p>
+  <p>If you prefer to work on one question at a time there is a save and next button that will automatically move on the next item to grade.</p>
+  <subsection xml:id="instructor-interface_autograde">
+    <title>Autograde</title>
+    <p>Some questions have been configured for auto-grading, in particular coding problems with unit tests and some multiple choice problems. If you click on the Autograde button on the left side, the autograder will run. It will pop up an alert box to give you a diagnostic about how many question-student pairs were autograded.</p>
+    <p>Some things to note about the autograder:</p>
+    <p>
+      <ul>
+        <li>
+          <p>If a question is selected, the autograder will run only for that question.</p>
+        </li>
+        <li>
+          <p>If a student is also selected, the autograder will run for only that question-student combination.</p>
+        </li>
+        <li>
+          <p>To run the autograder for all the questions and students for a particular assignment, refresh the page, select the assignment, and click the autograde button before selecting a question or student.</p>
+        </li>
+        <li>
+          <p>You can manually override the grade assigned by the autograder using the grading form on the right side. Be sure to change the comment as well.</p>
+        </li>
+        <li>
+          <p>If you rerun the autograder, it will not run on any student-question pair where you have changed the comment.</p>
+        </li>
+      </ul>
+    </p>
+  </subsection>
+  <subsection xml:id="instructor-interface_calculate-totals">
+    <title>Calculate Totals</title>
+    <p>Once you have graded all the questions on an assignment, click the Caclulate Totals button to compute the total scores for the whole assignment, or to recalculate them after updating a grade. Again, an alert box will pop up to provide diagnostics about the min and max scores that were calculated.</p>
+    <image source="InstructorInterface/Figures/calculate_totals.png" width="50%"/>
+  </subsection>
+  <subsection xml:id="instructor-interface_release-grades">
+    <title>Release Grades</title>
+    <p>When you are satisfied that the grade totals have been calculated correctly, click on the Release Grades button at the bottom left. This makes them visible to students. If you make any subsequent changes to grades, you will need to click Calculate Totals again, but you will not need to click on Release Grades again: once released, they stay released.</p>
+  </subsection>
+  <subsection xml:id="instructor-interface_how-a-student-sees-grades-and-comments">
+    <title>How a Student Sees Grades and Comments</title>
+    <p>When viewing an assignment, a student can click on the <q>Show Feedback</q> button to see a score and any instructor comments.</p>
+    <image source="InstructorInterface/Figures/studentFeedback.JPG" width="50%"/>
+    <p>In addition the user menu allows the student to see a summary of their progress.</p>
+    <image source="InstructorInterface/Figures/student_progress.png" width="50%"/>
+  </subsection>
+</section>

@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<section xml:id="misc_disqus-comment-box">
+  <title>Disqus Comment Box</title>
+  <p>A comment box allowing users to add comments and start discussions can be added. A comment box can be added at the page level, but also for an individual section or question, allowing discussion of that particular content.</p>
+  <DisqusNode line="6" runestone_options="{'shortname': 'interactivepython', 'identifier': 'discussion1', 'subchapter': 'disqus', 'chapter': 'Misc', 'basecourse': 'instructorguide', 'optional': '', 'optclass': ''}" source="/Users/bmiller/Runestone/RunestoneServer/books/InstructorGuide/_sources/Misc/disqus.rst">
+        </DisqusNode>
+  <hint>
+    <program language="rst">
+      <input>
+.. disqus::
+    :shortname: interactivepython
+    :identifier: discussion1
+</input>
+    </program>
+  </hint>
+</section>

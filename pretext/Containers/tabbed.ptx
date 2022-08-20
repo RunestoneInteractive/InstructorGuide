@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<section xml:id="containers_tabbed-question">
+  <title>Tabbed Question</title>
+  <p>Any of the existing components can be placed in a tabbed exhibit-style question. This may be used to provide an possible answer or a Disqus discussion box specifically related to a certain question.</p>
+  <exercise>
+    <TabNode tabname="Question 1" tabnode_options="{'subchapter': 'tabbed', 'chapter': 'Containers', 'basecourse': 'instructorguide', 'optional': '', 'optclass': '', 'tabname': 'Question 1'}">
+      <p>Write a program that prints <q>Hello, world</q>.</p>
+      <program xml:id="helloworld" interactive="activecode" language="python">
+        <input>
+print("Hello, world")
+        </input>
+      </program>
+    </TabNode>
+  </exercise>
+  <hint>
+    <program language="rst">
+      <input>
+.. tabbed:: exercise1
+
+    .. tab:: Question 1
+
+        Write a program that prints "Hello, world".
+
+        .. activecode:: helloworld
+
+            print("Hello, world")
+
+    .. tab:: Discussion
+
+        .. disqus::
+            :shortname: interactivepython
+            :identifier: helloworlddiscussion
+</input>
+    </program>
+  </hint>
+</section>

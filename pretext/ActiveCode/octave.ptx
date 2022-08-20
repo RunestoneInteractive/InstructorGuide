@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<section xml:id="active-code_octave-and-matlab">
+  <title>Octave and MATLAB</title>
+  <p>Our backend JOBE server supports Octave, so any MATLAB programs that also run in Octave, which should be most of them are supported.</p>
+  <program xml:id="octave1" interactive="activecode" language="octave">
+    <input>
+x = 2 + 2
+printf("%d\n", x)
+        </input>
+  </program>
+</section>

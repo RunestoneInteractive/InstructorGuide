@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<section xml:id="xml_using-ebooks-with-runestone-interactive">
+  <title>Using eBooks with Runestone Interactive</title>
+  <p>If you are an instructor wanting to learn more about how to use the <url href="https://runestone.academy" visual="https://runestone.academy">Runestone Academy</url> website, then this is the resource for you.
+            The Runestone platform allows you to create, modify, use, and serve interactive ebooks. This instructors guide was built  using the Runestone platform.</p>
+  <p>With Runestone you can:</p>
+  <p>
+    <ul>
+      <li>
+        <p>Use any of the existing ebooks that are listed at the following link <url href="http://runestoneinteractive.org/library.html" visual="http://runestoneinteractive.org/library.html">here</url>.</p>
+      </li>
+      <li>
+        <p>Create a private course for your students as shown in the following Video and Chapter 4 of this guide.  Your course will have to have a unique name and your students can register for the course using the unique name.</p>
+      </li>
+    </ul>
+  </p>
+  <subsection xml:id="xml_quick-start">
+    <title>Quick Start</title>
+    <video xml:id="gettingstarted" youtube="IGg_SUWEnGU" width="auto"/>
+  </subsection>
+  <subsection xml:id="xml_table-of-contents"><title>Table of Contents</title>
+            [COMPOUND]
+            <subsubsection xml:id="xml_what-s-next"><title>What's Next?</title><p>No matter what your use case for Runestone textbooks, we encourage you to become a part of our community.  There are many ways you can get involved.</p><p><ul><li><p>Join the discussion on our <url href="https://groups.google.com/forum/#!forum/runestone_instructors" visual="https://groups.google.com/forum/#!forum/runestone_instructors">Google Group</url></p></li><li><p>Add some exercises to the Exercise Bank!</p></li><li><p>Report any bugs you find on <url href="https://github.com/RunestoneInteractive/RunestoneComponents" visual="https://github.com/RunestoneInteractive/RunestoneComponents">Github</url>.</p></li><li><p>If you have an idea for a lab, lesson, chapter, or book you would like to make available for others write it up and send it to us.</p></li><li><p>If you are a Javascript coder, we have lots of feature ideas and bugs to squash in the existing system.</p></li><li><p>If you are a backend programmer, help us squash bugs there too.</p></li><li><p>If you are a designer, and would like to improve the look and feel of the books, we would welcome suggestions and CSS!</p></li></ul></p></subsubsection>
+            <subsubsection xml:id="xml_additional-useful-links"><title>Additional Useful Links</title><p>Runestone uses the <c>restructuredText</c> (rst) markup language.  We chose this over markdown largely because rst is extensible.  Nearly all of the basic markup tasks are already handled by restructuredText.  You should check out the docs for the basics of restructuredText (link below). Our extensions are all for the interactive elements.  One key hint about restructuredText:  Its like <term>Python</term> &#x2013; <em>indentation matters!</em></p><p><ul><li><p><url href="http://docutils.sourceforge.net/rst.html" visual="http://docutils.sourceforge.net/rst.html">restructuredText Docs</url></p></li><li><p><url href="http://runestoneinteractive.org/build/html/index.html" visual="http://runestoneinteractive.org/build/html/index.html">Runestone Docs</url></p></li></ul></p></subsubsection>
+        </subsection>
+</section>

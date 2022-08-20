@@ -1,0 +1,104 @@
+<?xml version="1.0"?>
+<section xml:id="writing-exercises_multiple-choice-questions">
+  <title>Multiple Choice Questions</title>
+  <p>Another common question type is the multiple choice question.</p>
+  <program language="rst">
+    <input>
+.. mchoice:: uniqueid
+    :multiple_answers: boolean  [optional]
+    :random: boolean [optional]
+    :answer_a: possible answer  -- what follows _ is label
+    :answer_b: possible answer
+    :answer_c: possible answer
+    :answer_d: possible answer
+    :answer_e: possible answer
+    :correct: letter of correct answer or list of correct answer letters (in case of multiple answe
+    rs)
+    :feedback_a: displayed if a is picked
+    :feedback_b: displayed if b is picked
+    :feedback_c: displayed if c is picked
+    :feedback_d: displayed if d is picked
+    :feedback_e: displayed if e is picked
+
+    Question text   ...
+</input>
+  </program>
+  <p>Here is an example from a Data Structures class:</p>
+  <exercise label="stack_2">
+    <statement>
+      <p>3-1-1: Given the following sequence of stack operations, what is the top item on the stack when the sequence is complete?</p>
+      <program language="python">
+        <input>
+m = Stack()
+m.push('x')
+m.push('y')
+m.push('z')
+while not m.isEmpty():
+   m.pop()
+   m.pop()
+</input>
+      </program>
+    </statement>
+    <choices>
+      <choice>
+        <statement>
+          <p>'x'</p>
+        </statement>
+        <feedback>
+          <p>You may want to check out the docs for isEmpty</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>the stack is empty</p>
+        </statement>
+        <feedback>
+          <p>There is an odd number of things on the stack but each time through the loop 2 things are popped.</p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p>an error will occur</p>
+        </statement>
+        <feedback>
+          <p>Good Job.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>'z'</p>
+        </statement>
+        <feedback>
+          <p>You may want to check out the docs for isEmpty</p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+  <p>The source code is here:</p>
+  <program language="rst">
+    <input>
+.. mchoice:: stack_2
+    :answer_a: 'x'
+    :answer_b: the stack is empty
+    :answer_c: an error will occur
+    :answer_d: 'z'
+    :correct: c
+    :feedback_a: You may want to check out the docs for isEmpty
+    :feedback_b: There is an odd number of things on the stack but each time through the loop 2 things are popped.
+    :feedback_c: Good Job.
+    :feedback_d: You may want to check out the docs for isEmpty
+
+    Given the following sequence of stack operations, what is the top item on the stack when the sequence is complete?
+
+    .. code-block:: python
+
+        m = Stack()
+        m.push('x')
+        m.push('y')
+        m.push('z')
+        while not m.isEmpty():
+            m.pop()
+            m.pop()
+</input>
+  </program>
+</section>

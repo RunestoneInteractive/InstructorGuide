@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<section xml:id="active-code_html">
+  <title>HTML</title>
+  <p>Teaching a class on HTML and simple web design?  Why not use activecode for HTML too?
+            Although you don't run HTML, clicking the run button will cause the HTML to be rendered.</p>
+  <program xml:id="html1" interactive="activecode" language="htmlmixed">
+    <input>
+&lt;html&gt;
+&lt;body&gt;
+&lt;style&gt;
+    h2 { font-size: 48px;
+         color: red;
+    }
+&lt;/style&gt;
+&lt;h2&gt;Hello World&lt;/h2&gt;
+&lt;ul&gt;
+    &lt;li&gt;one&lt;/li&gt;
+    &lt;li&gt;two&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+        </input>
+  </program>
+  <hint>
+    <program language="rst">
+      <input>
+.. activecode:: html1
+   :language: html
+   :nocodelens:
+
+   &lt;html&gt;
+   &lt;body&gt;
+   &lt;style&gt;
+       h2 { font-size: 48px;
+            color: red;
+       }
+   &lt;/style&gt;
+   &lt;h2&gt;Hello World&lt;/h2&gt;
+   &lt;ul&gt;
+       &lt;li&gt;one&lt;/li&gt;
+       &lt;li&gt;two&lt;/li&gt;
+   &lt;/ul&gt;
+   &lt;/body&gt;
+   &lt;/html&gt;
+</input>
+    </program>
+  </hint>
+</section>

@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<section xml:id="assessments_clickable-area">
+  <title>Clickable Area</title>
+  <p>Clickable area is another type of assess question you can use. All you need to do is write the code you wish to be in the question, and wrap the parts that you
+            would like to be clickable in either a click-correct tag or a click-incorrect tag. The students can click on all elements you defined as being clickable, and
+            will be evaluated once they click the &#x2018;Check Me' button.</p>
+  <exercise label="click1">
+    <statement>
+      <p>Click on all assignment statements.</p>
+    </statement>
+    <feedback>
+      <p>Remember, the operator '=' is used for assignment.</p>
+    </feedback>
+    <areas>
+      <cline><area>def main():</area>:</cline>
+      <cline><area correct="yes">x = 4</area>:</cline>
+      <cline>    for i in range(5):</cline>
+      <cline><area correct="yes">y = i</area>:</cline>
+      <cline><area>if y &gt; 2:</area>:</cline>
+      <cline>            print(y)</cline>
+    </areas>
+  </exercise>
+  <hint>
+    <program language="rst">
+      <input>
+.. clickablearea:: click1
+    :question: Click on all assignment statements.
+    :iscode:
+    :feedback: Remember, the operator '=' is used for assignment.
+
+    :click-incorrect:def main()::endclick:
+        :click-correct:x = 4:endclick:
+        for i in range(5):
+            :click-correct:y = i:endclick:
+            :click-incorrect:if y &gt; 2::endclick:
+                print(y)
+</input>
+    </program>
+  </hint>
+</section>

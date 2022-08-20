@@ -1,0 +1,73 @@
+<substitutes><substitute xml:id='pollid1'>
+<div class="runestone ">
+<ul data-component="poll" id="pollid1" class='' data-results='instructor' data-question_label="11.1.1" >
+ On a scale from 1 to 10, how important do you think it is to have a polling directive in the Runestone Tools?
+
+<li>1</li>
+
+<li>2</li>
+
+<li>3</li>
+
+<li>4</li>
+
+<li>5</li>
+
+<li>6</li>
+
+<li>7</li>
+
+<li>8</li>
+
+<li>9</li>
+
+<li>10</li>
+</ul>
+</div>
+
+</substitute>
+
+
+<substitute xml:id='qstudent'>
+<div class="runestone ">
+<ul data-component="poll" id="qstudent"  class='' data-results='instructor' data-question_label="11.1.2" >
+I am a :
+
+<li>1. student</li>
+
+<li>2. teacher</li>
+
+<li>3. other</li>
+
+<li>4. prefer not to answer</li>
+</ul></div></substitute><substitute xml:id='showEval_2'>
+<div data-component="showeval" data-question_label="8.3.1" class="runestone explainer" id="showEval_2" data-tracemode="true" >
+    <button class="btn btn-success" id="showEval_2_nextStep">Next Step</button>
+    <button class="btn btn-default" id ="showEval_2_reset">Reset</button>
+    <div class="evalCont" style="background-color: #FDFDFD;">eggs = ['dogs', 'cats', 'moose']<br />
+ham = ['elk', 'salmon']<br />
+eggs = eggs + ham<br />
+</div>
+    <div class="evalCont"></div>
+    <script>
+    if (typeof window.raw_steps === "undefined") {
+    window.raw_steps = {};
+    }
+    raw_steps["showEval_2"] = ["eggs = \\{\\{eggs}}\\{\\{['dogs', 'cats', 'moose']}} + ham", "eggs = ['dogs', 'cats', 'moose'] + \\{\\{ham}}\\{\\{['elk', 'salmon']}}", "eggs = \\{\\{['dogs', 'cats', 'moose'] + ['elk', 'salmon']}}\\{\\{['dogs', 'cats', 'moose', 'elk', 'salmon']}}"];
+    </script>
+</div>
+</substitute><substitute xml:id='showEval_1'>
+<div data-component="showeval" data-question_label="8.4.1" class="runestone explainer" id="showEval_1" data-tracemode="false" >
+    <button class="btn btn-success" id="showEval_1_nextStep">Next Step</button>
+    <button class="btn btn-default" id ="showEval_1_reset">Reset</button>
+    <div class="evalCont" style="background-color: #FDFDFD;">eggs = ['dogs', 'cats', 'moose']<br />
+</div>
+    <div class="evalCont"></div>
+    <script>
+    if (typeof window.raw_steps === "undefined") {
+    window.raw_steps = {};
+    }
+    raw_steps["showEval_1"] = ["''.join(\\{\\{eggs}}\\{\\{['dogs', 'cats', 'moose']}}).upper().join(eggs)", "\\{\\{''.join(['dogs', 'cats', 'moose'])}}\\{\\{'dogscatsmoose'}}.upper().join(eggs)", "\\{\\{'dogscatsmoose'.upper()}}\\{\u200b\\{'DOGSCATSMOOSE'}}.join(eggs)", "'DOGSCATSMOOSE'.join(\\{\u200b\\{eggs}}\\{\u200b\\{['dogs', 'cats', 'moose']}})", "\\{\u200b\\{'DOGSCATSMOOSE'.join(['dogs', 'cats', 'moose'])}}\\{\u200b\\{'dogsDOGSCATSMOOSEcatsDOGSCATSMOOSEmoose'}}"];
+    </script>
+</div>
+</substitute></substitutes>

@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<section xml:id="visualizers_showeval-trace-mode">
+  <title>ShowEval Trace Mode</title>
+  <exercise runestone="showEval_2"/>
+  <hint>
+    <program language="rst">
+      <input>
+.. showeval:: showEval_2
+   :trace_mode: true
+
+   eggs = ['dogs', 'cats', 'moose']
+   ham = ['elk', 'salmon']
+   eggs = eggs + ham
+   ~~~~
+   eggs = {&#x200B;{eggs}}{&#x200B;{['dogs', 'cats', 'moose']}} + ham
+   eggs = ['dogs', 'cats', 'moose'] + {&#x200B;{ham}}{&#x200B;{['elk', 'salmon']}}
+   eggs = {&#x200B;{['dogs', 'cats', 'moose'] + ['elk', 'salmon']}}{&#x200B;{['dogs', 'cats', 'moose', 'elk', 'salmon']}}
+</input>
+    </program>
+  </hint>
+</section>

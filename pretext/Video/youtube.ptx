@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<section xml:id="video_youtube">
+  <title>YouTube</title>
+  <video xml:id="theforloop" youtube="X1-UNHUajfk" width="auto"/>
+  <hint>
+    <program language="rst">
+      <input>
+.. youtube:: X1-UNHUajfk
+   :divid: theforloop
+   :height: 315
+   :width: 560
+   :align: left
+</input>
+    </program>
+  </hint>
+  <video xml:id="yt_vid_ex1" youtube="anwy2MPT5RE" width="auto"/>
+  <hint>
+    <program language="rst">
+      <input>
+.. youtube:: anwy2MPT5RE
+    :height: 315
+    :width: 560
+    :align: left
+</input>
+    </program>
+  </hint>
+</section>

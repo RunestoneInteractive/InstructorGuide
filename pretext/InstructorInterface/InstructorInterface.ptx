@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<section xml:id="instructor-interface_the-instructor-interface">
+  <title>The Instructor Interface</title>
+  <video xml:id="interfaceintro" youtube="oeGwKLNLI-Y" width="auto"/>
+  <p>Once you are listed as the instructor for a custom course, you can access a variety of instructor features.</p>
+  <p>
+    <ol label="1">
+      <li>
+        <p>Make sure you are logged in to a course for which you are an instructor. If necessary, click on the person icon at top right and select <em>Change Course</em> to get to a course that you are instructor for, or logout and login with a different account.</p>
+      </li>
+      <li>
+        <p>Click on the person icon on the top right of the window and select <em>Instructor's Page</em></p>
+      </li>
+    </ol>
+  </p>
+  <figure align="center" xml:id="id1">
+    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Figure 1: How to get to the instructor's page</caption>
+    <image source="InstructorInterface/Figures/GetToInstructor.png" width="800px%" alt="Clicking on the instructor's page"/>
+  </figure>
+  <p>
+    <ol label="1">
+      <li>
+        <p>You will see the instructor page as shown below.  You may be on a different tab that what is shown below.</p>
+      </li>
+    </ol>
+  </p>
+  <figure align="center" xml:id="id2">
+    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Figure 2: The Instructor's Page</caption>
+    <image source="InstructorInterface/Figures/InstructorPage.png" width="800px%" alt="Clicking on the instructor's page"/>
+  </figure>
+</section>

@@ -1,0 +1,315 @@
+<?xml version="1.0"?>
+<section xml:id="assessments_multiple-choice">
+  <title>Multiple Choice</title>
+  <p>It is also possible to embed simple questions into the text. These
+            questions provide a way for the students to check themselves as they go along. The questions also provide feedback so that you can
+            understand why an answer may or may not be correct.</p>
+  <p>
+    <term>Check your understanding</term>
+  </p>
+  <exercise label="question1_1">
+    <statement>
+      <p>Q-1: What programming language does this site help you to learn?</p>
+    </statement>
+    <choices>
+      <choice correct="yes">
+        <statement id="question1_1_opt_a">
+          <p>Python</p>
+        </statement>
+        <feedback id="question1_1_opt_a">
+          <p>Yes, Python is a great language to learn, whether you are a beginner or
+                            an experienced programmer. The correct answer is designated by using
+                            a plus sign before the answer.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement id="question1_1_opt_b">
+          <p>Java</p>
+        </statement>
+        <feedback id="question1_1_opt_b">
+          <p>Java is a good object oriented language but it has some details that make
+                            it hard for the beginner.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement id="question1_1_opt_c">
+          <p>C</p>
+        </statement>
+        <feedback id="question1_1_opt_c">
+          <p>C is an imperative programming language that has been around for a long
+                            time, but it is not the one that we use.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement id="question1_1_opt_d">
+          <p>ML</p>
+        </statement>
+        <feedback id="question1_1_opt_d">
+          <p>No, ML is a functional programming language. You can use Python to write
+                            functional programs as well.</p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+  <hint>
+    <program language="rst">
+      <input>
+.. mchoice:: question1_1
+
+                What programming language does this site help you to learn?
+
+                - Python
+
+                + Yes, Python is a great language to learn, whether you are a beginner or
+                an experienced programmer. The correct answer is designated by using
+                a plus sign before the answer.
+
+                - Java
+
+                - Java is a good object oriented language but it has some details that make
+                it hard for the beginner.
+
+                - C
+
+                - C is an imperative programming language that has been around for a long
+                time, but it is not the one that we use.
+
+                - ML
+
+                - No, ML is a functional programming language. You can use Python to write
+                functional programs as well.
+</input>
+    </program>
+  </hint>
+  <p>You can also have code blocks in multiple-choice questions, or any other reST construct.</p>
+  <exercise label="qce_1">
+    <statement>
+      <p>Q-2: What does the following code print when <c>x</c> has been set to 187?</p>
+      <program language="java">
+        <input>
+if (x &lt; 0)
+                    {
+                    System.out.println("x is negative");
+                    }
+                    else if (x == 0)
+                    {
+                    System.out.println("x is zero");
+                    }
+                    else
+                    {
+                    System.out.println("x is positive");
+                    }
+</input>
+      </program>
+    </statement>
+    <choices>
+      <choice>
+        <statement id="qce_1_opt_a">
+          <p>x is negative</p>
+        </statement>
+        <feedback id="qce_1_opt_a">
+          <p>This will only print if x has been set to a number less than zero. Has it?</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement id="qce_1_opt_b">
+          <p>x is zero</p>
+        </statement>
+        <feedback id="qce_1_opt_b">
+          <p>This will only print if x has been set to 0. Has it?</p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement id="qce_1_opt_c">
+          <p>x is positive</p>
+        </statement>
+        <feedback id="qce_1_opt_c">
+          <p>The first condition is false and <c>x</c> is not equal to zero so the else
+                            will execute.</p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+  <hint>
+    <program language="rst">
+      <input>
+.. mchoice:: qce_1
+                :practice: T
+
+                What does the following code print when ``x`` has been set to 187?
+
+                .. code-block:: java
+
+                if (x &lt; 0)
+                {
+                System.out.println("x is negative");
+                }
+                else if (x == 0)
+                {
+                System.out.println("x is zero");
+                }
+                else
+                {
+                System.out.println("x is positive");
+                }
+
+                - x is negative
+
+                - This will only print if x has been set to a number less than zero. Has it?
+
+                - x is zero
+
+                - This will only print if x has been set to 0. Has it?
+
+                - x is positive
+
+                + The first condition is false and ``x`` is not equal to zero so the else
+                will execute.
+</input>
+    </program>
+  </hint>
+  <p>This next type of question allows more than one correct answer to be required. Just mark each correct answer with a plus sign (<c>+</c>). The feedback will tell you whether you have the
+            correct number as well as the feedback for each.</p>
+  <exercise label="question1_2">
+    <statement>
+      <p>Q-3: Which colors might be found in a rainbow? (Choose all that are correct)</p>
+    </statement>
+    <choices>
+      <choice correct="yes">
+        <statement id="question1_2_opt_a">
+          <p>red</p>
+        </statement>
+        <feedback id="question1_2_opt_a">
+          <p>Red is a definitely on of the colors.</p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement id="question1_2_opt_b">
+          <p>yellow</p>
+        </statement>
+        <feedback id="question1_2_opt_b">
+          <p>Yes, yellow is correct.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement id="question1_2_opt_c">
+          <p>black</p>
+        </statement>
+        <feedback id="question1_2_opt_c">
+          <p>Remember the acronym&#x2026;ROY G BIV. B stands for blue.</p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement id="question1_2_opt_d">
+          <p>green</p>
+        </statement>
+        <feedback id="question1_2_opt_d">
+          <p>Yes, green is one of the colors.</p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+  <hint>
+    <program language="rst">
+      <input>
+.. mchoice:: question1_2
+
+                Which colors might be found in a rainbow? (Choose all that are correct)
+
+                - red
+
+                + Red is a definitely on of the colors.
+
+                - yellow
+
+                + Yes, yellow is correct.
+
+                - black
+
+                - Remember the acronym...ROY G BIV. B stands for blue.
+
+                - green
+
+                + Yes, green is one of the colors.
+</input>
+    </program>
+  </hint>
+  <p>The order in which multiple-choice answers are presented can be randomized by adding the <c>:random:</c> option.</p>
+  <exercise label="mchoice_random">
+    <statement>
+      <p>Q-4: What numbers are less than 3?</p>
+    </statement>
+    <choices>
+      <choice correct="yes">
+        <statement id="mchoice_random_opt_a">
+          <p>0</p>
+        </statement>
+        <feedback id="mchoice_random_opt_a">
+          <p>Correct.</p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement id="mchoice_random_opt_b">
+          <p>1</p>
+        </statement>
+        <feedback id="mchoice_random_opt_b">
+          <p>Correct.</p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement id="mchoice_random_opt_c">
+          <p>2</p>
+        </statement>
+        <feedback id="mchoice_random_opt_c">
+          <p>Correct.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement id="mchoice_random_opt_d">
+          <p>3</p>
+        </statement>
+        <feedback id="mchoice_random_opt_d">
+          <p>Incorrect.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement id="mchoice_random_opt_e">
+          <p>4</p>
+        </statement>
+        <feedback id="mchoice_random_opt_e">
+          <p>Incorrect.</p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+  <hint>
+    <program language="rst">
+      <input>
+.. mchoice:: mchoice_random
+                :random:
+
+                What numbers are less than 3?
+
+                - 0
+
+                + Correct.
+
+                - 1
+
+                + Correct.
+
+                - 2
+
+                + Correct.
+
+                - 3
+
+                - Incorrect.
+
+                - 4
+
+                - Incorrect.
+</input>
+    </program>
+  </hint>
+</section>

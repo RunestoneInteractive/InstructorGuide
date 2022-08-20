@@ -1,0 +1,154 @@
+<?xml version="1.0"?>
+<section xml:id="active-code_activecode-examples-in-python">
+  <title>ActiveCode Examples in Python</title>
+  <p>One of the most important things that you can do when you are learning a programming language is to write programs.  Unfortunately,
+            typical textbooks allow you to read about programming, but don't allow you to practice.  We have created a unique tool called
+            <term>activecode</term> that allows you to write, modify, and execute programs right
+            in the text itself (right from the web browser).  Although this is certainly not the way real programs are written, it provides an excellent
+            environment for learning a programming language like Python since you can experiment with the language as you are reading.</p>
+  <p>Take a look at the activecode interpreter in action.  If we take a simple Python program and make it active, you will see that it can be executed directly by pressing the <em>run</em> button.   Try pressing the <em>run</em> button below.</p>
+  <program xml:id="over_ac_example1" interactive="activecode" language="python">
+    <input>
+print("My first program adds a list of numbers")
+myList = [2, 4, 6, 8, 10]
+total = 0
+for num in myList:
+    total = total + num
+print(total)
+        </input>
+  </program>
+  <p>Now try modifying the activecode program shown above.  First, modify the string in the first print statement
+            by changing the word <em>adds</em> to the word <em>multiplies</em>.  Now press <em>run</em>.  You can see that the result of the program
+            has changed.  However, it still prints <q>30</q> as the answer.  Modify the total calculation by changing the
+            addition symbol, the <q>+</q>, to the multiplication symbol, <q>*</q>.  Press <em>run</em> to see the new results (note that you should also fix the total initialization for a correct claculation).
+            You can do this as many times as you like.  You can even start completely over by simply deleting all the code from the window.</p>
+  <p>If you are a registered user and have logged in,
+            any changes you make are automatically saved, and the history slider allows you to go back to any previous version of your program.
+            Note that these saved programs can be accessed from anywhere if you have logged in.  However, if you are
+            working anonymously, then you will lose your work at the end of the session.</p>
+  <p>Click on the <q>Show Source</q> button below to see what the reStructuredText (rst) looks like for the activecode above.  You can author ebook content in rst.</p>
+  <hint>
+    <program language="rst">
+      <input>
+.. activecode:: codeexample1
+   :coach:
+
+   print("My first program adds a list of numbers")
+   myList = [2, 4, 6, 8, 10]
+   total = 0
+   for num in myList:
+       total = total + num
+   print(total)
+</input>
+    </program>
+  </hint>
+  <p>Activecode is even capable of executing graphical programs that use the built in Python turtle module.
+            The program shown below is a very interesting graphics program that uses the turtle and the idea of recursion to construct a type of
+            fractal called a Sierpinski Triangle.  Once you run the program, try experimenting with the number of triangle levels.  You
+            can find this on line 39 (it is currently set to 3).  Try 4!
+            Try some other
+            changes and see what happens (maybe change a few of the colors or make the level 2).  If you ever want to go back to the original example, simply reload the page in the browser.  One of
+            the great things about activecode is that you can experiment as much as you want.  This can be very helpful as you
+            are learning to program.</p>
+  <program xml:id="codeexample2" interactive="activecode" language="python">
+    <input>
+import turtle
+
+def drawTriangle(points,color,myTurtle):
+    myTurtle.fillcolor(color)
+    myTurtle.up()
+    myTurtle.goto(points[0][0],points[0][1])
+    myTurtle.down()
+    myTurtle.begin_fill()
+    myTurtle.goto(points[1][0],points[1][1])
+    myTurtle.goto(points[2][0],points[2][1])
+    myTurtle.goto(points[0][0],points[0][1])
+    myTurtle.end_fill()
+
+def getMid(p1,p2):
+    return ( (p1[0]+p2[0]) / 2, (p1[1] + p2[1]) / 2)
+
+def sierpinski(points,degree,myTurtle):
+    colormap = ['blue','red','green','white','yellow',
+                'violet','orange']
+    drawTriangle(points,colormap[degree],myTurtle)
+    if degree &gt; 0:
+        sierpinski([points[0],
+                        getMid(points[0], points[1]),
+                        getMid(points[0], points[2])],
+                   degree-1, myTurtle)
+        sierpinski([points[1],
+                        getMid(points[0], points[1]),
+                        getMid(points[1], points[2])],
+                   degree-1, myTurtle)
+        sierpinski([points[2],
+                        getMid(points[2], points[1]),
+                        getMid(points[0], points[2])],
+                   degree-1, myTurtle)
+
+def main():
+   myTurtle = turtle.Turtle()
+   myWin = turtle.Screen()
+   myPoints = [[-100,-50],[0,100],[100,-50]]
+   sierpinski(myPoints,3,myTurtle)
+   myWin.exitonclick()
+
+main()
+        </input>
+  </program>
+  <hint>
+    <blockquote>
+      <program language="rst">
+        <input>
+.. activecode:: codeexample2
+   :nocodelens:
+   :hidecode:
+   :autorun:
+
+   import turtle
+
+   def drawTriangle(points,color,myTurtle):
+       myTurtle.fillcolor(color)
+       myTurtle.up()
+       myTurtle.goto(points[0][0],points[0][1])
+       myTurtle.down()
+       myTurtle.begin_fill()
+       myTurtle.goto(points[1][0],points[1][1])
+       myTurtle.goto(points[2][0],points[2][1])
+       myTurtle.goto(points[0][0],points[0][1])
+       myTurtle.end_fill()
+
+   def getMid(p1,p2):
+       return ( (p1[0]+p2[0]) / 2, (p1[1] + p2[1]) / 2)
+
+   def sierpinski(points,degree,myTurtle):
+       colormap = ['blue','red','green','white','yellow',
+                 'violet','orange']
+       drawTriangle(points,colormap[degree],myTurtle)
+       if degree &gt; 0:
+           sierpinski([points[0],
+                           getMid(points[0], points[1]),
+                           getMid(points[0], points[2])],
+                      degree-1, myTurtle)
+           sierpinski([points[1],
+                           getMid(points[0], points[1]),
+                           getMid(points[1], points[2])],
+                      degree-1, myTurtle)
+           sierpinski([points[2],
+                           getMid(points[2], points[1]),
+                           getMid(points[0], points[2])],
+                      degree-1, myTurtle)
+
+   def main():
+      myTurtle = turtle.Turtle()
+      myWin = turtle.Screen()
+      myPoints = [[-100,-50],[0,100],[100,-50]]
+      sierpinski(myPoints,3,myTurtle)
+      myWin.exitonclick()
+
+   main()
+</input>
+      </program>
+    </blockquote>
+  </hint>
+</section>

@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<section xml:id="containers_reveals">
+  <title>Reveals</title>
+  <hint>
+    <p>This content starts out hidden. It's visibility can be toggled by using the Show/Hide button.</p>
+    <p>The reveal block can also contain other directives (ActiveCode, Disqus block, etc):</p>
+    <program xml:id="ac11" interactive="activecode" language="python">
+      <input>
+print ("Hello, world")
+        </input>
+    </program>
+  </hint>
+  <hint>
+    <program language="rst">
+      <input>
+.. reveal:: revealid1
+    :showtitle: Reveal Content
+    :hidetitle: Hide Content
+
+    This content starts out hidden. It's visibility can be toggled by using the Show/Hide button.
+
+    The reveal block can also contain other directives (ActiveCode, Disqus block, etc):
+
+    .. activecode:: ac11
+
+        print ("Hello, world")
+</input>
+    </program>
+  </hint>
+</section>

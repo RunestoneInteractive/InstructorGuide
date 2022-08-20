@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<section xml:id="video_embedded-videos">
+  <title>Embedded Videos</title>
+  <p>Our toolset provides a number of different things that will help you to learn to program in the Python programming language.
+            Aside from reading the text, it is sometimes useful to hear someone tell you about different aspects of the topic being discussed.
+            In order to accomplish this, we provide a way to integrate simple, short videos into the text.  For example, if you click
+            on the video shown below, you will hear us talk about the tools that will be described shortly.</p>
+  <raw format="html" xml:space="preserve">&lt;div id="over_videoinfo" class="video_popup runestone " &gt;
+&lt;video controls preload="none"  poster="_static/activecodethumb.png"&gt;
+    &lt;source src="http://media.interactivepython.org/runestone.mov" type="video/mp4"&gt;&lt;/source&gt;
+    &lt;source src="http://media.interactivepython.org/runestone.webm" type="video/webm"&gt;&lt;/source&gt;
+    No supported video types
+&lt;/video&gt;
+&lt;/div&gt;
+&lt;script&gt;
+  window.addEventListener('load', (event) =&gt; {
+    jQuery(function($) {
+        var rb = new RunestoneBase();
+        $('#over_videoinfo_thumb').click(function(e) {
+            $('#over_videoinfo').show();
+            $('#over_videoinfo_thumb').hide();
+            rb.logBookEvent({'event':'video','act':'play','div_id': 'over_videoinfo'});
+            // Log the run event
+        });
+        $('#over_videoinfo video').one("click", function(){
+            this.play();
+        });
+        $('#over_videoinfo video').one("play", function(){
+            rb.logBookEvent({'event':'video','act':'play','div_id': 'over_videoinfo'});
+        });
+    });
+  });
+&lt;/script&gt;
+</raw>
+  <hint>
+    <program language="rst">
+      <input>
+.. video:: videoinfo
+    :controls:
+    :thumb: _static/activecodethumb.png
+
+    http://media.interactivepython.org/runestone.mov
+    http://media.interactivepython.org/runestone.webm
+</input>
+    </program>
+  </hint>
+</section>

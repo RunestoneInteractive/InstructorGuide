@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
+        <title>Containers</title>
+        <xi:include href='./reveal.ptx' />
+        <xi:include href='./tabbed.ptx' />
+        <xi:include href='./dynamic.ptx' />
+    </chapter>

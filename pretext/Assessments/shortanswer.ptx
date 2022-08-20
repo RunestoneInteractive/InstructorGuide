@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<section xml:id="assessments_short-answer">
+  <title>Short Answer</title>
+  <exercise label="shorta1">
+    <statement>
+      <p>Q-1: You can ask your students to answer reflective questions or short essays in the box provided.</p>
+    </statement>
+  </exercise>
+  <hint>
+    <program language="rst">
+      <input>
+.. shortanswer:: shorta1
+
+   You can ask your students to answer reflective questions or short essays in the box provided.
+</input>
+    </program>
+  </hint>
+</section>

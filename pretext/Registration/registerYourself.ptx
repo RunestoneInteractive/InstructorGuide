@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<section xml:id="registration_register-for-this-course">
+  <title>Register for This Course</title>
+  <p>Some Runestone books are open to the public. To save your work, however, you will need to register for an account on the Runestone server. This is also something students will have to do when you create a custom course from one of the eBooks, so you might as well learn how registration works right now.</p>
+  <subsection xml:id="registration_first-time-registration">
+    <title>First-time Registration</title>
+    <p>
+      <ol label="1">
+        <li>
+          <p>Open the following url in another tab: <url href="https://runestone.academy/runestone/default/user/register" visual="https://runestone.academy/runestone/default/user/register">https://runestone.academy/runestone/default/user/register</url>.  The form is pretty self-explanatory, except for the <em>Course Name</em> field. There is information about that on the right side. You can specify one of the strings that identify one of the public courses that the server knows about: thinkcspy, pythonds, etc.  Or you can enter the string for a custom course.</p>
+        </li>
+        <li>
+          <p>Click <em>Register</em></p>
+        </li>
+        <li>
+          <p>If you are on the login page instead at <url href="https://runestone.academy/runestone/default/user/login" visual="https://runestone.academy/runestone/default/user/login">https://runestone.academy/runestone/default/user/login</url> then click the <em>Register</em> button which is near the bottom of the page to get to the registration page.</p>
+        </li>
+      </ol>
+    </p>
+  </subsection>
+  <subsection xml:id="registration_add-an-additional-course">
+    <title>Add an Additional Course</title>
+    <p>When you are logged in and looking at an eBook, click on the person icon in the upper right and select <em>Change Course</em>.
+                That will take you to the course selection page.</p>
+    <p>Click on the <em>Add Another Course</em> button, which takes you to a page that looks a lot like the registration page. Don't change any of the fields there except <em>Course Name</em>. There, you can enter any string that identifies another course.</p>
+  </subsection>
+</section>

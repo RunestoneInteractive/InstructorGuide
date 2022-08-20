@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
+        <title>Assessments</title>
+        <xi:include href='./multiplechoice.ptx' />
+        <xi:include href='./fitb.ptx' />
+        <xi:include href='./parsons.ptx' />
+        <xi:include href='./clickable.ptx' />
+        <xi:include href='./dragndrop.ptx' />
+        <xi:include href='./shortanswer.ptx' />
+        <xi:include href='./timed.ptx' />
+    </chapter>

@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<section xml:id="active-code_java">
+  <title>Java</title>
+  <p>Activecode now supports Java, C++ and C through a backend server, not in the browser. You can
+         use them by specifying the language to be <title_reference>java</title_reference>, <title_reference>cpp</title_reference> or <title_reference>c</title_reference> In addition it supports either Python3 or Python2
+         outside of the browser using <title_reference>python3</title_reference> or <title_reference>python2</title_reference> as the language. You are limited to non-graphical
+         programs in any of these options.</p>
+  <program xml:id="lc1" interactive="activecode" language="java">
+    <input>
+         import java.util.Scanner;
+
+         public class TempConv {
+         public static void main(String[] args) {
+         Double fahr;
+         Double cel;
+         Scanner in;
+
+         in = new Scanner(System.in);
+         System.out.println("Enter the temperature in F: ");
+         fahr = in.nextDouble();
+
+         cel = (fahr - 32) * 5.0/9.0;
+         System.out.println(fahr + " degrees F is: " + cel + " C");
+
+         System.exit(0);
+         }
+
+         }
+         </input>
+  </program>
+  <hint>
+    <program language="rst">
+      <input>
+.. activecode:: lc1
+            :language: java
+            :stdin: 100
+
+            import java.util.Scanner;
+
+            public class TempConv {
+            public static void main(String[] args) {
+            Double fahr;
+            Double cel;
+            Scanner in;
+
+            in = new Scanner(System.in);
+            System.out.println("Enter the temperature in F: ");
+            fahr = in.nextDouble();
+
+            cel = (fahr - 32) * 5.0/9.0;
+            System.out.println(fahr + " degrees F is: " + cel + " C");
+
+            System.exit(0);
+            }
+
+            }
+</input>
+    </program>
+  </hint>
+</section>

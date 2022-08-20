@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<section xml:id="active-code_c-and-c">
+  <title>C and C++</title>
+  <p>Now for the most famous program of all time! This program is often the first program someone will write in a new language. Here it is presented in the original C language!</p>
+  <program xml:id="hw_in_c" interactive="activecode" language="c">
+    <input>
+         #include &lt;stdio.h&gt;
+
+         int main() {
+         printf("Hello World!");
+         }
+         </input>
+  </program>
+  <p>You can also have C++ code in an activecode.</p>
+  <program xml:id="lc2" interactive="activecode" language="cpp">
+    <input>
+         #include &lt;iostream&gt;
+         using namespace std;
+         int main() {
+         cout &lt;&lt; "Hello World!" &lt;&lt; endl; cout &lt;&lt; "Welcome to C++ Programming" &lt;&lt; endl;
+         }
+         </input>
+  </program>
+  <hint>
+    <program language="rst">
+      <input>
+.. activecode:: lc2
+            :language: cpp
+            :stdin: 100
+            :compileargs: ['-std=c++11', '-Wall', '-Wpedantic']
+
+            #include &lt;iostream&gt;
+            using namespace std;
+            int main() {
+            cout &lt;&lt; "Hello World!" &lt;&lt; endl; cout &lt;&lt; "Welcome to C++ Programming" &lt;&lt; endl;
+            }
+</input>
+    </program>
+  </hint>
+</section>
