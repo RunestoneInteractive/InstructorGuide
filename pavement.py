@@ -14,7 +14,7 @@ sys.path.append(os.getcwd())
 home_dir = os.getcwd()
 project_name = "instructorguide"
 
-master_url = "https://runestone.academy"
+master_url = None
 doctrees = None
 
 if master_url is None:
@@ -28,10 +28,13 @@ if master_url is None:
         master_url = "http://127.0.0.1:8000"
         doctrees = "./build/{}/doctrees".format(project_name)
 
-dynamic_pages = False
+dynamic_pages = True
 master_app = "runestone"
 serving_dir = "./build/instructorguide"
-dest = "../../static"
+if dynamic_pages:
+    dest = "./published"
+else:
+    dest = "../../static"
 
 options(
     sphinx=Bunch(
