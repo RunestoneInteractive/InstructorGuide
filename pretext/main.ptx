@@ -1,23 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <pretext xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
-  <xi:include href="./bookinfo.ptx"/>
+  <xi:include href="./bookinfo.ptx" />
   <book xml:id="InstructorGuide" permid="Ins">
     <title>Using eBooks with Runestone Interactive</title>
     <subtitle>The PreTeXt Interactive Edition</subtitle>
-    <xi:include href="./Registration/registerYourself.ptx"/>
-    <xi:include href="./CustomCourses/toctree.ptx"/>
-    <xi:include href="./Registration/toctree.ptx"/>
-    <xi:include href="./InstructorInterface/toctree.ptx"/>
-    <xi:include href="./WritingExercises/toctree.ptx"/>
-    <xi:include href="./ActiveCode/toctree.ptx"/>
-    <xi:include href="./Assessments/toctree.ptx"/>
-    <xi:include href="./Visualizers/toctree.ptx"/>
-    <xi:include href="./Containers/toctree.ptx"/>
-    <xi:include href="./Video/toctree.ptx"/>
-    <xi:include href="./Misc/toctree.ptx"/>
+    <frontmatter>
+      <titlepage>
+        <author>
+          <personname>Brad Miller</personname>
+          <institution>Runestone Academy</institution>
+          <email></email>
+        </author>
+      </titlepage>
+    </frontmatter>
+    <xi:include href="./Registration/registerYourself.ptx" />
+    <xi:include href="./CustomCourses/toctree.ptx" />
+    <xi:include href="./Registration/toctree.ptx" />
+    <xi:include href="./InstructorInterface/toctree.ptx" />
+    <xi:include href="./WritingExercises/toctree.ptx" />
+    <xi:include href="./ActiveCode/toctree.ptx" />
+    <xi:include href="./Assessments/toctree.ptx" />
+    <xi:include href="./Visualizers/toctree.ptx" />
+    <xi:include href="./Containers/toctree.ptx" />
+    <xi:include href="./Video/toctree.ptx" />
+    <xi:include href="./Misc/toctree.ptx" />
     <backmatter>
       <index>
-        <index-list/>
+        <index-list />
       </index>
     </backmatter>
   </book>
