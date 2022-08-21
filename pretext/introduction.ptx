@@ -22,7 +22,14 @@ While that is a long list of things that you <em>can do</em> there is very littl
 <section>
 <title>Courses Versus Books</title>
 <p>
-The first thing to understand about Runestone is the difference between a book and a course.  This has long been a point of confusion.  Runestone was originally conceived of as a system for building interactive textbooks.  But, as soon as you start to include interactive things like coding and multiple choice questions the next logical step is for someone (likely you - dear reader) to want to evaluate that work and record a grade.  A grade only makes sense in the context of a course, so we created the ability for you to make a course for your students.  But because the central notion always was a book there has always been the limitation that a course can only be tied to a single book.  This limitation continues, but is something we are thinking about how to relax in the future.
+The first thing to understand about Runestone is the difference between a book and a course.  This has long been a point of confusion.  Runestone was originally conceived of as a system for building interactive textbooks.  But, as soon as you start to include interactive things like coding and multiple choice questions the next logical step is for someone (likely you - dear reader) to want to evaluate that work and record a grade.  A grade only makes sense in the context of a course, so we created the ability for you to make a course for your students.  But because the central notion always was a book there has always been the limitation that a course can only be tied to a single book.  This limitation continues, but is something we are thinking about how to relax in the future. In the meantime <xref ref="custom-courses_how-to-create-a-custom-course" /> will guide you through the process of creating a course around your chosen textbook.
+</p>
+
+<p>
+The fact that Runestone allows you to do many of the things that you would normally do in an LMS like Canvas or Moodle has led many people to think of Runestone as an LMS like system.  We reject that label and claim that Runestone is much more than an LMS.  Runestone is a <acro>LEAP</acro> Learning Engineering and Analytics Portal.  Briefly, Learning Engineering is <q>is the systematic application of evidence-based principles and methods from educational technology and the learning sciences to create engaging and effective learning experiences, support the difficulties and challenges of learners as they learn, and come to better understand learners and learning. </q> See <url href="https://en.wikipedia.org/wiki/Learning_engineering" visual="this article for more."/>  
+</p>
+<p>
+Because a book and a course are so tightly coupled  we can do many things that an LMS cannot.  We can collect much more fine-grained data about what your students are doing.  Your students can do their homework by answering questions as they read them in context, or they can answer them on a homework page that has only the questions.  In fact it does not matter where they do their work if they answer the question in one place it will also appear in the other.  Runestone captures every interaction your students have with a question whether they answer the question before you assign it or after its assigned or even long after a homework assignment is due we save that interaction and timestamp it.  This gives you a lot of flexibility over accepting late work (or not) For every question you can see the time of your students first interaction with that question as well as their last, you can see their entire history of interactions with that question.  For programming assignments this can be a powerful learning tool for both you and your student.
 </p>
 
 </section>
@@ -45,8 +52,16 @@ One of the strengths of Runestone is that many of our features have been created
 
 <section>
 <title>A Brief History of Runestone</title>
-To be written
+<p>To be written</p>
 </section>
 
+<section>
+<title>
+Frequently Asked Questions
+</title>
+<p>
+For now see <url href="https://blog.runestone.academy/pages/faq.html" visual="this page" /> But the FAQ will soon move to this book.
+</p>
+</section>
 
 </chapter>
