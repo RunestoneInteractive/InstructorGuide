@@ -68,7 +68,24 @@ options(
 version = pkg_resources.require("runestone")[0].version
 options.build.template_args["runestone_version"] = version
 
-# If DBUSER etc. are in the environment override dburl
-options.build.template_args["dburl"] = get_dburl(outer=locals())
+# p If DBUSER etc. are in the environment override dburl
+# options.build.template_args["dburl"] = get_dburl(outer=locals())
 
 from runestone import build  # build is called implicitly by the paver driver.
+
+template_args = {
+    "course_id": "instructorguide",
+    "login_required": "false",
+    "appname": master_app,
+    "dynamic_pages": dynamic_pages,
+    "loglevel": 10,
+    "course_url": master_url,
+    "use_services": "false",
+    "python3": "true",
+    "dburl": "",
+    "basecourse": "instructorguide",
+    "downloads_enabled": "false",
+    "default_ac_lang": "python",
+    "enable_chatcodes": "false",
+    "allow_pairs": "false",
+}
