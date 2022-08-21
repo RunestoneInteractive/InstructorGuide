@@ -1,6 +1,8 @@
 <?xml version="1.0"?>
 <section xml:id="instructor-interface_grading">
   <title>Grading</title>
+  <subsection xml:id="grading_intro">
+  <title>Introduction</title>
   <video xml:id="ArghLTeeSvc" youtube="ArghLTeeSvc" width="auto"/>
   <p>To grade student performance, go back to the instructor's interface and click on the grading tab. You'll see something like this.</p>
   <image source="Figures/grading_tab.png" width="50%"/>
@@ -11,6 +13,7 @@
   <p>You will see the last version of code that the student ran prior to the assignment deadline. Click run to execute it. Drag the little scrubber across the timeline next to the Run button to see other versions of the code that the student ran.</p>
   <p>You can assign a number grade (number of points) and, optionally, leave a comment.  As you tab out of the grade box you will see it turn green to indicate that the grade has been updated in the database. Similarly if you leave a comment it will automatically update the database with the comment for the student.</p>
   <p>If you prefer to work on one question at a time there is a save and next button that will automatically move on the next item to grade.</p>
+  </subsection>
   <subsection xml:id="instructor-interface_autograde">
     <title>Autograde</title>
     <p>Some questions have been configured for auto-grading, in particular coding problems with unit tests and some multiple choice problems. If you click on the Autograde button on the left side, the autograder will run. It will pop up an alert box to give you a diagnostic about how many question-student pairs were autograded.</p>

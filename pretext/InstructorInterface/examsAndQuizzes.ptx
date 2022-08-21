@@ -1,6 +1,8 @@
 <?xml version="1.0"?>
 <section xml:id="instructor-interface_exams-and-quizzes-in-runestone">
   <title>Exams and Quizzes in Runestone</title>
+  <subsection xml:id="create_quiz_intro">
+  <title>Introduction</title>
   <figure align="center" xml:id="create_exam_fig">
     <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Figure 1: Creating an exam from an assignment</caption>
     <image source="Figures/assignmentMain.png" width="800px%" alt="Check the timed exam checkbox"/>
@@ -18,6 +20,7 @@
   <figure align="center">
     <image source="Figures/timedExamUI.png" width="800px%" alt="Check the timed exam checkbox"/>
   </figure>
+  </subsection>
   <subsection xml:id="instructor-interface_resetting-an-exam">
     <title>Resetting an Exam</title>
     <p>The instructor interface allows you to reset an exam for any student.</p>

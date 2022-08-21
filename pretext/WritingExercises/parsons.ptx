@@ -1,194 +1,233 @@
 <section xml:id="writing-exercises_mixed-up-code-parsons">
-        <title>Mixed-Up Code (Parsons)</title>
-        <p>Mixed-up code or Parsons problems provide the correct code to solve a problem, but the code is broken into blocks and mixed up.</p>
-        <program language="rst"><input>
-.. parsonsprob:: unqiue_problem_id_here
-   :maxdist:
-   :order:
-   :language:
-   :noindent:
-   :adaptive:
-   :numbered: left
-
-   Instructions for the user.  These can include a textual description of how to solve the problem.  You must leave a blank line before this.
-   -----
-   def findmax(alist):
-   =====
-      if len(alist) == 0:
+   <title>Mixed-Up Code (Parsons)</title>
+   <introduction>
+   <p>Mixed-up code or Parsons problems provide the correct code to solve a problem, but the code is broken into blocks and mixed up.</p>
+   <program language="rst"><input>
+      .. parsonsprob:: unqiue_problem_id_here
+         :maxdist:
+         :order:
+         :language:
+         :noindent:
+         :adaptive:
+         :numbered: left
+   
+         Instructions for the user. These can include a textual description of how to solve the problem. You must leave a blank line before this.
+         -----
+         def findmax(alist):
+         =====
+         if len(alist) == 0:
          return None
-   =====
-      curmax = alist[0]
-      for item in alist:
-   =====
+         =====
+         curmax = alist[0]
+         for item in alist:
+         =====
          if item &amp;gt; curmax:
-   =====
-            curmax = item
-   =====
-      return curmax
-</input></program>
-        <p>Create a working program and then paste the code for it to create a Parsons problem.  Indent the code so that the left edge lines up with the options.  Indent each line with 4 spaces beyond the previous line.  Separate the blocks with <q>=====</q> which must line up under the options.  Put the instructions before the code after a blank line and then followed by <q>&#8212;&#8211;</q>.</p>
-        <subsection xml:id="writing-exercises_parsons-options">
-            <title>Parsons Options</title>
-            <p>Options are indented under the Parsons directive (under the p).</p>
-            <table xml:id="writing-exercises_id1"><tabular>
-                <title>Parsons Problems Options</title>
-                
-                    
-                    
-                    
-                        <row header="yes">
-                            <cell>
-                                Option
-                            </cell>
-                            <cell>
-                                Description
-                            </cell>
-                        </row>
-                    
-                    
-                        <row>
-                            <cell>
-                                maxdist
-                            </cell>
-                            <cell>
-                                The maximum number of distractors to use.  They will be picked at random
-                            </cell>
-                        </row>
-                        <row>
-                            <cell>
-                                order
-                            </cell>
-                            <cell>
-                                The order for the lines, they are displayed in a random order normally
-                            </cell>
-                        </row>
-                        <row>
-                            <cell>
-                                language
-                            </cell>
-                            <cell>
-                                Specify the language: java, python
-                            </cell>
-                        </row>
-                        <row>
-                            <cell>
-                                noindent
-                            </cell>
-                            <cell>
-                                Provide the indentation for the user by adding spaces to the left of the code
-                            </cell>
-                        </row>
-                        <row>
-                            <cell>
-                                adaptive
-                            </cell>
-                            <cell>
-                                Provide help is the user is struggling and modify the difficulty of the problem based on the user's performance on the previous problem
-                            </cell>
-                        </row>
-                        <row>
-                            <cell>
-                                numbered
-                            </cell>
-                            <cell>
-                                Show numbered labels to the left of the code if you add left or to the right when you add right
-                            </cell>
-                        </row>
-                    
-                
-            </tabular></table>
-        </subsection>
-        <subsection xml:id="writing-exercises_parsons-distractor-types">
-            <title>Parsons Distractor Types</title>
-            <p>You can include distractor blocks in the problem. A distractor is code that isn't needed in a correct solution, such as code with a syntax error. Add a distractor block after the correct code block.  Distractors can either be paired or unpaired.  For paired distractors use #paired at end of the first line of code in the distractor block.  For unpaired distractors add #distractor.</p>
-        </subsection>
-        <subsection xml:id="writing-exercises_example-with-paired-distractors">
-            <title>Example with Paired Distractors</title>
-            <p>Here is an example with paired distractors from a data oriented intermediate programming course in Python.</p>
-<exercise label="mt1dict1ex" numbered="yes" indent="show" language="python"><statement>
+         =====
+         curmax = item
+         =====
+         return curmax
+      </input></program>
+   <p>Create a working program and then paste the code for it into the editor.  Indent the code so that the left edge lines up with the options. Indent each line with 4 spaces beyond the previous line. Separate the blocks with <q>=====</q> which must line up under the options. Put the instructions before the code after a blank line and then followed by <q>----</q>.</p>
+   
+   </introduction>
+   <subsection xml:id="writing-exercises_parsons-options">
+      <title>Parsons Options</title>
+      <p>Options are indented under the Parsons directive (under the p).</p>
+      <table xml:id="writing-exercises_id1">
+         <tabular>
+            <title>Parsons Problems Options</title>
+
+
+
+
+            <row header="yes">
+               <cell>
+                  Option
+               </cell>
+               <cell>
+                  Description
+               </cell>
+            </row>
+
+
+            <row>
+               <cell>
+                  maxdist
+               </cell>
+               <cell>
+                  The maximum number of distractors to use. They will be picked at random
+               </cell>
+            </row>
+            <row>
+               <cell>
+                  order
+               </cell>
+               <cell>
+                  The order for the lines, they are displayed in a random order normally
+               </cell>
+            </row>
+            <row>
+               <cell>
+                  language
+               </cell>
+               <cell>
+                  Specify the language: java, python
+               </cell>
+            </row>
+            <row>
+               <cell>
+                  noindent
+               </cell>
+               <cell>
+                  Provide the indentation for the user by adding spaces to the left of the code
+               </cell>
+            </row>
+            <row>
+               <cell>
+                  adaptive
+               </cell>
+               <cell>
+                  Provide help is the user is struggling and modify the difficulty of the problem based on the user's performance on the previous problem
+               </cell>
+            </row>
+            <row>
+               <cell>
+                  numbered
+               </cell>
+               <cell>
+                  Show numbered labels to the left of the code if you add left or to the right when you add right
+               </cell>
+            </row>
+
+
+         </tabular>
+      </table>
+   </subsection>
+   <subsection xml:id="writing-exercises_parsons-distractor-types">
+      <title>Parsons Distractor Types</title>
+      <p>You can include distractor blocks in the problem. A distractor is code that isn't needed in a correct solution, such as code with a syntax error. Add a distractor block after the correct code block. Distractors can either be paired or unpaired. For paired distractors use #paired at end of the first line of code in the distractor block. For unpaired distractors add #distractor.</p>
+   </subsection>
+   <subsection xml:id="writing-exercises_example-with-paired-distractors">
+      <title>Example with Paired Distractors</title>
+      <p>Here is an example with paired distractors from a data oriented intermediate programming course in Python.</p>
+      <exercise label="mt1dict1ex" numbered="yes" indent="show" language="python">
+         <statement>
             <p>Complete the function greater_dictionary. Given a dictionary d and an integer cutoff, return a dictionary that contains only the key-value pairs where they key is greater than or equal to cutoff.</p>
-</statement>
-<blocks><block order="6">
-<choice correct="yes"><cline>def greater_dictionary(d, cutoff):</cline>
-</choice><choice><cline>def greater_dictionary(self, d, cutoff): </cline>
-</choice></block><block order="8">
-<cline>    result = {}</cline>
-</block><block order="2">
-<choice correct="yes"><cline>    for key in d.keys():</cline>
-</choice><choice><cline>    for key in range(d): </cline>
-</choice></block><block order="3">
-<choice correct="yes"><cline>        if key &gt;= cutoff:</cline>
-</choice><choice><cline>        if key &gt; cutoff: </cline>
-</choice></block><block order="4">
-<choice correct="yes"><cline>            result[key] = d[key]</cline>
-</choice><choice><cline>            d[key] = result[key] </cline>
-</choice></block><block order="7">
-<cline>    return result</cline>
-</block></blocks></exercise>            <p>The source code for this problem is shown here:</p>
-            <program language="rst"><input>
-.. parsonsprob:: mt1dict1ex
-   :numbered: left
+         </statement>
+         <blocks>
+            <block order="6">
+               <choice correct="yes">
+                  <cline>def greater_dictionary(d, cutoff):</cline>
+               </choice>
+               <choice>
+                  <cline>def greater_dictionary(self, d, cutoff): </cline>
+               </choice>
+            </block>
+            <block order="8">
+               <cline> result = {}</cline>
+            </block>
+            <block order="2">
+               <choice correct="yes">
+                  <cline> for key in d.keys():</cline>
+               </choice>
+               <choice>
+                  <cline> for key in range(d): </cline>
+               </choice>
+            </block>
+            <block order="3">
+               <choice correct="yes">
+                  <cline> if key &gt;= cutoff:</cline>
+               </choice>
+               <choice>
+                  <cline> if key &gt; cutoff: </cline>
+               </choice>
+            </block>
+            <block order="4">
+               <choice correct="yes">
+                  <cline> result[key] = d[key]</cline>
+               </choice>
+               <choice>
+                  <cline> d[key] = result[key] </cline>
+               </choice>
+            </block>
+            <block order="7">
+               <cline> return result</cline>
+            </block>
+         </blocks>
+      </exercise>
+      <p>The source code for this problem is shown here:</p>
+      <program language="rst"><input>
+         .. parsonsprob:: mt1dict1ex
+         :numbered: left
 
-   Complete the function greater_dictionary. Given a dictionary d and an integer cutoff, return a dictionary that contains only the key-value pairs where they key is greater than or equal to cutoff.
-   -----
-   def greater_dictionary(d, cutoff):
-   =====
-   def greater_dictionary(self, d, cutoff): #paired
-   =====
-       result = {}
-   =====
-       for key in d.keys():
-   =====
-       for key in range(d): #paired
-   =====
-           if key &gt;= cutoff:
-   =====
-           if key &gt; cutoff: #paired
-   =====
-               result[key] = d[key]
-   =====
-               d[key] = result[key] #paired
-   =====
-       return result
-</input></program>
-        </subsection>
-        <subsection xml:id="writing-exercises_example-with-unpaired-distractor">
-            <title>Example with Unpaired Distractor</title>
-            <p>Here is an example with an unpaired distractor.</p>
-<exercise label="2_swapex" indent="hide" language="python"><statement>
-            <p>The following has the correct code to &#8216;swap' the values in x and y (so that x ends up with y's initial value and y ends up with x's initial value), but the code is mixed up and contains &lt;b&gt;one extra block&lt;/b&gt; which is not needed in a correct solution.  Drag the needed blocks from the left into the correct order on the right. Check your solution by clicking on the &lt;i&gt;Check Me&lt;/i&gt; button.  You will be told if any of the blocks are in the wrong order or if you need to remove one or more blocks.</p>
-</statement>
-<blocks><block order="4">
-<cline>int x = 3;</cline>
-<cline>int y = 5;</cline>
-<cline>int temp = 0;</cline>
-</block><block order="3">
-<cline>temp = x;</cline>
-</block><block order="1">
-<cline>x = y;</cline>
-</block><block order="5">
-<cline>y = temp;</cline>
-</block><block order="2" correct="no">
-<cline>y = x; </cline>
-</block></blocks></exercise>            <p>The source code for this problem is shown here.</p>
-            <program language="rst"><input>
-.. parsonsprob:: 2_swapex
-   :noindent:
+         Complete the function greater_dictionary. Given a dictionary d and an integer cutoff, return a dictionary that contains only the key-value pairs where they key is greater than or equal to cutoff.
+         -----
+         def greater_dictionary(d, cutoff):
+         =====
+         def greater_dictionary(self, d, cutoff): #paired
+         =====
+         result = {}
+         =====
+         for key in d.keys():
+         =====
+         for key in range(d): #paired
+         =====
+         if key &gt;= cutoff:
+         =====
+         if key &gt; cutoff: #paired
+         =====
+         result[key] = d[key]
+         =====
+         d[key] = result[key] #paired
+         =====
+         return result
+         </input></program>
+   </subsection>
+   <subsection xml:id="writing-exercises_example-with-unpaired-distractor">
+      <title>Example with Unpaired Distractor</title>
+      <p>Here is an example with an unpaired distractor.</p>
+      <exercise label="2_swapex" indent="hide" language="python">
+         <statement>
+            <p>The following has the correct code to &#8216;swap' the values in x and y (so that x ends up with y's initial value and y ends up with x's initial value), but the code is mixed up and contains &lt;b&gt;one extra block&lt;/b&gt; which is not needed in a correct solution. Drag the needed blocks from the left into the correct order on the right. Check your solution by clicking on the &lt;i&gt;Check Me&lt;/i&gt; button. You will be told if any of the blocks are in the wrong order or if you need to remove one or more blocks.</p>
+         </statement>
+         <blocks>
+            <block order="4">
+               <cline>int x = 3;</cline>
+               <cline>int y = 5;</cline>
+               <cline>int temp = 0;</cline>
+            </block>
+            <block order="3">
+               <cline>temp = x;</cline>
+            </block>
+            <block order="1">
+               <cline>x = y;</cline>
+            </block>
+            <block order="5">
+               <cline>y = temp;</cline>
+            </block>
+            <block order="2" correct="no">
+               <cline>y = x; </cline>
+            </block>
+         </blocks>
+      </exercise>
+      <p>The source code for this problem is shown here.</p>
+      <program language="rst"><input>
+         .. parsonsprob:: 2_swapex
+         :noindent:
 
-   The following has the correct code to 'swap' the values in x and y (so that x ends up with y's initial value and y ends up with x's initial value), but the code is mixed up and contains &lt;b&gt;one extra block&lt;/b&gt; which is not needed in a correct solution.  Drag the needed blocks from the left into the correct order on the right. Check your solution by clicking on the &lt;i&gt;Check Me&lt;/i&gt; button.  You will be told if any of the blocks are in the wrong order or if you need to remove one or more blocks.
-   -----
-   int x = 3;
-   int y = 5;
-   int temp = 0;
-   =====
-   temp = x;
-   =====
-   x = y;
-   =====
-   y = temp;
-   =====
-   y = x; #distractor
-</input></program>
-        </subsection>
-    </section>
-
+         The following has the correct code to 'swap' the values in x and y (so that x ends up with y's initial value and y ends up with x's initial value), but the code is mixed up and contains &lt;b&gt;one extra block&lt;/b&gt; which is not needed in a correct solution. Drag the needed blocks from the left into the correct order on the right. Check your solution by clicking on the &lt;i&gt;Check Me&lt;/i&gt; button. You will be told if any of the blocks are in the wrong order or if you need to remove one or more blocks.
+         -----
+         int x = 3;
+         int y = 5;
+         int temp = 0;
+         =====
+         temp = x;
+         =====
+         x = y;
+         =====
+         y = temp;
+         =====
+         y = x; #distractor
+         </input></program>
+   </subsection>
+</section>

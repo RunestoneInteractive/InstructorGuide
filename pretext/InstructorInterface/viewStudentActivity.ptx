@@ -1,6 +1,8 @@
 <?xml version="1.0"?>
 <section xml:id="instructor-interface_view-student-activity">
   <title>View Student Activity</title>
+  <subsection xml:id="activity_intro">
+  <title>Introduction</title>
   <video xml:id="yt_10lRHVSk11c" youtube="10lRHVSk11c" width="auto"/>
   <p>Many actions that students take are logged. These include:</p>
   <p>
@@ -29,6 +31,7 @@
   <figure align="center">
     <image source="Figures/instructor_menu.png" width="300px%"/>
   </figure>
+  </subsection>
   <subsection xml:id="instructor-interface_chapter-progress">
     <title>Chapter Progress</title>
     <p>One very easy to use report that allows you to quickly see how much work your students are doing on each page is the Chapter Progress Report. It looks like this:</p>
@@ -42,6 +45,8 @@
     </figure>
     <p>You can even click the view button to see a preview of the activity. Clicking on the Question link will bring you the summary page for that activity where you can see an aggregate of how all students performed on that question. We'll see more about that report shortly.</p>
   </subsection>
+  
+  
   <subsection xml:id="instructor-interface_student-progress-tab">
     <title>Student Progress Tab</title>
     <p>The instructor interface lets you see summaries of some of these activities that may be useful to you. To get started, from the instructor interface, click on the <em>Student Progress</em> tab.</p>
@@ -71,13 +76,11 @@
       <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Figure 3: Viewing multiple choice results</caption>
       <image source="Figures/multChoicResults2.JPG" width="800px%" alt="Viewing multiple choice results"/>
     </figure>
-    <subsubsection xml:id="instructor-interface_aggregate-results">
-      <title>Aggregate Results</title>
+    
       <figure align="center" xml:id="agg_results_fig">
         <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Showing aggregate results for a question</caption>
         <image source="Figures/aggregate_report.png" width="800px%"/>
       </figure>
       <p>This page is further drilldown on an individual question. You can see a histogram of the number of attempts made on the question across the class, you can see the frequency with which each option was selected, and you can see the first four responses of each student. You can also see a preview of the question.</p>
-    </subsubsection>
   </subsection>
 </section>

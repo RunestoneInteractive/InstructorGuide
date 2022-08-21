@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
 <section xml:id="containers_dynamic-questions">
   <title>Dynamic Questions</title>
+  <introduction>
   <p>To support a model of writing and assessing using a question bank we have
             added new directives that allow you to select a question when the page is loaded.
             The simplest is to simply specify the id of a question you want inserted at
@@ -17,6 +18,7 @@
    :fromid: question1_2</pre>
   </hint>
   <p>If you list multiple questions as part of the <c>:fromid:</c> option a question will be selected at random when it is displayed to the student.</p>
+  </introduction>
   <subsection xml:id="containers_using-dynamic-questions-to-secure-exams">
     <title>Using Dynamic Questions to secure Exams</title>
     <p>Using the <c>selectquestion</c> directive has real benefits for writing a timed exam including:</p>

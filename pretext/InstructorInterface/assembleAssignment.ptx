@@ -1,6 +1,8 @@
 <?xml version="1.0"?>
 <section xml:id="instructor-interface_create-an-assignment">
   <title>Create an Assignment</title>
+  <subsection xml:id="create_assignment_intro">
+  <title>Introduction</title>
   <video xml:id="h45c7_wIgGA" youtube="h45c7_wIgGA" width="auto"/>
   <p>
     <ol marker="1">
@@ -41,6 +43,7 @@
   <p>There are two primary kinds of assignments.  <term>Reading Assignments</term> and <term>Problems.</term>   Reading assignments allow you to select whole chapters or parts of chapters for your students to read.  You can assign points to the reading assignment by tracking the number of activities they attempt in each subchapter.    Problem assignments are mainly for you to select short programming problems for the students to solve, but could also include short answer, multiple choice, etc.  Or even problems that you write yourself.  More on that later.</p>
   <p>In either case the primary way you will add questions is through the tree picker interface</p>
   <image source="Figures/tree_picker.png" width="50%"/>
+  </subsection>
   <subsection xml:id="instructor-interface_creating-a-reading-assignment">
     <title>Creating a Reading Assignment</title>
     <p>Let's create a reading assignment and add a few sections for our students to read.  As you add sections you will see that are shown in a table under the Readings tab.</p>
