@@ -1,0 +1,52 @@
+<chapter xml:id="Introduction">
+<title>Introduction</title>
+<introduction>
+<p>
+Welcome to the Runestone Academy instructor interface.  This guide will try to help you navigate the various tasks that you can do with Runestone.  Your first question might be what are those tasks?
+<ul>
+<li>Create a Course</li>
+<li>Add and remove students</li>
+<li>Add and remove TAs or co-instructors</li>
+<li>Create homework assignments</li>
+<li>Grade the homework assignments</li>
+<li>Prepare for class by understanding where my students are confused</li>
+<li>Configure the spaced practice tool for my students</li>
+<li>Prepare an assessment for my students to take online with Runestone</li>
+<li>Use Peer Instruction during class</li>
+<li>Configure Runestone to work with Canvas or Moodle</li>
+</ul>
+While that is a long list of things that you <em>can do</em> there is very little that you <em>must do.</em>  Many instructors use Runestone Academy very minimally at first and then do more the next time.
+</p>
+</introduction>
+
+<section>
+<title>Courses Versus Books</title>
+<p>
+The first thing to understand about Runestone is the difference between a book and a course.  This has long been a point of confusion.  Runestone was originally conceived of as a system for building interactive textbooks.  But, as soon as you start to include interactive things like coding and multiple choice questions the next logical step is for someone (likely you - dear reader) to want to evaluate that work and record a grade.  A grade only makes sense in the context of a course, so we created the ability for you to make a course for your students.  But because the central notion always was a book there has always been the limitation that a course can only be tied to a single book.  This limitation continues, but is something we are thinking about how to relax in the future.
+</p>
+
+</section>
+<section>
+<title>Privacy</title>
+<p>
+In order to do  things like remember work in progress, record scores, etc. Runestone needs a student to have a persistent user id.  In 2022 we realize it is quite common to use one's email address as that persistent identifier, but we do not.  We still use usernames so that you or your student can make up something completely disconnected from a students personal information.  In fact one can successfully use runestone with a random username, a fake email address, and a fake first and last name.  The only caveat to that is that if you forget your password you won't be able to reset it with a fake email address!
+</p>
+<p>
+We urge you to read our <url href="https://runestone.academy/runestone/default/privacy.html" visual="Privacy Policy" /> and our <url href="https://runestone.academy/runestone/default/terms.html" visual="Terms of Service" /> 
+
+We understand that in 2022 it is common, especially for high schools, to want us to sign a data privacy agreement. Please understand that as an open source project we do not have a lot of resources for reading legalese.  You can help a lot by looking at your data privacy policy and crossing out the part where it says that Runestone will reimburse your school in the event of a data breach.  You get to use Runestone for free, why should we be required to pay you for an event that we cannot fully control.  Major corporations and banks have breaches regularly.  The good news is that we really are not likely to be a target.  We just don't store anything that valuable.
+</p>
+
+<p>
+One of the strengths of Runestone is that many of our features have been created and tested and validated by published research!  That is good for your students.  It also means that we do cooperate with a small number of highly trusted research partners at major universities.  We give them access to fully de-identified data from the database to help them conduct experiements on new features.  This makes the experience better for everyone.
+</p>
+</section>
+
+
+<section>
+<title>A Brief History of Runestone</title>
+To be written
+</section>
+
+
+</chapter>
