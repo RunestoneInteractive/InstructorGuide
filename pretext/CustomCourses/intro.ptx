@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <section xml:id="custom-courses_what-is-a-custom-course">
-  <title>What is a Custom Course?</title>
-  <p>As an instructor, you can make a custom course with a unique name on the Runestone server from an existing Runestone book. Your students will register for your course using the unique name, and then their activities will be tracked. You will then be able to:</p>
+  <title>What is a course?</title>
+  <p>As an instructor, you can make a course with a unique name on the Runestone server from an existing Runestone book. Your students will register for your course using the unique name, and then their activities will be securely saved for you to use. You will then be able to:</p>
   <p>
     <ul>
       <li>
@@ -22,4 +22,14 @@
       </li>
     </ul>
   </p>
+  <p>
+  When you create a course <em>you</em> become the instructor for that course.  We at Runestone Academy have no magical way of knowing who is and who isn't an instructor. Furthermore it would take time for us to try to validate everyone who claims to be an instructor.   But keep in mind that:
+  <ol>
+  <li>As an instructor you <em>only have access</em> to the work of the students in the course <em>you</em> create.</li>
+  <li>We do not publish answer keys for instructors on Runestone.  Note: those may be available to you through Google Groups or other media affiliated with the textbook, so check with the author of the book you are using.</li>
+  </ol>
+  </p>
+<p>
+If you have multiple sections of your course there are two ways of dealing with it.  1) You can create a single course for all of your sections (most often recommended), or 2) you can create a course for each section.  If your choose option 2 <xref ref="instructor-interface_copying-assignments"/> covers how to copy assignments between your courses.
+</p>
 </section>
