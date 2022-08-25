@@ -2,7 +2,10 @@
 <section xml:id="instructor-interface_the-instructor-interface">
   <title>The Instructor Interface</title>
   <video xml:id="interfaceintro" youtube="oeGwKLNLI-Y" width="auto"/>
-  <p>Once you are listed as the instructor for a course, you can access a variety of instructor features.</p>
+  <p>One of the primary goals of the Runestone Instructor Interface is to help you understand where your students are at, and to help you to prepare and make the best use of classtime.  We set out to create an interface where you could see at a glance which concepts your students clearly <q>got</q> and which concepts they were struggling with so that you can spend your valuable class time on the topics that were confusing rather than boring them by covering material they clearly understand.  To really be effective with this strategy you should use reading assignments as described in <xref ref="instructor-interface_assignments" />.
+  </p>
+  
+  <p>As an instructor, you can access a variety of instructor features. To get to the instructors page follow these steps:</p>
   <p>
     <ol marker="1">
       <li>
@@ -18,7 +21,7 @@
     <image source="Figures/GetToInstructor.png" width="800px%" alt="Clicking on the instructor's page"/>
   </figure>
   <p>
-    <ol marker="1">
+    <ol marker="2">
       <li>
         <p>You will see the instructor page as shown below.  You may be on a different tab that what is shown below.</p>
       </li>

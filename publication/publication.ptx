@@ -2,7 +2,7 @@
 <publication>
     <!-- directories are relative to the main source PreTeXt file -->
     <common>
-    <chunking level="1" />
+    <chunking level="2" />
     </common>
     <source>
         <directories external="../assets" generated="../generated-assets"/>

@@ -18,6 +18,7 @@
     <xi:include href="./CustomCourses/toctree.ptx" />
     <xi:include href="./Registration/toctree.ptx" />
     <xi:include href="./InstructorInterface/toctree.ptx" />
+    <xi:include href="./Assignments/toctree.ptx" />
     <xi:include href="./WritingExercises/toctree.ptx" />
     <backmatter>
       <index>

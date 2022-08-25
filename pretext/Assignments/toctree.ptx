@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
+    <title>Working with Assignments</title>
+    <xi:include href='./instructorAssignments.ptx' />
+    <xi:include href='./assembleAssignment.ptx' />
+    <xi:include href='./copyAssignment.ptx' />
+    <xi:include href='./examsAndQuizzes.ptx' />
+    <xi:include href='./gradeAssignment.ptx' />
+    <xi:include href='./practice.ptx' />
+    <xi:include href='./Exercises.ptx' />
+</chapter>
