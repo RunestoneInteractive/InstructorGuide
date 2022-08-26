@@ -41,7 +41,7 @@
     <title>Assignment Status</title>
     <p>
       The assignment page shows the status of the assignment. Students are encouraged to use this to keep themselves organized. They can mark an assignment as <term>in progress</term> or <term>submitted</term> But marking an assignment as submitted is <em>advisory</em> only. They can continue to work on the assignment and Runestone will continue to record what they do. When you grade the assignment you have the flexibility to decide what to grade and how to grade it.  You can enforce your deadlines, or relax your deadlines.  You can grade your students best response, their last response or their first.</p> 
-      <p>The image below shows the choose assignment page. The student can see that two assignments have been graded and one assignment is "in progress."  This makes it easier for them to know where they are it with each homework assignment.
+      <p>The image below shows the choose assignment page. The student can see that two assignments have been graded and one assignment is "in progress."  This makes it easier for students to know where they are it with each homework assignment, but to repeat has no actual bearing on grading.
     </p>
 
     <image source="Figures/chooseAssignmentStatus.png" alt="Choose assignment with status" />
