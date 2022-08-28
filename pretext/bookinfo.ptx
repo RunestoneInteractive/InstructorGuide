@@ -29,7 +29,8 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
     <!-- the other option is "long" which will produce an -->
     <!-- entire front matter section with more headings   -->
     <author-biographies length="short" />
-
+    <brandlogo url="https://runestone.academy"  source="RAIcon.png"/> 
+    
     <document-id edition="2">instructorguide</document-id>
 
     <!-- Prefix to enhance Sage notebook contents -->

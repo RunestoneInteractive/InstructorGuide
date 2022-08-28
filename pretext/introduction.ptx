@@ -20,6 +20,22 @@ While that is a long list of things that you <em>can do</em> there is very littl
 </introduction>
 
 <section>
+<title>The Runestone Philosophy</title>
+<p>The primary reason that Runestone was created was to be an interactive eBook server that would motivate students to actually read and experiment with the content provided by the author.  This idea was born in my head in the fall of 2010 as I was suffering from a serious case of writers block while trying to work on a second edition of a paper textbook.  Why should textbooks be static?  Especially computer science textbooks!?  From this frustration I stopped working on the update and started trying to create an interactive computer science textbook.  My primary motivation was to make every example <q>runnable</q> and <q>editable</q> so that students could read code, run code, and then modify that code to see how it behaved differently with their changes.</p>
+<p>Having come to Luther College from the <url href="https://grouplens.org" visual="GroupLens research group" /> and an internet startup company, I also knew the value of collecting data.  So I also set out to make sure that every action a student took within the textbook was captured.  I had no idea what we were going do with the data, but my intuition was that we could learn valuable lessons about <em>how</em> students were learning if we captured and analyzed enough data.  Collect the data first and then figure out how to make use of it later.</p>
+
+<p>Everything else you see about Runestone Academy today came later, and I'll cover more of that evolution in <xref ref="a-brief-history" />.  But the takeway is that for us the student experience is always foremost in our minds. Everything that you as an instructor can do with Runestone follows from that philosophy of collect the data first and then see what we can do with it.</p>  
+<p>I had never heard of the term <term>Learning Engineering</term> until the summer of 2021, but that is really what Runestone is and has always been about. <url href="https://en.wikipedia.org/wiki/Learning_engineering" visual="Wikipedia defines Learning engineering as follows"/> <blockquote>Learning Engineering is the systematic application of evidence-based principles and methods from educational technology and the learning sciences to create engaging and effective learning experiences, support the difficulties and challenges of learners as they learn, and come to better understand learners and learning. It emphasizes the use of a human-centered design approach in conjunction with analyses of rich data sets to iteratively develop and improve those designs to address specific learning needs, opportunities, and problems, often with the help of technology.</blockquote>
+ Today (August 2022) if you asked me I would say that Runestone is a <acro>LEAP</acro>.  A learning Engineering and Analytics Portal. Many of the innovative features in Runestone have come from first class pedagogical research.  All of Runestone has been evolved over the years by paying attention to the data we collect and the feedback we get from instructors and students.  All of this has been possible because we realized early on that most instructors do not want to run and manage their own servers, and that we could provide a valuable service by providing a portal to free, high quality interactive textbooks.</p> 
+ 
+ <p>The diagram below illustrates what we are trying to create.  Which is a virtuous circle whereby students learn more effectively, teachers can learn to teach more effectively, and authors can learn to write better textbooks.</p>
+ <image source="VirtuousCircle.svg" width="70%"/>
+ <p>All of this is to say that although Runestone supports many of the functions of an LMS, Runestone was never designed to be an LMS. Runestone is much more, and in order for you as an instructor to get the most out of Runestone you may need to adjust your thinking and expectations.  Hopefully this guide will help you do that.</p>
+ 
+</section>
+
+
+<section>
 <title>Courses Versus Books</title>
 <p>
 The first thing to understand about Runestone is the difference between a book and a course.  This has long been a point of confusion.  Runestone was originally conceived of as a system for building interactive textbooks.  But, as soon as you start to include interactive things like coding and multiple choice questions the next logical step is for someone (likely you - dear reader) to want to evaluate that work and record a grade.  A grade only makes sense in the context of a course, so we created the ability for you to make a course for your students.  But because the central notion always was a book there has always been the limitation that a course can only be tied to a single book.  This limitation continues, but is something we are thinking about how to relax in the future. In the meantime <xref ref="custom-courses_how-to-create-a-custom-course" /> will guide you through the process of creating a course around your chosen textbook.
@@ -58,7 +74,7 @@ One of the strengths of Runestone is that many of our features have been created
 <p>If every class that used Runestone could pay $100 for the semester regardless of the size of the class we would have enough money to be fully sustainable, and not show any ads to anyone.  We would love that.  We are not huge fans of ads either.  So maybe you can help us figure out how to do that.</p>
 </section>
 
-<section>
+<section xml:id="a-brief-history">
 <title>A Brief History of Runestone</title>
 <p>To be written</p>
 </section>
