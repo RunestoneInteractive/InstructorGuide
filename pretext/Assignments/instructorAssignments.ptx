@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <section xml:id="instructor-interface_assignments">
-  <title>Assignments</title>
+  <title>Understanding Assignments</title>
 
   <p>Runestone supports two different kinds of assignments. <term>Reading Assignments</term> and <term>Problem Sets</term>. Understanding the difference between these two kinds of assignments is very important so lets discuss each before moving on to creating assignments.</p>
 
@@ -30,17 +30,31 @@
         <li>Timed Assessments -- See
           <xref ref="instructor-interface_exams-and-quizzes-in-runestone" />.
         </li>
-        <li>Peer Instruction Work -- See [to be provided]
+        <li>Peer Instruction Work -- See <xref ref="provisional to be provided"/>
         </li>
       </ol>
       </p>
     </remark>
 
   </paragraphs>
+  
+  <paragraphs>
+  <title>Assignments and Student Work</title>
+  <p>Because the Runestone Server and the textbooks are so tightly coupled, the primary job of the server is to capture the work your students do.  As your students interact with the book, the book and the server work together to capture the clicks, the answers to questions, the code your students write, etc. All of this is captured <em>regardless of whether the activities are part of an assignment.</em>   When you make an assignment that is a layer on top of all of the data collection that simply tells the software what actions to group together when you want to assign a grade.</p>
+  <p>
+  The separation of data collection from assignments can be a bit confusing at first.  It has important implications that you should understand. 
+  <ul>
+  <li>If you use the same question in multiple assignments the student only has to do the work once.</li>
+  <li>If you delete an assignment, your students do not lose any work.</li>
+  <li>There is no need for your students to <q>submit</q> an assignment.  When it comes time to grade the software simply uses the data collected for each of the questions in the assignment.</li>
+  </ul>
+  </p>
+  
+  </paragraphs>
   <paragraphs>
     <title>Assignment Status</title>
     <p>
-      The assignment page shows the status of the assignment. Students are encouraged to use this to keep themselves organized. They can mark an assignment as <term>in progress</term> or <term>submitted</term> But marking an assignment as submitted is <em>advisory</em> only. They can continue to work on the assignment and Runestone will continue to record what they do. When you grade the assignment you have the flexibility to decide what to grade and how to grade it.  You can enforce your deadlines, or relax your deadlines.  You can grade your students best response, their last response or their first.</p> 
+      The choose assignment page shows the status of the assignment. Students are encouraged to use this to keep themselves organized. They can mark an assignment as <term>in progress</term> or <term>submitted</term> But marking an assignment as submitted is <em>advisory</em> only. They can continue to work on the assignment and Runestone will continue to record what they do. When you grade the assignment you have the flexibility to decide what to grade and how to grade it.  You can enforce your deadlines, or relax your deadlines.  You can grade your students best response, their last response or their first.</p> 
       <p>The image below shows the choose assignment page. The student can see that two assignments have been graded and one assignment is "in progress."  This makes it easier for students to know where they are it with each homework assignment, but to repeat has no actual bearing on grading.
     </p>
 
