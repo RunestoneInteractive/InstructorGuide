@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--   This file is shamelessly based on part of the          -->
+<!--                                                          -->
+<!--      PreTeXt Author's Guide                              -->
+<!--                                                          -->
+<!-- Copyright (C) 2013-2018  Robert A. Beezer                -->
+<!-- See the file COPYING for copying conditions.             -->
+
+<appendix xml:id="welcome">
+    <title>Welcome to the Runestone Community</title>
+
+    <introduction>
+        <p>The mission of Runestone Academy is simple: We want to democratize textbooks for the 21st century. There is a lot of meaning packed into that short sentence that I would be happy to unpack for you. Thank-you for your interest in Runestone and
+            <pretext />, and welcome! This appendix is meant to answer some questions you may have about how these open-source projects are organized, how you can get help, and how you can contribute back.
+        </p>
+
+        <p>The first thing you should understand is that Runestone and
+            <pretext /> started out as separate projects, but have been working together since late 2019. We realized that we can do more by combining forces than we could if we stayed independent. If you have a related project of your own, we hope you will have a similar sentiment.
+        </p>
+
+        <p>Most instructors start out using Runestone Academy and one of the books we provide pretty much as is. As you get used to using Runestone and get comfortable with its ways and quirks you may find yourself wanting to add new questions to your course. After that you may find yourself wondering about how you might customize some of the courses content. Or you may find yourself wanted to add some functionality to the instructors interface. These are all great things and we welcome that evolution of your involvement. You should not feel like you have to be an expert author or coder to contribute. Its actually very enjoyable to see people continue their learning journey by helping develop the platform that helped them start!</p>
+
+    </introduction>
+
+    <section xml:id="help-and-support">
+        <title>Help and Support</title>
+
+        <p>There is a help and documentation area built into the Instructors Page on Runestone Academy. That may be where you found this <pubtitle>Instructors Guide</pubtitle>. This is a good place to start. If you can't find the answer to your question here or in one of the videos then that is a bug that needs to be fixed.</p>
+
+        <p>The implementation of Runestone is <q>opinionated</q> that is, it is informed by my own expereiences and preferences as a teacher, as well as the experiences and preferences of some core contributors. It is difficult for a system like this to be all things to all people without imploding on itself under the weight of a thousand different configuration options that make many things possible, but almost nothing good, and nobody happy. It may not work the way you think it should but over the years it has proven do be able to do most of what people really want. So maybe give it a chance.</p>
+
+        <p>There are a few ways to get help besides this guide.
+        <ol>
+            <li>
+                <p>There are various Google Groups with more or less activity for many of the books. Asking in one of those groups is great. Searching the group to see if someone has already asked the question is also good.
+                <ul>
+                    <li>
+                        <p>
+                            <url href="https://groups.google.com/forum/#!forum/runestone-fopp" visual="Foundations of Python Programming" />
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <url href="https://groups.google.com/forum/#!forum/runestone-thinkcspy" visual="How to Think Like a Computer Scientist" />
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <url href="https://groups.google.com/forum/#!forum/runestone-httlads" visual="How to Think Like a Data Scientist" />
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <url href="https://groups.google.com/forum/#!forum/teaching-csawesome" visual="CSAwesome" />
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <url href="https://groups.google.com/g/teaching-mobile-csp/" visual="Mobile CSP" />
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            This
+                            <url href="https://groups.google.com/forum/#!forum/runestone_instructors" visual="Runestone Instructors" />
+                            is very low volume – legacy group.
+                        </p>
+                    </li>
+                </ul>
+                </p>
+            </li>
+            <li>Join our
+                <url href="https://join.slack.com/t/runestoneteam/shared_invite/enQtODUwNDIwMzg5NDQxLTZlMjAzOTNlNzNlYTVjZDEyODI4ZTY1YjFjNTg3YTBiOWY2ODNlZTA4NWFiMjAxNzlkZGE1MmY0ZTQyY2E5Y2Q" visual="slack channel" />. There is almost always someone live and available on the slack. So if you have something truly urgent that might be a good option.
+            </li>
+        </ol>
+        </p>
+
+    </section>
+
+    <section xml:id="drop-in">
+        <title>Weekly Drop-Ins</title>
+
+        <p>There are two opportunities each week to ask questions of the development team. Tuesday afternoons from 1PM Central to 3PM Central on Zoom. The link is always the same and is always provided as a reminder in the slack channel.  The Zoom meeting number is RUNESTONE1 on your telephone keypad.  The link is:  <url href="https://us02web.zoom.us/j/7863786631?pwd=b2g4bk5RSURDWjVyVUZ3YWxoSUwxUT09" visual="RUNESTONE1" /></p>
+
+        <p>Since May
+            <nbsp />2020 there has been a standing weekly online gathering of
+            <pretext /> and Runestone authors and developers. It runs on Friday afternoons for three hours and is announced Friday mornings on the <c>pretext-announce</c> Google Group. Sometimes there are scheduled discussions on development topics or seminars on topics of interest to authors and developers; but mostly there is no agenda and no schedule. Come late, leave early, drop-in, drop-out. If you are present, then you are implicitly available to help someone with questions, even if you are working on something yourself. The rest of us may lurk and/or join in. We can use break-out rooms if a subgroup wants to run a discussion, work on a targeted project, or help somebody get started one-on-one. The model is the hotel lobby after dinner at a workshop, but you provide your own contraband.
+        </p>
+
+        <p>So this is a great place to discuss a support question (likely with the person who wrote the code!) or a place to get involved with development.</p>
+    </section>
+
+    <section xml:id="github-issues">
+        <title>Feature Requests and Reporting Problems</title>
+
+        <p>We welcome feature requests and of course problem reports. The best way to make Runestone Academy better is to listen to the people who are using it every day.</p>
+
+        <p>We use the Github issue tracker extensively for proposing and discussing new features as well as for reporting and investigating bugs. This is the place to report problems. Github is well known and trusted and it is free to sign up. <em>Please do not use personal email to report problems</em>.
+        <ul>
+            <li> It is not that we do not like to engage with people one-on-one it is simply a matter of trying to optimize our time. Many many bug reports are duplicates, for which there are already documented workarounds on Github if you just take the time to search. </li>
+            <li>Part of being an open source project is that we do our work in the open, and try to leverage the efforts and knowledge of the entire community. Sending a personal email to me may be satisfying or easy for you, but in many cases there are others who can help and fix the problem just as fast or faster than I can.</li>
+            <li>For every problem that can be fixed by someone else that leaves me more time to work on the really hard problems that other people cannot.</li>
+        </ul>
+        </p>
+
+        <p>When reporting a problem please please take the time to give us some context and some details.
+            Telling me that X does not work doesn’t really help. The truth is runestone.academy gets over 500,000 page views a day from people around the world. So most of the time when someone says “X does not work” it does in fact work fine for most people. This does not make it your fault, it just means I need more information to try to make sense of what is going on. Here are a few tips.
+        <ul>
+            <li>What Task are you trying to accomplish? Understanding your goals is really important as sometimes its not obvious how to do something on Runestone</li>
+            <li>What steps did you take to try to accomplish that task? Walking me through the steps gives me valuable context and saves me TONS of time in trying to recreate what went wrong.</li>
+            <li>Specifically what went wrong? What error message did you see? What exactly did happen that you think should not have happened. You can speculate about what you think is broken, but often you will be wrong and misleading. Just the facts is a great policy.</li>
+            <li>Give some context about your environment. What course are you in? What is your username? What page of the course? Specifically what exercise does not work? Each activity has a unique identifier. please include that. What browser are you using? What version of the browser. (Runestone relies on many modern features of Javascript that are only present in new-ish browsers) We can not test every browser so if you are using something outside of Chrome, Firefox, Safari, or maybe Edge it is likely that I have not tested it there.</li>
+            <li><p>If there is a traceback on the page, please copy it and include it in your Github Issue.
+                Many many errors can be quickly diagnosed from the Javascript Console error log. 
+                <ul>
+                <li>Chrome: View --> Developer --> Javascript Console</li>
+                <li>Safari: ⌥⌘i or Develop --> Show Web Inspector </li>
+                <li>Firefox: Tools --> Web Developer --> Toggle Tools</li>
+                </ul>
+            </p>
+            </li>
+        </ul>
+        </p>
+        <p>Please note, I'm not trying to be rude, but years of observation have taught me that CS teachers are pretty bad bug reporters! Imagine if a student sent you the following email:</p>
+        <pre>
+            Hey,
+            
+            You know problem 2 for the homework next week.  
+            My program just doesn't work.  I'm pretty sure 
+            I've done everything right.  Can you tell me how 
+            to fix it?
+            
+            Thanks,
+            
+            Student
+        </pre>
+        <p>You wouldn't be able to help this student very much, in fact you probably wouldn't have any idea what program that student was even asking about without spending your own valuable time figuring it out. Sadly, It is a pretty good representation of thousands of bug reports I've received. So please, take a few seconds and read or re-read Filing an effective bug report. Thanks.
+        </p>
+
+    </section>
+
+
+    <section xml:id="contributing">
+        <title>Contributing</title>
+
+        <p>As a project that is licensed openly, we welcome contributions. And this does not necessarily mean you need to learn Javascript or Python or XSL. For ideas, find the issues on GitHub that have the label <c>good first issue</c> and/or <c>help wanted</c>. Upating this guide, recording screen casts to replace the 11 year old screen casts in some of our books are examples of non-coding tasks that would be amazing.</p>
+
+
+
+    </section>
+
+
+
+</appendix>

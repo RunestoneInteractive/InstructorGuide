@@ -3,3 +3,8 @@ build/*
 *.pyc
 .DS_Store
 .vscode
+output
+published
+cli.log
+.error_schema.log
+sphinx_settings.json
