@@ -19,7 +19,7 @@ While that is a long list of things that you <em>can do</em> there is very littl
 </p>
 </introduction>
 
-<section>
+<section xml:id="prose-philosophy">
 <title>The Runestone Philosophy</title>
 <p>The primary reason that Runestone was created was to be an interactive eBook server that would motivate students to actually read and experiment with the content provided by the author.  This idea was born in my head in the fall of 2010 as I was suffering from a serious case of writers block while trying to work on a second edition of a paper textbook.  Why should textbooks be static?  Especially computer science textbooks!?  From this frustration I stopped working on the update and started trying to create an interactive computer science textbook.  My primary motivation was to make every example <q>runnable</q> and <q>editable</q> so that students could read code, run code, and then modify that code to see how it behaved differently with their changes.</p>
 <p>Having come to Luther College from the <url href="https://grouplens.org" visual="GroupLens research group" /> and an internet startup company, I also knew the value of collecting data.  So I also set out to make sure that every action a student took within the textbook was captured.  I had no idea what we were going do with the data, but my intuition was that we could learn valuable lessons about <em>how</em> students were learning if we captured and analyzed enough data.  Collect the data first and then figure out how to make use of it later.</p>
@@ -76,7 +76,80 @@ One of the strengths of Runestone is that many of our features have been created
 
 <section xml:id="a-brief-history">
 <title>A Brief History of Runestone</title>
-<p>To be written</p>
+<p>The Runestone project began in on my sabbatical in 2011.  I've already mentioned that I had serious writers block because I wanted computer science textbooks to be interactive.  The first stage in fixing that problem was finding a way to run Python in the browser.  This led me to the <url href="https://skulpt.org" visual="Skulpt Project" /> Scottie Graham had implemented Python 2.6-ish by re-implementing CPython in Javascript.  While the core was there Skulpt was missing many pieces, such as a turtle graphics module.  Since I loved using turtle graphics as a way for students to get fun, immediate feedback on their code I set about trying to add turtle graphics to skulpt.  Since I knew very little about Javascript that sucked up a couple of months of my Sabbatical, but was a lot more fun than updating a textbook.  With turtle graphics in hand I knew I had hit on something!</p>
+<p>The next problem was that I knew that as an author I didn't want to have to write a 100 lines of custom javascript for every example!  I needed a way, ideally a really simple way of just surrounding some python code with a wrapper and letting a tool build the html and javascript needed to create a widget on the webpage that ran the Python.  This led me to <url href="sphinx-doc.org" visual="Sphinx" />  Sphinx is a wonderful writing tool, widely used in the Python community.  It also has a rich collection of extensions, and a syntax that is just what I was looking for!  With sphinx I could write something like:</p>
+<pre>
+.. activecode:: some_id
+
+    print("hello world")
+</pre>
+
+<p>Sphinx would turn that into html that looked like:</p>
+<pre>
+&lt;div class="runestone explainer ac_section "&gt;
+&lt;div data-component="activecode" id=over_ac_example1 data-question_label="1.1.1"&gt;
+&lt;div id=over_ac_example1_question class="ac_question col-md-12"&gt;
+
+&lt;/div&gt;
+&lt;textarea data-lang="python" id="over_ac_example1_editor" 
+      data-timelimit=25000 data-coach="true" data-codelens="true"   
+    data-audio=''      
+           data-wasm=/_static
+     style="visibility: hidden;"&gt;
+print("My first program adds a list of numbers")
+myList = [2, 4, 6, 8, 10]
+total = 0
+for num in myList:
+    total = total + num
+print(total)
+&lt;/textarea&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/pre&gt;
+</pre>
+<p>Stir in some javascript and you have a working runnable example! That looks like this:</p>
+<program xml:id="python-hello-world" interactive='activecode' language="python">
+    <input>
+print("My first program adds a list of numbers")
+myList = [2, 4, 6, 8, 10]
+total = 0
+for num in myList:
+    total = total + num
+print(total)
+    </input>
+</program>
+
+<p> With Sphinx I had a way to write large documents in a very simple markup language called <url href="https://docutils.sourceforge.io/rst.html" visual="restructuredText"/> and a way to extend the markup with interactive textbook elements, which at that time was still only running python.  But it gave me a huge sense of optimism that my goal of having an interactive textbook was achievable.</p>
+
+<p>The next problem was to translate our textbook called <em>Python Programming in Context</em> from LaTeX to restructuredText and converting the examples to be runnable.  But Jones and Bartlett publishers had different ideas.  I had signed away the digital rights to the book in our original contract and Jones and Bartlett were not willing to let me convert the book.  They were going to sells PDFs along with some kind of digital code to a code practice system online.  I was really depressed, I loved that book and its approach.  I hated the publisher (and still do) for their greed and short sightedness.  I didn't want to start over and write yet another intro to CS book from scratch.  So I started looking for something else to start with.  This led me to <url href="" visual="How to Think like a Computer Scientist"/> by <url href="https://www.allendowney.com/wp/" visual="Allen Downey"/> and  <url href="https://www.elkner.net" visual="Jeffrey Elkner."/>  This book at a GNU Free Documentation License, and was alread in restructuredText!!  So I remixed that book and added interactive examples which led to the interactive edition of that book.</p>
+
+<p>The publisher of My other book, <em>Problem Solving with Algorithms and Data Structures using Python</em> was <url href="https://fbeedle.com" visual="Franklin Beedle" />.  I'll never forget the conversation I had with Jim Leisy, our publisher, at SIGCSE.  I had just given him a demo of a couple chapters of the interactive How to Think book and asked him if we could do the same thing with our data structures book.  He said, <q>I've always wanted to change the world, and this looks like my chance, lets do it!</q> </p>
+
+<p>In the Summer of 2011 I was at the ACM Awards ceremony in San Jose, I was there as part of the team accepting the <url href="https://en.wikipedia.org/wiki/ACM_Software_System_Award" visual="Software System award" />.  At the banquet I started a conversation with Mark Guzdial and Barb Ericson who were accepting the Karl Karlstrom outstanding educator award.  I told them about Runestone and that conversation started a pivotal partnership that has lasted to this day.  Their reaction was this is wonderful and the kind of research tool we have been looking for.  Now can you add multiple choice questions? fill in the blank?  And many many more ideas including Parsons problems, which were the subject of Barb's PhD research.</p>
+
+<p>The next several years were super busy, I managed to find money to get Luther students to work with me on Runestone during the summer months.  In the summer of 2014 we had the first Runestone Hackathon at the University of Michigan.  This workshop was pivotal because it was the beginning of the instructor interface.  I had always resisted adding too many instructor facing features to Runestone,  I did not want Runestone to become another crappy LMS!! But Paul Resnick and Barb Ericson convinced me that adding features to make the lives of instructors better was necessary, and that we could do things that LMS could never dream of doing to help teachers understand their students better.  We did a lot of whiteboard designing that year and worked on it until it all really came together in the summer of 2016 when we had the second hackathon at Luther College.</p>
+
+<p>By the late Fall of 2017 I was developing a real desire to focus all of my efforts on Runestone.  But I wasn't sure how to make that happen until Luther announced an early retirement incentive. Anyone with 15 years of service to the college was eligible and could get a years salary and stay on the college health plan for five years.  This was a dream come true, I just met the 15 year criteria and the years salary would give me time to figure out how to make Runestone sustainble in a way that could pay me some kind of salary.</p>
+
+<p>Things got even more interesting in the Spring of 2018 when I was offered a consulting gig with Google.  They wanted to use Runestone as a platform for their applied computing program.  In a nutshell the program's goals were to introduce computer science to colleges with underserved student populations that had not offered computer science before.  I basically got to work on Runestone and coach professors from the participating colleges in how to use Runestone and how to teach introductory CS.  The program expanded into a second course to introduce Data Science to those colleges, which resulted in the <em>How to Think like a Data Scientist</em> book.  My gig at Google was supposed to last 5 months, but it ended up lasting two years.</p>
+
+<p>Sometime in the early2019 I received an email from Oscar Levin that read as follows</p>
+<pre>
+On behalf of the workshop organizers, Jim Fowler, Mitch Keller, Matthew
+Leingang, and Oscar Levin, we would like to invite you to participate
+in the workshop
+"Interactive assessments in open source textbooks"
+from December 9 to December 13, 2019.
+</pre>
+
+<p>I didn't know anything about <acro>AIM</acro>, and I had never met Oscar but the workshop sounded interesting. So I said yes. When I arrived at the first day of the workshop and listened to the introductory talk, I knew that I had found a group of people I wanted to work with more.  Many of the people in this workshop were authors of open source math textbooks written in <url href="https://pretextbook.org" visual="PreTeXt" />.  A project started by Rob Beezer at about the same time I had started Runestone.</p>
+
+<p>It was early in the afternoon of the first day of the workshop when I found myself in a room with David Farmer, and after I had given a quick demonstration of Runestone and its capabilities he said something like:  <q>This is great, but I don't know why you would want to keep developing this Runestone Markup language when you could just use <pretext/> and focus your efforts on other more valuable work.</q>  It was one of those direct statements that hit me hard, should I be offended? embarrased? honored?  It took me a couple of days and getting to know both David and Rob better to realize the wisdom of that statement.  But by the end of the workshop we were able to host a version of Rob's book <em>A First Course in Linear Algebra</em> on a Runestone Server.  We also realized that our goals were very well aligned and that we could accomplish more by working together than we could by continuing to work separately.</p>  
+
+<p>It took an entire global pandemic for Rob and I to really integrate the Runestone Components into <pretext/>.  And it took me a Summer to cook up a conversion process that turned restructuredText into <pretext/>.  But that explains why this instructor guide looks a bit different than the Runestone books you may be used to seeing.  I converted the instructor guide to <pretext/> and have been working on adding it and making it more useful.  What you see in this book is a little glimpse of the future.  Whats more is that students really benefit from this partnership.  Books in <pretext/> are far more accessible than anything we have done with restructuredText and they are far more mobile ready as well. </p> 
+
+<p>Building a system like Runestone is a lot of work, and I am amazed at what we have accomplished with very little funding.  The future looks very exciting Runestone Academy has incorporated and is operating as a non-profit.  We have applied for and are waiting approval of the formal 501(c)(3) tax status with the IRS. I am hopeful that I will be able to announce some significant support from an NSF program designed to help open source projects like Runestone and <pretext/> become sustainable long term.  I think I did a pretty good job of outlining our vision in <xref ref="prose-philosophy" />. We have an exciting and necessary mission and if you are inspired to help us out in any way we would welcome your efforts!</p>
+
 </section>
 
 <section>
