@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <publication>
     <!-- directories are relative to the main source PreTeXt file -->
+    <common>
+        <chunking level="1" />
+    </common>
     <source>
         <directories external="../assets" generated="../generated-assets"/>
     </source>

@@ -3,5 +3,5 @@
         <title>Managing Your Course</title>
         <xi:include href='./inviteStudents.ptx' />
         <xi:include href='./privaterunestone.ptx' />
-        <xi:include href='./Exercises.ptx' />
+        <xi:include href="./lti.ptx" />
     </chapter>

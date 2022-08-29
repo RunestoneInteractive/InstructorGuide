@@ -3,5 +3,4 @@
         <title>Creating a Course</title>
         <xi:include href='./intro.ptx' />
         <xi:include href='./createCourse.ptx' />
-        <xi:include href='./Exercises.ptx' />
     </chapter>
