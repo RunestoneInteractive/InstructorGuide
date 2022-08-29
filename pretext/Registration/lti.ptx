@@ -4,6 +4,7 @@
         <title>Introduction</title>
         <p>
             Runestone provides a rudimentary LTI integration using LTI 1.1. So far we have made this work very successfully with Canvas and Moodle. Others may or may not work. I call this a community supported feature of Runestone because LTI is a huge pain to work with, and it is very difficult to get access to and test against whatever LMS your school has chosen.</p>
+        <p> When you use LTI your students do NOT and should not register on Runestone Academy, the LTI interface registers your student with Runestone the first time they access it from your LMS</p>
     </subsection>
     <subsection>
         <title>Phase 1 (All LMS platforms)</title>

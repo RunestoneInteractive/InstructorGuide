@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<section xml:id="add_instructor">
+<title>Add and Instructor or TA</title>
+<p>Runestone supports multiple instructors or TAs for a course.  We do not make any real distinction between a TA and an instructor so keep in mind they they both have all of the same privileges that you do.  Adding a another instructor is quite easy.  The process is as follows.
+
+<ol>
+<li>Make sure that your co-instructor has registered for your course as a student.</li>
+<li><p>Go to the instructor page and select the Add TA tab as shown below</p>
+<image source="Figures/add_instructor.png" description="Add a TA or instructor" />
+</li>
+<li>Select the co-instructor or TA from the list of students on the right then click the + button below the list.  You should see the name appear in the list of instructors on the left.</li>
+</ol>
+
+<p>To "demote" a co-instructor or TA back to a student just select them in the list of instructors on the left and click the - button below the box.</p>
+</p>
+</section>

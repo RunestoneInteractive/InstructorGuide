@@ -4,4 +4,5 @@
         <xi:include href='./inviteStudents.ptx' />
         <xi:include href='./privaterunestone.ptx' />
         <xi:include href="./lti.ptx" />
+        <xi:include href="./add_instructor.ptx" />
     </chapter>
