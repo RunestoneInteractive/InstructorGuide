@@ -50,12 +50,12 @@
     :Description: Interactive textbooks from Runestone Academy
 </pre>
                 </li>
-                <li> Add an assignment in Canvas that uses the Runestone external tool:
+                <li> <p>Add an assignment in Canvas that uses the Runestone external tool:
                     <ol>
                         <li> At `Runestone Academy`_, create an assignment; be sure you’ve checked the “Visible to Students” box and saved that change.</li>
                         <li> Still on the assignments page, copy the LTI link.</li>
                         <li> In Canvas, add an assignment. For the submission type, select “External Tool.” For the External Tool URL, use the LTI link you just copied. You’ll have to manually enter the same due date/time and a similar assignment name; these aren’t copied automatically. You must be sure the Load This Tool In A New Tab checkbox is checked.</li>
-                    </ol>
+                    </ol></p>
                 <li> Students can now click on this assignment and work it. **If they don’t click on the assignment, they won’t receive a grade.**</li>
                 <li> When the assignment is due, go to Runestone directly from your Canvas course by using an assignment link. Otherwise, grade reporting won’t work.</li>
                 <li> In the grading tab of the instructor interface, grade the assignment, then click the “Release Grades” button. Doing this will push all grades to Canvas.</li>
@@ -88,7 +88,7 @@
                     <p> In Moodle, create a new enrollment external app directly to your course and assignment. You will need to repeat this for each assignment. You will also need the database values for your course ID, and assignment ID. Get these from step 2.2. Please note that in order to receive roles and grades, "Accept Grades" must be checked in Moodle. In other LMS's this may be referenced by a "Share IMS Names and Roles" or similar.</p>
                     <pre>
         :Name: Assignment 1
-        :Tool URL: <c>https://runestone.colorado.edu/runestone/lti?assignment_id=&amp;custom_course_id</c>
+        :Tool URL: https://runestone.colorado.edu/runestone/lti?assignment_id=&amp;custom_course_id
         :Consumer key: Enter the key you copied for `consumer` from Phase 1
         :Shared secret: Enter the key you copied for `secret` from Phase 1
         :Icon URL: https://yourHost.blahblah.edu/runestone/static/images/logo_small.png
