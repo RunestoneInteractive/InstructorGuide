@@ -15,8 +15,9 @@
             <li> Browse to the
                 <url href="https://runestone.academy" visual="Runestone Academy" /> and log in, then select your course (you must be the Instructor).
             </li>
-            <li> Browse to the
-                <url href="https://runestone.academy/runestone/admin/admin" visual="Instructor's Page" />, then click on “LTI Integration” in the Admin tab.
+            <li> <p>Browse to the
+                <url href="https://runestone.academy/runestone/admin/admin" visual="Instructor's Page" />, then click on “LTI Integration” in the Admin tab.</p>
+                <image source="Figures/lti_config.png" description="LTI configuration panel" />
             </li>
             <li> Click on the “Create LTI Key and Secret” button. Click the “Show Secret” button. You will use these in the next phase.</li>
         </ol>
