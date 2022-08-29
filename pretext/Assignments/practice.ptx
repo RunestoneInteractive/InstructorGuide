@@ -1,19 +1,26 @@
 <?xml version="1.0"?>
 <section xml:id="instructor-interface_the-practice-interface">
   <title>The Practice Interface</title>
-  <p>How often have you had a student ask you how they could get more practice?  One theory that supports this is <q>spaced repetition</q>  That is, a method to have students go back and answer existing questions but a couple of weeks after the material was brand new.  Its harder, because its now out of the immediate context of the reading they just did, but this type of review helps solidify a student's understanding of the concept.</p>
-  <p>There is a paper about this in the ACM Digital Library from the 2019 proceedings.  Speed and Studying: Gendered Pathways to Success, Iman Yeckehzaare and Paul Resnick.</p>
-  <p>This feature is available in Foundations of Python Programming, and How to Think Like a Computer Scientist.  The exercises need to be tagged and in some cases categorized.  Other books will follow as we do the work to update the source.</p>
+  <p>How often have you had a student ask you how they could get more practice? One theory that supports this is <q>spaced repetition</q> That is, a method to have students go back and answer existing questions but a couple of weeks after the material was brand new. Its harder, because its now out of the immediate context of the reading they just did, but this type of review helps solidify a student's understanding of the concept.</p>
+  <p>There is a paper about this in the ACM Digital Library from the 2019 proceedings. Speed and Studying: Gendered Pathways to Success, Iman Yeckehzaare and Paul Resnick.</p>
+  <p>This feature is available in most books on Runestone Academy. The exercises need to be tagged and in some cases categorized. Other books will follow as we do the work to update the source.</p>
+  <p>The first thing you will need to do is configure practice for your course.  Most of the options on the configuration are pretty self explanatory, but here are a few notes.
+  <ul>
+  <li>If you choose to assign points for practice they will show up in a special column in the gradebook.labelled "Practice"</li>
+  <li>Do not forget to come back to the practice interface after you have covered a topic so that you can enable practice questions for that topic.</li>
+  </ul>
+  </p>
   <figure align="" xml:id="practice_if_fig">
     <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Set up the practice feature for your course.</caption>
-    <image source="Figures/practice_setup.png" width="50%"/>
+    <image source="Figures/practice_setup.png" />
   </figure>
+
   <p>Once you have enabled the practice feature for the course, you enable the sections you want practice questions to come from.</p>
   <figure align="">
-    <image source="Figures/practice_choose.png" width="50%"/>
+    <image source="Figures/practice_choose.png" />
   </figure>
-  <p>The students see the practice feature like this:</p>
+  <p>The students can access the practice tool from the 👤 menu, The practice practice looks like this:</p>
   <figure align="">
-    <image source="Figures/practice_student.png" width="50%"/>
+    <image source="Figures/practice_student.png" />
   </figure>
 </section>
