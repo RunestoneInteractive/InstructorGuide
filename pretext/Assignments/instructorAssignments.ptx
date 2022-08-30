@@ -31,7 +31,7 @@
           <xref ref="instructor-interface_exams-and-quizzes-in-runestone" />.
         </li>
         <li>Peer Instruction Work -- See
-          <xref provisional="peer-instruction" />
+          <xref ref="peer_instruction" />
         </li>
       </ol>
       </p>

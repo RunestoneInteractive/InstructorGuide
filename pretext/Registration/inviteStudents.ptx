@@ -39,4 +39,6 @@ user1,user@school.com,Jane,Smith,xxxx,foocourse</pre>
   <p>Instructors cannot change their own passwords through this mechanism. who among us hasn't walked away from the computer and left ourselves logged into Runestone? As an instructor, you will still have to use the normal email password reset mechanism. If your school blocks emails then I suggest you just get a free gmail address to use for this purpose.</p>
   
   </subsection>
+  
+  
 </section>
