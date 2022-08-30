@@ -10,14 +10,14 @@
         <p>To create an assignment, whether graded or ungraded, start by going to the Assignments tab on the instructor interface. Click on the Add button to start creating a new assignment. On the popup that appears you will notice that you can also copy an old assignment as a starting point.</p>
         <figure align="center" xml:id="new_assign_fig">
           <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Figure 1: Click on the Add button to create a new assignment</caption>
-          <image source="Figures/assignmentMain.png" width="800px%" alt="Click on the plus to create a new assignment" />
+          <image source="Figures/assignmentMain.png" width="100%" alt="Click on the plus to create a new assignment" />
         </figure>
       </li>
       <li>
         <p>Provide a name for the assignment.</p>
         <figure align="center" xml:id="unique_assign_fig">
           <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Figure 2: Enter a unique name for the assignment</caption>
-          <image source="Figures/nameAssign.png" width="800px%" alt="Enter a unique name for the assignment" />
+          <image source="Figures/nameAssign.png" width="100%" alt="Enter a unique name for the assignment" />
         </figure>
       </li>
       <li>
@@ -33,7 +33,7 @@
 
         <figure align="center" xml:id="save_alert_fig">
           <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Figure 4: The save alert box.</caption>
-          <image source="Figures/savedAlert.png" width="800px%" alt="The save alert box" />
+          <image source="Figures/savedAlert.png" width="100%" alt="The save alert box" />
         </figure>
       </li>
     </ol>

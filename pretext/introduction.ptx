@@ -29,7 +29,7 @@ While that is a long list of things that you <em>can do</em> there is very littl
  Today (August 2022) if you asked me I would say that Runestone is a <acro>LEAP</acro>.  A learning Engineering and Analytics Portal. Many of the innovative features in Runestone have come from first class pedagogical research.  All of Runestone has been evolved over the years by paying attention to the data we collect and the feedback we get from instructors and students.  All of this has been possible because we realized early on that most instructors do not want to run and manage their own servers, and that we could provide a valuable service by providing a portal to free, high quality interactive textbooks.</p> 
  
  <p>The diagram below illustrates what we are trying to create.  Which is a virtuous circle whereby students learn more effectively, teachers can learn to teach more effectively, and authors can learn to write better textbooks.</p>
- <image source="VirtuousCircle.svg" width="70%"/>
+ <image source="VirtuousCircle" width="70%"/>
  <p>All of this is to say that although Runestone supports many of the functions of an LMS, Runestone was never designed to be an LMS. Runestone is much more, and in order for you as an instructor to get the most out of Runestone you may need to adjust your thinking and expectations.  Hopefully this guide will help you do that.</p>
  
 </section>
