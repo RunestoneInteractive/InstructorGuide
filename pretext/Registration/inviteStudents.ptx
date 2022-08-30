@@ -1,13 +1,18 @@
 <?xml version="1.0"?>
 <section xml:id="registration_adding-students-to-your-course">
-  <title>Adding Students to your Course</title>
+  <title>Managing Students in your Course</title>
   <video xml:id="register_vid" youtube="RJ-bYYjKbTU" width="100%" />
+  <subsection>
+  <title>Student Self Registration</title>
   <p>When you created the course, you chose a project name. Give that text string to students. They will register on the site and enter that string as their course name. If you've forgotten what the string is, you can see it displayed on the Course selection page <url href="https://runestone.academy/runestone/default/courses" visual="https://runestone.academy/runestone/default/courses">https://runestone.academy/runestone/default/courses</url>. You can access that page by clicking on the person icon at the top right of the window and then selecting <em>Change Course</em>.</p>
   <note>
     <p>Students will register for a course following the same procedures that were described
       <xref ref="registration_register-for-this-course" />. You just need to provide them with the text string for the course name.
     </p>
   </note>
+  </subsection>
+  <subsection>
+  <title>Pre-register your students</title>
   <p>You can also pre-register your students by creating a CSV file and uploading that file through the instructor interface. Pull down the &#x1F464; menu and Choose Instructor Page then click on the button for Manage Students. You will see a page like this:</p>
   <figure align="center" xml:id="reg_your_students_fig">
     <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Register your Students</caption>
@@ -19,4 +24,19 @@ user1,user@school.com,Jane,Smith,xxxx,foocourse</pre>
   <p>Notice &#x2013; There are no spaces after the commas. Excel is horrible at exporting it will add extra blank fields and lines that look like <c>,,,,,,,,</c> Once you export from excel its best to clean things up in your favorite text editor.</p>
   <p>When the file is created you can choose it and upload it to Runestone. It will verify the fields and if there are no errors it will register the students. The most common error is that the username is a duplicate. Usernames are the primary way we identify students and they must be unique. With over 120,000 students in the database there are bound to be duplicates. This is not a bug, it is a sign of growth.</p>
   <p>If you add students to your class later you need to create a new CSV file just for them (or have them register themselves). Adding students to the end of your previous spreadsheet will result in lots of error messages about duplicate usernames.</p>
+  </subsection>
+  <subsection>
+  <title>Removing Students</title>
+  <p>You may also have noticed the "Remove Student(s)" button in <xref ref="reg_your_students_fig" /> This allows you to remove a student from your course.  Although it seems self explanatory the reason to bring this up is to explain what happens to the student account when you remove them.  The account is <em>not</em> deleted but rather the student and their work is moved to the base course.  This allows a student to have access to their work and to continue working independently if they wish.  As an instructor you do not have the capability to delete a student account.  But anyone can delete their account and all of the information saved for that account by using the 👤 menu choosing edit profile.</p>
+  </subsection>
+  
+  <subsection>
+  <title>Resetting Passwords</title>
+  <p>There is no doubt about it, password management is a headache for everyone. Runestone handles <em>hundreds</em> of password reset requests each week. But that does not always work. Some schools (inexplicably) block email from Runestone. Other schools run software that simply mangles the URL's found in emails that look like they are password reset emails. This is understandable to some degree as Phishing scams are so common, and its important to protect the students. I've done everything I can do from my side to validate the runestone.academy email domain. But, other times students simply type in their email incorrectly.</p>
+
+  <p>You may be get around some of these problems by asking your school to allow mail from <c>runestoneinteractive@gmail.com</c> to go through.  If your IT department is not cooperative then your students will have to come to you to have their password changed.  You can reset the password for any of the students in your course.  Just select the student from the list and click the reset password button.  I cannot respond to emails asking me to reset passwords, I don't have the time to do that, and I do not have a reliable way to verify that those requests are legitimate.  Yes many high schoolers think it is funny to try to trick me into resetting the password on one of their friends.</p>
+  
+  <p>Instructors cannot change their own passwords through this mechanism. who among us hasn't walked away from the computer and left ourselves logged into Runestone? As an instructor, you will still have to use the normal email password reset mechanism. If your school blocks emails then I suggest you just get a free gmail address to use for this purpose.</p>
+  
+  </subsection>
 </section>
