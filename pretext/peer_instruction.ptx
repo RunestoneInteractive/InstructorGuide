@@ -1,0 +1,86 @@
+<chapter xml:id="peer_instruction">
+    <title>Peer Instruction</title>
+    <introduction>
+        <p>Peer instruction was created by Eric Mazure to improve student understanding in Physics, but it has been used in many areas of study including Computer Science and Mathematics. The peer instruction process is defined as follows:
+        <ul>
+            <li>Students read material before lecture</li>
+            <li>There is a short assessment before or at the beginning of lecture</li>
+            <li>
+                <p>The instructor displays a hard multiple-choice question every 15-20 minutes.
+                <ul>
+                    <li>Students answer individually</li>
+                    <li>Students discuss answers with peers</li>
+                    <li>Students answer individually again</li>
+                    <li>Instructor shows the results of both answers and leads a discussion</li>
+                </ul>
+                </p>
+            </li>
+        </ul>
+        </p>
+    </introduction>
+    <section>
+        <title>Peer instruction in Runestone</title>
+        <p>Support for peer instruction in Runestone was developed as part of a research project by Barb Ericson at the Universit of Michigan. The interface consists of two parts, an instructor interface that allows the instructor to move the class through the steps outlined above and a student interface for answering the questions and participating in a live chat with one or more peers.</p>
+
+        <p>As an instructor you access the peer instruction feature from the 👤 menu and choose the Peer Instruction (instructor) option. This will bring you to a page that allows you to select the peer instruction assignment you want to use. When click on the link it starts the peer instruction session. During a peer instruction session students answers are not restored from their history if they have answered them before.</p>
+        <figure xml:id="peer_assignment_selector">
+            <caption>The peer instruction assignment selector</caption>
+            <image source="Figures/PI_select.png" description="Peer instruction for the instructor" />
+        </figure>
+        <p>
+            <xref ref="pi_instructor" /> shows the interface for controlling a peer instruction session. It is pretty self explanatory, and consists of 4 steps. Note that when your students go to the student page they will see the first question and they will be able to answer the question right away. You will be able to see the number of students that have answered the question to the right of the question. This will allow you to guage when it is time to stop the vote.
+        <dl>
+            <li>
+                <title>Stop Vote 1</title>
+                <p>This will change the students display so that they see a countdown timer indicating that they have 5 - 4 - 3 - 2 - 1 seconds left to answer the question. Once the timer reaches 0 the students question will be disabled so they can no longer answer.</p>
+            </li>
+
+            <li>
+                <title>Enable Discussion</title>
+                <p>clicking this button tells the system to select partners for each student. Ideally it will choose a partner that has answered the question differently. It will then open up a chat box on the students page where they can engage in conversation with their peers. During this time you will be able to consult the page labeled "Extra" in
+                    <xref ref="peer_assignment_selector" /> This page is designed to be simple so you can bring it up on your phone or table and lets you monitor the percent of students that have answered the question correctly.
+                </p>
+            </li>
+            <li>
+                <title>Start Vote 2</title>
+                <p>This will clear the students previous answer and enable the question so the student can answer again. During the voting period you can keep an eye on the number of answers to guage when to stop voting. You can also consult the second instructor display labelled extra in </p>
+            </li>
+            <li>
+                <title>Stop Vote 2</title>
+                <p>This begins a countdown timer to stop the second vote.</p>
+            </li>
+
+            <li>
+                <title>Next Question</title>
+                <p>Clicking this button changes the question displayed on your screen as well as your students.</p>
+            </li>
+
+        </dl>
+        </p>
+        <figure xml:id="pi_instructor">
+            <caption>The instructor interface for peer instruction</caption>
+            <image source="Figures/PI_instructor.png" description="Peer instruction for the instructor" />
+        </figure>
+
+
+        <!-- link to peer instruction workshop video -->
+    </section>
+
+    <section>
+        <title>Creating Peer instruction Assignments</title>
+        <p>We covered creating assignments in
+            <xref ref="instructor-interface_create-an-assignment" />. There are a couple of things to note about using that interface to create a peer instruction assignment.
+        <ol>
+            <li>You need to check the peer instruction box to make it a peer instruction assignment</li>
+            <li>Peer instruction assignments can only have multiple choice questions. We may add other question types in the future but for now this limit exists.</li>
+            <li>You are not limited to the question in your textbook, we have loaded a couple of question banks designed to be used with peer instruction. You can search for questions in the question banks by unchecking the box that limits your search to your course and searching for "peerwiseqb" for the PeerWise question bank, or "canterburyqb" for question in the Canterbury Question bank. More questions are being added all the time.</li>
+        </ol>
+        </p>
+    </section>
+    <section>
+        <title>Virtual Peer Instruction Workshop</title>
+        <p>In the Spring of 2022 we hosted a virtual workshop on using the peer instruction interface. You may find the video useful in seeing peer instruction in action from both the instructor as well as the student perspective.</p>
+        <video xml:id="bP75MZYe2uU" youtube="bP75MZYe2uU" width="auto" />
+
+    </section>
+</chapter>

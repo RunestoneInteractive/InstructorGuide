@@ -16,9 +16,10 @@
     <xi:include href="./introduction.ptx" />
     <xi:include href="./Registration/registerYourself.ptx" />
     <xi:include href="./CustomCourses/toctree.ptx" />
-    <xi:include href="./Registration/toctree.ptx" />
-    <xi:include href="./InstructorInterface/toctree.ptx" />
+    <xi:include href="./Registration/toctree.ptx" /> <!-- user management -->
+    <xi:include href="./InstructorInterface/toctree.ptx" /> <!-- monitoring learning -->
     <xi:include href="./Assignments/toctree.ptx" />
+    <xi:include href="./peer_instruction.ptx" />
     <xi:include href="./WritingExercises/toctree.ptx" />
     <backmatter>
       <index>
