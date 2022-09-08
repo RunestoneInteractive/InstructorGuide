@@ -1,4 +1,4 @@
-<chapter xml:id="Introduction">
+<chapter xml:id="Introduction" xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
 <title>Introduction</title>
 <introduction>
 <p>
@@ -152,13 +152,6 @@ from December 9 to December 13, 2019.
 
 </section>
 
-<section>
-<title>
-Frequently Asked Questions
-</title>
-<p>
-For now see <url href="https://blog.runestone.academy/pages/faq.html" visual="this page" /> But the FAQ will soon move to this book.
-</p>
-</section>
+<xi:include href="./faq.ptx" />
 
 </chapter>
