@@ -324,5 +324,10 @@
         <title>Why can’t I just get a PDF?</title>
         <p>Because what we are focused on is building great <em>interactive</em> textbooks, pdfs are not interactive. Update!! Our partnership with the <pretext /> team allows us to build books in many formats including PDF.  If your book has been converted there is a good chance we can get you a PDF.</p>
     </subsection>
+    <subsection xml:id="timezone">
+    <title>How does Runestone handle timezones?</title>
+    <p>Very well thank you!  Every student interaction is logged to the runestone database using UTC time.  When you create an assignment with a deadline store the time in the timezone of the instructor making the assignment as the deadline.  Given that we can fairly judge whether a student has completed their work on time.  Trust me we have figured this out over the years and learned a lot about time zones.  Did you know there are places in the world where there are half or quarter hour differences between two timezones??!!</p>
+    <p>I realize that students will often complain that they had their work done on time but the darn Runestone would not give them credit.  Usually they are wrong.  But you have several ways of checking out their claim including downloading the log for your course or looking at the Student Activity report and checking their first and last interactions with the problem. The software has proven itself to be correct way more often than the students and we use one of the most reliable databases in the world (Postgresql) to keep track of student activities! </p>
+    </subsection>
 
 </section>
