@@ -74,7 +74,12 @@
             <li>You need to check the peer instruction box to make it a peer instruction assignment</li>
             <li>Peer instruction assignments can only have multiple choice questions. We may add other question types in the future but for now this limit exists.</li>
             <li>You are not limited to the question in your textbook, we have loaded a couple of question banks designed to be used with peer instruction. You can search for questions in the question banks by unchecking the box that limits your search to your course and searching for "peerwiseqb" for the PeerWise question bank, or "canterburyqb" for question in the Canterbury Question bank. More questions are being added all the time.</li>
-            <li>If you want to grade your peer instruction assignment you can grade it by setting the question to grade all answers</li>
+            <li><p>If you want to grade your peer instruction assignment you must set up your questions correctly.
+            <ul>
+            <li>You must set the Auto-Grade column to either <c>Peer</c> or <c>Peer+Chat</c>.  Setting this column to Peer will give the student credit if they have answered both vote1 and vote2.  Setting it to Peer+Chat will give them credit if they have voted for vote1, interacted with their parter(s) through chat, and voted in vote2.</li>
+            <li>The Which to grade field must be set to <c>All Answers</c> This is because peer assignment grading is unique in that the student is getting credit based on multiple interactions with a question not just a single check for correctness.</li>
+            </ul>
+            </p></li>
         </ol>
         </p>
     </section>
