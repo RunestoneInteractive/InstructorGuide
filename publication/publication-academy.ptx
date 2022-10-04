@@ -10,6 +10,7 @@
     <html>
     <knowl exercise-inline="no" example="no" listing="yes" />
     <platform host="runestone" />
+    <search variant="default" />
     </html>
     
 </publication>

@@ -10,6 +10,7 @@
     </source>
     <html>
     <knowl exercise-inline="no" example="no" listing="yes" />
+    <search variant="default" />
     </html>
     <numbering>
     <divisions level="3"/>     
