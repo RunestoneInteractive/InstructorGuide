@@ -10,11 +10,6 @@
 <appendix xml:id="faq_appendix"
     xmlns:xi="http://www.w3.org/2001/XInclude">
     <title>Frequently Asked Questions</title>
-
-    <introduction>
-        <p>This FAQ is a bit out of date.  We'll work on updating it soon.</p>
-    </introduction>
-
     <xi:include href="./faq.ptx" />
 
 
