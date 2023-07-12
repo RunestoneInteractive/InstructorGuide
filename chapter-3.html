@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>SB Creating a Course</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Using eBooks with Runestone Interactive">
+<meta property="book:author" content="Brad Miller, PhD. Professor Emeritus Luther College">
+<script>var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'color', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
+    processHtmlClass: "process-math",
+  },
+  chtml: {
+    scale: 0.98,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/color', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+  startup: {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  },
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/themes/prism.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/components/prism-core.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/autoloader/prism-autoloader.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="https://pretextbook.org/js/0.3/pretext_search.js"></script><link href="https://pretextbook.org/css/0.7/pretext_search.css" rel="stylesheet" type="text/css">
+<script>js_version = 0.3</script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.3/pretext.js"></script><script>miniversion=0.1</script><script src="https://pretextbook.org/js/0.3/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/0.3/user_preferences.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&amp;family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;family=Tinos:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.cdnfonts.com/css/dejavu-serif" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wdth,wght@8..144,50..150,100..900&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75..100,300..800&amp;display=swap" rel="stylesheet">
+<link href="https://pretextbook.org/css/0.7/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.7/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.7/shell_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.7/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.7/navbar_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.7/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.7/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.7/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.7/colors_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.7/setcolors.css" rel="stylesheet" type="text/css">
+<!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '7.0.3';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.0.3/prefix-runtime.743dc745e5a9b334.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.0.3/prefix-347.193e36c07abd0197.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.0.3/prefix-runestone.a6d252836fb5c953.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.0.3/prefix-347.f9add1ca35d5ad93.css">
+<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.0.3/prefix-runestone.931faef5361cf6e9.css">
+</head>
+<body id="instructorguide" class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
+<a id="logo-link" class="logo-link" href="https://runestone.academy" target="_blank"><img src="external/RAIcon.png" alt="Logo image"></a><div class="title-container">
+<h1 class="heading"><a href="InstructorGuide.html"><span class="title">Using eBooks with Runestone Interactive:</span> <span class="subtitle">The PreTeXt Interactive Edition</span></a></h1>
+<p class="byline">Brad Miller, PhD. Professor Emeritus Luther College</p>
+</div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<button id="closesearchresults" class="closesearchresults" onclick="document.getElementById('searchresultsplaceholder').style.display = 'none'; return false;">x</button><h2>Search Results: <span id="searchterms" class="searchterms"></span>
+</h2>
+<div id="searchempty" class="searchempty"><span>No results.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><button class="toc-toggle button" aria-label="Show or hide table of contents"><span class="icon">☰</span><span class="name">Contents</span></button><a class="index-button button" href="index-1.html" title="Index"><span class="name">Index</span></a><button id="user-preferences-button" class="user-preferences-button button" title="Modify user preferences"><span id="avatarbutton" class="avatarbutton name">You!</span><div id="preferences_menu_holder" class="preferences_menu_holder hidden"><ol id="preferences_menu" class="preferences_menu" style="font-family: 'Roboto Serif', serif;">
+<li data-env="avatar" tabindex="-1">Choose avatar<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden avatar">
+<li data-val="You!" tabindex="-1">
+<span id="theYou!" class="avatarcheck">✔️</span>You!</li>
+<li data-val="😺" tabindex="-1">
+<span id="the😺" class="avatarcheck"></span>😺</li>
+<li data-val="👤" tabindex="-1">
+<span id="the👤" class="avatarcheck"></span>👤</li>
+<li data-val="👽" tabindex="-1">
+<span id="the👽" class="avatarcheck"></span>👽</li>
+<li data-val="🐶" tabindex="-1">
+<span id="the🐶" class="avatarcheck"></span>🐶</li>
+<li data-val="🐼" tabindex="-1">
+<span id="the🐼" class="avatarcheck"></span>🐼</li>
+<li data-val="🌈" tabindex="-1">
+<span id="the🌈" class="avatarcheck"></span>🌈</li>
+</ol>
+</li>
+<li data-env="fontfamily" tabindex="-1">Font family<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden fontfamily">
+<li data-val="face" data-change="OS" tabindex="-1" style="font-family: 'Open Sans'">
+<span id="theOS" class="ffcheck">✔️</span><span class="name">Open Sans</span><span class="sample">AaBbCc 123 PreTeXt</span>
+</li>
+<li data-val="face" data-change="RS" tabindex="-1" style="font-family: 'Roboto Serif'">
+<span id="theRS" class="ffcheck"></span><span class="name">Roboto Serif</span><span class="sample">AaBbCc 123 PreTeXt</span>
+</li>
+</ol>
+</li>
+<li data-env="font" tabindex="-1">Adjust font<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden fonts">
+<li>Size</li>
+<li><span id="thesize">12</span></li>
+<li data-val="size" data-change="-1" tabindex="-1" style="font-size: 80%">Smaller</li>
+<li data-val="size" data-change="1" tabindex="-1" style="font-size: 110%">Larger</li>
+<li>Width</li>
+<li><span id="thewdth">100</span></li>
+<li data-val="wdth" data-change="-5" tabindex="-1" style="font-variation-settings: 'wdth' 60">narrower</li>
+<li data-val="wdth" data-change="5" tabindex="-1" style="font-variation-settings: 'wdth' 150">wider</li>
+<li>Weight</li>
+<li><span id="thewght">400</span></li>
+<li data-val="wght" data-change="-50" tabindex="-1" style="font-weight: 200">thinner</li>
+<li data-val="wght" data-change="50" tabindex="-1" style="font-weight: 700">heavier</li>
+<li>Letter spacing</li>
+<li>
+<span id="thelspace">0</span><span class="byunits">/200</span>
+</li>
+<li data-val="lspace" data-change="-1" tabindex="-1">closer</li>
+<li data-val="lspace" data-change="1" tabindex="-1">f a r t h e r</li>
+<li>Word spacing</li>
+<li>
+<span id="thewspace">0</span><span class="byunits">/50</span>
+</li>
+<li data-val="wspace" data-change="-1" tabindex="-1">smaller gap </li>
+<li data-val="wspace" data-change="1" tabindex="-1">larger gap</li>
+<li>Line Spacing</li>
+<li>
+<span id="theheight">135</span><span class="byunits">/100</span>
+</li>
+<li data-val="height" data-change="-5" tabindex="-1" style="line-height: 1">closer<br>together</li>
+<li data-val="height" data-change="5" tabindex="-1" style="line-height: 1.75">further<br>apart</li>
+</ol>
+</li>
+<li data-env="atmosphere" tabindex="-1">Light/dark mode<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden atmosphere">
+<li data-val="default" tabindex="-1">
+<span id="thedefault" class="atmospherecheck">✔️</span>default</li>
+<li data-val="pastel" tabindex="-1">
+<span id="thepastel" class="atmospherecheck"></span>pastel</li>
+<li data-val="darktwilight" tabindex="-1">
+<span id="thedarktwilight" class="atmospherecheck"></span>twilight</li>
+<li data-val="dark" tabindex="-1">
+<span id="thedark" class="atmospherecheck"></span>dark</li>
+<li data-val="darkmidnight" tabindex="-1">
+<span id="thedarkmidnight" class="atmospherecheck"></span>midnight</li>
+</ol>
+</li>
+<li data-env="ruler" tabindex="-1">Reading ruler<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden ruler">
+<li data-val="none" tabindex="-1">
+<span id="thenone" class="rulercheck">✔️</span>none</li>
+<li data-val="underline" tabindex="-1">
+<span id="theunderline" class="rulercheck"></span>underline</li>
+<li data-val="lunderline" tabindex="-1">
+<span id="thelunderline" class="rulercheck"></span>L-underline</li>
+<li data-val="greybar" tabindex="-1">
+<span id="thegreybar" class="rulercheck"></span>grey bar</li>
+<li data-val="lightbox" tabindex="-1">
+<span id="thelightbox" class="rulercheck"></span>light box</li>
+<li data-val="sunrise" tabindex="-1">
+<span id="thesunrise" class="rulercheck"></span>sunrise</li>
+<li data-val="sunriseunderline" tabindex="-1">
+<span id="thesunriseunderline" class="rulercheck"></span>sunrise underline</li>
+<li class="moveQ">Motion by:</li>
+<li data-val="mouse" tabindex="-1">
+<span id="themouse" class="motioncheck">✔️</span>follow the mouse</li>
+<li data-val="arrow" tabindex="-1">
+<span id="thearrow" class="motioncheck"></span>up/down arrows - not yet</li>
+<li data-val="eye" tabindex="-1">
+<span id="theeye" class="motioncheck"></span>eye tracking - not yet</li>
+</ol>
+</li>
+</ol></div></button><span class="treebuttons"><a class="previous-button button" href="registration_register-for-this-course.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="up-button button" href="InstructorGuide.html" title="Up"><span class="icon">^</span><span class="name">Up</span></a><a class="next-button button" href="chapter-4.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a></span><div class="searchbox"><div class="searchwidget">
+<input id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search" onchange="doSearch()"><button id="searchbutton" class="searchbutton" type="button" onclick="doSearch()">🔍</button>
+</div></div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth4"><ul class="structural">
+<li><div class="toc-item"><a href="frontmatter-1.html" class="internal"><span class="title">Front Matter</span></a></div></li>
+<li>
+<div class="toc-item"><a href="Introduction.html" class="internal"><span class="codenumber">1</span> <span class="title">Introduction</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="Introduction.html#prose-philosophy" class="internal"><span class="codenumber">1.1</span> <span class="title">The Runestone Philosophy</span></a></div></li>
+<li><div class="toc-item"><a href="Introduction.html#section-2" class="internal"><span class="codenumber">1.2</span> <span class="title">Courses Versus Books</span></a></div></li>
+<li><div class="toc-item"><a href="Introduction.html#section-3" class="internal"><span class="codenumber">1.3</span> <span class="title">Privacy</span></a></div></li>
+<li><div class="toc-item"><a href="Introduction.html#section-4" class="internal"><span class="codenumber">1.4</span> <span class="title">Why am I seeing Ads</span></a></div></li>
+<li><div class="toc-item"><a href="Introduction.html#a-brief-history" class="internal"><span class="codenumber">1.5</span> <span class="title">A Brief History of Runestone</span></a></div></li>
+<li>
+<div class="toc-item"><a href="Introduction.html#faq" class="internal"><span class="codenumber">1.6</span> <span class="title">Frequently Asked Questions</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="Introduction.html#_why-can-t-i-access-the-instructor-page" class="internal"><span class="codenumber">1.6.1</span> <span class="title">Why Can’t I access the Instructor Page?</span></a></div></li>
+<li><div class="toc-item"><a href="Introduction.html#_how-do-i-become-an-instructor" class="internal"><span class="codenumber">1.6.2</span> <span class="title">How do I become an instructor?</span></a></div></li>
+<li><div class="toc-item"><a href="Introduction.html#_how-do-i-learn-more-about-the-instructor-interface" class="internal"><span class="codenumber">1.6.3</span> <span class="title">How do I learn more about the instructor interface</span></a></div></li>
+<li><div class="toc-item"><a href="Introduction.html#_help-i-cannot-log-in-every-time-i-try-to-log-in-i-have-to-reset-my-password" class="internal"><span class="codenumber">1.6.4</span> <span class="title">Help! I cannot log in. Every time I try to log in, I have to reset my password!</span></a></div></li>
+<li><div class="toc-item"><a href="Introduction.html#_i-m-not-getting-the-password-reset-email-can-you-reset-my-password" class="internal"><span class="codenumber">1.6.5</span> <span class="title">I’m not getting the password reset email, can you reset my password?</span></a></div></li>
+<li><div class="toc-item"><a href="Introduction.html#_i-can-t-log-in-to-my-coursera-course-what-do-i-do" class="internal"><span class="codenumber">1.6.6</span> <span class="title">I can’t log in to my Coursera course, what do I do?</span></a></div></li>
+<li><div class="toc-item"><a href="Introduction.html#_how-do-i-add-students-to-my-course" class="internal"><span class="codenumber">1.6.7</span> <span class="title">How do I add students to my course?</span></a></div></li>
+<li><div class="toc-item"><a href="Introduction.html#_what-do-those-green-checkmarks-and-orange-circles-mean" class="internal"><span class="codenumber">1.6.8</span> <span class="title">What do those green checkmarks and orange circles mean?</span></a></div></li>
+<li><div class="toc-item"><a href="Introduction.html#_how-come-there-is-no-green-checkmark-for-the-exercises-pages" class="internal"><span class="codenumber">1.6.9</span> <span class="title">How come there is no Green Checkmark for the Exercises pages?</span></a></div></li>
+<li><div class="toc-item"><a href="Introduction.html#_where-do-i-find-answers-to-all-the-homework-questions" class="internal"><span class="codenumber">1.6.10</span> <span class="title">Where do I find answers to all the homework questions?</span></a></div></li>
+<li><div class="toc-item"><a href="Introduction.html#_can-i-build-my-own-course-and-host-it-here" class="internal"><span class="codenumber">1.6.11</span> <span class="title">Can I build my own course and host it here?</span></a></div></li>
+<li><div class="toc-item"><a href="Introduction.html#_how-do-i-build-my-own-course" class="internal"><span class="codenumber">1.6.12</span> <span class="title">How do I build my own course?</span></a></div></li>
+<li><div class="toc-item"><a href="Introduction.html#_is-this-site-reliable-enough-to-use-in-class" class="internal"><span class="codenumber">1.6.13</span> <span class="title">Is this site reliable enough to use in class?</span></a></div></li>
+<li><div class="toc-item"><a href="Introduction.html#_why-did-you-change-domain-names" class="internal"><span class="codenumber">1.6.14</span> <span class="title">Why did you change domain names?</span></a></div></li>
+<li><div class="toc-item"><a href="Introduction.html#_i-want-to-reuse-my-course-from-last-year-what-should-i-do" class="internal"><span class="codenumber">1.6.15</span> <span class="title">I want to reuse my course from last year, what should I do?</span></a></div></li>
+<li><div class="toc-item"><a href="Introduction.html#_how-do-i-update-my-course-to-get-the-latest-bug-fixes" class="internal"><span class="codenumber">1.6.16</span> <span class="title">How do I update my course to get the latest bug fixes?</span></a></div></li>
+<li><div class="toc-item"><a href="Introduction.html#_i-was-just-experimenting-and-i-want-to-delete-my-course" class="internal"><span class="codenumber">1.6.17</span> <span class="title">I was just experimenting and I want to delete my course</span></a></div></li>
+<li><div class="toc-item"><a href="Introduction.html#_what-if-i-want-to-add-a-new-section-or-chapter" class="internal"><span class="codenumber">1.6.18</span> <span class="title">What if I want to add a new section or chapter?</span></a></div></li>
+<li><div class="toc-item"><a href="Introduction.html#_what-if-i-want-to-add-my-own-exercises" class="internal"><span class="codenumber">1.6.19</span> <span class="title">What if I want to add my own exercises?</span></a></div></li>
+<li><div class="toc-item"><a href="Introduction.html#_my-students-are-completing-work-but-it-is-not-showing-up-help" class="internal"><span class="codenumber">1.6.20</span> <span class="title">My students are completing work but it is not showing up. Help!</span></a></div></li>
+<li><div class="toc-item"><a href="Introduction.html#_how-do-i-change-courses-or-register-for-an-additional-course" class="internal"><span class="codenumber">1.6.21</span> <span class="title">How do I change courses or register for an additional course?</span></a></div></li>
+<li><div class="toc-item"><a href="Introduction.html#_what-course-name-should-i-use-when-i-register" class="internal"><span class="codenumber">1.6.22</span> <span class="title">What course name should I use when I register?</span></a></div></li>
+<li><div class="toc-item"><a href="Introduction.html#_what-version-of-python-does-your-book-use" class="internal"><span class="codenumber">1.6.23</span> <span class="title">What version of Python does your book use?</span></a></div></li>
+<li><div class="toc-item"><a href="Introduction.html#_i-think-there-is-a-bug-in-your-book-what-should-i-do" class="internal"><span class="codenumber">1.6.24</span> <span class="title">I think there is a bug in your book what should I do?</span></a></div></li>
+<li><div class="toc-item"><a href="Introduction.html#_i-have-a-question-that-is-not-covered-here" class="internal"><span class="codenumber">1.6.25</span> <span class="title">I have a question that is not covered here!</span></a></div></li>
+<li><div class="toc-item"><a href="Introduction.html#_my-internet-is-slow-i-want-to-use-runestone-offline" class="internal"><span class="codenumber">1.6.26</span> <span class="title">My Internet is slow, I want to use Runestone offline</span></a></div></li>
+<li><div class="toc-item"><a href="Introduction.html#_why-can-t-i-just-get-a-pdf" class="internal"><span class="codenumber">1.6.27</span> <span class="title">Why can’t I just get a PDF?</span></a></div></li>
+<li><div class="toc-item"><a href="Introduction.html#timezone" class="internal"><span class="codenumber">1.6.28</span> <span class="title">How does Runestone handle timezones?</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="registration_register-for-this-course.html" class="internal"><span class="codenumber">2</span> <span class="title">Register for a Course</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="registration_register-for-this-course.html#section-7" class="internal"><span class="codenumber">2.1</span> <span class="title">Introduction</span></a></div></li>
+<li><div class="toc-item"><a href="registration_register-for-this-course.html#registration_first-time-registration" class="internal"><span class="codenumber">2.2</span> <span class="title">First-time Registration</span></a></div></li>
+<li><div class="toc-item"><a href="registration_register-for-this-course.html#registration_add-an-additional-course" class="internal"><span class="codenumber">2.3</span> <span class="title">Add an Additional Course</span></a></div></li>
+</ul>
+</li>
+<li class="active">
+<div class="toc-item"><a href="chapter-3.html" class="internal"><span class="codenumber">3</span> <span class="title">Creating a Course</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="chapter-3.html#custom-courses_what-is-a-custom-course" class="internal"><span class="codenumber">3.1</span> <span class="title">What is a course?</span></a></div></li>
+<li><div class="toc-item"><a href="chapter-3.html#custom-courses_how-to-create-a-custom-course" class="internal"><span class="codenumber">3.2</span> <span class="title">How to Create a course</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="chapter-4.html" class="internal"><span class="codenumber">4</span> <span class="title">Managing Your Course</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="chapter-4.html#registration_adding-students-to-your-course" class="internal"><span class="codenumber">4.1</span> <span class="title">Managing Students in your Course</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="chapter-4.html#subsection-29" class="internal"><span class="codenumber">4.1.1</span> <span class="title">Student Self Registration</span></a></div></li>
+<li><div class="toc-item"><a href="chapter-4.html#subsection-30" class="internal"><span class="codenumber">4.1.2</span> <span class="title">Pre-register your students</span></a></div></li>
+<li><div class="toc-item"><a href="chapter-4.html#subsection-31" class="internal"><span class="codenumber">4.1.3</span> <span class="title">Removing Students</span></a></div></li>
+<li><div class="toc-item"><a href="chapter-4.html#subsection-32" class="internal"><span class="codenumber">4.1.4</span> <span class="title">Resetting Passwords</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="chapter-4.html#registration_privacy-and-runestone" class="internal"><span class="codenumber">4.2</span> <span class="title">Privacy and Runestone</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="chapter-4.html#registration_setting-up-a-class-with-no-pii" class="internal"><span class="codenumber">4.2.1</span> <span class="title">Setting up a class with no PII</span></a></div></li>
+<li><div class="toc-item"><a href="chapter-4.html#registration_what-other-data-does-runestone-collect" class="internal"><span class="codenumber">4.2.2</span> <span class="title">What other Data Does Runestone Collect</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="chapter-4.html#lti_integration" class="internal"><span class="codenumber">4.3</span> <span class="title">Integrating with your LMS</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="chapter-4.html#subsection-35" class="internal"><span class="codenumber">4.3.1</span> <span class="title">Introduction</span></a></div></li>
+<li><div class="toc-item"><a href="chapter-4.html#subsection-36" class="internal"><span class="codenumber">4.3.2</span> <span class="title">Phase 1 (All LMS platforms)</span></a></div></li>
+<li>
+<div class="toc-item"><a href="chapter-4.html#subsection-37" class="internal"><span class="codenumber">4.3.3</span> <span class="title">Phase 2 (LMS-specific Steps)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="chapter-4.html#subsubsection-1" class="internal"><span class="title">Canvas</span></a></div></li>
+<li><div class="toc-item"><a href="chapter-4.html#subsubsection-2" class="internal"><span class="title">Moodle</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="chapter-4.html#add_instructor" class="internal"><span class="codenumber">4.4</span> <span class="title">Add and Instructor or TA</span></a></div></li>
+<li><div class="toc-item"><a href="chapter-4.html#course_settings" class="internal"><span class="codenumber">4.5</span> <span class="title">Course Settings</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="chapter-5.html" class="internal"><span class="codenumber">5</span> <span class="title">Monitoring your Student’s Learning</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="chapter-5.html#instructor-interface_the-instructor-interface" class="internal"><span class="codenumber">5.1</span> <span class="title">The Instructor Interface</span></a></div></li>
+<li>
+<div class="toc-item"><a href="chapter-5.html#instructor-interface_view-student-activity" class="internal"><span class="codenumber">5.2</span> <span class="title">View Student Activity</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="chapter-5.html#activity_intro" class="internal"><span class="codenumber">5.2.1</span> <span class="title">Introduction</span></a></div></li>
+<li><div class="toc-item"><a href="chapter-5.html#instructor-interface_chapter-progress" class="internal"><span class="codenumber">5.2.2</span> <span class="title">Chapter Progress</span></a></div></li>
+<li><div class="toc-item"><a href="chapter-5.html#instructor-interface_student-progress-tab" class="internal"><span class="codenumber">5.2.3</span> <span class="title">Student Progress Tab</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="working-with-assignments-chap.html" class="internal"><span class="codenumber">6</span> <span class="title">Working with Assignments</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="working-with-assignments-chap.html#instructor-interface_assignments" class="internal"><span class="codenumber">6.1</span> <span class="title">Understanding Assignments</span></a></div></li>
+<li>
+<div class="toc-item"><a href="working-with-assignments-chap.html#instructor-interface_create-an-assignment" class="internal"><span class="codenumber">6.2</span> <span class="title">Create an Assignment</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="working-with-assignments-chap.html#create_assignment_intro" class="internal"><span class="codenumber">6.2.1</span> <span class="title">Introduction</span></a></div></li>
+<li><div class="toc-item"><a href="working-with-assignments-chap.html#instructor-interface_creating-a-reading-assignment" class="internal"><span class="codenumber">6.2.2</span> <span class="title">Creating a Reading Assignment</span></a></div></li>
+<li><div class="toc-item"><a href="working-with-assignments-chap.html#instructor-interface_creating-a-problem-assignment" class="internal"><span class="codenumber">6.2.3</span> <span class="title">Creating a Problem Assignment</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="working-with-assignments-chap.html#instructor-interface_copying-assignments" class="internal"><span class="codenumber">6.3</span> <span class="title">Copying Assignments</span></a></div></li>
+<li>
+<div class="toc-item"><a href="working-with-assignments-chap.html#instructor-interface_exams-and-quizzes-in-runestone" class="internal"><span class="codenumber">6.4</span> <span class="title">Exams and Quizzes in Runestone</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="working-with-assignments-chap.html#create_quiz_intro" class="internal"><span class="codenumber">6.4.1</span> <span class="title">Introduction</span></a></div></li>
+<li><div class="toc-item"><a href="working-with-assignments-chap.html#instructor-interface_resetting-an-exam" class="internal"><span class="codenumber">6.4.2</span> <span class="title">Resetting an Exam</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="working-with-assignments-chap.html#instructor-interface_grading" class="internal"><span class="codenumber">6.5</span> <span class="title">Grading</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="working-with-assignments-chap.html#grading_intro" class="internal"><span class="codenumber">6.5.1</span> <span class="title">Introduction</span></a></div></li>
+<li><div class="toc-item"><a href="working-with-assignments-chap.html#instructor-interface_autograde" class="internal"><span class="codenumber">6.5.2</span> <span class="title">Autograde</span></a></div></li>
+<li><div class="toc-item"><a href="working-with-assignments-chap.html#instructor-interface_calculate-totals" class="internal"><span class="codenumber">6.5.3</span> <span class="title">Calculate Totals</span></a></div></li>
+<li><div class="toc-item"><a href="working-with-assignments-chap.html#instructor-interface_release-grades" class="internal"><span class="codenumber">6.5.4</span> <span class="title">Release Grades</span></a></div></li>
+<li><div class="toc-item"><a href="working-with-assignments-chap.html#instructor-interface_how-a-student-sees-grades-and-comments" class="internal"><span class="codenumber">6.5.5</span> <span class="title">How a Student Sees Grades and Comments</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="working-with-assignments-chap.html#instructor-interface_the-practice-interface" class="internal"><span class="codenumber">6.6</span> <span class="title">The Practice Interface</span></a></div></li>
+<li><div class="toc-item"><a href="working-with-assignments-chap.html#instructor-interface_exercises" class="internal"><span class="codenumber">6.7</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="peer_instruction.html" class="internal"><span class="codenumber">7</span> <span class="title">Peer Instruction</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="peer_instruction.html#section-25" class="internal"><span class="codenumber">7.1</span> <span class="title">Peer instruction in Runestone</span></a></div></li>
+<li><div class="toc-item"><a href="peer_instruction.html#section-26" class="internal"><span class="codenumber">7.2</span> <span class="title">Creating Peer instruction Assignments</span></a></div></li>
+<li><div class="toc-item"><a href="peer_instruction.html#section-27" class="internal"><span class="codenumber">7.3</span> <span class="title">Virtual Peer Instruction Workshop</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="chapter-8.html" class="internal"><span class="codenumber">8</span> <span class="title">Writing your own Exercises</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="chapter-8.html#writing-exercises_adding-an-exercise-to-the-exercise-bank" class="internal"><span class="codenumber">8.1</span> <span class="title">Adding an Exercise to the Exercise Bank</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="chapter-8.html#writing_exer_intro" class="internal"><span class="codenumber">8.1.1</span> <span class="title">Introduction</span></a></div></li>
+<li><div class="toc-item"><a href="chapter-8.html#writing-exercises_unit-testing-exercises" class="internal"><span class="codenumber">8.1.2</span> <span class="title">Unit Testing exercises</span></a></div></li>
+<li><div class="toc-item"><a href="chapter-8.html#writing-exercises_advanced-activecode-options" class="internal"><span class="codenumber">8.1.3</span> <span class="title">Advanced activecode Options</span></a></div></li>
+<li><div class="toc-item"><a href="chapter-8.html#writing-exercises_for-languages-outside-the-browser" class="internal"><span class="codenumber">8.1.4</span> <span class="title">For languages outside the browser</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="chapter-8.html#writing-exercises_multiple-choice-questions" class="internal"><span class="codenumber">8.2</span> <span class="title">Multiple Choice Questions</span></a></div></li>
+<li>
+<div class="toc-item"><a href="chapter-8.html#writing-exercises_mixed-up-code-parsons" class="internal"><span class="codenumber">8.3</span> <span class="title">Mixed-Up Code (Parsons)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="chapter-8.html#writing-exercises_parsons-options" class="internal"><span class="codenumber">8.3.1</span> <span class="title">Parsons Options</span></a></div></li>
+<li><div class="toc-item"><a href="chapter-8.html#writing-exercises_parsons-distractor-types" class="internal"><span class="codenumber">8.3.2</span> <span class="title">Parsons Distractor Types</span></a></div></li>
+<li><div class="toc-item"><a href="chapter-8.html#writing-exercises_example-with-paired-distractors" class="internal"><span class="codenumber">8.3.3</span> <span class="title">Example with Paired Distractors</span></a></div></li>
+<li><div class="toc-item"><a href="chapter-8.html#writing-exercises_example-with-unpaired-distractor" class="internal"><span class="codenumber">8.3.4</span> <span class="title">Example with Unpaired Distractor</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="chapter-8.html#writing-exercises_pro-tip-test-your-exercises-locally" class="internal"><span class="codenumber">8.4</span> <span class="title">Pro Tip – Test Your Exercises Locally</span></a></div></li>
+<li><div class="toc-item"><a href="chapter-8.html#writing-exercises_add-your-own-question" class="internal"><span class="codenumber">8.5</span> <span class="title">Add your own Question</span></a></div></li>
+<li><div class="toc-item"><a href="chapter-8.html#writing-exercises_exercises" class="internal"><span class="codenumber">8.6</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="backmatter-1.html" class="internal"><span class="title">Back Matter</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="index-1.html" class="internal"><span class="title">Index</span></a></div></li>
+<li>
+<div class="toc-item"><a href="welcome.html" class="internal"><span class="codenumber">A</span> <span class="title">Welcome to the Runestone Community</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="welcome.html#help-and-support" class="internal"><span class="codenumber">A.1</span> <span class="title">Help and Support</span></a></div></li>
+<li><div class="toc-item"><a href="welcome.html#drop-in" class="internal"><span class="codenumber">A.2</span> <span class="title">Weekly Drop-Ins</span></a></div></li>
+<li><div class="toc-item"><a href="welcome.html#github-issues" class="internal"><span class="codenumber">A.3</span> <span class="title">Feature Requests and Reporting Problems</span></a></div></li>
+<li><div class="toc-item"><a href="welcome.html#contributing" class="internal"><span class="codenumber">A.4</span> <span class="title">Contributing</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content">
+<section class="chapter" id="chapter-3"><h2 class="heading">
+<span class="type">Chapter</span> <span class="codenumber">3</span> <span class="title">Creating a Course</span>
+</h2>
+<section class="section" id="custom-courses_what-is-a-custom-course"><h3 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">3.1</span> <span class="title">What is a course?</span>
+</h3>
+<div class="para" id="p-142">As an instructor, you can make a course with a unique name on the Runestone server from an existing Runestone book. Your students will register for your course using the unique name, and then their activities will be securely saved for you to use. You will then be able to:</div>
+<div class="para logical" id="p-143"><ul class="disc">
+<li id="li-68"><div class="para" id="p-144">View summaries of student activity for particular questions or pages</div></li>
+<li id="li-69">
+<div class="para" id="p-145">Assemble custom assignments and lab sessions from:</div>
+<div class="para logical" id="p-146"><ul class="circle">
+<li id="li-70"><div class="para" id="p-147">existing activities that are built into the book</div></li>
+<li id="li-71"><div class="para" id="p-148">new activities that you author yourself using a markup language (rst)</div></li>
+</ul></div>
+</li>
+</ul></div>
+<div class="para logical" id="p-149">
+<div class="para">When you create a course <em class="emphasis">you</em> become the instructor for that course.  We at Runestone Academy have no magical way of knowing who is and who isn’t an instructor. Furthermore it would take time for us to try to validate everyone who claims to be an instructor.   But keep in mind that:</div>
+<ol class="decimal">
+<li id="li-72"><div class="para" id="p-derived-li-72">As an instructor you <em class="emphasis">only have access</em> to the work of the students in the course <em class="emphasis">you</em> create.</div></li>
+<li id="li-73"><div class="para" id="p-derived-li-73">We do not publish answer keys for instructors on Runestone.  Note: those may be available to you through Google Groups or other media affiliated with the textbook, so check with the author of the book you are using.</div></li>
+</ol>
+</div>
+<div class="para" id="p-150">If you have multiple sections of your course there are two ways of dealing with it.  1) You can create a single course for all of your sections (most often recommended), or 2) you can create a course for each section.  If your choose option 2 <a href="working-with-assignments-chap.html#instructor-interface_copying-assignments" class="internal" title="Section 6.3: Copying Assignments">Section 6.3</a> covers how to copy assignments between your courses.</div></section><section class="section" id="custom-courses_how-to-create-a-custom-course"><h3 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">3.2</span> <span class="title">How to Create a course</span>
+</h3>
+<div class="video-box" style="width: 100%;padding-top: 56.25%; margin-left: 0%; margin-right: 0%;"><iframe id="create_course_vid" class="video" allowfullscreen="" src="https://www.youtube-nocookie.com/embed/t78ktTWrGkc?&amp;modestbranding=1&amp;rel=0"></iframe></div>
+<div class="para logical" id="p-151"><ol class="decimal">
+<li id="li-74"><div class="para" id="p-152">Log in to the runestone server at <a class="external" href="https://runestone.academy" target="_blank">https://runestone.academy</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-19" id="fn-19"><sup> 1 </sup></a> if you already have an account with Runestone Interactive. If you don’t have an account then you can create one at <a class="external" href="https://runestone.academy/runestone/default/user/register" target="_blank">https://runestone.academy/runestone/default/user/register</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-20" id="fn-20"><sup> 2 </sup></a>. When you register, it will ask to enter the name of an ebook. You can enter the name for any of the existing ebooks. <figure class="figure figure-like" id="login_screen_fig"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/Figures/login.png" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">3.2.1<span class="period">.</span></span><span class="space"> </span>Figure 1: The login screen for Runestone Academy</figcaption></figure>
+</div></li>
+<li id="li-75">
+<div class="para" id="p-153">Go to the Build a course Page at <a class="external" href="https://runestone.academy/runestone/designer/index" target="_blank">https://runestone.academy/runestone/designer/index</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-21" id="fn-21"><sup> 3 </sup></a>. Fill in a unique name for your course. You may want to include a semester and year as part of the unique name. Enter a description and the name of your institution. Scroll down and check the other options and then click “Submit”. <figure class="figure figure-like" id="custom_course_fig"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/Figures/customCourse.png" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">3.2.2<span class="period">.</span></span><span class="space"> </span>Figure 2: The Build a course Page</figcaption></figure>
+</div>
+<div class="para" id="p-154">Of special note is the checkbox just above the submit button. This says that you would like to support Runestone at the rate of $10 / student from your department or school. This is totally VOLUNTARY! If you check the box you will get an invoice from us about a week after the starting date you entered for your course. If you can’t pay or do not wish to pay simply do not check the box. It is fine either way, but we would love your support if you are able.</div>
+<figure class="figure figure-like" id="support_runestone_fig"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/Figures/support_runestone.png" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">3.2.3<span class="period">.</span></span><span class="space"> </span>Support Runestone</figcaption></figure>
+</li>
+<li id="li-76">
+<div class="para" id="p-155">Success! <figure class="figure figure-like" id="id5"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/Figures/build_done.png" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">3.2.4<span class="period">.</span></span><span class="space"> </span>Build Successful</figcaption></figure>
+</div>
+<div class="para" id="p-156">The successful build page reminds you of some resources that you can use to get help. Please do not use email. Please check for and file problems on Github. Many problems are duplicates and have already have workarounds or explanations.</div>
+</li>
+<li id="li-77"><div class="para" id="p-157">Your students can register for your course by using the unique name that you used when you created your course when they register at <a class="external" href="https://runestone.academy/runestone/default/user/register" target="_blank">https://runestone.academy/runestone/default/user/register</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-22" id="fn-22"><sup> 4 </sup></a>.. If they already have a login on Runestone Academy, they can simply add another course using the new course name by going to <a class="external" href="https://runestone.academy/runestone/default/user/register" target="_blank">https://runestone.academy/runestone/default/courses</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-23" id="fn-23"><sup> 5 </sup></a>. and then clicking on “Add Another Course”. <figure class="figure figure-like" id="id6"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/Figures/courseSel.png" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">3.2.5<span class="period">.</span></span><span class="space"> </span>Figure 4: The page that allows the user to add another course or switch courses</figcaption></figure>
+</div></li>
+</ol></div>
+<div class="para" id="p-158">We will also cover how you can pre-register your students with a CSV file in another section.</div></section></section><div class="hidden-content tex2jax_ignore" id="hk-fn-19"><div class="fn"><code class="code-inline tex2jax_ignore">https://runestone.academy</code></div></div>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-20"><div class="fn"><code class="code-inline tex2jax_ignore">https://runestone.academy/runestone/default/user/register</code></div></div>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-21"><div class="fn"><code class="code-inline tex2jax_ignore">https://runestone.academy/runestone/designer/index</code></div></div>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-22"><div class="fn"><code class="code-inline tex2jax_ignore">https://runestone.academy/runestone/default/user/register</code></div></div>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-23"><div class="fn"><code class="code-inline tex2jax_ignore">https://runestone.academy/runestone/default/user/register</code></div></div>
+</div>
+<div class="ptx-content-footer">
+<a class="previous-button button" href="registration_register-for-this-course.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><a class="next-button button" href="chapter-4.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="338 3000 8772 6866"><g style="stroke-width:.025in; stroke:black; fill:none"><polyline points="472,3590 472,9732 " style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png"></a>
+</div>
+</body>
+</html>
