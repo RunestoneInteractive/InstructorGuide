@@ -9,8 +9,9 @@
         <directories external="../assets" generated="../generated-assets"/>
     </source>
     <html>
-    <knowl exercise-inline="no" example="no" listing="yes" />
-    <search variant="default" />
+      <knowl exercise-inline="no" example="no" listing="yes" />
+      <css style="oscarlevin" colors="blue_red" toc="crc" banner="crc" navbar="crc" shell="crc"/>
+      <search variant="default" />
     </html>
     <numbering>
     <divisions level="3"/>     
