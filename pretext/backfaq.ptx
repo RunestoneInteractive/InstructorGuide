@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--   This file is shamelessly based on part of the          -->
+<!--                                                          -->
+<!--      PreTeXt Author's Guide                              -->
+<!--                                                          -->
+<!-- Copyright (C) 2013-2018  Robert A. Beezer                -->
+<!-- See the file COPYING for copying conditions.             -->
+
+<appendix xml:id="welcome"
+    xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Frequently Asked Questions</title>
+
+    <introduction>
+        <p>This FAQ is a bit out of date.  We'll work on updating it soon.</p>
+    </introduction>
+
+    <xi:include href="./faq.ptx" />
+
+
+</appendix>

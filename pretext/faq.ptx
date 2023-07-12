@@ -7,14 +7,14 @@
     <subsection xml:id="_how-do-i-become-an-instructor">
         <title>How do I become an instructor?</title>
         <p>
-        <ul>
-            <li>
-                <p>I seem to have a student account, how can I get/create an instructor account?</p>
-            </li>
-            <li>
-                <p>I created an instructor account but…</p>
-            </li>
-        </ul>
+            <ul>
+                <li>
+                    <p>I seem to have a student account, how can I get/create an instructor account?</p>
+                </li>
+                <li>
+                    <p>I created an instructor account but…</p>
+                </li>
+            </ul>
         </p>
         <p>First lets clear up a couple of misconcptions. There is no way for me to know, just by your email address that you are an instructor. You could be anyone. So, there is no such thing as an instructor account.  Accounts can have various roles including: student, instructor, author,  editor, and administrator.</p>
         <p>You get the instructor role by creating a course. This gives you the privileges associated with being an instructor but ONLY for that course and any other course(s) you create. You are not an instructor for any of the open courses or anyone else’s course. There is a really nice video to help you get started in the <url href="https://runestone.academy/ns/books/published/instructorguide/frontmatter-1.html?mode=browsing" visual="https://runestone.academy/ns/books/published/instructorguide/frontmatter-1.html?mode=browsing">Instructors Guide</url> Please check it out as it will answer many other questions and help you make the most of Runestone.</p>
@@ -33,18 +33,18 @@
         <title>I’m not getting the password reset email, can you reset my password?</title>
         <p>Technically, I can. But I won’t. Runestone handles over 100 password resets a day automatically. It can handle yours as well. There are two things you should check.</p>
         <p>
-        <ol>
-            <li>
-                <p>Check your SPAM folder for the password reset email. and/or add runestone to your contacts list to avoid that in the future.</p>
-            </li>
-            <li>
-                <p>Talk to your IT folks and make sure they are not blocking Runestone. We’re a small group, but we did everything right with our email setup to make the military academies happy, so I think your folks ought to be happy too. However some schools disallow any external email that is not whit-elisted. Please ask them to white-list <title_reference>runestoneinteractive@gmail.com</title_reference> as well as <title_reference>info@runestone.academy</title_reference>
-                </p>
-            </li>
-            <li>
-                <p>If you are a student, talk to your instructor. Your instructor can reset your password in the case where the email system is failing us.</p>
-            </li>
-        </ol>
+            <ol>
+                <li>
+                    <p>Check your SPAM folder for the password reset email. and/or add runestone to your contacts list to avoid that in the future.</p>
+                </li>
+                <li>
+                    <p>Talk to your IT folks and make sure they are not blocking Runestone. We’re a small group, but we did everything right with our email setup to make the military academies happy, so I think your folks ought to be happy too. However some schools disallow any external email that is not whit-elisted. Please ask them to white-list <title_reference>runestoneinteractive@gmail.com</title_reference> as well as <title_reference>info@runestone.academy</title_reference>
+                    </p>
+                </li>
+                <li>
+                    <p>If you are a student, talk to your instructor. Your instructor can reset your password in the case where the email system is failing us.</p>
+                </li>
+            </ol>
         </p>
     </subsection>
     <subsection xml:id="_i-can-t-log-in-to-my-coursera-course-what-do-i-do">
@@ -74,29 +74,29 @@
         <p>We have many books on Runestone Academy written by many authors. Whether or not authors provide an instructor guide or answers to all the questions is up to them. So there is no blanket answer to the question.</p>
         <p>For myself there are several reasons:</p>
         <p>
-        <ol>
-            <li>
-                <p>Writing an instructor guide that contains all of the answers to the questions essentially doubles the work of writing a book, and even more so maintaining the book. In all the textbooks I’ve used over the years for CS I’ve only ever had one that had a solution guide and that was largely for all of the math in a networking text.</p>
-            </li>
-            <li>
-                <p>For 99% of the questions there is no one right answer. Very likely if I give you an answer there is a better one out there, and I really don’t want to get into arguments about what is better. Especially since a lot of it comes down to style.</p>
-            </li>
-            <li>
-                <p>Doing the work is the best way to prepare to teach it. You are smarter, wiser, and a better problem solver than your students. Its actually good for them to see how you approach solving the problem rather consulting some answer key.</p>
-            </li>
-            <li>
-                <p>From a practical perspective it would be very hard for me to decide who gets the materials. How do I know you are an instructor? I can’t possibly take the time to go check out every user that claims to be an instructor to see if they are legit. Right now the only benefit of being an instructor is that you get to see and grade the work of your students. If you are a student pretending to be an instructor this gives you no advantage.</p>
-            </li>
-            <li>
-                <p>As I think about how best to invest the hours of my day that I have to work on this, I have very little energy or excitement for writing an answer key. So I choose to spend my time elsewhere. If others were to do so, and want to publish it somehow, I would be very happy to accept a PR!</p>
-            </li>
-            <li>
-                <p>I wold much rather put my energy into developing good unit tests, so that you know when you are right and when you are not there yet without me giving you solution.</p>
-            </li>
-            <li>
-                <p>With all of that, behind me, I’m still thinking about it, and trying to find a way to do it where its NOT a huge amount of extra work, and I can keep things in sync. I’ve thought about charging for the instructor guide as one way to both disuade casual cheaters and to help fund Runestone development. Stay tuned…</p>
-            </li>
-        </ol>
+            <ol>
+                <li>
+                    <p>Writing an instructor guide that contains all of the answers to the questions essentially doubles the work of writing a book, and even more so maintaining the book. In all the textbooks I’ve used over the years for CS I’ve only ever had one that had a solution guide and that was largely for all of the math in a networking text.</p>
+                </li>
+                <li>
+                    <p>For 99% of the questions there is no one right answer. Very likely if I give you an answer there is a better one out there, and I really don’t want to get into arguments about what is better. Especially since a lot of it comes down to style.</p>
+                </li>
+                <li>
+                    <p>Doing the work is the best way to prepare to teach it. You are smarter, wiser, and a better problem solver than your students. Its actually good for them to see how you approach solving the problem rather consulting some answer key.</p>
+                </li>
+                <li>
+                    <p>From a practical perspective it would be very hard for me to decide who gets the materials. How do I know you are an instructor? I can’t possibly take the time to go check out every user that claims to be an instructor to see if they are legit. Right now the only benefit of being an instructor is that you get to see and grade the work of your students. If you are a student pretending to be an instructor this gives you no advantage.</p>
+                </li>
+                <li>
+                    <p>As I think about how best to invest the hours of my day that I have to work on this, I have very little energy or excitement for writing an answer key. So I choose to spend my time elsewhere. If others were to do so, and want to publish it somehow, I would be very happy to accept a PR!</p>
+                </li>
+                <li>
+                    <p>I wold much rather put my energy into developing good unit tests, so that you know when you are right and when you are not there yet without me giving you solution.</p>
+                </li>
+                <li>
+                    <p>With all of that, behind me, I’m still thinking about it, and trying to find a way to do it where its NOT a huge amount of extra work, and I can keep things in sync. I’ve thought about charging for the instructor guide as one way to both disuade casual cheaters and to help fund Runestone development. Stay tuned…</p>
+                </li>
+            </ol>
         </p>
     </subsection>
     <subsection xml:id="_can-i-build-my-own-course-and-host-it-here">
@@ -104,17 +104,17 @@
         <p>Yes, we are currently hosting many courses for many different institutions around the world. In fact in 2013 one large institution had 800 students using one of the books.</p>
         <p>The best approach is to use our system to build your own textbook. This gives you several advantages as an instructor including:</p>
         <p>
-        <ul>
-            <li>
-                <p>a simple grading interface for homework problems at the end of each chapter</p>
-            </li>
-            <li>
-                <p>some simple reports on your students activities within the textbook.</p>
-            </li>
-            <li>
-                <p>at a glance information about the multiple choice and fill in the blank questions embedded in the text.</p>
-            </li>
-        </ul>
+            <ul>
+                <li>
+                    <p>a simple grading interface for homework problems at the end of each chapter</p>
+                </li>
+                <li>
+                    <p>some simple reports on your students activities within the textbook.</p>
+                </li>
+                <li>
+                    <p>at a glance information about the multiple choice and fill in the blank questions embedded in the text.</p>
+                </li>
+            </ul>
         </p>
     </subsection>
     <subsection xml:id="_how-do-i-build-my-own-course">
@@ -122,29 +122,30 @@
         <note>
             <title>Steps to Build</title>
             <p>
-            <ol>
-                <li>
-                    <p>First you should register yourself as a user on this site. When you register you must pick a course. Just use thinkcspy or pythonds, it doesn’t matter as that will change when you build your own.</p>
-                </li>
-                <li>
-                    <p>Then go to the <url href="https://runestone.academy/runestone/admin/index" visual="https://runestone.academy/runestone/admin/index">instructors page</url>.</p>
-                </li>
-                <li>
-                    <p>On this page you will see the links for listing and grading assignments and lots of other things. Right now those won’t show you anything, so move along to the <url href="https://runestone.academy/runestone/designer" visual="https://runestone.academy/runestone/designer">Create a Custom Course</url> link.</p>
-                </li>
-                <li>
-                    <p>Fill in the Project Name. This should be a short one word description of your course like <title_reference>luther150a.</title_reference> When your students register for the course this is the name they will have to type in to join your particular course. No Spaces allwed in this name.</p>
-                </li>
-                <li>
-                    <p>The description can say a bit more about the course.</p>
-                </li>
-                <li>
-                    <p>Choose one of the ready-made books for your course.</p>
-                </li>
-                <li>
-                    <p>Its probably just fine to leave this at today’s date. If you set it into the future and then do some experimenting with assignments and quizzes today you won’t be able to see your results because you are only shown things that come after the start date.</p>
-                </li>
-            </ol>
+                <ol>
+                    <li>
+                        <p>First you should register yourself as a user on this site. When you register you must pick a course. Just use thinkcspy or pythonds, it doesn’t matter as that will change when you build your own.</p>
+                    </li>
+                    <li>
+                        <p>Then go to the <url href="https://runestone.academy/runestone/admin/index" visual="https://runestone.academy/runestone/admin/index">instructors page</url>.
+                        </p>
+                    </li>
+                    <li>
+                        <p>On this page you will see the links for listing and grading assignments and lots of other things. Right now those won’t show you anything, so move along to the <url href="https://runestone.academy/runestone/designer" visual="https://runestone.academy/runestone/designer">Create a Custom Course</url> link.</p>
+                    </li>
+                    <li>
+                        <p>Fill in the Project Name. This should be a short one word description of your course like <title_reference>luther150a.</title_reference> When your students register for the course this is the name they will have to type in to join your particular course. No Spaces allwed in this name.</p>
+                    </li>
+                    <li>
+                        <p>The description can say a bit more about the course.</p>
+                    </li>
+                    <li>
+                        <p>Choose one of the ready-made books for your course.</p>
+                    </li>
+                    <li>
+                        <p>Its probably just fine to leave this at today’s date. If you set it into the future and then do some experimenting with assignments and quizzes today you won’t be able to see your results because you are only shown things that come after the start date.</p>
+                    </li>
+                </ol>
             </p>
         </note>
     </subsection>
@@ -182,26 +183,26 @@
         <title>My students are completing work but it is not showing up. Help!</title>
         <p>There are many answers to this, as the question itself is very vague. Where is it not showing up? What is not showing up? The first thing to say is that Runestone goes to great lengths to save everything! It is extremely rare for an action to go unrecorded. With that said here are things to check.</p>
         <p>
-        <ol>
-            <li>
-                <p>Make sure your students are logged in to YOUR course and not the open course that you based yours on. If your student is logged in to your course they will see the name of your course in the upper left corner of the browser window.</p>
-            </li>
-            <li>
-                <p>Make sure they are paying attention to the progress bar. If the progress bar is gray they are not logged in! If it is green they are. The progress bar will show how many of their activities have been recorded for that page.</p>
-            </li>
-            <li>
-                <p>Check the assignment page and click on the self grade button. This is yet another way that students can verify their work has been saved.</p>
-            </li>
-            <li>
-                <p>For students work to show up in the gradebook you will need to use the grading interface to run the autograder which tabulates the scores for the assignment and saves them in the database. You also need to release the grades in order for the students to see them on the student progress page. If you haven’t released them then they will not see their progress.</p>
-            </li>
-            <li>
-                <p>Make sure your assignment deadlines are set up correctly or that you have unchecked the box to only count activities before the deadline.</p>
-            </li>
-            <li>
-                <p>From the student progress page you can click on the name of any student and see the raw log details. You can also click on the overview reports link from that page and download a CSV file that you can import into your favorite spreadsheet. This will show you counts of activities for each student, the timestamp of the first time a student interacts with anything in runestone and more.</p>
-            </li>
-        </ol>
+            <ol>
+                <li>
+                    <p>Make sure your students are logged in to YOUR course and not the open course that you based yours on. If your student is logged in to your course they will see the name of your course in the upper left corner of the browser window.</p>
+                </li>
+                <li>
+                    <p>Make sure they are paying attention to the progress bar. If the progress bar is gray they are not logged in! If it is green they are. The progress bar will show how many of their activities have been recorded for that page.</p>
+                </li>
+                <li>
+                    <p>Check the assignment page and click on the self grade button. This is yet another way that students can verify their work has been saved.</p>
+                </li>
+                <li>
+                    <p>For students work to show up in the gradebook you will need to use the grading interface to run the autograder which tabulates the scores for the assignment and saves them in the database. You also need to release the grades in order for the students to see them on the student progress page. If you haven’t released them then they will not see their progress.</p>
+                </li>
+                <li>
+                    <p>Make sure your assignment deadlines are set up correctly or that you have unchecked the box to only count activities before the deadline.</p>
+                </li>
+                <li>
+                    <p>From the student progress page you can click on the name of any student and see the raw log details. You can also click on the overview reports link from that page and download a CSV file that you can import into your favorite spreadsheet. This will show you counts of activities for each student, the timestamp of the first time a student interacts with anything in runestone and more.</p>
+                </li>
+            </ol>
         </p>
     </subsection>
     <subsection xml:id="_how-do-i-change-courses-or-register-for-an-additional-course">
@@ -213,56 +214,56 @@
         <title>What course name should I use when I register?</title>
         <p>If you are enrolled in a course at a high school, college or university your instructor should give you the name. If they didn’t you need to ask them. If you are learning on your own, The registration page gives you the full list as does our library page. But here are the legal, open, courses that anyone can sign up for. Since you are here you didn’t see that so here is the list:</p>
         <p>
-        <ul>
-            <li>
-                <p>apcsareview</p>
-            </li>
-            <li>
-                <p>cpp4python</p>
-            </li>
-            <li>
-                <p>cppds</p>
-            </li>
-            <li>
-                <p>csawesome</p>
-            </li>
-            <li>
-                <p>fopp</p>
-            </li>
-            <li>
-                <p>httlads</p>
-            </li>
-            <li>
-                <p>java4python</p>
-            </li>
-            <li>
-                <p>JS4Python</p>
-            </li>
-            <li>
-                <p>learnwebgl2</p>
-            </li>
-            <li>
-                <p>overview</p>
-            </li>
-            <li>
-                <p>pythonds</p>
-            </li>
-            <li>
-                <p>pythoned</p>
-            </li>
-            <li>
-                <p>StudentCSP</p>
-            </li>
-            <li>
-                <p>TeacherCSP</p>
-            </li>
-            <li>
-                <p>thinkcspy</p>
-            </li>
-            <li>
-                <p>webfundamentals</p>
-            </li>
-        </ul>
+            <ul>
+                <li>
+                    <p>apcsareview</p>
+                </li>
+                <li>
+                    <p>cpp4python</p>
+                </li>
+                <li>
+                    <p>cppds</p>
+                </li>
+                <li>
+                    <p>csawesome</p>
+                </li>
+                <li>
+                    <p>fopp</p>
+                </li>
+                <li>
+                    <p>httlads</p>
+                </li>
+                <li>
+                    <p>java4python</p>
+                </li>
+                <li>
+                    <p>JS4Python</p>
+                </li>
+                <li>
+                    <p>learnwebgl2</p>
+                </li>
+                <li>
+                    <p>overview</p>
+                </li>
+                <li>
+                    <p>pythonds</p>
+                </li>
+                <li>
+                    <p>pythoned</p>
+                </li>
+                <li>
+                    <p>StudentCSP</p>
+                </li>
+                <li>
+                    <p>TeacherCSP</p>
+                </li>
+                <li>
+                    <p>thinkcspy</p>
+                </li>
+                <li>
+                    <p>webfundamentals</p>
+                </li>
+            </ul>
         </p>
     </subsection>
     <subsection xml:id="_what-version-of-python-does-your-book-use">
@@ -279,18 +280,18 @@
         <note>
             <title>Contact</title>
             <p>
-            <ol>
-                <li>
-                    <p>Tweet me @iRunestone</p>
-                </li>
-                <li>
-                    <p>Post the question on our google group</p>
-                </li>
-                <li>
-                    <p>Send me a private email. <url href="mailto:runestoneinteractive@gmail.com" visual="mailto:runestoneinteractive@gmail.com">runestoneinteractive@gmail.com</url>
-                    </p>
-                </li>
-            </ol>
+                <ol>
+                    <li>
+                        <p>Tweet me @iRunestone</p>
+                    </li>
+                    <li>
+                        <p>Post the question on our google group</p>
+                    </li>
+                    <li>
+                        <p>Send me a private email. <url href="mailto:runestoneinteractive@gmail.com" visual="mailto:runestoneinteractive@gmail.com">runestoneinteractive@gmail.com</url>
+                        </p>
+                    </li>
+                </ol>
             </p>
         </note>
     </subsection>
@@ -298,36 +299,37 @@
         <title>My Internet is slow, I want to use Runestone offline</title>
         <p>This might require a little extra learning on your part but here is what you need to do. If you can’t get this to work on your own ask your teacher for some help.</p>
         <p>
-        <ol>
-            <li>
-                <p>Install Python</p>
-            </li>
-            <li>
-                <p>Use pip to install runestone (pip install runestone)</p>
-            </li>
-            <li>
-                <p>Download or use git to clone the repository for your book from <url href="https://github.com/RunestoneInteractive" visual="https://github.com/RunestoneInteractive">https://github.com/RunestoneInteractive</url>
-                </p>
-            </li>
-            <li>
-                <p>Edit the pavement.py file for your book and set dynamic_pages = False and useRunestoneServices=False</p>
-            </li>
-            <li>
-                <p>In the folder created for your book run runestone build –all</p>
-            </li>
-        </ol>
+            <ol>
+                <li>
+                    <p>Install Python</p>
+                </li>
+                <li>
+                    <p>Use pip to install runestone (pip install runestone)</p>
+                </li>
+                <li>
+                    <p>Download or use git to clone the repository for your book from <url href="https://github.com/RunestoneInteractive" visual="https://github.com/RunestoneInteractive">https://github.com/RunestoneInteractive</url>
+                    </p>
+                </li>
+                <li>
+                    <p>Edit the pavement.py file for your book and set dynamic_pages = False and useRunestoneServices=False</p>
+                </li>
+                <li>
+                    <p>In the folder created for your book run runestone build –all</p>
+                </li>
+            </ol>
         </p>
         <p>6. Run the command runestone serve and then in your browser go to <url href="http://localhost:8000" visual="http://localhost:8000">http://localhost:8000</url>
             This will let you access your book from a webserver running on your own computer, It will save your work locally, as long as you use the same browser.  But it will NOT share or sync any information with Runestone.academy</p>
     </subsection>
     <subsection xml:id="_why-can-t-i-just-get-a-pdf">
         <title>Why can’t I just get a PDF?</title>
-        <p>Because what we are focused on is building great <em>interactive</em> textbooks, pdfs are not interactive. Update!! Our partnership with the <pretext /> team allows us to build books in many formats including PDF.  If your book has been converted there is a good chance we can get you a PDF.</p>
+        <p>Because what we are focused on is building great <em>interactive</em> textbooks, pdfs are not interactive. Update!! Our partnership with the <pretext />
+ team allows us to build books in many formats including PDF.  If your book has been converted there is a good chance we can get you a PDF.</p>
     </subsection>
     <subsection xml:id="timezone">
-    <title>How does Runestone handle timezones?</title>
-    <p>Very well thank you!  Every student interaction is logged to the runestone database using UTC time.  When you create an assignment with a deadline store the time in the timezone of the instructor making the assignment as the deadline.  Given that we can fairly judge whether a student has completed their work on time.  Trust me we have figured this out over the years and learned a lot about time zones.  Did you know there are places in the world where there are half or quarter hour differences between two timezones??!!</p>
-    <p>I realize that students will often complain that they had their work done on time but the darn Runestone would not give them credit.  Usually they are wrong.  But you have several ways of checking out their claim including downloading the log for your course or looking at the Student Activity report and checking their first and last interactions with the problem. The software has proven itself to be correct way more often than the students and we use one of the most reliable databases in the world (Postgresql) to keep track of student activities! </p>
+        <title>How does Runestone handle timezones?</title>
+        <p>Very well thank you!  Every student interaction is logged to the runestone database using UTC time.  When you create an assignment with a deadline store the time in the timezone of the instructor making the assignment as the deadline.  Given that we can fairly judge whether a student has completed their work on time.  Trust me we have figured this out over the years and learned a lot about time zones.  Did you know there are places in the world where there are half or quarter hour differences between two timezones??!!</p>
+        <p>I realize that students will often complain that they had their work done on time but the darn Runestone would not give them credit.  Usually they are wrong.  But you have several ways of checking out their claim including downloading the log for your course or looking at the Student Activity report and checking their first and last interactions with the problem. The software has proven itself to be correct way more often than the students and we use one of the most reliable databases in the world (Postgresql) to keep track of student activities! </p>
     </subsection>
 
 </section>
