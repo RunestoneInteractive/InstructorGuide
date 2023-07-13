@@ -3,7 +3,8 @@ build/*
 *.pyc
 .DS_Store
 .vscode
-output
+output/*/*
+!output/*/CNAME
 published
 cli.log
 .error_schema.log

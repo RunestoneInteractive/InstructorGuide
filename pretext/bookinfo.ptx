@@ -29,13 +29,12 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
     <!-- the other option is "long" which will produce an -->
     <!-- entire front matter section with more headings   -->
     <author-biographies length="short" />
-    <brandlogo url="https://runestone.academy"  source="RAIcon.png"/> 
-    
+    <brandlogo url="https://runestone.academy" source="RAIcon.png"/>
+
     <document-id edition="2">instructorguide</document-id>
 
     <!-- Prefix to enhance Sage notebook contents -->
-    <initialism>SB</initialism>
-    <blurb shelf="introcs">The original open source intro to computer science textbook.  Great for students of all ages.</blurb>
+    <blurb shelf="Author/Instructor Help">This book will help you get the most out of the features of Runestone Academy.</blurb>
     <!-- Math-related macros from "macros.tex" in previous LaTeX version -->
     <!-- \notdivide replaces \notmid to avoid conflict with tikz - TWJ 5/6/2010 -->
     <!-- Added operator \gf  - TWJ 2/26/2013 -->
