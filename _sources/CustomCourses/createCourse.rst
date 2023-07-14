@@ -6,7 +6,7 @@ How to Create a Custom Course
     :divid: create_course_vid
     :align: center    
 
-1. Log in to the runestone server at `https://runestone.academy <https://runestone.academy>`_ if you already have an account with Runestone Interactive.  If you don't have an account then you can create one at `https://runestone.academy/runestone/default/user/register <https://runestone.academy/runestone/default/user/register>`_. When you register, it will ask to enter the name of an ebook.  You can enter the name for any of the existing ebooks.
+1. Log in to the runestone server at `https://runestone.academy <https://runestone.academy>`_ if you already have an account with Runestone Academy.  If you don't have an account then you can create one at `https://runestone.academy/runestone/default/user/register <https://runestone.academy/runestone/default/user/register>`_. When you register, it will ask to enter the name of an ebook.  You can enter the name for any of the existing ebooks.
 
 .. figure:: Figures/login.png
     :width: 600px

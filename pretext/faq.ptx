@@ -177,7 +177,7 @@
     <subsection xml:id="_what-if-i-want-to-add-my-own-exercises">
         <title>What if I want to add my own exercises?</title>
         <p>You can add your own custom exercises by editing the assignments.rst file. This file is meant for the descriptive or question text for a programming exercise. Adding an exercise to this file does not automatically add it to the grading interface for your course, you still need to do that from the instructors interface. See this <url href="http://reputablejournal.com/Organizing-your-Runestone-Course.html" visual="http://reputablejournal.com/Organizing-your-Runestone-Course.html">blog post</url> for more information.</p>
-        <p>New exercises are always welcome and we would love to expand the number of exercises. The simplest way is to go to the <url href="http://github.com/bnmnetp/runestone/issues" visual="http://github.com/bnmnetp/runestone/issues">github issues</url> page and file a new issue. In the description simply include the text for the exercise and which chapter you think it should go in. We’ll take it from there. After we’ve added the exercise you can rebuild your book and it will be there.</p>
+        <p>New exercises are always welcome and we would love to expand the number of exercises. The simplest way is to go to the <url href="http://github.com/bnmnetp/RunestoneInteractive/rs/issues" visual="http://github.com/bnmnetp/RunestoneInteractive/rs/issues">github issues</url> page and file a new issue. In the description simply include the text for the exercise and which chapter you think it should go in. We’ll take it from there. After we’ve added the exercise you can rebuild your book and it will be there.</p>
     </subsection>
     <subsection xml:id="_my-students-are-completing-work-but-it-is-not-showing-up-help">
         <title>My students are completing work but it is not showing up. Help!</title>
@@ -272,7 +272,7 @@
     </subsection>
     <subsection xml:id="_i-think-there-is-a-bug-in-your-book-what-should-i-do">
         <title>I think there is a bug in your book what should I do?</title>
-        <p>Please let us know! You can file bug reports on our <url href="http://github.com/RunestoneInteractive/RunestoneComponents/issues" visual="http://github.com/RunestoneInteractive/RunestoneComponents/issues">github issues page</url>. Thanks! If you don’t have a github account then you can tweet me at iRunestone or visit our <url href="https://groups.google.com/forum/#!forum/runestoneinteractive" visual="https://groups.google.com/forum/#!forum/runestoneinteractive">google.groups discussion</url>
+        <p>Please let us know! You can file bug reports on our <url href="http://github.com/RunestoneInteractive/rs/issues" visual="http://github.com/RunestoneInteractive/rs/issues">github issues page</url>. Thanks! If you don't have a github account then join us on our Discord channel.
         </p>
     </subsection>
     <subsection xml:id="_i-have-a-question-that-is-not-covered-here">

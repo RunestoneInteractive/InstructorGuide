@@ -47,7 +47,7 @@ master_doc = "index"
 
 # General information about the project.
 project = "Runestone Instructors Guide"
-copyright = "2021 Brad Miller, Runestone Interactive LLC"
+copyright = "2021 Brad Miller, Runestone Academy LLC"
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the

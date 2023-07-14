@@ -2,7 +2,7 @@
 <pretext xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
   <xi:include href="./bookinfo.ptx" />
   <book xml:id="InstructorGuide" permid="Ins">
-    <title>Using eBooks with Runestone Interactive</title>
+    <title>Using eBooks with Runestone Academy</title>
     <subtitle>The PreTeXt Interactive Edition</subtitle>
     <frontmatter>
       <titlepage>

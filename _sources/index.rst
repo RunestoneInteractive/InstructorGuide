@@ -1,5 +1,5 @@
 =======================================
-Using eBooks with Runestone Interactive
+Using eBooks with Runestone Academy
 =======================================
 
 If you are an instructor wanting to learn more about how to use the `Runestone Academy <https://runestone.academy>`_ website, then this is the resource for you.
