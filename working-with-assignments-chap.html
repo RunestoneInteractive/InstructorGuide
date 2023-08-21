@@ -5,7 +5,7 @@
 <!--*         https://pretextbook.org          *-->
 <!--*                                          *-->
 <!--********************************************-->
-<html lang="en-US">
+<html lang="en-US" dir="ltr">
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Working with Assignments</title>
@@ -14,35 +14,60 @@
 <meta property="og:type" content="book">
 <meta property="book:title" content="Using eBooks with Runestone Academy">
 <meta property="book:author" content="Brad Miller, PhD. Professor Emeritus Luther College">
-<script>var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
 window.MathJax = {
-  tex: {
-    inlineMath: [['\\(','\\)']],
-    tags: "none",
-    tagSide: "right",
-    tagIndent: ".8em",
-    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'color', 'newcommand', 'knowl']}
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
   },
-  options: {
-    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
-    processHtmlClass: "process-math",
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math"
   },
-  chtml: {
-    scale: 0.98,
-    mtextInheritFont: true
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
   },
-  loader: {
-    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/color', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
-    paths: {pretext: "https://pretextbook.org/js/lib"},
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "https://pretextbook.org/js/lib"
+    }
   },
-  startup: {
+  "startup": {
     pageReady() {
       return MathJax.startup.defaultPageReady().then(function () {
       console.log("in ready function");
       rsMathReady();
       }
     )}
-  },
+  }
 };
 </script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/themes/prism.css" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/components/prism-core.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/autoloader/prism-autoloader.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="https://pretextbook.org/js/0.3/pretext_search.js"></script><link href="https://pretextbook.org/css/0.7/pretext_search.css" rel="stylesheet" type="text/css">
@@ -85,15 +110,15 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.0.3';
+eBookConfig.runestone_version = '7.1.1';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.0.3/prefix-runtime.743dc745e5a9b334.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.0.3/prefix-347.193e36c07abd0197.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.0.3/prefix-runestone.a6d252836fb5c953.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.0.3/prefix-347.f9add1ca35d5ad93.css">
-<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.0.3/prefix-runestone.931faef5361cf6e9.css">
+<script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.1.1/prefix-runtime.6f0528865cd47dcd.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.1.1/prefix-347.8328b60515045466.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.1.1/prefix-runestone.3a5641c4e1fe869e.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.1.1/prefix-347.f9add1ca35d5ad93.css">
+<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.1.1/prefix-runestone.cec40a61180efd41.css">
 </head>
 <body id="instructorguide" class="pretext book ignore-math">
 <a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
@@ -309,7 +334,14 @@ eBookConfig.enable_chatcodes =  false;
 <li><div class="toc-item"><a href="working-with-assignments-chap.html#instructor-interface_creating-a-problem-assignment" class="internal"><span class="codenumber">6.2.3</span> <span class="title">Creating a Problem Assignment</span></a></div></li>
 </ul>
 </li>
-<li><div class="toc-item"><a href="working-with-assignments-chap.html#instructor-interface_copying-assignments" class="internal"><span class="codenumber">6.3</span> <span class="title">Copying Assignments</span></a></div></li>
+<li>
+<div class="toc-item"><a href="working-with-assignments-chap.html#instructor-interface_copying-assignments" class="internal"><span class="codenumber">6.3</span> <span class="title">Copying Assignments</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="working-with-assignments-chap.html#subsection-16" class="internal"><span class="codenumber">6.3.1</span> <span class="title">Copying from your previous courses</span></a></div></li>
+<li><div class="toc-item"><a href="working-with-assignments-chap.html#subsection-17" class="internal"><span class="codenumber">6.3.2</span> <span class="title">Copying from a different Instructor</span></a></div></li>
+<li><div class="toc-item"><a href="working-with-assignments-chap.html#subsection-18" class="internal"><span class="codenumber">6.3.3</span> <span class="title">Copying a Course Pack from the Author</span></a></div></li>
+</ul>
+</li>
 <li>
 <div class="toc-item"><a href="working-with-assignments-chap.html#instructor-interface_exams-and-quizzes-in-runestone" class="internal"><span class="codenumber">6.4</span> <span class="title">Exams and Quizzes in Runestone</span></a></div>
 <ul class="structural">
@@ -519,79 +551,89 @@ eBookConfig.enable_chatcodes =  false;
 <div class="para" id="p-174">Problems with the book icon next to them are written by the author. Problems with the schoolhouse are contributed by the community. If a problem has a checkmark next to it then you know it can be automatically graded.</div></section></section><section class="section" id="instructor-interface_copying-assignments"><h3 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">6.3</span> <span class="title">Copying Assignments</span>
 </h3>
+<section class="subsection" id="subsection-16"><h4 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">6.3.1</span> <span class="title">Copying from your previous courses</span>
+</h4>
 <div class="para" id="p-175">You may have multiple sections where you want to share assignments, or you may simply want to copy your assignments from the last time you taught a course to your current course.  You can do this.</div>
 <figure class="figure figure-like" id="copy_assign_fig"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/Figures/copyAssignmentMenu.png" class="contained"></div>
 <figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">6.3.1<span class="period">.</span></span><span class="space"> </span>Figure 1: Copying an assignment.</figcaption></figure><div class="para" id="p-176">The copy assignment tab lets you select any of your old or current courses that use the same book.</div>
 <figure class="figure figure-like" id="select_course_fig"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/Figures/selectCourseToCopy.png" class="contained"></div>
 <figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">6.3.2<span class="period">.</span></span><span class="space"> </span>Figure 2: Select the Course</figcaption></figure><div class="para" id="p-177">Once the course is selected you can copy one or all of the assignments to your course.  If you do this multiple times courses with the same name will be ignored on the second copy.  This makes it a little easier if you just want to keep one course in sync with another so you don’t have to remember and pick and choose.</div>
 <figure class="figure figure-like" id="fig_select_assign"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/Figures/selectCourseToCopy.png" class="contained"></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">6.3.3<span class="period">.</span></span><span class="space"> </span>Figure 3: Select one or all assignments to copy.</figcaption></figure><div class="para" id="p-178">The system will add the assignments to your current course and make its best guess to adjust the due date, based on the number of days from the beginning of each course.  This is going to get you in the ballpark but you will probably have to manually adjust it due to differences in the calendar from year to year.</div></section><section class="section" id="instructor-interface_exams-and-quizzes-in-runestone"><h3 class="heading hide-type">
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">6.3.3<span class="period">.</span></span><span class="space"> </span>Figure 3: Select one or all assignments to copy.</figcaption></figure><div class="para" id="p-178">The system will add the assignments to your current course and make its best guess to adjust the due date, based on the number of days from the beginning of each course.  This is going to get you in the ballpark but you will probably have to manually adjust it due to differences in the calendar from year to year.</div></section><section class="subsection" id="subsection-17"><h4 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">6.3.2</span> <span class="title">Copying from a different Instructor</span>
+</h4>
+<div class="para" id="p-179">Help, this is my first time teaching this class and I want to copy assignments from another instructor.  This is very possible if the instructor is still available.  You simply need to enroll in their course and have them make you a TA.  Then you will be able to copy the assignments from their course to yours.</div>
+<div class="para" id="p-180">If the previous instructor is not available then we can still probably make it happen, but you are going to have to go out of your way to prove that your request is legit.  Sorry, we cannot just take your word for it over email.  A link to your faculty page, that verifies your email as a legitimate instructor at the same institution of the instructor of the course you want to copy.  We would love to just trust everyone, but data privacy laws are strict and we have to to treat data privacy very carefully.  Thanks for understanding.</div></section><section class="subsection" id="subsection-18"><h4 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">6.3.3</span> <span class="title">Copying a Course Pack from the Author</span>
+</h4>
+<div class="para" id="p-181">Some authors have provided a pre-made set of assignments.  You can copy these from the "base course" after you have created your course.  The "base course" is the code for the book that you chose when you created your own course.  Not all authors have done this yet, so your results will vary.</div></section></section><section class="section" id="instructor-interface_exams-and-quizzes-in-runestone"><h3 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">6.4</span> <span class="title">Exams and Quizzes in Runestone</span>
 </h3>
 <section class="subsection" id="create_quiz_intro"><h4 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">6.4.1</span> <span class="title">Introduction</span>
 </h4>
 <figure class="figure figure-like" id="create_exam_fig"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/Figures/assignmentMain.png" class="contained"></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">6.4.1<span class="period">.</span></span><span class="space"> </span>Figure 1: Creating an exam from an assignment</figcaption></figure><div class="para" id="p-179">If you look at Figure 1 on this page again, you will see there is a checkbox labelled “Show as Timed Assessment”  This turns a problem assignment into an exam.  There are severall things to note about this.  First is the appearance to the students, when the students first see a timed exam it looks like this:</div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">6.4.1<span class="period">.</span></span><span class="space"> </span>Figure 1: Creating an exam from an assignment</figcaption></figure><div class="para" id="p-182">If you look at Figure 1 on this page again, you will see there is a checkbox labelled “Show as Timed Assessment”  This turns a problem assignment into an exam.  There are severall things to note about this.  First is the appearance to the students, when the students first see a timed exam it looks like this:</div>
 <figure class="figure figure-like" id="figure-27"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/Figures/timedExamStart.png" class="contained"></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">6.4.2<span class="period">.</span></span><span class="space"> </span></figcaption></figure><div class="para" id="p-180">They cannot see any of the questions until they click the start button.  When the start button is clicked the timer (if selected) is also started.</div>
-<div class="para" id="p-181">During an exam the students see just one question at a time. They can navigate the questions by number or they can use the prev/next buttons to go from question to question.</div>
-<div class="para" id="p-182">When the student navigates to the new question the question they were on is evaluated and the results are sent to the server. Questions that a student has attempted are marked as grey on the numbered interface so students know which questions they have answered.</div>
-<div class="para" id="p-183">During an exam the student will not see any feedback on whether they answered the questions right or wrong.  Once the exam is completed they will see that feedback unless you have checked the don’t show feedback checkbox.</div>
-<div class="para" id="p-184">It is important to remind students that if they close the tab or their browser or navigate away from the page or even try to refresh the page, the exam is over and they will not be able to answer any more questions.  Once they click the finish exam button they are done.  As an instructor you can reset a students exam from the instructors page, but they will be forced to start over.</div>
-<div class="para" id="p-185">When a student submits their exam with the finish exam button or when the exam is automatically submitted due to time expiring, the autograder is run on the server and a score is recorded.  If all your questions are autogradable you’re done!  If not you can use the grading interface to manually grade any questions.</div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">6.4.2<span class="period">.</span></span><span class="space"> </span></figcaption></figure><div class="para" id="p-183">They cannot see any of the questions until they click the start button.  When the start button is clicked the timer (if selected) is also started.</div>
+<div class="para" id="p-184">During an exam the students see just one question at a time. They can navigate the questions by number or they can use the prev/next buttons to go from question to question.</div>
+<div class="para" id="p-185">When the student navigates to the new question the question they were on is evaluated and the results are sent to the server. Questions that a student has attempted are marked as grey on the numbered interface so students know which questions they have answered.</div>
+<div class="para" id="p-186">During an exam the student will not see any feedback on whether they answered the questions right or wrong.  Once the exam is completed they will see that feedback unless you have checked the don’t show feedback checkbox.</div>
+<div class="para" id="p-187">It is important to remind students that if they close the tab or their browser or navigate away from the page or even try to refresh the page, the exam is over and they will not be able to answer any more questions.  Once they click the finish exam button they are done.  As an instructor you can reset a students exam from the instructors page, but they will be forced to start over.</div>
+<div class="para" id="p-188">When a student submits their exam with the finish exam button or when the exam is automatically submitted due to time expiring, the autograder is run on the server and a score is recorded.  If all your questions are autogradable you’re done!  If not you can use the grading interface to manually grade any questions.</div>
 <figure class="figure figure-like" id="figure-28"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/Figures/timedExamUI.png" class="contained"></div>
 <figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">6.4.3<span class="period">.</span></span><span class="space"> </span></figcaption></figure></section><section class="subsection" id="instructor-interface_resetting-an-exam"><h4 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">6.4.2</span> <span class="title">Resetting an Exam</span>
 </h4>
-<div class="para" id="p-186">The instructor interface allows you to reset an exam for any student.</div>
+<div class="para" id="p-189">The instructor interface allows you to reset an exam for any student.</div>
 <figure class="figure figure-like" id="figure-29"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/Figures/timedExamReset.png" class="contained"></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">6.4.4<span class="period">.</span></span><span class="space"> </span></figcaption></figure><div class="para" id="p-187">You just select the student and the assignment name and then press the red button.</div></section></section><section class="section" id="instructor-interface_grading"><h3 class="heading hide-type">
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">6.4.4<span class="period">.</span></span><span class="space"> </span></figcaption></figure><div class="para" id="p-190">You just select the student and the assignment name and then press the red button.</div></section></section><section class="section" id="instructor-interface_grading"><h3 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">6.5</span> <span class="title">Grading</span>
 </h3>
 <section class="subsection" id="grading_intro"><h4 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">6.5.1</span> <span class="title">Introduction</span>
 </h4>
 <div class="video-box" style="width: 100%;padding-top: 56.25%; margin-left: 0%; margin-right: 0%;"><iframe id="ArghLTeeSvc" class="video" allowfullscreen="" src="https://www.youtube-nocookie.com/embed/ArghLTeeSvc?&amp;modestbranding=1&amp;rel=0"></iframe></div>
-<div class="para" id="p-188">To grade student performance, go back to the instructor’s interface and click on the grading tab. You’ll see something like this.</div>
+<div class="para" id="p-191">To grade student performance, go back to the instructor’s interface and click on the grading tab. You’ll see something like this.</div>
 <div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/Figures/grading_tab.png" class="contained"></div>
-<div class="para" id="p-189">Typically, you will select an assignment from the first dropdown.  This will show you summary of the elements that are automatically graded.  The other option is Chapter and you can use this to drill in on a chapter and look at a students work on any problem in the textbook regardless of whether it was part of an assignment.</div>
+<div class="para" id="p-192">Typically, you will select an assignment from the first dropdown.  This will show you summary of the elements that are automatically graded.  The other option is Chapter and you can use this to drill in on a chapter and look at a students work on any problem in the textbook regardless of whether it was part of an assignment.</div>
 <div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/Figures/assignment_selected.png" class="contained"></div>
-<div class="para" id="p-190">From here you can also select a question or questions as well as a student or students to manually grade a problem.  You can also use this to view a students answer to an automatically graded problem if they have a question about their score.</div>
+<div class="para" id="p-193">From here you can also select a question or questions as well as a student or students to manually grade a problem.  You can also use this to view a students answer to an automatically graded problem if they have a question about their score.</div>
 <div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/Figures/manual_grading.png" class="contained"></div>
-<div class="para" id="p-191">You will see the last version of code that the student ran prior to the assignment deadline. Click run to execute it. Drag the little scrubber across the timeline next to the Run button to see other versions of the code that the student ran.</div>
-<div class="para" id="p-192">You can assign a number grade (number of points) and, optionally, leave a comment.  As you tab out of the grade box you will see it turn green to indicate that the grade has been updated in the database. Similarly if you leave a comment it will automatically update the database with the comment for the student.</div>
-<div class="para" id="p-193">If you prefer to work on one question at a time there is a save and next button that will automatically move on the next item to grade.</div></section><section class="subsection" id="instructor-interface_autograde"><h4 class="heading hide-type">
+<div class="para" id="p-194">You will see the last version of code that the student ran prior to the assignment deadline. Click run to execute it. Drag the little scrubber across the timeline next to the Run button to see other versions of the code that the student ran.</div>
+<div class="para" id="p-195">You can assign a number grade (number of points) and, optionally, leave a comment.  As you tab out of the grade box you will see it turn green to indicate that the grade has been updated in the database. Similarly if you leave a comment it will automatically update the database with the comment for the student.</div>
+<div class="para" id="p-196">If you prefer to work on one question at a time there is a save and next button that will automatically move on the next item to grade.</div></section><section class="subsection" id="instructor-interface_autograde"><h4 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">6.5.2</span> <span class="title">Autograde</span>
 </h4>
-<div class="para" id="p-194">Some questions have been configured for auto-grading, in particular coding problems with unit tests and some multiple choice problems. If you click on the Autograde button on the left side, the autograder will run. It will pop up an alert box to give you a diagnostic about how many question-student pairs were autograded.</div>
-<div class="para" id="p-195">Some things to note about the autograder:</div>
-<div class="para logical" id="p-196"><ul class="disc">
-<li id="li-96"><div class="para" id="p-197">If a question is selected, the autograder will run only for that question.</div></li>
-<li id="li-97"><div class="para" id="p-198">If a student is also selected, the autograder will run for only that question-student combination.</div></li>
-<li id="li-98"><div class="para" id="p-199">To run the autograder for all the questions and students for a particular assignment, refresh the page, select the assignment, and click the autograde button before selecting a question or student.</div></li>
-<li id="li-99"><div class="para" id="p-200">You can manually override the grade assigned by the autograder using the grading form on the right side. Be sure to change the comment as well.</div></li>
-<li id="li-100"><div class="para" id="p-201">If you rerun the autograder, it will not run on any student-question pair where you have changed the comment.</div></li>
+<div class="para" id="p-197">Some questions have been configured for auto-grading, in particular coding problems with unit tests and some multiple choice problems. If you click on the Autograde button on the left side, the autograder will run. It will pop up an alert box to give you a diagnostic about how many question-student pairs were autograded.</div>
+<div class="para" id="p-198">Some things to note about the autograder:</div>
+<div class="para logical" id="p-199"><ul class="disc">
+<li id="li-96"><div class="para" id="p-200">If a question is selected, the autograder will run only for that question.</div></li>
+<li id="li-97"><div class="para" id="p-201">If a student is also selected, the autograder will run for only that question-student combination.</div></li>
+<li id="li-98"><div class="para" id="p-202">To run the autograder for all the questions and students for a particular assignment, refresh the page, select the assignment, and click the autograde button before selecting a question or student.</div></li>
+<li id="li-99"><div class="para" id="p-203">You can manually override the grade assigned by the autograder using the grading form on the right side. Be sure to change the comment as well.</div></li>
+<li id="li-100"><div class="para" id="p-204">If you rerun the autograder, it will not run on any student-question pair where you have changed the comment.</div></li>
 </ul></div></section><section class="subsection" id="instructor-interface_calculate-totals"><h4 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">6.5.3</span> <span class="title">Calculate Totals</span>
 </h4>
-<div class="para" id="p-202">Once you have graded all the questions on an assignment, click the Caclulate Totals button to compute the total scores for the whole assignment, or to recalculate them after updating a grade. Again, an alert box will pop up to provide diagnostics about the min and max scores that were calculated.</div>
+<div class="para" id="p-205">Once you have graded all the questions on an assignment, click the Caclulate Totals button to compute the total scores for the whole assignment, or to recalculate them after updating a grade. Again, an alert box will pop up to provide diagnostics about the min and max scores that were calculated.</div>
 <div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/Figures/calculate_totals.png" class="contained"></div></section><section class="subsection" id="instructor-interface_release-grades"><h4 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">6.5.4</span> <span class="title">Release Grades</span>
 </h4>
-<div class="para" id="p-203">When you are satisfied that the grade totals have been calculated correctly, click on the Release Grades button at the bottom left. This makes them visible to students. If you make any subsequent changes to grades, you will need to click Calculate Totals again, but you will not need to click on Release Grades again: once released, they stay released.</div></section><section class="subsection" id="instructor-interface_how-a-student-sees-grades-and-comments"><h4 class="heading hide-type">
+<div class="para" id="p-206">When you are satisfied that the grade totals have been calculated correctly, click on the Release Grades button at the bottom left. This makes them visible to students. If you make any subsequent changes to grades, you will need to click Calculate Totals again, but you will not need to click on Release Grades again: once released, they stay released.</div></section><section class="subsection" id="instructor-interface_how-a-student-sees-grades-and-comments"><h4 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">6.5.5</span> <span class="title">How a Student Sees Grades and Comments</span>
 </h4>
-<div class="para" id="p-204">When viewing an assignment, a student can click on the “Show Feedback” button to see a score and any instructor comments.</div>
+<div class="para" id="p-207">When viewing an assignment, a student can click on the “Show Feedback” button to see a score and any instructor comments.</div>
 <div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/Figures/studentFeedback.JPG" class="contained"></div>
-<div class="para" id="p-205">In addition the user menu allows the student to see a summary of their progress.</div>
+<div class="para" id="p-208">In addition the user menu allows the student to see a summary of their progress.</div>
 <div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/Figures/student_progress.png" class="contained"></div></section></section><section class="section" id="instructor-interface_the-practice-interface"><h3 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">6.6</span> <span class="title">The Practice Interface</span>
 </h3>
-<div class="para" id="p-206">How often have you had a student ask you how they could get more practice? One theory that supports this is “spaced repetition” That is, a method to have students go back and answer existing questions but a couple of weeks after the material was brand new. Its harder, because its now out of the immediate context of the reading they just did, but this type of review helps solidify a student’s understanding of the concept.</div>
-<div class="para" id="p-207">There is a paper about this in the ACM Digital Library from the 2019 proceedings. Speed and Studying: Gendered Pathways to Success, Iman Yeckehzaare and Paul Resnick.</div>
-<div class="para" id="p-208">This feature is available in most books on Runestone Academy. The exercises need to be tagged and in some cases categorized. Other books will follow as we do the work to update the source.</div>
-<div class="para logical" id="p-209">
+<div class="para" id="p-209">How often have you had a student ask you how they could get more practice? One theory that supports this is “spaced repetition” That is, a method to have students go back and answer existing questions but a couple of weeks after the material was brand new. Its harder, because its now out of the immediate context of the reading they just did, but this type of review helps solidify a student’s understanding of the concept.</div>
+<div class="para" id="p-210">There is a paper about this in the ACM Digital Library from the 2019 proceedings. Speed and Studying: Gendered Pathways to Success, Iman Yeckehzaare and Paul Resnick.</div>
+<div class="para" id="p-211">This feature is available in most books on Runestone Academy. The exercises need to be tagged and in some cases categorized. Other books will follow as we do the work to update the source.</div>
+<div class="para logical" id="p-212">
 <div class="para">The first thing you will need to do is configure practice for your course.  Most of the options on the configuration are pretty self explanatory, but here are a few notes.</div>
 <ul class="disc">
 <li id="li-101"><div class="para" id="p-derived-li-101">If you choose to assign points for practice they will show up in a special column in the gradebook.labelled "Practice"</div></li>
@@ -599,14 +641,14 @@ eBookConfig.enable_chatcodes =  false;
 </ul>
 </div>
 <figure class="figure figure-like" id="practice_if_fig"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/Figures/practice_setup.png" class="contained"></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">6.6.1<span class="period">.</span></span><span class="space"> </span>Set up the practice feature for your course.</figcaption></figure><div class="para" id="p-210">Once you have enabled the practice feature for the course, you enable the sections you want practice questions to come from.</div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">6.6.1<span class="period">.</span></span><span class="space"> </span>Set up the practice feature for your course.</figcaption></figure><div class="para" id="p-213">Once you have enabled the practice feature for the course, you enable the sections you want practice questions to come from.</div>
 <figure class="figure figure-like" id="figure-31"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/Figures/practice_choose.png" class="contained"></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">6.6.2<span class="period">.</span></span><span class="space"> </span></figcaption></figure><div class="para" id="p-211">The students can access the practice tool from the 👤 menu, The practice practice looks like this:</div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">6.6.2<span class="period">.</span></span><span class="space"> </span></figcaption></figure><div class="para" id="p-214">The students can access the practice tool from the 👤 menu, The practice practice looks like this:</div>
 <figure class="figure figure-like" id="figure-32"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/Figures/practice_student.png" class="contained"></div>
 <figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">6.6.3<span class="period">.</span></span><span class="space"> </span></figcaption></figure></section><section class="exercises" id="instructor-interface_exercises"><h3 class="heading hide-type">
 <span class="type">Exercises</span> <span class="codenumber">6.7</span> <span class="title">Exercises</span>
 </h3>
-<div class="para" id="p-212">this page left intentionally blank</div></section></section></div>
+<div class="para" id="p-215">this page left intentionally blank</div></section></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="chapter-5.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><a class="next-button button" href="peer_instruction.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a>
 </div></main>

@@ -5,7 +5,7 @@
 <!--*         https://pretextbook.org          *-->
 <!--*                                          *-->
 <!--********************************************-->
-<html lang="en-US">
+<html lang="en-US" dir="ltr">
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Peer Instruction</title>
@@ -14,35 +14,60 @@
 <meta property="og:type" content="book">
 <meta property="book:title" content="Using eBooks with Runestone Academy">
 <meta property="book:author" content="Brad Miller, PhD. Professor Emeritus Luther College">
-<script>var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
 window.MathJax = {
-  tex: {
-    inlineMath: [['\\(','\\)']],
-    tags: "none",
-    tagSide: "right",
-    tagIndent: ".8em",
-    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'color', 'newcommand', 'knowl']}
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
   },
-  options: {
-    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
-    processHtmlClass: "process-math",
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math"
   },
-  chtml: {
-    scale: 0.98,
-    mtextInheritFont: true
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
   },
-  loader: {
-    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/color', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
-    paths: {pretext: "https://pretextbook.org/js/lib"},
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "https://pretextbook.org/js/lib"
+    }
   },
-  startup: {
+  "startup": {
     pageReady() {
       return MathJax.startup.defaultPageReady().then(function () {
       console.log("in ready function");
       rsMathReady();
       }
     )}
-  },
+  }
 };
 </script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/themes/prism.css" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/components/prism-core.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/autoloader/prism-autoloader.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="https://pretextbook.org/js/0.3/pretext_search.js"></script><link href="https://pretextbook.org/css/0.7/pretext_search.css" rel="stylesheet" type="text/css">
@@ -85,15 +110,15 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.0.3';
+eBookConfig.runestone_version = '7.1.1';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.0.3/prefix-runtime.743dc745e5a9b334.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.0.3/prefix-347.193e36c07abd0197.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.0.3/prefix-runestone.a6d252836fb5c953.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.0.3/prefix-347.f9add1ca35d5ad93.css">
-<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.0.3/prefix-runestone.931faef5361cf6e9.css">
+<script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.1.1/prefix-runtime.6f0528865cd47dcd.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.1.1/prefix-347.8328b60515045466.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.1.1/prefix-runestone.3a5641c4e1fe869e.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.1.1/prefix-347.f9add1ca35d5ad93.css">
+<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.1.1/prefix-runestone.cec40a61180efd41.css">
 </head>
 <body id="instructorguide" class="pretext book ignore-math">
 <a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
@@ -309,7 +334,14 @@ eBookConfig.enable_chatcodes =  false;
 <li><div class="toc-item"><a href="working-with-assignments-chap.html#instructor-interface_creating-a-problem-assignment" class="internal"><span class="codenumber">6.2.3</span> <span class="title">Creating a Problem Assignment</span></a></div></li>
 </ul>
 </li>
-<li><div class="toc-item"><a href="working-with-assignments-chap.html#instructor-interface_copying-assignments" class="internal"><span class="codenumber">6.3</span> <span class="title">Copying Assignments</span></a></div></li>
+<li>
+<div class="toc-item"><a href="working-with-assignments-chap.html#instructor-interface_copying-assignments" class="internal"><span class="codenumber">6.3</span> <span class="title">Copying Assignments</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="working-with-assignments-chap.html#subsection-16" class="internal"><span class="codenumber">6.3.1</span> <span class="title">Copying from your previous courses</span></a></div></li>
+<li><div class="toc-item"><a href="working-with-assignments-chap.html#subsection-17" class="internal"><span class="codenumber">6.3.2</span> <span class="title">Copying from a different Instructor</span></a></div></li>
+<li><div class="toc-item"><a href="working-with-assignments-chap.html#subsection-18" class="internal"><span class="codenumber">6.3.3</span> <span class="title">Copying a Course Pack from the Author</span></a></div></li>
+</ul>
+</li>
 <li>
 <div class="toc-item"><a href="working-with-assignments-chap.html#instructor-interface_exams-and-quizzes-in-runestone" class="internal"><span class="codenumber">6.4</span> <span class="title">Exams and Quizzes in Runestone</span></a></div>
 <ul class="structural">
@@ -421,12 +453,12 @@ eBookConfig.enable_chatcodes =  false;
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="chapter" id="peer_instruction"><h2 class="heading">
 <span class="type">Chapter</span> <span class="codenumber">7</span> <span class="title">Peer Instruction</span>
 </h2>
-<section class="introduction" id="introduction-4"><div class="para logical" id="p-213">
+<section class="introduction" id="introduction-4"><div class="para logical" id="p-216">
 <div class="para">Peer instruction was created by Eric Mazure to improve student understanding in Physics, but it has been used in many areas of study including Computer Science and Mathematics. The peer instruction process is defined as follows:</div>
 <ul class="disc">
 <li id="li-103"><div class="para" id="p-derived-li-103">Students read material before lecture</div></li>
 <li id="li-104"><div class="para" id="p-derived-li-104">There is a short assessment before or at the beginning of lecture</div></li>
-<li id="li-105"><div class="para logical" id="p-214">
+<li id="li-105"><div class="para logical" id="p-217">
 <div class="para">The instructor displays a hard multiple-choice question every 15-20 minutes.</div>
 <ul class="circle">
 <li id="li-106"><div class="para" id="p-derived-li-106">Students answer individually</div></li>
@@ -439,36 +471,36 @@ eBookConfig.enable_chatcodes =  false;
 </div></section><section class="section" id="section-24"><h3 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">7.1</span> <span class="title">Peer instruction in Runestone</span>
 </h3>
-<div class="para" id="p-215">Support for peer instruction in Runestone was developed as part of a research project by Barb Ericson at the Universit of Michigan. The interface consists of two parts, an instructor interface that allows the instructor to move the class through the steps outlined above and a student interface for answering the questions and participating in a live chat with one or more peers.</div>
-<div class="para" id="p-216">As an instructor you access the peer instruction feature from the 👤 menu and choose the Peer Instruction (instructor) option. This will bring you to a page that allows you to select the peer instruction assignment you want to use. When click on the link it starts the peer instruction session. During a peer instruction session students answers are not restored from their history if they have answered them before.</div>
+<div class="para" id="p-218">Support for peer instruction in Runestone was developed as part of a research project by Barb Ericson at the Universit of Michigan. The interface consists of two parts, an instructor interface that allows the instructor to move the class through the steps outlined above and a student interface for answering the questions and participating in a live chat with one or more peers.</div>
+<div class="para" id="p-219">As an instructor you access the peer instruction feature from the 👤 menu and choose the Peer Instruction (instructor) option. This will bring you to a page that allows you to select the peer instruction assignment you want to use. When click on the link it starts the peer instruction session. During a peer instruction session students answers are not restored from their history if they have answered them before.</div>
 <figure class="figure figure-like" id="peer_assignment_selector"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/Figures/PI_select.png" class="contained"></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">7.1.1<span class="period">.</span></span><span class="space"> </span>The peer instruction assignment selector</figcaption></figure><div class="para logical" id="p-217">
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">7.1.1<span class="period">.</span></span><span class="space"> </span>The peer instruction assignment selector</figcaption></figure><div class="para logical" id="p-220">
 <div class="para">
 <a href="" class="xref" data-knowl="./knowl/pi_instructor.html" title="Figure 7.1.2">Figure 7.1.2</a> shows the interface for controlling a peer instruction session. It is pretty self explanatory, and consists of 4 steps. Note that when your students go to the student page they will see the first question and they will be able to answer the question right away. You will be able to see the number of students that have answered the question to the right of the question. This will allow you to guage when it is time to stop the vote.</div>
 <dl class="description-list">
 <dt id="li-110">Stop Vote 1</dt>
-<dd><div class="para" id="p-218">This will change the students display so that they see a countdown timer indicating that they have 5 - 4 - 3 - 2 - 1 seconds left to answer the question. Once the timer reaches 0 the students question will be disabled so they can no longer answer.</div></dd>
+<dd><div class="para" id="p-221">This will change the students display so that they see a countdown timer indicating that they have 5 - 4 - 3 - 2 - 1 seconds left to answer the question. Once the timer reaches 0 the students question will be disabled so they can no longer answer.</div></dd>
 <dt id="li-111">Enable Discussion</dt>
-<dd><div class="para" id="p-219">clicking this button tells the system to select partners for each student. Ideally it will choose a partner that has answered the question differently. It will then open up a chat box on the students page where they can engage in conversation with their peers. During this time you will be able to consult the page labeled "Extra" in <a href="" class="xref" data-knowl="./knowl/peer_assignment_selector.html" title="Figure 7.1.1">Figure 7.1.1</a> This page is designed to be simple so you can bring it up on your phone or table and lets you monitor the percent of students that have answered the question correctly.</div></dd>
+<dd><div class="para" id="p-222">clicking this button tells the system to select partners for each student. Ideally it will choose a partner that has answered the question differently. It will then open up a chat box on the students page where they can engage in conversation with their peers. During this time you will be able to consult the page labeled "Extra" in <a href="" class="xref" data-knowl="./knowl/peer_assignment_selector.html" title="Figure 7.1.1">Figure 7.1.1</a> This page is designed to be simple so you can bring it up on your phone or table and lets you monitor the percent of students that have answered the question correctly.</div></dd>
 <dt id="li-112">Start Vote 2</dt>
-<dd><div class="para" id="p-220">This will clear the students previous answer and enable the question so the student can answer again. During the voting period you can keep an eye on the number of answers to guage when to stop voting. You can also consult the second instructor display labelled extra in</div></dd>
+<dd><div class="para" id="p-223">This will clear the students previous answer and enable the question so the student can answer again. During the voting period you can keep an eye on the number of answers to guage when to stop voting. You can also consult the second instructor display labelled extra in</div></dd>
 <dt id="li-113">Stop Vote 2</dt>
-<dd><div class="para" id="p-221">This begins a countdown timer to stop the second vote.</div></dd>
+<dd><div class="para" id="p-224">This begins a countdown timer to stop the second vote.</div></dd>
 <dt id="li-114">Next Question</dt>
-<dd><div class="para" id="p-222">Clicking this button changes the question displayed on your screen as well as your students.</div></dd>
+<dd><div class="para" id="p-225">Clicking this button changes the question displayed on your screen as well as your students.</div></dd>
 </dl>
 </div>
 <figure class="figure figure-like" id="pi_instructor"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/Figures/PI_instructor.png" class="contained"></div>
 <figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">7.1.2<span class="period">.</span></span><span class="space"> </span>The instructor interface for peer instruction</figcaption></figure></section><section class="section" id="section-25"><h3 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">7.2</span> <span class="title">Creating Peer instruction Assignments</span>
 </h3>
-<div class="para logical" id="p-223">
+<div class="para logical" id="p-226">
 <div class="para">We covered creating assignments in <a href="working-with-assignments-chap.html#instructor-interface_create-an-assignment" class="internal" title="Section 6.2: Create an Assignment">Section 6.2</a>. There are a couple of things to note about using that interface to create a peer instruction assignment.</div>
 <ol class="decimal">
 <li id="li-115"><div class="para" id="p-derived-li-115">You need to check the peer instruction box to make it a peer instruction assignment</div></li>
 <li id="li-116"><div class="para" id="p-derived-li-116">Peer instruction assignments can only have multiple choice questions. We may add other question types in the future but for now this limit exists.</div></li>
 <li id="li-117"><div class="para" id="p-derived-li-117">You are not limited to the question in your textbook, we have loaded a couple of question banks designed to be used with peer instruction. You can search for questions in the question banks by unchecking the box that limits your search to your course and searching for "peerwiseqb" for the PeerWise question bank, or "canterburyqb" for question in the Canterbury Question bank. More questions are being added all the time.</div></li>
-<li id="li-118"><div class="para logical" id="p-224">
+<li id="li-118"><div class="para logical" id="p-227">
 <div class="para">If you want to grade your peer instruction assignment you must set up your questions correctly.</div>
 <ul class="disc">
 <li id="li-119"><div class="para" id="p-derived-li-119">You must set the Auto-Grade column to either <code class="code-inline tex2jax_ignore">Peer</code> or <code class="code-inline tex2jax_ignore">Peer+Chat</code>.  Setting this column to Peer will give the student credit if they have answered both vote1 and vote2.  Setting it to Peer+Chat will give them credit if they have voted for vote1, interacted with their parter(s) through chat, and voted in vote2.</div></li>
@@ -479,7 +511,7 @@ eBookConfig.enable_chatcodes =  false;
 </div></section><section class="section" id="section-26"><h3 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">7.3</span> <span class="title">Virtual Peer Instruction Workshop</span>
 </h3>
-<div class="para" id="p-225">In the Spring of 2022 we hosted a virtual workshop on using the peer instruction interface. You may find the video useful in seeing peer instruction in action from both the instructor as well as the student perspective.</div>
+<div class="para" id="p-228">In the Spring of 2022 we hosted a virtual workshop on using the peer instruction interface. You may find the video useful in seeing peer instruction in action from both the instructor as well as the student perspective.</div>
 <div class="video-box" style="width: 100%;padding-top: 56.25%; margin-left: 0%; margin-right: 0%;"><iframe id="bP75MZYe2uU" class="video" allowfullscreen="" src="https://www.youtube-nocookie.com/embed/bP75MZYe2uU?&amp;modestbranding=1&amp;rel=0"></iframe></div></section></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="working-with-assignments-chap.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><a class="next-button button" href="chapter-8.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a>

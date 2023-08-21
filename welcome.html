@@ -5,7 +5,7 @@
 <!--*         https://pretextbook.org          *-->
 <!--*                                          *-->
 <!--********************************************-->
-<html lang="en-US">
+<html lang="en-US" dir="ltr">
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Welcome to the Runestone Community</title>
@@ -14,35 +14,60 @@
 <meta property="og:type" content="book">
 <meta property="book:title" content="Using eBooks with Runestone Academy">
 <meta property="book:author" content="Brad Miller, PhD. Professor Emeritus Luther College">
-<script>var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
 window.MathJax = {
-  tex: {
-    inlineMath: [['\\(','\\)']],
-    tags: "none",
-    tagSide: "right",
-    tagIndent: ".8em",
-    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'color', 'newcommand', 'knowl']}
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
   },
-  options: {
-    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
-    processHtmlClass: "process-math",
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math"
   },
-  chtml: {
-    scale: 0.98,
-    mtextInheritFont: true
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
   },
-  loader: {
-    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/color', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
-    paths: {pretext: "https://pretextbook.org/js/lib"},
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "https://pretextbook.org/js/lib"
+    }
   },
-  startup: {
+  "startup": {
     pageReady() {
       return MathJax.startup.defaultPageReady().then(function () {
       console.log("in ready function");
       rsMathReady();
       }
     )}
-  },
+  }
 };
 </script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/themes/prism.css" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/components/prism-core.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/autoloader/prism-autoloader.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="https://pretextbook.org/js/0.3/pretext_search.js"></script><link href="https://pretextbook.org/css/0.7/pretext_search.css" rel="stylesheet" type="text/css">
@@ -85,15 +110,15 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.0.3';
+eBookConfig.runestone_version = '7.1.1';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.0.3/prefix-runtime.743dc745e5a9b334.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.0.3/prefix-347.193e36c07abd0197.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.0.3/prefix-runestone.a6d252836fb5c953.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.0.3/prefix-347.f9add1ca35d5ad93.css">
-<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.0.3/prefix-runestone.931faef5361cf6e9.css">
+<script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.1.1/prefix-runtime.6f0528865cd47dcd.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.1.1/prefix-347.8328b60515045466.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.1.1/prefix-runestone.3a5641c4e1fe869e.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.1.1/prefix-347.f9add1ca35d5ad93.css">
+<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.1.1/prefix-runestone.cec40a61180efd41.css">
 </head>
 <body id="instructorguide" class="pretext book ignore-math">
 <a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
@@ -309,7 +334,14 @@ eBookConfig.enable_chatcodes =  false;
 <li><div class="toc-item"><a href="working-with-assignments-chap.html#instructor-interface_creating-a-problem-assignment" class="internal"><span class="codenumber">6.2.3</span> <span class="title">Creating a Problem Assignment</span></a></div></li>
 </ul>
 </li>
-<li><div class="toc-item"><a href="working-with-assignments-chap.html#instructor-interface_copying-assignments" class="internal"><span class="codenumber">6.3</span> <span class="title">Copying Assignments</span></a></div></li>
+<li>
+<div class="toc-item"><a href="working-with-assignments-chap.html#instructor-interface_copying-assignments" class="internal"><span class="codenumber">6.3</span> <span class="title">Copying Assignments</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="working-with-assignments-chap.html#subsection-16" class="internal"><span class="codenumber">6.3.1</span> <span class="title">Copying from your previous courses</span></a></div></li>
+<li><div class="toc-item"><a href="working-with-assignments-chap.html#subsection-17" class="internal"><span class="codenumber">6.3.2</span> <span class="title">Copying from a different Instructor</span></a></div></li>
+<li><div class="toc-item"><a href="working-with-assignments-chap.html#subsection-18" class="internal"><span class="codenumber">6.3.3</span> <span class="title">Copying a Course Pack from the Author</span></a></div></li>
+</ul>
+</li>
 <li>
 <div class="toc-item"><a href="working-with-assignments-chap.html#instructor-interface_exams-and-quizzes-in-runestone" class="internal"><span class="codenumber">6.4</span> <span class="title">Exams and Quizzes in Runestone</span></a></div>
 <ul class="structural">
@@ -421,23 +453,23 @@ eBookConfig.enable_chatcodes =  false;
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="appendix" id="welcome"><h2 class="heading">
 <span class="type">Appendix</span> <span class="codenumber">A</span> <span class="title">Welcome to the Runestone Community</span>
 </h2>
-<section class="introduction" id="introduction-6"><div class="para" id="p-295">The mission of Runestone Academy is simple: We want to <em class="emphasis">democratize textbooks for the 21st century.</em> There is a lot of meaning packed into that short sentence that I would be happy to unpack for you. Thank-you for your interest in Runestone and PreTeXt, and welcome! This appendix is meant to answer some questions you may have about how these open-source projects are organized, how you can get help, and how you can contribute back.</div> <div class="para" id="p-296">The first thing you should understand is that Runestone and PreTeXt started out as separate projects, but have been working together since late 2019. We realized that we can do more by combining forces than we could if we stayed independent. If you have a related project of your own, we hope you will have a similar sentiment.</div> <div class="para" id="p-297">Most instructors start out using Runestone Academy and one of the books we provide pretty much as is. As you get used to using Runestone and get comfortable with its ways and quirks you may find yourself wanting to add new questions to your course. After that you may find yourself wondering about how you might customize some of the courses content. Or you may find yourself wanted to add some functionality to the instructors interface. These are all great things and we welcome that evolution of your involvement. You should not feel like you have to be an expert author or coder to contribute. Its actually very enjoyable to see people continue their learning journey by helping develop the platform that helped them start!</div></section><section class="section" id="help-and-support"><h3 class="heading hide-type">
+<section class="introduction" id="introduction-6"><div class="para" id="p-298">The mission of Runestone Academy is simple: We want to <em class="emphasis">democratize textbooks for the 21st century.</em> There is a lot of meaning packed into that short sentence that I would be happy to unpack for you. Thank-you for your interest in Runestone and PreTeXt, and welcome! This appendix is meant to answer some questions you may have about how these open-source projects are organized, how you can get help, and how you can contribute back.</div> <div class="para" id="p-299">The first thing you should understand is that Runestone and PreTeXt started out as separate projects, but have been working together since late 2019. We realized that we can do more by combining forces than we could if we stayed independent. If you have a related project of your own, we hope you will have a similar sentiment.</div> <div class="para" id="p-300">Most instructors start out using Runestone Academy and one of the books we provide pretty much as is. As you get used to using Runestone and get comfortable with its ways and quirks you may find yourself wanting to add new questions to your course. After that you may find yourself wondering about how you might customize some of the courses content. Or you may find yourself wanted to add some functionality to the instructors interface. These are all great things and we welcome that evolution of your involvement. You should not feel like you have to be an expert author or coder to contribute. Its actually very enjoyable to see people continue their learning journey by helping develop the platform that helped them start!</div></section><section class="section" id="help-and-support"><h3 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">A.1</span> <span class="title">Help and Support</span>
 </h3>
-<div class="para" id="p-298">There is a help and documentation area built into the Instructors Page on Runestone Academy. That may be where you found this <span class="booktitle">Instructors Guide</span>. This is a good place to start. If you can’t find the answer to your question here or in one of the videos then that is a bug that needs to be fixed.</div>
-<div class="para" id="p-299">The implementation of Runestone is “opinionated” that is, it is informed by my own expereiences and preferences as a teacher, as well as the experiences and preferences of some core contributors. It is difficult for a system like this to be all things to all people without imploding on itself under the weight of a thousand different configuration options that make many things possible, but almost nothing good, and nobody happy. It may not work the way you think it should but over the years it has proven do be able to do most of what people really want. So maybe give it a chance.</div>
-<div class="para logical" id="p-300">
+<div class="para" id="p-301">There is a help and documentation area built into the Instructors Page on Runestone Academy. That may be where you found this <span class="booktitle">Instructors Guide</span>. This is a good place to start. If you can’t find the answer to your question here or in one of the videos then that is a bug that needs to be fixed.</div>
+<div class="para" id="p-302">The implementation of Runestone is “opinionated” that is, it is informed by my own expereiences and preferences as a teacher, as well as the experiences and preferences of some core contributors. It is difficult for a system like this to be all things to all people without imploding on itself under the weight of a thousand different configuration options that make many things possible, but almost nothing good, and nobody happy. It may not work the way you think it should but over the years it has proven do be able to do most of what people really want. So maybe give it a chance.</div>
+<div class="para logical" id="p-303">
 <div class="para">There are a few ways to get help besides this guide.</div>
 <ol class="decimal">
-<li id="li-135"><div class="para logical" id="p-301">
+<li id="li-135"><div class="para logical" id="p-304">
 <div class="para">There are various Google Groups with more or less activity for many of the books. Asking in one of those groups is great. Searching the group to see if someone has already asked the question is also good.</div>
 <ul class="disc">
-<li id="li-136"><div class="para" id="p-302"><a class="external" href="https://groups.google.com/forum/#!forum/runestone-fopp" target="_blank"><code class="code-inline tex2jax_ignore">Foundations of Python Programming</code></a></div></li>
-<li id="li-137"><div class="para" id="p-303"><a class="external" href="https://groups.google.com/forum/#!forum/runestone-thinkcspy" target="_blank"><code class="code-inline tex2jax_ignore">How to Think Like a Computer Scientist</code></a></div></li>
-<li id="li-138"><div class="para" id="p-304"><a class="external" href="https://groups.google.com/forum/#!forum/runestone-httlads" target="_blank"><code class="code-inline tex2jax_ignore">How to Think Like a Data Scientist</code></a></div></li>
-<li id="li-139"><div class="para" id="p-305"><a class="external" href="https://groups.google.com/forum/#!forum/teaching-csawesome" target="_blank"><code class="code-inline tex2jax_ignore">CSAwesome</code></a></div></li>
-<li id="li-140"><div class="para" id="p-306"><a class="external" href="https://groups.google.com/g/teaching-mobile-csp/" target="_blank"><code class="code-inline tex2jax_ignore">Mobile CSP</code></a></div></li>
-<li id="li-141"><div class="para" id="p-307">This <a class="external" href="https://groups.google.com/forum/#!forum/runestone_instructors" target="_blank"><code class="code-inline tex2jax_ignore">Runestone Instructors</code></a> is very low volume – legacy group.</div></li>
+<li id="li-136"><div class="para" id="p-305"><a class="external" href="https://groups.google.com/forum/#!forum/runestone-fopp" target="_blank"><code class="code-inline tex2jax_ignore">Foundations of Python Programming</code></a></div></li>
+<li id="li-137"><div class="para" id="p-306"><a class="external" href="https://groups.google.com/forum/#!forum/runestone-thinkcspy" target="_blank"><code class="code-inline tex2jax_ignore">How to Think Like a Computer Scientist</code></a></div></li>
+<li id="li-138"><div class="para" id="p-307"><a class="external" href="https://groups.google.com/forum/#!forum/runestone-httlads" target="_blank"><code class="code-inline tex2jax_ignore">How to Think Like a Data Scientist</code></a></div></li>
+<li id="li-139"><div class="para" id="p-308"><a class="external" href="https://groups.google.com/forum/#!forum/teaching-csawesome" target="_blank"><code class="code-inline tex2jax_ignore">CSAwesome</code></a></div></li>
+<li id="li-140"><div class="para" id="p-309"><a class="external" href="https://groups.google.com/g/teaching-mobile-csp/" target="_blank"><code class="code-inline tex2jax_ignore">Mobile CSP</code></a></div></li>
+<li id="li-141"><div class="para" id="p-310">This <a class="external" href="https://groups.google.com/forum/#!forum/runestone_instructors" target="_blank"><code class="code-inline tex2jax_ignore">Runestone Instructors</code></a> is very low volume – legacy group.</div></li>
 </ul>
 </div></li>
 <li id="li-142"><div class="para" id="p-derived-li-142">Join our <a class="external" href="https://join.slack.com/t/runestoneteam/shared_invite/enQtODUwNDIwMzg5NDQxLTZlMjAzOTNlNzNlYTVjZDEyODI4ZTY1YjFjNTg3YTBiOWY2ODNlZTA4NWFiMjAxNzlkZGE1MmY0ZTQyY2E5Y2Q" target="_blank"><code class="code-inline tex2jax_ignore">slack channel</code></a>. There is almost always someone live and available on the slack. So if you have something truly urgent that might be a good option.</div></li>
@@ -445,14 +477,14 @@ eBookConfig.enable_chatcodes =  false;
 </div></section><section class="section" id="drop-in"><h3 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">A.2</span> <span class="title">Weekly Drop-Ins</span>
 </h3>
-<div class="para" id="p-308">There are two opportunities each week to ask questions of the development team. Tuesday afternoons from 1PM Central to 3PM Central on Zoom. The link is always the same and is always provided as a reminder in the slack channel.  The Zoom meeting number is RUNESTONE1 on your telephone keypad.  The link is:  <a class="external" href="https://us02web.zoom.us/j/7863786631?pwd=b2g4bk5RSURDWjVyVUZ3YWxoSUwxUT09" target="_blank"><code class="code-inline tex2jax_ignore">RUNESTONE1</code></a>
+<div class="para" id="p-311">There are two opportunities each week to ask questions of the development team. Tuesday afternoons from 1PM Central to 3PM Central on Zoom. The link is always the same and is always provided as a reminder in the slack channel.  The Zoom meeting number is RUNESTONE1 on your telephone keypad.  The link is:  <a class="external" href="https://us02web.zoom.us/j/7863786631?pwd=b2g4bk5RSURDWjVyVUZ3YWxoSUwxUT09" target="_blank"><code class="code-inline tex2jax_ignore">RUNESTONE1</code></a>
 </div>
-<div class="para" id="p-309">Since May  2020 there has been a standing weekly online gathering of PreTeXt and Runestone authors and developers. It runs on Friday afternoons for three hours and is announced Friday mornings on the <code class="code-inline tex2jax_ignore">pretext-announce</code> Google Group. Sometimes there are scheduled discussions on development topics or seminars on topics of interest to authors and developers; but mostly there is no agenda and no schedule. Come late, leave early, drop-in, drop-out. If you are present, then you are implicitly available to help someone with questions, even if you are working on something yourself. The rest of us may lurk and/or join in. We can use break-out rooms if a subgroup wants to run a discussion, work on a targeted project, or help somebody get started one-on-one. The model is the hotel lobby after dinner at a workshop, but you provide your own contraband.</div>
-<div class="para" id="p-310">So this is a great place to discuss a support question (likely with the person who wrote the code!) or a place to get involved with development.</div></section><section class="section" id="github-issues"><h3 class="heading hide-type">
+<div class="para" id="p-312">Since May  2020 there has been a standing weekly online gathering of PreTeXt and Runestone authors and developers. It runs on Friday afternoons for three hours and is announced Friday mornings on the <code class="code-inline tex2jax_ignore">pretext-announce</code> Google Group. Sometimes there are scheduled discussions on development topics or seminars on topics of interest to authors and developers; but mostly there is no agenda and no schedule. Come late, leave early, drop-in, drop-out. If you are present, then you are implicitly available to help someone with questions, even if you are working on something yourself. The rest of us may lurk and/or join in. We can use break-out rooms if a subgroup wants to run a discussion, work on a targeted project, or help somebody get started one-on-one. The model is the hotel lobby after dinner at a workshop, but you provide your own contraband.</div>
+<div class="para" id="p-313">So this is a great place to discuss a support question (likely with the person who wrote the code!) or a place to get involved with development.</div></section><section class="section" id="github-issues"><h3 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">A.3</span> <span class="title">Feature Requests and Reporting Problems</span>
 </h3>
-<div class="para" id="p-311">We welcome feature requests and of course problem reports. The best way to make Runestone Academy better is to listen to the people who are using it every day.</div>
-<div class="para logical" id="p-312">
+<div class="para" id="p-314">We welcome feature requests and of course problem reports. The best way to make Runestone Academy better is to listen to the people who are using it every day.</div>
+<div class="para logical" id="p-315">
 <div class="para">We use the Github issue tracker extensively for proposing and discussing new features as well as for reporting and investigating bugs. This is the place to report problems. Github is well known and trusted and it is free to sign up. <em class="emphasis">Please do not use personal email to report problems</em>.</div>
 <ul class="disc">
 <li id="li-143"><div class="para" id="p-derived-li-143">It is not that we do not like to engage with people one-on-one it is simply a matter of trying to optimize our time. Many many bug reports are duplicates, for which there are already documented workarounds on Github if you just take the time to search.</div></li>
@@ -460,14 +492,14 @@ eBookConfig.enable_chatcodes =  false;
 <li id="li-145"><div class="para" id="p-derived-li-145">For every problem that can be fixed by someone else that leaves me more time to work on the really hard problems that other people cannot.</div></li>
 </ul>
 </div>
-<div class="para logical" id="p-313">
+<div class="para logical" id="p-316">
 <div class="para">When reporting a problem please please take the time to give us some context and some details. Telling me that X does not work doesn’t really help. The truth is runestone.academy gets over 500,000 page views a day from people around the world. So most of the time when someone says “X does not work” it does in fact work fine for most people. This does not make it your fault, it just means I need more information to try to make sense of what is going on. Here are a few tips.</div>
 <ul class="disc">
 <li id="li-146"><div class="para" id="p-derived-li-146">What Task are you trying to accomplish? Understanding your goals is really important as sometimes its not obvious how to do something on Runestone</div></li>
 <li id="li-147"><div class="para" id="p-derived-li-147">What steps did you take to try to accomplish that task? Walking me through the steps gives me valuable context and saves me TONS of time in trying to recreate what went wrong.</div></li>
 <li id="li-148"><div class="para" id="p-derived-li-148">Specifically what went wrong? What error message did you see? What exactly did happen that you think should not have happened. You can speculate about what you think is broken, but often you will be wrong and misleading. Just the facts is a great policy.</div></li>
 <li id="li-149"><div class="para" id="p-derived-li-149">Give some context about your environment. What course are you in? What is your username? What page of the course? Specifically what exercise does not work? Each activity has a unique identifier. please include that. What browser are you using? What version of the browser. (Runestone relies on many modern features of Javascript that are only present in new-ish browsers) We can not test every browser so if you are using something outside of Chrome, Firefox, Safari, or maybe Edge it is likely that I have not tested it there.</div></li>
-<li id="li-150"><div class="para logical" id="p-314">
+<li id="li-150"><div class="para logical" id="p-317">
 <div class="para">If there is a traceback on the page, please copy it and include it in your Github Issue. Many many errors can be quickly diagnosed from the Javascript Console error log.</div>
 <ul class="circle">
 <li id="li-151"><div class="para" id="p-derived-li-151">Chrome: View --&gt; Developer --&gt; Javascript Console</div></li>
@@ -477,7 +509,7 @@ eBookConfig.enable_chatcodes =  false;
 </div></li>
 </ul>
 </div>
-<div class="para" id="p-315">Please note, I’m not trying to be rude, but years of observation have taught me that CS teachers are pretty bad bug reporters! Imagine if a student sent you the following email:</div>
+<div class="para" id="p-318">Please note, I’m not trying to be rude, but years of observation have taught me that CS teachers are pretty bad bug reporters! Imagine if a student sent you the following email:</div>
 <pre class="code-block tex2jax_ignore">Hey,
 
 You know problem 2 for the homework next week.  
@@ -489,10 +521,10 @@ Thanks,
 
 Student
 </pre>
-<div class="para" id="p-316">You wouldn’t be able to help this student very much, in fact you probably wouldn’t have any idea what program that student was even asking about without spending your own valuable time figuring it out. Sadly, It is a pretty good representation of thousands of bug reports I’ve received. So please, take a few seconds and read or re-read Filing an effective bug report. Thanks.</div></section><section class="section" id="contributing"><h3 class="heading hide-type">
+<div class="para" id="p-319">You wouldn’t be able to help this student very much, in fact you probably wouldn’t have any idea what program that student was even asking about without spending your own valuable time figuring it out. Sadly, It is a pretty good representation of thousands of bug reports I’ve received. So please, take a few seconds and read or re-read Filing an effective bug report. Thanks.</div></section><section class="section" id="contributing"><h3 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">A.4</span> <span class="title">Contributing</span>
 </h3>
-<div class="para" id="p-317">As a project that is licensed openly, we welcome contributions. And this does not necessarily mean you need to learn Javascript or Python or XSL. For ideas, find the issues on GitHub that have the label <code class="code-inline tex2jax_ignore">good first issue</code> and/or <code class="code-inline tex2jax_ignore">help wanted</code>. Upating this guide, recording screen casts to replace the 11 year old screen casts in some of our books are examples of non-coding tasks that would be amazing.</div></section></section></div>
+<div class="para" id="p-320">As a project that is licensed openly, we welcome contributions. And this does not necessarily mean you need to learn Javascript or Python or XSL. For ideas, find the issues on GitHub that have the label <code class="code-inline tex2jax_ignore">good first issue</code> and/or <code class="code-inline tex2jax_ignore">help wanted</code>. Upating this guide, recording screen casts to replace the 11 year old screen casts in some of our books are examples of non-coding tasks that would be amazing.</div></section></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="index-1.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><a class="next-button button" href="faq_appendix.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a>
 </div></main>
