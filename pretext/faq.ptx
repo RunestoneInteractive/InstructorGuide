@@ -172,7 +172,7 @@
     </subsection>
     <subsection xml:id="_what-if-i-want-to-add-a-new-section-or-chapter">
         <title>What if I want to add a new section or chapter?</title>
-        <p>That would be awesome. This whole book is open source. You can grab a copy of the source on <url href="https://github.com/RunestoneInteractive" visual="https://github.com/RunestoneInteractive">github</url>. The source for thinkcspy and pythonds is in the source folder and there is a subfolder for each chapter. If you want to make a whole new chapter then create a folder and follow the conventions of one of the other chapters. There is full documentation for the markup language at <url href="http://docs.runestoneinteractive.org" visual="http://docs.runestoneinteractive.org">docs.runestoneinteractive.org</url>. When you are finished make a pull request and we’ll review your material and incorporate them into the book.</p>
+        <p>That would be awesome. This whole book is open source. You can grab a copy of the source on <url href="https://github.com/RunestoneInteractive" visual="https://github.com/RunestoneInteractive">github</url>. The source for thinkcspy and pythonds is in the source folder and there is a subfolder for each chapter. If you want to make a whole new chapter then create a folder and follow the conventions of one of the other chapters. There is full documentation for the markup language at <url href="https://pretextbook.org/doc/guide/html/guide-toc.html" visual="PreTeXt Guide">PreTeXt Guide</url>. When you are finished make a pull request and we’ll review your material and incorporate them into the book.</p>
     </subsection>
     <subsection xml:id="_what-if-i-want-to-add-my-own-exercises">
         <title>What if I want to add my own exercises?</title>
