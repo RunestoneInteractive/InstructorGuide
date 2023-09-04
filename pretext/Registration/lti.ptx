@@ -11,16 +11,19 @@
         <p>
             Generate a shared/secret key pair for use with Canvas:
 
-        <ol>
-            <li> Browse to the
-                <url href="https://runestone.academy" visual="Runestone Academy" /> and log in, then select your course (you must be the Instructor).
-            </li>
-            <li> <p>Browse to the
-                <url href="https://runestone.academy/runestone/admin/admin" visual="Instructor's Page" />, then click on “LTI Integration” in the Admin tab.</p>
-                <image source="Figures/lti_config.png" description="LTI configuration panel" />
-            </li>
-            <li> Click on the “Create LTI Key and Secret” button. Click the “Show Secret” button. You will use these in the next phase.</li>
-        </ol>
+            <ol>
+                <li> Browse to the
+                    <url href="https://runestone.academy" visual="Runestone Academy" />
+ and log in, then select your course (you must be the Instructor).
+                </li>
+                <li>
+                    <p>Browse to the
+                        <url href="https://runestone.academy/runestone/admin/admin" visual="Instructor's Page" />
+, then click on “LTI Integration” in the Admin tab.</p>
+                    <image source="Figures/lti_config.png" description="LTI configuration panel" />
+                </li>
+                <li> Click on the “Create LTI Key and Secret” button. Click the “Show Secret” button. You will use these in the next phase.</li>
+            </ol>
         </p>
     </subsection>
 
@@ -36,7 +39,8 @@
             <title>Canvas</title>
             <ol>
                 <li> Follow the
-                    <url href="https://community.canvaslms.com/t5/Instructor-Guide/How-do-I-configure-a-manual-entry-external-app-for-a-course/ta-p/1137" visual="Canvas instructions" /> to add an external app:
+                    <url href="https://community.canvaslms.com/t5/Instructor-Guide/How-do-I-configure-a-manual-entry-external-app-for-a-course/ta-p/1137" visual="Canvas instructions" />
+ to add an external app:
 
                     <pre>
     :Name: Runestone
@@ -50,17 +54,19 @@
         -   For a site-wide installation, or for installing the Runestone external app for use across multiple courses, leave this blank.
         -   If installing for a single course, add ``custom_course_id=xxx``, where ``xxx`` is the Runestone ID of the course (visible in the upper lefthand corner of each page in your Runestone course).
     :Description: Interactive textbooks from Runestone Academy
-</pre>
+                    </pre>
                 </li>
-                <li> <p>Add an assignment in Canvas that uses the Runestone external tool:
-                    <ol>
-                        <li> At `Runestone Academy`_, create an assignment; be sure you’ve checked the “Visible to Students” box and saved that change.</li>
-                        <li> Still on the assignments page, copy the LTI link.</li>
-                        <li> In Canvas, add an assignment. For the submission type, select “External Tool.” For the External Tool URL, use the LTI link you just copied. You’ll have to manually enter the same due date/time and a similar assignment name; these aren’t copied automatically. You must be sure the Load This Tool In A New Tab checkbox is checked.</li>
-                    </ol></p>
-                <li> Students can now click on this assignment and work it. **If they don’t click on the assignment, they won’t receive a grade.**</li>
-                <li> When the assignment is due, go to Runestone directly from your Canvas course by using an assignment link. Otherwise, grade reporting won’t work.</li>
-                <li> In the grading tab of the instructor interface, grade the assignment, then click the “Release Grades” button. Doing this will push all grades to Canvas.</li>
+                <li>
+                    <p>Add an assignment in Canvas that uses the Runestone external tool:
+                        <ol>
+                            <li> At `Runestone Academy`_, create an assignment; be sure you’ve checked the “Visible to Students” box and saved that change.</li>
+                            <li> Still on the assignments page, copy the LTI link.</li>
+                            <li> In Canvas, add an assignment. For the submission type, select “External Tool.” For the External Tool URL, use the LTI link you just copied. You’ll have to manually enter the same due date/time and a similar assignment name; these aren’t copied automatically. You must be sure the Load This Tool In A New Tab checkbox is checked.</li>
+                        </ol>
+                    </p>
+                    <li> Students can now click on this assignment and work it. **If they don’t click on the assignment, they won’t receive a grade.**</li>
+                    <li> When the assignment is due, go to Runestone directly from your Canvas course by using an assignment link. Otherwise, grade reporting won’t work.</li>
+                    <li> In the grading tab of the instructor interface, grade the assignment, then click the “Release Grades” button. Doing this will push all grades to Canvas.</li>
                 </li>
             </ol>
         </subsubsection>
@@ -68,12 +74,12 @@
         <subsubsection>
             <title>Moodle</title>
             <p>
-            <ol>
-                <li> The following instructions are for Moodle, but should work for any LMS with LTI Support. Please note that certain items may have naming variations (ie. Moodle External Tool / Canvas External App).</li>
+                <ol>
+                    <li> The following instructions are for Moodle, but should work for any LMS with LTI Support. Please note that certain items may have naming variations (ie. Moodle External Tool / Canvas External App).</li>
 
-                <li>
-                    <p>In Moodle, create a new external tool called "LTI Login Link".</p>
-                    <pre>
+                    <li>
+                        <p>In Moodle, create a new external tool called "LTI Login Link".</p>
+                        <pre>
         :Name: Login to Runestone
         :Tool URL: https://yourHost.blahblah.edu/runestone/lti
         :Consumer key: Enter the key you copied for `consumer` from Phase 1
@@ -81,14 +87,14 @@
         :Icon URL: https://yourHost.blahblah.edu/runestone/static/images/logo_small.png
         :Share Email: True
         :Share Name: True
-        :Custom params:
-    </pre>
-                </li>
-                <li> Login to your Runestone instance with the tool just created, and create your class as well as your assignments.</li>
+        :Custom params: custom_course_id=xxx, where xxx is the Runestone ID of the course (visible in the upper lefthand corner of each page in your Runestone course).
+                        </pre>
+                    </li>
+                    <li> Login to your Runestone instance with the tool just created, and create your class as well as your assignments.</li>
 
-                <li>
-                    <p> In Moodle, create a new enrollment external app directly to your course and assignment. You will need to repeat this for each assignment. You will also need the database values for your course ID, and assignment ID. Get these from step 2.2. Please note that in order to receive roles and grades, "Accept Grades" must be checked in Moodle. In other LMS's this may be referenced by a "Share IMS Names and Roles" or similar.</p>
-                    <pre>
+                    <li>
+                        <p> In Moodle, create a new enrollment external app directly to your course and assignment. You will need to repeat this for each assignment. You will also need the database values for your course ID, and assignment ID. Get these from step 2.2. Please note that in order to receive roles and grades, "Accept Grades" must be checked in Moodle. In other LMS's this may be referenced by a "Share IMS Names and Roles" or similar.</p>
+                        <pre>
         :Name: Assignment 1
         :Tool URL: https://runestone.colorado.edu/runestone/lti?assignment_id=&amp;custom_course_id
         :Consumer key: Enter the key you copied for `consumer` from Phase 1
@@ -98,14 +104,14 @@
         :Share Name: True
         :Custom params:
         :Accept Grades: True
-    </pre>
-                </li>
-                <li> Copy the tool as many times as you need within your Moodle Course, updating the Name and Tool URL each time.</li>
+                        </pre>
+                    </li>
+                    <li> Copy the tool as many times as you need within your Moodle Course, updating the Name and Tool URL each time.</li>
 
-                <li> Students can now click on these external tool assignments to be enrolled/logged directly into your Runestone course and assignment. The grades should appear in Moodle once they are released in Runestone through the Instructor interface.</li>
+                    <li> Students can now click on these external tool assignments to be enrolled/logged directly into your Runestone course and assignment. The grades should appear in Moodle once they are released in Runestone through the Instructor interface.</li>
 
-                <li> The course instructor must also be an LTI sourced user, so use the "LTI Login Link" URL. This can be hidden for users.</li>
-            </ol>
+                    <li> The course instructor must also be an LTI sourced user, so use the "LTI Login Link" URL. This can be hidden for users.</li>
+                </ol>
             </p>
         </subsubsection>
     </subsection>
