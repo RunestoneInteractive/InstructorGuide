@@ -302,6 +302,7 @@ eBookConfig.enable_chatcodes =  false;
 <li><div class="toc-item"><a href="chapter-4.html#subsubsection-2" class="internal"><span class="title">Moodle</span></a></div></li>
 </ul>
 </li>
+<li><div class="toc-item"><a href="chapter-4.html#subsubsection-3" class="internal"><span class="codenumber">4.3.1</span> <span class="title">Brightspace D2L</span></a></div></li>
 </ul>
 </li>
 <li><div class="toc-item"><a href="chapter-4.html#add_instructor" class="internal"><span class="codenumber">4.4</span> <span class="title">Add and Instructor or TA</span></a></div></li>
@@ -531,8 +532,8 @@ hogwarts-3,dumbledore+hogwarts1@gmail.com,F2,L2,owls4all,potions_fall19
 <section class="subsection" id="subsection-7"><h4 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">4.3.1</span> <span class="title">Introduction</span>
 </h4>
-<div class="para" id="p-98">Runestone provides a rudimentary LTI integration using LTI 1.1. So far we have made this work very successfully with Canvas and Moodle. Others may or may not work. I call this a community supported feature of Runestone because LTI is a huge pain to work with, and it is very difficult to get access to and test against whatever LMS your school has chosen.</div>
-<div class="para" id="p-99">When you use LTI your students do NOT and should not register on Runestone Academy, the LTI interface registers your student with Runestone the first time they access it from your LMS</div></section><section class="subsection" id="subsection-8"><h4 class="heading hide-type">
+<div class="para" id="p-98">Runestone provides a rudimentary LTI integration using LTI 1.1. So far we have made this work very successfully with Canvas, Moodle, and Brightspace D2L. Others may or may not work. I call this a community supported feature of Runestone because LTI is a huge pain to work with, and it is very difficult to get access to and test against whatever LMS your school has chosen.</div>
+<div class="para" id="p-99">When you use LTI your students do NOT and should not register on Runestone Academy, the LTI interface registers your student with Runestone the first time they access it from your LMS. In addition, Instructors need to use one of the LTI links to your book in order for grades to transfer.</div></section><section class="subsection" id="subsection-8"><h4 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">4.3.2</span> <span class="title">Phase 1 (All LMS platforms)</span>
 </h4>
 <div class="para logical" id="p-100">
@@ -608,34 +609,74 @@ hogwarts-3,dumbledore+hogwarts1@gmail.com,F2,L2,owls4all,potions_fall19
 <li id="li-49"><div class="para" id="p-derived-li-49">Copy the tool as many times as you need within your Moodle Course, updating the Name and Tool URL each time.</div></li>
 <li id="li-50"><div class="para" id="p-derived-li-50">Students can now click on these external tool assignments to be enrolled/logged directly into your Runestone course and assignment. The grades should appear in Moodle once they are released in Runestone through the Instructor interface.</div></li>
 <li id="li-51"><div class="para" id="p-derived-li-51">The course instructor must also be an LTI sourced user, so use the "LTI Login Link" URL. This can be hidden for users.</div></li>
-</ol></div></section></section></section><section class="section" id="add_instructor"><h3 class="heading hide-type">
+</ol></div></section></section><section class="subsubsection" id="subsubsection-3"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span> <span class="codenumber">4.3.1</span> <span class="title">Brightspace D2L</span>
+</h4>
+<ol class="decimal">
+<li id="li-52"><div class="para" id="p-derived-li-52">Depending on how D2L is set up, you may need to be an administrator in order to set up your links for class. However, in some setups, instructors have permission to make their own LTI links.</div></li>
+<li id="li-53"><div class="para" id="p-107">To check, while in your class on D2L, you can go to Course Admin - External Learning Tools, then click the "Manage Tool Links (Legacy)". From their click the "New Link" button.</div></li>
+<li id="li-54">If that is successful, then here are the settings.<pre class="code-block tex2jax_ignore">:Title: Enter either the Textbook Name or the assignment name on Runestone
+:URL: copy this from the LTI configuration panel for the textbook login ``https://runestone.academy/runestone/lti`` or from the individual assignment in the Assignments tab of the Instructor's Page.
+:Description: Leave blank or add a description.
+:Visibility: Allow users to view the link should be checked.
+:Key/Secret:
+:Signature: check Sign messages with key/secret with and select Link key/secret then fill in 
+
+:Key: Enter this from Phase 1.
+:Secret: Enter this from Phase 1.
+</pre>Click the Save button before adding custom parameters.<pre class="code-block tex2jax_ignore">:Custom Parameters: 
+
+    -   click the "Add custom parameters" link.
+    -   :Name: ``custom_course_id``
+    -   :Value: the Runestone ID of the course (visible in the upper lefthand corner of each page in your Runestone course).
+
+:Security Settings:
+
+Select "use link security settings"
+make sure at least the following settings are checked:
+ 
+    - Send tool consumer information to tool provider
+    - Send context information to tool provider
+    - Send LTI user ID and LTI role list to tool provider
+    - Send user name to tool provider
+    - Send user email to tool provider
+    - Send link title to tool provider
+    - Send link description to tool provider
+</pre>
+</li>
+<li id="li-55"><div class="para" id="p-derived-li-55">Once everything is selected, click "Save and Close"</div></li>
+<li id="li-56"><div class="para" id="p-108">Now, from anywhere in your course, you can select  Existing Activities - External Learning Tools and then the link you created. After adding this link, make sure that you make sure the link is configured to "Open as External Resource". That way the right information will be passed to the textbook.</div></li>
+<li id="li-57"><div class="para" id="p-derived-li-57">Students will be able to click on this link when you make it available to them. **If they don’t click on the assignment, they won’t receive a grade, so when you make the assignment on runestone, you probably want the "Visible to Students" checkbox to remain unchecked. This way it will only be available from the D2L link. **</div></li>
+<li id="li-58"><div class="para" id="p-derived-li-58">When the assignment is due, go to Runestone directly from your D2L course by using an assignment link. Otherwise, grade reporting won’t work.</div></li>
+<li id="li-59"><div class="para" id="p-derived-li-59">In the grading tab of the instructor interface, grade the assignment, then click the "Release Grades" button. Doing this will push all grades to D2L.</div></li>
+</ol></section></section><section class="section" id="add_instructor"><h3 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">4.4</span> <span class="title">Add and Instructor or TA</span>
 </h3>
-<div class="para logical" id="p-107">
+<div class="para logical" id="p-109">
 <div class="para">Runestone supports multiple instructors or TAs for a course.  We do not make any real distinction between a TA and an instructor so keep in mind they they both have all of the same privileges that you do.  Adding a another instructor is quite easy.  The process is as follows.</div>
 <ol class="decimal">
-<li id="li-52"><div class="para" id="p-derived-li-52">Make sure that your co-instructor has registered for your course as a student.</div></li>
-<li id="li-53">
-<div class="para" id="p-108">Go to the instructor page and select the Add TA tab as shown below</div>
+<li id="li-60"><div class="para" id="p-derived-li-60">Make sure that your co-instructor has registered for your course as a student.</div></li>
+<li id="li-61">
+<div class="para" id="p-110">Go to the instructor page and select the Add TA tab as shown below</div>
 <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/Figures/add_instructor.png" class="contained"></div>
 </li>
-<li id="li-54"><div class="para" id="p-derived-li-54">Select the co-instructor or TA from the list of students on the right then click the + button below the list.  You should see the name appear in the list of instructors on the left.</div></li>
+<li id="li-62"><div class="para" id="p-derived-li-62">Select the co-instructor or TA from the list of students on the right then click the + button below the list.  You should see the name appear in the list of instructors on the left.</div></li>
 </ol>
-<div class="para"><div class="para" id="p-109">To "demote" a co-instructor or TA back to a student just select them in the list of instructors on the left and click the - button below the box.</div></div>
+<div class="para"><div class="para" id="p-111">To "demote" a co-instructor or TA back to a student just select them in the list of instructors on the left and click the - button below the box.</div></div>
 </div></section><section class="section" id="course_settings"><h3 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">4.5</span> <span class="title">Course Settings</span>
 </h3>
-<div class="para" id="p-110">There are some settings that you can control for your course that effect how the interactive components work. You can modify these on the course settings tab of the instructor interface.</div>
+<div class="para" id="p-112">There are some settings that you can control for your course that effect how the interactive components work. You can modify these on the course settings tab of the instructor interface.</div>
 <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/Figures/course_settings.png" class="contained"></div>
-<div class="para logical" id="p-111"><dl class="description-list">
-<dt id="li-55">Term Start Date</dt>
-<dd><div class="para" id="p-112">You can change your course start date.  This is important if you copy assignments from a past term. Runestone will try to make the assignment due the same number of days from the start of the term.  We also do analysis of student performance based on the week of the course, so it helps our analysis if this date is accurate.</div></dd>
-<dt id="li-56">Enable ActiveCode Downloads</dt>
-<dd><div class="para" id="p-113">If this box is checked then each activecode will have a download button that will allow your students to download a text file with the appropriate extension containing the code in the editor.</div></dd>
-<dt id="li-57">Allow Pairs</dt>
-<dd><div class="para" id="p-114">This enables a simple pair programming feature that allows a student to type in the username of a partner.  When the student clicks the Save and Run button the code will be saved for both students with a comment added that indicates they were working with a partner and who that partner was.</div></dd>
-<dt id="li-58">Enable Compare Me Button</dt>
-<dd><div class="para" id="p-115">Questions such as multiple choice may let students see how they did compared to other students in the class.  This button pops up a dialog that shows the percent of students that answered a question for each option. For a fill in the blank question it shows the top 10 answers.</div></dd>
+<div class="para logical" id="p-113"><dl class="description-list">
+<dt id="li-63">Term Start Date</dt>
+<dd><div class="para" id="p-114">You can change your course start date.  This is important if you copy assignments from a past term. Runestone will try to make the assignment due the same number of days from the start of the term.  We also do analysis of student performance based on the week of the course, so it helps our analysis if this date is accurate.</div></dd>
+<dt id="li-64">Enable ActiveCode Downloads</dt>
+<dd><div class="para" id="p-115">If this box is checked then each activecode will have a download button that will allow your students to download a text file with the appropriate extension containing the code in the editor.</div></dd>
+<dt id="li-65">Allow Pairs</dt>
+<dd><div class="para" id="p-116">This enables a simple pair programming feature that allows a student to type in the username of a partner.  When the student clicks the Save and Run button the code will be saved for both students with a comment added that indicates they were working with a partner and who that partner was.</div></dd>
+<dt id="li-66">Enable Compare Me Button</dt>
+<dd><div class="para" id="p-117">Questions such as multiple choice may let students see how they did compared to other students in the class.  This button pops up a dialog that shows the percent of students that answered a question for each option. For a fill in the blank question it shows the top 10 answers.</div></dd>
 </dl></div></section></section><div class="hidden-content tex2jax_ignore" id="hk-fn-8"><div class="fn"><code class="code-inline tex2jax_ignore">https://runestone.academy/runestone/default/courses</code></div></div>
 </div>
 <div class="ptx-content-footer">
