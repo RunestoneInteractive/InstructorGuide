@@ -139,10 +139,10 @@
 
 :Key: Enter this from Phase 1.
 :Secret: Enter this from Phase 1.
-</pre>
+                </pre>
 Click the Save button before adding custom parameters.
 
-<pre>
+                <pre>
 :Custom Parameters: 
 
     -   click the "Add custom parameters" link.
@@ -162,7 +162,7 @@ make sure at least the following settings are checked:
     - Send link title to tool provider
     - Send link description to tool provider
 
-  </pre>
+                </pre>
             </li>
             <li> Once everything is selected, click "Save and Close" </li>
             <li>
@@ -173,7 +173,6 @@ make sure at least the following settings are checked:
             <li> Students will be able to click on this link when you make it available to them. **If they don't click on the assignment, they won't receive a grade, so when you make the assignment on runestone, you probably want the "Visible to Students" checkbox to remain unchecked. This way it will only be available from the D2L link. **</li>
             <li> When the assignment is due, go to Runestone directly from your D2L course by using an assignment link. Otherwise, grade reporting won't work.</li>
             <li> In the grading tab of the instructor interface, grade the assignment, then click the "Release Grades" button. Doing this will push all grades to D2L.</li>
-            </li>
         </ol>
     </subsubsection>
 </section>
