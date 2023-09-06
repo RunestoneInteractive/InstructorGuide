@@ -3,8 +3,8 @@
     <subsection>
         <title>Introduction</title>
         <p>
-            Runestone provides a rudimentary LTI integration using LTI 1.1. So far we have made this work very successfully with Canvas and Moodle. Others may or may not work. I call this a community supported feature of Runestone because LTI is a huge pain to work with, and it is very difficult to get access to and test against whatever LMS your school has chosen.</p>
-        <p> When you use LTI your students do NOT and should not register on Runestone Academy, the LTI interface registers your student with Runestone the first time they access it from your LMS</p>
+            Runestone provides a rudimentary LTI integration using LTI 1.1. So far we have made this work very successfully with Canvas, Moodle, and Brightspace D2L. Others may or may not work. I call this a community supported feature of Runestone because LTI is a huge pain to work with, and it is very difficult to get access to and test against whatever LMS your school has chosen.</p>
+        <p> When you use LTI your students do NOT and should not register on Runestone Academy, the LTI interface registers your student with Runestone the first time they access it from your LMS. In addition, Instructors need to use one of the LTI links to your book in order for grades to transfer. </p>
     </subsection>
     <subsection>
         <title>Phase 1 (All LMS platforms)</title>
@@ -115,4 +115,65 @@
             </p>
         </subsubsection>
     </subsection>
+
+    <subsubsection>
+        <title>Brightspace D2L</title>
+        <ol>
+            <li> Depending on how D2L is set up, you may need to be an administrator in order to set up your links for class. However, in some setups, instructors have permission to make their own LTI links.
+            </li>
+            <li>
+                <p>
+                    To check, while in your class on D2L, you can go to Course Admin - External Learning Tools, then click the "Manage Tool Links (Legacy)". From their click the "New Link" button.
+                </p>
+            </li>
+            <li> If that is successful, then here are the settings.
+
+
+                <pre>
+:Title: Enter either the Textbook Name or the assignment name on Runestone
+:URL: copy this from the LTI configuration panel for the textbook login ``https://runestone.academy/runestone/lti`` or from the individual assignment in the Assignments tab of the Instructor's Page.
+:Description: Leave blank or add a description.
+:Visibility: Allow users to view the link should be checked.
+:Key/Secret:
+:Signature: check Sign messages with key/secret with and select Link key/secret then fill in 
+
+:Key: Enter this from Phase 1.
+:Secret: Enter this from Phase 1.
+</pre>
+Click the Save button before adding custom parameters.
+
+<pre>
+:Custom Parameters: 
+
+    -   click the "Add custom parameters" link.
+    -   :Name: ``custom_course_id``
+    -   :Value: the Runestone ID of the course (visible in the upper lefthand corner of each page in your Runestone course).
+
+:Security Settings:
+
+Select "use link security settings"
+make sure at least the following settings are checked:
+ 
+    - Send tool consumer information to tool provider
+    - Send context information to tool provider
+    - Send LTI user ID and LTI role list to tool provider
+    - Send user name to tool provider
+    - Send user email to tool provider
+    - Send link title to tool provider
+    - Send link description to tool provider
+
+  </pre>
+            </li>
+            <li> Once everything is selected, click "Save and Close" </li>
+            <li>
+                <p>
+                    Now, from anywhere in your course, you can select  Existing Activities - External Learning Tools and then the link you created. After adding this link, make sure that you make sure the link is configured to "Open as External Resource". That way the right information will be passed to the textbook.
+                </p>
+            </li>
+            <li> Students will be able to click on this link when you make it available to them. **If they don't click on the assignment, they won't receive a grade, so when you make the assignment on runestone, you probably want the "Visible to Students" checkbox to remain unchecked. This way it will only be available from the D2L link. **</li>
+            <li> When the assignment is due, go to Runestone directly from your D2L course by using an assignment link. Otherwise, grade reporting won't work.</li>
+            <li> In the grading tab of the instructor interface, grade the assignment, then click the "Release Grades" button. Doing this will push all grades to D2L.</li>
+            </li>
+        </ol>
+    </subsubsection>
 </section>
