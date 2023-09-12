@@ -463,8 +463,8 @@ eBookConfig.enable_chatcodes =  false;
 <span class="type">Subsection</span> <span class="codenumber">8.1.1</span> <span class="title">Introduction</span>
 </h4>
 <div class="video-box" style="width: 100%;padding-top: 56.25%; margin-left: 0%; margin-right: 0%;"><iframe id="l84cb4wtM8g" class="video" allowfullscreen="" src="https://www.youtube-nocookie.com/embed/l84cb4wtM8g?&amp;modestbranding=1&amp;rel=0"></iframe></div>
-<div class="para" id="p-252">Although all of the Runestone books have a pretty good selection of exercises, you can never have too many exercises. We hope to crowd source an enormous collection of questions and problems in our Exercise database. You can help by adding custom exercises for your own course to the database! Once your exercise is in the database it is available for others to find using the search feature on the create assignment page.</div>
-<div class="para" id="p-253">Since the most common exercises are programming exercises let’s look at the activecode directive in detail. Here is the full directive with every possible option. This is what you would see if you add an activecode exercise from the web interface. Let’s not get bogged down in the details here, let’s look at a much simpler example.</div>
+<div class="para" id="p-254">Although all of the Runestone books have a pretty good selection of exercises, you can never have too many exercises. We hope to crowd source an enormous collection of questions and problems in our Exercise database. You can help by adding custom exercises for your own course to the database! Once your exercise is in the database it is available for others to find using the search feature on the create assignment page.</div>
+<div class="para" id="p-255">Since the most common exercises are programming exercises let’s look at the activecode directive in detail. Here is the full directive with every possible option. This is what you would see if you add an activecode exercise from the web interface. Let’s not get bogged down in the details here, let’s look at a much simpler example.</div>
 <div class="code-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><pre class="program"><code class="language-none">.. activecode:: uniqueid 'nocanvas': directives.flag,
 :nopre: do not create an output component
 :above: put the canvas above the code
@@ -495,16 +495,16 @@ print("hello world")
 ====
 print("Hidden code, such as unit tests come after the four = signs")
 </code></pre></div>
-<div class="para" id="p-254">Let’s make an exercise to have the student compute the sum of the first N numbers.</div>
+<div class="para" id="p-256">Let’s make an exercise to have the student compute the sum of the first N numbers.</div>
 <article class="exercise exercise-like" id="sigcse_ex1"><h5 class="heading">
 <span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">8.1.1</span><span class="period">.</span>
 </h5>
 <div class="ptx-runestone-container"><div class="runestone explainer ac_section "><div data-component="activecode" id="sigcse_ex1">
-<div class="ac_question" id="sigcse_ex1_question"><div class="para" id="p-255">Write a Python function to sum the first N numbers starting with 0. So if N is 4 then your function should add 0 + 1 + 2 + 3</div></div>
+<div class="ac_question" id="sigcse_ex1_question"><div class="para" id="p-257">Write a Python function to sum the first N numbers starting with 0. So if N is 4 then your function should add 0 + 1 + 2 + 3</div></div>
 <textarea data-lang="python" data-timelimit="25000" data-audio="" data-coach="true" style="visibility: hidden;" id="sigcse_ex1_editor" data-question_label="" data-codelens="true">def sum_first_n(N):
 # your code here
 </textarea>
-</div></div></div></article><div class="para" id="p-256">The source code for the above looks like this:</div>
+</div></div></div></article><div class="para" id="p-258">The source code for the above looks like this:</div>
 <div class="code-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><pre class="program"><code class="language-none">.. activecode:: sigcse_ex1
 :language: python
 
@@ -513,25 +513,25 @@ Write a Python function to sum the first N numbers starting with 0. So if N is 4
 def sum_first_n(N):
 # your code here
 </code></pre></div>
-<div class="para" id="p-257">Indentation and whitespace is important. In the previous example, you will see that the optional directive <code class="code-inline tex2jax_ignore">:language:</code> is indented by four spaces. from the previous line. It must be indented at least three spaces to line up with the “a” in activecode, but using 4 keeps it consistent with my own personal python indentation style. Everything else in the body of the directive must also be indented to match the indentation of the optional parameters.</div>
-<div class="para" id="p-258">You can enter this into a textbox by clicking on the “Write” button under the Problems area.</div>
+<div class="para" id="p-259">Indentation and whitespace is important. In the previous example, you will see that the optional directive <code class="code-inline tex2jax_ignore">:language:</code> is indented by four spaces. from the previous line. It must be indented at least three spaces to line up with the “a” in activecode, but using 4 keeps it consistent with my own personal python indentation style. Everything else in the body of the directive must also be indented to match the indentation of the optional parameters.</div>
+<div class="para" id="p-260">You can enter this into a textbox by clicking on the “Write” button under the Problems area.</div>
 <div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/Figures/enter_rst.png" class="contained"></div>
-<div class="para" id="p-259">After you enter the text you need to compile and render the text. You can get a preview of your question on the right of the page.</div>
-<div class="para" id="p-260">The first part of the directive body are the instructions for the student. You can use any valid restructured text (rst) in this part of the directive including embedded images. You separate the instructions from any code you want to give the student with <code class="code-inline tex2jax_ignore">~~~~</code> thats four tildes. The next part of the body is any code you want to provide. Just put in your Python or other language as you would normally write it.</div>
-<div class="para" id="p-261">To keep an exercise page looking a bit neater you can substitute the <code class="code-inline tex2jax_ignore">.. actex::</code> directive for the <code class="code-inline tex2jax_ignore">.. activecode::</code> directive. Making that substitution gives us the following:</div>
+<div class="para" id="p-261">After you enter the text you need to compile and render the text. You can get a preview of your question on the right of the page.</div>
+<div class="para" id="p-262">The first part of the directive body are the instructions for the student. You can use any valid restructured text (rst) in this part of the directive including embedded images. You separate the instructions from any code you want to give the student with <code class="code-inline tex2jax_ignore">~~~~</code> thats four tildes. The next part of the body is any code you want to provide. Just put in your Python or other language as you would normally write it.</div>
+<div class="para" id="p-263">To keep an exercise page looking a bit neater you can substitute the <code class="code-inline tex2jax_ignore">.. actex::</code> directive for the <code class="code-inline tex2jax_ignore">.. activecode::</code> directive. Making that substitution gives us the following:</div>
 <article class="exercise exercise-like" id="sigcse_ex2"><h5 class="heading">
 <span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">8.1.2</span><span class="period">.</span>
 </h5>
 <div class="ptx-runestone-container"><div class="runestone explainer ac_section "><div data-component="activecode" id="sigcse_ex2">
-<div class="ac_question" id="sigcse_ex2_question"><div class="para" id="p-262">Write a Python function to sum the first N numbers starting with 0. So if N is 4 then your function should add 0 + 1 + 2 + 3</div></div>
+<div class="ac_question" id="sigcse_ex2_question"><div class="para" id="p-264">Write a Python function to sum the first N numbers starting with 0. So if N is 4 then your function should add 0 + 1 + 2 + 3</div></div>
 <textarea data-lang="python" data-timelimit="25000" data-audio="" data-coach="true" style="visibility: hidden;" id="sigcse_ex2_editor" data-question_label="" data-codelens="true">def sum_first_n(N):
 # your code here
 </textarea>
 </div></div></div></article></section><section class="subsection" id="writing-exercises_unit-testing-exercises"><h4 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">8.1.2</span> <span class="title">Unit Testing exercises</span>
 </h4>
-<div class="para" id="p-263">Of course, as you have learned in the previous section, the real killer feature of these exercises is to be able to create your own unit tests, and have the grader autograde the assignment.</div>
-<div class="para" id="p-264">Let’s expand our example to include some simple unittests. We can do this by adding a hidden block of code to our previous example that uses the standard Python unittest framework.</div>
+<div class="para" id="p-265">Of course, as you have learned in the previous section, the real killer feature of these exercises is to be able to create your own unit tests, and have the grader autograde the assignment.</div>
+<div class="para" id="p-266">Let’s expand our example to include some simple unittests. We can do this by adding a hidden block of code to our previous example that uses the standard Python unittest framework.</div>
 <div class="code-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><pre class="program"><code class="language-py">from unittest.gui import TestCaseGui
 
 class myTests(TestCaseGui):
@@ -542,14 +542,14 @@ self.assertAlmostEqual(add(2.0,3.0), 5.0, 1, "Try adding your parmeters")
 
 myTests().main()
 </code></pre></div>
-<div class="para" id="p-265">If you are not familiar with Python unittests they are pretty easy to write. You create your own class that is a subclass of TestCase, or in our work TestCaseGui so we get some graphical output. Your tests are all methods of the class and must start with the word “test”. There are a host of assertXXXX functions that you can use. Check out the <a class="external" href="https://docs.python.org/2/library/unittest.html#assert-methods" target="_blank">unittest documentation here</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-9" id="fn-9"><sup> 1 </sup></a>
+<div class="para" id="p-267">If you are not familiar with Python unittests they are pretty easy to write. You create your own class that is a subclass of TestCase, or in our work TestCaseGui so we get some graphical output. Your tests are all methods of the class and must start with the word “test”. There are a host of assertXXXX functions that you can use. Check out the <a class="external" href="https://docs.python.org/2/library/unittest.html#assert-methods" target="_blank">unittest documentation here</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-9" id="fn-9"><sup> 1 </sup></a>
 </div>
-<div class="para" id="p-266">The second important addition in this example is the :autograde: option. This will allow the grade to make use of your unittests and assign a grade automatically for this particular problem.</div>
+<div class="para" id="p-268">The second important addition in this example is the :autograde: option. This will allow the grade to make use of your unittests and assign a grade automatically for this particular problem.</div>
 <article class="exercise exercise-like" id="sigcse_ex3"><h5 class="heading">
 <span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">8.1.3</span><span class="period">.</span>
 </h5>
 <div class="ptx-runestone-container"><div class="runestone explainer ac_section "><div data-component="activecode" id="sigcse_ex3">
-<div class="ac_question" id="sigcse_ex3_question"><div class="para" id="p-267">Write a Python function to sum the first N numbers starting with 0. So if N is 4 then your function should add 0 + 1 + 2 + 3</div></div>
+<div class="ac_question" id="sigcse_ex3_question"><div class="para" id="p-269">Write a Python function to sum the first N numbers starting with 0. So if N is 4 then your function should add 0 + 1 + 2 + 3</div></div>
 <textarea data-lang="python" data-timelimit="25000" data-audio="" data-coach="true" style="visibility: hidden;" id="sigcse_ex3_editor" data-question_label="" data-codelens="true">def sum_first_n(N):
 # your code here
 ====
@@ -563,13 +563,13 @@ self.assertEqual(sum_first_n(0),0,feedback="summing 0 numbers should be 0")
 
 myTests().main()
 </textarea>
-</div></div></div></article><div class="para" id="p-268">Let’s try to add another test to the example above. This time we’ll show the unittests in the active code window to make it easy for us to test. I strongly recommend you do this in a scratch activecode window when you are writing a question. It will save lots of frustrating wait time as you work out the details of your testing.</div>
-<div class="para" id="p-269">Let’s try to add another test to the example above. This time we’ll show the unittests in the active code window to make it easy for us to test. I strongly recommend you do this in a scratch activecode window when you are writing a question. It will save lots of frustrating wait time as you work out the details of your testing.</div>
+</div></div></div></article><div class="para" id="p-270">Let’s try to add another test to the example above. This time we’ll show the unittests in the active code window to make it easy for us to test. I strongly recommend you do this in a scratch activecode window when you are writing a question. It will save lots of frustrating wait time as you work out the details of your testing.</div>
+<div class="para" id="p-271">Let’s try to add another test to the example above. This time we’ll show the unittests in the active code window to make it easy for us to test. I strongly recommend you do this in a scratch activecode window when you are writing a question. It will save lots of frustrating wait time as you work out the details of your testing.</div>
 <article class="exercise exercise-like" id="sigcse_ex4"><h5 class="heading">
 <span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">8.1.4</span><span class="period">.</span>
 </h5>
 <div class="ptx-runestone-container"><div class="runestone explainer ac_section "><div data-component="activecode" id="sigcse_ex4">
-<div class="ac_question" id="sigcse_ex4_question"><div class="para" id="p-270">Write a Python function to sum the first N numbers starting with 0. So if N is 4 then your function should add 0 + 1 + 2 + 3</div></div>
+<div class="ac_question" id="sigcse_ex4_question"><div class="para" id="p-272">Write a Python function to sum the first N numbers starting with 0. So if N is 4 then your function should add 0 + 1 + 2 + 3</div></div>
 <textarea data-lang="python" data-timelimit="25000" data-audio="" data-coach="true" style="visibility: hidden;" id="sigcse_ex4_editor" data-question_label="" data-codelens="true">def sum_first_n(N):
 # your code here
 
@@ -586,30 +586,30 @@ myTests().main()
 </div></div></div></article></section><section class="subsection" id="writing-exercises_advanced-activecode-options"><h4 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">8.1.3</span> <span class="title">Advanced activecode Options</span>
 </h4>
-<div class="para logical" id="p-271"><ul class="disc">
-<li id="li-157"><div class="para" id="p-derived-li-157">include <div class="para" id="p-272">– This option lets you include other activecodes in the current</div>
+<div class="para logical" id="p-273"><ul class="disc">
+<li id="li-157"><div class="para" id="p-derived-li-157">include <div class="para" id="p-274">– This option lets you include other activecodes in the current</div>
 </div></li>
-<li id="li-158"><div class="para" id="p-derived-li-158">timelimit <div class="para" id="p-273">seconds – What to do when students create an infinite loop and lock up their browser? Just wait a bit, every run of Python has a built in time limit of 30 seconds. Some things might take longer than this, so if you know an example or assignment is going to take longer, then you can set a higher time limit with this option.</div>
+<li id="li-158"><div class="para" id="p-derived-li-158">timelimit <div class="para" id="p-275">seconds – What to do when students create an infinite loop and lock up their browser? Just wait a bit, every run of Python has a built in time limit of 30 seconds. Some things might take longer than this, so if you know an example or assignment is going to take longer, then you can set a higher time limit with this option.</div>
 </div></li>
-<li id="li-159"><div class="para" id="p-derived-li-159">nocodelens <div class="para" id="p-274">– codelens is an awesome addition, but it does not work with very many libraries. This is part of the sandboxed security of the codelens server. The most common one to be aware of is the turtle module. If you are doing a turtle example or assigning a turtle problem then you should set this flag so the “Show Codelens” button is hidden.</div>
+<li id="li-159"><div class="para" id="p-derived-li-159">nocodelens <div class="para" id="p-276">– codelens is an awesome addition, but it does not work with very many libraries. This is part of the sandboxed security of the codelens server. The most common one to be aware of is the turtle module. If you are doing a turtle example or assigning a turtle problem then you should set this flag so the “Show Codelens” button is hidden.</div>
 </div></li>
 </ul></div></section><section class="subsection" id="writing-exercises_for-languages-outside-the-browser"><h4 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">8.1.4</span> <span class="title">For languages outside the browser</span>
 </h4>
-<div class="para logical" id="p-275"><ul class="disc"><li id="li-160"><div class="para" id="p-derived-li-160">language <div class="para" id="p-276">– As you saw earlier, Runestone supports Java, python2, and python3 in a sandboxed server environment environment.</div>
+<div class="para logical" id="p-277"><ul class="disc"><li id="li-160"><div class="para" id="p-derived-li-160">language <div class="para" id="p-278">– As you saw earlier, Runestone supports Java, python2, and python3 in a sandboxed server environment environment.</div>
 </div></li></ul></div>
-<div class="para" id="p-277">If you choose any of the above, the code from the window is packaged up and set to a separate server for compilation and execution. There are a few options to activecode that only apply to these languages.</div>
-<div class="para logical" id="p-278"><ul class="disc">
-<li id="li-161"><div class="para" id="p-derived-li-161">datafile <div class="para" id="p-279">You can provide an id to a datafile that will be sent along with your Java code</div>
+<div class="para" id="p-279">If you choose any of the above, the code from the window is packaged up and set to a separate server for compilation and execution. There are a few options to activecode that only apply to these languages.</div>
+<div class="para logical" id="p-280"><ul class="disc">
+<li id="li-161"><div class="para" id="p-derived-li-161">datafile <div class="para" id="p-281">You can provide an id to a datafile that will be sent along with your Java code</div>
 </div></li>
-<li id="li-162"><div class="para" id="p-derived-li-162">sourcefile <div class="para" id="p-280">You can provide additional source files that should be compiled along with the java file you upload.</div>
+<li id="li-162"><div class="para" id="p-derived-li-162">sourcefile <div class="para" id="p-282">You can provide additional source files that should be compiled along with the java file you upload.</div>
 </div></li>
-<li id="li-163"><div class="para" id="p-derived-li-163">available_files <div class="para" id="p-281">You can provide additional binary files to link into the final executable.</div>
+<li id="li-163"><div class="para" id="p-derived-li-163">available_files <div class="para" id="p-283">You can provide additional binary files to link into the final executable.</div>
 </div></li>
 </ul></div></section></section><section class="section" id="writing-exercises_multiple-choice-questions"><h3 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">8.2</span> <span class="title">Multiple Choice Questions</span>
 </h3>
-<div class="para" id="p-282">Another common question type is the multiple choice question.</div>
+<div class="para" id="p-284">Another common question type is the multiple choice question.</div>
 <div class="code-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><pre class="program"><code class="language-none">.. mchoice:: uniqueid
     :multiple_answers: boolean  [optional]
     :random: boolean [optional]
@@ -628,12 +628,12 @@ myTests().main()
 
     Question text   ...
 </code></pre></div>
-<div class="para" id="p-283">Here is an example from a Data Structures class:</div>
+<div class="para" id="p-285">Here is an example from a Data Structures class:</div>
 <article class="exercise exercise-like" id="stack_2"><h4 class="heading">
 <span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">8.2.1</span><span class="period">.</span>
 </h4>
 <div class="ptx-runestone-container"><div class="runestone"><ul data-component="multiplechoice" id="stack_2" data-multipleanswers="false">
-<div class="para" id="p-284">3-1-1: Given the following sequence of stack operations, what is the top item on the stack when the sequence is complete?</div> <div class="code-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><pre class="program"><code class="language-py">m = Stack()
+<div class="para" id="p-286">3-1-1: Given the following sequence of stack operations, what is the top item on the stack when the sequence is complete?</div> <div class="code-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><pre class="program"><code class="language-py">m = Stack()
 m.push('x')
 m.push('y')
 m.push('z')
@@ -641,15 +641,15 @@ while not m.isEmpty():
    m.pop()
    m.pop()
 </code></pre></div>
-<li data-component="answer" id="stack_2_opt_a"><div class="para" id="p-285">’x’</div></li>
-<li data-component="feedback" id="stack_2_opt_a"><div class="para" id="p-286">You may want to check out the docs for isEmpty</div></li>
-<li data-component="answer" id="stack_2_opt_b"><div class="para" id="p-287">the stack is empty</div></li>
-<li data-component="feedback" id="stack_2_opt_b"><div class="para" id="p-288">There is an odd number of things on the stack but each time through the loop 2 things are popped.</div></li>
-<li data-component="answer" id="stack_2_opt_c" data-correct=""><div class="para" id="p-289">an error will occur</div></li>
-<li data-component="feedback" id="stack_2_opt_c"><div class="para" id="p-290">Good Job.</div></li>
-<li data-component="answer" id="stack_2_opt_d"><div class="para" id="p-291">’z’</div></li>
-<li data-component="feedback" id="stack_2_opt_d"><div class="para" id="p-292">You may want to check out the docs for isEmpty</div></li>
-</ul></div></div></article><div class="para" id="p-293">The source code is here:</div>
+<li data-component="answer" id="stack_2_opt_a"><div class="para" id="p-287">’x’</div></li>
+<li data-component="feedback" id="stack_2_opt_a"><div class="para" id="p-288">You may want to check out the docs for isEmpty</div></li>
+<li data-component="answer" id="stack_2_opt_b"><div class="para" id="p-289">the stack is empty</div></li>
+<li data-component="feedback" id="stack_2_opt_b"><div class="para" id="p-290">There is an odd number of things on the stack but each time through the loop 2 things are popped.</div></li>
+<li data-component="answer" id="stack_2_opt_c" data-correct=""><div class="para" id="p-291">an error will occur</div></li>
+<li data-component="feedback" id="stack_2_opt_c"><div class="para" id="p-292">Good Job.</div></li>
+<li data-component="answer" id="stack_2_opt_d"><div class="para" id="p-293">’z’</div></li>
+<li data-component="feedback" id="stack_2_opt_d"><div class="para" id="p-294">You may want to check out the docs for isEmpty</div></li>
+</ul></div></div></article><div class="para" id="p-295">The source code is here:</div>
 <div class="code-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><pre class="program"><code class="language-none">.. mchoice:: stack_2
     :answer_a: 'x'
     :answer_b: the stack is empty
@@ -675,7 +675,7 @@ while not m.isEmpty():
 </code></pre></div></section><section class="section" id="writing-exercises_mixed-up-code-parsons"><h3 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">8.3</span> <span class="title">Mixed-Up Code (Parsons)</span>
 </h3>
-<section class="introduction" id="introduction-5"><div class="para" id="p-294">Mixed-up code or Parsons problems provide the correct code to solve a problem, but the code is broken into blocks and mixed up.</div> <div class="code-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><pre class="program"><code class="language-none">   .. parsonsprob:: unqiue_problem_id_here
+<section class="introduction" id="introduction-5"><div class="para" id="p-296">Mixed-up code or Parsons problems provide the correct code to solve a problem, but the code is broken into blocks and mixed up.</div> <div class="code-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><pre class="program"><code class="language-none">   .. parsonsprob:: unqiue_problem_id_here
       :maxdist:
       :order:
       :language:
@@ -698,10 +698,10 @@ while not m.isEmpty():
       curmax = item
       =====
       return curmax
-</code></pre></div> <div class="para" id="p-295">Create a working program and then paste the code for it into the editor.  Indent the code so that the left edge lines up with the options. Indent each line with 4 spaces beyond the previous line. Separate the blocks with “=====” which must line up under the options. Put the instructions before the code after a blank line and then followed by “----”.</div></section><section class="subsection" id="writing-exercises_parsons-options"><h4 class="heading hide-type">
+</code></pre></div> <div class="para" id="p-297">Create a working program and then paste the code for it into the editor.  Indent the code so that the left edge lines up with the options. Indent each line with 4 spaces beyond the previous line. Separate the blocks with “=====” which must line up under the options. Put the instructions before the code after a blank line and then followed by “----”.</div></section><section class="subsection" id="writing-exercises_parsons-options"><h4 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">8.3.1</span> <span class="title">Parsons Options</span>
 </h4>
-<div class="para" id="p-296">Options are indented under the Parsons directive (under the p).</div>
+<div class="para" id="p-298">Options are indented under the Parsons directive (under the p).</div>
 <figure class="table table-like" id="writing-exercises_id1"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">8.3.1<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
 <tr class="header-horizontal">
 <th scope="col" class="l m b0 r0 l0 t0 lines">Option</th>
@@ -734,15 +734,15 @@ while not m.isEmpty():
 </table></div></figure></section><section class="subsection" id="writing-exercises_parsons-distractor-types"><h4 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">8.3.2</span> <span class="title">Parsons Distractor Types</span>
 </h4>
-<div class="para" id="p-297">You can include distractor blocks in the problem. A distractor is code that isn’t needed in a correct solution, such as code with a syntax error. Add a distractor block after the correct code block. Distractors can either be paired or unpaired. For paired distractors use #paired at end of the first line of code in the distractor block. For unpaired distractors add #distractor.</div></section><section class="subsection" id="writing-exercises_example-with-paired-distractors"><h4 class="heading hide-type">
+<div class="para" id="p-299">You can include distractor blocks in the problem. A distractor is code that isn’t needed in a correct solution, such as code with a syntax error. Add a distractor block after the correct code block. Distractors can either be paired or unpaired. For paired distractors use #paired at end of the first line of code in the distractor block. For unpaired distractors add #distractor.</div></section><section class="subsection" id="writing-exercises_example-with-paired-distractors"><h4 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">8.3.3</span> <span class="title">Example with Paired Distractors</span>
 </h4>
-<div class="para" id="p-298">Here is an example with paired distractors from a data oriented intermediate programming course in Python.</div>
+<div class="para" id="p-300">Here is an example with paired distractors from a data oriented intermediate programming course in Python.</div>
 <article class="exercise exercise-like" id="mt1dict1ex"><h5 class="heading">
 <span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">8.3.2</span><span class="period">.</span>
 </h5>
 <div class="ptx-runestone-container"><div class="runestone parsons_section" style="max-width: none;"><div data-component="parsons" class="parsons" id="mt1dict1ex">
-<div class="parsons_question parsons-text"><div class="para" id="p-299">Complete the function greater_dictionary. Given a dictionary d and an integer cutoff, return a dictionary that contains only the key-value pairs where they key is greater than or equal to cutoff.</div></div>
+<div class="parsons_question parsons-text"><div class="para" id="p-301">Complete the function greater_dictionary. Given a dictionary d and an integer cutoff, return a dictionary that contains only the key-value pairs where they key is greater than or equal to cutoff.</div></div>
 <pre class="parsonsblocks" data-question_label="" style="visibility: hidden;" data-language="python" data-noindent="true">def greater_dictionary(d, cutoff):
 ---
 def greater_dictionary(self, d, cutoff):  #paired
@@ -762,7 +762,7 @@ def greater_dictionary(self, d, cutoff):  #paired
  d[key] = result[key]  #paired
 ---
  return result</pre>
-</div></div></div></article><div class="para" id="p-300">The source code for this problem is shown here:</div>
+</div></div></div></article><div class="para" id="p-302">The source code for this problem is shown here:</div>
 <div class="code-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><pre class="program"><code class="language-none">.. parsonsprob:: mt1dict1ex
 :numbered: left
 
@@ -790,12 +790,12 @@ return result
 </code></pre></div></section><section class="subsection" id="writing-exercises_example-with-unpaired-distractor"><h4 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">8.3.4</span> <span class="title">Example with Unpaired Distractor</span>
 </h4>
-<div class="para" id="p-301">Here is an example with an unpaired distractor.</div>
+<div class="para" id="p-303">Here is an example with an unpaired distractor.</div>
 <article class="exercise exercise-like" id="2_swapex"><h5 class="heading">
 <span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">8.3.3</span><span class="period">.</span>
 </h5>
 <div class="ptx-runestone-container"><div class="runestone parsons_section" style="max-width: none;"><div data-component="parsons" class="parsons" id="2_swapex">
-<div class="parsons_question parsons-text"><div class="para" id="p-302">The following has the correct code to ‘swap’ the values in x and y (so that x ends up with y’s initial value and y ends up with x’s initial value), but the code is mixed up and contains &lt;b&gt;one extra block&lt;/b&gt; which is not needed in a correct solution. Drag the needed blocks from the left into the correct order on the right. Check your solution by clicking on the &lt;i&gt;Check Me&lt;/i&gt; button. You will be told if any of the blocks are in the wrong order or if you need to remove one or more blocks.</div></div>
+<div class="parsons_question parsons-text"><div class="para" id="p-304">The following has the correct code to ‘swap’ the values in x and y (so that x ends up with y’s initial value and y ends up with x’s initial value), but the code is mixed up and contains &lt;b&gt;one extra block&lt;/b&gt; which is not needed in a correct solution. Drag the needed blocks from the left into the correct order on the right. Check your solution by clicking on the &lt;i&gt;Check Me&lt;/i&gt; button. You will be told if any of the blocks are in the wrong order or if you need to remove one or more blocks.</div></div>
 <pre class="parsonsblocks" data-question_label="" style="visibility: hidden;" data-language="python" data-noindent="true">int x = 3;
 int y = 5;
 int temp = 0;
@@ -807,7 +807,7 @@ x = y;
 y = temp;
 ---
 y = x;  #distractor</pre>
-</div></div></div></article><div class="para" id="p-303">The source code for this problem is shown here.</div>
+</div></div></div></article><div class="para" id="p-305">The source code for this problem is shown here.</div>
 <div class="code-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><pre class="program"><code class="language-none">.. parsonsprob:: 2_swapex
 :noindent:
 
@@ -827,40 +827,40 @@ y = x; #distractor
 </code></pre></div></section></section><section class="section" id="writing-exercises_pro-tip-test-your-exercises-locally"><h3 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">8.4</span> <span class="title">Pro Tip – Test Your Exercises Locally</span>
 </h3>
-<div class="para" id="p-304">This is definitey an <dfn class="terminology">advanced topic</dfn>  If you are not comfortable with the command line you can definitely skip this section.  But if you are at least somewhat comfortable with the command line and an editor then this can save you a bunch of time!  The workflow is simple, edit your questions locally, then paste them into the interface once you have them working and debugged.</div>
-<div class="para" id="p-305">Here is a short video that demonstrates how to install the runestone command in under two minutes.</div>
+<div class="para" id="p-306">This is definitey an <dfn class="terminology">advanced topic</dfn>  If you are not comfortable with the command line you can definitely skip this section.  But if you are at least somewhat comfortable with the command line and an editor then this can save you a bunch of time!  The workflow is simple, edit your questions locally, then paste them into the interface once you have them working and debugged.</div>
+<div class="para" id="p-307">Here is a short video that demonstrates how to install the runestone command in under two minutes.</div>
 <blockquote class="blockquote" id="blockquote-2"><div class="video-box" style="width: 100%;padding-top: 56.25%; margin-left: 0%; margin-right: 0%;"><iframe id="QWX1eIpDBe0" class="video" allowfullscreen="" src="https://www.youtube-nocookie.com/embed/QWX1eIpDBe0?&amp;modestbranding=1&amp;rel=0"></iframe></div></blockquote>
-<div class="para" id="p-306">Here are the steps I go through in the video.  This assumes you already have python installed on your system.</div>
-<div class="para logical" id="p-307"><ol class="decimal">
-<li id="li-164"><div class="para" id="p-308">
+<div class="para" id="p-308">Here are the steps I go through in the video.  This assumes you already have python installed on your system.</div>
+<div class="para logical" id="p-309"><ol class="decimal">
+<li id="li-164"><div class="para" id="p-310">
 <code class="code-inline tex2jax_ignore">virtualenv runestone</code>  - Creates a python virtual environment so you don’t need administrator privileges to install the rest of what you need.  If virtualenv is not installed you should do <code class="code-inline tex2jax_ignore">pip install virtualenv</code> (Python 2.7.x) or <code class="code-inline tex2jax_ignore">python -m venv runestone</code> (Python &gt; 3.5).  If the pip command is not found then you should upgrade your version of Python to something newer.  All modern version of Python come with pip pre-installed.</div></li>
-<li id="li-165"><div class="para" id="p-309">
+<li id="li-165"><div class="para" id="p-311">
 <code class="code-inline tex2jax_ignore">. runestone/bin/activate</code> – this activates the virtual environment you created in the previous step.</div></li>
-<li id="li-166"><div class="para" id="p-310">
+<li id="li-166"><div class="para" id="p-312">
 <code class="code-inline tex2jax_ignore">mkdir assignments</code> – Create an assignment to do your runestone work in.</div></li>
-<li id="li-167"><div class="para" id="p-311">
+<li id="li-167"><div class="para" id="p-313">
 <code class="code-inline tex2jax_ignore">cd assignments</code>  – Make assignments your working directory.</div></li>
-<li id="li-168"><div class="para" id="p-312">
+<li id="li-168"><div class="para" id="p-314">
 <code class="code-inline tex2jax_ignore">runestone init</code> – Create a new project with some template directives</div></li>
-<li id="li-169"><div class="para" id="p-313">
+<li id="li-169"><div class="para" id="p-315">
 <code class="code-inline tex2jax_ignore">runestone build</code> – Convert the restructuredText to html</div></li>
-<li id="li-170"><div class="para" id="p-314">
+<li id="li-170"><div class="para" id="p-316">
 <code class="code-inline tex2jax_ignore">runestone serve</code> – start a simple web server so you can access your new project in your browser at <code class="code-inline tex2jax_ignore">http://localhost:8000/index.html</code>
 </div></li>
 </ol></div>
-<div class="para" id="p-315">Once the works you can simply edit the index.rst file created by runestone init, and run <code class="code-inline tex2jax_ignore">runestone build</code> again to check your work.</div></section><section class="section" id="writing-exercises_add-your-own-question"><h3 class="heading hide-type">
+<div class="para" id="p-317">Once the works you can simply edit the index.rst file created by runestone init, and run <code class="code-inline tex2jax_ignore">runestone build</code> again to check your work.</div></section><section class="section" id="writing-exercises_add-your-own-question"><h3 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">8.5</span> <span class="title">Add your own Question</span>
 </h3>
-<div class="para" id="p-316">In the final exercise for the night, add your own question to the exercise bank using the web interface.</div>
-<div class="para" id="p-317">You can make it any kind of question you would like, but it would be great if it was a real exercise that you like to use in one of your own courses.</div>
-<div class="para" id="p-318">To keep the build system from bogging down, you can let me know once you have saved an exercise and I’ll pull it into the sigcse2019 book and build it for you.</div>
+<div class="para" id="p-318">In the final exercise for the night, add your own question to the exercise bank using the web interface.</div>
+<div class="para" id="p-319">You can make it any kind of question you would like, but it would be great if it was a real exercise that you like to use in one of your own courses.</div>
+<div class="para" id="p-320">To keep the build system from bogging down, you can let me know once you have saved an exercise and I’ll pull it into the sigcse2019 book and build it for you.</div>
 <article class="warning remark-like" id="warning-2"><h4 class="heading">
 <span class="type">Warning</span><span class="space"> </span><span class="codenumber">8.5.1</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-319">Make sure you assign at least 0 points to your question before you press done.  If everything works, you will get a popup telling you that the question has been added successfully.</div></article></section><section class="exercises" id="writing-exercises_exercises"><h3 class="heading hide-type">
+<div class="para" id="p-321">Make sure you assign at least 0 points to your question before you press done.  If everything works, you will get a popup telling you that the question has been added successfully.</div></article></section><section class="exercises" id="writing-exercises_exercises"><h3 class="heading hide-type">
 <span class="type">Exercises</span> <span class="codenumber">8.6</span> <span class="title">Exercises</span>
 </h3>
-<div class="para" id="p-320">this page left intentionally blank</div></section></section><div class="hidden-content tex2jax_ignore" id="hk-fn-9"><div class="fn"><code class="code-inline tex2jax_ignore">https://docs.python.org/2/library/unittest.html#assert-methods</code></div></div>
+<div class="para" id="p-322">this page left intentionally blank</div></section></section><div class="hidden-content tex2jax_ignore" id="hk-fn-9"><div class="fn"><code class="code-inline tex2jax_ignore">https://docs.python.org/2/library/unittest.html#assert-methods</code></div></div>
 </div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="peer_instruction.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><a class="next-button button" href="backmatter-1.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a>
