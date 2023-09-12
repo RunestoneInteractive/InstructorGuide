@@ -12,7 +12,17 @@
 </head>
 <body class="ignore-math">
 <article class="li"><h6 class="heading">
-<span class="type">Item</span><span class="space"> </span><span class="codenumber">6</span><span class="period">.</span>
-</h6>Students can now click on these external tool assignments to be enrolled/logged directly into your Runestone course and assignment. The grades should appear in Moodle once they are released in Runestone through the Instructor interface.</article><span class="incontext"><a href="chapter-4.html#li-53" class="internal">in-context</a></span>
+<span class="type">Item</span><span class="space"> </span><span class="codenumber">2</span><span class="period">.</span>
+</h6>
+<div class="para">In Moodle, create a new external tool called "LTI Login Link".</div>
+<pre class="code-block tex2jax_ignore">:Name: Login to Runestone
+:Tool URL: https://yourHost.blahblah.edu/runestone/lti
+:Consumer key: Enter the key you copied for `consumer` from Phase 1
+:Shared secret: Enter the key you copied for `secret` from Phase 1
+:Icon URL: https://yourHost.blahblah.edu/runestone/static/images/logo_small.png
+:Share Email: True
+:Share Name: True
+:Custom params: custom_course_id=xxx, where xxx is the Runestone ID of the course (visible in the upper lefthand corner of each page in your Runestone course).
+</pre></article><span class="incontext"><a href="chapter-4.html#li-53" class="internal">in-context</a></span>
 </body>
 </html>
