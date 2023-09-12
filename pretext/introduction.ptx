@@ -86,8 +86,8 @@ One of the strengths of Runestone is that many of our features have been created
 <section>
 <title>A Word about Scale</title>
 <p>This section added in September 2023.</p>
-<p>As you will see in our history, Runestone came out of a small liberal arts college.  Class sizes were around 30 students.  A huge number of our courses are high school AP CS courses using the CSAwesome book.  Those courses tend to be in the 10 -- 60 student range.  For courses that size Runestone has worked well for many years.</p>
-
+<p>As you will see in our history, Runestone came out of a small liberal arts college.  Class sizes were around 30 students.  A huge number of our courses are high school AP CS courses using the CSAwesome book.  Those courses tend to be in the 10 -- 50 student range.  For courses that size Runestone has worked well for many years. In fact here is a histogram of course sizes over the last two years.</p>
+<image source="course_size_histo" width="70%"/>
 <p>
     Recently Runestone Academy has become a tool for courses at much larger institutions and consequently we are seeing course sizes grew.  I was totally taken off guard in August of 2023 when three courses containing 1000+ students were created.
 </p>
