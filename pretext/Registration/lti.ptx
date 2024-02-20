@@ -70,8 +70,8 @@
                         </ol>
                     </p>
                     <li> Students can now click on this assignment and work it. **If they don’t click on the assignment, they won’t receive a grade.**</li>
-                    <li> When the assignment is due, go to Runestone directly from your Canvas course by using an assignment link. Otherwise, grade reporting won’t work.</li>
-                    <li> In the grading tab of the instructor interface, grade the assignment, then click the “Release Grades” button. Doing this will push all grades to Canvas.</li>
+                    <li> When the assignment is due, <em>go to Runestone directly from your Canvas course by using an assignment link</em>. Otherwise, grade reporting <em>won’t work</em>.</li>
+                    <li> In the grading tab of the instructor interface, grade the assignment, then click the “Release Grades” button. Doing this will push all grades to Canvas.  (If you need to regrade later, you can always click the “Hide Grades” button, and then do “Release Grades” again.)</li>
                 </li>
             </ol>
         </subsubsection>
@@ -113,9 +113,9 @@
                     </li>
                     <li> Copy the tool as many times as you need within your Moodle Course, updating the Name and Tool URL each time.</li>
 
-                    <li> Students can now click on these external tool assignments to be enrolled/logged directly into your Runestone course and assignment. The grades should appear in Moodle once they are released in Runestone through the Instructor interface.</li>
+                    <li> Students can now click on these external tool assignments to be enrolled/logged directly into your Runestone course and assignment. The grades should appear in Moodle once they are released in Runestone through the Instructor interface using the “Release Grades” button.  (If you need to regrade later, you can always click the “Hide Grades” button, and then do “Release Grades” again.)</li>
 
-                    <li> The course instructor must also be an LTI sourced user, so use the "LTI Login Link" URL. This can be hidden for users.</li>
+                    <li> The course instructor must also be an LTI sourced user, <em>so use the "LTI Login Link" URL</em>. This can be hidden for users.</li>
                 </ol>
             </p>
         </subsubsection>
@@ -179,8 +179,8 @@ Make sure at least the following settings are checked:</p>
                 </li>
             
             <li> Students will be able to click on this link when you make it available to them. <em>If they don't click on the assignment, they won't receive a grade, so when you make the assignment on runestone, you probably want the <term>Visible to Students</term> checkbox to remain unchecked. This way it will only be available from the D2L link.</em></li>
-            <li> When the assignment is due, go to Runestone directly from your D2L course by using an assignment link. Otherwise, grade reporting won't work.</li>
-            <li> In the grading tab of the instructor interface, grade the assignment, then click the <term>Release Grades</term> button. Doing this will push all grades to D2L.</li>
+            <li> When the assignment is due, go to Runestone <em>directly from your D2L course by using an assignment link</em>. Otherwise, grade reporting <em>won't work</em>.</li>
+            <li> In the grading tab of the instructor interface, grade the assignment, then click the <term>Release Grades</term> button. Doing this will push all grades to D2L.  (If you need to regrade later, you can always click the “Hide Grades” button, and then do “Release Grades” again.)</li>
             </ol>
         
     </subsubsection>
