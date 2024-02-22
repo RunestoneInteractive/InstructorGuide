@@ -1,34 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <pretext xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
-  <xi:include href="./bookinfo.ptx" />
-  <book xml:id="InstructorGuide" permid="Ins">
-    <title>Using eBooks with Runestone Academy</title>
-    <subtitle>The PreTeXt Interactive Edition</subtitle>
-    <frontmatter>
-      <titlepage>
-        <author>
-          <personname>Brad Miller, PhD. Professor Emeritus Luther College</personname>
-          <institution>Founder, President, Runestone Academy</institution>
-          <email></email>
-        </author>
-      </titlepage>
-    </frontmatter>
-    <xi:include href="./introduction.ptx" />
-    <xi:include href="./Registration/registerYourself.ptx" />
-    <xi:include href="./CustomCourses/toctree.ptx" />
-    <xi:include href="./Registration/toctree.ptx" />
-    <!-- user management -->
-    <xi:include href="./InstructorInterface/toctree.ptx" />
-    <!-- monitoring learning -->
-    <xi:include href="./Assignments/toctree.ptx" />
-    <xi:include href="./peer_instruction.ptx" />
-    <xi:include href="./WritingExercises/toctree.ptx" />
-    <backmatter>
-      <index>
-        <index-list />
-      </index>
-      <xi:include href="./welcome.ptx" />
-      <xi:include href="./backfaq.ptx" />
-    </backmatter>
-  </book>
+	<xi:include href="./bookinfo.ptx" />
+	<book xml:id="InstructorGuide" permid="Ins">
+		<title>Using eBooks with Runestone Academy</title>
+		<subtitle>The PreTeXt Interactive Edition</subtitle>
+		<frontmatter>
+			<titlepage>
+				<author>
+					<personname>Brad Miller, PhD.
+						Professor Emeritus Luther College</personname>
+					<institution>Founder, President, Runestone Academy</institution>
+					<email></email>
+				</author>
+			</titlepage>
+		</frontmatter>
+		<xi:include href="./introduction.ptx" />
+		<xi:include href="./Registration/registerYourself.ptx" />
+		<xi:include href="./CustomCourses/toctree.ptx" />
+		<xi:include href="./Registration/toctree.ptx" />
+		<!-- user management -->
+		<xi:include href="./InstructorInterface/toctree.ptx" />
+		<!-- monitoring learning -->
+		<xi:include href="./Assignments/toctree.ptx" />
+		<xi:include href="./peer_instruction.ptx" />
+		<xi:include href="./WritingExercises/toctree.ptx" />
+		<backmatter>
+			<index>
+				<index-list />
+			</index>
+			<xi:include href="./welcome.ptx" />
+			<xi:include href="./backfaq.ptx" />
+		</backmatter>
+	</book>
 </pretext>
