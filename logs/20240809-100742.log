@@ -1,0 +1,15 @@
+INFO    : PreTeXt project found in `/Users/bmiller/Runestone/books/InstructorGuide`.
+WARNING : Using CLI version 2.3.4 but project's `requirements.txt`
+WARNING : is configured to use 1.0.1. Consider either installing
+WARNING : CLI version 1.0.1 or running `pretext init --refresh`
+WARNING : to update `requirements.txt` to match 2.3.4.
+INFO    : Since no target was supplied, we will use "web".
+
+INFO    : Staging latest build located in `/Users/bmiller/Runestone/books/InstructorGuide/output/web` at `/Users/bmiller/Runestone/books/InstructorGuide/output/stage`.
+INFO    : 
+INFO    : Deployment is now staged at `/Users/bmiller/Runestone/books/InstructorGuide/output/stage`.
+INFO    : Preparing to deploy from active `master` git branch.
+INFO    : 
+INFO    : Changes to project source since last commit detected.
+INFO    : Add/committing these changes to local Git repository.
+INFO    : 
