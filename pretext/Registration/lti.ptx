@@ -22,7 +22,7 @@
 , then click on “LTI Integration” in the Admin tab.</p>
                     <image source="Figures/lti_config.png" description="LTI configuration panel" />
                 </li>
-                <li> Click on the <term>Create LTI Key and Secret</term> button. Click the <term>Show Secret</term> button. You will use these in the next phase.</li>
+                <li> Click on the <term>Create LTI Key and Secret</term> button. Click the <term>Show Secret</term> button. You will use these in the next phase. Note that there is also a <term>Remove LTI Key and Secret</term> if you can't get LTI working with your LMS or just decide you don't want to use it you should remove the keys.  This will allow your students to access assignments from the regular assignments page.</li>
             </ol>
         </p>
     </subsection>
@@ -119,7 +119,7 @@
                 </ol>
             </p>
         </subsubsection>
-    
+
 
     <subsubsection xml:id="lms-d2l-setup">
         <title>Brightspace D2L</title>
@@ -130,8 +130,8 @@
                     To check, while in your class on D2L, you can go to <term>Course Admin</term> - <term>External Learning Tools</term>, then click the <term>Manage Tool Links (Legacy)</term>. From there, click the <term>New Link</term> button.
                 </p>
             </li>
-             <li> <p>If that is successful, then here are the settings. <em>(Otherwise, talk to your LMS Admin to configure this for you)</em> </p>               
-                    <dl>        
+             <li> <p>If that is successful, then here are the settings. <em>(Otherwise, talk to your LMS Admin to configure this for you)</em> </p>
+                    <dl>
                     <li>
                     <title>Title</title>
 <p>Enter either the Textbook Name or the assignment name on Runestone</p></li>
@@ -144,11 +144,11 @@
 <li><title>Key</title> <p> Enter this from Phase 1.</p></li>
 <li><title>Secret</title> <p> Enter this from Phase 1.</p></li>
                     </dl>
-                </li> 
+                </li>
  <li><p>Click the <term>Save</term> button before adding custom parameters.</p>
 
                  <dl>
-                    
+
 <li><title>Custom Parameters</title> <p> </p></li>
 
     <li>   click the <term>Add custom parameters</term> link.</li>
@@ -156,10 +156,10 @@
        <li><title>Value</title> <p> the Runestone ID of the course (visible in the upper lefthand corner of each page in your Runestone course).</p></li>
 
 <li><title>Security Settings</title> <p>Select <term>use link security settings</term></p></li>
-   
+
 <li><p>
 Make sure at least the following settings are checked:</p>
- 
+
 <ul>
     <li> Send tool consumer information to tool provider</li>
     <li> Send context information to tool provider </li>
@@ -171,18 +171,18 @@ Make sure at least the following settings are checked:</p>
 
     </ul></li> </dl></li>
 
-            
+
             <li> Once everything is selected, click <term>Save and Close</term> </li>
-            
+
                 <li>
                     Now, from anywhere in your course, you can select  <term>Existing Activities</term> - <term>External Learning Tools</term> and then the link you created. After adding this link, make sure that you make sure the link is configured to <term>Open as External Resource</term>. That way the right information will be passed to the textbook.
                 </li>
-            
+
             <li> Students will be able to click on this link when you make it available to them. <em>If they don't click on the assignment, they won't receive a grade, so when you make the assignment on runestone, you probably want the <term>Visible to Students</term> checkbox to remain unchecked. This way it will only be available from the D2L link.</em></li>
             <li> When the assignment is due, go to Runestone <em>directly from your D2L course by using an assignment link</em>. Otherwise, grade reporting <em>won't work</em>.</li>
             <li> In the grading tab of the instructor interface, grade the assignment, then click the <term>Release Grades</term> button. Doing this will push all grades to D2L.  (If you need to regrade later, you can always click the “Hide Grades” button, and then do “Release Grades” again.)</li>
             </ol>
-        
+
     </subsubsection>
     </subsection>
 </section>

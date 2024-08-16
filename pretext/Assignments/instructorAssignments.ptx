@@ -52,6 +52,13 @@
     </p>
 
   </paragraphs>
+
+  <paragraphs>
+    <title>Assignments and LTI</title>
+    <p>If you have LTI configured (<xref ref="lti_integration" />)  Then your students will see a message on the assignment page that says that Assignments can only be accessed through the LMS.  This is so grades can be properly passed back to the LMS. </p>
+    <p>If you decide you don't want to use LTI you can remove that message and display the student assignments as usual by deleting the LTI keys you created when you set up LTI.</p>
+  </paragraphs>
+
   <paragraphs>
     <title>Assignment Status</title>
     <p>
