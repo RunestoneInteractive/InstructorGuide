@@ -117,17 +117,7 @@ function permalinkDescription(elem) {
         }
         resultNodes = headerNode.getElementsByClassName("title");
         if (resultNodes.length > 0) {
-            for (let n of resultNodes[0].childNodes) {
-                if (n.nodeType == Node.TEXT_NODE) {
-                    titleStr += n.nodeValue;
-                } else if (n.nodeType == Node.ELEMENT_NODE) {
-                    if (n.classList.contains("process-math")) {
-                        titleStr += n.innerText.replace(/[\n\r]/g, "");
-                    } else {
-                        titleStr += n.innerText;
-                    }
-                }
-            }
+            titleStr = resultNodes[0].innerText;
         }
     }
     retStr = typeStr;
@@ -147,7 +137,7 @@ function permalinkDescription(elem) {
     if ((lastChr == '.') || (lastChr == ':'))  {
         retStr = retStr.slice(0,retStr.length - 1);
     }
-    return retStr;
+    return retStr.replace(/[\n\r]/g, "");
 }
 
 /*
@@ -545,6 +535,20 @@ window.addEventListener("load",function(event) {
      });
 });
 
+window.addEventListener("load",function(event) {
+       if(window.location.href.includes("/preview/")) {
+           console.log("            found preview", window.location.href);
+           $("main p[id], main article[id], main li[id], main section[id], main a[data-knowl]").each(function() {
+               var thisid = $(this).attr('id');
+               if( thisid && ( (thisid.length > 3 && !thisid.includes("-part") && !thisid.startsWith("fn-")) || thisid.startsWith("p-") ) ) {
+                 $( this ).addClass("newstuff");
+                 console.log("           found new", this)
+               }
+           })
+       } else {
+           console.log("not preview", window.location.href);
+       }
+});
 
 /*
 window.addEventListener("load",function(event) {

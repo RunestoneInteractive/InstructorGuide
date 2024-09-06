@@ -17,6 +17,7 @@ function addKnowls(target) {
     const contents = bhk.querySelector(":scope > summary + *");
     new SlideRevealer(summary, contents, bhk);
   }
+
 }
 
 // Used to animate both types of knowls
@@ -51,14 +52,13 @@ class SlideRevealer {
     this.animatedElement.style.overflow = 'hidden';
 
     // Check if the element is being closed or is already closed
-    if (this.animationState === SlideRevealer.STATE.CLOSING || !this.animatedElement.hasAttribute("open")) {
-      // Force the [open] attributes - allow for similar targetting of xref and born-hidden knowls
-      this.animatedElement.setAttribute("open","");
-      this.triggerElement.setAttribute("open","");
+    if (this.animationState === SlideRevealer.STATE.CLOSING || !this.animatedElement.open) {
+      // Force the [open] attribute (needed if animated element is details)
+      this.animatedElement.open = true;
       this.contentElement.style.display = '';
       // Wait for the next frame to call the toggle function
       window.requestAnimationFrame(() => this.toggle(true));
-    } else if (this.animationState === SlideRevealer.STATE.EXPANDING || this.animatedElement.hasAttribute("open")) {
+    } else if (this.animationState === SlideRevealer.STATE.EXPANDING || this.animatedElement.open) {
       this.toggle(false);
     }
   }
@@ -72,27 +72,17 @@ class SlideRevealer {
     const startHeight = `${expanding ? closedHeight : fullHeight}px`;
     const endHeight = `${expanding ? fullHeight : closedHeight}px`;
 
-    // Need to animate padding to avoid extra height for xref knowls
-    const padding = this.animatedElement.offsetHeight - this.animatedElement.clientHeight;
-    const startPad = `${expanding ? 0 : padding}px`;
-    const endPad = `${expanding ? padding : 0}px`;
-
     // Cancel any existing animation
     if (this.animation) {
       this.animation.cancel();
     }
 
-    // Animate ~400 pixels per second with max of 0.75 second and min of 0.25
-    const animDuration = Math.max( Math.min( (Math.abs(closedHeight - fullHeight) / 400 * 1000), 750), 250);
-
     // Start animation
     this.animationState = expanding ? SlideRevealer.STATE.EXPANDING : SlideRevealer.STATE.CLOSING;
     this.animation = this.animatedElement.animate({
-      height: [startHeight, endHeight],
-      paddingTop: [startPad, endPad],
-      paddingBottom: [startPad, endPad]
+      height: [startHeight, endHeight]
     }, {
-      duration: animDuration,
+      duration: 400,
       easing: 'ease'
     });
 
@@ -106,22 +96,12 @@ class SlideRevealer {
     this.animationState = SlideRevealer.STATE.INACTIVE;
 
     // Make sure animated element has open (needed for details)
-    if(!isOpen) {
-      this.animatedElement.removeAttribute("open");
-      this.triggerElement.removeAttribute("open");
-    }
+    this.animatedElement.open = isOpen;
 
     // Clear styles used in animation
-    this.animatedElement.style.overflow = '';
+    this.animatedElement.style.height = this.animatedElement.style.overflow = '';
     if (!isOpen)
       this.contentElement.style.display = 'none';
-
-    if (isOpen) {
-      let hasCallback = this.contentElement.querySelectorAll("[data-knowl-callback]");
-      hasCallback.forEach((el) => {
-        window[el.getAttribute("data-knowl-callback")](el, open);
-      });
-    }
   }
 }
 
@@ -154,8 +134,6 @@ class LinkKnowl {
     // Stash a copy of the original title for use in aria-label
     // If no title, use textContent
     knowlLinkElement.setAttribute("data-base-title", knowlLinkElement.getAttribute("title") || this.linkElement.textContent);
-
-    knowlLinkElement.classList.add("knowl__link");
 
     this.updateLabels(false);
 
@@ -215,9 +193,13 @@ class LinkKnowl {
     const outputContentsId = "knowl-output-" + this.uid;
     const linkTarget = this.linkElement.getAttribute("data-knowl");
 
-    const placeholderText = `<div class='knowl__content' style='display:none;' id='${outputId}' aria-live='polite' id='${outputContentsId}'>`
+    const placeholderText = `<div class='knowl-output' style='display:none;' id='${outputId}' aria-live='polite'>`
+      + `<div class='knowl'>`
+      + `<div class='knowl-content' id='${outputContentsId}'>`
       + `Loading '${linkTarget}'`
-      + `</div>`;
+      + `</div>`
+      + `<div class='knowl-footer'>${linkTarget}</div>`
+      + `</div></div></div>`;
 
     const temp = document.createElement("template");
     temp.innerHTML = placeholderText;
@@ -307,16 +289,17 @@ class LinkKnowl {
           });
 
           // now move all contents to the real output element
+          const target = document.getElementById("knowl-output-" + this.uid);
           const children = [...tempContainer.children];
-          this.outputElement.innerHTML = "";
-          this.outputElement.append(...children);
+          target.innerHTML = "";
+          target.append(...children);
 
           // render any knowls and mathjax in the knowl
-          MathJax.typesetPromise([this.outputElement]);
-          addKnowls(this.outputElement);
+          MathJax.typesetPromise([target]);
+          addKnowls(target);
 
           // force any scripts (e.g. sagecell) to execute by evaling them
-          [...this.outputElement.getElementsByTagName("script")].forEach((s) => {
+          [...target.getElementsByTagName("script")].forEach((s) => {
             if (
               s.getAttribute("type") === null ||
               s.getAttribute("type") === "text/javascript"

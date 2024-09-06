@@ -12,31 +12,20 @@
  */
 
 function scrollTocToActive() {
-    //Try to figure out current TocItem from URL
-    let fileNameWHash = window.location.href.split("/").pop();
-    let fileName = fileNameWHash.split("#")[0];
-
-    //Find just the filename in ToC
-    let tocEntry = document.querySelector('#ptx-toc a[href="' + fileName + '"]');
-    if (!tocEntry) {
-        return; //complete failure, get out
+    pagefilename  = window.location.href;
+    pagefilename  = pagefilename.match(/[^\/]*$/)[0];
+    possibletocentries = document.querySelectorAll('#ptx-toc a[href="' + pagefilename + '"]');
+    if (possibletocentries.length == 0) {
+        console.log("linked below a subsection");
+        pagefilename  = pagefilename.match(/^[^\#]*/)[0];
+        possibletocentries = document.querySelectorAll('#ptx-toc a[href="' + pagefilename + '"]');
     }
-
-    //See if we can also match fileName#hash
-    let tocEntryWHash = document.querySelector(
-        '#ptx-toc a[href="' + fileNameWHash + '"]'
-    );
-    if (tocEntryWHash) {
-        //Matched something below a subsection - activate the list item that contains it
-        tocEntryWHash.closest("li").classList.add("active");
+    if (possibletocentries.length == 0) {
+        console.log("error, cannot find", pagefilename, "in TOC");
+        return
     }
-
-    //Now activate ToC item for fileName and scroll to it
-    //  Don't use scrollIntoView because it changes users tab position in Chrome
-    //  and messes up keyboard navigation
-    tocEntry.closest("li").classList.add("active");
-    document.querySelector("#ptx-toc").scrollTop = tocEntry.offsetTop;
-}
+    possibletocentries[0].scrollIntoView({block: "center"});
+    possibletocentries[0].classList.add("active");}
 
 function toggletoc() {
    thesidebar = document.getElementById("ptx-sidebar");
