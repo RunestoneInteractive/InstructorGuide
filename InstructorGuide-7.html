@@ -114,14 +114,14 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.3.6';
+eBookConfig.runestone_version = '7.4.0';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.00db6230172ad960.bundle.js"></script><script src="_static/prefix-347.8328b60515045466.bundle.js"></script><script src="_static/prefix-runestone.5d3fd44c34d81620.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-347.f9add1ca35d5ad93.css">
+<script src="_static/prefix-runtime.00db6230172ad960.bundle.js"></script><script src="_static/prefix-347.8328b60515045466.bundle.js"></script><script src="_static/prefix-runestone.04737dc219c2d2eb.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-347.f9add1ca35d5ad93.css">
 <link rel="stylesheet" type="text/css" href="_static/prefix-runestone.f64dcc3632d7a0c3.css">
 <style>
 #registration_first-time-registration-4-1 { counter-set: registration_first-time-registration-4-1 0; }
@@ -526,6 +526,7 @@ hogwarts-3,dumbledore+hogwarts1@gmail.com,F2,L2,owls4all,potions_fall19
 <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/Figures/lti_config.png" class="contained"></div>
 </li>
 <li id="lti_integration-3-2-1-3"><div class="para" id="p-derived-lti_integration-3-2-1-3">Click on the <dfn class="terminology">Create LTI Key and Secret</dfn> button. Click the <dfn class="terminology">Show Secret</dfn> button. You will use these in the next phase. Note that there is also a <dfn class="terminology">Remove LTI Key and Secret</dfn> if you can’t get LTI working with your LMS or just decide you don’t want to use it you should remove the keys.  This will allow your students to access assignments from the regular assignments page.</div></li>
+<li id="lti_integration-3-2-1-4"><div class="para" id="p-derived-lti_integration-3-2-1-4">Once the LTI Key and Secret have been set up, your course is in LTI mode, and the assignments will only be accessible from your LTI, so you must do Phase 2, below, or your students won’t have access to any assignments.</div></li>
 </ol>
 </div></section><section class="subsection" id="lti_integration-4"><h4 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">4.3.3</span><span class="space"> </span><span class="title">Phase 2 (LMS-specific Steps)</span>
@@ -583,6 +584,7 @@ hogwarts-3,dumbledore+hogwarts1@gmail.com,F2,L2,owls4all,potions_fall19
 <li id="lms-moodle-setup-2-1-3"><div class="para" id="p-derived-lms-moodle-setup-2-1-3">Login to your Runestone instance with the tool just created, and create your class as well as your assignments.</div></li>
 <li id="lms-moodle-setup-2-1-4">
 <div class="para" id="lms-moodle-setup-2-1-4-1">In Moodle, create a new enrollment external app directly to your course and assignment. You will need to repeat this for each assignment. You will also need the database values for your course ID, and assignment ID. Get these from step 2.2. Please note that in order to receive roles and grades, "Accept Grades" must be checked in Moodle. In other LMS’s this may be referenced by a "Share IMS Names and Roles" or similar.</div>
+<div class="para" id="lms-moodle-setup-2-1-4-2">Note: in order for students to have access to the assignment from moodle, the visible checkbox for the assignment on runestone must be checked.</div>
 <pre class="code-block tex2jax_ignore">:Name: Assignment 1
 :Tool URL: https://runestone.colorado.edu/runestone/lti?assignment_id=&amp;custom_course_id
 :Consumer key: Enter the key you copied for `consumer` from Phase 1
@@ -663,10 +665,10 @@ hogwarts-3,dumbledore+hogwarts1@gmail.com,F2,L2,owls4all,potions_fall19
 <li id="lms-d2l-setup-3-4"><div class="para" id="p-derived-lms-d2l-setup-3-4">Once everything is selected, click <dfn class="terminology">Save and Close</dfn>
 </div></li>
 <li id="lms-d2l-setup-3-5"><div class="para" id="p-derived-lms-d2l-setup-3-5">Now, from anywhere in your course, you can select  <dfn class="terminology">Existing Activities</dfn> - <dfn class="terminology">External Learning Tools</dfn> and then the link you created. After adding this link, make sure that you make sure the link is configured to <dfn class="terminology">Open as External Resource</dfn>. That way the right information will be passed to the textbook.</div></li>
-<li id="lms-d2l-setup-3-6"><div class="para" id="p-derived-lms-d2l-setup-3-6">Students will be able to click on this link when you make it available to them. <em class="emphasis">If they don’t click on the assignment, they won’t receive a grade, so when you make the assignment on runestone, you probably want the <dfn class="terminology">Visible to Students</dfn> checkbox to remain unchecked. This way it will only be available from the D2L link.</em>
+<li id="lms-d2l-setup-3-6"><div class="para" id="p-derived-lms-d2l-setup-3-6">Students will be able to click on this link when you make it available to them <em class="emphasis">as long a the <dfn class="terminology">Visible to Students</dfn> checkbox is checked on the assignment in runestone.</em>
 </div></li>
 <li id="lms-d2l-setup-3-7"><div class="para" id="p-derived-lms-d2l-setup-3-7">When the assignment is due, go to Runestone <em class="emphasis">directly from your D2L course by using an assignment link</em>. Otherwise, grade reporting <em class="emphasis">won’t work</em>.</div></li>
-<li id="lms-d2l-setup-3-8"><div class="para" id="p-derived-lms-d2l-setup-3-8">In the grading tab of the instructor interface, grade the assignment, then click the <dfn class="terminology">Release Grades</dfn> button. Doing this will push all grades to D2L.  (If you need to regrade later, you can always click the “Hide Grades” button, and then do “Release Grades” again.)</div></li>
+<li id="lms-d2l-setup-3-8"><div class="para" id="p-derived-lms-d2l-setup-3-8">In the grading tab of the instructor interface click the <dfn class="terminology">Release Grades</dfn> button. Doing this will push all grades to D2L.  (If you need to regrade later, you can always click the “Hide Grades” button, and then do “Release Grades” again.)</div></li>
 </ol></section></section></section><section class="section" id="add_instructor"><h3 class="heading hide-type">
 <span class="type">Section</span><span class="space"> </span><span class="codenumber">4.4</span><span class="space"> </span><span class="title">Add and Instructor or TA</span>
 </h3>
