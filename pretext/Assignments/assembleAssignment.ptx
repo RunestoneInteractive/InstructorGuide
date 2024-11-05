@@ -5,91 +5,197 @@
     <title>Introduction</title>
     <video xml:id="h45c7_wIgGA" youtube="h45c7_wIgGA" width="auto" />
     <p>
-    <ol marker="1">
-      <li>
-        <p>To create an assignment, whether graded or ungraded, start by going to the Assignments tab on the instructor interface. Click on the Add button to start creating a new assignment. On the popup that appears you will notice that you can also copy an old assignment as a starting point.</p>
-        <figure align="center" xml:id="new_assign_fig">
-          <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Figure 1: Click on the Add button to create a new assignment</caption>
-          <image source="Figures/assignmentMain.png" width="100%" alt="Click on the plus to create a new assignment" />
-        </figure>
-      </li>
-      <li>
-        <p>Provide a name for the assignment.</p>
-        <figure align="center" xml:id="unique_assign_fig">
-          <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Figure 2: Enter a unique name for the assignment</caption>
-          <image source="Figures/nameAssign.png" width="100%" alt="Enter a unique name for the assignment" />
-        </figure>
-      </li>
-      <li>
-        <p>Add a description and check the other options.</p>
-      </li>
-      <li>
-        <p>Click on <q>Save</q> to save the assignment. It will show an alert as shown below. Click on <q>Ok</q>.</p>
+      <ol marker="1">
+        <li>
+          <p>To create an assignment, whether graded or ungraded, start by going to the Assignments
+            tab on the instructor interface. Click on the Add button to start creating a new
+            assignment. On the popup that appears you will notice that you can also copy an old
+            assignment as a starting point.</p>
+          <figure align="center" xml:id="new_assign_fig">
+            <caption xmlns:c="https://www.sphinx-doc.org/"
+              xmlns:changeset="https://www.sphinx-doc.org/"
+              xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/"
+              xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/"
+              xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/"
+              xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Figure
+              1: Click on the Add button to create a new assignment</caption>
+            <image source="Figures/assignmentMain.png" width="100%"
+              alt="Click on the plus to create a new assignment" />
+          </figure>
+        </li>
+        <li>
+          <p>Provide a name for the assignment.</p>
+          <figure align="center" xml:id="unique_assign_fig">
+            <caption xmlns:c="https://www.sphinx-doc.org/"
+              xmlns:changeset="https://www.sphinx-doc.org/"
+              xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/"
+              xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/"
+              xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/"
+              xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Figure
+              2: Enter a unique name for the assignment</caption>
+            <image source="Figures/nameAssign.png" width="100%"
+              alt="Enter a unique name for the assignment" />
+          </figure>
+        </li>
+        <li>
+          <p>Add a description and check the other options.</p>
+        </li>
+        <li>
+          <p>Click on <q>Save</q> to save the assignment. It will show an alert as shown below.
+            Click on <q>Ok</q>.</p>
 
-        <warning>
-          <title>Make it Visible</title>
-          <p>Please take note of the visible to students check box. If you forget to check this box then the assignment will not show up in the list that your students (or you) can see on the assignment page.</p>
-        </warning>
+          <warning>
+            <title>Make it Visible</title>
+            <p>Please take note of the visible to students check box. If you forget to check this
+              box then the assignment will not show up in the list that your students (or you) can
+              see on the assignment page.</p>
+          </warning>
 
-        <figure align="center" xml:id="save_alert_fig">
-          <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Figure 4: The save alert box.</caption>
-          <image source="Figures/savedAlert.png" width="100%" alt="The save alert box" />
-        </figure>
-      </li>
-    </ol>
+          <figure align="center" xml:id="save_alert_fig">
+            <caption xmlns:c="https://www.sphinx-doc.org/"
+              xmlns:changeset="https://www.sphinx-doc.org/"
+              xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/"
+              xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/"
+              xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/"
+              xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Figure
+              4: The save alert box.</caption>
+            <image source="Figures/savedAlert.png" width="100%" alt="The save alert box" />
+          </figure>
+        </li>
+      </ol>
     </p>
 
-    <p>There are two primary kinds of assignments. <term>Reading Assignments</term> and <term>Problems Sets.</term> Reading assignments allow you to select whole chapters or parts of chapters for your students to read. You can assign points to the reading assignment by tracking the number of activities they attempt in each subchapter. Problem sets are mainly for you to select short programming problems for the students to solve, but could also include short answer, multiple choice, etc. Or even problems that you write yourself. More on that later.</p>
-    <p>In either case the primary way you will add questions is through the tree picker interface.  This interface is accessed by expanding either the Readings or Problems accordion and allows you to drill down from chapter to section to individual problems. There are several icons associated with problems to help you know what you are looking at.   
-    <ul>
-    <li>The 📘 icon indicates that a particular problem was written by the author.</li>
-    <li>The 🏫 icon indicates that a problem was contributed by another instructor.</li>
-    <li>The ✔️ icon tells you that the problem can be automatically graded.</li>
-    </ul>
-    In any case you can click on a problem to see a preview.  If you are previewing a question and it is obviously bad, or incorrect, or just someone experimenting, use the <term>Flag Question</term> button to let us know.  We have volunteer editors that help us clear out or correct these bad questions.
-    </p>
+    <p>There are two primary kinds of assignments. <term>Reading Assignments</term> and <term>Problems
+      Sets.</term> Reading assignments allow you to select whole chapters or parts of chapters for
+      your students to read. You can assign points to the reading assignment by tracking the number
+      of activities they attempt in each subchapter. Problem sets are mainly for you to select short
+      programming problems for the students to solve, but could also include short answer, multiple
+      choice, etc. Or even problems that you write yourself. More on that later.</p>
+    <p>In either case the primary way you will add questions is through the tree picker interface.
+      This interface is accessed by expanding either the Readings or Problems accordion and allows
+      you to drill down from chapter to section to individual problems. There are several icons
+      associated with problems to help you know what you are looking at. <ul>
+        <li>The 📘 icon indicates that a particular problem was written by the author.</li>
+        <li>The 🏫 icon indicates that a problem was contributed by another instructor.</li>
+        <li>The ✔️ icon tells you that the problem can be automatically graded.</li>
+      </ul> In
+      any case you can click on a problem to see a preview. If you are previewing a question and it
+      is obviously bad, or incorrect, or just someone experimenting, use the <term>Flag Question</term>
+      button to let us know. We have volunteer editors that help us clear out or correct these bad
+      questions. </p>
     <image source="Figures/tree_picker.png" width="50%" />
   </subsection>
   <subsection xml:id="instructor-interface_creating-a-reading-assignment">
     <title>Creating a Reading Assignment</title>
-    <p>Let's create a reading assignment and add a few sections for our students to read. As you add sections you will see that are shown in a table under the Readings tab.</p>
+    <p>Let's create a reading assignment and add a few sections for our students to read. As you add
+      sections you will see that are shown in a table under the Readings tab.</p>
     <image source="Figures/reading_assignment.png" width="50%" />
     <p>There are four things you can change for each section:</p>
     <p>
-    <ul>
-      <li>
-        <p># required - How many of the components on the page do you students need to do in order to get the points for this section.</p>
-      </li>
-      <li>
-        <p>How many points for completing this section?</p>
-      </li>
-      <li>
-        <p>Auto-grade - interaction means that the students have done something</p>
-      </li>
-      <li>
-        <p>which to grade - first answer, best answer, or last answer</p>
-      </li>
-    </ul>
+      <ul>
+        <li>
+          <p># required - How many of the components on the page do you students need to do in order
+            to get the points for this section.</p>
+        </li>
+        <li>
+          <p>How many points for completing this section?</p>
+        </li>
+        <li>
+          <p>Auto-grade - interaction means that the students have done something</p>
+        </li>
+        <li>
+          <p>which to grade - first answer, best answer, or last answer</p>
+        </li>
+      </ul>
     </p>
   </subsection>
   <subsection xml:id="instructor-interface_creating-a-problem-assignment">
     <title>Creating a Problem Assignment</title>
-    <p>Creating a problem assignment is similar. You will most often use the tree picker, but you can also search for problems or write your own. When selecting a problem if you click on the name of the problem the interface will display the problem on the page remind you what it is about.</p>
+    <p>Creating a problem assignment is similar. You will most often use the tree picker, but you
+      can also search for problems or write your own. When selecting a problem if you click on the
+      name of the problem the interface will display the problem on the page remind you what it is
+      about.</p>
     <image source="Figures/problem_selection.png" width="50%" />
     <p>Problems have a different set of configurations</p>
     <p>
-    <ul>
-      <li>
-        <p>Points - how many points for this question</p>
-      </li>
-      <li>
-        <p>Auto-grade &#x2013; options here are % correct, All or nothing, Interaction, or manual.</p>
-      </li>
-      <li>
-        <p>which to grade &#x2013; Best Answer, first answer or last answer</p>
-      </li>
-    </ul>
+      <ul>
+        <li>
+          <p>Points - how many points for this question</p>
+        </li>
+        <li>
+          <p>Auto-grade &#x2013; options here are % correct, All or nothing, Interaction, or manual.</p>
+        </li>
+        <li>
+          <p>which to grade &#x2013; Best Answer, first answer or last answer</p>
+        </li>
+      </ul>
     </p>
-    <p>Problems with the book icon next to them are written by the author. Problems with the schoolhouse are contributed by the community. If a problem has a checkmark next to it then you know it can be automatically graded.</p>
+    <p>Problems with the book icon next to them are written by the author. Problems with the
+      schoolhouse are contributed by the community. If a problem has a checkmark next to it then you
+      know it can be automatically graded.</p>
+  </subsection>
+
+  <subsection xml:id="subsec-accommodations">
+    <title>Accommodations</title>
+    <p>Runestone allows you to create accommodations for students who need them. You can create an
+      accommodation for a student by clicking on the accommodations menu item in the assignment
+      builder, or use the link from the course home page. There are three kinds of accommodations
+      that you can create: <ul>
+        <li>Extra Time on Timed Assessments</li>
+        <li>Extended Due Date</li>
+        <li>Allow student to see/access assignments not visible to others</li>
+      </ul>
+    </p>
+    <figure
+      xml:id="accommodations-builder">
+      <caption>Creating Accommodations</caption>
+      <image source="Figures/accommodations.png" width="75%" />
+    </figure>
+    <subsubsection
+      xml:id="subsubsec-ExamTime">
+      <title>Extra Exam Time</title>
+      <p>When you create an accommodation for extra time on timed assessments, you can specify a
+        multiplier for the extra time that the student will receive. Normally this is something like
+        1.5 or 2.0 for the student. This extra time will be
+        added to the time limit for any timed assessments that the student takes. The student will
+        see the extra time on the exam page.</p>
+      <p>You can set this accommodation for a specific student or for a group of students. If you
+        set it for a group of students, then all students in that group will receive the extra
+        time. If you set it for a specific student, then only that student will receive the extra
+        time. You can set it once by just selecting one or more students and setting the multiplier
+        value. This will then apply to ALL assignments. It can be ovverridden for a specific
+        assignment at any time, as a specific assignment will take priority over the general
+        accommodation.
+      </p>
+    </subsubsection>
+    <subsubsection
+      xml:id="subsubsec-extended-due-date">
+      <title>Extended Due Date</title>
+      <p>When you create an accommodation for an extended due date, you specify the number of
+        extra days that the student will have to complete the assignment. This can be set for a
+        specific student or for a group of students. If you set it for a group of students, then all
+        students in that group will receive the extra time. If you set it for a specific student,
+        then
+        only that student will receive the extra time. You can set it once by just selecting one or
+        more students and setting the number of extra days. This will then apply to ALL assignments.
+        It can be ovverridden for a specific assignment at any time, as a specific assignment will
+        take priority over the general accommodation.
+      </p>
+      <p>If you need to grant a further extension, you can do so by creating a new accommodation
+        with more days. If you gave them 3 days at first, but that wasn't enough, you can enter 5
+        days
+        to give them an additional 2 days.
+      </p>
+    </subsubsection>
+    <subsubsection
+      xml:id="subsubsec-visibility">
+      <title>Visibility</title>
+      <p>This is for situations where the assignment is not visible to the students, but you would
+        like to mail the student a link to an exam, maybe a makeup exam. Or an extra assignment, or
+        whatver. This accommodation requires both a student and an assignment. When the
+        accommodation
+        is saved, then the assignment will show up for the student in their assignment list, or you
+        can email the student a link to the assignment and they will have access.</p>
+    </subsubsection>
   </subsection>
 </section>
