@@ -9,3 +9,4 @@ published
 cli.log
 .error_schema.log
 sphinx_settings.json
+/logs
