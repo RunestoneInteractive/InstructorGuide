@@ -1,15 +1,6 @@
 var ptx_lunr_search_style = "textbook";
 var ptx_lunr_docs = [
 {
-  "id": "InstructorGuide-3",
-  "level": "1",
-  "url": "InstructorGuide-3.html",
-  "type": "Front Matter",
-  "number": "",
-  "title": "Front Matter",
-  "body": "   Brad Miller, PhD. Professor Emeritus Luther College  Founder, President, Runestone Academy     "
-},
-{
   "id": "Introduction",
   "level": "1",
   "url": "Introduction.html",
@@ -82,9 +73,9 @@ var ptx_lunr_docs = [
   "body": " Change Courses   "
 },
 {
-  "id": "InstructorGuide-6",
+  "id": "creating-a-course",
   "level": "1",
-  "url": "InstructorGuide-6.html",
+  "url": "creating-a-course.html",
   "type": "Chapter",
   "number": "3",
   "title": "Creating a Course",
@@ -93,7 +84,7 @@ var ptx_lunr_docs = [
 {
   "id": "login_screen_fig",
   "level": "2",
-  "url": "InstructorGuide-6.html#login_screen_fig",
+  "url": "creating-a-course.html#login_screen_fig",
   "type": "Figure",
   "number": "3.2.1",
   "title": "",
@@ -102,7 +93,7 @@ var ptx_lunr_docs = [
 {
   "id": "custom_course_fig",
   "level": "2",
-  "url": "InstructorGuide-6.html#custom_course_fig",
+  "url": "creating-a-course.html#custom_course_fig",
   "type": "Figure",
   "number": "3.2.2",
   "title": "",
@@ -111,7 +102,7 @@ var ptx_lunr_docs = [
 {
   "id": "support_runestone_fig",
   "level": "2",
-  "url": "InstructorGuide-6.html#support_runestone_fig",
+  "url": "creating-a-course.html#support_runestone_fig",
   "type": "Figure",
   "number": "3.2.3",
   "title": "",
@@ -120,7 +111,7 @@ var ptx_lunr_docs = [
 {
   "id": "id5",
   "level": "2",
-  "url": "InstructorGuide-6.html#id5",
+  "url": "creating-a-course.html#id5",
   "type": "Figure",
   "number": "3.2.4",
   "title": "",
@@ -129,16 +120,16 @@ var ptx_lunr_docs = [
 {
   "id": "id6",
   "level": "2",
-  "url": "InstructorGuide-6.html#id6",
+  "url": "creating-a-course.html#id6",
   "type": "Figure",
   "number": "3.2.5",
   "title": "",
   "body": " Figure 4: The page that allows the user to add another course or switch courses   "
 },
 {
-  "id": "InstructorGuide-7",
+  "id": "managing-your-course",
   "level": "1",
-  "url": "InstructorGuide-7.html",
+  "url": "managing-your-course.html",
   "type": "Chapter",
   "number": "4",
   "title": "Managing Your Course",
@@ -147,7 +138,7 @@ var ptx_lunr_docs = [
 {
   "id": "registration_adding-students-to-your-course-3-3",
   "level": "2",
-  "url": "InstructorGuide-7.html#registration_adding-students-to-your-course-3-3",
+  "url": "managing-your-course.html#registration_adding-students-to-your-course-3-3",
   "type": "Note",
   "number": "4.1.1",
   "title": "",
@@ -156,7 +147,7 @@ var ptx_lunr_docs = [
 {
   "id": "reg_your_students_fig",
   "level": "2",
-  "url": "InstructorGuide-7.html#reg_your_students_fig",
+  "url": "managing-your-course.html#reg_your_students_fig",
   "type": "Figure",
   "number": "4.1.2",
   "title": "",
@@ -165,7 +156,7 @@ var ptx_lunr_docs = [
 {
   "id": "registration_setting-up-a-class-with-no-pii-4",
   "level": "2",
-  "url": "InstructorGuide-7.html#registration_setting-up-a-class-with-no-pii-4",
+  "url": "managing-your-course.html#registration_setting-up-a-class-with-no-pii-4",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -174,7 +165,7 @@ var ptx_lunr_docs = [
 {
   "id": "registration_setting-up-a-class-with-no-pii-10",
   "level": "2",
-  "url": "InstructorGuide-7.html#registration_setting-up-a-class-with-no-pii-10",
+  "url": "managing-your-course.html#registration_setting-up-a-class-with-no-pii-10",
   "type": "Note",
   "number": "4.2.1",
   "title": "Note.",
@@ -183,7 +174,7 @@ var ptx_lunr_docs = [
 {
   "id": "registration_setting-up-a-class-with-no-pii-12",
   "level": "2",
-  "url": "InstructorGuide-7.html#registration_setting-up-a-class-with-no-pii-12",
+  "url": "managing-your-course.html#registration_setting-up-a-class-with-no-pii-12",
   "type": "Figure",
   "number": "4.2.2",
   "title": "",
@@ -192,7 +183,7 @@ var ptx_lunr_docs = [
 {
   "id": "registration_what-other-data-does-runestone-collect-3",
   "level": "2",
-  "url": "InstructorGuide-7.html#registration_what-other-data-does-runestone-collect-3",
+  "url": "managing-your-course.html#registration_what-other-data-does-runestone-collect-3",
   "type": "Figure",
   "number": "4.2.3",
   "title": "",
@@ -201,7 +192,7 @@ var ptx_lunr_docs = [
 {
   "id": "lti_integration-3-2",
   "level": "2",
-  "url": "InstructorGuide-7.html#lti_integration-3-2",
+  "url": "managing-your-course.html#lti_integration-3-2",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -210,7 +201,7 @@ var ptx_lunr_docs = [
 {
   "id": "lms-d2l-setup-3-1-1",
   "level": "2",
-  "url": "InstructorGuide-7.html#lms-d2l-setup-3-1-1",
+  "url": "managing-your-course.html#lms-d2l-setup-3-1-1",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -219,7 +210,7 @@ var ptx_lunr_docs = [
 {
   "id": "lms-d2l-setup-3-2-2-2-2",
   "level": "2",
-  "url": "InstructorGuide-7.html#lms-d2l-setup-3-2-2-2-2",
+  "url": "managing-your-course.html#lms-d2l-setup-3-2-2-2-2",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -228,7 +219,7 @@ var ptx_lunr_docs = [
 {
   "id": "lms-d2l-setup-3-2-2-6-2",
   "level": "2",
-  "url": "InstructorGuide-7.html#lms-d2l-setup-3-2-2-6-2",
+  "url": "managing-your-course.html#lms-d2l-setup-3-2-2-6-2",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -237,7 +228,7 @@ var ptx_lunr_docs = [
 {
   "id": "lms-d2l-setup-3-2-2-6-3",
   "level": "2",
-  "url": "InstructorGuide-7.html#lms-d2l-setup-3-2-2-6-3",
+  "url": "managing-your-course.html#lms-d2l-setup-3-2-2-6-3",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -246,7 +237,7 @@ var ptx_lunr_docs = [
 {
   "id": "lms-d2l-setup-3-3-1",
   "level": "2",
-  "url": "InstructorGuide-7.html#lms-d2l-setup-3-3-1",
+  "url": "managing-your-course.html#lms-d2l-setup-3-3-1",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -255,7 +246,7 @@ var ptx_lunr_docs = [
 {
   "id": "lms-d2l-setup-3-3-2-3-2",
   "level": "2",
-  "url": "InstructorGuide-7.html#lms-d2l-setup-3-3-2-3-2",
+  "url": "managing-your-course.html#lms-d2l-setup-3-3-2-3-2",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -264,16 +255,16 @@ var ptx_lunr_docs = [
 {
   "id": "lms-d2l-setup-3-3-2-5-2",
   "level": "2",
-  "url": "InstructorGuide-7.html#lms-d2l-setup-3-3-2-5-2",
+  "url": "managing-your-course.html#lms-d2l-setup-3-3-2-5-2",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "use link security settings "
 },
 {
-  "id": "InstructorGuide-8",
+  "id": "monitoring",
   "level": "1",
-  "url": "InstructorGuide-8.html",
+  "url": "monitoring.html",
   "type": "Chapter",
   "number": "5",
   "title": "Monitoring your Student’s Learning",
@@ -282,7 +273,7 @@ var ptx_lunr_docs = [
 {
   "id": "nav_to_ii_fig",
   "level": "2",
-  "url": "InstructorGuide-8.html#nav_to_ii_fig",
+  "url": "monitoring.html#nav_to_ii_fig",
   "type": "Figure",
   "number": "5.1.1",
   "title": "",
@@ -291,7 +282,7 @@ var ptx_lunr_docs = [
 {
   "id": "main_ii_fig",
   "level": "2",
-  "url": "InstructorGuide-8.html#main_ii_fig",
+  "url": "monitoring.html#main_ii_fig",
   "type": "Figure",
   "number": "5.1.2",
   "title": "",
@@ -300,7 +291,7 @@ var ptx_lunr_docs = [
 {
   "id": "activity_intro-6",
   "level": "2",
-  "url": "InstructorGuide-8.html#activity_intro-6",
+  "url": "monitoring.html#activity_intro-6",
   "type": "Figure",
   "number": "5.2.1",
   "title": "",
@@ -309,7 +300,7 @@ var ptx_lunr_docs = [
 {
   "id": "instructor-interface_chapter-progress-3",
   "level": "2",
-  "url": "InstructorGuide-8.html#instructor-interface_chapter-progress-3",
+  "url": "monitoring.html#instructor-interface_chapter-progress-3",
   "type": "Figure",
   "number": "5.2.2",
   "title": "",
@@ -318,7 +309,7 @@ var ptx_lunr_docs = [
 {
   "id": "instructor-interface_chapter-progress-6",
   "level": "2",
-  "url": "InstructorGuide-8.html#instructor-interface_chapter-progress-6",
+  "url": "monitoring.html#instructor-interface_chapter-progress-6",
   "type": "Figure",
   "number": "5.2.3",
   "title": "",
@@ -327,7 +318,7 @@ var ptx_lunr_docs = [
 {
   "id": "student_prog_fig",
   "level": "2",
-  "url": "InstructorGuide-8.html#student_prog_fig",
+  "url": "monitoring.html#student_prog_fig",
   "type": "Figure",
   "number": "5.2.4",
   "title": "",
@@ -336,7 +327,7 @@ var ptx_lunr_docs = [
 {
   "id": "view_mc_fig",
   "level": "2",
-  "url": "InstructorGuide-8.html#view_mc_fig",
+  "url": "monitoring.html#view_mc_fig",
   "type": "Figure",
   "number": "5.2.5",
   "title": "",
@@ -345,7 +336,7 @@ var ptx_lunr_docs = [
 {
   "id": "view_mc_restuls_fig",
   "level": "2",
-  "url": "InstructorGuide-8.html#view_mc_restuls_fig",
+  "url": "monitoring.html#view_mc_restuls_fig",
   "type": "Figure",
   "number": "5.2.6",
   "title": "",
@@ -354,7 +345,7 @@ var ptx_lunr_docs = [
 {
   "id": "agg_results_fig",
   "level": "2",
-  "url": "InstructorGuide-8.html#agg_results_fig",
+  "url": "monitoring.html#agg_results_fig",
   "type": "Figure",
   "number": "5.2.7",
   "title": "",
@@ -577,9 +568,9 @@ var ptx_lunr_docs = [
   "body": " The instructor interface for peer instruction   "
 },
 {
-  "id": "InstructorGuide-11",
+  "id": "writing-exercises",
   "level": "1",
-  "url": "InstructorGuide-11.html",
+  "url": "writing-exercises.html",
   "type": "Chapter",
   "number": "8",
   "title": "Writing your own Exercises",
@@ -588,7 +579,7 @@ var ptx_lunr_docs = [
 {
   "id": "sigcse_ex1",
   "level": "2",
-  "url": "InstructorGuide-11.html#sigcse_ex1",
+  "url": "writing-exercises.html#sigcse_ex1",
   "type": "Checkpoint",
   "number": "8.1.1",
   "title": "",
@@ -597,7 +588,7 @@ var ptx_lunr_docs = [
 {
   "id": "sigcse_ex2",
   "level": "2",
-  "url": "InstructorGuide-11.html#sigcse_ex2",
+  "url": "writing-exercises.html#sigcse_ex2",
   "type": "Checkpoint",
   "number": "8.1.2",
   "title": "",
@@ -606,7 +597,7 @@ var ptx_lunr_docs = [
 {
   "id": "sigcse_ex3",
   "level": "2",
-  "url": "InstructorGuide-11.html#sigcse_ex3",
+  "url": "writing-exercises.html#sigcse_ex3",
   "type": "Checkpoint",
   "number": "8.1.3",
   "title": "",
@@ -615,7 +606,7 @@ var ptx_lunr_docs = [
 {
   "id": "sigcse_ex4",
   "level": "2",
-  "url": "InstructorGuide-11.html#sigcse_ex4",
+  "url": "writing-exercises.html#sigcse_ex4",
   "type": "Checkpoint",
   "number": "8.1.4",
   "title": "",
@@ -624,7 +615,7 @@ var ptx_lunr_docs = [
 {
   "id": "stack_2",
   "level": "2",
-  "url": "InstructorGuide-11.html#stack_2",
+  "url": "writing-exercises.html#stack_2",
   "type": "Checkpoint",
   "number": "8.2.1",
   "title": "",
@@ -633,7 +624,7 @@ var ptx_lunr_docs = [
 {
   "id": "writing-exercises_id1",
   "level": "2",
-  "url": "InstructorGuide-11.html#writing-exercises_id1",
+  "url": "writing-exercises.html#writing-exercises_id1",
   "type": "Table",
   "number": "8.3.1",
   "title": "",
@@ -642,7 +633,7 @@ var ptx_lunr_docs = [
 {
   "id": "mt1dict1ex",
   "level": "2",
-  "url": "InstructorGuide-11.html#mt1dict1ex",
+  "url": "writing-exercises.html#mt1dict1ex",
   "type": "Checkpoint",
   "number": "8.3.2",
   "title": "",
@@ -651,7 +642,7 @@ var ptx_lunr_docs = [
 {
   "id": "2_swapex",
   "level": "2",
-  "url": "InstructorGuide-11.html#2_swapex",
+  "url": "writing-exercises.html#2_swapex",
   "type": "Checkpoint",
   "number": "8.3.3",
   "title": "",
@@ -660,7 +651,7 @@ var ptx_lunr_docs = [
 {
   "id": "writing-exercises_pro-tip-test-your-exercises-locally-2",
   "level": "2",
-  "url": "InstructorGuide-11.html#writing-exercises_pro-tip-test-your-exercises-locally-2",
+  "url": "writing-exercises.html#writing-exercises_pro-tip-test-your-exercises-locally-2",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -669,7 +660,7 @@ var ptx_lunr_docs = [
 {
   "id": "writing-exercises_add-your-own-question-5",
   "level": "2",
-  "url": "InstructorGuide-11.html#writing-exercises_add-your-own-question-5",
+  "url": "writing-exercises.html#writing-exercises_add-your-own-question-5",
   "type": "Warning",
   "number": "8.5.1",
   "title": "",
