@@ -2,6 +2,9 @@
     <title>Integrating with your LMS Using LTI 1.3</title>
     <subsection>
         <title>Introduction</title>
+        <warning>
+            <p>LTI 1.3 Integration is in limited testing and is only available on a special development server not intended for production use. If you are interested in testing it against your LMS, please reach out to ascholerChemeketa on the <url href="https://discord.com/channels/1013815439161315348/1023237792697954324" visual="Runestone Discord Server">Runestone Discord Server</url></p>
+        </warning>
         <note>
             <p>
                 Runestone provides two methods of LTI integration. LTI 1.1 and LTI 1.3.  LTI 1.3 is the newer standard and is more secure and more flexible.  However, it requires setup by an administrator of your Learning Management System (LMS). LTI 1.1 can be set up by an individual instructor without LMS admin support.
