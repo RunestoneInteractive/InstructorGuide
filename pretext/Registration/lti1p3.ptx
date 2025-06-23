@@ -2,15 +2,12 @@
     <title>Integrating with your LMS Using LTI 1.3</title>
     <subsection>
         <title>Introduction</title>
-        <warning>
-            <p>LTI 1.3 Integration is in limited testing and is only available on a special development server not intended for production use. If you are interested in testing it against your LMS, please reach out to ascholerChemeketa on the <url href="https://discord.com/channels/1013815439161315348/1023237792697954324" visual="Runestone Discord Server">Runestone Discord Server</url></p>
-        </warning>
         <note>
             <p>
                 Runestone provides two methods of LTI integration. LTI 1.1 and LTI 1.3.  LTI 1.3 is the newer standard and is more secure and more flexible.  However, it requires setup by an administrator of your Learning Management System (LMS). LTI 1.1 can be set up by an individual instructor without LMS admin support.
             </p>
             <p>
-                We recommend that you use LTI 1.3 if possible  If you are using LTI 1.3 you should follow the instructions in this section.  If you are using LTI 1.1 then follow the instructions in <xref ref="lti_integration"/>.
+                If you are using LTI 1.3 you should follow the instructions in this section.  If you are using LTI 1.1 then follow the instructions in <xref ref="lti_integration"/>.
             </p>
         </note>
         <p>
@@ -31,6 +28,11 @@
     </subsection>
     <subsection  xml:id="lti1p3-lmsadmin">
         <title>LTI1.3 Setup - LMS Administrator</title>
+
+        <p>
+            The following must be completed one time by an LMS administrator. Once complete, instructors can link Runestone textbooks to their courses without further assistance from the LMS administrator. If you have run into issues with the setup or have questions, please open an issue on the <url href="https://github.com/RunestoneInteractive/rs/issues">Runestone github page</url>. Specify <q>LTI 1.3 Integration</q> as the issue type. Make sure to include your contact information, the LMS platform you are using, the domain your LMS runs on, and any other relevant information.
+        </p>
+
         <p>
             Runestone supports the LTI Dynamic Registration protocol. This means you will just need to enter one URL into your LMS and the two systems will negotiate the rest of the details.  This registration URL is: <c>https://runestone.academy/admin/lti1p3/register</c>
         </p>
@@ -106,6 +108,10 @@
 
     <subsection  xml:id="lti1p3-instructor-setup">
         <title>LTI1.3 Setup - Instructor</title>
+
+        <warning>
+            <p>To use LTI 1.3 integration with a course, the domain of your LMS must be approved by a Runestone administrator. If your institution required Runestone to complete any paperwork as part of the setup of Runestone as an LTI 1.3 tool, this should already be complete. If your institution did not contact Runestone during setup, you will need to make a request for approval. You can do so <url href="https://github.com/RunestoneInteractive/rs/issues"> by making a new issue on the Runestone github page</url>. Select <term>Request for LTI 1.3 Approval</term> as the issue type and make sure to specify your contact information, and the domain your LMS runs on.</p>
+        </warning>
 
         <p>
             First make sure that you have a Runestone account. If you don't have one, you can create one at <url href="https://runestone.academy">Runestone Academy</url>. Create a Runestone course to link to your LMS course. You may also wish to set up assignments in Runestone at this point, although you can always link new ones later. Before you try to link your LMS to a course and/or assignments, you should make sure you are logged into Runestone and currently viewing the course you want to link to.
