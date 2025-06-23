@@ -58,10 +58,6 @@ window.addEventListener("DOMContentLoaded",function(event) {
        thetocbutton.addEventListener('click', () => toggletoc() );
 });
 
-window.addEventListener("DOMContentLoaded",function(event) {
-       scrollTocToActive();
-});
-
 /* jump to next page if reader tries to scroll past the bottom */
 // var hitbottom = false;
 // window.onscroll = function(ev) {
@@ -83,7 +79,7 @@ window.addEventListener("DOMContentLoaded",function(event) {
 
 
 //-----------------------------------------------------------------------------
-// Dynamic TOC logic 
+// Dynamic TOC logic
 //-----------------------------------------------------------------------------
 
 //item is assumed to be expander in toc-item
@@ -91,7 +87,7 @@ function toggleTOCItem(expander) {
     let listItem = expander.closest(".toc-item");
     listItem.classList.toggle("expanded");
     let expanded = listItem.classList.contains("expanded");
-    
+
     let itemType = getTOCItemType(listItem);
     if(expanded) {
         expander.title = "Close" + (itemType !== "" ? " " + itemType : "");
@@ -159,7 +155,8 @@ window.addEventListener("DOMContentLoaded", function(event) {
             expander.classList.add('toc-expander');
             expander.classList.add('toc-chevron-surround');
             expander.title = 'toc-expander';
-            expander.innerHTML = '<span class="icon material-symbols-outlined" aria-hidden="true">chevron_left</span>';
+            // content of span is set by CSS :before rule.
+            expander.innerHTML = '<span class="icon material-symbols-outlined" aria-hidden="true"></span>';
             tocItem.querySelector(".toc-title-box").append(expander);
             expander.addEventListener('click', () => {
                 toggleTOCItem(expander);
@@ -175,4 +172,9 @@ window.addEventListener("DOMContentLoaded", function(event) {
             }
         }
       }
+});
+
+// This needs to be after the TOC's geometry is settled
+window.addEventListener("DOMContentLoaded",function(event) {
+    scrollTocToActive();
 });
