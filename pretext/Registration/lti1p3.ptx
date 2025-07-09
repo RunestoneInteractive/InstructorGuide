@@ -145,7 +145,11 @@
             <p>
                 You will need the <term>Client ID</term> of the Runestone installation on your LMS. Ask your LMS administrator for this piece of information. Refer them to <xref ref="lti1p3-lmsadmin-canvas"/> for information on how to find this.</p>
             <p>
-                In your Canvas course, go to <term>Settings > Apps</term> and then click the <c>+ App</c> button. For the <term>Configuration Type</term>, choose <em>Client ID</em> and then type the <term>Client ID</term> given to you by the LMS admin.
+                In your Canvas course, go to <term>Settings > Apps</term> and look for <term>View App Configurations</term> and click on it:
+            </p>
+            <image source="Figures/canvas-lti1p3-access-apps.png" alt="Canvas View App Configurations" />
+            <p>
+                Then click on the <c>+ App</c> button. For the <term>Configuration Type</term>, choose <em>Client ID</em> and then type the <term>Client ID</term> given to you by the LMS admin.
             </p>
             <image source="Figures/canvas-lti1p3-instructor-clientid.jpg" alt="Canvas LTI 1.3 Client ID Entry" />
             <p>You should now see Runestone listed under the External apps</p>
