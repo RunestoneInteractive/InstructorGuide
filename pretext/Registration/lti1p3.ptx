@@ -29,20 +29,30 @@
     <subsection  xml:id="lti1p3-lmsadmin">
         <title>LTI1.3 Setup - LMS Administrator</title>
 
-        <p>
-            The following must be completed one time by an LMS administrator. Once complete, instructors can link Runestone textbooks to their courses without further assistance from the LMS administrator. If you have run into issues with the setup or have questions, please open an issue on the <url href="https://github.com/RunestoneInteractive/rs/issues">Runestone github page</url>. Specify <q>LTI 1.3 Integration</q> as the issue type. Make sure to include your contact information, the LMS platform you are using, the domain your LMS runs on, and any other relevant information.
-        </p>
+        <introduction>
+            <p>
+                The following must be completed one time by an LMS administrator. Once complete, instructors can link Runestone textbooks to their courses without further assistance from the LMS administrator. If you have run into issues with the setup or have questions, please open an issue on the <url href="https://github.com/RunestoneInteractive/rs/issues">Runestone github page</url>. Specify <q>LTI 1.3 Integration</q> as the issue type. Make sure to include your contact information, the LMS platform you are using, the domain your LMS runs on, and any other relevant information.
+            </p>
 
-        <p>
-            Runestone supports the LTI Dynamic Registration protocol. This means you will just need to enter one URL into your LMS and the two systems will negotiate the rest of the details.  This registration URL is: <c>https://runestone.academy/admin/lti1p3/register</c>
-        </p>
+            <p>
+                Runestone supports the LTI Dynamic Registration protocol. This means you will just need to enter one URL into your LMS and the two systems will negotiate the rest of the details:
+            </p>
 
-        <p>For Runestone to properly function, you will likely need to ensure specific settings in your LMS system. See the subsections below for details on particular platforms. Please note that user interfaces on LMS platforms change over time and the shown screenshots and described options may not perfectly match what you see.
-            <ul>
-                <li><xref ref="lti1p3-lmsadmin-canvas" text="title"/></li>
-                <li><xref ref="lti1p3-lmsadmin-moodle" text="title"/></li>
-            </ul>
-        </p>
+            <note xml:id="lti1p3-registration-url">
+                <title>Runestone LTI 1.3 Registration URL</title>
+                <program>https://runestone.academy/admin/lti1p3/register</program>
+            </note>
+
+            <p>
+                For Runestone to properly function, you will likely need to ensure specific settings in your LMS system. See the subsections below for details on particular platforms. Please note that user interfaces on LMS platforms change over time and the shown screenshots and described options may not perfectly match what you see.
+                <ul>
+                    <li><xref ref="lti1p3-lmsadmin-canvas" text="title"/></li>
+                    <li><xref ref="lti1p3-lmsadmin-moodle" text="title"/></li>
+                    <li><xref ref="lti1p3-lmsadmin-D2L" text="title"/></li>
+                </ul>
+                It is likely Runestone will work with other LMS platforms that support LTI 1.3, but we have not tested it with them. Refer to the notes below for platforms that have been tested for ideas on what kind of settings you might need to enable for Runestone to work properly.
+            </p>
+        </introduction>
 
         <subsubsection xml:id="lti1p3-lmsadmin-canvas">
             <title>LTI 1.3 Admin Setup - Canvas</title>
@@ -57,7 +67,7 @@
             <image source="Figures/canvas-lti1p3-settings.jpg" alt="Canvas LTI 1.3 Feature Options settings" />
 
             <p>
-                To register Runestone as an available app, go to <term>Site Admin > Apps > Manage</term> and select <term>Install a New App</term>. Select <c>1.3</c> as the LTI version, <c>Dynamic Registration</c> as the method, and use the the URL listed above. After pressing OK, you should get a confirmation message with a close button. Press that to continue to configure the App.
+                To register Runestone as an available app, go to <term>Site Admin > Apps > Manage</term> and select <term>Install a New App</term>. Select <c>1.3</c> as the LTI version, <c>Dynamic Registration</c> as the method, and use the the URL listed above (<xref ref="lti1p3-registration-url"/>). After pressing OK, you should get a confirmation message with a close button. Press that to continue to configure the App.
             </p>
             <p>
                 All the settings on the <term>Permissions</term> screen should be left on. (If you wish to configure Runestone to not share Personally Identifying Information about users, you will get a chance to do so in the next step.)
@@ -84,7 +94,7 @@
             <title>LTI 1.3 Admin Setup - Moodle</title>
 
             <p>
-                To register Runestone as an available app, go to <term>Site administration > Plugins > External tool > Manage tools</term>. Use the URL listed above as the <term>Tool URL</term> and press <tem>Add LTI Advantage</tem>. After pressing OK, you should get a confirmation message with a close button.
+                To register Runestone as an available app, go to <term>Site administration > Plugins > External tool > Manage tools</term>. Use the URL listed above (<xref ref="lti1p3-registration-url"/>) as the <term>Tool URL</term> and press <tem>Add LTI Advantage</tem>. After pressing OK, you should get a confirmation message with a close button.
             </p>
             <p>
                 Next, activate the app by Clicking <term>Activate</term> on its card in the Tools list.
@@ -103,6 +113,39 @@
             </p>
 
             <image source="Figures/canvas-lti1p3-anon.jpg" alt="Canvas LTI 1.3 Data Sharing Setting" />
+        </subsubsection>
+        
+        <subsubsection xml:id="lti1p3-lmsadmin-D2L">
+            <title>LTI 1.3 Admin Setup - D2L</title>
+            <p>
+                To add a new LTI 1.3 tool go to <term>Admin Tools > Manage Extensibility</term>. Then select the <term>LTI Advantage</term> tab and click on <term>Register Tool</term>.
+            </p>
+
+            <image source="Figures/d2l-lti1p3-settings.png" alt="D2L LTI 1.3 Registration" />
+
+            <p>
+                Once Runestone is registered, under <term>Manage Extensibility</term> ensure that the settings look something like the following. In particular, make sure that <term>Send Institution Role</term> is enabled.
+            </p>
+            
+            <image source="Figures/d2l-lti1p3-manage.png" alt="D2L LTI 1.3 Management" />
+
+            <p>
+                The deployment of Runestone should include the settings below. In particular, make sure that the following settings are enabled:
+                <ul>
+                    <li><term>Org Unit Information</term> under security settings</li>
+                    <li><term>Open as External Resource</term>, <term>Grades created by LTI will be included in Final Grade</term>, and <term>Auto Create Grade Items</term> under configuration settings</li>
+                </ul>
+                For an anonymous deployment, you can disable the name and email fields.
+            </p>
+
+            <image source="Figures/d2l-lti1p3-deployment.png" alt="D2L LTI 1.3 Deployment" />
+
+            <p>
+                Finally, configure a <term>Deep Linking Quicklink</term> type <term>Link</term> for the Runestone deployment. Make sure the <term>URL</term> points to <c>https://runestone.academy/deep_linking</c>.
+            </p>
+
+            <image source="Figures/d2l-lti1p3-quicklink.png" alt="D2L LTI 1.3 Quicklink" />
+
         </subsubsection>
     </subsection>
 
@@ -143,7 +186,7 @@
         <subsubsection  xml:id="lti1p3-lms-instructor-setup-canvas">
             <title>LTI 1.3 Instructor Setup - Canvas</title>
             <p>
-                You will need the <term>Client ID</term> of the Runestone installation on your LMS. Ask your LMS administrator for this piece of information. Refer them to <xref ref="lti1p3-lmsadmin-canvas"/> for information on how to find this.</p>
+                You will need the <term>Client ID</term> of the Runestone installation on your LMS. Ask your LMS administrator for this piece of information. Refer them to <xref ref="lti1p3-lmsadmin-canvas" text="title"/> for information on how to find this.</p>
             <p>
                 In your Canvas course, go to <term>Settings > Apps</term> and look for <term>View App Configurations</term> and click on it:
             </p>
