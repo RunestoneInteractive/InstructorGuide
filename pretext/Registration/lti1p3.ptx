@@ -180,6 +180,7 @@
             <ul>
                 <li><xref ref="lti1p3-lms-instructor-setup-canvas" text="title"/></li>
                 <li><xref ref="lti1p3-lms-instructor-setup-moodle" text="title"/></li>
+                <li><xref ref="lti1p3-lms-instructor-setup-D2L" text="title"/></li>
             </ul>
         </p>
 
@@ -203,6 +204,25 @@
             <p>If your LMS administrator has set up Runestone, you should see it displayed under <term>More > LTI External Tools</term> in your course settings. If you do not see it, ask your LMS admin to confirm that Runestone was set up to display as a preconfigured tool. You just need to toggle the <term>Show in activity chooser</term> to the <c>on</c> state.</p>
             <image source="Figures/moodle-lti1p3-instructor-show.jpg" alt="Canvas LTI 1.3 Client ID Entry" />
         </subsubsection>
+
+        <subsubsection xml:id="lti1p3-lms-instructor-setup-D2L">
+           <title>LTI 1.3 Instructor Setup - D2L</title>
+           <p>Once your LMS administrator has set up Runestone LTI 1.3 support, 
+           you'll need to make sure that your course has access to it. There are 
+           2 places that you might see a way to create links. The first is in the 
+           content area under <term>Existing Activities > Runestone Links</term>.
+
+           <image source="Figures/d2l-lti1p3-instructor-links.png" alt="D2L LTI 1.3 Quicklink button" />
+
+           The other is in the html page editor under the <term>Insert Stuff</term> icon.
+           There would be a <term>Runestone Insert Stuff</term> item. Either of those
+           will bring you to the Content Linking page described below.</p>
+            <image source="Figures/d2l-lti1p3-instructor-stuff.png" 
+            alt="D2L LTI 1.3 Insert Stuff button" />
+
+           <p>If you don't see either of those links. Please, contact your
+           LMS administrator and ask them to add the links for your course.</p>
+           </subsubsection>
     </subsection>
 
     <subsection  xml:id="lti1p3-instructor-use">
@@ -289,6 +309,43 @@
             <title>LTI 1.3 Moodle Notes</title>
             <p>To add content items, use one of the <term>Add an activity or resource</term> links in your course. Select <term>Runestone</term> from the available tools. You will be taken to a form adding one activity, but you can still add as many Runestone links as you like. Click the <term>Select content</term> button. When you finish selecting content, if you selected just one new RS item, you will return to the form to finish editing that activity and save it in your LMS. If you selected multiple items, you will return to a page that lists the items being added. If your actions do not add any new content (you are remapping copied assignments), you will be returned to a blank form but Runestone will have updated your selected items.</p>
             <image source="Figures/moodle-lti1p3-selectcontent-use.jpg" alt="Adding Runestone items from the Moodle Select content area" />
+        </subsubsection>
+        <subsubsection>
+            <title>LTI 1.3 D2L Notes</title>
+            <p>To add <term>Content</term> items, use the <term>Existing Activities > 
+            Runestone Links</term> button in the <term>Content</term> area of your course.
+            </p>
+            <image source="Figures/d2l-lti1p3-content-select.png" 
+            alt="Adding Runestone items using the D2L Existing Activities button" />
+            <p>To add a link to an HTML page, use the <term>Insert Quicklink > 
+            Runestone Links</term> button when your cursor is where you want
+            the link to be on the page. Then select a single link to add.
+            </p>
+            <image source="Figures/d2l-lti1p3-select-quicklink.png" 
+            alt="Adding Runestone links from the D2L Quicklinks button" />
+            <p>To add a link to an HTML page, you could alternatively 
+            use the <term>Insert Stuff > 
+            Runestone Insert Stuff</term> button when your cursor is where you want
+            the link to be on the page. Then select a single link to add.
+            </p>
+            <image source="Figures/d2l-lti1p3-select-insertstuff.png" 
+            alt="Adding Runestone links from the D2L Insert Stuff button" />
+
+            <p>Note: You will only be able to make one link at a time.
+           If there are multiple assignments that you can link, then 
+           you'll need to either leave the other assignments as they were or set 
+           them as <term>No Action</term> before clicking <term>Submit Form</term>
+           so that the system only tries to make
+           one link. (Otherwise it will fail.) 
+           </p>
+           <image source="Figures/d2l-lti1p3-note-no-action.png" 
+            alt="D2L LTI 1.3 No Action setting" />
+           <p>Note: your browser needs to allow cross-site tracking if you
+           want to add a link to a page. If you are creating a link from the 
+           <term>Content</term> tab, then you can have cross-site tracking off, 
+           but you'll navigate to another page to make the link, and you'll
+           need to verify that the link was created by going back to
+           D2L. </p>
         </subsubsection>
     </subsection>
 </section>
