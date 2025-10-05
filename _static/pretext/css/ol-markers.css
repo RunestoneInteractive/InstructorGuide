@@ -1,1 +1,0 @@
-ol.ol-marker-1 > li::marker { content: ""counter(list-item,decimal)" "; }
