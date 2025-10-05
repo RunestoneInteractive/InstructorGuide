@@ -84,13 +84,13 @@ window.MathJax = {
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
 <link href="_static/pretext/css/pretext.css" rel="stylesheet" type="text/css">
 <link href="_static/pretext/css/pretext_add_on.css" rel="stylesheet" type="text/css">
-<link href="_static/pretext/css/shell_crc.css" rel="stylesheet" type="text/css">
-<link href="_static/pretext/css/banner_crc.css" rel="stylesheet" type="text/css">
-<link href="_static/pretext/css/navbar_crc.css" rel="stylesheet" type="text/css">
-<link href="_static/pretext/css/toc_crc.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/shell_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/banner_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/navbar_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/toc_default.css" rel="stylesheet" type="text/css">
 <link href="_static/pretext/css/knowls_default.css" rel="stylesheet" type="text/css">
-<link href="_static/pretext/css/style_oscarlevin.css" rel="stylesheet" type="text/css">
-<link href="_static/pretext/css/colors_blue_red.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/style_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/colors_default.css" rel="stylesheet" type="text/css">
 <link href="_static/pretext/css/setcolors.css" rel="stylesheet" type="text/css">
 <!--** eBookCongig is necessary to configure interactive       **-->
 <!--** Runestone components to run locally in reader's browser **-->
@@ -151,6 +151,9 @@ eBookConfig.enable_chatcodes =  false;
 #lms-d2l-setup-3 { counter-set: lms-d2l-setup-3 0; }
 #lms-d2l-setup-3 > li::marker { content: ""counter(lms-d2l-setup-3,decimal)"."; }
 #lms-d2l-setup-3 > li { counter-increment: lms-d2l-setup-3; }
+#lti1p3_copy-2-1 { counter-set: lti1p3_copy-2-1 0; }
+#lti1p3_copy-2-1 > li::marker { content: ""counter(lti1p3_copy-2-1,decimal)"."; }
+#lti1p3_copy-2-1 > li { counter-increment: lti1p3_copy-2-1; }
 #add_instructor-2-1 { counter-set: add_instructor-2-1 0; }
 #add_instructor-2-1 > li::marker { content: ""counter(add_instructor-2-1,decimal)"."; }
 #add_instructor-2-1 > li { counter-increment: add_instructor-2-1; }
@@ -271,7 +274,7 @@ eBookConfig.enable_chatcodes =  false;
 </ul>
 </li>
 <li class="toc-item toc-section">
-<div class="toc-title-box"><a href="managing-your-course.html#lti_integration" class="internal"><span class="codenumber">4.3</span> <span class="title">Integrating with your LMS</span></a></div>
+<div class="toc-title-box"><a href="managing-your-course.html#lti_integration" class="internal"><span class="codenumber">4.3</span> <span class="title">Integrating with your LMS Using LTI 1.1</span></a></div>
 <ul class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="managing-your-course.html#lti_integration-2" class="internal"><span class="codenumber">4.3.1</span> <span class="title">Introduction</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="managing-your-course.html#lti_integration-3" class="internal"><span class="codenumber">4.3.2</span> <span class="title">Phase 1 (All LMS platforms)</span></a></div></li>
@@ -285,8 +288,42 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 </ul>
 </li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="managing-your-course.html#add_instructor" class="internal"><span class="codenumber">4.4</span> <span class="title">Add and Instructor or TA</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="managing-your-course.html#course_settings" class="internal"><span class="codenumber">4.5</span> <span class="title">Course Settings</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="managing-your-course.html#lti1p3_integration" class="internal"><span class="codenumber">4.4</span> <span class="title">Integrating with your LMS Using LTI 1.3</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="managing-your-course.html#lti1p3_integration-2" class="internal"><span class="codenumber">4.4.1</span> <span class="title">Introduction</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="managing-your-course.html#lti1p3_integration-3" class="internal"><span class="codenumber">4.4.2</span> <span class="title">LTI1.3 Integration Basic Information</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="managing-your-course.html#lti1p3-lmsadmin" class="internal"><span class="codenumber">4.4.3</span> <span class="title">LTI1.3 Setup - LMS Administrator</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="managing-your-course.html#lti1p3-lmsadmin-canvas" class="internal"><span class="title">LTI 1.3 Admin Setup - Canvas</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="managing-your-course.html#lti1p3-lmsadmin-moodle" class="internal"><span class="title">LTI 1.3 Admin Setup - Moodle</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="managing-your-course.html#lti1p3-lmsadmin-D2L" class="internal"><span class="title">LTI 1.3 Admin Setup - D2L</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="managing-your-course.html#lti1p3-instructor-setup" class="internal"><span class="codenumber">4.4.4</span> <span class="title">LTI1.3 Setup - Instructor</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="managing-your-course.html#lti1p3-lms-instructor-setup-canvas" class="internal"><span class="title">LTI 1.3 Instructor Setup - Canvas</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="managing-your-course.html#lti1p3-lms-instructor-setup-moodle" class="internal"><span class="title">LTI 1.3 Instructor Setup - Moodle</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="managing-your-course.html#lti1p3-lms-instructor-setup-D2L" class="internal"><span class="title">LTI 1.3 Instructor Setup - D2L</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="managing-your-course.html#lti1p3-instructor-use" class="internal"><span class="codenumber">4.4.5</span> <span class="title">LTI1.3 Instructional Use</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="managing-your-course.html#lti1p3-instructor-use-2" class="internal"><span class="title">Content Linking</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="managing-your-course.html#lti1p3-instructor-use-3" class="internal"><span class="title">LTI1.3 Grade Reporting</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="managing-your-course.html#lti1p3_copy" class="internal"><span class="title">Copying an LTI1.3 Course</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="managing-your-course.html#lti1p3-instructor-use-5" class="internal"><span class="title">LTI 1.3 Canvas Notes</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="managing-your-course.html#lti1p3-instructor-use-6" class="internal"><span class="title">LTI 1.3 Moodle Notes</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="managing-your-course.html#lti1p3-instructor-use-7" class="internal"><span class="title">LTI 1.3 D2L Notes</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="managing-your-course.html#add_instructor" class="internal"><span class="codenumber">4.5</span> <span class="title">Add and Instructor or TA</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="managing-your-course.html#course_settings" class="internal"><span class="codenumber">4.6</span> <span class="title">Course Settings</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-chapter">
@@ -519,13 +556,17 @@ hogwarts-3,dumbledore+hogwarts1@gmail.com,F2,L2,owls4all,potions_fall19
 <li id="registration_what-other-data-does-runestone-collect-7-1-2"><div class="para" id="registration_what-other-data-does-runestone-collect-7-1-2-1">For you the timeline can be an invaluable tool for talking through an assignment with a student. You can see their progress and if they make a wrong turn you can usually see that in the timeline and talk to them about why they decided to a particular direction.</div></li>
 <li id="registration_what-other-data-does-runestone-collect-7-1-3"><div class="para" id="registration_what-other-data-does-runestone-collect-7-1-3-1">The timeline is also available in the scratch activecode which some students like to use as a notebook for the course.</div></li>
 </ul></div></section></section><section class="section" id="lti_integration"><h3 class="heading hide-type">
-<span class="type">Section</span><span class="space"> </span><span class="codenumber">4.3</span><span class="space"> </span><span class="title">Integrating with your LMS</span>
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">4.3</span><span class="space"> </span><span class="title">Integrating with your LMS Using LTI 1.1</span>
 </h3>
 <section class="subsection" id="lti_integration-2"><h4 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">4.3.1</span><span class="space"> </span><span class="title">Introduction</span>
 </h4>
-<div class="para" id="lti_integration-2-2">Runestone provides a rudimentary LTI integration using LTI 1.1. So far we have made this work very successfully with Canvas, Moodle, and Brightspace D2L. Others may or may not work. I call this a community supported feature of Runestone because LTI is a huge pain to work with, and it is very difficult to get access to and test against whatever LMS your school has chosen.</div>
-<div class="para" id="lti_integration-2-3">When you use LTI your students do NOT and <em class="emphasis">should not register on Runestone Academy</em>, the LTI interface registers your student with Runestone the first time they access it from your LMS. In addition, <em class="emphasis">Instructors need to use one of the LTI links to your book in order for grades to transfer.</em>
+<article class="note remark-like" id="lti_integration-2-2"><h5 class="heading">
+<span class="type">Note</span><span class="space"> </span><span class="codenumber">4.3.1</span><span class="period">.</span>
+</h5>
+<div class="para" id="lti_integration-2-2-1">Runestone provides two methods of LTI integration. LTI 1.1 and LTI 1.3.  LTI 1.3 is the newer standard and is more secure and more flexible.  However, it requires setup by an administrator of your Learning Management System (LMS). LTI 1.1 can be set up by an individual instructor without LMS admin support. If you are using an LMS that your institution administers, we recommend you explore using LTI 1.3. If you are using something like “Canvas Free-for-Teacher” that does not provide administrator access, you will need to use LTI 1.1.</div>
+<div class="para" id="lti_integration-2-2-2">If you wish to use LTI 1.3, skip to the instructions in <a href="managing-your-course.html#lti1p3_integration" class="internal" title="Section 4.4: Integrating with your LMS Using LTI 1.3">Section 4.4</a>. If you are using LTI 1.1 then follow the instructions in this section.</div></article><div class="para" id="lti_integration-2-3">Runestone provides a rudimentary LTI integration using LTI 1.1. So far we have made this work very successfully with Canvas, Moodle, and Brightspace D2L. Others may or may not work. I call this a community supported feature of Runestone because LTI is a huge pain to work with, and it is very difficult to get access to and test against whatever LMS your school has chosen. Community support is available on the <code class="code-inline tex2jax_ignore">#lti_community_support</code> channel of the <a class="external" href="https://discord.com/channels/1013815439161315348/1023237792697954324" target="_blank">Runestone Discord Server</a><details class="ptx-footnote" aria-live="polite" id="lti_integration-2-3-3"><summary class="ptx-footnote__number" title="Footnote 4.3.1"><sup> 1 </sup></summary><div class="ptx-footnote__contents" id="lti_integration-2-3-3"><code class="code-inline tex2jax_ignore">Runestone Discord Server</code></div></details>.</div>
+<div class="para" id="lti_integration-2-4">When you use LTI your students do NOT and <em class="emphasis">should not register on Runestone Academy</em>, the LTI interface registers your student with Runestone the first time they access it from your LMS. In addition, <em class="emphasis">Instructors need to use one of the LTI links to your book in order for grades to transfer.</em>
 </div></section><section class="subsection" id="lti_integration-3"><h4 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">4.3.2</span><span class="space"> </span><span class="title">Phase 1 (All LMS platforms)</span>
 </h4>
@@ -681,8 +722,206 @@ hogwarts-3,dumbledore+hogwarts1@gmail.com,F2,L2,owls4all,potions_fall19
 </div></li>
 <li id="lms-d2l-setup-3-7"><div class="para" id="p-derived-lms-d2l-setup-3-7">When the assignment is due, go to Runestone <em class="emphasis">directly from your D2L course by using an assignment link</em>. Otherwise, grade reporting <em class="emphasis">won’t work</em>.</div></li>
 <li id="lms-d2l-setup-3-8"><div class="para" id="p-derived-lms-d2l-setup-3-8">In the grading tab of the instructor interface click the <dfn class="terminology">Release Grades</dfn> button. Doing this will push all grades to D2L.  (If you need to regrade later, you can always click the “Hide Grades” button, and then do “Release Grades” again.)</div></li>
-</ol></section></section></section><section class="section" id="add_instructor"><h3 class="heading hide-type">
-<span class="type">Section</span><span class="space"> </span><span class="codenumber">4.4</span><span class="space"> </span><span class="title">Add and Instructor or TA</span>
+</ol></section></section></section><section class="section" id="lti1p3_integration"><h3 class="heading hide-type">
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">4.4</span><span class="space"> </span><span class="title">Integrating with your LMS Using LTI 1.3</span>
+</h3>
+<section class="subsection" id="lti1p3_integration-2"><h4 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">4.4.1</span><span class="space"> </span><span class="title">Introduction</span>
+</h4>
+<article class="note remark-like" id="lti1p3_integration-2-2"><h5 class="heading">
+<span class="type">Note</span><span class="space"> </span><span class="codenumber">4.4.1</span><span class="period">.</span>
+</h5>
+<div class="para" id="lti1p3_integration-2-2-1">Runestone provides two methods of LTI integration. LTI 1.1 and LTI 1.3.  LTI 1.3 is the newer standard and is more secure and more flexible.  However, it requires setup by an administrator of your Learning Management System (LMS). LTI 1.1 can be set up by an individual instructor without LMS admin support.</div>
+<div class="para" id="lti1p3_integration-2-2-2">If you are using LTI 1.3 you should follow the instructions in this section.  If you are using LTI 1.1 then follow the instructions in <a href="managing-your-course.html#lti_integration" class="internal" title="Section 4.3: Integrating with your LMS Using LTI 1.1">Section 4.3</a>.</div></article><div class="para" id="lti1p3_integration-2-3">Runestone’s LTI 1.3 integration has been tested against Canvas and Moodle. Others LMS systems that support LTI 1.3 may or may not work. We welcome reports of successful use with other LMS systems and code pull requests to add any necessary support for other LMS systems. Community driven support is available on the <code class="code-inline tex2jax_ignore">#lti_community_support</code> channel of the <a class="external" href="https://discord.com/channels/1013815439161315348/1023237792697954324" target="_blank">Runestone Discord Server</a><details class="ptx-footnote" aria-live="polite" id="lti1p3_integration-2-3-3"><summary class="ptx-footnote__number" title="Footnote 4.4.1"><sup> 1 </sup></summary><div class="ptx-footnote__contents" id="lti1p3_integration-2-3-3"><code class="code-inline tex2jax_ignore">Runestone Discord Server</code></div></details>.</div></section><section class="subsection" id="lti1p3_integration-3"><h4 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">4.4.2</span><span class="space"> </span><span class="title">LTI1.3 Integration Basic Information</span>
+</h4>
+<div class="para" id="lti1p3_integration-3-2">LTI1.3 integration can include syncing user’s names and emails from the LMS platform or be done anonymously. The <a class="external" href="https://runestone.academy/runestone/default/privacy.html" target="_blank">Runestone Privacy Policy</a><details class="ptx-footnote" aria-live="polite" id="lti1p3_integration-3-2-2"><summary class="ptx-footnote__number" title="Footnote 4.4.2"><sup> 2 </sup></summary><div class="ptx-footnote__contents" id="lti1p3_integration-3-2-2"><code class="code-inline tex2jax_ignore">runestone.academy/runestone/default/privacy.html</code></div></details> specifies how any synchronized data is used and protected.</div>
+<div class="para" id="lti1p3_integration-3-3">Integration must be setup one time by someone with administrator authority on your LMS. Once setup, Runestone can be added to a course by any instructor. (Depending on the LMS, instructors may need a piece of information from the LMS admin to do so.)</div>
+<div class="para" id="lti1p3_integration-3-4">When using LTI integration between Runestone and an LMS, students should <em class="emphasis">NOT</em> sign up for an account on Runestone. They should only access the Runestone book through the LMS, which will automatically create an account for them. Instructors will need to create an account with Runestone to set up their course and to link to the LMS.</div></section><section class="subsection" id="lti1p3-lmsadmin"><h4 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">4.4.3</span><span class="space"> </span><span class="title">LTI1.3 Setup - LMS Administrator</span>
+</h4>
+<section class="introduction" id="lti1p3-lmsadmin-2"><div class="para" id="lti1p3-lmsadmin-2-1">The following must be completed one time by an LMS administrator. Once complete, instructors can link Runestone textbooks to their courses without further assistance from the LMS administrator. If you have run into issues with the setup or have questions, please open an issue on the <a class="external" href="https://github.com/RunestoneInteractive/rs/issues" target="_blank">Runestone github page</a><details class="ptx-footnote" aria-live="polite" id="lti1p3-lmsadmin-2-1-2"><summary class="ptx-footnote__number" title="Footnote 4.4.3"><sup> 3 </sup></summary><div class="ptx-footnote__contents" id="lti1p3-lmsadmin-2-1-2"><code class="code-inline tex2jax_ignore">github.com/RunestoneInteractive/rs/issues</code></div></details>. Specify “LTI 1.3 Integration” as the issue type. Make sure to include your contact information, the LMS platform you are using, the domain your LMS runs on, and any other relevant information.</div>
+<div class="para" id="lti1p3-lmsadmin-2-2">Runestone supports the LTI Dynamic Registration protocol. This means you will just need to enter one URL into your LMS and the two systems will negotiate the rest of the details:</div>
+<article class="note remark-like" id="lti1p3-registration-url"><h5 class="heading">
+<span class="type">Note</span><span class="space"> </span><span class="codenumber">4.4.2</span><span class="period">.</span><span class="space"> </span><span class="title">Runestone LTI 1.3 Registration URL.</span>
+</h5>
+<div class="code-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><pre class="program"><code class="language-none">
+</code></pre></div></article><div class="para logical" id="lti1p3-lmsadmin-2-4">
+<div class="para">For Runestone to properly function, you will likely need to ensure specific settings in your LMS system. See the subsections below for details on particular platforms. Please note that user interfaces on LMS platforms change over time and the shown screenshots and described options may not perfectly match what you see.</div>
+<ul class="disc" id="lti1p3-lmsadmin-2-4-1">
+<li id="lti1p3-lmsadmin-2-4-1-1"><div class="para" id="p-derived-lti1p3-lmsadmin-2-4-1-1"><a href="managing-your-course.html#lti1p3-lmsadmin-canvas" class="internal" title="Subsubsection: LTI 1.3 Admin Setup - Canvas">LTI 1.3 Admin Setup - Canvas</a></div></li>
+<li id="lti1p3-lmsadmin-2-4-1-2"><div class="para" id="p-derived-lti1p3-lmsadmin-2-4-1-2"><a href="managing-your-course.html#lti1p3-lmsadmin-moodle" class="internal" title="Subsubsection: LTI 1.3 Admin Setup - Moodle">LTI 1.3 Admin Setup - Moodle</a></div></li>
+<li id="lti1p3-lmsadmin-2-4-1-3"><div class="para" id="p-derived-lti1p3-lmsadmin-2-4-1-3"><a href="managing-your-course.html#lti1p3-lmsadmin-D2L" class="internal" title="Subsubsection: LTI 1.3 Admin Setup - D2L">LTI 1.3 Admin Setup - D2L</a></div></li>
+</ul>
+<div class="para">It is likely Runestone will work with other LMS platforms that support LTI 1.3, but we have not tested it with them. Refer to the notes below for platforms that have been tested for ideas on what kind of settings you might need to enable for Runestone to work properly.</div>
+</div></section><section class="subsubsection" id="lti1p3-lmsadmin-canvas"><h5 class="heading hide-type">
+<span class="type">Subsubsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">LTI 1.3 Admin Setup - Canvas</span>
+</h5>
+<div class="para logical" id="lti1p3-lmsadmin-canvas-2">
+<div class="para">Global settings for LTI features are available in <dfn class="terminology">Site Admin &gt; Settings &gt; Feature Options</dfn>. Runestone relies on being able to create Deep Linking Line Items. To ensure proper functioning, check for the following settings. If they are available (options available there will depend on Canvas version) ensure that they are enabled:</div>
+<ul class="disc" id="lti1p3-lmsadmin-canvas-2-2">
+<li id="lti1p3-lmsadmin-canvas-2-2-1"><div class="para" id="p-derived-lti1p3-lmsadmin-canvas-2-2-1">Deep Linking for Module Index Menu</div></li>
+<li id="lti1p3-lmsadmin-canvas-2-2-2"><div class="para" id="p-derived-lti1p3-lmsadmin-canvas-2-2-2">Deep Linking Line Items</div></li>
+</ul>
+</div>
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/Figures/canvas-lti1p3-settings.jpg" class="contained"></div>
+<div class="para" id="lti1p3-lmsadmin-canvas-4">To register Runestone as an available app, go to <dfn class="terminology">Site Admin &gt; Apps &gt; Manage</dfn> and select <dfn class="terminology">Install a New App</dfn>. Select <code class="code-inline tex2jax_ignore">1.3</code> as the LTI version, <code class="code-inline tex2jax_ignore">Dynamic Registration</code> as the method, and use the the URL listed above (<a href="managing-your-course.html#lti1p3-registration-url" class="xref" data-knowl="./knowl/xref/lti1p3-registration-url.html" data-reveal-label="Reveal" data-close-label="Close" title="Note 4.4.2: Runestone LTI 1.3 Registration URL">Note 4.4.2</a>). After pressing OK, you should get a confirmation message with a close button. Press that to continue to configure the App.</div>
+<div class="para" id="lti1p3-lmsadmin-canvas-5">All the settings on the <dfn class="terminology">Permissions</dfn> screen should be left on. (If you wish to configure Runestone to not share Personally Identifying Information about users, you will get a chance to do so in the next step.)</div>
+<div class="para" id="lti1p3-lmsadmin-canvas-6">On the <dfn class="terminology">Data Sharing</dfn> screen, leave the <dfn class="terminology">User Data Shared With This App</dfn> setting as the default (<code class="code-inline tex2jax_ignore">All user data</code>) to share user emails and names with Runestone. If you wish to disable doing so, you can change this to <code class="code-inline tex2jax_ignore">None</code>.</div>
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/Figures/canvas-lti1p3-anon.jpg" class="contained"></div>
+<div class="para" id="lti1p3-lmsadmin-canvas-8">From this point on, you should leave all settings as default - they just control what <dfn class="terminology">Runestone</dfn> is titled within the LMS and what links are available to make use of it.</div>
+<div class="para" id="lti1p3-lmsadmin-canvas-9">For an instructor to add Runestone to their course, they will need to know the <dfn class="terminology">ClientID</dfn> that was assigned to Runestone. This can be found at <dfn class="terminology">Site Admin &gt; Apps &gt; Manage</dfn>. Click the three dots next to the Runestone app and select <dfn class="terminology">Copy Client ID</dfn>.</div>
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/Figures/canvas-lti1p3-clientid.jpg" class="contained"></div></section><section class="subsubsection" id="lti1p3-lmsadmin-moodle"><h5 class="heading hide-type">
+<span class="type">Subsubsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">LTI 1.3 Admin Setup - Moodle</span>
+</h5>
+<div class="para" id="lti1p3-lmsadmin-moodle-2">To register Runestone as an available app, go to <dfn class="terminology">Site administration &gt; Plugins &gt; External tool &gt; Manage tools</dfn>. Use the URL listed above (<a href="managing-your-course.html#lti1p3-registration-url" class="xref" data-knowl="./knowl/xref/lti1p3-registration-url.html" data-reveal-label="Reveal" data-close-label="Close" title="Note 4.4.2: Runestone LTI 1.3 Registration URL">Note 4.4.2</a>) as the <dfn class="terminology">Tool URL</dfn> and press Add LTI Advantage. After pressing OK, you should get a confirmation message with a close button.</div>
+<div class="para" id="lti1p3-lmsadmin-moodle-3">Next, activate the app by Clicking <dfn class="terminology">Activate</dfn> on its card in the Tools list.</div>
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/Figures/moodle-lti1p3-activate.jpg" class="contained"></div>
+<div class="para logical" id="lti1p3-lmsadmin-moodle-5">
+<div class="para">Finally, click on the gear icon on the Runestone card in the tools list to configure the app. Under <dfn class="terminology">Tool Settings</dfn> sure to confirm these two settings:</div>
+<ul class="disc" id="lti1p3-lmsadmin-moodle-5-2">
+<li id="lti1p3-lmsadmin-moodle-5-2-1"><div class="para" id="p-derived-lti1p3-lmsadmin-moodle-5-2-1">
+<dfn class="terminology">Tool configuration usage</dfn> is set to <code class="code-inline tex2jax_ignore">Show as preconfigured tool...</code>
+</div></li>
+<li id="lti1p3-lmsadmin-moodle-5-2-2"><div class="para" id="p-derived-lti1p3-lmsadmin-moodle-5-2-2">
+<dfn class="terminology">Default launch container</dfn> is set to <code class="code-inline tex2jax_ignore">New Window</code> (Runestone will display in embedded iframes but is much harder to read and navigate in that format.)</div></li>
+</ul>
+<div class="para">Then, under <dfn class="terminology">Privacy</dfn>, you can choose to share user data with Runestone or not. If you wish to disable sharing user data, you can change <dfn class="terminology">Share launcher’s name with tool</dfn> and <dfn class="terminology">Share launcher’s email with tool</dfn> <code class="code-inline tex2jax_ignore">Never</code>. Make sure to leave <dfn class="terminology">Accept grades from the tool</dfn> set to the default or to <code class="code-inline tex2jax_ignore">Always</code>.</div>
+</div>
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/Figures/canvas-lti1p3-anon.jpg" class="contained"></div></section><section class="subsubsection" id="lti1p3-lmsadmin-D2L"><h5 class="heading hide-type">
+<span class="type">Subsubsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">LTI 1.3 Admin Setup - D2L</span>
+</h5>
+<div class="para" id="lti1p3-lmsadmin-D2L-2">To add a new LTI 1.3 tool go to <dfn class="terminology">Admin Tools &gt; Manage Extensibility</dfn>. Then select the <dfn class="terminology">LTI Advantage</dfn> tab and click on <dfn class="terminology">Register Tool</dfn>.</div>
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/Figures/d2l-lti1p3-settings.png" class="contained"></div>
+<div class="para" id="lti1p3-lmsadmin-D2L-4">Once Runestone is registered, under <dfn class="terminology">Manage Extensibility</dfn> ensure that the settings look something like the following. In particular, make sure that <dfn class="terminology">Send Institution Role</dfn> is enabled.</div>
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/Figures/d2l-lti1p3-manage.png" class="contained"></div>
+<div class="para logical" id="lti1p3-lmsadmin-D2L-6">
+<div class="para">The deployment of Runestone should include the settings below. In particular, make sure that the following settings are enabled:</div>
+<ul class="disc" id="lti1p3-lmsadmin-D2L-6-1">
+<li id="lti1p3-lmsadmin-D2L-6-1-1"><div class="para" id="p-derived-lti1p3-lmsadmin-D2L-6-1-1">
+<dfn class="terminology">Org Unit Information</dfn> under security settings</div></li>
+<li id="lti1p3-lmsadmin-D2L-6-1-2"><div class="para" id="p-derived-lti1p3-lmsadmin-D2L-6-1-2">
+<dfn class="terminology">Open as External Resource</dfn>, <dfn class="terminology">Grades created by LTI will be included in Final Grade</dfn>, and <dfn class="terminology">Auto Create Grade Items</dfn> under configuration settings</div></li>
+</ul>
+<div class="para">For an anonymous deployment, you can disable the name and email fields.</div>
+</div>
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/Figures/d2l-lti1p3-deployment.png" class="contained"></div>
+<div class="para" id="lti1p3-lmsadmin-D2L-8">Finally, configure a <dfn class="terminology">Deep Linking Quicklink</dfn> type <dfn class="terminology">Link</dfn> for the Runestone deployment. Make sure the <dfn class="terminology">URL</dfn> points to <code class="code-inline tex2jax_ignore">https://runestone.academy/deep_linking</code>.</div>
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/Figures/d2l-lti1p3-quicklink.png" class="contained"></div></section></section><section class="subsection" id="lti1p3-instructor-setup"><h4 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">4.4.4</span><span class="space"> </span><span class="title">LTI1.3 Setup - Instructor</span>
+</h4>
+<article class="warning remark-like" id="lti1p3-instructor-setup-2"><h5 class="heading">
+<span class="type">Warning</span><span class="space"> </span><span class="codenumber">4.4.3</span><span class="period">.</span>
+</h5>
+<div class="para" id="lti1p3-instructor-setup-2-1">To use LTI 1.3 integration with a course, the domain of your LMS must be approved by a Runestone administrator. If your institution required Runestone to complete any paperwork as part of the setup of Runestone as an LTI 1.3 tool, this should already be complete. If your institution did not contact Runestone during setup, you will need to make a request for approval. You can do so <a class="external" href="https://github.com/RunestoneInteractive/rs/issues" target="_blank">by making a new issue on the Runestone github page</a><details class="ptx-footnote" aria-live="polite" id="lti1p3-instructor-setup-2-1-2"><summary class="ptx-footnote__number" title="Footnote 4.4.4"><sup> 4 </sup></summary><div class="ptx-footnote__contents" id="lti1p3-instructor-setup-2-1-2"><code class="code-inline tex2jax_ignore">github.com/RunestoneInteractive/rs/issues</code></div></details>. Select <dfn class="terminology">Request for LTI 1.3 Approval</dfn> as the issue type and make sure to specify your contact information, and the domain your LMS runs on.</div></article><div class="para" id="lti1p3-instructor-setup-3">First make sure that you have a Runestone account. If you don’t have one, you can create one at <a class="external" href="https://runestone.academy" target="_blank">Runestone Academy</a><details class="ptx-footnote" aria-live="polite" id="lti1p3-instructor-setup-3-2"><summary class="ptx-footnote__number" title="Footnote 4.4.5"><sup> 5 </sup></summary><div class="ptx-footnote__contents" id="lti1p3-instructor-setup-3-2"><code class="code-inline tex2jax_ignore">runestone.academy</code></div></details>. Create a Runestone course to link to your LMS course. You may also wish to set up assignments in Runestone at this point, although you can always link new ones later. Before you try to link your LMS to a course and/or assignments, you should make sure you are logged into Runestone and currently viewing the course you want to link to.</div>
+<div class="para" id="lti1p3-instructor-setup-4">Depending on how your LMS reports your identity to Runestone, when you access Runestone from the LMS by clicking a link to your RS course or book, you may or may not be logged into Runestone as the same user as the account you created. (If your LMS reports your email, and you set up your RS account with the same email, then you should be logged in as the same user.) If you end up with a different identity in Runestone, you will likely want to add that user as an instructor. You can do this by adding the user as a “TA”. See <a href="managing-your-course.html#add_instructor" class="internal" title="Section 4.5: Add and Instructor or TA">Section 4.5</a> for more information.</div>
+<div class="para" id="lti1p3-instructor-setup-5">Each RS course can be linked to only one LMS course. This means that if you have multiple “courses” in your LMS for multiple sections or some other reason, you will need to create different RS courses for each LMS course. You can link multiple RS courses to the same LMS course (if you are using multiple books in one course.) If you need to unlink Runestone from an LMS, you can use the <dfn class="terminology">Remote LTI 1.3 Association</dfn> button from the <dfn class="terminology">Admin &gt; LTI Integration</dfn> screen. Doing so will NOT remove any assignments or grades from the LMS, but it will prevent new grades from being sent to the LMS. You can then relink the course with the same LMS course or a new one.</div>
+<div class="para logical" id="lti1p3-instructor-setup-6">
+<div class="para">There are some settings available in each Runestone course that affect LTI integration:</div>
+<ul class="disc" id="lti1p3-instructor-setup-6-1">
+<li id="lti1p3-instructor-setup-6-1-1"><div class="para" id="p-derived-lti1p3-instructor-setup-6-1-1">Under <dfn class="terminology">Admin &gt; Course Settings</dfn>, <dfn class="terminology">Show Points in Gradebook</dfn> will affect how scores are reported to the LMS. If you want assignments reported to the LMS as points (3 / 4) instead of percent (75%), make sure this is checked. Note that settings in your LMS grade book may allow you to weight scores or change their display in other ways that override the way Runestone reports them to the LMS.</div></li>
+<li id="lti1p3-instructor-setup-6-1-2"><div class="para" id="p-derived-lti1p3-instructor-setup-6-1-2">Under <dfn class="terminology">Admin &gt; LTI Integration</dfn>, checking <dfn class="terminology">Ignore LTI1.3 Date Changes</dfn> will prevent Runestone from updating due dates on assignments.</div></li>
+<li id="lti1p3-instructor-setup-6-1-3"><div class="para" id="p-derived-lti1p3-instructor-setup-6-1-3">Under <dfn class="terminology">Admin &gt; LTI Integration</dfn>, checking <dfn class="terminology">Do not auto update LTI grades</dfn> will prevent Runestone from trying to automatically send grade updates as a user completes activities. This may be desirable if your assignments contain lots of items that need to be hand graded and you do not want users to see misleading low grades for assignments that have not been fully scored yet.</div></li>
+</ul>
+</div>
+<div class="para logical" id="lti1p3-instructor-setup-7">
+<div class="para">Find the subsection below for details on how to add Runestone to your course:</div>
+<ul class="disc" id="lti1p3-instructor-setup-7-1">
+<li id="lti1p3-instructor-setup-7-1-1"><div class="para" id="p-derived-lti1p3-instructor-setup-7-1-1"><a href="managing-your-course.html#lti1p3-lms-instructor-setup-canvas" class="internal" title="Subsubsection: LTI 1.3 Instructor Setup - Canvas">LTI 1.3 Instructor Setup - Canvas</a></div></li>
+<li id="lti1p3-instructor-setup-7-1-2"><div class="para" id="p-derived-lti1p3-instructor-setup-7-1-2"><a href="managing-your-course.html#lti1p3-lms-instructor-setup-moodle" class="internal" title="Subsubsection: LTI 1.3 Instructor Setup - Moodle">LTI 1.3 Instructor Setup - Moodle</a></div></li>
+<li id="lti1p3-instructor-setup-7-1-3"><div class="para" id="p-derived-lti1p3-instructor-setup-7-1-3"><a href="managing-your-course.html#lti1p3-lms-instructor-setup-D2L" class="internal" title="Subsubsection: LTI 1.3 Instructor Setup - D2L">LTI 1.3 Instructor Setup - D2L</a></div></li>
+</ul>
+</div>
+<section class="subsubsection" id="lti1p3-lms-instructor-setup-canvas"><h5 class="heading hide-type">
+<span class="type">Subsubsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">LTI 1.3 Instructor Setup - Canvas</span>
+</h5>
+<div class="para" id="lti1p3-lms-instructor-setup-canvas-2">You will need the <dfn class="terminology">Client ID</dfn> of the Runestone installation on your LMS. Ask your LMS administrator for this piece of information. Refer them to <a href="managing-your-course.html#lti1p3-lmsadmin-canvas" class="internal" title="Subsubsection: LTI 1.3 Admin Setup - Canvas">LTI 1.3 Admin Setup - Canvas</a> for information on how to find this.</div>
+<div class="para" id="lti1p3-lms-instructor-setup-canvas-3">In your Canvas course, go to <dfn class="terminology">Settings &gt; Apps</dfn> and look for <dfn class="terminology">View App Configurations</dfn> and click on it:</div>
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/Figures/canvas-lti1p3-access-apps.png" class="contained"></div>
+<div class="para" id="lti1p3-lms-instructor-setup-canvas-5">Then click on the <code class="code-inline tex2jax_ignore">+ App</code> button. For the <dfn class="terminology">Configuration Type</dfn>, choose <em class="emphasis">Client ID</em> and then type the <dfn class="terminology">Client ID</dfn> given to you by the LMS admin.</div>
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/Figures/canvas-lti1p3-instructor-clientid.jpg" class="contained"></div>
+<div class="para" id="lti1p3-lms-instructor-setup-canvas-7">You should now see Runestone listed under the External apps</div></section><section class="subsubsection" id="lti1p3-lms-instructor-setup-moodle"><h5 class="heading hide-type">
+<span class="type">Subsubsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">LTI 1.3 Instructor Setup - Moodle</span>
+</h5>
+<div class="para" id="lti1p3-lms-instructor-setup-moodle-2">If your LMS administrator has set up Runestone, you should see it displayed under <dfn class="terminology">More &gt; LTI External Tools</dfn> in your course settings. If you do not see it, ask your LMS admin to confirm that Runestone was set up to display as a preconfigured tool. You just need to toggle the <dfn class="terminology">Show in activity chooser</dfn> to the <code class="code-inline tex2jax_ignore">on</code> state.</div>
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/Figures/moodle-lti1p3-instructor-show.jpg" class="contained"></div></section><section class="subsubsection" id="lti1p3-lms-instructor-setup-D2L"><h5 class="heading hide-type">
+<span class="type">Subsubsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">LTI 1.3 Instructor Setup - D2L</span>
+</h5>
+<div class="para" id="lti1p3-lms-instructor-setup-D2L-2">Once your LMS administrator has set up Runestone LTI 1.3 support, you’ll need to make sure that your course has access to it. There are 2 places that you might see a way to create links. The first is in the content area under <dfn class="terminology">Existing Activities &gt; Runestone Links</dfn>. <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/Figures/d2l-lti1p3-instructor-links.png" class="contained"></div> The other is in the html page editor under the <dfn class="terminology">Insert Stuff</dfn> icon. There would be a <dfn class="terminology">Runestone Insert Stuff</dfn> item. Either of those will bring you to the Content Linking page described below.</div>
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/Figures/d2l-lti1p3-instructor-stuff.png" class="contained"></div>
+<div class="para" id="lti1p3-lms-instructor-setup-D2L-4">If you don’t see either of those links. Please, contact your LMS administrator and ask them to add the links for your course.</div></section></section><section class="subsection" id="lti1p3-instructor-use"><h4 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">4.4.5</span><span class="space"> </span><span class="title">LTI1.3 Instructional Use</span>
+</h4>
+<section class="subsubsection" id="lti1p3-instructor-use-2"><h5 class="heading hide-type">
+<span class="type">Subsubsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Content Linking</span>
+</h5>
+<div class="para logical" id="lti1p3-instructor-use-2-2">
+<div class="para">There are two kinds of links that can be generated from Runestone:</div>
+<ul class="disc" id="lti1p3-instructor-use-2-2-1">
+<li id="lti1p3-instructor-use-2-2-1-1"><div class="para" id="p-derived-lti1p3-instructor-use-2-2-1-1">
+<dfn class="terminology">Book Page Links</dfn> These are links to a particular page in the book. When a user uses one of these links, they will automatically be logged into Runestone. If you wish to provide a generic “Log in to book” link, you can use one of these that points at the book entry page (index.html). Or you can generate links to any page in the book.</div></li>
+<li id="lti1p3-instructor-use-2-2-1-2"><div class="para" id="p-derived-lti1p3-instructor-use-2-2-1-2">
+<dfn class="terminology">Assignment Links</dfn> These are links to a particular assignment in the RS course. When you want a LMS assignment that is linked to a RS assignment, you must use this kind of link.</div></li>
+</ul>
+<div class="para">User activity is tracked and scores updated regardless of which form of link is used to access the Runestone content. The only difference other than where they link to is that <dfn class="terminology">Book Page Links</dfn> do not create an entry in the LMS grade book.</div>
+</div>
+<div class="para" id="lti1p3-instructor-use-2-3">Begin by setting up assignments you wish to link to in Runestone. Do not make LMS assignments—they will be created for you when you link to the Runestone assignments. (See <a href="working-with-assignments-chap.html#instructor-interface_create-an-assignment" class="internal" title="Section 6.2: Create an Assignment">Section 6.2</a> for coverage of making Runestone assignments.) For students to access a Runestone assignment (after clicking a link in the LMS), the RS assignment must be marked <dfn class="terminology">Visible to Students</dfn>. This property is not linked to the LMS. If you want assignments to be rolled out gradually in the course, you will have to manage the process separately in your LMS and in RS by changing the visibility of assignments in both places.</div>
+<div class="para" id="lti1p3-instructor-use-2-4">To add content to your course, look for the <dfn class="terminology">Runestone</dfn> option in whatever allows you to add content items to a module/course etc... in your LMS (see subsections below for LMS specific notes).</div>
+<div class="para" id="lti1p3-instructor-use-2-5">When you open the <dfn class="terminology">Runestone Content Linking</dfn> panel, you will see two sections. First you will see a section to generate <dfn class="terminology">New Book Page Links</dfn>. Click <dfn class="terminology">Add book link</dfn> as many times as you like to generate dropdowns that can be used to select book pages. Use the dropdown to select the page(s) you want to make links to. Each will be generated as a separate content item in your LMS.</div>
+<div class="para logical" id="lti1p3-instructor-use-2-6">
+<div class="para">Below that is the <dfn class="terminology">Assignment Links</dfn> area. Here a table is displayed with each Runestone assignment. For each one, the current LMS assignment (if any) that it is linked to is displayed. If the RS assignment is linked to an assignment in the current LMS course, that will be displayed and you will not be able to perform any action. To delete the assignment, do some from your LMS. For unlinked assignment, you will be given three options:</div>
+<ul class="disc" id="lti1p3-instructor-use-2-6-2">
+<li id="lti1p3-instructor-use-2-6-2-1"><div class="para" id="p-derived-lti1p3-instructor-use-2-6-2-1">
+<dfn class="terminology">No action</dfn>: do not link this assignment.</div></li>
+<li id="lti1p3-instructor-use-2-6-2-2"><div class="para" id="p-derived-lti1p3-instructor-use-2-6-2-2">
+<dfn class="terminology">Create new LMS Activity</dfn>: creates a new LMS assignment linked to this RS assignment.</div></li>
+<li id="lti1p3-instructor-use-2-6-2-3"><div class="para" id="p-derived-lti1p3-instructor-use-2-6-2-3">
+<dfn class="terminology">Link to existing assignment</dfn>: this should only be used after copying a course to relink orphaned items. See <a href="managing-your-course.html#lti1p3_copy" class="internal" title="Subsubsection: Copying an LTI1.3 Course">Copying an LTI1.3 Course</a> for details.</div></li>
+</ul>
+</div>
+<div class="para" id="lti1p3-instructor-use-2-7">Finally, the <dfn class="terminology">Submit Form</dfn> button will update Runestone to link the RS course to this LMS course (so it knows where to send grades) and will send a message to your LMS to generate the desired content links. Your LMS may or may not give you a chance to confirm the changes after this point.</div>
+<div class="para" id="lti1p3-instructor-use-2-8">If you ever need to, it is safe to delete an assignment in the LMS. No RS data will be deleted. If desired, you can then readd the assignment in the LMS and re-push any available grades.</div></section><section class="subsubsection" id="lti1p3-instructor-use-3"><h5 class="heading hide-type">
+<span class="type">Subsubsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">LTI1.3 Grade Reporting</span>
+</h5>
+<div class="para logical" id="lti1p3-instructor-use-3-2">
+<div class="para">Grades are normally sent to Runestone at the following times:</div>
+<ul class="disc" id="lti1p3-instructor-use-3-2-1">
+<li id="lti1p3-instructor-use-3-2-1-1"><div class="para" id="p-derived-lti1p3-instructor-use-3-2-1-1">A learner interacts with any graded element of the course that is part of an active assignment with released grades. (Grade updates should happen whether the user is viewing the problem “in context” or in the assignment view).</div></li>
+<li id="lti1p3-instructor-use-3-2-1-2"><div class="para" id="p-derived-lti1p3-instructor-use-3-2-1-2">The instructor goes to the <dfn class="terminology">Grading</dfn> tab of the admin interface, selects an <dfn class="terminology">assignment</dfn> and presses the <dfn class="terminology">Push Grades to LTI</dfn> button. This will send score updates for that assignment for all users in the course regardless of whether or not scores are released in Runestone.</div></li>
+<li id="lti1p3-instructor-use-3-2-1-3"><div class="para" id="p-derived-lti1p3-instructor-use-3-2-1-3">The instructor goes to the <dfn class="terminology">Grading</dfn> tab of the admin interface, selects an <dfn class="terminology">assignment</dfn> and a particular <dfn class="terminology">Student</dfn>, then enters a manual override grade and presses <dfn class="terminology">Push Grade to LMS</dfn>. This will send the grade for that one user, regardless of whether or not scores are released in Runestone.</div></li>
+</ul>
+<div class="para">This means that if you want users to see score updates as they complete work, you should “release” the assignment scores in Runestone as soon as assignments are created.</div>
+</div></section><section class="subsubsection" id="lti1p3_copy"><h5 class="heading hide-type">
+<span class="type">Subsubsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Copying an LTI1.3 Course</span>
+</h5>
+<div class="para logical" id="lti1p3_copy-2">
+<div class="para">To reuse course content that you linked in one course for a new course, you will generally want to do the following:</div>
+<ol class="decimal" id="lti1p3_copy-2-1">
+<li id="lti1p3_copy-2-1-1"><div class="para" id="p-derived-lti1p3_copy-2-1-1">Use your LMS to copy the assignments from your old course to your new course. They will not be linked to Runestone. If  you want to synchronize the due dates automatically, use your LMS to set up due dates.</div></li>
+<li id="lti1p3_copy-2-1-2"><div class="para" id="p-derived-lti1p3_copy-2-1-2">In Runestone, make a new course. Copy all of the assignments from your old course to your new course. If you want to make sure the due dates are synced, do not check the <dfn class="terminology">Ignore LTI1.3 Date Changes</dfn> box in the <dfn class="terminology">Admin &gt; LTI Integration</dfn> settings for your new course before finishing the linking process.</div></li>
+<li id="lti1p3_copy-2-1-3"><div class="para" id="p-derived-lti1p3_copy-2-1-3">In your LMS, use the add content feature and select the Runestone tool. Assuming your assignments in the two platforms have matching names, the default actions suggested for each RS assignment will be to link to the existing LMS assignment with the same name. If there is a mismatch, change the LMS assignment name to match the RS assignment name before linking. When you submit the form, the assignments will be linked and the due dates from the LMS will be synced to Runestone.</div></li>
+</ol>
+</div></section><section class="subsubsection" id="lti1p3-instructor-use-5"><h5 class="heading hide-type">
+<span class="type">Subsubsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">LTI 1.3 Canvas Notes</span>
+</h5>
+<div class="para" id="lti1p3-instructor-use-5-2">The best way to create new content items (especially multiple at one time) is in the <dfn class="terminology">Modules</dfn> area. Use the three dot menu and select Runestone.</div>
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/Figures/canvas-lti1p3-module-use.jpg" class="contained"></div></section><section class="subsubsection" id="lti1p3-instructor-use-6"><h5 class="heading hide-type">
+<span class="type">Subsubsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">LTI 1.3 Moodle Notes</span>
+</h5>
+<div class="para" id="lti1p3-instructor-use-6-2">To add content items, use one of the <dfn class="terminology">Add an activity or resource</dfn> links in your course. Select <dfn class="terminology">Runestone</dfn> from the available tools. You will be taken to a form adding one activity, but you can still add as many Runestone links as you like. Click the <dfn class="terminology">Select content</dfn> button. When you finish selecting content, if you selected just one new RS item, you will return to the form to finish editing that activity and save it in your LMS. If you selected multiple items, you will return to a page that lists the items being added. If your actions do not add any new content (you are remapping copied assignments), you will be returned to a blank form but Runestone will have updated your selected items.</div>
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/Figures/moodle-lti1p3-selectcontent-use.jpg" class="contained"></div></section><section class="subsubsection" id="lti1p3-instructor-use-7"><h5 class="heading hide-type">
+<span class="type">Subsubsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">LTI 1.3 D2L Notes</span>
+</h5>
+<div class="para" id="lti1p3-instructor-use-7-2">To add <dfn class="terminology">Content</dfn> items, use the <dfn class="terminology">Existing Activities &gt; Runestone Links</dfn> button in the <dfn class="terminology">Content</dfn> area of your course.</div>
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/Figures/d2l-lti1p3-content-select.png" class="contained"></div>
+<div class="para" id="lti1p3-instructor-use-7-4">To add a link to an HTML page, use the <dfn class="terminology">Insert Quicklink &gt; Runestone Links</dfn> button when your cursor is where you want the link to be on the page. Then select a single link to add.</div>
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/Figures/d2l-lti1p3-select-quicklink.png" class="contained"></div>
+<div class="para" id="lti1p3-instructor-use-7-6">To add a link to an HTML page, you could alternatively use the <dfn class="terminology">Insert Stuff &gt; Runestone Insert Stuff</dfn> button when your cursor is where you want the link to be on the page. Then select a single link to add.</div>
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/Figures/d2l-lti1p3-select-insertstuff.png" class="contained"></div>
+<div class="para" id="lti1p3-instructor-use-7-8">Note: You will only be able to make one link at a time. If there are multiple assignments that you can link, then you’ll need to either leave the other assignments as they were or set them as <dfn class="terminology">No Action</dfn> before clicking <dfn class="terminology">Submit Form</dfn> so that the system only tries to make one link. (Otherwise it will fail.)</div>
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/Figures/d2l-lti1p3-note-no-action.png" class="contained"></div>
+<div class="para" id="lti1p3-instructor-use-7-10">Note: your browser needs to allow cross-site tracking if you want to add a link to a page. If you are creating a link from the <dfn class="terminology">Content</dfn> tab, then you can have cross-site tracking off, but you’ll navigate to another page to make the link, and you’ll need to verify that the link was created by going back to D2L.</div></section></section></section><section class="section" id="add_instructor"><h3 class="heading hide-type">
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">4.5</span><span class="space"> </span><span class="title">Add and Instructor or TA</span>
 </h3>
 <div class="para logical" id="add_instructor-2">
 <div class="para">Runestone supports multiple instructors or TAs for a course.  We do not make any real distinction between a TA and an instructor so keep in mind they they both have all of the same privileges that you do.  Adding a another instructor is quite easy.  The process is as follows.</div>
@@ -696,7 +935,7 @@ hogwarts-3,dumbledore+hogwarts1@gmail.com,F2,L2,owls4all,potions_fall19
 </ol>
 <div class="para"><div class="para" id="add_instructor-2-2">To "demote" a co-instructor or TA back to a student just select them in the list of instructors on the left and click the - button below the box.</div></div>
 </div></section><section class="section" id="course_settings"><h3 class="heading hide-type">
-<span class="type">Section</span><span class="space"> </span><span class="codenumber">4.5</span><span class="space"> </span><span class="title">Course Settings</span>
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">4.6</span><span class="space"> </span><span class="title">Course Settings</span>
 </h3>
 <div class="para" id="course_settings-2">There are some settings that you can control for your course that effect how the interactive components work. You can modify these on the course settings tab of the instructor interface.</div>
 <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/Figures/course_settings.png" class="contained"></div>
