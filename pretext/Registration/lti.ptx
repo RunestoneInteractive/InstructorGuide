@@ -1,9 +1,18 @@
 <section xml:id="lti_integration">
-    <title>Integrating with your LMS</title>
+    <title>Integrating with your LMS Using LTI 1.1</title>
     <subsection>
         <title>Introduction</title>
+        <note>
+            <p>
+                Runestone provides two methods of LTI integration. LTI 1.1 and LTI 1.3.  LTI 1.3 is the newer standard and is more secure and more flexible.  However, it requires setup by an administrator of your Learning Management System (LMS). LTI 1.1 can be set up by an individual instructor without LMS admin support. If you are using an LMS that your institution administers, we recommend you explore using LTI 1.3. If you are using something like <q>Canvas Free-for-Teacher</q> that does not provide administrator access, you will need to use LTI 1.1.
+            </p>
+            <p>
+                If you wish to use LTI 1.3, skip to the instructions in <xref ref="lti1p3_integration"/>. If you are using LTI 1.1 then follow the instructions in this section.
+            </p>
+        </note>
         <p>
-            Runestone provides a rudimentary LTI integration using LTI 1.1. So far we have made this work very successfully with Canvas, Moodle, and Brightspace D2L. Others may or may not work. I call this a community supported feature of Runestone because LTI is a huge pain to work with, and it is very difficult to get access to and test against whatever LMS your school has chosen.</p>
+            Runestone provides a rudimentary LTI integration using LTI 1.1. So far we have made this work very successfully with Canvas, Moodle, and Brightspace D2L. Others may or may not work. I call this a community supported feature of Runestone because LTI is a huge pain to work with, and it is very difficult to get access to and test against whatever LMS your school has chosen. Community support is available on the <c>#lti_community_support</c> channel of the <url href="https://discord.com/channels/1013815439161315348/1023237792697954324" visual="Runestone Discord Server">Runestone Discord Server</url>.
+        </p>
         <p> When you use LTI your students do NOT and <em>should not register on Runestone Academy</em>, the LTI interface registers your student with Runestone the first time they access it from your LMS. In addition, <em>Instructors need to use one of the LTI links to your book in order for grades to transfer.</em> </p>
     </subsection>
     <subsection>
