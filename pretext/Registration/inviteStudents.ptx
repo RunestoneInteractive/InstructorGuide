@@ -4,9 +4,9 @@
   <video xml:id="register_vid" youtube="RJ-bYYjKbTU" width="100%" />
   <subsection>
     <title>Student Self Registration</title>
-    <p>When you created the course, you chose a project name. Give that text string to students.
+    <p>When you created the course, you chose a unique course name. Give your course name to students.
       They will register on the site and enter that string as their course name. If you've forgotten
-      what the string is, you can see it displayed on the Course selection page <url
+      what your course name is, you can see it displayed on the Course selection page <url
         href="https://runestone.academy/runestone/default/courses"
         visual="https://runestone.academy/runestone/default/courses">
       https://runestone.academy/runestone/default/courses</url>. You can access that page by
@@ -21,14 +21,14 @@
   <subsection>
     <title>Pre-register your students</title>
     <p>You can also pre-register your students by creating a CSV file and uploading that file
-      through the instructor interface. Pull down the &#x1F464; menu and Choose Instructor Page then
-      click on the button for Manage Students. You will see a page like this:</p>
+      through the instructor interface. Pull down the &#x1F464; menu and select Instructor Dashboard then open the Student Management area and click on Manage Students.</p>
+      <figure align="center">
+    <caption>Instructor Dashboard: Manage Students</caption>
+    <image source="Figures/InstructorDashboard_StudentsOnline.png" width="100%" alt="Instructor Dashboard Manage Students"/>
+  </figure>
+      <p> You will see a page like this:</p>
     <figure align="center" xml:id="reg_your_students_fig">
-      <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/"
-        xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/"
-        xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/"
-        xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/"
-        xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Register
+      <caption>Register
         your Students</caption>
       <image source="Figures/manage_students.png" width="100%" alt="Support Runestone" />
     </figure>
