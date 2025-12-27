@@ -3,8 +3,14 @@
   <title>View Student Activity</title>
   <subsection xml:id="activity_intro">
   <title>Introduction</title>
-  <video xml:id="yt_10lRHVSk11c" youtube="10lRHVSk11c" width="auto"/>
-  <p>Many actions that students take are logged. These include:</p>
+
+  <p>In the new Instructor Dashboard, you can view student activity reports such as Chapter Activity and Exercise Metrics in the Course Analytics menu. You can also download the course logs and csv files.</p>
+   <figure align="center">
+    <caption>Instructor Dashboard: Course Analytics</caption>
+    <image source="InstructorDashboard_CourseAnalytics.png" width="100%" alt="Instructor Dashboard  Course Analytics"/>
+  </figure>
+  
+  <p>The following student activities are logged:</p>
   <p>
     <ul>
       <li>
@@ -27,18 +33,35 @@
       </li>
     </ul>
   </p>
-  <p>There are many ways to monitor student progress. Starting at the main instructor page here are two of them.</p>
+  <p>The following video provides an overview of the various student activity reports (in the older interface):</p>
+   <video xml:id="yt_10lRHVSk11c" youtube="10lRHVSk11c" width="auto"/>
+
+  </subsection>
+
+    <subsection xml:id="instructor-interface_students-online">
+    <title>Students Online</title>
+    <p>
+  Under Student Management, you can add and remove students from your class, reset their passwords, manage accommodations, and view students online and what page they are working on in real time.</p>
   <figure align="center">
-    <image source="Figures/instructor_menu.png" width="100%"/>
+    <caption>Instructor Dashboard: Students Online</caption>
+    <image source="Figures/InstructorDashboard_StudentsOnline.png" width="100%" alt="Instructor Dashboard showing students online"/>
   </figure>
   </subsection>
+
+
   <subsection xml:id="instructor-interface_chapter-progress">
-    <title>Chapter Progress</title>
-    <p>One very easy to use report that allows you to quickly see how much work your students are doing on each page is the Chapter Progress Report. It looks like this:</p>
+    <title>Chapter Activity</title>
+    <p>One very easy to use report that allows you to quickly see how much work your students are doing on each page is the Chapter Activity report found under Course Analytics.</p>
     <figure align="center">
-      <image source="Figures/chapter_progress.png" width="100%"/>
+    <caption>Instructor Dashboard: Chapter Activity</caption>
+    <image source="InstructorDashboard_CourseAnalytics.png" width="100%" alt="Instructor Dashboard  Course Analytics"/>
+  </figure>
+    <p>On the Chapter Activity (Student Progress) page, pull down the first menu to select a chapter and pull down the second menu to see different reports on the count of activities that students have completed and how many were correct, as well as their first and last interaction date/times. These reports can be downloaded as CSV files and can be opened as spreadsheets. You can also filter by chapter or any other search criteria using the down arrow next to the column headers. </p>
+    <figure align="center">
+    <caption>Chapter Activity Report</caption>
+      <image source="Figures/chapterActivityMenus.png" width="100%" alt="Chapter Activity Report"/>
     </figure>
-    <p>It can quickly show you the number of elements on each page that your students have interacted with. The dropdown menu gives you other options such viewing the first time a student interacted with an element, the last time a student interacted with the element, and an overview of the number of times a student has interacted. You can also filter by chapter or any other search criteria using the popup menu on the chapter_label column. Just experiement a bit.</p>
+    <p>.</p>
     <p>The numbers in each cell are clickable so you can drill down into a particular page for a particular student to see what they have done and the number of interactions with each element.</p>
     <figure align="center">
       <image source="Figures/activity_drilldown.png" width="100%"/>
@@ -48,8 +71,8 @@
   
   
   <subsection xml:id="instructor-interface_student-progress-tab">
-    <title>Student Progress Tab</title>
-    <p>The instructor interface lets you see summaries of some of these activities that may be useful to you. To get started, from the instructor interface, click on the <em>Student Progress</em> tab.</p>
+    <title>Student Progress: Exercise Metrics</title>
+    <p>The instructor interface lets you see summaries of some of these activities that may be useful to you. To get started, from the instructor Dashboard, click on Course Analytics and then Exercise Metrics. 
     <p>
       <ol marker="1">
         <li>
