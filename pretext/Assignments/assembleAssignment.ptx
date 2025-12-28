@@ -3,136 +3,156 @@
   <title>Create an Assignment</title>
   <subsection xml:id="create_assignment_intro">
     <title>Introduction</title>
+   replace:
     <video xml:id="h45c7_wIgGA" youtube="h45c7_wIgGA" width="auto" />
     <p>
+    
       <ol marker="1">
         <li>
-          <p>To create an assignment, whether graded or ungraded, start by going to the Assignments
-            tab on the instructor interface. Click on the Add button to start creating a new
-            assignment. On the popup that appears you will notice that you can also copy an old
-            assignment as a starting point.</p>
+          <p>To create an assignment, go to Instructor Dashboard and click on the new <em>Assignment Builder</em> button under Assignments &amp; Grading
+          </p>
           <figure align="center" xml:id="new_assign_fig">
-            <caption xmlns:c="https://www.sphinx-doc.org/"
-              xmlns:changeset="https://www.sphinx-doc.org/"
-              xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/"
-              xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/"
-              xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/"
-              xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Figure
-              1: Click on the Add button to create a new assignment</caption>
-            <image source="Figures/assignmentMain.png" width="100%"
-              alt="Click on the plus to create a new assignment" />
+            <caption>Instructor Dashboard Assignment Builder</caption>
+            <image source="Figures/assignmentBuilder.png" width="100%"
+              alt="assignment builder" />
           </figure>
         </li>
-        <li>
-          <p>Provide a name for the assignment.</p>
+        <li><p>This will take you to a list of assignments that you have created or copied. 
+        Click on <em>+ Create New Assignment</em> button on the top right corner of the page.</p>
+        <figure align="center" xml:id="create_assign_fig">
+            <caption>Create New Assignment Button</caption>
+            <image source="Figures/assignmentList.png" width="100%"
+              alt="Assignment List and Create New Assignment Button" />
+          </figure>
+        </li>
+        <li><p>Fill in the basic information for the new assignment such as a name, description, 
+        and due date. Then, click on the Next button. 
+        The builder will give an error message if the name of the assignment is not unique among your assignments.</p>
           <figure align="center" xml:id="unique_assign_fig">
-            <caption xmlns:c="https://www.sphinx-doc.org/"
-              xmlns:changeset="https://www.sphinx-doc.org/"
-              xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/"
-              xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/"
-              xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/"
-              xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Figure
-              2: Enter a unique name for the assignment</caption>
-            <image source="Figures/nameAssign.png" width="100%"
-              alt="Enter a unique name for the assignment" />
+            <caption>Enter a unique name for the assignment</caption>
+            <image source="Figures/assignmentBasicInfo.png" width="100%"
+              alt="Assignment Basic Info" />
           </figure>
         </li>
         <li>
-          <p>Add a description and check the other options.</p>
-        </li>
-        <li>
-          <p>Click on <q>Save</q> to save the assignment. It will show an alert as shown below.
-            Click on <q>Ok</q>.</p>
+          <p>There are 3 types of assignments that you can create: Regular, Quiz/Exam, or Peer Instruction. 
+          Choose Regular for an ordinary assignment and then click on the Create button. 
+          See the next chapters for information on quizzes and peer instruction.</p>
+          <figure align="center" xml:id="assign_type_fig">
+            <caption>Select Assignment Type</caption>
+            <image source="Figures/assignmentType.png" width="100%"
+              alt="Assignment Type Selection" />
+              </figure>
 
-          <warning>
-            <title>Make it Visible</title>
-            <p>Please take note of the visible to students check box. If you forget to check this
-              box then the assignment will not show up in the list that your students (or you) can
-              see on the assignment page.</p>
-          </warning>
-
-          <figure align="center" xml:id="save_alert_fig">
-            <caption xmlns:c="https://www.sphinx-doc.org/"
-              xmlns:changeset="https://www.sphinx-doc.org/"
-              xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/"
-              xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/"
-              xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/"
-              xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Figure
-              4: The save alert box.</caption>
-            <image source="Figures/savedAlert.png" width="100%" alt="The save alert box" />
-          </figure>
         </li>
+        <li><p>You will be put into the assignment page with three tabs on the left: Basic Info, Readings, and Exercises.  
+       Readings allow you to select whole chapters or parts of chapters for
+      your students to read. You can assign points to the readings by tracking the number
+      of activities they attempt in each subchapter. In readings, these are only graded for interaction, not correctness. 
+      Exercises are individual problems for students to solve that can be graded for correctness, including active code, 
+      short answer, multiple choice, parsons problems, etc. These can be from the ebook that you are using or even problems that you write yourself.
+      An assignment can have just readings, just exercises, or both. See the subsections below for setting up Readings and Exercises.<p> 
+      
+      </li>
       </ol>
-    </p>
-
-    <p>There are two primary kinds of assignments. <term>Reading Assignments</term> and <term>Problems
-      Sets.</term> Reading assignments allow you to select whole chapters or parts of chapters for
-      your students to read. You can assign points to the reading assignment by tracking the number
-      of activities they attempt in each subchapter. Problem sets are mainly for you to select short
-      programming problems for the students to solve, but could also include short answer, multiple
-      choice, etc. Or even problems that you write yourself. More on that later.</p>
-    <p>In either case the primary way you will add questions is through the tree picker interface.
-      This interface is accessed by expanding either the Readings or Problems accordion and allows
-      you to drill down from chapter to section to individual problems. There are several icons
-      associated with problems to help you know what you are looking at. <ul>
-        <li>The 📘 icon indicates that a particular problem was written by the author.</li>
-        <li>The 🏫 icon indicates that a problem was contributed by another instructor.</li>
-        <li>The ✔️ icon tells you that the problem can be automatically graded.</li>
-      </ul> In
-      any case you can click on a problem to see a preview. If you are previewing a question and it
-      is obviously bad, or incorrect, or just someone experimenting, use the <term>Flag Question</term>
-      button to let us know. We have volunteer editors that help us clear out or correct these bad
-      questions. </p>
-    <image source="Figures/tree_picker.png" width="50%" />
+    </p> 
   </subsection>
+
   <subsection xml:id="instructor-interface_creating-a-reading-assignment">
-    <title>Creating a Reading Assignment</title>
-    <p>Let's create a reading assignment and add a few sections for our students to read. As you add
-      sections you will see that are shown in a table under the Readings tab.</p>
-    <image source="Figures/reading_assignment.png" width="50%" />
-    <p>There are four things you can change for each section:</p>
+    <title>Adding Readings</title>
+    <p>Click on the Readings tab and then the <em>Choose Readings</em> button. 
+    Choose subchapters or pages that you want your students to read. 
+    Click on a white space below the pop up menu to close it when you are done selecting readings.
+    </p>
+    <figure align="center" xml:id="choose_readings_fig">
+      <caption>Choose Readings Button</caption>
+      <image source="Figures/assignmentReadings.png" width="100%"
+        alt="Choose Readings" />
+    </figure>
+    
+    
+    <p>There are 2 things you can change for each reading:</p>
     <p>
       <ul>
         <li>
-          <p># required - How many of the components on the page do you students need to do in order
-            to get the points for this section.</p>
+          <p># required: How many of the activities on the page do you students need to do in order
+            to get the points for this section. These are only graded for interaction or attempts, not correctness. They will get 1 activity for visiting the page. By default, this is set to 75% of the number 
+            of activities on the page. Please remember that the number required for the points is all or nothing, so if they miss one they will not get the points.
+            This is why it may be better to leave it at 75% or a little below the number of activities in case they miss one.  </p>
         </li>
         <li>
-          <p>How many points for completing this section?</p>
-        </li>
-        <li>
-          <p>Auto-grade - interaction means that the students have done something</p>
-        </li>
-        <li>
-          <p>which to grade - first answer, best answer, or last answer</p>
+          <p>Points: How many points for completing this section. You can click on the pencil button at the top if you want to change the number of points for all the readings at once. </p>
         </li>
       </ul>
     </p>
   </subsection>
   <subsection xml:id="instructor-interface_creating-a-problem-assignment">
-    <title>Creating a Problem Assignment</title>
-    <p>Creating a problem assignment is similar. You will most often use the tree picker, but you
-      can also search for problems or write your own. When selecting a problem if you click on the
-      name of the problem the interface will display the problem on the page remind you what it is
-      about.</p>
-    <image source="Figures/problem_selection.png" width="50%" />
-    <p>Problems have a different set of configurations</p>
+    <title>Adding Exercises</title>
+    <p>Click on the Exercises tab on the left to add individual exercises for students to do that can be graded for correctness. 
+    Then, click on the <em>+ Add Exercises</em> button on the right. 
+    You will see 3 choices: Browse Chapter Exercises, Search Exercise, and Create New Exercise. 
+    Click on <em>Browse Chapter Exercises</em> to choose exercises.  </p>
+    <figure align="center" xml:id="choose_exercises_fig">
+      <caption>Choose Exercises Button</caption>
+      <image source="Figures/assignmentExercises.png" width="100%"
+        alt="Choose Exercises" />
+    </figure>
+
+   <p>Scroll to the chapter and subchapters that you want and click on the triangles next to them to expand them. 
+   When you see the exercises, you can click to choose them or click the eye to preview them before choosing. 
+   Exercises can be from the ebook that you are using, written by its author, or contributed by the community. 
+   If the exercise has a name that starts with the ebook's name like "csawesome2__" and has a book icon under the source column, then it is 
+   from the ebook, shown in the red box below. If it has a percon icon under Source, it is contributed by another teacher in the community, shown in the purple box below.
+   There are also controls in the green box below that can be used to filter by problem type or to just show the problems from the book.   
+   After selecting problems, click on the orange Choose exercises button to add them to the assignment. </p>
+   </p>
+   <figure align="center" xml:id="browse_exercises_fig">
+      <caption>Browse Exercises</caption>
+      <image source="Figures/assignmentExerciseSelect.png" width="100%"
+        alt="Browse Exercises" />
+        </figure>
+
+    <p>After adding the exercisee to the assignment, you will see the list of exercises you have chosen. You can drag to reorder them. 
+    And there are 3 things you can change for each exercise:</p>
+    <figure align="center" xml:id="exercise_list_fig">
+      <caption>Exercise List</caption>
+      <image source="Figures/assignmentExercisesList.png" width="100%"
+        alt="Exercise List" />
+        </figure>
     <p>
       <ul>
-        <li>
-          <p>Points - how many points for this question</p>
+      <li>
+          <p>Autograde: options here are % correct, All or nothing, Interaction, or manual. If the exercise has unit test autograding code,
+          it will be set to "% correct". If it does not have autograding, it will be set to manual, where you will need to grade it.</p>
         </li>
         <li>
-          <p>Auto-grade &#x2013; options here are % correct, All or nothing, Interaction, or manual.</p>
+          <p>Which to Grade: Best Answer, first answer or last answer</p>
         </li>
-        <li>
-          <p>which to grade &#x2013; Best Answer, first answer or last answer</p>
+              <li>
+          <p>Points: how many points for this question. The pencil button at the top of each column can be used to change the
+           number of points for all the exercises at once.</p>
         </li>
       </ul>
     </p>
-    <p>Problems with the book icon next to them are written by the author. Problems with the
-      schoolhouse are contributed by the community. If a problem has a checkmark next to it then you
-      know it can be automatically graded.</p>
+   
+
+ <p>Some books have large quizbanks of community contributed questions. However, some of these community contributed exercises might have errors. If you are previewing a question and it
+      is obviously bad, or incorrect, or just someone experimenting, use the <term>Flag Question</term>
+      button to let us know. We have volunteer editors that help us clear out or correct these bad
+      questions. </p>
+
+<p>You can also Search Exercises by name or keyword or author if you are looking for something specific. Click on <em>Add Exarcises</em> button and then select <em>Search Exercises</em> instead of Browse Chapter Exercises. Type in a search word and enter in the search box. You can filter by type. The default is to search for exercises associated with the ebook that you are in, but you can toggle "Book Exercises" to "All Exercises" to search for exercises in other books. You can then click to select or preview exercises from the results and then click on the orange Choose Exercises button to add them to the assignment. You can also Copy Exercises to change them.</p>
+<figure align="center" xml:id="search_exercises_fig">
+      <caption>Search Exercises</caption>   
+      <image source="Figures/AssignmentExercisesSearch.png" width="100%"
+        alt="Search Exercises" />
+        </figure>
+
+<p>When you are done adding exercises, click on the back arrow by the assignment name or on the Assignment Builder button at the top to return to the main assignment list page. By default, the new assignment will not be visible to students. </p>
+       <warning>
+            <title>Make it Visible</title>
+            <p>Please take note of the visible to students toggle. If you forget to toggle this to visible then the assignment will not show up in the list that your students can see on the assignment page.</p>
+          </warning>
   </subsection>
 
   <subsection xml:id="subsec-accommodations">
@@ -192,7 +212,7 @@
       <title>Visibility</title>
       <p>This is for situations where the assignment is not visible to the students, but you would
         like to mail the student a link to an exam, maybe a makeup exam. Or an extra assignment, or
-        whatver. This accommodation requires both a student and an assignment. When the
+        whatever. This accommodation requires both a student and an assignment. When the
         accommodation
         is saved, then the assignment will show up for the student in their assignment list, or you
         can email the student a link to the assignment and they will have access.</p>
