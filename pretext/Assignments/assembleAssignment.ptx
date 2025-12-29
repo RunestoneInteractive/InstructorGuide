@@ -51,7 +51,7 @@
       of activities they attempt in each subchapter. In readings, these are only graded for interaction, not correctness. 
       Exercises are individual problems for students to solve that can be graded for correctness, including active code, 
       short answer, multiple choice, parsons problems, etc. These can be from the ebook that you are using or even problems that you write yourself.
-      An assignment can have just readings, just exercises, or both. See the subsections below for setting up Readings and Exercises.<p> 
+      An assignment can have just readings, just exercises, or both. See the subsections below for setting up Readings and Exercises.</p> 
       
       </li>
       </ol>
@@ -104,7 +104,7 @@
    If the exercise has a name that starts with the ebook's name like "csawesome2__" and has a book icon under the source column, then it is 
    from the ebook, shown in the red box below. If it has a percon icon under Source, it is contributed by another teacher in the community, shown in the purple box below.
    There are also controls in the green box below that can be used to filter by problem type or to just show the problems from the book.   
-   After selecting problems, click on the orange Choose exercises button to add them to the assignment. </p>
+   After selecting problems, click on the orange Choose exercises button to add them to the assignment. 
    </p>
    <figure align="center" xml:id="browse_exercises_fig">
       <caption>Browse Exercises</caption>
@@ -157,9 +157,9 @@
 
   <subsection xml:id="subsec-accommodations">
     <title>Accommodations</title>
+    <introduction>
     <p>Runestone allows you to create accommodations for students who need them. You can create an
-      accommodation for a student by clicking on the accommodations menu item in the assignment
-      builder, or use the link from the course home page. There are three kinds of accommodations
+      accommodation for a student in the Instructor Dashboard by clicking on <em>Manage Accommodations</em> under the <em>Student Management</em> menu or use the link from the course home page. There are three kinds of accommodations
       that you can create: <ul>
         <li>Extra Time on Timed Assessments</li>
         <li>Extended Due Date</li>
@@ -171,6 +171,7 @@
       <caption>Creating Accommodations</caption>
       <image source="Figures/accommodations.png" width="75%" />
     </figure>
+    </introduction>
     <subsubsection
       xml:id="subsubsec-ExamTime">
       <title>Extra Exam Time</title>
