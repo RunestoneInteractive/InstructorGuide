@@ -11,7 +11,11 @@
     <html>
     <knowl exercise-inline="no" example="no" listing="yes" />
     <platform host="runestone" />
+    <css theme="salem"/>
     <search variant="default" />
     </html>
+    <numbering>
+    <divisions level="3"/>     
+    </numbering> 
     
 </publication>

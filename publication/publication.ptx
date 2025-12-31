@@ -10,7 +10,7 @@
     </source>
     <html>
       <knowl exercise-inline="no" example="no" listing="yes" />
-      <css theme="default-modern"/>
+      <css theme="salem"/>
       <search variant="default" />
     </html>
     <numbering>
