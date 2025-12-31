@@ -1,114 +1,40 @@
+<?xml version="1.0"?>
 <section xml:id="writing-exercises_mixed-up-code-parsons">
    <title>Mixed-Up Code (Parsons)</title>
    <introduction>
-   <p>Mixed-up code or Parsons problems provide the correct code to solve a problem, but the code is broken into blocks and mixed up.</p>
-   <program language="rst"><input>
-      .. parsonsprob:: unqiue_problem_id_here
-         :maxdist:
-         :order:
-         :language:
-         :noindent:
-         :adaptive:
-         :numbered: left
+   <p>Parsons problems, also known as mixed-up code problems, are a type of coding exercise where students are presented with a set of code blocks that are mixed up or out of order. The goal is for students to rearrange these blocks into the correct sequence to form a functioning program or solve a specific problem. This type of exercise helps students develop their understanding of code structure, logic, and flow control. They can also be used for pseudocode or mathematical proofs.</p>
+    </introduction>
+   <subsection xml:id="parsons-examples">
+      <title>Example Parsons Problems</title>
+  
+  <p>Here is an example:</p>
+      <exercise label="swapex" indent="hide" language="python">
+         <statement>
+            <p>The following has the correct code to &#8216;swap' the values in x and y (so that x ends up with y's initial value and y ends up with x's initial value), but the code is mixed up and contains &lt;b&gt;one extra block&lt;/b&gt; which is not needed in a correct solution. Drag the needed blocks from the left into the correct order on the right. Check your solution by clicking on the &lt;i&gt;Check Me&lt;/i&gt; button. You will be told if any of the blocks are in the wrong order or if you need to remove one or more blocks.</p>
+         </statement>
+         <blocks>
+            <block order="4">
+               <cline>int x = 3;</cline>
+               <cline>int y = 5;</cline>
+               <cline>int temp = 0;</cline>
+            </block>
+            <block order="3">
+               <cline>temp = x;</cline>
+            </block>
+            <block order="1">
+               <cline>x = y;</cline>
+            </block>
+            <block order="5">
+               <cline>y = temp;</cline>
+            </block>
+            <block order="2" correct="no">
+               <cline>y = x; </cline>
+            </block>
+         </blocks>
+      </exercise>   
    
-         Instructions for the user. These can include a textual description of how to solve the problem. You must leave a blank line before this.
-         -----
-         def findmax(alist):
-         =====
-         if len(alist) == 0:
-         return None
-         =====
-         curmax = alist[0]
-         for item in alist:
-         =====
-         if item &amp;gt; curmax:
-         =====
-         curmax = item
-         =====
-         return curmax
-      </input></program>
-   <p>Create a working program and then paste the code for it into the editor.  Indent the code so that the left edge lines up with the options. Indent each line with 4 spaces beyond the previous line. Separate the blocks with <q>=====</q> which must line up under the options. Put the instructions before the code after a blank line and then followed by <q>----</q>.</p>
-   
-   </introduction>
-   <subsection xml:id="writing-exercises_parsons-options">
-      <title>Parsons Options</title>
-      <p>Options are indented under the Parsons directive (under the p).</p>
-      <table xml:id="writing-exercises_id1">
-         <tabular>
-            <title>Parsons Problems Options</title>
-
-
-
-
-            <row header="yes">
-               <cell>
-                  Option
-               </cell>
-               <cell>
-                  Description
-               </cell>
-            </row>
-
-
-            <row>
-               <cell>
-                  maxdist
-               </cell>
-               <cell>
-                  The maximum number of distractors to use. They will be picked at random
-               </cell>
-            </row>
-            <row>
-               <cell>
-                  order
-               </cell>
-               <cell>
-                  The order for the lines, they are displayed in a random order normally
-               </cell>
-            </row>
-            <row>
-               <cell>
-                  language
-               </cell>
-               <cell>
-                  Specify the language: java, python
-               </cell>
-            </row>
-            <row>
-               <cell>
-                  noindent
-               </cell>
-               <cell>
-                  Provide the indentation for the user by adding spaces to the left of the code
-               </cell>
-            </row>
-            <row>
-               <cell>
-                  adaptive
-               </cell>
-               <cell>
-                  Provide help is the user is struggling and modify the difficulty of the problem based on the user's performance on the previous problem
-               </cell>
-            </row>
-            <row>
-               <cell>
-                  numbered
-               </cell>
-               <cell>
-                  Show numbered labels to the left of the code if you add left or to the right when you add right
-               </cell>
-            </row>
-
-
-         </tabular>
-      </table>
-   </subsection>
-   <subsection xml:id="writing-exercises_parsons-distractor-types">
-      <title>Parsons Distractor Types</title>
-      <p>You can include distractor blocks in the problem. A distractor is code that isn't needed in a correct solution, such as code with a syntax error. Add a distractor block after the correct code block. Distractors can either be paired or unpaired. For paired distractors use #paired at end of the first line of code in the distractor block. For unpaired distractors add #distractor.</p>
-   </subsection>
-   <subsection xml:id="writing-exercises_example-with-paired-distractors">
-      <title>Example with Paired Distractors</title>
+      <p>You can include distractor blocks in the problem. A distractor is code that isn't needed in a correct solution, such as code with a syntax error.  Distractors can either be paired or unpaired. </p>
+  
       <p>Here is an example with paired distractors from a data oriented intermediate programming course in Python.</p>
       <exercise label="mt1dict1ex" numbered="yes" indent="show" language="python">
          <statement>
@@ -155,79 +81,23 @@
             </block>
          </blocks>
       </exercise>
-      <p>The source code for this problem is shown here:</p>
-      <program language="rst"><input>
-         .. parsonsprob:: mt1dict1ex
-         :numbered: left
+     </subsection>
+   <subsection xml:id="writing-parsons">
+      <title>Writing your own Parsons Problems</title>
 
-         Complete the function greater_dictionary. Given a dictionary d and an integer cutoff, return a dictionary that contains only the key-value pairs where they key is greater than or equal to cutoff.
-         -----
-         def greater_dictionary(d, cutoff):
-         =====
-         def greater_dictionary(self, d, cutoff): #paired
-         =====
-         result = {}
-         =====
-         for key in d.keys():
-         =====
-         for key in range(d): #paired
-         =====
-         if key &gt;= cutoff:
-         =====
-         if key &gt; cutoff: #paired
-         =====
-         result[key] = d[key]
-         =====
-         d[key] = result[key] #paired
-         =====
-         return result
-         </input></program>
-   </subsection>
-   <subsection xml:id="writing-exercises_example-with-unpaired-distractor">
-      <title>Example with Unpaired Distractor</title>
-      <p>Here is an example with an unpaired distractor.</p>
-      <exercise label="2_swapex" indent="hide" language="python">
-         <statement>
-            <p>The following has the correct code to &#8216;swap' the values in x and y (so that x ends up with y's initial value and y ends up with x's initial value), but the code is mixed up and contains &lt;b&gt;one extra block&lt;/b&gt; which is not needed in a correct solution. Drag the needed blocks from the left into the correct order on the right. Check your solution by clicking on the &lt;i&gt;Check Me&lt;/i&gt; button. You will be told if any of the blocks are in the wrong order or if you need to remove one or more blocks.</p>
-         </statement>
-         <blocks>
-            <block order="4">
-               <cline>int x = 3;</cline>
-               <cline>int y = 5;</cline>
-               <cline>int temp = 0;</cline>
-            </block>
-            <block order="3">
-               <cline>temp = x;</cline>
-            </block>
-            <block order="1">
-               <cline>x = y;</cline>
-            </block>
-            <block order="5">
-               <cline>y = temp;</cline>
-            </block>
-            <block order="2" correct="no">
-               <cline>y = x; </cline>
-            </block>
-         </blocks>
-      </exercise>
-      <p>The source code for this problem is shown here.</p>
-      <program language="rst"><input>
-         .. parsonsprob:: 2_swapex
-         :noindent:
+      <p>To create your own Parsons problems, start or go to any assignment in the Instructor Dashboard "Assignment Builder". In the Exercises section of the assignment, click on "Add Exercise" and select "+ Create New Exercise" and then select "Parsons Prob". </p>
+      <p>In step 1, select the coding language or text content for English or another natural language content. </p>
+      <p>In Step 2, write the instructions for the students using Markup or enter / for formatting options. </p>
+      <p>In Step 3, type in code or text into blocks as shown below. Create the correct solution for the problem. It will be randomly mixed up when presented to students. Click the "Add block" button at the top right or the + at the end of the blue line in between blocks to create new blocks. Click the copy button to create distractors and choose the correct one.</p>
 
-         The following has the correct code to 'swap' the values in x and y (so that x ends up with y's initial value and y ends up with x's initial value), but the code is mixed up and contains &lt;b&gt;one extra block&lt;/b&gt; which is not needed in a correct solution. Drag the needed blocks from the left into the correct order on the right. Check your solution by clicking on the &lt;i&gt;Check Me&lt;/i&gt; button. You will be told if any of the blocks are in the wrong order or if you need to remove one or more blocks.
-         -----
-         int x = 3;
-         int y = 5;
-         int temp = 0;
-         =====
-         temp = x;
-         =====
-         x = y;
-         =====
-         y = temp;
-         =====
-         y = x; #distractor
-         </input></program>
+      <figure align="center" xml:id="parsons_edit_fig">
+    <caption>Create a Parsons Problem</caption>
+    <image source="Figures/createParsons.png" width="100%" alt="Create a Parsons Problem"/>
+    </figure>
+
+    <p>In Step 4,  you can change the settings to set the chapter and section where you want the exercise stored in the assignment builder (where it will show when browsing chapters in the assignment builder), the author, the topic, the number of points for the question, and add tags to help you find the question later. If you change the name of the exercise, make sure it is unique! You can also choose to make the exercise private or contribute it to the question bank for other teachers to use. Please make experimental questions private.. </p>
+    <p>In Step 5, you can preview and test the problem before saving the problem.</p>
+      
+      
    </subsection>
 </section>
