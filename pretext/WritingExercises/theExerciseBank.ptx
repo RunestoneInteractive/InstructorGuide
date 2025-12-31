@@ -2,239 +2,157 @@
 <section xml:id="writing-exercises_adding-an-exercise-to-the-exercise-bank">
   <title>Adding an Exercise to the Exercise Bank</title>
   <subsection xml:id="writing_exer_intro">
-    <title>Introduction</title>
-    <video xml:id="l84cb4wtM8g" youtube="l84cb4wtM8g" width="auto" />
-    <p>Although all of the Runestone books have a pretty good selection of exercises, you can never have too many exercises. We hope to crowd source an enormous collection of questions and problems in our Exercise database. You can help by adding custom exercises for your own course to the database! Once your exercise is in the database it is available for others to find using the search feature on the create assignment page.</p>
-    <p>Since the most common exercises are programming exercises let's look at the activecode directive in detail. Here is the full directive with every possible option. This is what you would see if you add an activecode exercise from the web interface. Let's not get bogged down in the details here, let's look at a much simpler example.</p>
-    <program language="rst">
-      <input>
-      .. activecode:: uniqueid 'nocanvas': directives.flag,
-      :nopre: do not create an output component
-      :above: put the canvas above the code
-      :autorun: run this activecode as soon as the page is loaded
-      :autograde: typically unittest
-      :caption: caption under the active code
-      :include: invisibly include code from another activecode
-      :hidecode: Don:t show the editor initially
-      :language: python, html, javascript, java, python2, python3
-      :tour_1: audio tour track
-      :tour_2: audio tour track
-      :tour_3: audio tour track
-      :tour_4: audio tour track
-      :tour_5: audio tour track
-      :nocodelens: Do not show the codelens button
-      :coach: Show the codecoach button
-      :timelimit: set the time limit for this program
-      :stdin: : A file to simulate stdin (java, python2, python3)
-      :datafile: : A datafile for the program to read (java, python2, python3)
-      :sourcefile: : source files (java, python2, python3)
-      :available_files: : other additional files (java, python2, python3)
+   <title>Create New Exercises</title>
 
-      If this is a homework problem instead of an example in the text
-      then the assignment text should go here. The assignment text ends with
-      the line containing four tilde ~
-      ~~~~
-      print("hello world")
-      ====
-      print("Hidden code, such as unit tests come after the four = signs")
-      </input>
-    </program>
-    <p>Let's make an exercise to have the student compute the sum of the first N numbers.</p>
-    <exercise label="sigcse_ex1">
-      <statement>
-        <p>Write a Python function to sum the first N numbers starting with 0. So if N is 4 then your function should add 0 + 1 + 2 + 3</p>
-      </statement>
-      <program xml:id="sigcse_ex1_editor" interactive="activecode" language="python">
-        <input>
-        def sum_first_n(N):
-        # your code here
-        </input>
+    Replace: <video xml:id="l84cb4wtM8g" youtube="l84cb4wtM8g" width="auto" />
+    
+    <p>The new Assignment Builder makes it easy to write your own exercises! Although all of the Runestone books have a pretty good selection of exercises, you can never have too many exercises. We hope to crowd source an enormous collection of questions and problems in our Exercise database. You can help by adding custom exercises for your own course to the database! Once your exercise is in the database, it is available for others to find using the search feature on the create assignment page. Community contributed exercises are shown with a person icon instead of a book icon under the source column.</p>
+
+    <p>To create new exercises, start or go to any assignment in the Instructor Dashboard "Assignment Builder". In the Exercises section of the assignment, click on "Add Exercise" and select "+ Create New Exercise". </p>
+    <figure align="center" xml:id="create_new_exercise_fig">
+      <caption>Create new exercise</caption>
+      <image source="Figures/createNewExercise.png" width="100%" alt="Create new exercise"/>
+    </figure>
+    
+<p>There are many different types of exercises that you can create as shown below. Some of these are discussed further in the sections below.</p>
+<figure align="center" xml:id="exercise_types_fig">
+  <caption>Exercise Types</caption>   
+  <image source="Figures/exerciseTypes.png" width="100%" alt="Exercise Types"/>
+</figure>
+
+ <p>Here are some examples of these different types of exercises. In the next pages, we will go through the steps to create some of these exercises.</p>  
+
+  <p>Here is an example Multiple Choice Exercise:</p>
+  <exercise label="java_mcq_1">
+    <statement>
+      <p>What does the following code print?</p>
+      <program language="java">
+        <code>
+System.out.println(2 + 3 * 5 - 1);
+        </code>
       </program>
-    </exercise>
-    <p>The source code for the above looks like this:</p>
-    <program language="rst">
-      <input>
-      .. activecode:: sigcse_ex1
-      :language: python
+    </statement>
 
-      Write a Python function to sum the first N numbers starting with 0. So if N is 4 then your function should add 0 + 1 + 2 + 3
-      ~~~~
-      def sum_first_n(N):
-      # your code here
-      </input>
-    </program>
-    <p>Indentation and whitespace is important. In the previous example, you will see that the optional directive <c>:language:</c> is indented by four spaces. from the previous line. It must be indented at least three spaces to line up with the <q>a</q> in activecode, but using 4 keeps it consistent with my own personal python indentation style. Everything else in the body of the directive must also be indented to match the indentation of the optional parameters.</p>
-    <p>You can enter this into a textbox by clicking on the <q>Write</q> button under the Problems area.</p>
-    <image source="Figures/enter_rst.png" width="50%" />
-    <p>After you enter the text you need to compile and render the text. You can get a preview of your question on the right of the page.</p>
-    <!--image:  Figures/preview_rst.png-->
-    <p>The first part of the directive body are the instructions for the student. You can use any valid restructured text (rst) in this part of the directive including embedded images. You separate the instructions from any code you want to give the student with <c>~~~~</c> thats four tildes. The next part of the body is any code you want to provide. Just put in your Python or other language as you would normally write it.</p>
-    <p>To keep an exercise page looking a bit neater you can substitute the <c>.. actex::</c> directive for the <c>.. activecode::</c> directive. Making that substitution gives us the following:</p>
-    <exercise label="sigcse_ex2">
+    <choices>
+      <choice>
+        <statement>
+          <p>24</p>
+        </statement>
+
+        <feedback>
+          <p>
+            This would be true if it was System.out.println(((2 + 3) * 5) - 1),
+            but without the parentheses the multiplication is done first.
+          </p>
+        </feedback>
+      </choice>
+
+      <choice>
+        <statement>
+          <p>14</p>
+        </statement>
+
+        <feedback>
+          <p>
+            This would be true if it was System.out.println(2 + (3 * (5 - 1))),
+            but without the parentheses the multiplication is done first and the
+            addition and subtraction are handled from left to right.
+          </p>
+        </feedback>
+      </choice>
+
+      <choice>
+        <statement>
+          <p>This will give a compile time error.</p>
+        </statement>
+
+        <feedback>
+          <p>
+            This will compile and run. Try it in DrJava. Look up operator
+            precedence in Java.
+          </p>
+        </feedback>
+      </choice>
+
+      <choice correct="yes">
+        <statement>
+          <p>16</p>
+        </statement>
+
+        <feedback>
+          <p>
+            Correct! Remember PEMDAS. The multiplication is done first (3 * 5 = 15) and then the addition (2 + 15 = 17) and finally the subtraction (17 - 1 = 16).
+          </p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+  
+  <p>Parsons (Mixed up Code) Problem:</p>
+   <exercise label="mixed-hi-paired" numbered="yes" adaptive="yes" indentation="hide" language="java">
       <statement>
-        <p>Write a Python function to sum the first N numbers starting with 0. So if N is 4 then your function should add 0 + 1 + 2 + 3</p>
+        <p>
+          The following has all the correct Java code to print out “Hi there!” when
+          the code is run, but the code is mixed up and contains some extra
+          blocks with errors. Drag the needed blocks from left to right and put
+          them in the correct order. Click on the “Check Me” button to check
+          your solution.
+        </p>
       </statement>
-      <program xml:id="sigcse_ex2_editor" interactive="activecode" language="python">
-        <input>
-        def sum_first_n(N):
-        # your code here
-        </input>
-      </program>
+
+      <blocks>
+        <block order="6">
+          <choice correct="yes">
+            <cline>public class Hello</cline>
+            <cline>{</cline>
+          </choice>
+
+          <choice>
+            <cline>public Class Hello</cline>
+            <cline>{</cline>
+          </choice>
+        </block>
+
+        <block order="5">
+          <choice correct="yes">
+            <cline>   public static void main(String[] args)</cline>
+            <cline>   {</cline>
+          </choice>
+
+          <choice>
+            <cline>   public static void main()</cline>
+            <cline>   {</cline>
+          </choice>
+        </block>
+
+        <block order="8">
+          <choice correct="yes">
+            <cline>      System.out.println("Hi there!");</cline>
+          </choice>
+
+          <choice>
+            <cline>      System.out.println("Hi there!")</cline>
+            <cline></cline>
+          </choice>
+        </block>
+
+        <block order="2">
+          <cline>   }</cline>
+          <cline>}</cline>
+        </block>
+      </blocks>
     </exercise>
-  </subsection>
 
-  <subsection xml:id="writing-exercises_unit-testing-exercises">
-    <title>Unit Testing exercises</title>
-    <p>Of course, as you have learned in the previous section, the real killer feature of these exercises is to be able to create your own unit tests, and have the grader autograde the assignment.</p>
-    <p>Let's expand our example to include some simple unittests. We can do this by adding a hidden block of code to our previous example that uses the standard Python unittest framework.</p>
-    <program language="python">
-      <input>
-      from unittest.gui import TestCaseGui
+  <p>Active Code Exercise</p>
+  <p>Matching:</p>
+  <p>Short Answer</p>
+  <p>Clickable Area</p>
+  <p>Drag and Drop:</p>
+  <p>Fill in the Blank</p>
+  <p>Matching</p>
+  <p>Poll</p>
+  <p>Select Question</p>
 
-      class myTests(TestCaseGui):
-
-      def testOne(self):
-      self.assertEqual(add(2,2),4,"A feedback string when the test fails")
-      self.assertAlmostEqual(add(2.0,3.0), 5.0, 1, "Try adding your parmeters")
-
-      myTests().main()
-      </input>
-    </program>
-    <p>If you are not familiar with Python unittests they are pretty easy to write. You create your own class that is a subclass of TestCase, or in our work TestCaseGui so we get some graphical output. Your tests are all methods of the class and must start with the word <q>test</q>. There are a host of assertXXXX functions that you can use. Check out the <url href="https://docs.python.org/2/library/unittest.html#assert-methods" visual="https://docs.python.org/2/library/unittest.html#assert-methods">unittest documentation here</url>
-    </p>
-    <p>The second important addition in this example is the :autograde: option. This will allow the grade to make use of your unittests and assign a grade automatically for this particular problem.</p>
-    <exercise label="sigcse_ex3">
-      <statement>
-        <p>Write a Python function to sum the first N numbers starting with 0. So if N is 4 then your function should add 0 + 1 + 2 + 3</p>
-      </statement>
-      <program xml:id="sigcse_ex3_editor" interactive="activecode" language="python">
-        <input>
-        def sum_first_n(N):
-        # your code here
-        ====
-        from unittest.gui import TestCaseGui
-
-        class myTests(TestCaseGui):
-
-        def testOne(self):
-        self.assertEqual(sum_first_n(4),6,feedback="0 + 1 + 2 + 3 == 6")
-        self.assertEqual(sum_first_n(0),0,feedback="summing 0 numbers should be 0")
-
-        myTests().main()
-        </input>
-      </program>
-    </exercise>
-    <p>Let's try to add another test to the example above. This time we'll show the unittests in the active code window to make it easy for us to test. I strongly recommend you do this in a scratch activecode window when you are writing a question. It will save lots of frustrating wait time as you work out the details of your testing.</p>
-    <p>Let's try to add another test to the example above. This time we'll show the unittests in the active code window to make it easy for us to test. I strongly recommend you do this in a scratch activecode window when you are writing a question. It will save lots of frustrating wait time as you work out the details of your testing.</p>
-    <exercise label="sigcse_ex4">
-      <statement>
-        <p>Write a Python function to sum the first N numbers starting with 0. So if N is 4 then your function should add 0 + 1 + 2 + 3</p>
-      </statement>
-      <program xml:id="sigcse_ex4_editor" interactive="activecode" language="python">
-        <input>
-        def sum_first_n(N):
-        # your code here
-
-        from unittest.gui import TestCaseGui
-
-        class myTests(TestCaseGui):
-
-        def testOne(self):
-        self.assertEqual(sum_first_n(4),6,feedback="0 + 1 + 2 + 3 == 6")
-        self.assertEqual(sum_first_n(0),0,feedback="summing 0 numbers should be 0")
-
-        myTests().main()
-        </input>
-      </program>
-    </exercise>
-  </subsection>
-  <subsection xml:id="writing-exercises_advanced-activecode-options">
-    <title>Advanced activecode Options</title>
-    <p>
-    <ul>
-      <li>
-        <field_list>
-          <field>
-            <field_name>include</field_name>
-            <field_body>
-              <p>&#x2013; This option lets you include other activecodes in the current</p>
-            </field_body>
-          </field>
-        </field_list>
-      </li>
-      <li>
-        <field_list>
-          <field>
-            <field_name>timelimit</field_name>
-            <field_body>
-              <p>seconds &#x2013; What to do when students create an infinite loop and lock up their browser? Just wait a bit, every run of Python has a built in time limit of 30 seconds. Some things might take longer than this, so if you know an example or assignment is going to take longer, then you can set a higher time limit with this option.</p>
-            </field_body>
-          </field>
-        </field_list>
-      </li>
-      <li>
-        <field_list>
-          <field>
-            <field_name>nocodelens</field_name>
-            <field_body>
-              <p>&#x2013; codelens is an awesome addition, but it does not work with very many libraries. This is part of the sandboxed security of the codelens server. The most common one to be aware of is the turtle module. If you are doing a turtle example or assigning a turtle problem then you should set this flag so the <q>Show Codelens</q> button is hidden.</p>
-            </field_body>
-          </field>
-        </field_list>
-      </li>
-    </ul>
-    </p>
-  </subsection>
-  <subsection xml:id="writing-exercises_for-languages-outside-the-browser">
-    <title>For languages outside the browser</title>
-    <p>
-    <ul>
-      <li>
-        <field_list>
-          <field>
-            <field_name>language</field_name>
-            <field_body>
-              <p>&#x2013; As you saw earlier, Runestone supports Java, python2, and python3 in a sandboxed server environment environment.</p>
-            </field_body>
-          </field>
-        </field_list>
-      </li>
-    </ul>
-    </p>
-    <p>If you choose any of the above, the code from the window is packaged up and set to a separate server for compilation and execution. There are a few options to activecode that only apply to these languages.</p>
-    <p>
-    <ul>
-      <li>
-        <field_list>
-          <field>
-            <field_name>datafile</field_name>
-            <field_body>
-              <p>You can provide an id to a datafile that will be sent along with your Java code</p>
-            </field_body>
-          </field>
-        </field_list>
-      </li>
-      <li>
-        <field_list>
-          <field>
-            <field_name>sourcefile</field_name>
-            <field_body>
-              <p>You can provide additional source files that should be compiled along with the java file you upload.</p>
-            </field_body>
-          </field>
-        </field_list>
-      </li>
-      <li>
-        <field_list>
-          <field>
-            <field_name>available_files</field_name>
-            <field_body>
-              <p>You can provide additional binary files to link into the final executable.</p>
-            </field_body>
-          </field>
-        </field_list>
-      </li>
-    </ul>
-    </p>
+  
   </subsection>
 </section>

@@ -1,104 +1,91 @@
 <?xml version="1.0"?>
 <section xml:id="writing-exercises_multiple-choice-questions">
   <title>Multiple Choice Questions</title>
-  <p>Another common question type is the multiple choice question.</p>
-  <program language="rst">
-    <input>
-.. mchoice:: uniqueid
-    :multiple_answers: boolean  [optional]
-    :random: boolean [optional]
-    :answer_a: possible answer  -- what follows _ is label
-    :answer_b: possible answer
-    :answer_c: possible answer
-    :answer_d: possible answer
-    :answer_e: possible answer
-    :correct: letter of correct answer or list of correct answer letters (in case of multiple answe
-    rs)
-    :feedback_a: displayed if a is picked
-    :feedback_b: displayed if b is picked
-    :feedback_c: displayed if c is picked
-    :feedback_d: displayed if d is picked
-    :feedback_e: displayed if e is picked
-
-    Question text   ...
-</input>
-  </program>
-  <p>Here is an example from a Data Structures class:</p>
-  <exercise label="stack_2">
+  <p>A common question type is the multiple choice question like below.</p>
+  
+  <exercise label="java_mcq_2">
     <statement>
-      <p>3-1-1: Given the following sequence of stack operations, what is the top item on the stack when the sequence is complete?</p>
-      <program language="python">
-        <input>
-m = Stack()
-m.push('x')
-m.push('y')
-m.push('z')
-while not m.isEmpty():
-   m.pop()
-   m.pop()
-</input>
+      <p>What does the following code print?</p>
+      <program language="java">
+        <code>
+System.out.println(2 + 3 * 5 - 1);
+        </code>
       </program>
     </statement>
+
     <choices>
       <choice>
         <statement>
-          <p>'x'</p>
+          <p>24</p>
         </statement>
+
         <feedback>
-          <p>You may want to check out the docs for isEmpty</p>
+          <p>
+            This would be true if it was System.out.println(((2 + 3) * 5) - 1),
+            but without the parentheses the multiplication is done first.
+          </p>
         </feedback>
       </choice>
+
       <choice>
         <statement>
-          <p>the stack is empty</p>
+          <p>14</p>
         </statement>
+
         <feedback>
-          <p>There is an odd number of things on the stack but each time through the loop 2 things are popped.</p>
+          <p>
+            This would be true if it was System.out.println(2 + (3 * (5 - 1))),
+            but without the parentheses the multiplication is done first and the
+            addition and subtraction are handled from left to right.
+          </p>
         </feedback>
       </choice>
+
+      <choice>
+        <statement>
+          <p>This will give a compile time error.</p>
+        </statement>
+
+        <feedback>
+          <p>
+            This will compile and run. Try it in DrJava. Look up operator
+            precedence in Java.
+          </p>
+        </feedback>
+      </choice>
+
       <choice correct="yes">
         <statement>
-          <p>an error will occur</p>
+          <p>16</p>
         </statement>
+
         <feedback>
-          <p>Good Job.</p>
-        </feedback>
-      </choice>
-      <choice>
-        <statement>
-          <p>'z'</p>
-        </statement>
-        <feedback>
-          <p>You may want to check out the docs for isEmpty</p>
+          <p>
+            Correct! Remember PEMDAS. The multiplication is done first (3 * 5 = 15) and then the addition (2 + 15 = 17) and finally the subtraction (17 - 1 = 16).
+          </p>
         </feedback>
       </choice>
     </choices>
   </exercise>
-  <p>The source code is here:</p>
-  <program language="rst">
-    <input>
-.. mchoice:: stack_2
-    :answer_a: 'x'
-    :answer_b: the stack is empty
-    :answer_c: an error will occur
-    :answer_d: 'z'
-    :correct: c
-    :feedback_a: You may want to check out the docs for isEmpty
-    :feedback_b: There is an odd number of things on the stack but each time through the loop 2 things are popped.
-    :feedback_c: Good Job.
-    :feedback_d: You may want to check out the docs for isEmpty
-
-    Given the following sequence of stack operations, what is the top item on the stack when the sequence is complete?
-
-    .. code-block:: python
-
-        m = Stack()
-        m.push('x')
-        m.push('y')
-        m.push('z')
-        while not m.isEmpty():
-            m.pop()
-            m.pop()
-</input>
-  </program>
+  <p>To create multiple choice questions, start or go to any assignment in the Instructor Dashboard "Assignment Builder". In the Exercises section of the assignment, click on "Add Exercise" and select "+ Create New Exercise" and then select "Multiple Choice".</p>
+  <figure align="center" xml:id="mcq_fig">
+    <caption>Choose Multiple Choice Exercise</caption>
+    <image source="Figures/exerciseMultipleChoice.png" width="100%" alt="Choose Multiple Choice Question"/>
+  </figure>
+  <p>Enter the question. Type in / and press enter to see the menu to format the text and add in images, tables, code blocks, etc. You can also just use Markdown syntax directly (<url href="https://www.markdownguide.org/cheat-sheet/">Markdown Cheat Sheet</url>) and put code in between backticks (`) for inline code or triple backticks (```) for code blocks.</p>
+<figure align="center" xml:id="mcq_edit_fig">
+    <caption>Create a Multiple Choice Question</caption>
+    <image source="Figures/createMCQ.png" width="100%" alt="Create a Multiple Choice Question"/>
+  </figure>
+  <p>Click on Next or 2 to move to the Options tab and enter the multiple choice options. Click on Add Option to add more options. Click on the checkmark next to "Correct" to mark a correct option. You can mark more than one answer as correct. You can also add feedback for each choice that will be shown to the student after they answer the question. Do / and enter to see the format menu or use markdown for each option.</p>
+  <figure align="center" xml:id="mcq_options_fig">
+    <caption>Enter Multiple Choice Options</caption>
+    <image source="Figures/mcqOptions.png" width="100%" alt="Enter Multiple Choice Options"/>
+  </figure>
+  <p>Click on Next or 3 to move to the Settings tab. Here you can set the chapter and section where you want the exercise stored in the assignment builder (where it will show when browsing chapters in the assignment builder), the author, the topic, the number of points for the question, and add tags to help you find the question later. If you change the name of the exercise, make sure it is unique! Some authors put their author names in the exercise name too to make them easier to find. You can also choose to make the exercise private or contribute it to the question bank for other teachers to use. Please make experimental questions private. </p>
+  <figure align="center" xml:id="mcq_settings_fig">
+    <caption>Set Multiple Choice Question Settings</caption>
+    <image source="Figures/mcqSettings.png" width="100%" alt="Set Multiple Choice Question Settings"/>
+  </figure>
+  <p>Make sure that you Preview the exercise in step 4 and test it before saving it. Although there is no way to delete an exercise once it is saved, you can always edit it later to fix mistakes, make it private, or flag it for the volunteers to fix or delete.</p>
 </section>
