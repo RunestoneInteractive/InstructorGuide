@@ -8,5 +8,4 @@
     <xi:include href='./examsAndQuizzes.ptx' />
     <xi:include href='./gradeAssignment.ptx' />
     <xi:include href='./practice.ptx' />
-    <xi:include href='./Exercises.ptx' />
 </chapter>

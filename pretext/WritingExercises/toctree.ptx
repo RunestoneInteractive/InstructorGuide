@@ -4,7 +4,5 @@
     <xi:include href='./theExerciseBank.ptx' />
     <xi:include href='./multipleChoice.ptx' />
     <xi:include href='./parsons.ptx' />
-    <xi:include href='./advancedRunestone.ptx' />
-    <xi:include href='./ExerciseAddAProblem.ptx' />
-    <xi:include href='./Exercises.ptx' />
+    <xi:include href='./activecode.ptx' />
 </chapter>
