@@ -3,8 +3,10 @@
   <title>Create an Assignment</title>
   <subsection xml:id="create_assignment_intro">
     <title>Introduction</title>
-   replace:
-    <video xml:id="h45c7_wIgGA" youtube="h45c7_wIgGA" width="auto" />
+
+     <video xml:id="assignment-builder-video" youtube="_1C6pKu4Hxk" width="auto"/>
+
+    <!-- old video <video xml:id="h45c7_wIgGA" youtube="h45c7_wIgGA" width="auto" /> -->
     <p>
     
       <ol marker="1">
@@ -56,6 +58,10 @@
       </li>
       </ol>
     </p> 
+
+    <p>
+    This <url href="https://drive.google.com/file/d/1f4xvZJyKOh4IE7O6iWbC4M-fg3V1zmZN/view?usp=sharing">Scribe document</url> illustrates how to create, edit and grade assignments in Runestone step by step with screenshots.
+    </p>
   </subsection>
 
   <subsection xml:id="instructor-interface_creating-a-reading-assignment">
@@ -141,7 +147,7 @@
       button to let us know. We have volunteer editors that help us clear out or correct these bad
       questions. </p>
 
-<p>You can also Search Exercises by name or keyword or author if you are looking for something specific. Click on <em>Add Exarcises</em> button and then select <em>Search Exercises</em> instead of Browse Chapter Exercises. Type in a search word and enter in the search box. You can filter by type. The default is to search for exercises associated with the ebook that you are in, but you can toggle "Book Exercises" to "All Exercises" to search for exercises in other books. You can then click to select or preview exercises from the results and then click on the orange Choose Exercises button to add them to the assignment. You can also Copy Exercises to change them.</p>
+<p>You can also Search Exercises by name or keyword or author if you are looking for something specific. Click on <em>Add Exercises</em> button and then select <em>Search Exercises</em> instead of Browse Chapter Exercises. Type in a search word and enter in the search box. You can filter by type. The default is to search for exercises associated with the ebook that you are in, but you can toggle "Book Exercises" to "All Exercises" to search for exercises in other books. You can then click to select or preview exercises from the results and then click on the orange Choose Exercises button to add them to the assignment. You can also Copy Exercises to change them.</p>
 <figure align="center" xml:id="search_exercises_fig">
       <caption>Search Exercises</caption>   
       <image source="Figures/AssignmentExercisesSearch.png" width="100%"
@@ -151,7 +157,7 @@
 <p>When you are done adding exercises, click on the back arrow by the assignment name or on the Assignment Builder button at the top to return to the main assignment list page. By default, the new assignment will not be visible to students. </p>
        <warning>
             <title>Make it Visible</title>
-            <p>Please take note of the visible to students toggle. If you forget to toggle this to visible then the assignment will not show up in the list that your students can see on the assignment page.</p>
+            <p>Please make sure that you slide the visibility toggle of an assignment in the assignments list to visible when you want your students to see it. If you forget to toggle this to visible, then the assignment will not show up in the list that your students can see on the assignment page.</p>
           </warning>
   </subsection>
 

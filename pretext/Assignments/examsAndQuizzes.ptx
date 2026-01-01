@@ -1,8 +1,11 @@
 <?xml version="1.0"?>
 <section xml:id="instructor-interface_exams-and-quizzes-in-runestone">
   <title>Exams and Quizzes in Runestone</title>
+  
   <subsection xml:id="create_quiz_intro">
   <title>Creating a Quiz/Exam Assignment</title>
+
+  <video xml:id="create-exams-video" youtube="eu6Q6GALKBE" width="auto" />
   
   <p>In the new Assignment Builder in the Instructor Dashboard, you can choose to make a new assignment a Quiz/Exam like below where you can select whether there is a time limit and whether pauses and feedback are allowed.</p>
 <figure align="center" xml:id="create_exam_fig">

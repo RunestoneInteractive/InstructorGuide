@@ -4,7 +4,7 @@
   <subsection xml:id="writing_exer_intro">
    <title>Create New Exercises</title>
 
-    Replace: <video xml:id="l84cb4wtM8g" youtube="l84cb4wtM8g" width="auto" />
+    <video xml:id="create-new-exercises-video" youtube="IPvW9oKg1eA" width="auto" />
     
     <p>The new Assignment Builder makes it easy to write your own exercises! Although all of the Runestone books have a pretty good selection of exercises, you can never have too many exercises. We hope to crowd source an enormous collection of questions and problems in our Exercise database. You can help by adding custom exercises for your own course to the database! Once your exercise is in the database, it is available for others to find using the search feature on the create assignment page. Community contributed exercises are shown with a person icon instead of a book icon under the source column.</p>
 
@@ -23,7 +23,7 @@
  <p>Here are some examples of these different types of exercises. In the next pages, we will go through the steps to create some of these exercises.</p>  
 
   <p>Here is an example Multiple Choice Exercise:</p>
-  <exercise label="java_mcq_1">
+  <exercise label="java_mcq_1" xml:id="java_mcq_1">
     <statement>
       <p>What does the following code print?</p>
       <program language="java">
@@ -89,7 +89,8 @@ System.out.println(2 + 3 * 5 - 1);
   </exercise>
   
   <p>Parsons (Mixed up Code) Problem:</p>
-   <exercise label="mixed-hi-paired" numbered="yes" adaptive="yes" indentation="hide" language="java">
+
+   <exercise label="mixed-hi-paired" xml:id="mixed-hi-paired" numbered="yes" adaptive="yes" indentation="hide" language="java">
       <statement>
         <p>
           The following has all the correct Java code to print out “Hi there!” when
@@ -143,16 +144,183 @@ System.out.println(2 + 3 * 5 - 1);
       </blocks>
     </exercise>
 
-  <p>Active Code Exercise</p>
-  <p>Matching:</p>
-  <p>Short Answer</p>
-  <p>Clickable Area</p>
-  <p>Drag and Drop:</p>
-  <p>Fill in the Blank</p>
-  <p>Matching</p>
-  <p>Poll</p>
-  <p>Select Question</p>
+ 
+   <p>Here is an example of a simple Active Code exercise in Python:</p>
+    <exercise label="active_code_example">
+      <statement>
+        <p>Write a Python function that takes two numbers as input and returns their sum.</p>
+      </statement>
+      <program interactive="activecode" language="python">
+        <code>
+def add(a, b):
+  # complete this function to add a and b and return the sum
+        </code>
+        <tests>
+from unittest.gui import TestCaseGui
 
+class myTests(TestCaseGui):
+
+  def testOne(self):
+      self.assertEqual(add(2,2),4,"Call to add(2,2) should return 4")
+      self.assertAlmostEqual(add(2.0,3.0), 5.0, 1, "Call to add(2.0,3.0) should return 5.0")
+
+myTests().main()
+        </tests>
+      </program>
+    </exercise>
+
+  <p>Here is an example of a Drag and Drop matching questions. You can also have Matching questions where
+  you draw lines to match many to many objects.  </p>
+    <exercise label="java_matching">
+      <statement>
+        <p>
+          Drag the definition from the left and drop it on the correct concept
+          on the right. Click the "Check Me" button to see if you are correct.
+        </p>
+      </statement>
+
+      <feedback>
+        <p>Review the summaries above.</p>
+      </feedback>
+
+      <cardsort>
+        <match>
+          <premise order="1">a specific instance of a class with defined attributes</premise>
+          <response>object</response>
+        </match>
+
+        <match>
+          <premise order="2">defines a new data type with instance variables and methods</premise>
+          <response>class</response>
+        </match>
+
+        <match>
+          <premise order="3">define the behaviors or functions for objects</premise>
+          <response>methods</response>
+        </match>
+
+        <match>
+          <premise order="4">
+            code that is used to create new objects and initialize the object's attributes
+          </premise>
+
+          <response>constructors</response>
+        </match>
+
+        <match>
+          <premise order="5">the values or data passed to an object's method</premise>
+          <response>parameters</response>
+        </match>
+      </cardsort>
+    </exercise>
+
+ <p>Clickable Area:</p>
+  <exercise label="date_constructor">
+      <statement>
+        <p>Click on the constructor headers (signatures)</p>
+      </statement>
+
+      <feedback>
+        <p>
+          Constructors are public and have the same name as the class. Click on
+          the constructor headers which are the first line of the constructors
+          showing their name and parameters.
+        </p>
+      </feedback>
+
+      <areas>
+        <cline><area correct="no">public class Date {</area></cline>
+        <cline></cline>
+        <cline>    <area correct="no">private int year;</area></cline>
+        <cline>    <area correct="no">private int month;</area></cline>
+        <cline>    <area correct="no">private int day;</area></cline>
+        <cline></cline>
+        <cline>    <area correct="yes">public Date() </area></cline>
+        <cline>        <area correct="no">{ /** Implementation not shown */ }</area></cline>
+        <cline></cline>
+        <cline>    <area correct="yes">public Date(int year, int month, int day) </area></cline>
+        <cline>        <area correct="no">{ /** Implementation not shown */ }</area></cline>
+        <cline></cline>
+        <cline>     <area correct="no">public void print() </area></cline>
+        <cline>        <area correct="no">{ /** Implementation not shown */ }</area></cline>
+        <cline></cline>
+        <cline><area correct="no">}</area></cline>
+      </areas>
+    </exercise>
+
+  
+ 
+
+
+  <p>Fill in the Blank:</p>
+  <exercise label="fillDecVar2">
+      <statement>
+        <p>What Java data type should you use for a shoe size like 8.5?</p>
+        <p>
+          <fillin answer="double" mode="string" />
+        </p>
+      </statement>
+
+      <evaluation>
+        <evaluate>
+          <test>
+            <strcmp use-answer="yes" />
+            <feedback>
+              Correct.  Any variable that needs to values after the decimal point should be declared as a double.
+            </feedback>
+          </test>
+
+          <test>
+            <!-- else -->
+            <feedback>What type allows for a decimal value?</feedback>
+          </test>
+        </evaluate>
+      </evaluation>
+    </exercise>
+  <p>Short Answer</p>
+   <exercise label="pbj">
+      <statement>
+        <p>
+        Write an algorithm for someone (maybe a robot) to make a peanut butter and jelly sandwich.  
+        Be sure to include at least 5 precise steps in order. 
+        Have someone (maybe your instructor) act it out. Were your instructions precise enough?  
+        </p>
+      </statement>
+
+      <response />
+    </exercise>
+
+
+  <p>Poll</p>
+
+    <query label="qprogramming">
+      <statement>
+        <p>I am a</p>
+      </statement>
+
+      <choices>
+        <choice>
+          <p>beginner programmer</p>
+        </choice>
+
+        <choice>
+          <p>intermediate programmer</p>
+        </choice>
+
+        <choice>
+          <p>expert programmer</p>
+        </choice>
+
+        <choice>
+          <p>prefer not to answer</p>
+        </choice>
+      </choices>
+    </query>
+
+  <p>Select Questions allow the students to choose between already existing questions:</p>
+<exercise label="toggle1">
+  <select grade="first" questions="mixed-hi-paired java_mcq_1"/>
+</exercise>
   
   </subsection>
 </section>
