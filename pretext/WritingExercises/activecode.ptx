@@ -1,0 +1,191 @@
+<?xml version="1.0"?>
+<section xml:id="writing-exercises_active-code-exercises">
+  <title>Writing your own Active Code Exercises</title> 
+
+<subsection xml:id="writing-exercises_activecode">
+    <title>Active Code Exercises</title>
+    <p>Active Code exercises are coding exercises that allow students to write and run code directly within the ebook. These exercises provide an interactive way for students to practice coding skills, receive immediate feedback, and enhance their understanding of programming concepts. Active Code exercises can be created in various programming languages, including Python, JavaScript, Java, C++, and others supported by the Runestone platform.</p>
+
+ <p>Here is an example of a simple Active Code exercise in Python:</p>
+    <exercise label="ac_ex1">
+      <statement>
+        <p>Write a Python function that takes two numbers as input and returns their sum.</p>
+      </statement>
+      <program interactive="activecode" language="python">
+        <code>
+def add(a, b):
+  # complete this function to add a and b and return the sum
+        </code>
+        <tests>
+from unittest.gui import TestCaseGui
+
+class myTests(TestCaseGui):
+
+  def testOne(self):
+      self.assertEqual(add(2,2),4,"Call to add(2,2) should return 4")
+      self.assertAlmostEqual(add(2.0,3.0), 5.0, 1, "Call to add(2.0,3.0) should return 5.0")
+
+myTests().main()
+        </tests>
+      </program>
+    </exercise>
+    
+    <p>To write your own Active Code exercises, start or go to any assignment in the Instructor Dashboard "Assignment Builder". In the Exercises section of the assignment, click on "Add Exercise" and select "+ Create New Exercise" and then select "Active Code". </p>
+<ol>
+<li>    <p>In step 1 Language, select the coding language for the exercise. </p>
+ </li>
+ <li>   <p>In Step 2 Instructions, write the instructions for the students using Markup or enter / for formatting options. </p>
+ </li>
+ <li>    <p>In Step 3 Hidden Prefix, you can optionally provide hidden code that is run before the students code. This is usually left blank.</p>
+  </li>
+  <li>    <p>In Step 4 Starter Code, write the code that you want the students to complete in the code editor. You can provide starter code or just comments or leave it blank for students to fill in. 
+  <figure align="center" xml:id="activecode_edit_fig">
+    <caption>Create an Active Code Exercise</caption>
+    <image source="Figures/createActiveCode.png" width="100%" alt="Create an Active Code Exercise"/>
+    </figure>
+  </p>
+  </li>
+  <li>    <p>In Step 5 Hidden Prefix, you can optionally add unit tests to automatically grade the students' code. These tests will run when the student clicks the "Submit" button, and they will receive feedback based on the results of the tests. The next section will explain how to write unit tests.</p>
+  </li>
+  <li>
+    <p>In Step 6, you can optionally provide standard input that the student's code can read from if needed. This is usually left blank.</p>
+  </li>
+   <li>
+    <p>In Step 7,  you can change the settings to set the chapter and section where you want the exercise stored in the assignment builder (where it will show when browsing chapters in the assignment builder), the author, the topic, the number of points for the question, and add tags to help you find the question later. If you change the name of the exercise, make sure it is unique! You can also choose to make the exercise private or contribute it to the question bank for other teachers to use. Please make experimental questions private. </p>
+    </li>
+    <li><p>Then, you can preview and test the problem before saving the problem.</p>
+</li>
+</ol>
+   
+    </subsection>
+
+  <subsection xml:id="writing-exercises_unit-testing-exercises">
+    <title>Python Unit Tests for Autograding</title>
+    <p>The real killer feature of these exercises is to be able to create your own unit tests and have the exercise be autograded.</p>
+    <p>Let's expand our example to include some simple unittests. We can do this by adding a hidden block of code to our previous example in step 5 Hidden Prefix that uses the standard Python unittest framework. Be careful with using the correct indentation when typing in Python.</p>
+    <program language="python">
+      <code>
+from unittest.gui import TestCaseGui
+
+class myTests(TestCaseGui):
+
+  def testOne(self):
+      self.assertEqual(add(2,2),4,"Call to add(2,2) should return 4")
+      self.assertAlmostEqual(add(2.0,3.0), 5.0, 1, "Call to add(2.0,3.0) should return 5.0")
+
+myTests().main()
+      </code>
+    </program>
+
+    <p>If you are not familiar with Python unittests they are pretty easy to write. You create your own class that is a subclass of TestCase, or in our work TestCaseGui so we get some graphical output. Your tests are all methods of the class and must start with the word <q>test</q>. There are a host of assertXXXX functions that you can use. Check out the <url href="https://docs.python.org/2/library/unittest.html#assert-methods" visual="https://docs.python.org/2/library/unittest.html#assert-methods">unittest documentation here</url>.
+    </p>
+  </subsection>
+  
+  <subsection xml:id="writing-java-unit-tests">
+    <title>Java Unit Tests for Autograding</title>
+    <p>You can create Active Code exercises in other languages supported by Runestone and use their unit testing libraries. For Java, there is the JUnit library as well as a custom library developed by Kate McDonnell for CSAwesome that makes it easy to write autograding unit tests. Here is an example:</p>
+    <exercise label="java_ac_ex1">
+      <statement>
+        <p>
+          Complete the method called square that takes an integer as input and returns its square. Then, call the square method in the main method to print out the square of 6.
+        </p>
+      </statement>
+
+      <program interactive="activecode" language="java">
+        <code>
+public class SquareMethod
+{
+     public static int square(int number)
+     {
+          // TO DO: complete this method to return the square of number
+          
+     }
+
+     public static void main(String[] args)
+     {
+         System.out.println("5 squared is " + square(5));
+         // TO DO: Call the square method to print out the square of 6
+
+     }
+}
+        </code>
+        <tests>
+import static org.junit.Assert.*;
+import org.junit.*;
+import java.io.*;
+
+public class RunestoneTests extends CodeTestHelper
+{
+    @Test
+    public void containsCall()
+    {
+        boolean passed = checkCodeContains("square(6)", "square(6)");
+        assertTrue(passed);
+    }
+    @Test
+    public void testMain() throws IOException
+    {
+        String output = getMethodOutput("main");
+        String expect = "36";
+        boolean passed =
+             getResults(expect, output, "Expected output from main");
+        assertTrue(passed);
+    }
+    @Test
+    public void testSquare()
+    {
+         Object[] args = {9};
+         String output = getMethodOutput("square", args);
+         String expect = "81";
+
+        boolean passed = getResults(expect, output, "square(9)");
+        assertTrue(passed);
+    }
+}
+        </tests>
+      </program>
+    </exercise>
+
+    <p>The unit test code which would be put in the hidden suffix section in step 4 is as follows:</p>
+    <program language="java">
+      <code>
+import static org.junit.Assert.*;
+import org.junit.*;
+import java.io.*;
+
+public class RunestoneTests extends CodeTestHelper
+{
+    @Test
+    public void containsCall()
+    {
+        boolean passed = checkCodeContains("square(6)", "square(6)");
+        assertTrue(passed);
+    }
+    @Test
+    public void testMain() throws IOException
+    {
+        String output = getMethodOutput("main");
+        String expect = "36";
+        boolean passed =
+             getResults(expect, output, "Expected output from main");
+        assertTrue(passed);
+    }
+    @Test
+    public void testSquare()
+    {
+         Object[] args = {9};
+         String output = getMethodOutput("square", args);
+         String expect = "81";
+
+        boolean passed = getResults(expect, output, "square(9)");
+        assertTrue(passed);
+    }
+}
+      </code>
+    </program>
+
+    <p>In this example, we have three tests. The first test checks that the student's code contains a call to square(6). The second test runs the main method and checks that the output contains 36 (the square of 6). The third test calls the square method with an argument of 9 and checks that the return value is 81.</p>
+
+    <p>This <url href="https://docs.google.com/document/d/1p4I_9iOc-2_70t37grR_0nTMukcpXHk9nAxxxr-0pl8/edit?usp=sharing">document</url> provides more details on writing Java unit tests for Active Code exercises using the CodeTestHelper library.</p>
+  </subsection>      
+</section>
