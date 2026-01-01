@@ -369,14 +369,14 @@ print(total)
 
 
 		<program xml:id="python-hello-world" interactive='activecode' language="python">
-			<input>
+			<code>
 				print("My first program adds a list of numbers")
 				myList = [2, 4, 6, 8, 10]
 				total = 0
 				for num in myList:
 				total = total + num
 				print(total)
-			</input>
+			</code>
 		</program>
 
 		<p> With Sphinx I had a way to write large documents in a very simple markup language called <url
