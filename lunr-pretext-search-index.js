@@ -205,7 +205,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "4.1",
   "title": "Managing Students in your Course",
-  "body": " Managing Students in your Course    Student Self Registration  When you created the course, you chose a project name. Give that text string to students. They will register on the site and enter that string as their course name. If you've forgotten what the string is, you can see it displayed on the Course selection page https:\/\/runestone.academy\/runestone\/default\/courses . You can access that page by clicking on the person icon at the top right of the window and then selecting Change Course .   Students will register for a course following the same procedures that were described . You just need to provide them with the text string for the course name.     Pre-register your students  You can also pre-register your students by creating a CSV file and uploading that file through the instructor interface. Pull down the 👤 menu and Choose Instructor Page then click on the button for Manage Students. You will see a page like this:   Register your Students    You can create a csv file in your favorite spreadsheet program and then export it to a csv or you can simply edit a textfile, whatever works for you. But note that some versions of Excel add a lot of empty columns and rows that really confuse our importer! Please check the csv file in a text editor before you upload it to runestone. Also note that if the csv file has any problems, like a duplicate username, nothing will be changed on the runestone server. The format of the file MUST be as shown in the figure.  username,email,first_name,last_name,password,course user1,user@school.com,Jane,Smith,xxxx,foocourse  Notice – There are no spaces after the commas. Excel is horrible at exporting it will add extra blank fields and lines that look like ,,,,,,,, Once you export from excel its best to clean things up in your favorite text editor. Also if you are using Excel make sure to export it as a UTF-8 encoded file, otherwise excel adds unreadable characters at the beginning.  When the file is created you can choose it and upload it to Runestone. It will verify the fields and if there are no errors it will register the students. The most common error is that the username is a duplicate. Usernames are the primary way we identify students and they must be unique. With over 120,000 students in the database there are bound to be duplicates. This is not a bug, it is a sign of growth.  If you add students to your class later you need to create a new CSV file just for them (or have them register themselves). Adding students to the end of your previous spreadsheet will result in lots of error messages about duplicate usernames.    Removing Students  You may also have noticed the \"Remove Student(s)\" button in This allows you to remove a student from your course. Although it seems self explanatory the reason to bring this up is to explain what happens to the student account when you remove them. The account is not deleted but rather the student and their work is moved to the base course. This allows a student to have access to their work and to continue working independently if they wish. As an instructor you do not have the capability to delete a student account. But anyone can delete their account and all of the information saved for that account by using the 👤 menu choosing edit profile.    Resetting Passwords  There is no doubt about it, password management is a headache for everyone. Runestone handles hundreds of password reset requests each week. But that does not always work. Some schools (inexplicably) block email from Runestone. Other schools run software that simply mangles the URL's found in emails that look like they are password reset emails. This is understandable to some degree as Phishing scams are so common, and its important to protect the students. I've done everything I can do from my side to validate the runestone.academy email domain. But, other times students simply type in their email incorrectly.  You may be get around some of these problems by asking your school to allow mail from runestoneinteractive@gmail.com to go through. If your IT department is not cooperative then your students will have to come to you to have their password changed. You can reset the password for any of the students in your course. Just select the student from the list and click the reset password button. I cannot respond to emails asking me to reset passwords, I don't have the time to do that, and I do not have a reliable way to verify that those requests are legitimate. Yes many high schoolers think it is funny to try to trick me into resetting the password on one of their friends.  Instructors cannot change their own passwords through this mechanism. who among us hasn't walked away from the computer and left ourselves logged into Runestone? As an instructor, you will still have to use the normal email password reset mechanism. If your school blocks emails then I suggest you just get a free gmail address to use for this purpose.   "
+  "body": " Managing Students in your Course    Student Self Registration  When you created the course, you chose a unique course name. Give your course name to students. They will register on the site and enter that string as their course name. If you've forgotten what your course name is, you can see it displayed on the Course selection page https:\/\/runestone.academy\/runestone\/default\/courses . You can access that page by clicking on the person icon at the top right of the window and then selecting Change Course .   Students will register for a course following the same procedures that were described . You just need to provide them with the text string for the course name.     Pre-register your students  You can also pre-register your students by creating a CSV file and uploading that file through the instructor interface. Pull down the 👤 menu and select Instructor Dashboard then open the Student Management area and click on Manage Students.   Instructor Dashboard: Manage Students    You will see a page like this:   Register your Students    You can create a csv file in your favorite spreadsheet program and then export it to a csv or you can simply edit a textfile, whatever works for you. But note that some versions of Excel add a lot of empty columns and rows that really confuse our importer! Please check the csv file in a text editor before you upload it to runestone. Also note that if the csv file has any problems, like a duplicate username, nothing will be changed on the runestone server. The format of the file MUST be as shown in the figure.  username,email,first_name,last_name,password,course user1,user@school.com,Jane,Smith,xxxx,foocourse  Notice – There are no spaces after the commas. Excel is horrible at exporting it will add extra blank fields and lines that look like ,,,,,,,, Once you export from excel its best to clean things up in your favorite text editor. Also if you are using Excel make sure to export it as a UTF-8 encoded file, otherwise excel adds unreadable characters at the beginning.  When the file is created you can choose it and upload it to Runestone. It will verify the fields and if there are no errors it will register the students. The most common error is that the username is a duplicate. Usernames are the primary way we identify students and they must be unique. With over 120,000 students in the database there are bound to be duplicates. This is not a bug, it is a sign of growth.  If you add students to your class later you need to create a new CSV file just for them (or have them register themselves). Adding students to the end of your previous spreadsheet will result in lots of error messages about duplicate usernames.    Removing Students  You may also have noticed the \"Remove Student(s)\" button in This allows you to remove a student from your course. Although it seems self explanatory the reason to bring this up is to explain what happens to the student account when you remove them. The account is not deleted but rather the student and their work is moved to the base course. This allows a student to have access to their work and to continue working independently if they wish. As an instructor you do not have the capability to delete a student account. But anyone can delete their account and all of the information saved for that account by using the 👤 menu choosing edit profile.    Resetting Passwords  There is no doubt about it, password management is a headache for everyone. Runestone handles hundreds of password reset requests each week. But that does not always work. Some schools (inexplicably) block email from Runestone. Other schools run software that simply mangles the URL's found in emails that look like they are password reset emails. This is understandable to some degree as Phishing scams are so common, and its important to protect the students. I've done everything I can do from my side to validate the runestone.academy email domain. But, other times students simply type in their email incorrectly.  You may be get around some of these problems by asking your school to allow mail from runestoneinteractive@gmail.com to go through. If your IT department is not cooperative then your students will have to come to you to have their password changed. You can reset the password for any of the students in your course. Just select the student from the list and click the reset password button. I cannot respond to emails asking me to reset passwords, I don't have the time to do that, and I do not have a reliable way to verify that those requests are legitimate. Yes many high schoolers think it is funny to try to trick me into resetting the password on one of their friends.  Instructors cannot change their own passwords through this mechanism. who among us hasn't walked away from the computer and left ourselves logged into Runestone? As an instructor, you will still have to use the normal email password reset mechanism. If your school blocks emails then I suggest you just get a free gmail address to use for this purpose.   "
 },
 {
   "id": "registration_adding-students-to-your-course-3-3",
@@ -217,11 +217,20 @@ var ptx_lunr_docs = [
   "body": " Students will register for a course following the same procedures that were described . You just need to provide them with the text string for the course name.  "
 },
 {
+  "id": "registration_adding-students-to-your-course-4-3",
+  "level": "2",
+  "url": "registration_adding-students-to-your-course.html#registration_adding-students-to-your-course-4-3",
+  "type": "Figure",
+  "number": "4.1.2",
+  "title": "",
+  "body": " Instructor Dashboard: Manage Students   "
+},
+{
   "id": "reg_your_students_fig",
   "level": "2",
   "url": "registration_adding-students-to-your-course.html#reg_your_students_fig",
   "type": "Figure",
-  "number": "4.1.2",
+  "number": "4.1.3",
   "title": "",
   "body": " Register your Students   "
 },
@@ -753,8 +762,8 @@ var ptx_lunr_docs = [
   "url": "instructor-interface_the-instructor-interface.html",
   "type": "Section",
   "number": "5.1",
-  "title": "The Instructor Interface",
-  "body": " The Instructor Interface   One of the primary goals of the Runestone Instructor Interface is to help you understand where your students are at, and to help you to prepare and make the best use of classtime. We set out to create an interface where you could see at a glance which concepts your students clearly got and which concepts they were struggling with so that you can spend your valuable class time on the topics that were confusing rather than boring them by covering material they clearly understand. To really be effective with this strategy you should use reading assignments as described in .  As an instructor, you can access a variety of instructor features. To get to the instructors page follow these steps:     Make sure you are logged in to a course for which you are an instructor. If necessary, click on the person icon at top right and select Change Course to get to a course that you are instructor for, or logout and login with a different account.    Click on the person icon on the top right of the window and select Instructor's Page   Figure 1: How to get to the instructor's page      You will see the instructor page as shown below. You may be on a different tab that what is shown below.     Figure 2: The Instructor's Page       "
+  "title": "The Instructor Dashboard",
+  "body": " The Instructor Dashboard   The Runestone Instructor Dashboard, updated in 2025, provides a variety of tools for instructors to monitor student progress, create assignments, create new exercises, and analyze performa.  One of the primary goals of the Runestone Instructor Dashboard is to help you understand where your students are at, and to help you to prepare and make the best use of classtime. We set out to create an interface where you could see at a glance which concepts your students clearly got and which concepts they were struggling with so that you can spend your valuable class time on the topics that were confusing rather than boring them by covering material they clearly understand. To really be effective with this strategy you should use reading assignments as described in .  As an instructor, you can access a variety of instructor features. To get to the Instructor Dashboard follow these steps:     Make sure you are logged in to a course for which you are an instructor. If necessary, click on the person icon at top right and select Change Course to get to a course that you are instructor for, or logout and login with a different account.    Click on the person icon on the top right of the window and select Instructor Dashboard   Figure 1: How to get to the instructor's page      You will see the Instructor Dashboard as shown below.     Figure 2: The Instructor's Page       "
 },
 {
   "id": "nav_to_ii_fig",
@@ -781,32 +790,50 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "5.2",
   "title": "View Student Activity",
-  "body": " View Student Activity   Introduction   Many actions that students take are logged. These include:     Loading a book page    Answering a multiple choice question    Answering a mixed-up code (Parsons) problem    Running code in an ActiveCode window    Editing code in an ActiveCode window    Playing a video     There are many ways to monitor student progress. Starting at the main instructor page here are two of them.       Chapter Progress  One very easy to use report that allows you to quickly see how much work your students are doing on each page is the Chapter Progress Report. It looks like this:     It can quickly show you the number of elements on each page that your students have interacted with. The dropdown menu gives you other options such viewing the first time a student interacted with an element, the last time a student interacted with the element, and an overview of the number of times a student has interacted. You can also filter by chapter or any other search criteria using the popup menu on the chapter_label column. Just experiement a bit.  The numbers in each cell are clickable so you can drill down into a particular page for a particular student to see what they have done and the number of interactions with each element.     You can even click the view button to see a preview of the activity. Clicking on the Question link will bring you the summary page for that activity where you can see an aggregate of how all students performed on that question. We'll see more about that report shortly.    Student Progress Tab  The instructor interface lets you see summaries of some of these activities that may be useful to you. To get started, from the instructor interface, click on the Student Progress tab.     If you have assigned students to read a particular chapter prior to (or after) class, you can see at a glance what percentage of them have looked at each of the pages in a chapter. In the upper right hand corner, you can select a chapter. Then look at the left side.      Figure 1: Page to view student progress       You can see how students did on the multiple choice problems in the chapter. Some instructors have found it useful to focus in class on those questions where many students got the question wrong initially. Currently, the interface sorts the questions in order of the percentage of students who got them right the first time, so you may want to scroll down to find the ones they had trouble with.      Figure 2: Viewing multiple choice results     Figure 3: Viewing multiple choice results     Showing aggregate results for a question    This page is further drilldown on an individual question. You can see a histogram of the number of attempts made on the question across the class, you can see the frequency with which each option was selected, and you can see the first four responses of each student. You can also see a preview of the question.   "
+  "body": " View Student Activity   Introduction  In the new Instructor Dashboard, you can view student activity reports such as Chapter Activity and Exercise Metrics in the Course Analytics menu. You can also download the course logs and csv files.   Instructor Dashboard: Course Analytics    The following student activities are logged:     Loading a book page    Answering a multiple choice question    Answering a mixed-up code (Parsons) problem    Running code in an ActiveCode window    Editing code in an ActiveCode window    Playing a video     The following video provides an overview of the various student activity reports (in the older interface):     Students Online  Under Student Management, you can add and remove students from your class, reset their passwords, manage accommodations, and view students online and what page they are working on in real time.   Instructor Dashboard: Students Online      Chapter Activity  One very easy to use report that allows you to quickly see how much work your students are doing on each page is the Chapter Activity report found under Course Analytics.   Instructor Dashboard: Chapter Activity    On the Chapter Activity (Student Progress) page, pull down the first menu to select a chapter and pull down the second menu to see different reports on the count of activities that students have completed and how many were correct, as well as their first and last interaction date\/times. These reports can be downloaded as CSV files and can be opened as spreadsheets. You can also filter by chapter or any other search criteria using the down arrow next to the column headers.   Chapter Activity Report    .  The numbers in each cell are clickable so you can drill down into a particular page for a particular student to see what they have done and the number of interactions with each element.     You can even click the view button to see a preview of the activity. Clicking on the Question link will bring you the summary page for that activity where you can see an aggregate of how all students performed on that question. We'll see more about that report shortly.    Student Progress: Exercise Metrics  The instructor interface lets you see summaries of some of these activities that may be useful to you. To get started, from the instructor Dashboard, click on Course Analytics and then Exercise Metrics.  If you have assigned students to read a particular chapter prior to (or after) class, you can see at a glance what percentage of them have looked at each of the pages in a chapter. In the upper right hand corner, you can select a chapter. Then look at the left side.   Figure 1: Page to view student progress    You can see how students did on the multiple choice problems in the chapter. Some instructors have found it useful to focus in class on those questions where many students got the question wrong initially. Currently, the interface sorts the questions in order of the percentage of students who got them right the first time, so you may want to scroll down to find the ones they had trouble with.   Figure 2: Viewing multiple choice results     Figure 3: Viewing multiple choice results     Showing aggregate results for a question    This page is further drilldown on an individual question. You can see a histogram of the number of attempts made on the question across the class, you can see the frequency with which each option was selected, and you can see the first four responses of each student. You can also see a preview of the question.   "
 },
 {
-  "id": "activity_intro-6",
+  "id": "activity_intro-3",
   "level": "2",
-  "url": "instructor-interface_view-student-activity.html#activity_intro-6",
+  "url": "instructor-interface_view-student-activity.html#activity_intro-3",
   "type": "Figure",
   "number": "5.2.1",
   "title": "",
-  "body": "  "
+  "body": " Instructor Dashboard: Course Analytics   "
+},
+{
+  "id": "instructor-interface_students-online-3",
+  "level": "2",
+  "url": "instructor-interface_view-student-activity.html#instructor-interface_students-online-3",
+  "type": "Figure",
+  "number": "5.2.2",
+  "title": "",
+  "body": " Instructor Dashboard: Students Online   "
 },
 {
   "id": "instructor-interface_chapter-progress-3",
   "level": "2",
   "url": "instructor-interface_view-student-activity.html#instructor-interface_chapter-progress-3",
   "type": "Figure",
-  "number": "5.2.2",
+  "number": "5.2.3",
   "title": "",
-  "body": "  "
+  "body": " Instructor Dashboard: Chapter Activity   "
 },
 {
-  "id": "instructor-interface_chapter-progress-6",
+  "id": "instructor-interface_chapter-progress-5",
   "level": "2",
-  "url": "instructor-interface_view-student-activity.html#instructor-interface_chapter-progress-6",
+  "url": "instructor-interface_view-student-activity.html#instructor-interface_chapter-progress-5",
   "type": "Figure",
-  "number": "5.2.3",
+  "number": "5.2.4",
+  "title": "",
+  "body": " Chapter Activity Report   "
+},
+{
+  "id": "instructor-interface_chapter-progress-8",
+  "level": "2",
+  "url": "instructor-interface_view-student-activity.html#instructor-interface_chapter-progress-8",
+  "type": "Figure",
+  "number": "5.2.5",
   "title": "",
   "body": "  "
 },
@@ -815,7 +842,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "instructor-interface_view-student-activity.html#student_prog_fig",
   "type": "Figure",
-  "number": "5.2.4",
+  "number": "5.2.6",
   "title": "",
   "body": " Figure 1: Page to view student progress   "
 },
@@ -824,7 +851,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "instructor-interface_view-student-activity.html#view_mc_fig",
   "type": "Figure",
-  "number": "5.2.5",
+  "number": "5.2.7",
   "title": "",
   "body": " Figure 2: Viewing multiple choice results   "
 },
@@ -833,7 +860,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "instructor-interface_view-student-activity.html#view_mc_restuls_fig",
   "type": "Figure",
-  "number": "5.2.6",
+  "number": "5.2.8",
   "title": "",
   "body": " Figure 3: Viewing multiple choice results   "
 },
@@ -842,7 +869,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "instructor-interface_view-student-activity.html#agg_results_fig",
   "type": "Figure",
-  "number": "5.2.7",
+  "number": "5.2.9",
   "title": "",
   "body": " Showing aggregate results for a question   "
 },
@@ -889,7 +916,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "6.2",
   "title": "Create an Assignment",
-  "body": " Create an Assignment   Introduction      To create an assignment, whether graded or ungraded, start by going to the Assignments tab on the instructor interface. Click on the Add button to start creating a new assignment. On the popup that appears you will notice that you can also copy an old assignment as a starting point.   Figure 1: Click on the Add button to create a new assignment      Provide a name for the assignment.   Figure 2: Enter a unique name for the assignment      Add a description and check the other options.    Click on Save to save the assignment. It will show an alert as shown below. Click on Ok .   Make it Visible  Please take note of the visible to students check box. If you forget to check this box then the assignment will not show up in the list that your students (or you) can see on the assignment page.    Figure 4: The save alert box.       There are two primary kinds of assignments. Reading Assignments and Problems Sets. Reading assignments allow you to select whole chapters or parts of chapters for your students to read. You can assign points to the reading assignment by tracking the number of activities they attempt in each subchapter. Problem sets are mainly for you to select short programming problems for the students to solve, but could also include short answer, multiple choice, etc. Or even problems that you write yourself. More on that later.  In either case the primary way you will add questions is through the tree picker interface. This interface is accessed by expanding either the Readings or Problems accordion and allows you to drill down from chapter to section to individual problems. There are several icons associated with problems to help you know what you are looking at.  The 📘 icon indicates that a particular problem was written by the author.  The 🏫 icon indicates that a problem was contributed by another instructor.  The ✔️ icon tells you that the problem can be automatically graded.  In any case you can click on a problem to see a preview. If you are previewing a question and it is obviously bad, or incorrect, or just someone experimenting, use the Flag Question button to let us know. We have volunteer editors that help us clear out or correct these bad questions.     Creating a Reading Assignment  Let's create a reading assignment and add a few sections for our students to read. As you add sections you will see that are shown in a table under the Readings tab.   There are four things you can change for each section:     # required - How many of the components on the page do you students need to do in order to get the points for this section.    How many points for completing this section?    Auto-grade - interaction means that the students have done something    which to grade - first answer, best answer, or last answer       Creating a Problem Assignment  Creating a problem assignment is similar. You will most often use the tree picker, but you can also search for problems or write your own. When selecting a problem if you click on the name of the problem the interface will display the problem on the page remind you what it is about.   Problems have a different set of configurations     Points - how many points for this question    Auto-grade – options here are % correct, All or nothing, Interaction, or manual.    which to grade – Best Answer, first answer or last answer     Problems with the book icon next to them are written by the author. Problems with the schoolhouse are contributed by the community. If a problem has a checkmark next to it then you know it can be automatically graded.    Accommodations  Runestone allows you to create accommodations for students who need them. You can create an accommodation for a student by clicking on the accommodations menu item in the assignment builder, or use the link from the course home page. There are three kinds of accommodations that you can create:  Extra Time on Timed Assessments  Extended Due Date  Allow student to see\/access assignments not visible to others     Creating Accommodations     Extra Exam Time  When you create an accommodation for extra time on timed assessments, you can specify a multiplier for the extra time that the student will receive. Normally this is something like 1.5 or 2.0 for the student. This extra time will be added to the time limit for any timed assessments that the student takes. The student will see the extra time on the exam page.  You can set this accommodation for a specific student or for a group of students. If you set it for a group of students, then all students in that group will receive the extra time. If you set it for a specific student, then only that student will receive the extra time. You can set it once by just selecting one or more students and setting the multiplier value. This will then apply to ALL assignments. It can be ovverridden for a specific assignment at any time, as a specific assignment will take priority over the general accommodation.    Extended Due Date  When you create an accommodation for an extended due date, you specify the number of extra days that the student will have to complete the assignment. This can be set for a specific student or for a group of students. If you set it for a group of students, then all students in that group will receive the extra time. If you set it for a specific student, then only that student will receive the extra time. You can set it once by just selecting one or more students and setting the number of extra days. This will then apply to ALL assignments. It can be ovverridden for a specific assignment at any time, as a specific assignment will take priority over the general accommodation.  If you need to grant a further extension, you can do so by creating a new accommodation with more days. If you gave them 3 days at first, but that wasn't enough, you can enter 5 days to give them an additional 2 days.    Visibility  This is for situations where the assignment is not visible to the students, but you would like to mail the student a link to an exam, maybe a makeup exam. Or an extra assignment, or whatver. This accommodation requires both a student and an assignment. When the accommodation is saved, then the assignment will show up for the student in their assignment list, or you can email the student a link to the assignment and they will have access.    "
+  "body": " Create an Assignment   Introduction       To create an assignment, go to Instructor Dashboard and click on the new Assignment Builder button under Assignments & Grading   Instructor Dashboard Assignment Builder     This will take you to a list of assignments that you have created or copied. Click on + Create New Assignment button on the top right corner of the page.   Create New Assignment Button     Fill in the basic information for the new assignment such as a name, description, and due date. Then, click on the Next button. The builder will give an error message if the name of the assignment is not unique among your assignments.   Enter a unique name for the assignment      There are 3 types of assignments that you can create: Regular, Quiz\/Exam, or Peer Instruction. Choose Regular for an ordinary assignment and then click on the Create button. See the next chapters for information on quizzes and peer instruction.   Select Assignment Type     You will be put into the assignment page with three tabs on the left: Basic Info, Readings, and Exercises. Readings allow you to select whole chapters or parts of chapters for your students to read. You can assign points to the readings by tracking the number of activities they attempt in each subchapter. In readings, these are only graded for interaction, not correctness. Exercises are individual problems for students to solve that can be graded for correctness, including active code, short answer, multiple choice, parsons problems, etc. These can be from the ebook that you are using or even problems that you write yourself. An assignment can have just readings, just exercises, or both. See the subsections below for setting up Readings and Exercises.     This Scribe document illustrates how to create, edit and grade assignments in Runestone step by step with screenshots.    Adding Readings  Click on the Readings tab and then the Choose Readings button. Choose subchapters or pages that you want your students to read. Click on a white space below the pop up menu to close it when you are done selecting readings.   Choose Readings Button    There are 2 things you can change for each reading:     # required: How many of the activities on the page do you students need to do in order to get the points for this section. These are only graded for interaction or attempts, not correctness. They will get 1 activity for visiting the page. By default, this is set to 75% of the number of activities on the page. Please remember that the number required for the points is all or nothing, so if they miss one they will not get the points. This is why it may be better to leave it at 75% or a little below the number of activities in case they miss one.    Points: How many points for completing this section. You can click on the pencil button at the top if you want to change the number of points for all the readings at once.       Adding Exercises  Click on the Exercises tab on the left to add individual exercises for students to do that can be graded for correctness. Then, click on the + Add Exercises button on the right. You will see 3 choices: Browse Chapter Exercises, Search Exercise, and Create New Exercise. Click on Browse Chapter Exercises to choose exercises.   Choose Exercises Button    Scroll to the chapter and subchapters that you want and click on the triangles next to them to expand them. When you see the exercises, you can click to choose them or click the eye to preview them before choosing. Exercises can be from the ebook that you are using, written by its author, or contributed by the community. If the exercise has a name that starts with the ebook's name like \"csawesome2__\" and has a book icon under the source column, then it is from the ebook, shown in the red box below. If it has a percon icon under Source, it is contributed by another teacher in the community, shown in the purple box below. There are also controls in the green box below that can be used to filter by problem type or to just show the problems from the book. After selecting problems, click on the orange Choose exercises button to add them to the assignment.   Browse Exercises    After adding the exercisee to the assignment, you will see the list of exercises you have chosen. You can drag to reorder them. And there are 3 things you can change for each exercise:   Exercise List       Autograde: options here are % correct, All or nothing, Interaction, or manual. If the exercise has unit test autograding code, it will be set to \"% correct\". If it does not have autograding, it will be set to manual, where you will need to grade it.    Which to Grade: Best Answer, first answer or last answer    Points: how many points for this question. The pencil button at the top of each column can be used to change the number of points for all the exercises at once.     Some books have large quizbanks of community contributed questions. However, some of these community contributed exercises might have errors. If you are previewing a question and it is obviously bad, or incorrect, or just someone experimenting, use the Flag Question button to let us know. We have volunteer editors that help us clear out or correct these bad questions.  You can also Search Exercises by name or keyword or author if you are looking for something specific. Click on Add Exercises button and then select Search Exercises instead of Browse Chapter Exercises. Type in a search word and enter in the search box. You can filter by type. The default is to search for exercises associated with the ebook that you are in, but you can toggle \"Book Exercises\" to \"All Exercises\" to search for exercises in other books. You can then click to select or preview exercises from the results and then click on the orange Choose Exercises button to add them to the assignment. You can also Copy Exercises to change them.   Search Exercises    When you are done adding exercises, click on the back arrow by the assignment name or on the Assignment Builder button at the top to return to the main assignment list page. By default, the new assignment will not be visible to students.   Make it Visible  Please make sure that you slide the visibility toggle of an assignment in the assignments list to visible when you want your students to see it. If you forget to toggle this to visible, then the assignment will not show up in the list that your students can see on the assignment page.     Accommodations   Runestone allows you to create accommodations for students who need them. You can create an accommodation for a student in the Instructor Dashboard by clicking on Manage Accommodations under the Student Management menu or use the link from the course home page. There are three kinds of accommodations that you can create:  Extra Time on Timed Assessments  Extended Due Date  Allow student to see\/access assignments not visible to others     Creating Accommodations      Extra Exam Time  When you create an accommodation for extra time on timed assessments, you can specify a multiplier for the extra time that the student will receive. Normally this is something like 1.5 or 2.0 for the student. This extra time will be added to the time limit for any timed assessments that the student takes. The student will see the extra time on the exam page.  You can set this accommodation for a specific student or for a group of students. If you set it for a group of students, then all students in that group will receive the extra time. If you set it for a specific student, then only that student will receive the extra time. You can set it once by just selecting one or more students and setting the multiplier value. This will then apply to ALL assignments. It can be ovverridden for a specific assignment at any time, as a specific assignment will take priority over the general accommodation.    Extended Due Date  When you create an accommodation for an extended due date, you specify the number of extra days that the student will have to complete the assignment. This can be set for a specific student or for a group of students. If you set it for a group of students, then all students in that group will receive the extra time. If you set it for a specific student, then only that student will receive the extra time. You can set it once by just selecting one or more students and setting the number of extra days. This will then apply to ALL assignments. It can be ovverridden for a specific assignment at any time, as a specific assignment will take priority over the general accommodation.  If you need to grant a further extension, you can do so by creating a new accommodation with more days. If you gave them 3 days at first, but that wasn't enough, you can enter 5 days to give them an additional 2 days.    Visibility  This is for situations where the assignment is not visible to the students, but you would like to mail the student a link to an exam, maybe a makeup exam. Or an extra assignment, or whatever. This accommodation requires both a student and an assignment. When the accommodation is saved, then the assignment will show up for the student in their assignment list, or you can email the student a link to the assignment and they will have access.    "
 },
 {
   "id": "new_assign_fig",
@@ -898,59 +925,104 @@ var ptx_lunr_docs = [
   "type": "Figure",
   "number": "6.2.1",
   "title": "",
-  "body": " Figure 1: Click on the Add button to create a new assignment   "
+  "body": " Instructor Dashboard Assignment Builder   "
+},
+{
+  "id": "create_assign_fig",
+  "level": "2",
+  "url": "instructor-interface_create-an-assignment.html#create_assign_fig",
+  "type": "Figure",
+  "number": "6.2.2",
+  "title": "",
+  "body": " Create New Assignment Button   "
 },
 {
   "id": "unique_assign_fig",
   "level": "2",
   "url": "instructor-interface_create-an-assignment.html#unique_assign_fig",
   "type": "Figure",
-  "number": "6.2.2",
-  "title": "",
-  "body": " Figure 2: Enter a unique name for the assignment   "
-},
-{
-  "id": "create_assignment_intro-3-1-4-2",
-  "level": "2",
-  "url": "instructor-interface_create-an-assignment.html#create_assignment_intro-3-1-4-2",
-  "type": "Warning",
   "number": "6.2.3",
-  "title": "Make it Visible.",
-  "body": " Make it Visible  Please take note of the visible to students check box. If you forget to check this box then the assignment will not show up in the list that your students (or you) can see on the assignment page.  "
+  "title": "",
+  "body": " Enter a unique name for the assignment   "
 },
 {
-  "id": "save_alert_fig",
+  "id": "assign_type_fig",
   "level": "2",
-  "url": "instructor-interface_create-an-assignment.html#save_alert_fig",
+  "url": "instructor-interface_create-an-assignment.html#assign_type_fig",
   "type": "Figure",
   "number": "6.2.4",
   "title": "",
-  "body": " Figure 4: The save alert box.   "
+  "body": " Select Assignment Type   "
 },
 {
-  "id": "create_assignment_intro-4",
+  "id": "choose_readings_fig",
   "level": "2",
-  "url": "instructor-interface_create-an-assignment.html#create_assignment_intro-4",
-  "type": "Paragraph (with a defined term)",
-  "number": "",
+  "url": "instructor-interface_create-an-assignment.html#choose_readings_fig",
+  "type": "Figure",
+  "number": "6.2.5",
   "title": "",
-  "body": "Reading Assignments Problems Sets. "
+  "body": " Choose Readings Button   "
 },
 {
-  "id": "create_assignment_intro-5",
+  "id": "choose_exercises_fig",
   "level": "2",
-  "url": "instructor-interface_create-an-assignment.html#create_assignment_intro-5",
+  "url": "instructor-interface_create-an-assignment.html#choose_exercises_fig",
+  "type": "Figure",
+  "number": "6.2.6",
+  "title": "",
+  "body": " Choose Exercises Button   "
+},
+{
+  "id": "browse_exercises_fig",
+  "level": "2",
+  "url": "instructor-interface_create-an-assignment.html#browse_exercises_fig",
+  "type": "Figure",
+  "number": "6.2.7",
+  "title": "",
+  "body": " Browse Exercises   "
+},
+{
+  "id": "exercise_list_fig",
+  "level": "2",
+  "url": "instructor-interface_create-an-assignment.html#exercise_list_fig",
+  "type": "Figure",
+  "number": "6.2.8",
+  "title": "",
+  "body": " Exercise List   "
+},
+{
+  "id": "instructor-interface_creating-a-problem-assignment-9",
+  "level": "2",
+  "url": "instructor-interface_create-an-assignment.html#instructor-interface_creating-a-problem-assignment-9",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "Flag Question "
 },
 {
+  "id": "search_exercises_fig",
+  "level": "2",
+  "url": "instructor-interface_create-an-assignment.html#search_exercises_fig",
+  "type": "Figure",
+  "number": "6.2.9",
+  "title": "",
+  "body": " Search Exercises   "
+},
+{
+  "id": "instructor-interface_creating-a-problem-assignment-13",
+  "level": "2",
+  "url": "instructor-interface_create-an-assignment.html#instructor-interface_creating-a-problem-assignment-13",
+  "type": "Warning",
+  "number": "6.2.10",
+  "title": "Make it Visible.",
+  "body": " Make it Visible  Please make sure that you slide the visibility toggle of an assignment in the assignments list to visible when you want your students to see it. If you forget to toggle this to visible, then the assignment will not show up in the list that your students can see on the assignment page.  "
+},
+{
   "id": "accommodations-builder",
   "level": "2",
   "url": "instructor-interface_create-an-assignment.html#accommodations-builder",
   "type": "Figure",
-  "number": "6.2.5",
+  "number": "6.2.11",
   "title": "",
   "body": " Creating Accommodations   "
 },
@@ -961,7 +1033,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "6.3",
   "title": "Copying Assignments",
-  "body": " Copying Assignments   Copying from your previous courses  You may have multiple sections where you want to share assignments, or you may simply want to copy your assignments from the last time you taught a course to your current course. You can do this.   Figure 1: Copying an assignment.    The copy assignment tab lets you select any of your old or current courses that use the same book.   Figure 2: Select the Course    Once the course is selected you can copy one or all of the assignments to your course. If you do this multiple times courses with the same name will be ignored on the second copy. This makes it a little easier if you just want to keep one course in sync with another so you don't have to remember and pick and choose.   Figure 3: Select one or all assignments to copy.    The system will add the assignments to your current course and make its best guess to adjust the due date, based on the number of days from the beginning of each course. This is going to get you in the ballpark but you will probably have to manually adjust it due to differences in the calendar from year to year.    Copying from a different Instructor  Help, this is my first time teaching this class and I want to copy assignments from another instructor. This is very possible if the instructor is still available. You simply need to enroll in their course and have them make you a TA. Then you will be able to copy the assignments from their course to yours.  If the previous instructor is not available then we can still probably make it happen, but you are going to have to go out of your way to prove that your request is legit. Sorry, we cannot just take your word for it over email. A link to your faculty page, that verifies your email as a legitimate instructor at the same institution of the instructor of the course you want to copy. We would love to just trust everyone, but data privacy laws are strict and we have to to treat data privacy very carefully. Thanks for understanding.    Copying a Course Pack from the Author  Some authors have provided a pre-made set of assignments. You can copy these from the \"base course\" after you have created your course. The \"base course\" is the code for the book that you chose when you created your own course. Not all authors have done this yet, so your results will vary.   "
+  "body": " Copying Assignments   Copying from your previous courses  You may have multiple sections where you want to share assignments, or you may simply want to copy your assignments from the last time you taught a course to your current course. Choose \"Copy Assignment\" from the Instructor Dashboard under the \"Assignments & Grading\" menu. Before copying assignments, it is a good idea to make sure that the course settings has the correct start date in the \"Course Settings\" in the \"Course Administration\" menu of the Instructor Dashboard so that the due dates are adjusted properly.   Copying an assignment.    At the copy assignment page, select any of your old or current courses that use the same book or the base course if the author has created base course assignments.  Once the course is selected you can copy one or all of the assignments to your course. If you do this multiple times courses with the same name will be ignored on the second copy. This makes it a little easier if you just want to keep one course in sync with another so you don't have to remember and pick and choose.   Select course and one or all assignments to copy.    The system will add the assignments to your current course and make its best guess to adjust the due date, based on the number of days from the beginning of each course set in the Course Settings in the \"Course Administration\" menu of the Instructor Dashboard. This is going to get you in the ballpark, but you will probably have to manually adjust it due to differences in the calendar from year to year.    Copying Base Course Assignments from the Author  Some authors have provided a pre-made set of assignments. You can copy these from the \"base course\" after you have created your course. The \"base course\" is the code for the book that you chose when you created your own course. Not all authors have done this yet, so your results will vary.    Copying from a different Instructor  Help, this is my first time teaching this class and I want to copy assignments from another instructor. This is very possible if the instructor is still available. You simply need to enroll in their course and have them make you a TA. Then you will be able to copy the assignments from their course to yours.  If the previous instructor is not available then we can still probably make it happen, but you are going to have to go out of your way to prove that your request is legit. Sorry, we cannot just take your word for it over email. A link to your faculty page, that verifies your email as a legitimate instructor at the same institution of the instructor of the course you want to copy. We would love to just trust everyone, but data privacy laws are strict and we have to to treat data privacy very carefully. Thanks for understanding.   "
 },
 {
   "id": "copy_assign_fig",
@@ -970,25 +1042,16 @@ var ptx_lunr_docs = [
   "type": "Figure",
   "number": "6.3.1",
   "title": "",
-  "body": " Figure 1: Copying an assignment.   "
-},
-{
-  "id": "select_course_fig",
-  "level": "2",
-  "url": "instructor-interface_copying-assignments.html#select_course_fig",
-  "type": "Figure",
-  "number": "6.3.2",
-  "title": "",
-  "body": " Figure 2: Select the Course   "
+  "body": " Copying an assignment.   "
 },
 {
   "id": "fig_select_assign",
   "level": "2",
   "url": "instructor-interface_copying-assignments.html#fig_select_assign",
   "type": "Figure",
-  "number": "6.3.3",
+  "number": "6.3.2",
   "title": "",
-  "body": " Figure 3: Select one or all assignments to copy.   "
+  "body": " Select course and one or all assignments to copy.   "
 },
 {
   "id": "instructor-interface_exams-and-quizzes-in-runestone",
@@ -997,7 +1060,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "6.4",
   "title": "Exams and Quizzes in Runestone",
-  "body": " Exams and Quizzes in Runestone   Introduction   Figure 1: Creating an exam from an assignment    If you look at Figure 1 on this page again, you will see there is a checkbox labelled Show as Timed Assessment This turns a problem assignment into an exam. There are severall things to note about this. First is the appearance to the students, when the students first see a timed exam it looks like this:     They cannot see any of the questions until they click the start button. When the start button is clicked the timer (if selected) is also started.  During an exam the students see just one question at a time. They can navigate the questions by number or they can use the prev\/next buttons to go from question to question.  When the student navigates to the new question the question they were on is evaluated and the results are sent to the server. Questions that a student has attempted are marked as grey on the numbered interface so students know which questions they have answered.  During an exam the student will not see any feedback on whether they answered the questions right or wrong. Once the exam is completed they will see that feedback unless you have checked the don't show feedback checkbox.  It is important to remind students that if they close the tab or their browser or navigate away from the page or even try to refresh the page, the exam is over and they will not be able to answer any more questions. Once they click the finish exam button they are done. As an instructor you can reset a students exam from the instructors page, but they will be forced to start over.  When a student submits their exam with the finish exam button or when the exam is automatically submitted due to time expiring, the autograder is run on the server and a score is recorded. If all your questions are autogradable you're done! If not you can use the grading interface to manually grade any questions.       Resetting an Exam  The instructor interface allows you to reset an exam for any student.     You just select the student and the assignment name and then press the red button.   "
+  "body": " Exams and Quizzes in Runestone   Creating a Quiz\/Exam Assignment   In the new Assignment Builder in the Instructor Dashboard, you can choose to make a new assignment a Quiz\/Exam like below where you can select whether there is a time limit and whether pauses and feedback are allowed.   Creating an exam from an assignment    When the students first see a timed exam, it looks like this:     They cannot see any of the questions until they click the start button. When the start button is clicked the timer (if selected) is also started.  During an exam the students see just one question at a time. They can navigate the questions by number or they can use the prev\/next buttons to go from question to question.  When the student navigates to the new question the question they were on is evaluated and the results are sent to the server. Questions that a student has attempted are marked as grey on the numbered interface so students know which questions they have answered.  During an exam the student will not see any feedback on whether they answered the questions right or wrong. Once the exam is completed they will see that feedback unless you have checked the don't show feedback checkbox.  It is important to remind students that if they close the tab or their browser or navigate away from the page or even try to refresh the page, the exam is over and they will not be able to answer any more questions. Once they click the finish exam button they are done. As an instructor you can reset a students exam from the instructors page, but they will be forced to start over.  When a student submits their exam with the finish exam button or when the exam is automatically submitted due to time expiring, the autograder is run on the server and a score is recorded. If all your questions are autogradable you're done! If not, you can use the grading interface to manually grade any questions.       Resetting an Exam  The instructor dashboard allows you to reset an exam for any student.   Reset Exams    You just select the student and the assessment name and then press the red reset button.   Resetting an exam for a student     "
 },
 {
   "id": "create_exam_fig",
@@ -1006,21 +1069,21 @@ var ptx_lunr_docs = [
   "type": "Figure",
   "number": "6.4.1",
   "title": "",
-  "body": " Figure 1: Creating an exam from an assignment   "
+  "body": " Creating an exam from an assignment   "
 },
 {
-  "id": "create_quiz_intro-4",
+  "id": "create_quiz_intro-6",
   "level": "2",
-  "url": "instructor-interface_exams-and-quizzes-in-runestone.html#create_quiz_intro-4",
+  "url": "instructor-interface_exams-and-quizzes-in-runestone.html#create_quiz_intro-6",
   "type": "Figure",
   "number": "6.4.2",
   "title": "",
   "body": "  "
 },
 {
-  "id": "create_quiz_intro-11",
+  "id": "create_quiz_intro-13",
   "level": "2",
-  "url": "instructor-interface_exams-and-quizzes-in-runestone.html#create_quiz_intro-11",
+  "url": "instructor-interface_exams-and-quizzes-in-runestone.html#create_quiz_intro-13",
   "type": "Figure",
   "number": "6.4.3",
   "title": "",
@@ -1033,7 +1096,16 @@ var ptx_lunr_docs = [
   "type": "Figure",
   "number": "6.4.4",
   "title": "",
-  "body": "  "
+  "body": " Reset Exams   "
+},
+{
+  "id": "instructor-interface_resetting-an-exam-5",
+  "level": "2",
+  "url": "instructor-interface_exams-and-quizzes-in-runestone.html#instructor-interface_resetting-an-exam-5",
+  "type": "Figure",
+  "number": "6.4.5",
+  "title": "",
+  "body": " Resetting an exam for a student   "
 },
 {
   "id": "instructor-interface_grading",
@@ -1081,20 +1153,236 @@ var ptx_lunr_docs = [
   "body": "  "
 },
 {
-  "id": "instructor-interface_exercises",
+  "id": "writing-exercises_adding-an-exercise-to-the-exercise-bank",
   "level": "1",
-  "url": "instructor-interface_exercises.html",
-  "type": "Exercises",
-  "number": "6.7",
-  "title": "Exercises",
-  "body": " Exercises  this page left intentionally blank  "
+  "url": "writing-exercises_adding-an-exercise-to-the-exercise-bank.html",
+  "type": "Section",
+  "number": "7.1",
+  "title": "Adding an Exercise to the Exercise Bank",
+  "body": " Adding an Exercise to the Exercise Bank   Create New Exercises   The new Assignment Builder makes it easy to write your own exercises! Although all of the Runestone books have a pretty good selection of exercises, you can never have too many exercises. We hope to crowd source an enormous collection of questions and problems in our Exercise database. You can help by adding custom exercises for your own course to the database! Once your exercise is in the database, it is available for others to find using the search feature on the create assignment page. Community contributed exercises are shown with a person icon instead of a book icon under the source column.  To create new exercises, start or go to any assignment in the Instructor Dashboard \"Assignment Builder\". In the Exercises section of the assignment, click on \"Add Exercise\" and select \"+ Create New Exercise\".   Create new exercise    There are many different types of exercises that you can create as shown below. Some of these are discussed further in the sections below.   Exercise Types    Here are some examples of these different types of exercises. In the next pages, we will go through the steps to create some of these exercises.  Here is an example Multiple Choice Exercise:    What does the following code print?   System.out.println(2 + 3 * 5 - 1);       24    This would be true if it was System.out.println(((2 + 3) * 5) - 1), but without the parentheses the multiplication is done first.      14    This would be true if it was System.out.println(2 + (3 * (5 - 1))), but without the parentheses the multiplication is done first and the addition and subtraction are handled from left to right.      This will give a compile time error.    This will compile and run. Try it in DrJava. Look up operator precedence in Java.      16    Correct! Remember PEMDAS. The multiplication is done first (3 * 5 = 15) and then the addition (2 + 15 = 17) and finally the subtraction (17 - 1 = 16).      Parsons (Mixed up Code) Problem:    The following has all the correct Java code to print out “Hi there!” when the code is run, but the code is mixed up and contains some extra blocks with errors. Drag the needed blocks from left to right and put them in the correct order. Click on the “Check Me” button to check your solution.      public class Hello  {    public Class Hello  {      public static void main(String[] args)  {    public static void main()  {      System.out.println(\"Hi there!\");    System.out.println(\"Hi there!\")      }  }     Here is an example of a simple Active Code exercise in Python:    Write a Python function that takes two numbers as input and returns their sum.    def add(a, b): # complete this function to add a and b and return the sum  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def testOne(self): self.assertEqual(add(2,2),4,\"Call to add(2,2) should return 4\") self.assertAlmostEqual(add(2.0,3.0), 5.0, 1, \"Call to add(2.0,3.0) should return 5.0\") myTests().main()    Here is an example of a Drag and Drop matching questions. You can also have Matching questions where you draw lines to match many to many objects.    Drag the definition from the left and drop it on the correct concept on the right. Click the \"Check Me\" button to see if you are correct.    Review the summaries above.     a specific instance of a class with defined attributes  object    defines a new data type with instance variables and methods  class    define the behaviors or functions for objects  methods    code that is used to create new objects and initialize the object's attributes  constructors    the values or data passed to an object's method  parameters     Clickable Area:    Click on the constructor headers (signatures)    Constructors are public and have the same name as the class. Click on the constructor headers which are the first line of the constructors showing their name and parameters.    public class Date {    private int year;   private int month;   private int day;    public Date()   { \/** Implementation not shown *\/ }    public Date(int year, int month, int day)   { \/** Implementation not shown *\/ }    public void print()   { \/** Implementation not shown *\/ }   }    Fill in the Blank:    What Java data type should you use for a shoe size like 8.5?          Correct. Any variable that needs to values after the decimal point should be declared as a double.     What type allows for a decimal value?      Short Answer    Write an algorithm for someone (maybe a robot) to make a peanut butter and jelly sandwich. Be sure to include at least 5 precise steps in order. Have someone (maybe your instructor) act it out. Were your instructions precise enough?     Poll    I am a     beginner programmer    intermediate programmer    expert programmer    prefer not to answer     Select Questions allow the students to choose between already existing questions:  Runestone-only: a toggle question where the question graded is always the first of , or .   "
+},
+{
+  "id": "create_new_exercise_fig",
+  "level": "2",
+  "url": "writing-exercises_adding-an-exercise-to-the-exercise-bank.html#create_new_exercise_fig",
+  "type": "Figure",
+  "number": "7.1.1",
+  "title": "",
+  "body": " Create new exercise   "
+},
+{
+  "id": "exercise_types_fig",
+  "level": "2",
+  "url": "writing-exercises_adding-an-exercise-to-the-exercise-bank.html#exercise_types_fig",
+  "type": "Figure",
+  "number": "7.1.2",
+  "title": "",
+  "body": " Exercise Types   "
+},
+{
+  "id": "java_mcq_1",
+  "level": "2",
+  "url": "writing-exercises_adding-an-exercise-to-the-exercise-bank.html#java_mcq_1",
+  "type": "Checkpoint",
+  "number": "7.1.3",
+  "title": "",
+  "body": "  What does the following code print?   System.out.println(2 + 3 * 5 - 1);       24    This would be true if it was System.out.println(((2 + 3) * 5) - 1), but without the parentheses the multiplication is done first.      14    This would be true if it was System.out.println(2 + (3 * (5 - 1))), but without the parentheses the multiplication is done first and the addition and subtraction are handled from left to right.      This will give a compile time error.    This will compile and run. Try it in DrJava. Look up operator precedence in Java.      16    Correct! Remember PEMDAS. The multiplication is done first (3 * 5 = 15) and then the addition (2 + 15 = 17) and finally the subtraction (17 - 1 = 16).     "
+},
+{
+  "id": "mixed-hi-paired",
+  "level": "2",
+  "url": "writing-exercises_adding-an-exercise-to-the-exercise-bank.html#mixed-hi-paired",
+  "type": "Checkpoint",
+  "number": "7.1.4",
+  "title": "",
+  "body": "  The following has all the correct Java code to print out “Hi there!” when the code is run, but the code is mixed up and contains some extra blocks with errors. Drag the needed blocks from left to right and put them in the correct order. Click on the “Check Me” button to check your solution.      public class Hello  {    public Class Hello  {      public static void main(String[] args)  {    public static void main()  {      System.out.println(\"Hi there!\");    System.out.println(\"Hi there!\")      }  }    "
+},
+{
+  "id": "active_code_example",
+  "level": "2",
+  "url": "writing-exercises_adding-an-exercise-to-the-exercise-bank.html#active_code_example",
+  "type": "Checkpoint",
+  "number": "7.1.5",
+  "title": "",
+  "body": "  Write a Python function that takes two numbers as input and returns their sum.    def add(a, b): # complete this function to add a and b and return the sum  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def testOne(self): self.assertEqual(add(2,2),4,\"Call to add(2,2) should return 4\") self.assertAlmostEqual(add(2.0,3.0), 5.0, 1, \"Call to add(2.0,3.0) should return 5.0\") myTests().main()   "
+},
+{
+  "id": "java_matching",
+  "level": "2",
+  "url": "writing-exercises_adding-an-exercise-to-the-exercise-bank.html#java_matching",
+  "type": "Checkpoint",
+  "number": "7.1.6",
+  "title": "",
+  "body": "  Drag the definition from the left and drop it on the correct concept on the right. Click the \"Check Me\" button to see if you are correct.    Review the summaries above.     a specific instance of a class with defined attributes  object    defines a new data type with instance variables and methods  class    define the behaviors or functions for objects  methods    code that is used to create new objects and initialize the object's attributes  constructors    the values or data passed to an object's method  parameters    "
+},
+{
+  "id": "date_constructor",
+  "level": "2",
+  "url": "writing-exercises_adding-an-exercise-to-the-exercise-bank.html#date_constructor",
+  "type": "Checkpoint",
+  "number": "7.1.7",
+  "title": "",
+  "body": "  Click on the constructor headers (signatures)    Constructors are public and have the same name as the class. Click on the constructor headers which are the first line of the constructors showing their name and parameters.    public class Date {    private int year;   private int month;   private int day;    public Date()   { \/** Implementation not shown *\/ }    public Date(int year, int month, int day)   { \/** Implementation not shown *\/ }    public void print()   { \/** Implementation not shown *\/ }   }   "
+},
+{
+  "id": "fillDecVar2",
+  "level": "2",
+  "url": "writing-exercises_adding-an-exercise-to-the-exercise-bank.html#fillDecVar2",
+  "type": "Checkpoint",
+  "number": "7.1.8",
+  "title": "",
+  "body": "  What Java data type should you use for a shoe size like 8.5?          Correct. Any variable that needs to values after the decimal point should be declared as a double.     What type allows for a decimal value?     "
+},
+{
+  "id": "pbj",
+  "level": "2",
+  "url": "writing-exercises_adding-an-exercise-to-the-exercise-bank.html#pbj",
+  "type": "Checkpoint",
+  "number": "7.1.9",
+  "title": "",
+  "body": "  Write an algorithm for someone (maybe a robot) to make a peanut butter and jelly sandwich. Be sure to include at least 5 precise steps in order. Have someone (maybe your instructor) act it out. Were your instructions precise enough?    "
+},
+{
+  "id": "toggle1",
+  "level": "2",
+  "url": "writing-exercises_adding-an-exercise-to-the-exercise-bank.html#toggle1",
+  "type": "Checkpoint",
+  "number": "7.1.10",
+  "title": "",
+  "body": "Runestone-only: a toggle question where the question graded is always the first of , or . "
+},
+{
+  "id": "writing-exercises_multiple-choice-questions",
+  "level": "1",
+  "url": "writing-exercises_multiple-choice-questions.html",
+  "type": "Section",
+  "number": "7.2",
+  "title": "Multiple Choice Questions",
+  "body": " Multiple Choice Questions  A common question type is the multiple choice question like below.    What does the following code print?   System.out.println(2 + 3 * 5 - 1);       24    This would be true if it was System.out.println(((2 + 3) * 5) - 1), but without the parentheses the multiplication is done first.      14    This would be true if it was System.out.println(2 + (3 * (5 - 1))), but without the parentheses the multiplication is done first and the addition and subtraction are handled from left to right.      This will give a compile time error.    This will compile and run. Try it in DrJava. Look up operator precedence in Java.      16    Correct! Remember PEMDAS. The multiplication is done first (3 * 5 = 15) and then the addition (2 + 15 = 17) and finally the subtraction (17 - 1 = 16).      To create multiple choice questions, start or go to any assignment in the Instructor Dashboard \"Assignment Builder\". In the Exercises section of the assignment, click on \"Add Exercise\" and select \"+ Create New Exercise\" and then select \"Multiple Choice\".   Choose Multiple Choice Exercise    Enter the question. Type in \/ and press enter to see the menu to format the text and add in images, tables, code blocks, etc. You can also just use Markdown syntax directly ( Markdown Cheat Sheet ) and put code in between backticks (`) for inline code or triple backticks (```) for code blocks.   Create a Multiple Choice Question    Click on Next or 2 to move to the Options tab and enter the multiple choice options. Click on Add Option to add more options. Click on the checkmark next to \"Correct\" to mark a correct option. You can mark more than one answer as correct. You can also add feedback for each choice that will be shown to the student after they answer the question. Do \/ and enter to see the format menu or use markdown for each option.   Enter Multiple Choice Options    Click on Next or 3 to move to the Settings tab. Here you can set the chapter and section where you want the exercise stored in the assignment builder (where it will show when browsing chapters in the assignment builder), the author, the topic, the number of points for the question, and add tags to help you find the question later. If you change the name of the exercise, make sure it is unique! Some authors put their author names in the exercise name too to make them easier to find. You can also choose to make the exercise private or contribute it to the question bank for other teachers to use. Please make experimental questions private.   Set Multiple Choice Question Settings    Make sure that you Preview the exercise in step 4 and test it before saving it. Although there is no way to delete an exercise once it is saved, you can always edit it later to fix mistakes, make it private, or flag it for the volunteers to fix or delete.  "
+},
+{
+  "id": "java_mcq_2",
+  "level": "2",
+  "url": "writing-exercises_multiple-choice-questions.html#java_mcq_2",
+  "type": "Checkpoint",
+  "number": "7.2.1",
+  "title": "",
+  "body": "  What does the following code print?   System.out.println(2 + 3 * 5 - 1);       24    This would be true if it was System.out.println(((2 + 3) * 5) - 1), but without the parentheses the multiplication is done first.      14    This would be true if it was System.out.println(2 + (3 * (5 - 1))), but without the parentheses the multiplication is done first and the addition and subtraction are handled from left to right.      This will give a compile time error.    This will compile and run. Try it in DrJava. Look up operator precedence in Java.      16    Correct! Remember PEMDAS. The multiplication is done first (3 * 5 = 15) and then the addition (2 + 15 = 17) and finally the subtraction (17 - 1 = 16).     "
+},
+{
+  "id": "mcq_fig",
+  "level": "2",
+  "url": "writing-exercises_multiple-choice-questions.html#mcq_fig",
+  "type": "Figure",
+  "number": "7.2.2",
+  "title": "",
+  "body": " Choose Multiple Choice Exercise   "
+},
+{
+  "id": "mcq_edit_fig",
+  "level": "2",
+  "url": "writing-exercises_multiple-choice-questions.html#mcq_edit_fig",
+  "type": "Figure",
+  "number": "7.2.3",
+  "title": "",
+  "body": " Create a Multiple Choice Question   "
+},
+{
+  "id": "mcq_options_fig",
+  "level": "2",
+  "url": "writing-exercises_multiple-choice-questions.html#mcq_options_fig",
+  "type": "Figure",
+  "number": "7.2.4",
+  "title": "",
+  "body": " Enter Multiple Choice Options   "
+},
+{
+  "id": "mcq_settings_fig",
+  "level": "2",
+  "url": "writing-exercises_multiple-choice-questions.html#mcq_settings_fig",
+  "type": "Figure",
+  "number": "7.2.5",
+  "title": "",
+  "body": " Set Multiple Choice Question Settings   "
+},
+{
+  "id": "writing-exercises_mixed-up-code-parsons",
+  "level": "1",
+  "url": "writing-exercises_mixed-up-code-parsons.html",
+  "type": "Section",
+  "number": "7.3",
+  "title": "Mixed-Up Code (Parsons)",
+  "body": " Mixed-Up Code (Parsons)   Parsons problems, also known as mixed-up code problems, are a type of coding exercise where students are presented with a set of code blocks that are mixed up or out of order. The goal is for students to rearrange these blocks into the correct sequence to form a functioning program or solve a specific problem. This type of exercise helps students develop their understanding of code structure, logic, and flow control. They can also be used for pseudocode or mathematical proofs.    Example Parsons Problems  Here is an example:    The following has the correct code to ‘swap' the values in x and y (so that x ends up with y's initial value and y ends up with x's initial value), but the code is mixed up and contains <b>one extra block<\/b> which is not needed in a correct solution. Drag the needed blocks from the left into the correct order on the right. Check your solution by clicking on the <i>Check Me<\/i> button. You will be told if any of the blocks are in the wrong order or if you need to remove one or more blocks.     int x = 3;  int y = 5;  int temp = 0;    temp = x;    x = y;    y = temp;    y = x;     You can include distractor blocks in the problem. A distractor is code that isn't needed in a correct solution, such as code with a syntax error. Distractors can either be paired or unpaired.  Here is an example with paired distractors from a data oriented intermediate programming course in Python.    Complete the function greater_dictionary. Given a dictionary d and an integer cutoff, return a dictionary that contains only the key-value pairs where they key is greater than or equal to cutoff.      def greater_dictionary(d, cutoff):    def greater_dictionary(self, d, cutoff):     result = {}     for key in d.keys():    for key in range(d):      if key >= cutoff:    if key > cutoff:      result[key] = d[key]    d[key] = result[key]     return result       Writing your own Parsons Problems  To create your own Parsons problems, start or go to any assignment in the Instructor Dashboard \"Assignment Builder\". In the Exercises section of the assignment, click on \"Add Exercise\" and select \"+ Create New Exercise\" and then select \"Parsons Prob\".  In step 1, select the coding language or text content for English or another natural language content.  In Step 2, write the instructions for the students using Markup or enter \/ for formatting options.  In Step 3, type in code or text into blocks as shown below. Create the correct solution for the problem. It will be randomly mixed up when presented to students. Click the \"Add block\" button at the top right or the + at the end of the blue line in between blocks to create new blocks. Click the copy button to create distractors and choose the correct one.   Create a Parsons Problem    In Step 4, you can change the settings to set the chapter and section where you want the exercise stored in the assignment builder (where it will show when browsing chapters in the assignment builder), the author, the topic, the number of points for the question, and add tags to help you find the question later. If you change the name of the exercise, make sure it is unique! You can also choose to make the exercise private or contribute it to the question bank for other teachers to use. Please make experimental questions private..  In Step 5, you can preview and test the problem before saving the problem.   "
+},
+{
+  "id": "swapex",
+  "level": "2",
+  "url": "writing-exercises_mixed-up-code-parsons.html#swapex",
+  "type": "Checkpoint",
+  "number": "7.3.1",
+  "title": "",
+  "body": "  The following has the correct code to ‘swap' the values in x and y (so that x ends up with y's initial value and y ends up with x's initial value), but the code is mixed up and contains <b>one extra block<\/b> which is not needed in a correct solution. Drag the needed blocks from the left into the correct order on the right. Check your solution by clicking on the <i>Check Me<\/i> button. You will be told if any of the blocks are in the wrong order or if you need to remove one or more blocks.     int x = 3;  int y = 5;  int temp = 0;    temp = x;    x = y;    y = temp;    y = x;    "
+},
+{
+  "id": "mt1dict1ex",
+  "level": "2",
+  "url": "writing-exercises_mixed-up-code-parsons.html#mt1dict1ex",
+  "type": "Checkpoint",
+  "number": "7.3.2",
+  "title": "",
+  "body": "  Complete the function greater_dictionary. Given a dictionary d and an integer cutoff, return a dictionary that contains only the key-value pairs where they key is greater than or equal to cutoff.      def greater_dictionary(d, cutoff):    def greater_dictionary(self, d, cutoff):     result = {}     for key in d.keys():    for key in range(d):      if key >= cutoff:    if key > cutoff:      result[key] = d[key]    d[key] = result[key]     return result    "
+},
+{
+  "id": "parsons_edit_fig",
+  "level": "2",
+  "url": "writing-exercises_mixed-up-code-parsons.html#parsons_edit_fig",
+  "type": "Figure",
+  "number": "7.3.3",
+  "title": "",
+  "body": " Create a Parsons Problem   "
+},
+{
+  "id": "writing-exercises_active-code-exercises",
+  "level": "1",
+  "url": "writing-exercises_active-code-exercises.html",
+  "type": "Section",
+  "number": "7.4",
+  "title": "Writing your own Active Code Exercises",
+  "body": " Writing your own Active Code Exercises   Active Code Exercises  Active Code exercises are coding exercises that allow students to write and run code directly within the ebook. These exercises provide an interactive way for students to practice coding skills, receive immediate feedback, and enhance their understanding of programming concepts. Active Code exercises can be created in various programming languages, including Python, JavaScript, Java, C++, and others supported by the Runestone platform.  Here is an example of a simple Active Code exercise in Python:    Write a Python function that takes two numbers as input and returns their sum.    def add(a, b): # complete this function to add a and b and return the sum  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def testOne(self): self.assertEqual(add(2,2),4,\"Call to add(2,2) should return 4\") self.assertAlmostEqual(add(2.0,3.0), 5.0, 1, \"Call to add(2.0,3.0) should return 5.0\") myTests().main()    To write your own Active Code exercises, start or go to any assignment in the Instructor Dashboard \"Assignment Builder\". In the Exercises section of the assignment, click on \"Add Exercise\" and select \"+ Create New Exercise\" and then select \"Active Code\".    In step 1 Language, select the coding language for the exercise.    In Step 2 Instructions, write the instructions for the students using Markup or enter \/ for formatting options.    In Step 3 Hidden Prefix, you can optionally provide hidden code that is run before the students code. This is usually left blank.    In Step 4 Starter Code, write the code that you want the students to complete in the code editor. You can provide starter code or just comments or leave it blank for students to fill in.  Create an Active Code Exercise       In Step 5 Hidden Prefix, you can optionally add unit tests to automatically grade the students' code. These tests will run when the student clicks the \"Submit\" button, and they will receive feedback based on the results of the tests. The next section will explain how to write unit tests.    In Step 6, you can optionally provide standard input that the student's code can read from if needed. This is usually left blank.    In Step 7, you can change the settings to set the chapter and section where you want the exercise stored in the assignment builder (where it will show when browsing chapters in the assignment builder), the author, the topic, the number of points for the question, and add tags to help you find the question later. If you change the name of the exercise, make sure it is unique! You can also choose to make the exercise private or contribute it to the question bank for other teachers to use. Please make experimental questions private.   Then, you can preview and test the problem before saving the problem.      Python Unit Tests for Autograding  The real killer feature of these exercises is to be able to create your own unit tests and have the exercise be autograded.  Let's expand our example to include some simple unittests. We can do this by adding a hidden block of code to our previous example in step 5 Hidden Prefix that uses the standard Python unittest framework. Be careful with using the correct indentation when typing in Python.   from unittest.gui import TestCaseGui class myTests(TestCaseGui): def testOne(self): self.assertEqual(add(2,2),4,\"Call to add(2,2) should return 4\") self.assertAlmostEqual(add(2.0,3.0), 5.0, 1, \"Call to add(2.0,3.0) should return 5.0\") myTests().main()   If you are not familiar with Python unittests they are pretty easy to write. You create your own class that is a subclass of TestCase, or in our work TestCaseGui so we get some graphical output. Your tests are all methods of the class and must start with the word test . There are a host of assertXXXX functions that you can use. Check out the unittest documentation here .    Java Unit Tests for Autograding  You can create Active Code exercises in other languages supported by Runestone and use their unit testing libraries. For Java, there is the JUnit library as well as a custom library developed by Kate McDonnell for CSAwesome that makes it easy to write autograding unit tests. Here is an example:    Complete the method called square that takes an integer as input and returns its square. Then, call the square method in the main method to print out the square of 6.    public class SquareMethod { public static int square(int number) { \/\/ TO DO: complete this method to return the square of number } public static void main(String[] args) { System.out.println(\"5 squared is \" + square(5)); \/\/ TO DO: Call the square method to print out the square of 6 } }  import static org.junit.Assert.*; import org.junit.*; import java.io.*; public class RunestoneTests extends CodeTestHelper { @Test public void containsCall() { boolean passed = checkCodeContains(\"square(6)\", \"square(6)\"); assertTrue(passed); } @Test public void testMain() throws IOException { String output = getMethodOutput(\"main\"); String expect = \"36\"; boolean passed = getResults(expect, output, \"Expected output from main\"); assertTrue(passed); } @Test public void testSquare() { Object[] args = {9}; String output = getMethodOutput(\"square\", args); String expect = \"81\"; boolean passed = getResults(expect, output, \"square(9)\"); assertTrue(passed); } }    The unit test code which would be put in the hidden suffix section in step 4 is as follows:   import static org.junit.Assert.*; import org.junit.*; import java.io.*; public class RunestoneTests extends CodeTestHelper { @Test public void containsCall() { boolean passed = checkCodeContains(\"square(6)\", \"square(6)\"); assertTrue(passed); } @Test public void testMain() throws IOException { String output = getMethodOutput(\"main\"); String expect = \"36\"; boolean passed = getResults(expect, output, \"Expected output from main\"); assertTrue(passed); } @Test public void testSquare() { Object[] args = {9}; String output = getMethodOutput(\"square\", args); String expect = \"81\"; boolean passed = getResults(expect, output, \"square(9)\"); assertTrue(passed); } }   In this example, we have three tests. The first test checks that the student's code contains a call to square(6). The second test runs the main method and checks that the output contains 36 (the square of 6). The third test calls the square method with an argument of 9 and checks that the return value is 81.  This document provides more details on writing Java unit tests for Active Code exercises using the CodeTestHelper library.   "
+},
+{
+  "id": "ac_ex1",
+  "level": "2",
+  "url": "writing-exercises_active-code-exercises.html#ac_ex1",
+  "type": "Checkpoint",
+  "number": "7.4.1",
+  "title": "",
+  "body": "  Write a Python function that takes two numbers as input and returns their sum.    def add(a, b): # complete this function to add a and b and return the sum  from unittest.gui import TestCaseGui class myTests(TestCaseGui): def testOne(self): self.assertEqual(add(2,2),4,\"Call to add(2,2) should return 4\") self.assertAlmostEqual(add(2.0,3.0), 5.0, 1, \"Call to add(2.0,3.0) should return 5.0\") myTests().main()   "
+},
+{
+  "id": "activecode_edit_fig",
+  "level": "2",
+  "url": "writing-exercises_active-code-exercises.html#activecode_edit_fig",
+  "type": "Figure",
+  "number": "7.4.2",
+  "title": "",
+  "body": " Create an Active Code Exercise   "
+},
+{
+  "id": "java_ac_ex1",
+  "level": "2",
+  "url": "writing-exercises_active-code-exercises.html#java_ac_ex1",
+  "type": "Checkpoint",
+  "number": "7.4.3",
+  "title": "",
+  "body": "  Complete the method called square that takes an integer as input and returns its square. Then, call the square method in the main method to print out the square of 6.    public class SquareMethod { public static int square(int number) { \/\/ TO DO: complete this method to return the square of number } public static void main(String[] args) { System.out.println(\"5 squared is \" + square(5)); \/\/ TO DO: Call the square method to print out the square of 6 } }  import static org.junit.Assert.*; import org.junit.*; import java.io.*; public class RunestoneTests extends CodeTestHelper { @Test public void containsCall() { boolean passed = checkCodeContains(\"square(6)\", \"square(6)\"); assertTrue(passed); } @Test public void testMain() throws IOException { String output = getMethodOutput(\"main\"); String expect = \"36\"; boolean passed = getResults(expect, output, \"Expected output from main\"); assertTrue(passed); } @Test public void testSquare() { Object[] args = {9}; String output = getMethodOutput(\"square\", args); String expect = \"81\"; boolean passed = getResults(expect, output, \"square(9)\"); assertTrue(passed); } }   "
 },
 {
   "id": "peer_instruction-3",
   "level": "1",
   "url": "peer_instruction-3.html",
   "type": "Section",
-  "number": "7.1",
+  "number": "8.1",
   "title": "Peer instruction in Runestone",
   "body": " Peer instruction in Runestone  Support for peer instruction in Runestone was developed as part of a research project by Barb Ericson at the Universit of Michigan. The interface consists of two parts, an instructor interface that allows the instructor to move the class through the steps outlined above and a student interface for answering the questions and participating in a live chat with one or more peers.  As an instructor you access the peer instruction feature from the 👤 menu and choose the Peer Instruction (instructor) option. This will bring you to a page that allows you to select the peer instruction assignment you want to use. When click on the link it starts the peer instruction session. During a peer instruction session students answers are not restored from their history if they have answered them before.   The peer instruction assignment selector     shows the interface for controlling a peer instruction session. It is pretty self explanatory, and consists of 4 steps. Note that when your students go to the student page they will see the first question and they will be able to answer the question right away. You will be able to see the number of students that have answered the question to the right of the question. This will allow you to guage when it is time to stop the vote.   Stop Vote 1  This will change the students display so that they see a countdown timer indicating that they have 5 - 4 - 3 - 2 - 1 seconds left to answer the question. Once the timer reaches 0 the students question will be disabled so they can no longer answer.    Enable Discussion  clicking this button tells the system to select partners for each student. Ideally it will choose a partner that has answered the question differently. It will then open up a chat box on the students page where they can engage in conversation with their peers. During this time you will be able to consult the page labeled \"Extra\" in This page is designed to be simple so you can bring it up on your phone or table and lets you monitor the percent of students that have answered the question correctly.    Start Vote 2  This will clear the students previous answer and enable the question so the student can answer again. During the voting period you can keep an eye on the number of answers to guage when to stop voting. You can also consult the second instructor display labelled extra in    Stop Vote 2  This begins a countdown timer to stop the second vote.    Next Question  Clicking this button changes the question displayed on your screen as well as your students.      The instructor interface for peer instruction     "
 },
@@ -1103,7 +1391,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "peer_instruction-3.html#peer_assignment_selector",
   "type": "Figure",
-  "number": "7.1.1",
+  "number": "8.1.1",
   "title": "",
   "body": " The peer instruction assignment selector   "
 },
@@ -1112,7 +1400,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "peer_instruction-3.html#pi_instructor",
   "type": "Figure",
-  "number": "7.1.2",
+  "number": "8.1.2",
   "title": "",
   "body": " The instructor interface for peer instruction   "
 },
@@ -1121,7 +1409,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "peer_instruction-4.html",
   "type": "Section",
-  "number": "7.2",
+  "number": "8.2",
   "title": "Creating Peer instruction Assignments",
   "body": " Creating Peer instruction Assignments  We covered creating assignments in . There are a couple of things to note about using that interface to create a peer instruction assignment.  You need to check the peer instruction box to make it a peer instruction assignment  Peer instruction assignments can only have multiple choice questions. We may add other question types in the future but for now this limit exists.  You are not limited to the question in your textbook, we have loaded a couple of question banks designed to be used with peer instruction. You can search for questions in the question banks by unchecking the box that limits your search to your course and searching for \"peerwiseqb\" for the PeerWise question bank, or \"canterburyqb\" for question in the Canterbury Question bank. More questions are being added all the time.  If you want to grade your peer instruction assignment you must set up your questions correctly.  You must set the Auto-Grade column to either Peer or Peer+Chat . Setting this column to Peer will give the student credit if they have answered both vote1 and vote2. Setting it to Peer+Chat will give them credit if they have voted for vote1, interacted with their parter(s) through chat, and voted in vote2.  The Which to grade field must be set to All Answers This is because peer assignment grading is unique in that the student is getting credit based on multiple interactions with a question not just a single check for correctness.      "
 },
@@ -1130,153 +1418,9 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "peer_instruction-5.html",
   "type": "Section",
-  "number": "7.3",
+  "number": "8.3",
   "title": "Virtual Peer Instruction Workshop",
   "body": " Virtual Peer Instruction Workshop  In the Spring of 2022 we hosted a virtual workshop on using the peer instruction interface. You may find the video useful in seeing peer instruction in action from both the instructor as well as the student perspective.   "
-},
-{
-  "id": "writing-exercises_adding-an-exercise-to-the-exercise-bank",
-  "level": "1",
-  "url": "writing-exercises_adding-an-exercise-to-the-exercise-bank.html",
-  "type": "Section",
-  "number": "8.1",
-  "title": "Adding an Exercise to the Exercise Bank",
-  "body": " Adding an Exercise to the Exercise Bank   Introduction   Although all of the Runestone books have a pretty good selection of exercises, you can never have too many exercises. We hope to crowd source an enormous collection of questions and problems in our Exercise database. You can help by adding custom exercises for your own course to the database! Once your exercise is in the database it is available for others to find using the search feature on the create assignment page.  Since the most common exercises are programming exercises let's look at the activecode directive in detail. Here is the full directive with every possible option. This is what you would see if you add an activecode exercise from the web interface. Let's not get bogged down in the details here, let's look at a much simpler example.   .. activecode:: uniqueid 'nocanvas': directives.flag, :nopre: do not create an output component :above: put the canvas above the code :autorun: run this activecode as soon as the page is loaded :autograde: typically unittest :caption: caption under the active code :include: invisibly include code from another activecode :hidecode: Don:t show the editor initially :language: python, html, javascript, java, python2, python3 :tour_1: audio tour track :tour_2: audio tour track :tour_3: audio tour track :tour_4: audio tour track :tour_5: audio tour track :nocodelens: Do not show the codelens button :coach: Show the codecoach button :timelimit: set the time limit for this program :stdin: : A file to simulate stdin (java, python2, python3) :datafile: : A datafile for the program to read (java, python2, python3) :sourcefile: : source files (java, python2, python3) :available_files: : other additional files (java, python2, python3) If this is a homework problem instead of an example in the text then the assignment text should go here. The assignment text ends with the line containing four tilde ~ ~~~~ print(\"hello world\") ==== print(\"Hidden code, such as unit tests come after the four = signs\")   Let's make an exercise to have the student compute the sum of the first N numbers.    Write a Python function to sum the first N numbers starting with 0. So if N is 4 then your function should add 0 + 1 + 2 + 3    def sum_first_n(N): # your code here    The source code for the above looks like this:   .. activecode:: sigcse_ex1 :language: python Write a Python function to sum the first N numbers starting with 0. So if N is 4 then your function should add 0 + 1 + 2 + 3 ~~~~ def sum_first_n(N): # your code here   Indentation and whitespace is important. In the previous example, you will see that the optional directive :language: is indented by four spaces. from the previous line. It must be indented at least three spaces to line up with the a in activecode, but using 4 keeps it consistent with my own personal python indentation style. Everything else in the body of the directive must also be indented to match the indentation of the optional parameters.  You can enter this into a textbox by clicking on the Write button under the Problems area.   After you enter the text you need to compile and render the text. You can get a preview of your question on the right of the page.   The first part of the directive body are the instructions for the student. You can use any valid restructured text (rst) in this part of the directive including embedded images. You separate the instructions from any code you want to give the student with ~~~~ thats four tildes. The next part of the body is any code you want to provide. Just put in your Python or other language as you would normally write it.  To keep an exercise page looking a bit neater you can substitute the .. actex:: directive for the .. activecode:: directive. Making that substitution gives us the following:    Write a Python function to sum the first N numbers starting with 0. So if N is 4 then your function should add 0 + 1 + 2 + 3    def sum_first_n(N): # your code here      Unit Testing exercises  Of course, as you have learned in the previous section, the real killer feature of these exercises is to be able to create your own unit tests, and have the grader autograde the assignment.  Let's expand our example to include some simple unittests. We can do this by adding a hidden block of code to our previous example that uses the standard Python unittest framework.   from unittest.gui import TestCaseGui class myTests(TestCaseGui): def testOne(self): self.assertEqual(add(2,2),4,\"A feedback string when the test fails\") self.assertAlmostEqual(add(2.0,3.0), 5.0, 1, \"Try adding your parmeters\") myTests().main()   If you are not familiar with Python unittests they are pretty easy to write. You create your own class that is a subclass of TestCase, or in our work TestCaseGui so we get some graphical output. Your tests are all methods of the class and must start with the word test . There are a host of assertXXXX functions that you can use. Check out the unittest documentation here   The second important addition in this example is the :autograde: option. This will allow the grade to make use of your unittests and assign a grade automatically for this particular problem.    Write a Python function to sum the first N numbers starting with 0. So if N is 4 then your function should add 0 + 1 + 2 + 3    def sum_first_n(N): # your code here ==== from unittest.gui import TestCaseGui class myTests(TestCaseGui): def testOne(self): self.assertEqual(sum_first_n(4),6,feedback=\"0 + 1 + 2 + 3 == 6\") self.assertEqual(sum_first_n(0),0,feedback=\"summing 0 numbers should be 0\") myTests().main()    Let's try to add another test to the example above. This time we'll show the unittests in the active code window to make it easy for us to test. I strongly recommend you do this in a scratch activecode window when you are writing a question. It will save lots of frustrating wait time as you work out the details of your testing.  Let's try to add another test to the example above. This time we'll show the unittests in the active code window to make it easy for us to test. I strongly recommend you do this in a scratch activecode window when you are writing a question. It will save lots of frustrating wait time as you work out the details of your testing.    Write a Python function to sum the first N numbers starting with 0. So if N is 4 then your function should add 0 + 1 + 2 + 3    def sum_first_n(N): # your code here from unittest.gui import TestCaseGui class myTests(TestCaseGui): def testOne(self): self.assertEqual(sum_first_n(4),6,feedback=\"0 + 1 + 2 + 3 == 6\") self.assertEqual(sum_first_n(0),0,feedback=\"summing 0 numbers should be 0\") myTests().main()      Advanced activecode Options       include   – This option lets you include other activecodes in the current         timelimit   seconds – What to do when students create an infinite loop and lock up their browser? Just wait a bit, every run of Python has a built in time limit of 30 seconds. Some things might take longer than this, so if you know an example or assignment is going to take longer, then you can set a higher time limit with this option.         nocodelens   – codelens is an awesome addition, but it does not work with very many libraries. This is part of the sandboxed security of the codelens server. The most common one to be aware of is the turtle module. If you are doing a turtle example or assigning a turtle problem then you should set this flag so the Show Codelens button is hidden.          For languages outside the browser       language   – As you saw earlier, Runestone supports Java, python2, and python3 in a sandboxed server environment environment.        If you choose any of the above, the code from the window is packaged up and set to a separate server for compilation and execution. There are a few options to activecode that only apply to these languages.       datafile   You can provide an id to a datafile that will be sent along with your Java code         sourcefile   You can provide additional source files that should be compiled along with the java file you upload.         available_files   You can provide additional binary files to link into the final executable.         "
-},
-{
-  "id": "sigcse_ex1",
-  "level": "2",
-  "url": "writing-exercises_adding-an-exercise-to-the-exercise-bank.html#sigcse_ex1",
-  "type": "Checkpoint",
-  "number": "8.1.1",
-  "title": "",
-  "body": "  Write a Python function to sum the first N numbers starting with 0. So if N is 4 then your function should add 0 + 1 + 2 + 3    def sum_first_n(N): # your code here   "
-},
-{
-  "id": "sigcse_ex2",
-  "level": "2",
-  "url": "writing-exercises_adding-an-exercise-to-the-exercise-bank.html#sigcse_ex2",
-  "type": "Checkpoint",
-  "number": "8.1.2",
-  "title": "",
-  "body": "  Write a Python function to sum the first N numbers starting with 0. So if N is 4 then your function should add 0 + 1 + 2 + 3    def sum_first_n(N): # your code here   "
-},
-{
-  "id": "sigcse_ex3",
-  "level": "2",
-  "url": "writing-exercises_adding-an-exercise-to-the-exercise-bank.html#sigcse_ex3",
-  "type": "Checkpoint",
-  "number": "8.1.3",
-  "title": "",
-  "body": "  Write a Python function to sum the first N numbers starting with 0. So if N is 4 then your function should add 0 + 1 + 2 + 3    def sum_first_n(N): # your code here ==== from unittest.gui import TestCaseGui class myTests(TestCaseGui): def testOne(self): self.assertEqual(sum_first_n(4),6,feedback=\"0 + 1 + 2 + 3 == 6\") self.assertEqual(sum_first_n(0),0,feedback=\"summing 0 numbers should be 0\") myTests().main()   "
-},
-{
-  "id": "sigcse_ex4",
-  "level": "2",
-  "url": "writing-exercises_adding-an-exercise-to-the-exercise-bank.html#sigcse_ex4",
-  "type": "Checkpoint",
-  "number": "8.1.4",
-  "title": "",
-  "body": "  Write a Python function to sum the first N numbers starting with 0. So if N is 4 then your function should add 0 + 1 + 2 + 3    def sum_first_n(N): # your code here from unittest.gui import TestCaseGui class myTests(TestCaseGui): def testOne(self): self.assertEqual(sum_first_n(4),6,feedback=\"0 + 1 + 2 + 3 == 6\") self.assertEqual(sum_first_n(0),0,feedback=\"summing 0 numbers should be 0\") myTests().main()   "
-},
-{
-  "id": "writing-exercises_multiple-choice-questions",
-  "level": "1",
-  "url": "writing-exercises_multiple-choice-questions.html",
-  "type": "Section",
-  "number": "8.2",
-  "title": "Multiple Choice Questions",
-  "body": " Multiple Choice Questions  Another common question type is the multiple choice question.   .. mchoice:: uniqueid :multiple_answers: boolean [optional] :random: boolean [optional] :answer_a: possible answer -- what follows _ is label :answer_b: possible answer :answer_c: possible answer :answer_d: possible answer :answer_e: possible answer :correct: letter of correct answer or list of correct answer letters (in case of multiple answe rs) :feedback_a: displayed if a is picked :feedback_b: displayed if b is picked :feedback_c: displayed if c is picked :feedback_d: displayed if d is picked :feedback_e: displayed if e is picked Question text ...   Here is an example from a Data Structures class:    3-1-1: Given the following sequence of stack operations, what is the top item on the stack when the sequence is complete?   m = Stack() m.push('x') m.push('y') m.push('z') while not m.isEmpty(): m.pop() m.pop()       'x'    You may want to check out the docs for isEmpty      the stack is empty    There is an odd number of things on the stack but each time through the loop 2 things are popped.      an error will occur    Good Job.      'z'    You may want to check out the docs for isEmpty      The source code is here:   .. mchoice:: stack_2 :answer_a: 'x' :answer_b: the stack is empty :answer_c: an error will occur :answer_d: 'z' :correct: c :feedback_a: You may want to check out the docs for isEmpty :feedback_b: There is an odd number of things on the stack but each time through the loop 2 things are popped. :feedback_c: Good Job. :feedback_d: You may want to check out the docs for isEmpty Given the following sequence of stack operations, what is the top item on the stack when the sequence is complete? .. code-block:: python m = Stack() m.push('x') m.push('y') m.push('z') while not m.isEmpty(): m.pop() m.pop()   "
-},
-{
-  "id": "stack_2",
-  "level": "2",
-  "url": "writing-exercises_multiple-choice-questions.html#stack_2",
-  "type": "Checkpoint",
-  "number": "8.2.1",
-  "title": "",
-  "body": "  3-1-1: Given the following sequence of stack operations, what is the top item on the stack when the sequence is complete?   m = Stack() m.push('x') m.push('y') m.push('z') while not m.isEmpty(): m.pop() m.pop()       'x'    You may want to check out the docs for isEmpty      the stack is empty    There is an odd number of things on the stack but each time through the loop 2 things are popped.      an error will occur    Good Job.      'z'    You may want to check out the docs for isEmpty     "
-},
-{
-  "id": "writing-exercises_mixed-up-code-parsons",
-  "level": "1",
-  "url": "writing-exercises_mixed-up-code-parsons.html",
-  "type": "Section",
-  "number": "8.3",
-  "title": "Mixed-Up Code (Parsons)",
-  "body": " Mixed-Up Code (Parsons)   Mixed-up code or Parsons problems provide the correct code to solve a problem, but the code is broken into blocks and mixed up.  .. parsonsprob:: unqiue_problem_id_here :maxdist: :order: :language: :noindent: :adaptive: :numbered: left Instructions for the user. These can include a textual description of how to solve the problem. You must leave a blank line before this. ----- def findmax(alist): ===== if len(alist) == 0: return None ===== curmax = alist[0] for item in alist: ===== if item &gt; curmax: ===== curmax = item ===== return curmax  Create a working program and then paste the code for it into the editor. Indent the code so that the left edge lines up with the options. Indent each line with 4 spaces beyond the previous line. Separate the blocks with ===== which must line up under the options. Put the instructions before the code after a blank line and then followed by ---- .    Parsons Options  Options are indented under the Parsons directive (under the p).    Parsons Problems Options   Option  Description    maxdist  The maximum number of distractors to use. They will be picked at random    order  The order for the lines, they are displayed in a random order normally    language  Specify the language: java, python    noindent  Provide the indentation for the user by adding spaces to the left of the code    adaptive  Provide help is the user is struggling and modify the difficulty of the problem based on the user's performance on the previous problem    numbered  Show numbered labels to the left of the code if you add left or to the right when you add right       Parsons Distractor Types  You can include distractor blocks in the problem. A distractor is code that isn't needed in a correct solution, such as code with a syntax error. Add a distractor block after the correct code block. Distractors can either be paired or unpaired. For paired distractors use #paired at end of the first line of code in the distractor block. For unpaired distractors add #distractor.    Example with Paired Distractors  Here is an example with paired distractors from a data oriented intermediate programming course in Python.    Complete the function greater_dictionary. Given a dictionary d and an integer cutoff, return a dictionary that contains only the key-value pairs where they key is greater than or equal to cutoff.      def greater_dictionary(d, cutoff):    def greater_dictionary(self, d, cutoff):     result = {}     for key in d.keys():    for key in range(d):      if key >= cutoff:    if key > cutoff:      result[key] = d[key]    d[key] = result[key]     return result     The source code for this problem is shown here:  .. parsonsprob:: mt1dict1ex :numbered: left Complete the function greater_dictionary. Given a dictionary d and an integer cutoff, return a dictionary that contains only the key-value pairs where they key is greater than or equal to cutoff. ----- def greater_dictionary(d, cutoff): ===== def greater_dictionary(self, d, cutoff): #paired ===== result = {} ===== for key in d.keys(): ===== for key in range(d): #paired ===== if key >= cutoff: ===== if key > cutoff: #paired ===== result[key] = d[key] ===== d[key] = result[key] #paired ===== return result    Example with Unpaired Distractor  Here is an example with an unpaired distractor.    The following has the correct code to ‘swap' the values in x and y (so that x ends up with y's initial value and y ends up with x's initial value), but the code is mixed up and contains <b>one extra block<\/b> which is not needed in a correct solution. Drag the needed blocks from the left into the correct order on the right. Check your solution by clicking on the <i>Check Me<\/i> button. You will be told if any of the blocks are in the wrong order or if you need to remove one or more blocks.     int x = 3;  int y = 5;  int temp = 0;    temp = x;    x = y;    y = temp;    y = x;     The source code for this problem is shown here.  .. parsonsprob:: 2_swapex :noindent: The following has the correct code to 'swap' the values in x and y (so that x ends up with y's initial value and y ends up with x's initial value), but the code is mixed up and contains <b>one extra block<\/b> which is not needed in a correct solution. Drag the needed blocks from the left into the correct order on the right. Check your solution by clicking on the <i>Check Me<\/i> button. You will be told if any of the blocks are in the wrong order or if you need to remove one or more blocks. ----- int x = 3; int y = 5; int temp = 0; ===== temp = x; ===== x = y; ===== y = temp; ===== y = x; #distractor   "
-},
-{
-  "id": "writing-exercises_id1",
-  "level": "2",
-  "url": "writing-exercises_mixed-up-code-parsons.html#writing-exercises_id1",
-  "type": "Table",
-  "number": "8.3.1",
-  "title": "",
-  "body": "  Parsons Problems Options   Option  Description    maxdist  The maximum number of distractors to use. They will be picked at random    order  The order for the lines, they are displayed in a random order normally    language  Specify the language: java, python    noindent  Provide the indentation for the user by adding spaces to the left of the code    adaptive  Provide help is the user is struggling and modify the difficulty of the problem based on the user's performance on the previous problem    numbered  Show numbered labels to the left of the code if you add left or to the right when you add right    "
-},
-{
-  "id": "mt1dict1ex",
-  "level": "2",
-  "url": "writing-exercises_mixed-up-code-parsons.html#mt1dict1ex",
-  "type": "Checkpoint",
-  "number": "8.3.2",
-  "title": "",
-  "body": "  Complete the function greater_dictionary. Given a dictionary d and an integer cutoff, return a dictionary that contains only the key-value pairs where they key is greater than or equal to cutoff.      def greater_dictionary(d, cutoff):    def greater_dictionary(self, d, cutoff):     result = {}     for key in d.keys():    for key in range(d):      if key >= cutoff:    if key > cutoff:      result[key] = d[key]    d[key] = result[key]     return result    "
-},
-{
-  "id": "2_swapex",
-  "level": "2",
-  "url": "writing-exercises_mixed-up-code-parsons.html#2_swapex",
-  "type": "Checkpoint",
-  "number": "8.3.3",
-  "title": "",
-  "body": "  The following has the correct code to ‘swap' the values in x and y (so that x ends up with y's initial value and y ends up with x's initial value), but the code is mixed up and contains <b>one extra block<\/b> which is not needed in a correct solution. Drag the needed blocks from the left into the correct order on the right. Check your solution by clicking on the <i>Check Me<\/i> button. You will be told if any of the blocks are in the wrong order or if you need to remove one or more blocks.     int x = 3;  int y = 5;  int temp = 0;    temp = x;    x = y;    y = temp;    y = x;    "
-},
-{
-  "id": "writing-exercises_pro-tip-test-your-exercises-locally",
-  "level": "1",
-  "url": "writing-exercises_pro-tip-test-your-exercises-locally.html",
-  "type": "Section",
-  "number": "8.4",
-  "title": "Pro Tip – Test Your Exercises Locally",
-  "body": " Pro Tip – Test Your Exercises Locally  This is definitey an advanced topic If you are not comfortable with the command line you can definitely skip this section. But if you are at least somewhat comfortable with the command line and an editor then this can save you a bunch of time! The workflow is simple, edit your questions locally, then paste them into the interface once you have them working and debugged.  Here is a short video that demonstrates how to install the runestone command in under two minutes.     Here are the steps I go through in the video. This assumes you already have python installed on your system.     virtualenv runestone - Creates a python virtual environment so you don't need administrator privileges to install the rest of what you need. If virtualenv is not installed you should do pip install virtualenv (Python 2.7.x) or python -m venv runestone (Python > 3.5). If the pip command is not found then you should upgrade your version of Python to something newer. All modern version of Python come with pip pre-installed.    . runestone\/bin\/activate – this activates the virtual environment you created in the previous step.    mkdir assignments – Create an assignment to do your runestone work in.    cd assignments – Make assignments your working directory.    runestone init – Create a new project with some template directives    runestone build – Convert the restructuredText to html    runestone serve – start a simple web server so you can access your new project in your browser at http:\/\/localhost:8000\/index.html     Once the works you can simply edit the index.rst file created by runestone init, and run runestone build again to check your work.  "
-},
-{
-  "id": "writing-exercises_pro-tip-test-your-exercises-locally-2",
-  "level": "2",
-  "url": "writing-exercises_pro-tip-test-your-exercises-locally.html#writing-exercises_pro-tip-test-your-exercises-locally-2",
-  "type": "Paragraph (with a defined term)",
-  "number": "",
-  "title": "",
-  "body": "advanced topic "
-},
-{
-  "id": "writing-exercises_add-your-own-question",
-  "level": "1",
-  "url": "writing-exercises_add-your-own-question.html",
-  "type": "Section",
-  "number": "8.5",
-  "title": "Add your own Question",
-  "body": " Add your own Question  In the final exercise for the night, add your own question to the exercise bank using the web interface.  You can make it any kind of question you would like, but it would be great if it was a real exercise that you like to use in one of your own courses.  To keep the build system from bogging down, you can let me know once you have saved an exercise and I'll pull it into the sigcse2019 book and build it for you.   Make sure you assign at least 0 points to your question before you press done. If everything works, you will get a popup telling you that the question has been added successfully.   "
-},
-{
-  "id": "writing-exercises_add-your-own-question-5",
-  "level": "2",
-  "url": "writing-exercises_add-your-own-question.html#writing-exercises_add-your-own-question-5",
-  "type": "Warning",
-  "number": "8.5.1",
-  "title": "",
-  "body": " Make sure you assign at least 0 points to your question before you press done. If everything works, you will get a popup telling you that the question has been added successfully.  "
-},
-{
-  "id": "writing-exercises_exercises",
-  "level": "1",
-  "url": "writing-exercises_exercises.html",
-  "type": "Exercises",
-  "number": "8.6",
-  "title": "Exercises",
-  "body": " Exercises  this page left intentionally blank  "
 },
 {
   "id": "InstructorGuide-12-1",
