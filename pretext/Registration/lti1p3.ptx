@@ -166,7 +166,7 @@
             </p>
 
             <p>
-                Each RS course can be linked to only one LMS course. This means that if you have multiple <q>courses</q> in your LMS for multiple sections or some other reason, you will need to create different RS courses for each LMS course. You can link multiple RS courses to the same LMS course (if you are using multiple books in one course.) If you need to unlink Runestone from an LMS, you can use the <term>Remote LTI 1.3 Association</term> button from the <term>Admin > LTI Integration</term> screen. Doing so will NOT remove any assignments or grades from the LMS, but it will prevent new grades from being sent to the LMS. You can then relink the course with the same LMS course or a new one.
+                Each RS course can be linked to only one LMS course. This means that if you have multiple <q>courses</q> in your LMS for multiple sections or some other reason, you will need to create different RS courses for each LMS course. You can link multiple RS courses to the same LMS course (if you are using multiple books in one course.) If you need to unlink Runestone from an LMS, you can use the <term>Remove LTI 1.3 Association</term> button from the <term>Admin > LTI Integration</term> screen. Doing so will NOT remove any assignments or grades from the LMS, but it will prevent new grades from being sent to the LMS. You can then relink the course with the same LMS course or a new one.
             </p>
             
             <p>There are some settings available in each Runestone course that affect LTI integration:
