@@ -10,11 +10,13 @@
     </source>
     <html>
       <knowl exercise-inline="no" example="no" listing="yes" />
-      <css theme="salem"/>
+      <css theme="denver"/>
+      <tableofcontents focused="yes" preexpanded-levels="1" />
       <search variant="default" />
+      <index-page ref="InstructorGuide" />
     </html>
     <numbering>
-    <divisions level="3"/>     
-    </numbering>    
-    
+    <divisions level="3"/>
+    </numbering>
+
 </publication>
