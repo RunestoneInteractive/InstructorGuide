@@ -9,7 +9,7 @@
 <!--******************************************-->
 <!--*  Authored with PreTeXt                 *-->
 <!--*  pretextbook.org                       *-->
-<!--*  Theme: salem                          *-->
+<!--*  Theme: denver                         *-->
 <!--*  Palette:                              *-->
 <!--******************************************-->
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
@@ -20,68 +20,23 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
 <link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
 <link href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
-<script>
-var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
-window.MathJax = {
-  "tex": {
-    "inlineMath": [
-      [
-        "\\(",
-        "\\)"
-      ]
-    ],
-    "tags": "none",
-    "tagSide": "right",
-    "tagIndent": ".8em",
-    "packages": {
-      "[+]": [
-        "base",
-        "extpfeil",
-        "ams",
-        "amscd",
-        "color",
-        "newcommand",
-        "knowl"
-      ]
-    }
-  },
-  "options": {
-    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
-    "processHtmlClass": "process-math"
-  },
-  "chtml": {
-    "scale": 0.98,
-    "mtextInheritFont": true
-  },
-  "loader": {
-    "load": [
-      "input/asciimath",
-      "[tex]/extpfeil",
-      "[tex]/amscd",
-      "[tex]/color",
-      "[tex]/newcommand",
-      "[pretext]/mathjaxknowl3.js"
-    ],
-    "paths": {
-      "pretext": "_static/pretext/js/lib"
-    }
-  },
-  "startup": {
-    pageReady() {
-      return MathJax.startup.defaultPageReady().then(function () {
-      console.log("in ready function");
-      rsMathReady();
-      }
-    )}
-  }
-};
-</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<script type="module">import { startMathJax } from './_static/pretext/js/dist/mathjax_startup.js';
+startMathJax({
+hasWebworkReps: false,
+hasSage: false,
+isReact: false,
+htmlPresentation: false,
+});
+</script><script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta property="og:type" content="book">
-<meta property="book:title" content="Using eBooks with Runestone Academy">
-<meta property="book:author" content="Brad Miller, PhD.
-						Professor Emeritus Luther College">
-<script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<meta name="twitter:title" content="Using eBooks with Runestone Academy: The PreTeXt Interactive Edition">
+<meta property="og:title" content="Using eBooks with Runestone Academy: The PreTeXt Interactive Edition">
+<meta property="book:title" content="Using eBooks with Runestone Academy: The PreTeXt Interactive Edition">
+<meta name="twitter:description" content="This book will help you get the most out of the features of Runestone Academy.">
+<meta property="og:description" content="This book will help you get the most out of the features of Runestone Academy.">
+<meta name="twitter:card" content="summary">
+<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/dist/pretext-core.js?v=2.44"></script><!--** eBookCongig is necessary to configure interactive       **-->
 <!--** Runestone components to run locally in reader's browser **-->
 <!--** No external communication:                              **-->
 <!--**     log level is 0, Runestone Services are disabled     **-->
@@ -103,37 +58,54 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.11.5';
+eBookConfig.runestone_version = '8.1.14';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.42217a82c75796c8.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.7e141ad8414abf4a.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
-<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.f4ab138da65f4203.css">
-<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/components/prism-core.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/autoloader/prism-autoloader.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/line-numbers/prism-line-numbers.min.js" integrity="sha512-dubtf8xMHSQlExGRQ5R7toxHLgSDZ0K7AunqPWHXmJQ8XyVIG19S1T95gBxlAeGOK02P4Da2RTnQz0Za0H0ebQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/line-highlight/prism-line-highlight.min.js" integrity="sha512-93uCmm0q+qO5Lb1huDqr7tywS8A2TFA+1/WHvyiWaK6/pvsFl6USnILagntBx8JnVbQH5s3n0vQZY6xNthNfKA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+<script src="_static/prefix-runtime.cb5af2e851de3574.bundle.js"></script><script src="_static/prefix-926.5c7038c8ef173faf.bundle.js"></script><script src="_static/prefix-runestone.f51cd4153b45055d.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-926.229729d09512acc9.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.66fa8a682a32c0ac.css">
+<script src="_static/pretext/js/dist/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/components/prism-core.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/autoloader/prism-autoloader.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/line-numbers/prism-line-numbers.min.js" integrity="sha512-dubtf8xMHSQlExGRQ5R7toxHLgSDZ0K7AunqPWHXmJQ8XyVIG19S1T95gBxlAeGOK02P4Da2RTnQz0Za0H0ebQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/line-highlight/prism-line-highlight.min.js" integrity="sha512-93uCmm0q+qO5Lb1huDqr7tywS8A2TFA+1/WHvyiWaK6/pvsFl6USnILagntBx8JnVbQH5s3n0vQZY6xNthNfKA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/dist/pretext_search.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script>
 </head>
 <body id="instructorguide" class="pretext book ignore-math">
-<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead" role="banner"><div class="ptx-banner">
 <a id="logo-link" class="logo-link" target="_blank" href="https://runestone.academy"><img src="external/RAIcon.png" alt="Logo image"></a><div class="title-container">
-<h1 class="heading"><a href="InstructorGuide.html"><span class="title">Using eBooks with Runestone Academy</span> <span class="subtitle">The PreTeXt Interactive Edition</span></a></h1>
+<div class="heading ptx-banner-heading"><a href="InstructorGuide.html"><span class="title">Using eBooks with Runestone Academy</span> <span class="subtitle">The PreTeXt Interactive Edition</span></a></div>
 <p class="byline">Brad Miller, PhD. Professor Emeritus Luther College</p>
 </div>
 </div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
-<button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><a class="index-button button" href="InstructorGuide-12-1.html" title="Index"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span><span class="name">Index</span></a><div class="searchbox">
-<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
-<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
-<div class="search-results-controls">
-<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+<button id="ptx-toc-toggle" type="button" aria-controls="ptx-sidebar" class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><a class="index-button button" href="InstructorGuide-12-1.html" title="Index"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span><span class="name">Index</span></a><div class="ptx-search-box">
+<div class="ptx-search-widget"><button id="ptx-search-button" type="button" class="ptx-search-button button" title="Search Book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<dialog id="ptx-search-dialog" class="ptx-dialog ptx-search-dialog"><div class="ptx-search-dialog-controls">
+<input aria-label="Search term" id="ptx-search-terms" class="ptx-search-terms" type="text" name="terms" placeholder="Search terms"><button aria-label="Close" id="ptx-search-close" class="ptx-search-close"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cd;</span></button>
 </div>
-<h2 class="search-results-heading">Search Results: </h2>
-<div id="searchempty" class="searchempty"><span>No results.</span></div>
-<ol id="searchresults" class="searchresults"></ol>
+<div id="ptx-search-status" class="ptx-search-status" aria-live="polite" aria-atomic="true"></div>
+<h2 class="heading ptx-search-results-heading">Search Results: </h2>
+<div id="ptx-search-empty" class="ptx-search-empty"><span>No results.</span></div>
+<ol id="ptx-search-results" class="ptx-search-results"></ol></dialog>
 </div>
+<span class="nav-other-controls"><button id="ptx-readability-options-button" class="ptx-readability-options-button button" title="Readability settings"><span class="icon material-symbols-outlined" aria-hidden="true">&#xf6f1;</span><span class="name">Readability settings</span></button><dialog class="ptx-dialog ptx-readability-options-popup" id="ptx-readability-options-popup"><div class="ptx-readability-options-popup-controls">
+<h2 class="heading">Readability settings</h2>
+<button class="ptx-readability-options-close-button button" id="ptx-readability-options-close-button" title="Close"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cd;</span></button>
 </div>
-<span class="nav-other-controls"><button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="monitoring.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="monitoring.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="instructor-interface_view-student-activity.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+<div class="ptx-readability-options-group">
+<label class="ptx-readability-slider-label" for="ptx-readability-line-height"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe240;</span><span>Line height</span><output id="ptx-readability-line-height-value" for="ptx-readability-line-height">1.35</output></label><input type="range" id="ptx-readability-line-height" min="1.10" max="3" step="0.05" value="1.35">
+</div>
+<div class="ptx-readability-options-group">
+<label class="ptx-readability-slider-label" for="ptx-readability-font-size"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe245;</span><span>Content font size</span><output id="ptx-readability-font-size-value" for="ptx-readability-font-size">100%</output></label><input type="range" id="ptx-readability-font-size" min="0.8" max="1.5" step="0.05" value="1">
+</div>
+<fieldset class="ptx-readability-options-group ptx-readability-options-group-theme">
+<legend>Theme</legend>
+<label for="ptx-readability-theme-system"><input type="radio" name="ptx-readability-theme" id="ptx-readability-theme-system" value="system"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe1ab;</span><span>System</span></label><label for="ptx-readability-theme-light"><input type="radio" name="ptx-readability-theme" id="ptx-readability-theme-light" value="light"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe518;</span><span>Light</span></label><label for="ptx-readability-theme-dark"><input type="radio" name="ptx-readability-theme" id="ptx-readability-theme-dark" value="dark"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span>Dark</span></label>
+</fieldset>
+<fieldset class="ptx-readability-options-group">
+<legend>Assistive technologies</legend>
+<label for="ptx-readability-accessible-permalinks"><input type="checkbox" id="ptx-readability-accessible-permalinks"><span>🔗</span><span>Expose permalinks</span></label>
+</fieldset>
+<div class="ptx-readability-options-group"><button type="button" class="ptx-readability-reset-button button" id="ptx-readability-reset-button"><span class="icon material-symbols-outlined" aria-hidden="true">&#xf053;</span><span class="name">Reset All</span></button></div></dialog></span><span class="treebuttons"><a class="previous-button button" href="monitoring.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="monitoring.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="instructor-interface_view-student-activity.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
 </div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
@@ -142,11 +114,11 @@ eBookConfig.enable_chatcodes =  false;
 \newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
 \)</span></div>
 <div class="ptx-page">
-<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth4 focused" data-preexpanded-levels="0" data-max-levels="4"><ul class="structural toc-item-list contains-active">
+<div id="ptx-sidebar" role="complementary" class="ptx-sidebar"><nav id="ptx-toc" tabindex="-1" aria-label="Contents" class="ptx-toc depth4 focused" data-preexpanded-levels="1" data-max-levels="4"><ul class="structural toc-item-list contains-active">
 <li class="toc-item toc-frontmatter"><div class="toc-title-box"><a href="InstructorGuide-3.html" class="internal"><span class="title">Front Matter</span></a></div></li>
 <li class="toc-item toc-chapter">
 <div class="toc-title-box"><a href="Introduction.html" class="internal"><span class="codenumber">1</span> <span class="title">Introduction</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-Introduction" class="structural toc-item-list">
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="prose-philosophy.html" class="internal"><span class="codenumber">1.1</span> <span class="title">The Runestone Philosophy</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="Introduction-4.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Courses Versus Books</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="Introduction-5.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Privacy</span></a></div></li>
@@ -157,7 +129,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-chapter">
 <div class="toc-title-box"><a href="registration_register-for-this-course.html" class="internal"><span class="codenumber">2</span> <span class="title">Register for a Course</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-registration_register-for-this-course" class="structural toc-item-list">
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="registration_register-for-this-course-2.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Introduction</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="registration_first-time-registration.html" class="internal"><span class="codenumber">2.2</span> <span class="title">First-time Registration</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="registration_add-an-additional-course.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Add an Additional Course</span></a></div></li>
@@ -165,17 +137,17 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-chapter">
 <div class="toc-title-box"><a href="creating-a-course.html" class="internal"><span class="codenumber">3</span> <span class="title">Creating a Course</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-creating-a-course" class="structural toc-item-list">
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="custom-courses_what-is-a-custom-course.html" class="internal"><span class="codenumber">3.1</span> <span class="title">What is a course?</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="custom-courses_how-to-create-a-custom-course.html" class="internal"><span class="codenumber">3.2</span> <span class="title">How to Create a course</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-chapter">
 <div class="toc-title-box"><a href="managing-your-course.html" class="internal"><span class="codenumber">4</span> <span class="title">Managing Your Course</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-managing-your-course" class="structural toc-item-list">
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="registration_adding-students-to-your-course.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Managing Students in your Course</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-registration_adding-students-to-your-course" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="registration_adding-students-to-your-course.html#registration_adding-students-to-your-course-3" class="internal"><span class="codenumber">4.1.1</span> <span class="title">Student Self Registration</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="registration_adding-students-to-your-course.html#registration_adding-students-to-your-course-4" class="internal"><span class="codenumber">4.1.2</span> <span class="title">Pre-register your students</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="registration_adding-students-to-your-course.html#registration_adding-students-to-your-course-5" class="internal"><span class="codenumber">4.1.3</span> <span class="title">Removing Students</span></a></div></li>
@@ -184,19 +156,19 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="registration_privacy-and-runestone.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Privacy and Runestone</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-registration_privacy-and-runestone" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="registration_privacy-and-runestone.html#registration_setting-up-a-class-with-no-pii" class="internal"><span class="codenumber">4.2.1</span> <span class="title">Setting up a class with no PII</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="registration_privacy-and-runestone.html#registration_what-other-data-does-runestone-collect" class="internal"><span class="codenumber">4.2.2</span> <span class="title">What other Data Does Runestone Collect</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="lti_integration.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Integrating with your LMS Using LTI 1.1</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-lti_integration" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="lti_integration.html#lti_integration-2" class="internal"><span class="codenumber">4.3.1</span> <span class="title">Introduction</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="lti_integration.html#lti_integration-3" class="internal"><span class="codenumber">4.3.2</span> <span class="title">Phase 1 (All LMS platforms)</span></a></div></li>
 <li class="toc-item toc-subsection">
 <div class="toc-title-box"><a href="lti_integration.html#lti_integration-4" class="internal"><span class="codenumber">4.3.3</span> <span class="title">Phase 2 (LMS-specific Steps)</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-lti_integration-4" class="structural toc-item-list">
 <li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="lti_integration.html#lms-canvas-setup" class="internal"><span class="title">Canvas</span></a></div></li>
 <li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="lti_integration.html#lms-moodle-setup" class="internal"><span class="title">Moodle</span></a></div></li>
 <li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="lti_integration.html#lms-d2l-setup" class="internal"><span class="title">Brightspace D2L</span></a></div></li>
@@ -206,12 +178,12 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="lti1p3_integration.html" class="internal"><span class="codenumber">4.4</span> <span class="title">Integrating with your LMS Using LTI 1.3</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-lti1p3_integration" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="lti1p3_integration.html#lti1p3_integration-2" class="internal"><span class="codenumber">4.4.1</span> <span class="title">Introduction</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="lti1p3_integration.html#lti1p3_integration-3" class="internal"><span class="codenumber">4.4.2</span> <span class="title">LTI1.3 Integration Basic Information</span></a></div></li>
 <li class="toc-item toc-subsection">
 <div class="toc-title-box"><a href="lti1p3_integration.html#lti1p3-lmsadmin" class="internal"><span class="codenumber">4.4.3</span> <span class="title">LTI1.3 Setup - LMS Administrator</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-lti1p3-lmsadmin" class="structural toc-item-list">
 <li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="lti1p3_integration.html#lti1p3-lmsadmin-canvas" class="internal"><span class="title">LTI 1.3 Admin Setup - Canvas</span></a></div></li>
 <li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="lti1p3_integration.html#lti1p3-lmsadmin-moodle" class="internal"><span class="title">LTI 1.3 Admin Setup - Moodle</span></a></div></li>
 <li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="lti1p3_integration.html#lti1p3-lmsadmin-D2L" class="internal"><span class="title">LTI 1.3 Admin Setup - D2L</span></a></div></li>
@@ -219,7 +191,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-subsection">
 <div class="toc-title-box"><a href="lti1p3_integration.html#lti1p3-instructor-setup" class="internal"><span class="codenumber">4.4.4</span> <span class="title">LTI1.3 Setup - Instructor</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-lti1p3-instructor-setup" class="structural toc-item-list">
 <li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="lti1p3_integration.html#lti1p3-lms-instructor-setup-canvas" class="internal"><span class="title">LTI 1.3 Instructor Setup - Canvas</span></a></div></li>
 <li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="lti1p3_integration.html#lti1p3-lms-instructor-setup-moodle" class="internal"><span class="title">LTI 1.3 Instructor Setup - Moodle</span></a></div></li>
 <li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="lti1p3_integration.html#lti1p3-lms-instructor-setup-D2L" class="internal"><span class="title">LTI 1.3 Instructor Setup - D2L</span></a></div></li>
@@ -227,7 +199,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-subsection">
 <div class="toc-title-box"><a href="lti1p3_integration.html#lti1p3-instructor-use" class="internal"><span class="codenumber">4.4.5</span> <span class="title">LTI1.3 Instructional Use</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-lti1p3-instructor-use" class="structural toc-item-list">
 <li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="lti1p3_integration.html#lti1p3-instructor-use-2" class="internal"><span class="title">Content Linking</span></a></div></li>
 <li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="lti1p3_integration.html#lti1p3-instructor-use-3" class="internal"><span class="title">Grade Reporting</span></a></div></li>
 <li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="lti1p3_integration.html#lti1p3-instructor-use-4" class="internal"><span class="title">Date Syncing</span></a></div></li>
@@ -245,11 +217,11 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-chapter contains-active">
 <div class="toc-title-box"><a href="monitoring.html" class="internal"><span class="codenumber">5</span> <span class="title">Monitoring your Student’s Learning</span></a></div>
-<ul class="structural toc-item-list contains-active">
+<ul class="structural toc-item-list contains-active" id="ptx-toc-group-monitoring">
 <li class="toc-item toc-section active"><div class="toc-title-box"><a href="instructor-interface_the-instructor-interface.html" class="internal"><span class="codenumber">5.1</span> <span class="title">The Instructor Dashboard</span></a></div></li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="instructor-interface_view-student-activity.html" class="internal"><span class="codenumber">5.2</span> <span class="title">View Student Activity</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-instructor-interface_view-student-activity" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="instructor-interface_view-student-activity.html#activity_intro" class="internal"><span class="codenumber">5.2.1</span> <span class="title">Introduction</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="instructor-interface_view-student-activity.html#instructor-interface_students-online" class="internal"><span class="codenumber">5.2.2</span> <span class="title">Students Online</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="instructor-interface_view-student-activity.html#instructor-interface_chapter-progress" class="internal"><span class="codenumber">5.2.3</span> <span class="title">Chapter Activity</span></a></div></li>
@@ -260,17 +232,17 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-chapter">
 <div class="toc-title-box"><a href="working-with-assignments-chap.html" class="internal"><span class="codenumber">6</span> <span class="title">Working with Assignments</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-working-with-assignments-chap" class="structural toc-item-list">
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="instructor-interface_assignments.html" class="internal"><span class="codenumber">6.1</span> <span class="title">Understanding Assignments</span></a></div></li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="instructor-interface_create-an-assignment.html" class="internal"><span class="codenumber">6.2</span> <span class="title">Create an Assignment</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-instructor-interface_create-an-assignment" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="instructor-interface_create-an-assignment.html#create_assignment_intro" class="internal"><span class="codenumber">6.2.1</span> <span class="title">Introduction</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="instructor-interface_create-an-assignment.html#instructor-interface_creating-a-reading-assignment" class="internal"><span class="codenumber">6.2.2</span> <span class="title">Adding Readings</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="instructor-interface_create-an-assignment.html#instructor-interface_creating-a-problem-assignment" class="internal"><span class="codenumber">6.2.3</span> <span class="title">Adding Exercises</span></a></div></li>
 <li class="toc-item toc-subsection">
 <div class="toc-title-box"><a href="instructor-interface_create-an-assignment.html#subsec-accommodations" class="internal"><span class="codenumber">6.2.4</span> <span class="title">Accommodations</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-subsec-accommodations" class="structural toc-item-list">
 <li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="instructor-interface_create-an-assignment.html#subsubsec-ExamTime" class="internal"><span class="title">Extra Exam Time</span></a></div></li>
 <li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="instructor-interface_create-an-assignment.html#subsubsec-extended-due-date" class="internal"><span class="title">Extended Due Date</span></a></div></li>
 <li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="instructor-interface_create-an-assignment.html#subsubsec-visibility" class="internal"><span class="title">Visibility</span></a></div></li>
@@ -280,7 +252,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="instructor-interface_copying-assignments.html" class="internal"><span class="codenumber">6.3</span> <span class="title">Copying Assignments</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-instructor-interface_copying-assignments" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="instructor-interface_copying-assignments.html#instructor-interface_copying-assignments-2" class="internal"><span class="codenumber">6.3.1</span> <span class="title">Copying from your previous courses</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="instructor-interface_copying-assignments.html#instructor-interface_copying-assignments-3" class="internal"><span class="codenumber">6.3.2</span> <span class="title">Copying Base Course Assignments from the Author</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="instructor-interface_copying-assignments.html#instructor-interface_copying-assignments-4" class="internal"><span class="codenumber">6.3.3</span> <span class="title">Copying from a different Instructor</span></a></div></li>
@@ -288,14 +260,14 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="instructor-interface_exams-and-quizzes-in-runestone.html" class="internal"><span class="codenumber">6.4</span> <span class="title">Exams and Quizzes in Runestone</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-instructor-interface_exams-and-quizzes-in-runestone" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="instructor-interface_exams-and-quizzes-in-runestone.html#create_quiz_intro" class="internal"><span class="codenumber">6.4.1</span> <span class="title">Creating a Quiz/Exam Assignment</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="instructor-interface_exams-and-quizzes-in-runestone.html#instructor-interface_resetting-an-exam" class="internal"><span class="codenumber">6.4.2</span> <span class="title">Resetting an Exam</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="instructor-interface_grading.html" class="internal"><span class="codenumber">6.5</span> <span class="title">Grading</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-instructor-interface_grading" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="instructor-interface_grading.html#grading_intro" class="internal"><span class="codenumber">6.5.1</span> <span class="title">Introduction</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="instructor-interface_grading.html#instructor-interface_autograde" class="internal"><span class="codenumber">6.5.2</span> <span class="title">Autograde</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="instructor-interface_grading.html#instructor-interface_calculate-totals" class="internal"><span class="codenumber">6.5.3</span> <span class="title">Calculate Totals</span></a></div></li>
@@ -308,22 +280,22 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-chapter">
 <div class="toc-title-box"><a href="writing-exercises.html" class="internal"><span class="codenumber">7</span> <span class="title">Writing your own Exercises</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-writing-exercises" class="structural toc-item-list">
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="writing-exercises_adding-an-exercise-to-the-exercise-bank.html" class="internal"><span class="codenumber">7.1</span> <span class="title">Adding an Exercise to the Exercise Bank</span></a></div>
-<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="writing-exercises_adding-an-exercise-to-the-exercise-bank.html#writing_exer_intro" class="internal"><span class="codenumber">7.1.1</span> <span class="title">Create New Exercises</span></a></div></li></ul>
+<ul id="ptx-toc-group-writing-exercises_adding-an-exercise-to-the-exercise-bank" class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="writing-exercises_adding-an-exercise-to-the-exercise-bank.html#writing_exer_intro" class="internal"><span class="codenumber">7.1.1</span> <span class="title">Create New Exercises</span></a></div></li></ul>
 </li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="writing-exercises_multiple-choice-questions.html" class="internal"><span class="codenumber">7.2</span> <span class="title">Multiple Choice Questions</span></a></div></li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="writing-exercises_mixed-up-code-parsons.html" class="internal"><span class="codenumber">7.3</span> <span class="title">Mixed-Up Code (Parsons)</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-writing-exercises_mixed-up-code-parsons" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="writing-exercises_mixed-up-code-parsons.html#parsons-examples" class="internal"><span class="codenumber">7.3.1</span> <span class="title">Example Parsons Problems</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="writing-exercises_mixed-up-code-parsons.html#writing-parsons" class="internal"><span class="codenumber">7.3.2</span> <span class="title">Writing your own Parsons Problems</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="writing-exercises_active-code-exercises.html" class="internal"><span class="codenumber">7.4</span> <span class="title">Writing your own Active Code Exercises</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-writing-exercises_active-code-exercises" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="writing-exercises_active-code-exercises.html#writing-exercises_activecode" class="internal"><span class="codenumber">7.4.1</span> <span class="title">Active Code Exercises</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="writing-exercises_active-code-exercises.html#writing-exercises_unit-testing-exercises" class="internal"><span class="codenumber">7.4.2</span> <span class="title">Python Unit Tests for Autograding</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="writing-exercises_active-code-exercises.html#writing-java-unit-tests" class="internal"><span class="codenumber">7.4.3</span> <span class="title">Java Unit Tests for Autograding</span></a></div></li>
@@ -333,7 +305,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-chapter">
 <div class="toc-title-box"><a href="peer_instruction.html" class="internal"><span class="codenumber">8</span> <span class="title">Peer Instruction</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-peer_instruction" class="structural toc-item-list">
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="peer_instruction-3.html" class="internal"><span class="codenumber">8.1</span> <span class="title">Peer instruction in Runestone</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="peer_instruction-4.html" class="internal"><span class="codenumber">8.2</span> <span class="title">Creating Peer instruction Assignments</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="peer_instruction-5.html" class="internal"><span class="codenumber">8.3</span> <span class="title">Virtual Peer Instruction Workshop</span></a></div></li>
@@ -341,11 +313,11 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-backmatter">
 <div class="toc-title-box"><a href="InstructorGuide-12.html" class="internal"><span class="title">Back Matter</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-InstructorGuide-12" class="structural toc-item-list">
 <li class="toc-item toc-index"><div class="toc-title-box"><a href="InstructorGuide-12-1.html" class="internal"><span class="title">Index</span></a></div></li>
 <li class="toc-item toc-appendix">
 <div class="toc-title-box"><a href="welcome.html" class="internal"><span class="codenumber">A</span> <span class="title">Welcome to the Runestone Community</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-welcome" class="structural toc-item-list">
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="help-and-support.html" class="internal"><span class="codenumber">A.1</span> <span class="title">Help and Support</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="drop-in.html" class="internal"><span class="codenumber">A.2</span> <span class="title">Weekly Drop-Ins</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="github-issues.html" class="internal"><span class="codenumber">A.3</span> <span class="title">Feature Requests and Reporting Problems</span></a></div></li>
@@ -354,9 +326,9 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-appendix">
 <div class="toc-title-box"><a href="faq_appendix.html" class="internal"><span class="codenumber">B</span> <span class="title">Frequently Asked Questions</span></a></div>
-<ul class="structural toc-item-list"><li class="toc-item toc-section">
+<ul id="ptx-toc-group-faq_appendix" class="structural toc-item-list"><li class="toc-item toc-section">
 <div class="toc-title-box"><a href="faq.html" class="internal"><span class="codenumber">B.1</span> <span class="title">Frequently Asked Questions</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-faq" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="faq.html#_why-can-t-i-access-the-instructor-page" class="internal"><span class="codenumber">B.1.1</span> <span class="title">Why Can’t I access the Instructor Page?</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="faq.html#_how-do-i-become-an-instructor" class="internal"><span class="codenumber">B.1.2</span> <span class="title">How do I become an instructor?</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="faq.html#_how-do-i-learn-more-about-the-instructor-interface" class="internal"><span class="codenumber">B.1.3</span> <span class="title">How do I learn more about the instructor interface</span></a></div></li>
@@ -391,38 +363,46 @@ eBookConfig.enable_chatcodes =  false;
 </ul>
 </li>
 </ul></nav></div>
-<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="instructor-interface_the-instructor-interface"><h2 class="heading hide-type">
+<main class="ptx-main"><div id="ptx-content" class="ptx-content">
+<section class="section" id="instructor-interface_the-instructor-interface">
+<h1 class="heading hide-type">
 <span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.1</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">The Instructor Dashboard</span>
-</h2>
-<div class="para" id="instructor-interface_the-instructor-interface-2">The Runestone Instructor Dashboard, updated in 2025, provides a variety of tools for instructors to monitor student progress, create assignments, create new exercises, and analyze performa.<div class="autopermalink" data-description="Paragraph"><a href="#instructor-interface_the-instructor-interface-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</h1>
+<div class="para" id="instructor-interface_the-instructor-interface-2">The Runestone Instructor Dashboard, updated in 2025, provides a variety of tools for instructors to monitor student progress, create assignments, create new exercises, and analyze performa.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#instructor-interface_the-instructor-interface-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="instructor-interface_the-instructor-interface-3">One of the primary goals of the Runestone Instructor Dashboard is to help you understand where your students are at, and to help you to prepare and make the best use of classtime.  We set out to create an interface where you could see at a glance which concepts your students clearly “got” and which concepts they were struggling with so that you can spend your valuable class time on the topics that were confusing rather than boring them by covering material they clearly understand.  To really be effective with this strategy you should use reading assignments as described in <a href="instructor-interface_assignments.html" class="internal" title="Section 6.1: Understanding Assignments">Section 6.1</a>.<div class="autopermalink" data-description="Paragraph"><a href="#instructor-interface_the-instructor-interface-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="instructor-interface_the-instructor-interface-3">One of the primary goals of the Runestone Instructor Dashboard is to help you understand where your students are at, and to help you to prepare and make the best use of classtime.  We set out to create an interface where you could see at a glance which concepts your students clearly “got” and which concepts they were struggling with so that you can spend your valuable class time on the topics that were confusing rather than boring them by covering material they clearly understand.  To really be effective with this strategy you should use reading assignments as described in <a href="instructor-interface_assignments.html" class="internal" title="Section 6.1: Understanding Assignments">Section 6.1</a>.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#instructor-interface_the-instructor-interface-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="instructor-interface_the-instructor-interface-4">As an instructor, you can access a variety of instructor features. To get to the Instructor Dashboard follow these steps:<div class="autopermalink" data-description="Paragraph"><a href="#instructor-interface_the-instructor-interface-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="instructor-interface_the-instructor-interface-4">As an instructor, you can access a variety of instructor features. To get to the Instructor Dashboard follow these steps:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#instructor-interface_the-instructor-interface-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="instructor-interface_the-instructor-interface-5">
 <ol class="decimal ol-marker-1" id="instructor-interface_the-instructor-interface-5-1">
 <li id="instructor-interface_the-instructor-interface-5-1-1">
-<div class="para" id="instructor-interface_the-instructor-interface-5-1-1-1">Make sure you are logged in to a course for which you are an instructor. If necessary, click on the person icon at top right and select <em class="emphasis">Change Course</em> to get to a course that you are instructor for, or logout and login with a different account.<div class="autopermalink" data-description="Paragraph"><a href="#instructor-interface_the-instructor-interface-5-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="instructor-interface_the-instructor-interface-5-1-1-1">Make sure you are logged in to a course for which you are an instructor. If necessary, click on the person icon at top right and select <em class="emphasis">Change Course</em> to get to a course that you are instructor for, or logout and login with a different account.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#instructor-interface_the-instructor-interface-5-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 1"><a href="#instructor-interface_the-instructor-interface-5-1-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 1"><a tabindex="-1" href="#instructor-interface_the-instructor-interface-5-1-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
 </li>
 <li id="instructor-interface_the-instructor-interface-5-1-2">
-<div class="para" id="instructor-interface_the-instructor-interface-5-1-2-1">Click on the person icon on the top right of the window and select <em class="emphasis">Instructor Dashboard</em><div class="autopermalink" data-description="Paragraph"><a href="#instructor-interface_the-instructor-interface-5-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="instructor-interface_the-instructor-interface-5-1-2-1">Click on the person icon on the top right of the window and select <em class="emphasis">Instructor Dashboard</em><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#instructor-interface_the-instructor-interface-5-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <figure class="figure figure-like" id="nav_to_ii_fig"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/Figures/GetToInstructor.png" class="contained"></div>
-<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.1.1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Figure 1: How to get to the instructor’s page<div class="autopermalink" data-description="Figure 5.1.1"><a href="#nav_to_ii_fig" title="Copy heading and permalink for Figure 5.1.1" aria-label="Copy heading and permalink for Figure 5.1.1">🔗</a></div></figcaption></figure><div class="para" id="instructor-interface_the-instructor-interface-5-1-2-3">
-        <div class="para" id="instructor-interface_the-instructor-interface-5-1-2-3-1-1">You will see the Instructor Dashboard as shown below.<div class="autopermalink" data-description="Paragraph"><a href="#instructor-interface_the-instructor-interface-5-1-2-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.1.1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Figure 1: How to get to the instructor’s page<div class="autopermalink" aria-hidden="true" data-description="Figure 5.1.1"><a tabindex="-1" href="#nav_to_ii_fig" title="Copy heading and permalink for Figure 5.1.1" aria-label="Copy heading and permalink for Figure 5.1.1">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="instructor-interface_the-instructor-interface-5-1-2-3">
+        
+<div class="para" id="instructor-interface_the-instructor-interface-5-1-2-3-1-1">You will see the Instructor Dashboard as shown below.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#instructor-interface_the-instructor-interface-5-1-2-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-      <div class="autopermalink" data-description="Paragraph"><a href="#instructor-interface_the-instructor-interface-5-1-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+      <div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#instructor-interface_the-instructor-interface-5-1-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <figure class="figure figure-like" id="main_ii_fig"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/Figures/InstructorPage.png" class="contained"></div>
-<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.1.2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Figure 2: The Instructor’s Page<div class="autopermalink" data-description="Figure 5.1.2"><a href="#main_ii_fig" title="Copy heading and permalink for Figure 5.1.2" aria-label="Copy heading and permalink for Figure 5.1.2">🔗</a></div></figcaption></figure><div class="autopermalink" data-description="Item 2"><a href="#instructor-interface_the-instructor-interface-5-1-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.1.2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Figure 2: The Instructor’s Page<div class="autopermalink" aria-hidden="true" data-description="Figure 5.1.2"><a tabindex="-1" href="#main_ii_fig" title="Copy heading and permalink for Figure 5.1.2" aria-label="Copy heading and permalink for Figure 5.1.2">🔗</a></div></figcaption>
+</figure><div class="autopermalink" aria-hidden="true" data-description="Item 2"><a tabindex="-1" href="#instructor-interface_the-instructor-interface-5-1-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
 </li>
 </ol>
-<div class="autopermalink" data-description="Paragraph"><a href="#instructor-interface_the-instructor-interface-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#instructor-interface_the-instructor-interface-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Section 5.1: The Instructor Dashboard"><a href="#instructor-interface_the-instructor-interface" title="Copy heading and permalink for Section 5.1: The Instructor Dashboard" aria-label="Copy heading and permalink for Section 5.1: The Instructor Dashboard">🔗</a></div></section></div>
+<div class="autopermalink" aria-hidden="true" data-description="Section 5.1: The Instructor Dashboard"><a tabindex="-1" href="#instructor-interface_the-instructor-interface" title="Copy heading and permalink for Section 5.1: The Instructor Dashboard" aria-label="Copy heading and permalink for Section 5.1: The Instructor Dashboard">🔗</a></div>
+</section>
+</div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="monitoring.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="instructor-interface_view-student-activity.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
