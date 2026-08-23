@@ -1,15 +1,15 @@
 <?xml version="1.0"?>
 <section xml:id="registration_adding-students-to-your-course">
   <title>Managing Students in your Course</title>
-  <video xml:id="register_vid" youtube="RJ-bYYjKbTU" width="100%" />
+ 
   <subsection>
     <title>Student Self Registration</title>
     <p>When you created the course, you chose a unique course name. Give your course name to students.
       They will register on the site and enter that string as their course name. If you've forgotten
       what your course name is, you can see it displayed on the Course selection page <url
-        href="https://runestone.academy/runestone/default/courses"
-        visual="https://runestone.academy/runestone/default/courses">
-      https://runestone.academy/runestone/default/courses</url>. You can access that page by
+        href="https://runestone.academy/admin/auth/my_courses"
+        visual="https://runestone.academy/admin/auth/my_courses">
+      https://runestone.academy/admin/auth/my_courses</url>. You can access that page by
       clicking on the person icon at the top right of the window and then selecting <em>Change
       Course</em>.</p>
     <note>
@@ -17,6 +17,10 @@
           ref="registration_register-for-this-course" />. You just need to provide them with the
         text string for the course name. </p>
     </note>
+
+      <p>This video demonstrates registering students in the old interface:</p>
+       <video xml:id="register_vid" youtube="RJ-bYYjKbTU" width="100%" />
+
   </subsection>
   <subsection>
     <title>Pre-register your students</title>
@@ -28,8 +32,7 @@
   </figure>
       <p> You will see a page like this:</p>
     <figure align="center" xml:id="reg_your_students_fig">
-      <caption>Register
-        your Students</caption>
+      <caption>Register your Students</caption>
       <image source="Figures/manage_students.png" width="100%" alt="Support Runestone" />
     </figure>
     <p>You can create a csv file in your favorite spreadsheet program and then export it to a csv or
@@ -85,7 +88,7 @@ user1,user@school.com,Jane,Smith,xxxx,foocourse</pre>
       are legitimate. Yes many high schoolers think it is funny to try to trick me into resetting
       the password on one of their friends.</p>
 
-    <p>Instructors cannot change their own passwords through this mechanism. who among us hasn't
+    <p>Instructors cannot change their own passwords through this mechanism. Who among us hasn't
       walked away from the computer and left ourselves logged into Runestone? As an instructor, you
       will still have to use the normal email password reset mechanism. If your school blocks emails
       then I suggest you just get a free gmail address to use for this purpose.</p>

@@ -6,47 +6,44 @@
     <p>There are two kinds of courses on Runestone Academy:
     <ul>
       <li>Courses that are open to anyone to view without logging in or for anyone to enroll in if they choose to create an account. We call these books <term>base courses.</term> These courses are very large and have no instructor to guide the students, eveyone just proceeds at their own pace.</li>
-      <li>Smaller courses at a a high school, college, or university, that are guided by an instructor like yourself also use these books. We often refer to these as <term>custom courses</term>
+      <li>Smaller courses at a a high school, college, or university, that are guided by an instructor like yourself also use these books. We often refer to these as <term>custom courses</term>.
       </li>
     </ul>
     You can think of the base courses as a template for custom courses, something like classes and instances in object oriented programming.
     </p>
-    <p>Although the base course books are open to the public, to save your work, you will need to register for an account on Runestone Academy. When you first regigister you will have the privileges of a <term>student.</term> You do not become an <term>instructor</term> until your create your own course. Lets walk through the registration process now.</p>
+    <p>Although the base course books are open to the public, to save your work, you will need to register for an account on Runestone Academy. When you first register you will have the privileges of a <term>student.</term> You do not become an <term>instructor</term> until your create your own course. Lets walk through the registration process now.</p>
   </section>
   <section xml:id="registration_first-time-registration">
     <title>First-time Registration</title>
-    <p>
-      When you register you must select a course. The right side of the page contains a list of names of the base courses (registration codes) for the most common courses. If you do not see the one you want on this list you can look in the library. We are working on a way to harmonize the various places to discover books and their names.</p>
 
-    <figure align="center" xml:id="reg_yourself">
-      <caption>Register yourself</caption>
-      <image source="Figures/new_register.png" width="100%" alt="Registration Page" />
+    <p>If you are a new Runestone user, you will need to register for a free account. Click on the Login button at
+      <url href="https://runestone.academy">https://runestone.academy</url> and then click on the 
+      Register link at the bottom of the login form or go directly to the registration page at 
+      <url href="https://runestone.academy/admin/auth/register">https://runestone.academy/admin/auth/register</url>. Make sure you fill in the Institution Name because this will be used to suggest courses for you to join at your institution. Click the Create Account button to go to the second page to choose your first course. </p>
+
+      <p>If you check "I am an instructor and want to create a course for my students" at the bottom of the registration form, 
+        you will be taken to the create a new course page. </p>
+    
+      <p>On the second page, you will see suggested courses from your institution. Or you can type in the name of a course you want to join. Or choose one from the list of base courses which are also listed on the <url href="https://runestone.academy/ns/books/index">library page</url>. After joining your first course, you will be able to add more courses.</p>
+
+   <figure align="center" xml:id="reg_yourself">
+      <caption>Register and Choose Course</caption>
+      <image source="Figures/register_choose_course.png" width="100%" alt="Registration Choose Course Page" />
     </figure>
 
-    <p>
-    <ol marker="1">
-      <li>
-        <p>Open the following url in another tab: <url href="https://runestone.academy/runestone/default/user/register" visual="https://runestone.academy/runestone/default/user/register">https://runestone.academy/runestone/default/user/register</url>. The form is pretty self-explanatory, except for the <em>Course Name</em> field. There is information about that on the right side. You can specify one of the strings that identify one of the public courses that the server knows about: thinkcspy, pythonds, etc. Or you can enter the string for a course that someone else has created and provided you with.</p>
-      </li>
-      <li>
-        <p>Click <em>Register</em></p>
-      </li>
-      <li>
-        <p>If you are on the login page instead at <url href="https://runestone.academy/runestone/default/user/login" visual="https://runestone.academy/runestone/default/user/login">https://runestone.academy/runestone/default/user/login</url> then click the <em>Register</em> button which is near the bottom of the page to get to the registration page.</p>
-      </li>
-    </ol>
-    </p>
   </section>
+  
   <section xml:id="registration_add-an-additional-course">
     <title>Add an Additional Course</title>
     <p>When you are logged in and looking at an eBook, click on the person icon in the upper right and select <em>Change Course</em>.
-      That will take you to the course selection page.</p>
+      That will take you to the <url href="https://runestone.academy/admin/auth/my_courses">My Courses page</url> where you can switch to another course or enroll in a new course using the "Enroll in Another Course" button at the bottom of the page. The courses that you have recently used are at the top and marked by a clock icon. </p>
 
       <figure align="center" xml:id="choose_course_page">
       <caption>Change Courses</caption>
-      <image source="Figures/chooseCourse.JPG" description="choose a course" />
+      <image source="Figures/chooseCourse.png" description="choose a course" />
       </figure>
-    <p>Click on the <em>Enroll in a Course</em> button, which takes you to a page that looks a lot like the registration page. Don't change any of the fields except <em>Course Name</em>. There, you can enter any string that identifies another course.</p>
-    <p>As an instructor you may find that the list of courses can get quite long.  You can use the <q>Remove Course</q> button to unenroll yourself from that course.   Please note it does NOT delete the course it only takes you out of it.  You can always re-enroll at a later time.</p>
+    <p>Click on the <em>Enroll in a Course</em> button, which takes you to a page that looks a lot like the registration choose a course page. You can enter a course name or choose another base course. </p>
+    
+    <p>As an instructor you may find that the list of courses can get quite long.  You can use the <q>Drop</q> button next to any course to unenroll yourself from that course, but make sure that you are first in an another active course. Please note it does NOT delete the course it only takes you out of it.  You can always re-enroll at a later time. You cannot drop the course that you are currently active in without first switching to another active course.</p>
   </section>
 </chapter>
