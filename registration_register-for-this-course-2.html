@@ -26,6 +26,7 @@ hasWebworkReps: false,
 hasSage: false,
 isReact: false,
 htmlPresentation: false,
+lang: "en-US",
 });
 </script><script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -36,7 +37,7 @@ htmlPresentation: false,
 <meta name="twitter:description" content="This book will help you get the most out of the features of Runestone Academy.">
 <meta property="og:description" content="This book will help you get the most out of the features of Runestone Academy.">
 <meta name="twitter:card" content="summary">
-<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/dist/pretext-core.js?v=2.44"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/dist/pretext-core.js?v=2.49"></script><script src="_static/pretext/js/dist/pretext-read-aloud.js?v=2.49"></script><!--** eBookCongig is necessary to configure interactive       **-->
 <!--** Runestone components to run locally in reader's browser **-->
 <!--** No external communication:                              **-->
 <!--**     log level is 0, Runestone Services are disabled     **-->
@@ -58,15 +59,15 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '8.1.14';
+eBookConfig.runestone_version = '8.2.7';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.cb5af2e851de3574.bundle.js"></script><script src="_static/prefix-926.5c7038c8ef173faf.bundle.js"></script><script src="_static/prefix-runestone.f51cd4153b45055d.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-926.229729d09512acc9.css">
-<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.66fa8a682a32c0ac.css">
+<script src="_static/prefix-runtime.7d3f08d51c2b60f8.bundle.js"></script><script src="_static/prefix-926.5c7038c8ef173faf.bundle.js"></script><script src="_static/prefix-runestone.bb5ac777721d4056.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-926.229729d09512acc9.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.efe427683fc41f98.css">
 <script src="_static/pretext/js/dist/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/components/prism-core.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/autoloader/prism-autoloader.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/line-numbers/prism-line-numbers.min.js" integrity="sha512-dubtf8xMHSQlExGRQ5R7toxHLgSDZ0K7AunqPWHXmJQ8XyVIG19S1T95gBxlAeGOK02P4Da2RTnQz0Za0H0ebQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/line-highlight/prism-line-highlight.min.js" integrity="sha512-93uCmm0q+qO5Lb1huDqr7tywS8A2TFA+1/WHvyiWaK6/pvsFl6USnILagntBx8JnVbQH5s3n0vQZY6xNthNfKA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/dist/pretext_search.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script>
 </head>
@@ -87,7 +88,17 @@ eBookConfig.enable_chatcodes =  false;
 <div id="ptx-search-empty" class="ptx-search-empty"><span>No results.</span></div>
 <ol id="ptx-search-results" class="ptx-search-results"></ol></dialog>
 </div>
-<span class="nav-other-controls"><button id="ptx-readability-options-button" class="ptx-readability-options-button button" title="Readability settings"><span class="icon material-symbols-outlined" aria-hidden="true">&#xf6f1;</span><span class="name">Readability settings</span></button><dialog class="ptx-dialog ptx-readability-options-popup" id="ptx-readability-options-popup"><div class="ptx-readability-options-popup-controls">
+<span class="nav-other-controls"><button id="ptx-read-aloud-button" class="ptx-read-aloud-button button" title="Read aloud" aria-expanded="false"><span class="icon material-symbols-outlined" aria-hidden="true">&#xf1bc;</span><span class="name">Read aloud</span></button><div id="ptx-read-aloud-player" class="ptx-read-aloud-player" hidden="hidden" role="group" aria-label="Read aloud">
+<button id="ptx-read-aloud-prev" class="button" title="Previous sentence"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe045;</span></button><button id="ptx-read-aloud-toggle" class="ptx-read-aloud-toggle button" title="Play"><span class="ptx-read-aloud-icon-play"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe037;</span></span><span class="ptx-read-aloud-icon-pause"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe034;</span></span></button><button id="ptx-read-aloud-next" class="button" title="Next sentence"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe044;</span></button><a id="ptx-read-aloud-continue" class="ptx-read-aloud-continue button" hidden="hidden">Continue<span class="icon material-symbols-outlined" aria-hidden="true">&#xe037;</span></a><button id="ptx-read-aloud-settings-button" class="ptx-read-aloud-settings-button button" title="Reading settings"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe429;</span></button>
+</div>
+<dialog class="ptx-dialog ptx-read-aloud-settings-popup" id="ptx-read-aloud-settings-popup"><div class="ptx-readability-options-popup-controls">
+<h2 class="heading">Read aloud settings</h2>
+<button class="ptx-read-aloud-settings-close-button button" id="ptx-read-aloud-settings-close-button" title="Close"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cd;</span></button>
+</div>
+<div class="ptx-readability-options-group">
+<label for="ptx-read-aloud-voice"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe91f;</span><span>Voice</span></label><select id="ptx-read-aloud-voice"></select><label class="ptx-readability-slider-label" for="ptx-read-aloud-rate"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe9e4;</span><span>Reading speed</span><output id="ptx-read-aloud-rate-value" for="ptx-read-aloud-rate">1×</output></label><input type="range" id="ptx-read-aloud-rate" min="0.5" max="2" step="0.1" value="1"><label for="ptx-read-aloud-asides"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d7;</span><span>Collapsed content</span></label><select id="ptx-read-aloud-asides"><option value="skip">Announce, do not read</option>
+<option value="read">Read automatically</option></select><label for="ptx-read-aloud-autoscroll"><input type="checkbox" id="ptx-read-aloud-autoscroll" checked><span>Follow along (auto-scroll)</span></label><label for="ptx-read-aloud-autocontinue"><input type="checkbox" id="ptx-read-aloud-autocontinue"><span>Continue to the next page automatically</span></label>
+</div></dialog><button id="ptx-readability-options-button" class="ptx-readability-options-button button" title="Readability settings"><span class="icon material-symbols-outlined" aria-hidden="true">&#xf6f1;</span><span class="name">Readability settings</span></button><dialog class="ptx-dialog ptx-readability-options-popup" id="ptx-readability-options-popup"><div class="ptx-readability-options-popup-controls">
 <h2 class="heading">Readability settings</h2>
 <button class="ptx-readability-options-close-button button" id="ptx-readability-options-close-button" title="Close"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cd;</span></button>
 </div>
@@ -119,6 +130,7 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-chapter">
 <div class="toc-title-box"><a href="Introduction.html" class="internal"><span class="codenumber">1</span> <span class="title">Introduction</span></a></div>
 <ul id="ptx-toc-group-Introduction" class="structural toc-item-list">
+<li class="toc-item toc-introduction"><div class="toc-title-box"><a href="Introduction-2.html" class="internal"><span class="title">Introduction</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="prose-philosophy.html" class="internal"><span class="codenumber">1.1</span> <span class="title">The Runestone Philosophy</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="Introduction-4.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Courses Versus Books</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="Introduction-5.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Privacy</span></a></div></li>
@@ -148,10 +160,10 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="registration_adding-students-to-your-course.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Managing Students in your Course</span></a></div>
 <ul id="ptx-toc-group-registration_adding-students-to-your-course" class="structural toc-item-list">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="registration_adding-students-to-your-course.html#registration_adding-students-to-your-course-3" class="internal"><span class="codenumber">4.1.1</span> <span class="title">Student Self Registration</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="registration_adding-students-to-your-course.html#registration_adding-students-to-your-course-4" class="internal"><span class="codenumber">4.1.2</span> <span class="title">Pre-register your students</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="registration_adding-students-to-your-course.html#registration_adding-students-to-your-course-5" class="internal"><span class="codenumber">4.1.3</span> <span class="title">Removing Students</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="registration_adding-students-to-your-course.html#registration_adding-students-to-your-course-6" class="internal"><span class="codenumber">4.1.4</span> <span class="title">Resetting Passwords</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="registration_adding-students-to-your-course.html#registration_adding-students-to-your-course-2" class="internal"><span class="codenumber">4.1.1</span> <span class="title">Student Self Registration</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="registration_adding-students-to-your-course.html#registration_adding-students-to-your-course-3" class="internal"><span class="codenumber">4.1.2</span> <span class="title">Pre-register your students</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="registration_adding-students-to-your-course.html#registration_adding-students-to-your-course-4" class="internal"><span class="codenumber">4.1.3</span> <span class="title">Removing Students</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="registration_adding-students-to-your-course.html#registration_adding-students-to-your-course-5" class="internal"><span class="codenumber">4.1.4</span> <span class="title">Resetting Passwords</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">
@@ -306,6 +318,7 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-chapter">
 <div class="toc-title-box"><a href="peer_instruction.html" class="internal"><span class="codenumber">8</span> <span class="title">Peer Instruction</span></a></div>
 <ul id="ptx-toc-group-peer_instruction" class="structural toc-item-list">
+<li class="toc-item toc-introduction"><div class="toc-title-box"><a href="peer_instruction-2.html" class="internal"><span class="title">Introduction</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="peer_instruction-3.html" class="internal"><span class="codenumber">8.1</span> <span class="title">Peer instruction in Runestone</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="peer_instruction-4.html" class="internal"><span class="codenumber">8.2</span> <span class="title">Creating Peer instruction Assignments</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="peer_instruction-5.html" class="internal"><span class="codenumber">8.3</span> <span class="title">Virtual Peer Instruction Workshop</span></a></div></li>
@@ -316,8 +329,9 @@ eBookConfig.enable_chatcodes =  false;
 <ul id="ptx-toc-group-InstructorGuide-12" class="structural toc-item-list">
 <li class="toc-item toc-index"><div class="toc-title-box"><a href="InstructorGuide-12-1.html" class="internal"><span class="title">Index</span></a></div></li>
 <li class="toc-item toc-appendix">
-<div class="toc-title-box"><a href="welcome.html" class="internal"><span class="codenumber">A</span> <span class="title">Welcome to the Runestone Community</span></a></div>
+<div class="toc-title-box"><a href="welcome.html" class="internal"><span class="codenumber">A.</span> <span class="title">Welcome to the Runestone Community</span></a></div>
 <ul id="ptx-toc-group-welcome" class="structural toc-item-list">
+<li class="toc-item toc-introduction"><div class="toc-title-box"><a href="welcome-2.html" class="internal"><span class="title">Introduction</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="help-and-support.html" class="internal"><span class="codenumber">A.1</span> <span class="title">Help and Support</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="drop-in.html" class="internal"><span class="codenumber">A.2</span> <span class="title">Weekly Drop-Ins</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="github-issues.html" class="internal"><span class="codenumber">A.3</span> <span class="title">Feature Requests and Reporting Problems</span></a></div></li>
@@ -325,7 +339,7 @@ eBookConfig.enable_chatcodes =  false;
 </ul>
 </li>
 <li class="toc-item toc-appendix">
-<div class="toc-title-box"><a href="faq_appendix.html" class="internal"><span class="codenumber">B</span> <span class="title">Frequently Asked Questions</span></a></div>
+<div class="toc-title-box"><a href="faq_appendix.html" class="internal"><span class="codenumber">B.</span> <span class="title">Frequently Asked Questions</span></a></div>
 <ul id="ptx-toc-group-faq_appendix" class="structural toc-item-list"><li class="toc-item toc-section">
 <div class="toc-title-box"><a href="faq.html" class="internal"><span class="codenumber">B.1</span> <span class="title">Frequently Asked Questions</span></a></div>
 <ul id="ptx-toc-group-faq" class="structural toc-item-list">
@@ -376,15 +390,14 @@ eBookConfig.enable_chatcodes =  false;
 <div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#registration_register-for-this-course-2-2-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="registration_register-for-this-course-2-2-1-2">
-<div class="para" id="p-derived-registration_register-for-this-course-2-2-1-2">Smaller courses at a a high school, college, or university, that are guided by an instructor like yourself also use these books. We often refer to these as <dfn class="terminology">custom courses</dfn>
-</div>
+<div class="para" id="p-derived-registration_register-for-this-course-2-2-1-2">Smaller courses at a a high school, college, or university, that are guided by an instructor like yourself also use these books. We often refer to these as <dfn class="terminology">custom courses</dfn>.</div>
 <div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#registration_register-for-this-course-2-2-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 </ul>
 <div class="para">You can think of the base courses as a template for custom courses, something like classes and instances in object oriented programming.</div>
 <div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#registration_register-for-this-course-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="registration_register-for-this-course-2-3">Although the base course books are open to the public, to save your work, you will need to register for an account on Runestone Academy. When you first regigister you will have the privileges of a <dfn class="terminology">student.</dfn> You do not become an <dfn class="terminology">instructor</dfn> until your create your own course. Lets walk through the registration process now.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#registration_register-for-this-course-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="registration_register-for-this-course-2-3">Although the base course books are open to the public, to save your work, you will need to register for an account on Runestone Academy. When you first register you will have the privileges of a <dfn class="terminology">student.</dfn> You do not become an <dfn class="terminology">instructor</dfn> until your create your own course. Lets walk through the registration process now.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#registration_register-for-this-course-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" aria-hidden="true" data-description="Section 2.1: Introduction"><a tabindex="-1" href="#registration_register-for-this-course-2" title="Copy heading and permalink for Section 2.1: Introduction" aria-label="Copy heading and permalink for Section 2.1: Introduction">🔗</a></div>
 </section>
