@@ -2,8 +2,8 @@
 <section xml:id="registration_privacy-and-runestone">
   <title>Privacy and Runestone</title>
   <introduction>
-    <p>In this week's update I want to tell you about some new account management features I added to Runestone, and give you some idea about how you could set up your class if you don't want Runestone to capture any Personally Identifiable Information (PII) about your students.</p>
-    <p>Runestone collects a lot of data. I think it is all justified, and if you are an instructor you can gain some real insight into how your students are doing based on the data we collect and the reports we create for you. None of that requires any PII about your students. Yet we do collect some&#x2026; what do we collect? and why?</p>
+    <p>Runestone allows you to set up your class without collecting any Personally Identifiable Information (PII) about your students.</p>
+    <p>Runestone collects usage data but not PII. If you are an instructor you can gain some real insight into how your students are doing based on the data we collect and the reports we create for you. None of that requires any PII about your students. Yet we do collect some&#x2026; what do we collect? and why?</p>
     <p>Here is what we we ask for when a student registers:</p>
     <p>
     <ol marker="1">
@@ -41,7 +41,7 @@ hogwarts-3,dumbledore+hogwarts1@gmail.com,F2,L2,owls4all,potions_fall19</pre>
       <title>Note</title>
       <p>It is important that you check your CSV file and make sure there are NO SPACES before or after the commas!</p>
     </note>
-    <p>From the Manage Students tab on the Instructor's Page, you can now upload this CSV file using the interface.</p>
+    <p>From the Instructor's Dashboard, open the Student Management section, and click on Manage Students.  you can now upload this CSV file using the interface.</p>
     <figure align="">
       <image source="Figures/student_management.png" width="100%" />
     </figure>
