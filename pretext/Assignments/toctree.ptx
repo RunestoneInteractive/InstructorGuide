@@ -7,5 +7,5 @@
     <xi:include href='./copyAssignment.ptx' />
     <xi:include href='./examsAndQuizzes.ptx' />
     <xi:include href='./gradeAssignment.ptx' />
-    <xi:include href='./practice.ptx' />
+ <!--   <xi:include href='./practice.ptx' /> -->
 </chapter>
