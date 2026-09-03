@@ -104,6 +104,7 @@
         alt="Choose Exercises" />
     </figure>
 
+   <p>You can use the "All Exercises" toggle at the top to switch to just the "Book Exercises" to filter by just exercises that appear in the book. There are also exercises contributed by the teacher community. </p>
    <p>Scroll to the chapter and subchapters that you want and click on the triangles next to them to expand them. 
    When you see the exercises, you can click to choose them or click the eye to preview them before choosing. 
    Exercises can be from the ebook that you are using, written by its author, or contributed by the community. 
@@ -128,8 +129,8 @@
     <p>
       <ul>
       <li>
-          <p>Autograde: options here are % correct, All or nothing, Interaction, or manual. If the exercise has unit test autograding code,
-          it will be set to "% correct". If it does not have autograding, it will be set to manual, where you will need to grade it.</p>
+          <p>Autograde: options here are Pct Correct, All or nothing, Interaction, or manual. If the exercise has unit test autograding code,
+          it will be set to "Pct Correct". If it does not have autograding, it can be set to Interaction only where just interacting with it gives the points or manual, where you will need to grade it.</p>
         </li>
         <li>
           <p>Which to Grade: Best Answer, first answer or last answer</p>
@@ -154,13 +155,27 @@
         alt="Search Exercises" />
         </figure>
 
-<p>When you are done adding exercises, click on the back arrow by the assignment name or on the Assignment Builder button at the top to return to the main assignment list page. By default, the new assignment will not be visible to students. </p>
+<p>Make sure you do not accept all the exercises in a lesson without toggling for "Book exercises" because there may be many community-added ones that may or may not work! When you are done adding exercises, click on the back arrow by the assignment name or on the Assignment Builder button at the top to return to the main assignment list page. By default, the new assignment will not be visible to students. </p>
        <warning>
             <title>Make it Visible</title>
             <p>Please make sure that you slide the visibility toggle of an assignment in the assignments list to visible when you want your students to see it. If you forget to toggle this to visible, then the assignment will not show up in the list that your students can see on the assignment page.</p>
           </warning>
   </subsection>
 
+  <subsection xml:id="autograding">
+    <title>Auto Grading</title>
+    <p>For exercises in an assignment to be autograded, the assignment must be visible and 
+      completed beforethe deadline while the students are working on it, and the exercises must be 
+      the type of exercises that support autograding. For example, the book active code exercises 
+      in the ebooks CSAwesome and CSAwesome2 all have unit tests 
+      that support autograding, but the community-contributed exercises and exercises from other 
+      books might not have unit tests. When you add an active code exercise to an assignment, you can 
+      tell if it has autograding tests if it comes up as "Pct Correct" in the Autograde colum and 
+      presents the autograding test results when run. Otherwise, it can be added as "interaction" 
+      only without grading for correctness or for "manual" grading. Short answer questions can be 
+      autograded for interaction, but require manual grading for content. </p>
+
+  </subsection>
   <subsection xml:id="subsec-accommodations">
     <title>Accommodations</title>
     <introduction>
