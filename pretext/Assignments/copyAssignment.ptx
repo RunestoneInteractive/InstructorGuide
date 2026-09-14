@@ -3,7 +3,16 @@
   <title>Copying Assignments</title>
   <subsection>
     <title>Copying from your previous courses</title>
-    <p>You may have multiple sections where you want to share assignments, or you may simply want to copy your assignments from the last time you taught a course to your current course.  Choose "Copy Assignment" from the Instructor Dashboard under the "Assignments &amp; Grading" menu. Before copying assignments, it is a good idea to make sure that the course settings has the correct start date in the "Course Settings" in the "Course Administration" menu of the Instructor Dashboard so that the due dates are adjusted properly.</p>
+    <p>You may have multiple sections where you want to share assignments, or you may simply want to copy your assignments from the last time you taught a course to your current course or
+      you may want to copy assignments provided by a base course.
+      There is a new Import button at the top right of the screen available in the Assignment Builder in the Instructor Dashboard. You can select whether to restrict the list of courses to "Only for this book" or "Only for courses I teach" with the toggles at the top. Open the drop down next to a course name to choose specific assignments or all.
+      </p>
+      <figure align="center" xml:id="import_assign_fig">
+      <caption>Import assignments.</caption>
+      <image source="Figures/import_assignments.png" width="100%" alt="Import Assignments"/>
+    </figure>
+      
+      <p>Or you can choose "Copy Assignment" from the Instructor Dashboard under the "Assignments &amp; Grading" menu. Before copying assignments, it is a good idea to make sure that the course settings has the correct start date in the "Course Settings" in the "Course Administration" menu of the Instructor Dashboard so that the due dates are adjusted properly.</p>
     <figure align="center" xml:id="copy_assign_fig">
       <caption>Copying an assignment.</caption>
       <image source="Figures/copyAssignmentMenu.png" width="100%" alt="Copy Assignments"/>
@@ -25,8 +34,7 @@
 
   <subsection>
     <title>Copying from a different Instructor</title>
-    <p>Help, this is my first time teaching this class and I want to copy assignments from another instructor.  This is very possible if the instructor is still available.  You simply need to enroll in their course and have them make you a TA.  Then you will be able to copy the assignments from their course to yours.</p>
-    <p>If the previous instructor is not available then we can still probably make it happen, but you are going to have to go out of your way to prove that your request is legit.  Sorry, we cannot just take your word for it over email.  A link to your faculty page, that verifies your email as a legitimate instructor at the same institution of the instructor of the course you want to copy.  We would love to just trust everyone, but data privacy laws are strict and we have to to treat data privacy very carefully.  Thanks for understanding.</p>
+    <p>You can now ask the other instructor to go to Course Settings and share their assignments with you, which you can then Import through the Assignment Builder.</p>
   </subsection>
 
   

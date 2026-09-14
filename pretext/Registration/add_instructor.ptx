@@ -5,12 +5,13 @@
 
 <ol>
 <li>Make sure that your co-instructor has registered for your course as a student.</li>
-<li><p>Go to the instructor page and select the Add TA tab as shown below</p>
+<li><p>From the user icon at the top right of the page, choose the Instructor Dashboard. 
+    Open the "Course Administration" section, and click on "Manage Teaching Assistants". </p>
 <image source="Figures/add_instructor.png" description="Add a TA or instructor" />
 </li>
-<li>Select the co-instructor or TA from the list of students on the right then click the + button below the list.  You should see the name appear in the list of instructors on the left.</li>
+<li>Select the co-instructor or TA from the list of students on the right then click the Add button below the list.  You should see the name appear in the list of instructors on the left.</li>
 </ol>
 
-<p>To "demote" a co-instructor or TA back to a student just select them in the list of instructors on the left and click the - button below the box.</p>
+<p>To "demote" a co-instructor or TA back to a student just select them in the list of instructors on the left and click the Remove button below the box.</p>
 </p>
 </section>

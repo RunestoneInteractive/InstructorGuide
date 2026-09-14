@@ -21,15 +21,18 @@
             Generate a shared/secret key pair for use with Canvas:
 
             <ol>
-                <li> Browse to the
+                <li> Login at
                     <url href="https://runestone.academy" visual="Runestone Academy" />
- and log in, then select your course (you must be the Instructor).
+                    and then select your course (you must be the Instructor).
                 </li>
                 <li>
-                    <p>Browse to the
-                        <url href="https://runestone.academy/runestone/admin/admin" visual="Instructor's Page" />
-, then click on “LTI Integration” in the Admin tab.</p>
-                    <image source="Figures/lti_config.png" description="LTI configuration panel" />
+                    <p>From the user icon on the top right, choose Instructor Dashboard.</p>
+                </li>
+                 <li>
+                    <p>Click on the "External Tools" section and click on "Connect my Learning Management System".</p>
+
+                      
+                    <image source="Figures/lti1_config.png" description="LTI configuration panel" />
                 </li>
                 <li> Click on the <term>Create LTI Key and Secret</term> button. Click the <term>Show Secret</term> button. You will use these in the next phase. Note that there is also a <term>Remove LTI Key and Secret</term> if you can't get LTI working with your LMS or just decide you don't want to use it you should remove the keys.  This will allow your students to access assignments from the regular assignments page.</li>
                 <li> Once the LTI Key and Secret have been set up, your course is in LTI mode, and the assignments will only be accessible from your LTI, so you must do Phase 2, below, or your students won't have access to any assignments.</li>

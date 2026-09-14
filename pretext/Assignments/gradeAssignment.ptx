@@ -1,57 +1,94 @@
 <?xml version="1.0"?>
 <section xml:id="instructor-interface_grading">
   <title>Grading</title>
-  <subsection xml:id="grading_intro">
-  <title>Introduction</title>
-  <video xml:id="ArghLTeeSvc" youtube="ArghLTeeSvc" width="auto"/>
-  <p>To grade student performance, go back to the instructor's interface and click on the grading tab. You'll see something like this.</p>
-  <image source="Figures/grading_tab.png" width="50%"/>
-  <p>Typically, you will select an assignment from the first dropdown.  This will show you summary of the elements that are automatically graded.  The other option is Chapter and you can use this to drill in on a chapter and look at a students work on any problem in the textbook regardless of whether it was part of an assignment.</p>
-  <image source="Figures/assignment_selected.png" width="50%"/>
-  <p>From here you can also select a question or questions as well as a student or students to manually grade a problem.  You can also use this to view a students answer to an automatically graded problem if they have a question about their score.</p>
-  <image source="Figures/manual_grading.png" width="50%"/>
-  <p>You will see the last version of code that the student ran prior to the assignment deadline. Click run to execute it. Drag the little scrubber across the timeline next to the Run button to see other versions of the code that the student ran.</p>
-  <p>You can assign a number grade (number of points) and, optionally, leave a comment.  As you tab out of the grade box you will see it turn green to indicate that the grade has been updated in the database. Similarly if you leave a comment it will automatically update the database with the comment for the student.</p>
-  <p>If you prefer to work on one question at a time there is a save and next button that will automatically move on the next item to grade.</p>
-  </subsection>
-  <subsection xml:id="instructor-interface_autograde">
-    <title>Autograde</title>
-    <p>Some questions have been configured for auto-grading, in particular coding problems with unit tests and some multiple choice problems. If you click on the Autograde button on the left side, the autograder will run. It will pop up an alert box to give you a diagnostic about how many question-student pairs were autograded.</p>
-    <p>Some things to note about the autograder:</p>
+
+  <subsection>
+    <title>Grade Book</title>
+  
+ 
+  <p>To see the Grade Book, go to the Instructor Dashboard and click on Grade Book. </p>
+   <figure
+      xml:id="gradebook">
+      <caption>Gradebook</caption>
+      <image source="Figures/gradebook.png" width="100%" />
+    </figure>
+  
+    <p>The gradebook allows filtering by students or assignments. If you click on a student's grade, you can drill down to see their performance on each exercise and override the grade total. You can click on each exercise to open them in the grader.</p>
+
+     <figure
+      xml:id="gradebook_drilldown">
+      <caption>Gradebook Drill Down on Assignment Score</caption>
+      <image source="Figures/gradebook_drilldown.png" width="100%" />
+    </figure>
+
+<p>Many assignments can be automatically graded, with the grades automatically appearing in the 
+  gradebook. For exercises in an assignment to be autograded, the assignment must be visible and 
+  completed before the deadline, and the exercises must be the type of exercises 
+  that support autograding. For example, the book active code exercises in the ebooks CSAwesome and 
+  CSAwesome2 all have unit tests that support autograding, but the community-contributed exercises 
+  and exercises from other books might not have unit tests. When you add an active code exercise to 
+  an assignment, you can tell if it has autograding tests if it comes up as "Pct Correct" in the 
+  Autograde colum and presents the autograding test results when run. Otherwise, it can be added as 
+  "interaction" only without grading for correctness or for "manual" grading. Short answer 
+  questions can be autograded for interaction, but require manual grading for content. </p>
+
+  <p>For assignments that are not autograded, you can manually grade the students' work. You can also manually grade any assignment, even if it is autograded, to override the automatic grading or for late work after the deadline.</p>
+
+</subsection>
+<subsection>
+    <title>Grader</title>
+  <p>To grade or examine student work, click on the Grader button in the Instructor's Dashboard.
+    You will see your assignments in the Cards View. You can switch to the Table View by clicking on the Table View button at the top right, and then you can search for an assignment by name or description. You can also sort the assignments by clicking on the column headers.
+    
+  </p>
+  <figure
+      xml:id="grader1">
+      <caption>Grader: Choose an Assignment</caption>
+      <image source="Figures/grader1.png" width="100%" />
+    </figure>
+
+  <p>Click on an assignment to view the problems in the assignment in Cards or Table view. In this 
+    view, there are options to select all of the problems and Regrade all and to release the grades 
+    to the students.</p>
+
+  <figure xml:id="grader2">
+      <caption>Grader: Choose a Problem</caption>
+      <image source="Figures/grader2.png" width="100%" />
+    </figure>
+
+  <p>From here, you can also select an exercise to view student solutions and to manually grade 
+    them. In the manual grading view, you can see the students' solutions, override autograded 
+    scores, and provide comments.</p>
+
+    <figure xml:id="manual-grading">
+      <caption>Grader: Manual Grading</caption>
+      <image source="Figures/manual_grading.png" width="100%" />
+    </figure>
+  
+  <p>
+    In active code exercises, this view will show the last version of code that the student ran prior to the assignment deadline. 
+    Click run to execute it. Drag the little scrubber across the timeline next to the Run button to 
+    see other versions of the code that the student ran.</p>
+
+  <p>
+    You can assign or change the grades next to "Points" in the rightmost panel, and, optionally, 
+    leave a comment. If you erase the "autograded" comment, it will no longer be autograded on regrades. Once you have manually graded the assignment or released grades, they will no longer 
+    be autograded. You will need to run the grader again for late work.
+  </p>
+  
+   <p>When you are satisfied that the grades have been calculated correctly, click on the toggle 
+    "Grades Hidden" button at the top right of the assignment view showing all the exercises in an 
+    assignment in the Grader, to switch it to Released. This makes them visible to students. </p>
+
     <p>
-      <ul>
-        <li>
-          <p>If a question is selected, the autograder will run only for that question.</p>
-        </li>
-        <li>
-          <p>If a student is also selected, the autograder will run for only that question-student combination.</p>
-        </li>
-        <li>
-          <p>To run the autograder for all the questions and students for a particular assignment, refresh the page, select the assignment, and click the autograde button before selecting a question or student.</p>
-        </li>
-        <li>
-          <p>You can manually override the grade assigned by the autograder using the grading form on the right side. Be sure to change the comment as well.</p>
-        </li>
-        <li>
-          <p>If you rerun the autograder, it will not run on any student-question pair where you have changed the comment.</p>
-        </li>
-      </ul>
-    </p>
+    Students will see their grades and comments when they view their assignment. They will see your comments above each exercise in the assignment. They can also choose Progress from 
+    the user icon menu to see a summary of their grades on all assignments. 
+  </p>
+
+  <p>If you prefer to start grading by student and drill down instead of starting with the 
+    assignments, start with the Gradebook interface and click on a student's score in an assignment 
+    to see a breakdown, and click on a specific problem to view the student's solution in the Grader.</p>
+
   </subsection>
-  <subsection xml:id="instructor-interface_calculate-totals">
-    <title>Calculate Totals</title>
-    <p>Once you have graded all the questions on an assignment, click the Caclulate Totals button to compute the total scores for the whole assignment, or to recalculate them after updating a grade. Again, an alert box will pop up to provide diagnostics about the min and max scores that were calculated.</p>
-    <image source="Figures/calculate_totals.png" width="50%"/>
-  </subsection>
-  <subsection xml:id="instructor-interface_release-grades">
-    <title>Release Grades</title>
-    <p>When you are satisfied that the grade totals have been calculated correctly, click on the Release Grades button at the bottom left. This makes them visible to students. If you make any subsequent changes to grades, you will need to click Calculate Totals again, but you will not need to click on Release Grades again: once released, they stay released.</p>
-  </subsection>
-  <subsection xml:id="instructor-interface_how-a-student-sees-grades-and-comments">
-    <title>How a Student Sees Grades and Comments</title>
-    <p>When viewing an assignment, a student can click on the <q>Show Feedback</q> button to see a score and any instructor comments.</p>
-    <image source="Figures/studentFeedback.JPG" width="50%"/>
-    <p>In addition the user menu allows the student to see a summary of their progress.</p>
-    <image source="Figures/student_progress.png" width="50%"/>
-  </subsection>
+ 
 </section>

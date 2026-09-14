@@ -1,6 +1,6 @@
 <section xml:id="course_settings">
 <title>Course Settings</title>
-<p>There are some settings that you can control for your course that effect how the interactive components work. You can modify these on the course settings tab of the instructor interface.</p>
+<p>There are some settings that you can control for your course that effect how the interactive components work. From the user icon, choose the "Instructor Dashboard", then open the "Course Administration" section and click on "Course Settings". </p>
 
 <image source="Figures/course_settings.png" description="course settings" />
 <p>
@@ -21,6 +21,32 @@
 <li>
 <title>Enable Compare Me Button</title>
 <p>Questions such as multiple choice may let students see how they did compared to other students in the class.  This button pops up a dialog that shows the percent of students that answered a question for each option. For a fill in the blank question it shows the top 10 answers.</p></li>
+
+<li>
+<title>Show Points in Gradebook</title>
+<p>Display points instead of percentages (default is percent)</p>
+</li>
+
+<li>
+<title>Enable Async LLM Modes for Peer Instruction</title>
+<p>Allow per-question LLM chat mode selection in asynchronous peer instruction activities. Requires an LLM API key.</p>
+</li>
+
+<li>
+<title>Use PreTeXt based student pages</title>
+<p>When enabled, student pages can use book-specific template overrides.</p>
+</li>
+<li>
+<title>Group Size for Peer Instruction</title>
+<p>Set the default group size for peer instruction activities</p>
+</li>
+<li>
+    <title>Share This Course's Assignments</title>
+    <p>Let instructors in other courses find and import your assignments. This covers every assignment in the course, exams included, so leave it off if any of them should stay private. Importing never copies student work or grades, and the instructor who imports gets their own hidden copy. You can write a note to instructors who import your assignments.</p>
+</li>
+
 </dl>
 </p>
+
+
 </section>
