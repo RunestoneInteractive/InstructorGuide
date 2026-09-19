@@ -19,7 +19,10 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
 <link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
-<link href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
+<style>
+@counter-style ptx-marker-1 { system: extends decimal; prefix: ''; suffix: ' '; }
+@counter-style ptx-marker-0 { system: extends lower-alpha; prefix: '('; suffix: ') '; }
+</style>
 <script type="module">import { startMathJax } from './_static/pretext/js/dist/mathjax_startup.js';
 startMathJax({
 hasWebworkReps: false,
@@ -37,7 +40,7 @@ lang: "en-US",
 <meta name="twitter:description" content="This book will help you get the most out of the features of Runestone Academy.">
 <meta property="og:description" content="This book will help you get the most out of the features of Runestone Academy.">
 <meta name="twitter:card" content="summary">
-<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/dist/pretext-core.js?v=2.49"></script><script src="_static/pretext/js/dist/pretext-read-aloud.js?v=2.49"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/dist/pretext-core.js?v=2.53"></script><script src="_static/pretext/js/dist/pretext-read-aloud.js?v=2.53"></script><!--** eBookCongig is necessary to configure interactive       **-->
 <!--** Runestone components to run locally in reader's browser **-->
 <!--** No external communication:                              **-->
 <!--**     log level is 0, Runestone Services are disabled     **-->
@@ -59,15 +62,15 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '8.2.7';
+eBookConfig.runestone_version = '8.3.0';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.7d3f08d51c2b60f8.bundle.js"></script><script src="_static/prefix-926.5c7038c8ef173faf.bundle.js"></script><script src="_static/prefix-runestone.bb5ac777721d4056.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-926.229729d09512acc9.css">
-<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.efe427683fc41f98.css">
+<script src="_static/prefix-runtime.c838822d59bc26bc.bundle.js"></script><script src="_static/prefix-926.5c7038c8ef173faf.bundle.js"></script><script src="_static/prefix-runestone.b9fedab97dee3c2a.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-926.229729d09512acc9.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.347e2ecdeacfed99.css">
 <script src="_static/pretext/js/dist/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/components/prism-core.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/autoloader/prism-autoloader.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/line-numbers/prism-line-numbers.min.js" integrity="sha512-dubtf8xMHSQlExGRQ5R7toxHLgSDZ0K7AunqPWHXmJQ8XyVIG19S1T95gBxlAeGOK02P4Da2RTnQz0Za0H0ebQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/line-highlight/prism-line-highlight.min.js" integrity="sha512-93uCmm0q+qO5Lb1huDqr7tywS8A2TFA+1/WHvyiWaK6/pvsFl6USnILagntBx8JnVbQH5s3n0vQZY6xNthNfKA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/dist/pretext_search.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script>
 </head>
@@ -116,7 +119,7 @@ eBookConfig.enable_chatcodes =  false;
 <legend>Assistive technologies</legend>
 <label for="ptx-readability-accessible-permalinks"><input type="checkbox" id="ptx-readability-accessible-permalinks"><span>🔗</span><span>Expose permalinks</span></label>
 </fieldset>
-<div class="ptx-readability-options-group"><button type="button" class="ptx-readability-reset-button button" id="ptx-readability-reset-button"><span class="icon material-symbols-outlined" aria-hidden="true">&#xf053;</span><span class="name">Reset All</span></button></div></dialog></span><span class="treebuttons"><a class="previous-button button" href="instructor-interface_exams-and-quizzes-in-runestone.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="working-with-assignments-chap.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="instructor-interface_the-practice-interface.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+<div class="ptx-readability-options-group"><button type="button" class="ptx-readability-reset-button button" id="ptx-readability-reset-button"><span class="icon material-symbols-outlined" aria-hidden="true">&#xf053;</span><span class="name">Reset All</span></button></div></dialog></span><span class="treebuttons"><a class="previous-button button" href="instructor-interface_exams-and-quizzes-in-runestone.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="working-with-assignments-chap.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="writing-exercises.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
 </div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
@@ -252,8 +255,9 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="instructor-interface_create-an-assignment.html#create_assignment_intro" class="internal"><span class="codenumber">6.2.1</span> <span class="title">Introduction</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="instructor-interface_create-an-assignment.html#instructor-interface_creating-a-reading-assignment" class="internal"><span class="codenumber">6.2.2</span> <span class="title">Adding Readings</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="instructor-interface_create-an-assignment.html#instructor-interface_creating-a-problem-assignment" class="internal"><span class="codenumber">6.2.3</span> <span class="title">Adding Exercises</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="instructor-interface_create-an-assignment.html#autograding" class="internal"><span class="codenumber">6.2.4</span> <span class="title">Auto Grading</span></a></div></li>
 <li class="toc-item toc-subsection">
-<div class="toc-title-box"><a href="instructor-interface_create-an-assignment.html#subsec-accommodations" class="internal"><span class="codenumber">6.2.4</span> <span class="title">Accommodations</span></a></div>
+<div class="toc-title-box"><a href="instructor-interface_create-an-assignment.html#subsec-accommodations" class="internal"><span class="codenumber">6.2.5</span> <span class="title">Accommodations</span></a></div>
 <ul id="ptx-toc-group-subsec-accommodations" class="structural toc-item-list">
 <li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="instructor-interface_create-an-assignment.html#subsubsec-ExamTime" class="internal"><span class="title">Extra Exam Time</span></a></div></li>
 <li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="instructor-interface_create-an-assignment.html#subsubsec-extended-due-date" class="internal"><span class="title">Extended Due Date</span></a></div></li>
@@ -280,14 +284,10 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-section contains-active">
 <div class="toc-title-box"><a href="instructor-interface_grading.html" class="internal"><span class="codenumber">6.5</span> <span class="title">Grading</span></a></div>
 <ul class="structural toc-item-list active" id="ptx-toc-group-instructor-interface_grading">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="instructor-interface_grading.html#grading_intro" class="internal"><span class="codenumber">6.5.1</span> <span class="title">Introduction</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="instructor-interface_grading.html#instructor-interface_autograde" class="internal"><span class="codenumber">6.5.2</span> <span class="title">Autograde</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="instructor-interface_grading.html#instructor-interface_calculate-totals" class="internal"><span class="codenumber">6.5.3</span> <span class="title">Calculate Totals</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="instructor-interface_grading.html#instructor-interface_release-grades" class="internal"><span class="codenumber">6.5.4</span> <span class="title">Release Grades</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="instructor-interface_grading.html#instructor-interface_how-a-student-sees-grades-and-comments" class="internal"><span class="codenumber">6.5.5</span> <span class="title">How a Student Sees Grades and Comments</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="instructor-interface_grading.html#instructor-interface_grading-2" class="internal"><span class="codenumber">6.5.1</span> <span class="title">Grade Book</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="instructor-interface_grading.html#instructor-interface_grading-3" class="internal"><span class="codenumber">6.5.2</span> <span class="title">Grader</span></a></div></li>
 </ul>
 </li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="instructor-interface_the-practice-interface.html" class="internal"><span class="codenumber">6.6</span> <span class="title">The Practice Interface</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-chapter">
@@ -382,101 +382,61 @@ eBookConfig.enable_chatcodes =  false;
 <h1 class="heading hide-type">
 <span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.5</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Grading</span>
 </h1>
-<section class="subsection" id="grading_intro">
+<section class="subsection" id="instructor-interface_grading-2">
 <h2 class="heading hide-type">
-<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.5.1</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Introduction</span>
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.5.1</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Grade Book</span>
 </h2>
-<div class="video-box" style="width: 100%;padding-top: 56.25%; margin-left: 0%; margin-right: 0%;"><iframe class="video" allowfullscreen="" src="https://www.youtube-nocookie.com/embed/ArghLTeeSvc?&amp;modestbranding=1&amp;rel=0" id="ArghLTeeSvc"></iframe></div>
-<div class="para" id="grading_intro-3">To grade student performance, go back to the instructor’s interface and click on the grading tab. You’ll see something like this.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#grading_intro-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="instructor-interface_grading-2-2">To see the Grade Book, go to the Instructor Dashboard and click on Grade Book.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#instructor-interface_grading-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/Figures/grading_tab.png" class="contained"></div>
-<div class="para" id="grading_intro-5">Typically, you will select an assignment from the first dropdown.  This will show you summary of the elements that are automatically graded.  The other option is Chapter and you can use this to drill in on a chapter and look at a students work on any problem in the textbook regardless of whether it was part of an assignment.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#grading_intro-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<figure class="figure figure-like" id="gradebook"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/Figures/gradebook.png" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.5.1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Gradebook<div class="autopermalink" aria-hidden="true" data-description="Figure 6.5.1"><a tabindex="-1" href="#gradebook" title="Copy heading and permalink for Figure 6.5.1" aria-label="Copy heading and permalink for Figure 6.5.1">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="instructor-interface_grading-2-4">The gradebook allows filtering by students or assignments. If you click on a student’s grade, you can drill down to see their performance on each exercise and override the grade total. You can click on each exercise to open them in the grader.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#instructor-interface_grading-2-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/Figures/assignment_selected.png" class="contained"></div>
-<div class="para" id="grading_intro-7">From here you can also select a question or questions as well as a student or students to manually grade a problem.  You can also use this to view a students answer to an automatically graded problem if they have a question about their score.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#grading_intro-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<figure class="figure figure-like" id="gradebook_drilldown"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/Figures/gradebook_drilldown.png" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.5.2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Gradebook Drill Down on Assignment Score<div class="autopermalink" aria-hidden="true" data-description="Figure 6.5.2"><a tabindex="-1" href="#gradebook_drilldown" title="Copy heading and permalink for Figure 6.5.2" aria-label="Copy heading and permalink for Figure 6.5.2">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="instructor-interface_grading-2-6">Many assignments can be automatically graded, with the grades automatically appearing in the gradebook. For exercises in an assignment to be autograded, the assignment must be visible and completed before the deadline, and the exercises must be the type of exercises that support autograding. For example, the book active code exercises in the ebooks CSAwesome and CSAwesome2 all have unit tests that support autograding, but the community-contributed exercises and exercises from other books might not have unit tests. When you add an active code exercise to an assignment, you can tell if it has autograding tests if it comes up as "Pct Correct" in the Autograde colum and presents the autograding test results when run. Otherwise, it can be added as "interaction" only without grading for correctness or for "manual" grading. Short answer questions can be autograded for interaction, but require manual grading for content.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#instructor-interface_grading-2-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/Figures/manual_grading.png" class="contained"></div>
-<div class="para" id="grading_intro-9">You will see the last version of code that the student ran prior to the assignment deadline. Click run to execute it. Drag the little scrubber across the timeline next to the Run button to see other versions of the code that the student ran.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#grading_intro-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="instructor-interface_grading-2-7">For assignments that are not autograded, you can manually grade the students’ work. You can also manually grade any assignment, even if it is autograded, to override the automatic grading or for late work after the deadline.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#instructor-interface_grading-2-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="grading_intro-10">You can assign a number grade (number of points) and, optionally, leave a comment.  As you tab out of the grade box you will see it turn green to indicate that the grade has been updated in the database. Similarly if you leave a comment it will automatically update the database with the comment for the student.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#grading_intro-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="para" id="grading_intro-11">If you prefer to work on one question at a time there is a save and next button that will automatically move on the next item to grade.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#grading_intro-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" aria-hidden="true" data-description="Subsection 6.5.1: Introduction"><a tabindex="-1" href="#grading_intro" title="Copy heading and permalink for Subsection 6.5.1: Introduction" aria-label="Copy heading and permalink for Subsection 6.5.1: Introduction">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Subsection 6.5.1: Grade Book"><a tabindex="-1" href="#instructor-interface_grading-2" title="Copy heading and permalink for Subsection 6.5.1: Grade Book" aria-label="Copy heading and permalink for Subsection 6.5.1: Grade Book">🔗</a></div>
 </section>
-<section class="subsection" id="instructor-interface_autograde">
+<section class="subsection" id="instructor-interface_grading-3">
 <h2 class="heading hide-type">
-<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.5.2</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Autograde</span>
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.5.2</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Grader</span>
 </h2>
-<div class="para" id="instructor-interface_autograde-2">Some questions have been configured for auto-grading, in particular coding problems with unit tests and some multiple choice problems. If you click on the Autograde button on the left side, the autograder will run. It will pop up an alert box to give you a diagnostic about how many question-student pairs were autograded.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#instructor-interface_autograde-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="instructor-interface_grading-3-2">To grade or examine student work, click on the Grader button in the Instructor’s Dashboard. You will see your assignments in the Cards View. You can switch to the Table View by clicking on the Table View button at the top right, and then you can search for an assignment by name or description. You can also sort the assignments by clicking on the column headers.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#instructor-interface_grading-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="instructor-interface_autograde-3">Some things to note about the autograder:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#instructor-interface_autograde-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<figure class="figure figure-like" id="grader1"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/Figures/grader1.png" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.5.3<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Grader: Choose an Assignment<div class="autopermalink" aria-hidden="true" data-description="Figure 6.5.3"><a tabindex="-1" href="#grader1" title="Copy heading and permalink for Figure 6.5.3" aria-label="Copy heading and permalink for Figure 6.5.3">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="instructor-interface_grading-3-4">Click on an assignment to view the problems in the assignment in Cards or Table view. In this view, there are options to select all of the problems and Regrade all and to release the grades to the students.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#instructor-interface_grading-3-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para logical" id="instructor-interface_autograde-4">
-<ul class="disc" id="instructor-interface_autograde-4-1">
-<li id="instructor-interface_autograde-4-1-1">
-<div class="para" id="instructor-interface_autograde-4-1-1-1">If a question is selected, the autograder will run only for that question.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#instructor-interface_autograde-4-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<figure class="figure figure-like" id="grader2"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/Figures/grader2.png" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.5.4<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Grader: Choose a Problem<div class="autopermalink" aria-hidden="true" data-description="Figure 6.5.4"><a tabindex="-1" href="#grader2" title="Copy heading and permalink for Figure 6.5.4" aria-label="Copy heading and permalink for Figure 6.5.4">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="instructor-interface_grading-3-6">From here, you can also select an exercise to view student solutions and to manually grade them. In the manual grading view, you can see the students’ solutions, override autograded scores, and provide comments.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#instructor-interface_grading-3-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#instructor-interface_autograde-4-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
-</li>
-<li id="instructor-interface_autograde-4-1-2">
-<div class="para" id="instructor-interface_autograde-4-1-2-1">If a student is also selected, the autograder will run for only that question-student combination.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#instructor-interface_autograde-4-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<figure class="figure figure-like" id="manual-grading"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/Figures/manual_grading.png" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.5.5<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Grader: Manual Grading<div class="autopermalink" aria-hidden="true" data-description="Figure 6.5.5"><a tabindex="-1" href="#manual-grading" title="Copy heading and permalink for Figure 6.5.5" aria-label="Copy heading and permalink for Figure 6.5.5">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="instructor-interface_grading-3-8">In active code exercises, this view will show the last version of code that the student ran prior to the assignment deadline. Click run to execute it. Drag the little scrubber across the timeline next to the Run button to see other versions of the code that the student ran.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#instructor-interface_grading-3-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#instructor-interface_autograde-4-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
-</li>
-<li id="instructor-interface_autograde-4-1-3">
-<div class="para" id="instructor-interface_autograde-4-1-3-1">To run the autograder for all the questions and students for a particular assignment, refresh the page, select the assignment, and click the autograde button before selecting a question or student.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#instructor-interface_autograde-4-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="instructor-interface_grading-3-9">You can assign or change the grades next to "Points" in the rightmost panel, and, optionally, leave a comment. If you erase the "autograded" comment, it will no longer be autograded on regrades. Once you have manually graded the assignment or released grades, they will no longer be autograded. You will need to run the grader again for late work.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#instructor-interface_grading-3-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#instructor-interface_autograde-4-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
-</li>
-<li id="instructor-interface_autograde-4-1-4">
-<div class="para" id="instructor-interface_autograde-4-1-4-1">You can manually override the grade assigned by the autograder using the grading form on the right side. Be sure to change the comment as well.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#instructor-interface_autograde-4-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="instructor-interface_grading-3-10">When you are satisfied that the grades have been calculated correctly, click on the toggle "Grades Hidden" button at the top right of the assignment view showing all the exercises in an assignment in the Grader, to switch it to Released. This makes them visible to students.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#instructor-interface_grading-3-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#instructor-interface_autograde-4-1-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
-</li>
-<li id="instructor-interface_autograde-4-1-5">
-<div class="para" id="instructor-interface_autograde-4-1-5-1">If you rerun the autograder, it will not run on any student-question pair where you have changed the comment.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#instructor-interface_autograde-4-1-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="instructor-interface_grading-3-11">Students will see their grades and comments when they view their assignment. They will see your comments above each exercise in the assignment. They can also choose Progress from the user icon menu to see a summary of their grades on all assignments.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#instructor-interface_grading-3-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#instructor-interface_autograde-4-1-5" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
-</li>
-</ul>
-<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#instructor-interface_autograde-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="instructor-interface_grading-3-12">If you prefer to start grading by student and drill down instead of starting with the assignments, start with the Gradebook interface and click on a student’s score in an assignment to see a breakdown, and click on a specific problem to view the student’s solution in the Grader.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#instructor-interface_grading-3-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Subsection 6.5.2: Autograde"><a tabindex="-1" href="#instructor-interface_autograde" title="Copy heading and permalink for Subsection 6.5.2: Autograde" aria-label="Copy heading and permalink for Subsection 6.5.2: Autograde">🔗</a></div>
-</section>
-<section class="subsection" id="instructor-interface_calculate-totals">
-<h2 class="heading hide-type">
-<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.5.3</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Calculate Totals</span>
-</h2>
-<div class="para" id="instructor-interface_calculate-totals-2">Once you have graded all the questions on an assignment, click the Caclulate Totals button to compute the total scores for the whole assignment, or to recalculate them after updating a grade. Again, an alert box will pop up to provide diagnostics about the min and max scores that were calculated.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#instructor-interface_calculate-totals-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/Figures/calculate_totals.png" class="contained"></div>
-<div class="autopermalink" aria-hidden="true" data-description="Subsection 6.5.3: Calculate Totals"><a tabindex="-1" href="#instructor-interface_calculate-totals" title="Copy heading and permalink for Subsection 6.5.3: Calculate Totals" aria-label="Copy heading and permalink for Subsection 6.5.3: Calculate Totals">🔗</a></div>
-</section>
-<section class="subsection" id="instructor-interface_release-grades">
-<h2 class="heading hide-type">
-<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.5.4</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Release Grades</span>
-</h2>
-<div class="para" id="instructor-interface_release-grades-2">When you are satisfied that the grade totals have been calculated correctly, click on the Release Grades button at the bottom left. This makes them visible to students. If you make any subsequent changes to grades, you will need to click Calculate Totals again, but you will not need to click on Release Grades again: once released, they stay released.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#instructor-interface_release-grades-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" aria-hidden="true" data-description="Subsection 6.5.4: Release Grades"><a tabindex="-1" href="#instructor-interface_release-grades" title="Copy heading and permalink for Subsection 6.5.4: Release Grades" aria-label="Copy heading and permalink for Subsection 6.5.4: Release Grades">🔗</a></div>
-</section>
-<section class="subsection" id="instructor-interface_how-a-student-sees-grades-and-comments">
-<h2 class="heading hide-type">
-<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.5.5</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">How a Student Sees Grades and Comments</span>
-</h2>
-<div class="para" id="instructor-interface_how-a-student-sees-grades-and-comments-2">When viewing an assignment, a student can click on the “Show Feedback” button to see a score and any instructor comments.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#instructor-interface_how-a-student-sees-grades-and-comments-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/Figures/studentFeedback.JPG" class="contained"></div>
-<div class="para" id="instructor-interface_how-a-student-sees-grades-and-comments-4">In addition the user menu allows the student to see a summary of their progress.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#instructor-interface_how-a-student-sees-grades-and-comments-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/Figures/student_progress.png" class="contained"></div>
-<div class="autopermalink" aria-hidden="true" data-description="Subsection 6.5.5: How a Student Sees Grades and Comments"><a tabindex="-1" href="#instructor-interface_how-a-student-sees-grades-and-comments" title="Copy heading and permalink for Subsection 6.5.5: How a Student Sees Grades and Comments" aria-label="Copy heading and permalink for Subsection 6.5.5: How a Student Sees Grades and Comments">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Subsection 6.5.2: Grader"><a tabindex="-1" href="#instructor-interface_grading-3" title="Copy heading and permalink for Subsection 6.5.2: Grader" aria-label="Copy heading and permalink for Subsection 6.5.2: Grader">🔗</a></div>
 </section><div class="autopermalink" aria-hidden="true" data-description="Section 6.5: Grading"><a tabindex="-1" href="#instructor-interface_grading" title="Copy heading and permalink for Section 6.5: Grading" aria-label="Copy heading and permalink for Section 6.5: Grading">🔗</a></div>
 </section>
 </div>
 <div id="ptx-content-footer" class="ptx-content-footer">
-<a class="previous-button button" href="instructor-interface_exams-and-quizzes-in-runestone.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="instructor-interface_the-practice-interface.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+<a class="previous-button button" href="instructor-interface_exams-and-quizzes-in-runestone.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="writing-exercises.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
 </div>
 <div id="ptx-page-footer" class="ptx-page-footer">
